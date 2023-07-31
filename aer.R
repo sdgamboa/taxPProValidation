@@ -334,6 +334,9 @@ propagated <- bplapply(X = data_ready, BPPARAM = MulticoreParam(workers = n_thre
     return(final_table)
 })
 
+propagated$aerophilicity_prediction_gn |> 
+    filter(NCBI_ID %in% sub('g__', '', unique(holdout_gn$NCBI_ID))) |> 
+    count(Evidence)
 
 for (i in seq_along(propagated)) {
     write.table(
