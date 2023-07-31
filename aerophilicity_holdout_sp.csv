@@ -1,0 +1,1466 @@
+"NCBI_ID","Taxon_name","Attribute","Attribute_value","Attribute_source","Evidence","Frequency","Confidence_in_curation","Attribute_type","Attribute_group","BacDive_ID","Type_strain","Score"
+"s__105312","Clostridium sp. 4","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2678,"no",1
+"s__1411149","Methanosarcina sp. Pr2","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7119,"no",1
+"s__1434100","Methanosarcina sp. MTP4","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7109,"no",1
+"s__1434102","Methanosarcina sp. WH1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7108,"no",1
+"s__1453586","Alistipes sp. CC-5826-wt-bac","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",131513,"no",1
+"s__1609974","Clostridium sp. FS23","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2683,"no",1
+"s__178878","Desulfotomaculum sp. WW1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23184,"no",1
+"s__1880681","Pseudomonas sp. CCUG 61063","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",156288,"no",1
+"s__2028297","Enterobacter sp. CCUG 70166","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",157178,"no",1
+"s__215156","Neisseria sp. CCUG 46910","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",152482,"no",1
+"s__2594913","Corynebacterium sanguinis","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",155219,"no",1
+"s__261021","Clostridium sp. EDB2","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2700,"no",1
+"s__261474","Pelotomaculum sp. FP","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11837,"no",1
+"s__265944","Clostridium sp. 17cr1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23856,"no",1
+"s__272920","Clostridium sp. ZIRB-1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2699,"no",1
+"s__306138","Clostridium sp. BA-1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23857,"no",1
+"s__369504","Pyrococcus sp. HT3","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",131125,"no",1
+"s__526714","Marichromatium litoris","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23846,"no",1
+"s__545210","Streptococcus sp. SK597","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",154758,"no",1
+"s__796514","Burkholderia sp. CCUG 57241","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",155296,"no",1
+"s__84972","Desulfobacter sp. ASv25","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3961,"no",1
+"s__907583","Peptoniphilus sp. CCUG 48151","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",152967,"no",1
+"s__102684","Streptococcus infantarius","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__102897","Parafrankia sp. EUN1f","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1040989","Bradyrhizobium sp. ARR65","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1042156","Clostridium sp. SY8519","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1042877","Thermococcus sp. 4557","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1078086","Streptomyces sp. HGB0020","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1078089","Bacteroides sp. HPS0048","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1080712","Methanomassiliicoccus luminyensis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1092","Chlorobium limicola","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1094","Chlorobium phaeovibrioides","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1097","Chlorobaculum tepidum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1112214","Sphingomonas sp. PAMC 26605","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1118963","Arthrobacter sp. Rue61a","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1120797","Mycobacterium sp. 141","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1125698","Pseudomonas sp. P179","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__112904","Enterococcus villorum","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__113107","Streptococcus australis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1132836","Rhizobium sp. CCGE 510","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1144307","Sphingobium sp. AP49","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1144312","Rhizobium sp. CF122","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1144314","Rhizobium sp. CF142","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1144332","Pseudomonas sp. GM50","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1144333","Pseudomonas sp. GM55","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__114687","Streptomyces auratus","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1157949","Thermotoga sp. EMP","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1169025","Streptomyces pratensis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1169331","Escherichia sp. KTE11","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1172186","Mycobacterium sp. 360MFTsu5.1","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1175444","Methanocella conradii","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1176649","Agrobacterium fabrum","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1179778","Pseudomonas sp. M47T1","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__118000","Denitrovibrio acetiphilus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1182762","Enterococcus sp. C1","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__119394","Pseudothermotoga thermarum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__119484","Syntrophobacter fumaroxidans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1200300","Thermogladius calderae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1203257","Streptomyces sp. AA1529","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1203555","Acidaminococcus sp. HPA0509","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1203590","Streptococcus sp. HPH0090","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1229","Nitrosococcus oceani","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1230476","Bradyrhizobium sp. DFCI-1","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1234595","Pacificimonas flava","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1235790","Eubacterium sp. 14-2","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1245","Leuconostoc mesenteroides","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1246","Leuconostoc lactis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1249","Weissella paramesenteroides","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1255","Pediococcus pentosaceus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1263550","Edwardsiella piscicida","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__126385","Providencia alcalifaciens","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1279005","Escherichia sp. KTE172","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1279027","Hippea alviniae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1280","Staphylococcus aureus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1297570","Mesorhizobium sp. STM 4661","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1298862","Caulobacter sp. URHA0033","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__129958","Carboxydothermus hydrogenoformans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1303","Streptococcus oralis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1311","Streptococcus agalactiae","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1317","Streptococcus downei","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1318","Streptococcus parasanguinis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1329","Streptococcus canis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1332080","Sphingobium baderi","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1336","Streptococcus equi","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1338","Streptococcus intermedius","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1346","Streptococcus iniae","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1349","Streptococcus uberis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__135080","Selenomonas flueggei","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1358","Lactococcus lactis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1370120","Mycobacterium sp. UM_WGJ","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1370121","Mycobacterium sp. UM_WWY","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__138336","Blastococcus saxobsidens","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1465754","Alistipes timonensis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__150055","Streptococcus lutetiensis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1501332","Oribacterium asaccharolyticum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__150829","Leadbettera azotonutricia","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1512","[Clostridium] symbiosum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__153026","Desulforegula conservatrix","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__155863","Methanothermococcus okinawensis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1596","Lactobacillus gasseri","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__160453","Enterococcus gilvus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1614","Fructilactobacillus fructivorans","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1623","Ligilactobacillus ruminis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1632","Limosilactobacillus oris","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__164756","Mycobacterium sp. MCS","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1686","Bifidobacterium catenulatum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__168810","Corynebacterium crenatum","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__171284","Mycoplasmopsis cynos","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__171695","Thermodesulfatator indicus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__172049","Thermococcus sibiricus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__172088","Bradyrhizobium sp. th.b2","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1757","Thermoanaerobacter ethanolicus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__177758","Pseudothermotoga lettingae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__179878","Sphingomonas elodea","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__181663","Desulfosudis oleivorans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__184064","Thermodesulfobium narugense","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__184917","Solidesulfovibrio magneticus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__1852","Saccharomonospora viridis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__187303","Methylocystis sp. SC2","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__189723","Prevotella micans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__19","Syntrophotalea carbinolica","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__190898","Desulfotignum phosphitoxidans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__197162","Deferribacter desulfuricans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__204039","Dickeya dianthicola","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2100","Mesomycoplasma hyorhinis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2130","Ureaplasma urealyticum","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2145","Spiroplasma taiwanense","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2151","Mesoplasma florum","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2180","Methanothermus fervidus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2189","Methanotorris igneus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2203","Methanospirillum hungatei","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__221360","Synechococcus sp. RS9917","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2223","Methanothrix soehngenii","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__223967","Methylorubrum populi","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__225196","Geopsychrobacter electrodiphilus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2252","Haloferax mediterranei","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2261","Pyrococcus furiosus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2275","Desulfurococcus mucosus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2277","Pyrobaculum islandicum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__227942","Limosilactobacillus gastricus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2280","Staphylothermus marinus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__228745","Thermovibrio ammonificans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2293","Desulfobacter postgatei","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2296","Desulforapulum autotrophicum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2317","Methanosphaera stadtmanae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__233055","Desulfitobacterium dichloroeliminans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2421","Thermosipho africanus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__246787","Bacteroides cellulosilyticus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__246969","Thermococcus sp. AM4","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__252307","Robiginitalea biformata","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__252970","Paraburkholderia phenoliruptrix","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__257758","Streptococcus pseudopneumoniae","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__259354","Desulfatibacillum alkenivorans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__261524","Mycobacterium liflandii","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__261685","Thermosinus carboxydivorans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__271091","Psychrilyobacter atlanticus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__273376","Sphaerochaeta coccoides","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2751","Carnobacterium maltaromaticum","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__28037","Streptococcus mitis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__28130","Prevotella disiens","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__28131","Prevotella intermedia","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__28134","Hoylesella oralis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__28141","Cronobacter sakazakii","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__28172","Vibrio metschnikovii","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__28182","Leptospira noguchii","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__28223","Desulfobacula toluolica","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__28232","Geobacter metallireducens","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__290053","Bacteroides helcogenes","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__291048","Caminibacter mediatlanticus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29292","Pyrococcus abyssi","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29322","[Eubacterium] cellulosolvens","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__293256","Desulfohalovibrio alkalitolerans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29329","Thermoanaerobacterium xylanolyticum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29380","Staphylococcus caprae","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__29385","Staphylococcus saprophyticus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29388","Staphylococcus capitis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29471","Pectobacterium atrosepticum","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__29488","Photorhabdus luminescens","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29494","Vibrio furnissii","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__29497","Vibrio splendidus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__29519","Borreliella garinii","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__29543","Pelobacter propionicus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__298654","Pseudofrankia inefficax","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__298701","Desulfovibrio sp. A2","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__301375","Methanothrix harundinacea","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__305719","Prevotella baroniae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__310297","Phocaeicola plebeius","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__312306","Pseudomonas entomophila","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__313589","Janibacter sp. HTCC2649","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__313625","Synechococcus sp. BL107","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__316277","Syntrophus aciditrophicus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__319003","Bradyrhizobium sp. WSM1253","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__329854","Bacteroides intestinalis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__33038","[Ruminococcus] gnavus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__33043","Coprococcus eutactus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__33045","Bartonella grahamii","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__334542","Rhodococcus qingshengii","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__336261","Thermovirga lienii","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__337191","Gordonia sp. KTR9","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__33871","Coriobacterium glomerans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__33964","Leuconostoc citreum","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__33989","Rickettsia amblyommatis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__33992","Rickettsia rhipicephali","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__342949","Pyrococcus sp. NA2","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__347","Xanthomonas oryzae","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__351745","Shewanella sp. W3-18-1","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__357276","Phocaeicola dorei","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__35760","Bifidobacterium choerinum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__35791","Rickettsia massiliae","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__35833","Bilophila wadsworthia","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__358743","Enterocloster citroniae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__358766","Methanoregula boonei","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__366602","Caulobacter sp. K31","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__371601","Bacteroides xylanisolvens","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__376805","Phocaeicola salanitronis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__380021","Pseudomonas protegens","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__38293","Photobacterium damselae","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__38323","Bartonella henselae","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__388640","Bartonella australis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__39496","Eubacterium ventriosum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__395568","Paraglaciecola agarilytica","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__39669","Methanosalsum zhilinae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__399726","Thermoanaerobacter sp. X514","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__40834","Borrelia duttonii","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__409322","Treponema pedis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__40988","Saccharomonospora azurea","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__411486","Clostridium sp. M62/1","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__421","Methylomonas methanica","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__42879","Methanococcus aeolicus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__43595","Halanaerobium saccharolyticum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__44001","Caldicellulosiruptor saccharolyticus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__443144","Geobacter sp. M21","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__443598","Bradyrhizobium sp. Cp5.3","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__453230","Desulfarculus baarsii","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__457392","Bacteroides sp. 3_2_5","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__457393","Bacteroides sp. 4_1_36","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__457398","Desulfovibrio sp. 3_1_syn3","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__457412","Ruminococcus sp. 5_1_39BFAA","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__46228","[Ruminococcus] lactaris","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__46541","Thermosipho melanesiensis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__469592","Bacteroides sp. 3_1_19","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__469593","Bacteroides sp. 3_1_40A","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__469609","Streptococcus sp. 2_1_36FAA","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__470565","Prevotella histicola","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__477641","Modestobacter marinus","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__477976","Calditerrivibrio nitroreducens","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__47951","Vibrio cyclitrophicus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__481720","Lentilactobacillus otakiensis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__48664","Xanthomonas fragariae","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__487174","Barnesiella intestinihominis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__488939","Desulfonatronospira thiodismutans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__499229","Tepidanaerobacter acetatoxydans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__501571","Butyricicoccus pullicaecorum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__502394","Deinococcus gobiensis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__504937","Haloterrigena salina","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__513050","Dictyoglomus turgidum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__53345","Enterococcus durans","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__53422","Thermobrachium celere","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__53424","Thermodesulfobacterium hveragerdense","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__536018","Mesorhizobium australicum","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__54120","Methanolacinia petrolearia","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__545","Citrobacter koseri","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__54571","Streptomyces venezuelae","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__551947","Bradyrhizobium sp. STM 3843","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__552","Erwinia amylovora","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__55218","Ruegeria lacuscaerulensis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__556","Dickeya chrysanthemi","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__55802","Thermococcus barophilus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__562","Escherichia coli","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__564","Escherichia fergusonii","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__56450","Xanthomonas cassavae","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__565","Atlantibacter hermannii","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__571","Klebsiella oxytoca","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__58138","Desulfofarcimen acetoxidans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__58290","Archaeoglobus veneficus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__584","Proteus mirabilis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__592316","Pantoea sp. At-9b","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__59814","Pantoea dispersa","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__598467","Brenneria sp. EniD312","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__59931","Synechococcus sp. WH 7805","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__60217","Shewanella violacea","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__60478","Shewanella amazonensis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__614","Serratia liquefaciens","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__62322","Shewanella baltica","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__624","Shigella sonnei","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__626931","Bacteroides oleiciplenus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__626932","Alistipes indistinctus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__626935","Collinsella tanakaei","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__628","Xenorhabdus nematophila","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__629773","Sphingomonas sp. Mn802worker","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__633","Yersinia pseudotuberculosis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__64160","Desulfurobacterium thermolithotrophum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__644","Aeromonas hydrophila","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__648999","Micromonospora sp. L5","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__651457","Kosmotoga olearia","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__656519","Halanaerobium hydrogeniformans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__66084","Wolbachia sp. wRi","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__66219","Lachnoclostridium phytofermentans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__663","Vibrio alginolyticus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__665956","Subdoligranulum sp. 4_3_54A2FAA","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__672","Vibrio vulnificus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__67780","Edwardsiella ictaluri","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__683150","Arthrobacter nitrophenolicus","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__683219","Streptomyces sp. SA3_actG","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__685778","Sphingomonas sp. PR090111-T3T-6A","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__691437","Geobacillus sp. C56-T3","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__693075","Caldisericum exile","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__693851","Halogranum salarium","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__69710","Treponema vincentii","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__69823","Selenomonas sputigena","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__70863","Shewanella oneidensis","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__712158","Atopobium sp. oral taxon 810","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__712414","Oribacterium sp. oral taxon 108","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__712531","Selenomonas sp. oral taxon 137","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__713008","Parvimonas sp. oral taxon 393","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__726","Haemophilus haemolyticus","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__754333","Escherichia sp. TW11588","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__759620","Weissella ceti","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__76122","Alloprevotella tannerae","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__76745","Sinorhizobium arboris","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__768490","Serratia sp. AS12","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__779","Ehrlichia ruminantium","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__78331","Mycobacterium canettii","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__803","Bartonella quintana","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__80867","Paracidovorax avenae","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__81462","Thermanaerovibrio acidaminovorans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__81468","Aminobacterium colombiense","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__83171","Methanocaldococcus fervens","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__833","Fibrobacter succinogenes","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__83816","Methanobrevibacter ruminantium","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__83984","Methanocorpusculum labreanum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__83986","Methanoculleus bourgensis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__84156","Archaeoglobus profundus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__84163","Cryptobacterium curtum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__84205","Chlorobium ferrooxidans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__84599","Staphylothermus hellenicus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__853","Faecalibacterium prausnitzii","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__856","Fusobacterium varium","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__861","Fusobacterium ulcerans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__86170","Syntrophothermus lipocalidus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__863643","Thermincola potens","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__868131","Methanobacterium paludis","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__873","Desulfocurvibacter africanus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__879","Megalodesulfovibrio gigas","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__886","Thermodesulfobacterium thermophilum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__89184","Ruegeria pomeroyi","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__894","Desulfobulbus propionicus","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__911241","Pseudomonas sp. CF161","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__930166","Pseudomonas brassicacearum","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__93466","Fervidobacterium pennivorans","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__936595","Lachnoanaerobaculum sp. OBRC5-5","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__93929","Thermotoga petrophila","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__941449","Desulfovibrio sp. X2","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__944","Ehrlichia canis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__945","Ehrlichia chaffeensis","aerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__97253","Eubacterium plexicaudatum","anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__992012","Vibrio sp. HENC-03","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__999425","Streptococcus sp. F0442","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"s__2654982","Paraburkholderia atlantica","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__2716812","Candidatus Protofrankia datiscae","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__288000","Bradyrhizobium sp. BTAi1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__313603","Maribacter sp. HTCC2170","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__321332","Synechococcus sp. JA-2-3B'a(2-13)","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__387093","Sulfurovum sp. NBC37-1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__396595","Thioalkalivibrio sp. K90mix","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__404589","Anaeromyxobacter sp. Fw109-5","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__85643","Thauera sp. MZ1T","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"s__1004","Chitinophaga sancti","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1006","Marivirga tractuosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1010","Sphingobacterium mizutaii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1014","Weeksella virosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1025","Flammeovirga arenaria","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__102862","Proteus penneri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__103621","Actinomyces urogenitalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__103732","Lentzea flava","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__103838","Nonomuraea turkmeniaca","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__104268","Tenacibaculum mesophilum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__105219","Ralstonia mannitolilytica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1053551","Komagataeibacter sucrofermentans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__105751","Aeromonas bestiarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1072463","Microbacterium lemovicicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__107327","Pseudoalteromonas ulvae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1074","Rhodoblastus acidophilus","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__108","Spirosoma linguale","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__108981","Acinetobacter schindleri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__109330","Nocardiopsis tropica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__109465","Nocardioides pyridinolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1096779","Acinetobacter puyangensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__110321","Sinorhizobium medicae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__110539","Mycolicibacterium vanbaalenii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__110933","Leifsonia poae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__110935","Agreia bicolorata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__110936","Rathayibacter caricis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__111015","Actinomyces radicidentis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__111292","Moritella abyssi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1114880","Aeromonas australiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__111501","Muricauda ruestringensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1121721","Jongsikchunia kroppenstedtii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__112904","Enterococcus villorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1134687","Klebsiella michiganensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__114090","Pediococcus inopinatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__114136","Paenibacillus jamilae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1150157","Bacillus bingmayongensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__115336","Actinomadura vinacea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__115551","Halomonas neptunia","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__115561","Halomonas hydrothermalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1174501","Paenibacillus typhae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__118246","Ureibacillus terrenus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__119025","Albibacter helveticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__119219","Cupriavidus metallidurans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__119644","Hymenobacter aerophilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__119981","Propionibacterium australiense","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__120107","Sphingobium cloacae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1202724","Flavobacterium akiainvivens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__120957","Nocardia abscessus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__121428","Sphingobium xenophagum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__121616","Micromonospora matsumotoense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__121719","Pannonibacter phragmitetus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1220495","Pseudomonas punonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1229971","Glaciimonas singularis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1231000","Corynebacterium lactis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__123899","Bordetella trematum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1246","Leuconostoc lactis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__124798","Microbacterium phyllosphaerae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1249","Weissella paramesenteroides","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1255","Pediococcus pentosaceus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1260","Finegoldia magna","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__126157","Psychrobacillus psychrodurans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__126385","Providencia alcalifaciens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1265740","Flavobacterium cutihirudinis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1272","Kocuria varians","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1274","Dermacoccus nishinomiyaensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1275","Kocuria rosea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1285","Staphylococcus intermedius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1285928","Niabella drilacis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1286","Staphylococcus simulans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__128785","Pseudoxanthomonas mexicana","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__12917","Acidovorax facilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1293","Staphylococcus gallinarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1293439","Devosia epidermidihirudinis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1293440","Kaistia hirudinis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1293441","Lysinibacillus contaminans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1293442","Falsochrobactrum ovis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1296375","Micromonospora schwarzwaldensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__129922","Saccharomonospora halophila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1311","Streptococcus agalactiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__1311820","Proteus genomosp. 6","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1312182","Rhizobium calliandrae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__132249","Nocardia veterana","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1324351","Paenochrobactrum pullorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1324352","Chryseobacterium gallinarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1333845","Paenibacillus sophorae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__134533","Acinetobacter parvus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__134536","Paraburkholderia caledonica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__134537","Paraburkholderia fungorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1346","Streptococcus iniae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__134601","Mycolicibacterium goodii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__134605","Fusobacterium equinum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1348114","Pseudoalteromonas piratica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__134984","Nocardia fluminea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1355","Enterococcus columbae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__135719","Sphingobium amiense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__136274","Arthrobacter roseus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__13688","Novosphingobium capsulatum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__13689","Sphingomonas paucimobilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__137265","Asanoa ishikariensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__137584","Thalassomonas viridans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__13769","Natrialba magadii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__137838","Clostridium neonatale","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__137993","Ectobacillus funiculus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__139","Borreliella burgdorferi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__139021","Dietzia psychralcaliphila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__139208","Isoptericola variabilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1398493","Pseudocitrobacter faecalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1399","Cytobacillus firmus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1416779","Epilithonimonas zeae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__141693","Nocardiopsis kunsanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1420917","Marinobacter salarius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1422","Geobacillus stearothermophilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__142461","Vibrio ichthyoenteri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__143224","Zobellia uliginosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1433843","Siccationidurans metalli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1455","Bacillus badius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1457234","Nocardioides zeae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__146017","Mycolicibacterium boenickei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__146018","Mycolicibacterium neworleansense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__146020","Mycolicibacterium brisbanense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__146474","Acetobacter orientalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__146919","Salinibacter ruber","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1471401","Corynebacterium trachiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__147248","Halomonas alimentaria","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1474","Sporosarcina pasteurii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1481663","Vibrio metoecus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__148447","Paraburkholderia phymatum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1487726","Mycobacterium persicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__148814","Apilactobacillus kunkeei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1491","Clostridium botulinum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1492","Clostridium butyricum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1494","Clostridium cochlearium","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1497681","Listeria newyorkensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__150056","Mammaliicoccus fleurettii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__150120","Shewanella livingstonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__150121","Agreia pratensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1502943","Veillonella seminalis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1504","Clostridium septicum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__150723","Aminobacter ciceronei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1510573","Rahnella bruchi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1510574","Rahnella woolbedingensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1516","Thermoanaerobacter thermohydrosulfuricus","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__152500","Burkholderia dolosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1527","Anaerocolumna aminovalerica","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1530","Clostridium carnis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1531","Enterocloster clostridioformis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__153494","Rarobacter incanus","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__153731","Microbacterium aerolatum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1538102","Pseudochelatococcus lubricantis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__154046","Hungatella hathewayi","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1544867","Paraburkholderia ultramafica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1552123","Listeria booriae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1552759","Mycobacterium grossiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__155515","Gallibacterium genomosp. 1","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__155680","Streptococcus entericus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1566886","Mycolicibacterium malmesburyense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__156976","Corynebacterium riegelii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__156977","Microbacterium resistens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__156978","Corynebacterium imitans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__156981","Cellulomonas hominis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__157463","Fructobacillus ficulneus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__157691","Leptotrichia shahii","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__157782","Pseudomonas parafulva","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__157783","Pseudomonas cremoricolorata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__158500","Novosphingobium resinovorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__158841","Leminorella richardii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__158849","Moellerella wisconsensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__158892","Sinorhizobium kummerowiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__158898","Gordonia westfalica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__158899","Collimonas fungivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__160386","Corynebacterium casei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__160453","Enterococcus gilvus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__160487","Paenibacillus turicensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__160791","Rhizorhabdus wittichii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__160825","Comamonas koreensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__160826","Nocardioides aquaticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1612149","Chryseobacterium limigenitum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1614","Fructilactobacillus fructivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__161536","Ornithinibacillus californiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1617283","Flavobacterium nitrogenifigens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__161896","Corynebacterium camporealensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__162209","Paenibacillus naphthalenovorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1623","Ligilactobacillus ruminis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__162393","Microbacterium aurantiacum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1628251","Moheibacter stercoris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1629","Weissella viridescens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1630","Kandleria vitulina","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__163011","Pseudomonas lini","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__163202","Corynebacterium appendicis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__164330","Thauera aminoaromatica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__164400","Thauera phenylacetica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1646","Renibacterium salmoninarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1658","Actinomyces bovis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__165813","Sporanaerobacter acetigenes","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1659","Actinomyces israelii","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1672","Arthrobacter ramosus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1679495","Variovorax gossypii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__168469","Pseudomonas costantinii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__168471","Laribacter hongkongensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__169176","Caenibius tardaugens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__169669","Pseudomonas extremorientalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__170623","Azotobacter beijerinckii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__170651","Vibrio neptunius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__170674","Vibrio pacinii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1711","Cellulomonas flavigena","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__171194","Aequorivita vladivostokensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1713","Oerskovia turbata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__171404","Paenibacillus agaridevorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__171437","Tistrella mobilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__171674","Inquilinus limosus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1717","Corynebacterium diphtheriae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1719","Corynebacterium pseudotuberculosis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1720557","Streptobacillus ratti","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1721","Corynebacterium callunae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__173053","Phycicoccus duodecadis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__173361","Brachybacterium rhamnosum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__173509","Shewanella fidelis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1736","Eubacterium limosum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__173862","Streptomyces viridiflavus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__173959","Brevibacillus invocatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__174037","Psychromonas profunda","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__174587","Carnobacterium viridans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__174923","Treponema calligyrum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1753","Propioniferax innocua","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__176102","Pseudoalteromonas agarivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__176290","Halomonas halocynthiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1764","Mycobacterium avium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__176598","Pseudoxanthomonas taiwanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1768","Mycobacterium kansasii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__176898","Prauserella alba","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1774","Mycobacteroides chelonae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1776741","Acinetobacter proteolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__178355","Flavobacterium omnivorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1785162","Pseudomonas reidholzensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__178774","Gottfriedia luciferensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__179010","Psychrobacter jeotgali","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1791","Mycolicibacterium aurum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1793","Mycolicibacterium fallax","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__179628","Clostridium colicanis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1800","Mycolicibacterium chubuense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__180194","Giesbergeria giesbergeri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__180588","Psychrobacter faecalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1807","Mycolicibacterium obuense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__181073","Carnobacterium pleistocenium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1812100","Undibacterium danionis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1812101","Coetzeea brasiliensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1813019","Campylobacter hepaticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1822","Nocardia vaccinii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__182220","Mycolicibacterium murale","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__182262","Agarivorans albus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__182455","Alicyclobacillus acidiphilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1829","Rhodococcus rhodochrous","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__183417","Proteus hauseri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__183556","Rhodococcus maanshanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__183763","Streptomonospora alba","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__184067","Kushneria indalinina","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__184072","Proteus myxofaciens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1841","Nocardioides albus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__184607","Crocinitomix catalasitica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__184756","Nocardia caishijiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__184870","Varibaculum cambriense","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__184882","Knoellia subterranea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__184924","Pseudoalteromonas maricaloris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__185007","Pseudobutyrivibrio xylanivorans","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1851544","Orrella dioscoreae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__186280","Xanthobacter aminoxidans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__187327","Acidaminococcus intestini","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__187328","Veillonella montpellierensis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1873484","Xenorhabdus thuongxuanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__187980","Microbulbifer salipaludis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__188144","Enterovibrio norvegicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__188906","Jannaschia helgolandensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__188913","Cetobacterium somerae","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1891224","Acinetobacter celticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1894","Kitasatospora aureofaciens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__189691","Paenibacillus elgii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__190195","Kribbella antibiotica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1908","Streptomyces globisporus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__191026","Maridesulfovibrio hydrothermalis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__191292","Rhodococcus aetherivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__191390","Pseudomonas palleroniana","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__191391","Pseudomonas salomonii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__191493","Corynebacterium sphenisci","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__191497","Rhodoglobus aureus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1917181","Paenibacillus rhizoplanae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__191770","Marinilactibacillus psychrotolerans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__192389","Chryseobacterium daecheongense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__192421","Planococcus maritimus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__193","Azospirillum lipoferum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__193384","Rhodoglobus vestalii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1945521","Psychrobacter piechaudii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1945662","Paracoccus contaminans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__194702","Cardiobacterium valvarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__195088","Halobacillus karajensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__196015","Caldimonas manganoxidans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__196588","Erythrobacter cryptus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1970","Streptomyces morookaense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__198093","Roseomonas ludipueritiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__198119","Paenibacillus barcinonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__198620","Pseudomonas koreensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__198815","Vibrio superstes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__1993","Actinomadura madurae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__199592","Microbacterium paraoxydans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__200132","Paenibacillus nematophilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__200379","Lentzea flaviverrucosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__200475","Brumimicrobium glaciale","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__201","Campylobacter lari","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2020","Thermomonospora curvata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2021","Thermobifida fusca","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2026186","Bacillus paranthracis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2026187","Bacillus pacificus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2026189","Bacillus albus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2026191","Bacillus luti","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__202750","Kurthia sibirica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__204","Campylobacter showae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__204528","Roseomonas genomospecies 4","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__204773","Herminiimonas arsenicoxydans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__204934","Roseomonas genomospecies 5","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__204936","Sporomusa aerivorans","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__205332","Agromyces albus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__205844","Novosphingobium pentaromativorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__206499","Erwinia papayae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__206505","Kerstersia similis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2078","Sporolactobacillus inulinus","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__208445","Amycolatopsis tolypomycina","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__209249","Nocardia niigatensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__209639","Marinobacter lipolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__212403","Psychrobacter okhotskensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__212765","Mycolicibacterium madagascariense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__213248","Mesonia algae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__213554","Halomonas campaniensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__214","Helicobacter felis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__215590","Brucella gallinifaecis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__216463","Levilactobacillus spicheri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__216778","Stenotrophomonas rhizophila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__217","Helicobacter mustelae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__218822","Amycolatopsis lexingtonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__218936","Aeromonas simiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__219314","Aeromicrobium marinum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__219574","Pseudomonas proteolytica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__219707","Cellulophaga pacifica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__220685","Neobacillus bataviensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__220687","Neobacillus novalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__220688","Neobacillus soli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__221028","Paenibacillus favisporus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__221799","Planococcus maitriensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__221822","Phaeobacter inhibens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__223527","Halomonas boliviensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2242","Halobacterium salinarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__225323","Allomonas enterica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__225844","Alkalihalobacillus algicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__225845","Brevibacterium celere","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__225906","Paenibacillus sanguinis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__225917","Paenibacillus massiliensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__225991","Comamonas aquatica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__226010","Aestuariibacter salexigens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__227","Pseudoalteromonas carrageenovora","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__227943","Limosilactobacillus antri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__228599","Nocardia higoensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__228654","Psychrobacter pulmonis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__228899","Peribacillus asahii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__228956","Maribacter sedimenticola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__229007","Halomonas ventosae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__229205","Flavobacterium micromati","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__230667","Chitinibacter tainanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__232259","Belliella baltica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__232444","Brevibacterium sanguinis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__233316","Alteromonas stellipolaris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__233583","Cellulomonas xylanilytica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__234828","Corynebacterium caspium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2354","Flexispira rappini","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__235985","Streptacidiphilus jiangxiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__236067","Kribbella solani","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__236100","Marinobacter algicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__236511","Nocardia neocaledoniensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__236814","Chryseobacterium formosense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__237017","Algoriphagus winogradskyi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__237373","Arenibacter palladensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__238","Elizabethkingia meningoseptica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__238013","Loigolactobacillus rennini","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__239","Flavobacterium sp.","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__239935","Akkermansia muciniphila","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__240303","Halobacillus aidingensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__240427","Secundilactobacillus paracollinoides","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__240840","Actinomadura meyerae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2434","Roseobacter denitrificans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__245187","Loktanella fryxellensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__245294","Chromohalobacter sarecensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__246","Chryseobacterium balustinum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__246144","Enterococcus italicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__246602","Pseudoduganella violaceinigra","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__246613","Microbacterium halotolerans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__246796","Pedobacter himalayensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__247","Empedobacter brevis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__247523","Pseudoalteromonas aliena","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__248452","Psychrobacter aquaticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__248906","Zobellia laminariae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__249409","Hydrogenophaga atypica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__251","Psychroflexus gondwanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__252597","Alteromonas litorea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__252970","Paraburkholderia phenoliruptrix","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__253","Chryseobacterium indologenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__253245","Owenweeksia hongkongensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__254757","Siminovitchia farraginis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__254787","Paeniglutamicibacter gangotriensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__254788","Paeniglutamicibacter kerguelensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__254793","Shewanella profunda","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__254955","Muricauda aquimarina","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__255616","Haloferax sulfurifontis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__255984","Qipengyuania aquimaris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__256","Myroides odoratus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__256731","Volucribacter amazonae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__257274","Nocardia vermiculata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__257275","Nocardia thailandica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__257281","Nocardia concava","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__258","Sphingobacterium spiritivorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__258256","Pseudovibrio denitrificans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__258505","Mycolicibacterium fluoranthenivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__260084","Asticcacaulis taihuensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__260364","Shewanella marisflavi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__260554","Bacillus halotolerans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__260714","Campylobacter insulaenigrae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__261291","Halorubrum xinjiangense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__262209","Janibacter melonis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__262806","Jonesia quinghaiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__263908","Gordonia effusa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__264023","Mariniflexile fucanivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__264251","Cellulosimicrobium funkei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__264297","Cellulomonas denverensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__265949","Mycobacterium pseudoshottsii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__265960","Komagataeibacter nataicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__266061","Pseudoxanthomonas koreensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__266748","Kaistella antarctica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__266892","Salibacterium qingdaonense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__267363","Levilactobacillus zymae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__267364","Levilactobacillus acidifarinae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__267800","Advenella incenata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__269420","Agromyces neolithicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__269774","Atopococcus tabaci","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__271096","Shewanella canadensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__271160","Nicoletella semolina","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__271417","Aeromonas molluscorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__271420","Stutzerimonas xanthomarina","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__272164","Olleya marilimosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__272914","Plantibacter auratus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__272918","Nesterenkonia sandarakina","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__272919","Nesterenkonia lutea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__273032","Bacillus taeanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__273384","Brevibacterium aurantiacum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__273677","Microbacterium oleivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2748","Carnobacterium divergens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2749","Carnobacterium gallinarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2750","Carnobacterium mobile","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2751","Carnobacterium maltaromaticum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__2752","Carnobacterium funditum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__2757","Brochothrix campestris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__278209","Rhodococcus yunnanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__279215","Bacillus alveayuensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__279262","Nocardia mexicana","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__279573","Agromyces humatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__279574","Agromyces lapidis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__279826","Mesobacillus foraminis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__279827","Phenylobacterium falsum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__280147","Acinetobacter courvalinii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__280240","Nocardiopsis baichengensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28026","Bifidobacterium pseudocatenulatum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28047","Mycolicibacterium confluentis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28104","Mesorhizobium huakuii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28125","Prevotella bivia","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28133","Prevotella nigrescens","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__281376","Acinetobacter seohaensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28141","Cronobacter sakazakii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__281467","Pseudomonas syncyanea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28152","Yersinia kristensenii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28172","Vibrio metschnikovii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__28173","Vibrio nigripulchritudo","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__281785","Phyllobacterium catacumbae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__282199","Nereida ignava","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28251","Ornithobacterium rhinotracheale","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__282669","Psychrobacter cibarius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__283877","Leucobacter chromiireducens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__283878","Leucobacter aridicollis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__284570","Microbacterium natoriense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__284577","Halomonas taeanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__284578","Lentibacillus salarius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__284580","Bacillus seohaeanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__284581","Priestia koreensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__285","Comamonas testosteroni","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__287097","Loktanella agnita","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__287609","Neoroseomonas lacus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__288","Pseudoalteromonas atlantica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__28898","Campylobacter helveticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__288992","Pedobacter caeni","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__289003","Pseudomonas borbori","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__290110","Xenorhabdus budapestensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__290588","Alkalihalobacillus oshimensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__291179","Subsaximicrobium wynnwilliamsii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__291180","Subsaximicrobium saxinquilinus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__291187","Bizionia algoritergicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__291985","Qipengyuania vulgaris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__293371","Paucilactobacillus oligofermentans","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29347","[Clostridium] scindens","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29369","Clostridium sardiniense","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29380","Staphylococcus caprae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__29384","Staphylococcus kloosii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29435","Pseudomonas flavescens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29438","Pseudomonas savastanoi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29442","Pseudomonas tolaasii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29471","Pectobacterium atrosepticum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__29484","Yersinia frederiksenii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29494","Vibrio furnissii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__29495","Vibrio navarrensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29497","Vibrio splendidus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__295089","Pontixanthobacter luteolus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__295324","Paenibacillus motobuensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29533","Flavobacterium pectinovorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29534","Flavobacterium saccharophilum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__295419","Rubellimicrobium thermophilum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29570","Halomonas meridiana","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29571","Halomonas subglaciescola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__29573","Halomonas halophila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__296","Pseudomonas fragi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__296052","Terrimonas lutea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__299480","Piscibacillus salipiscarius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__300825","Alkalihalobacillus lehensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__301154","Sphingomonas oligophenolica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__301388","Cellulomonas bogoriensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__302401","Mesorhizobium thiogangeticum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__302449","Corynebacterium tuscaniense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__303380","Herminiimonas fonticola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__304","Pelomonas saccharophila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__304895","Catenulispora acidiphila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__305793","Companilactobacillus nantensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__305977","Pusillimonas noertemannii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__311208","Gaetbulibacter saemankumensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__311234","Cellulomonas terrae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__311244","Paenibacillus assamensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__311334","Chryseobacterium taeanense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__313007","Ureibacillus suwonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__313588","Croceibacter atlanticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__314200","Giesbergeria voronezhensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__314722","Pseudoxanthomonas suwonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__315421","Alteromonas hispanica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__317","Pseudomonas syringae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__317010","Enterococcus canintestini","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__317577","Deinococcus ficus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__318425","Mycolicibacterium aromaticivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__31910","Halovibrio variabilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__319706","Mycolicibacterium phocaicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__319707","Mycolicibacterium aubagnense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__32013","Comamonas terrigena","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__32040","Paracidovorax konjaci","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__321661","Pseudomonas vranovensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__321984","Pseudoduganella plicata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__322163","Brevundimonas kwangchunensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__322596","Dermacoccus abyssi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__323761","Microbacterium koreense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__324851","Kribbella karoonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__326522","Neisseria animaloris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__326544","Paraglaciecola psychrophila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__328396","Enterococcus aquimarinus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33010","Cutibacterium avidum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33018","Sporolactobacillus laevolacticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33023","Bacillus viscosus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33033","Parvimonas micra","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33051","Sphingomonas sanguinis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__331526","Kribbia dieselivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__331697","Chitinophaga skermanii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__332340","Salicola marasensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__332524","Actinomyces ruminicola","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__332999","Pedobacter suwonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__333962","Providencia heimbachae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__335406","Sphingosinicella microcystinivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__336819","Flectobacillus lacus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__337005","Microcella putealis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__337316","Candidatus Anaerococcus massiliensis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__337894","Amycolatopsis minnesotensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33888","Rathayibacter tritici","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33889","Brevibacterium casei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__339","Xanthomonas campestris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33910","Amycolatopsis mediterranei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33946","Kurthia gibsonii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33964","Leuconostoc citreum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__33970","Melissococcus plutonius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33984","Luteococcus japonicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__33995","Komagataeibacter europaeus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__34","Myxococcus xanthus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__340021","Thalassobius mediterraneus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__34011","Niveispirillum irakense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__340321","Leucobacter alluvii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__340345","Actinoalloteichus hymeniacidonis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__34085","Riemerella anatipestifer","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__342113","Burkholderia oklahomensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__343512","Agrococcus casei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__344882","Pseudoxanthomonas dokdonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__344883","Variovorax dokdonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__345342","Herminiimonas aquatilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__346182","Lysobacter yangpyeongensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__346912","Labrys miyagiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__347483","Rhodanobacter spathiphylli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__348151","Furfurilactobacillus siliginis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__351205","Salimicrobium luteum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__351345","Polynucleobacter cosmopolitanus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__351671","Xenorhabdus doucetiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__351673","Xenorhabdus cabanillasii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__354197","Arenimonas malthae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__354246","Spongiibacter marinus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__356145","Nocardia ninae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__356147","Nocardia coubleae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__35703","Citrobacter amalonaticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__35743","Halorubrum sodomense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__357794","Psychromonas ingrahamii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__358","Agrobacterium tumefaciens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__35814","Bordetella holmesii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__359","Agrobacterium rhizogenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__359359","Smaragdicoccus niigatensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__359365","Sporosarcina saromensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__360086","Lentzea kentuckyensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__361277","Terribacillus saccharophilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__362413","Flavobacterium aquidurense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__362418","Flavobacterium reichenbachii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__363863","Microlunatus ginsengisoli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__364039","Azohydromonas australica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__364199","Paracoccus homiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__365343","Epilithonimonas caeni","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__365616","Paenibacillus forsythiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__365617","Paenibacillus sabinae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__367190","Yersinia similis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__36740","Dermabacter hominis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__36813","Mycolicibacterium pulveris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__36863","Ideonella dechloratans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__36878","Parahymenobacter ocellatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__369399","Paenibacillus zanthoxyli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__369930","Amycolatopsis echigonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__370526","Mycolicibacterium rutilum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__370766","Halomonas gomseomensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__370959","Sphingomonas mucosissima","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__370975","Flavobacterium croceum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__371036","Gottfriedia acidiceleris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__371602","Aerococcus suis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__371674","Moryella indoligenes","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__372663","Isoptericola dokdonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__373","Agrobacterium vitis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__373040","Massilia aurea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37330","Nocardia nova","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37332","Nocardia seriolae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__373540","Borreliella lanei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__373668","Chryseobacterium ureilyticum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__373675","Thalassococcus halodurans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__374106","Campylobacter cuniculorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__374514","Nocardioides marinus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37453","Polaribacter franzmannii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__375","Bradyrhizobium japonicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__375286","Janthinobacterium sp. Marseille","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__375760","Marinobacter gudaonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37633","Kineococcus aurantiacus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__376730","Zhouia amylolytica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__376815","Variovorax soli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__377616","Pseudoxanthomonas yeongjuensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37915","Dietzia maris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37916","Mycolicibacterium chlorophenolicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37919","Rhodococcus opacus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37921","Arthrobacter agilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__37928","Arthrobacter crystallopoietes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__379900","Niabella aurantiaca","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__380","Sinorhizobium fredii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__380629","Lysobacter niastensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__381706","Oceanobacillus chironomi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__381830","Salinicoccus siamensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__382","Sinorhizobium meliloti","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__38287","Corynebacterium fastidiosum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__38288","Corynebacterium genitalium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__38290","Corynebacterium macginleyi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__38304","Corynebacterium tuberculostearicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__38308","Gluconobacter frateurii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__38311","Rhodococcus marinonascens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__38402","Erysipelothrix tonsillarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__384602","Micrococcus flavus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__388459","Mycolicibacterium crocinum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__390884","Echinicola vietnamensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__39122","Skermania piniformis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__391736","Williamsia serinedens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__391738","Lysobacter defluvii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__391953","Aquincola tertiaricarbonis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__392823","Alkalibacillus silvisoli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__393607","Agromyces allii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__394506","Salirhabdus euzebyi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__39487","Atopobium fossor","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__395087","Myroides ceti","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__395387","Curtobacterium ammoniigenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__395599","Pseudomonas moorei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__396323","Acinetobacter brisouii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__39645","Mesorhizobium ciceri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__39687","Mycolicibacterium austroafricanum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__398037","Segetibacter koreensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__39844","Mesorhizobium tianshanense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__399","Neorhizobium galegae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__39950","Dialister pneumosintes","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__39956","Methylobacterium mesophilicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40091","Helcococcus kunzii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__400946","Wohlfahrtiimonas chitiniclastica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__401471","Undibacterium parvum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__401562","Aureimonas ureilytica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__401638","Paenibacillus taiwanensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40216","Acinetobacter radioresistens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__402385","Kushneria avicenniae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40516","Gordonia hydrophobica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40542","Leptotrichia buccalis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40561","Zoogloea resiniphila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40578","Xenorhabdus beddingii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__405946","Oceanobacillus caeni","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__406100","Aquisalimonas asiatica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40681","Sphingomonas asaccharolytica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__40683","Sphingomonas pruni","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__407036","Sediminibacillus albus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__407152","Brucella cytisi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__412438","Chryseobacterium daeguense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__412963","Mycetohabitans rhizoxinica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__413402","Vibrio inusitatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__415209","Microbacterium marinilacus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__415210","Microbacterium sediminicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__416016","Flavobacterium cucumis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__419007","Tatumella terrea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__419208","Veillonella denticariosi","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__419474","Brucella haematophila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__420645","Lactobacillus equicursoris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__420998","Jannaschia donghaensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__421058","Chryseobacterium oranimense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__421531","Chryseobacterium luteum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__42236","Streptomyces diastatochromogenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__424488","Cerasicoccus arenae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__425511","Pedobacter duraquae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__425512","Pedobacter westerhofensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__425513","Pedobacter metabolipauper","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__426226","Flavobacterium subsaxonicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__428712","Jonquetella anthropi","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__428988","Flavobacterium lindanitolerans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__429133","Modestobacter versicolor","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43348","Mycobacterium branderi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43354","Prauserella rugosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__433613","Roseomonas terpenica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__435909","Halobacillus campisalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__436","Novacetimonas hansenii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43655","Pseudoalteromonas citrea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43657","Pseudoalteromonas luteoviolacea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43658","Pseudoalteromonas rubra","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43664","Paenarthrobacter histidinolovorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43670","Cellulomonas cellasea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__43674","Jonesia denitrificans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__438","Acetobacter pasteurianus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__44008","Enterococcus cecorum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__44010","Mycobacterium conspicuum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__44251","Paenibacillus durus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__444515","Maribacter forsetii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__444597","Mycolicibacterium insubricum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__445211","Candidatus Chryseobacterium massiliensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__446370","Paenibacillus telluris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__44752","Rhodococcus wratislaviensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__44753","Tsukamurella spumae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__447679","Ekhidna lutea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__44930","Natronobacterium gregoryi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__450380","Microbacterium profundi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__451807","Microbacterium halophilum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__45243","Capnocytophaga haemolytica","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__454006","Epilithonimonas hungarica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__45462","Brevibacillus borstelensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__45496","Methylophaga sulfidovorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__455359","Balneola alkaliphila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__455360","Thalassobaculum salexigens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__457173","Phenylobacterium composti","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__458197","Serratia nematodiphila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__459471","Flavobacterium tiangeerense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__460384","Enterocloster lavalensis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__460870","Companilactobacillus nodensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46126","Staphylococcus chromogenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46127","Staphylococcus felis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__461393","Actinomyces massiliensis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46163","Actinomadura luteofluorescens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46176","Nonomuraea polychroma","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46177","Nonomuraea pusilla","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46181","Nonomuraea salmonea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46182","Nonomuraea spiralis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46256","Weissella hellenica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46257","Pseudomonas avellanae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__464322","Veillonella magna","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46503","Parabacteroides merdae","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46677","Pseudomonas agarici","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__468056","Flavobacterium fluvii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__46867","Clostridium chauvoei","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__470","Acinetobacter baumannii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__470075","Mycobacterium aemonae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__470868","Achromobacter marplatensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__472158","Nocardia altamirensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__475255","Pedobacter nyackensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__476","Moraxella bovis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__47671","Lautropia mirabilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__477","Moraxella lacunata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__478","Moraxella nonliquefaciens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__47857","Micromonospora echinaurantiaca","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__47877","Pseudomonas amygdali","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__47880","Pseudomonas fulva","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__47884","Pseudomonas taetrolens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__47885","Pseudomonas oryzihabitans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__479474","Paenibacillus konsidensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__47951","Vibrio cyclitrophicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__486","Neisseria lactamica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__48727","Halomonas pantelleriensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__487319","Shewanella marina","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__488","Neisseria mucosa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__489915","Corynebacterium sputi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__490189","Flavobacterium caeni","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__491921","Megamonas rupellensis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__49278","Psychroserpens burtonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__49283","Paenibacillus thiaminolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__493","Neisseria canis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__493375","Halpernia humi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__493376","Kaistella palustris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__494026","Paenibacillus glacialis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__496","Neisseria macacae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__498292","Flavobacterium swingsii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__499547","Kineosporia mikuniensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__50340","Pseudomonas fuscovaginae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__50718","Vibrio mytili","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__51047","Actinobacillus minor","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__51049","Actinobacillus indolicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__51173","Ureibacillus thermosphaericus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__512399","Paenibacillus pectinilyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__51785","Xenorhabdus sp.","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__520","Bordetella pertussis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__52021","Halomonas desiderata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__520603","Kaistella anthropi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__521","Bordetella avium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__52131","Rhizobium hainanense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__52133","Acinetobacter venetianus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__522487","Deinococcus aerolatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__523701","Pleionea mediterranea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__529705","Sphingomonas changbaiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__531","Polaribacter irgensii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53247","Pseudoalteromonas antarctica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53317","Sphingomonas trueperi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53345","Enterococcus durans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__53356","Terracoccus luteus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53363","Brevibacterium mcbrellneri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53374","Corynebacterium coyleae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53408","Pseudomonas citronellolis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53412","Pseudomonas resinovorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53428","Nocardia crassostreae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53432","Nocardia uniformis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53501","Thalassobius gelatinovorus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__53522","Thermobifida alba","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__54005","Peptoniphilus harei","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__54062","Pediococcus parvulus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__544911","Massilia niastensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__545","Citrobacter koseri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__546367","Hafnia paralvei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__546892","Lysobacter xinjiangensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__547163","Mycolicibacterium vulneris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__549","Pantoea agglomerans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__54910","Brevibacillus centrosporus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__54913","Brevibacillus formosus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__54914","Brevibacillus parabrevis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__54915","Brevibacillus reuszeri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__552788","Streptomyces axinellae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__55404","Streptomyces netropsis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__556054","Polynucleobacter difficilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__556055","Polynucleobacter rarus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__556327","Psychrobacter aestuarii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__558021","Chryseobacterium aquifrigidense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__559625","Gordonia cholesterolivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__56119","Castellaniella denitrificans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__561365","Maribacter arcticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__562","Escherichia coli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__564","Escherichia fergusonii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__565","Atlantibacter hermannii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__56804","Glaciecola punicea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__56810","Psychrobacter glacincola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__56946","Afipia broomeae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__57001","Amaricoccus macauensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__571","Klebsiella oxytoca","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__574376","Bacillus manliponensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__575","Raoultella planticola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__575789","Pseudidiomarina insulisalsae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__576611","Polynucleobacter asymbioticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__57706","Citrobacter braakii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__578290","Rhizobium endophyticum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__57975","Burkholderia thailandensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__580","Kluyvera cryocrescens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__582851","Oceanobacillus sojae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__584","Proteus mirabilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__585","Proteus vulgaris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__589873","Alteromonas australica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__592378","Rothia koreensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__59299","Streptomyces thermocarboxydus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__59600","Cellulophaga algicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__59813","Mycolicibacterium novocastrense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__59814","Pantoea dispersa","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__59840","Paenibacillus curdlanolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__59843","Paenibacillus glucanolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__60133","Prevotella pallens","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__60217","Shewanella violacea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__60450","Kribbella sandramycini","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__60478","Shewanella amazonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__60547","Caballeronia glathei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__60550","Burkholderia pyrrocinia","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__60706","Actinomadura formosensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__60890","Phaeobacter gallaeciensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__614","Serratia liquefaciens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__614212","Paraburkholderia oxyphila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__61646","Lelliottia amnigena","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__61647","Pluralibacter gergoviae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__61656","Methylorhabdus multivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__620903","Negativicoccus succinicivorans","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__62322","Shewanella baltica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__624","Shigella sonnei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__626084","Nocardia niwae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__630514","Microbacterium agarici","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__630520","Paenibacillus prosopidis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__633","Yersinia pseudotuberculosis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__633807","Vagococcus penaei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__634","Yersinia bercovieri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__634430","Sphingomonas rubra","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__643214","Mammaliicoccus stepanovicii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__643262","Winogradskyella lutea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__643674","Paenalcaligenes hominis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__644556","Tsukamurella soli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__646","Aeromonas sobria","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__646095","Paenibacillus sputi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__64971","Pseudospirillum japonicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__64972","Oceanobacter kriegii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__64973","Terasakiella pusilla","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__64975","Marinospirillum megaterium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__65048","Mitsuaria chitosanitabida","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__651561","Chryseobacterium arthrosphaerae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__651662","Hymenobacter psychrophilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__653929","Albibacterium bauzanense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__65403","Acidaminobacter hydrogenoformans","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__65505","Virgisporangium ochraceum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__65655","Hydrogenophaga palleronii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__65657","Hydrogenophaga flava","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__659243","Bacillus siamensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__663","Vibrio alginolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__66423","Streptomyces eurocidicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__66424","Streptomyces hiroshimensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__66431","Streptomyces thioluteus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__664909","Paenibacillus sediminis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__66835","Desulfocella halophila","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__66864","Ammoniphilus oxalivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__66869","Streptomyces atroolivaceus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__672","Vibrio vulnificus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__67267","Streptomyces alboflavus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__673372","Vibrio casei","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__67780","Edwardsiella ictaluri","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__67828","Citrobacter gillenii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__67854","Actinobacillus succinogenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__67855","Muribacter muris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__680","Vibrio campbellii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__680248","Sinorhizobium numidicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__68170","Lentzea aerocolonigenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__68228","Streptomyces lilacinus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__682956","Paenibacillus jilunlii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__683124","Flavobacterium haoranii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__68334","Erwinia aphidicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__68569","Sphingomonas leidyi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__685706","Yersinia nurmii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__686429","Gordonia humi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__687","Vibrio gazogenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__687846","Chryseobacterium ginsenosidimutans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69220","Lelliottia nimipressuralis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__693","Vibrio nereis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69322","Flavobacterium xanthum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69366","Microbacterium flavescens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69373","Curtobacterium pusillum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69525","Natrinema pellirubrum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69962","Azomonas macrocytogenes","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69966","Macrococcus caseolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69967","Macrococcus equipercicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69968","Macrococcus bovicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69969","Macrococcus carouselicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__69974","Mesorhizobium plurifarium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__701041","Mycobacterium bouchedurhonense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__701042","Mycobacterium marseillense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__70348","Acinetobacter dispersus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__70775","Pseudomonas plecoglossicida","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__70856","Aeromonas popoffii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__70863","Shewanella oneidensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,0.5
+"s__71171","Planomicrobium alkanoclasticum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__71235","Stappia stellulata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__71253","Arthrobacter rhombi","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__713588","Kaistella chaponensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__71383","Algicola bacteriolytica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__71388","Vibrio halioticoli","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__71453","Tetragenococcus solitarius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__71999","Kocuria palustris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__720","Actinobacillus lignieresii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__72026","Helcococcus ovis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__73044","Streptomyces seoulensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__73098","Kluyvera georgiana","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__732","Aggregatibacter aphrophilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__739143","Flavobacterium phragmitis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__74033","Antarctobacter heliothermus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__742054","Paenibacillus sacheonensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__742719","Acinetobacter oryzae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__74313","Brevundimonas subvibrioides","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__74315","Brevundimonas intermedia","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__74829","Stutzerimonas balearica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__748831","Brevifollis gellanilyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__752","Pasteurella bettyae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__754","Pasteurella dagmatis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__755","Avibacterium gallinarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__75688","Neptunomonas naphthovorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__75922","Mycolicibacterium tusciae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76113","Thauera terpenica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76258","Vibrio rumoiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76595","Cellulophaga fucicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76758","Pseudomonas orientalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76759","Pseudomonas monteilii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76760","Pseudomonas rhodesiae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76848","Sphingomonas roseiflava","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76862","Cellulomonas iranensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__76891","Asticcacaulis biprosthecium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__77008","Pseudorhodobacter ferrugineus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__77524","Colwellia maris","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__77608","Pseudoalteromonas distincta","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__78057","Paenibacillus popilliae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__78448","Bifidobacterium pullorum","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__78543","Pseudomonas migulae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__78544","Pseudomonas gessardii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__78587","Asticcacaulis excentricus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__79263","Paenibacillus chitinolyticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__79660","Virgibacillus marismortui","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__79880","Alkalihalobacillus clausii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__79885","Alkalihalophilus pseudofirmus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__79912","Actinoallomurus spadix","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__80746","[Haemophilus] piscium","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__80880","Hylemonella gracilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__81499","Microlunatus spumicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__81569","Ruegeria atlantica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82203","Centipeda periodontii","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82346","Ornithinicoccus hortensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82374","Anaerovibrio lipolyticus","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82376","Anaeroarcus burkinensis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82380","Microbacterium oxydans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82805","Hymenobacter actinosclerus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82977","Buttiauxella agrestis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__82990","Buttiauxella gaviniae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__83451","Archangium violaceum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__83456","Myxococcus virescens","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__83655","Leclercia adecarboxylata","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__837","Porphyromonas gingivalis","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__84110","Slackia heliotrinireducens","anaerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__84158","Oceanimonas doudoroffii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__84521","Dolosicoccus paucivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__84633","Kineosporia rhizophila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__84643","Agrococcus citreus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__857265","Amantichitinum ursilacus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__86102","Idiomarina abyssalis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__86104","Arenibacter latericius","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__861266","Pseudarthrobacter siccitolerans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__86173","Microbulbifer elongatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__86182","Curvibacter lanceolatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__86186","Xanthomonas cissicola","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__862134","Sphingomonas ginsenosidimutans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__86265","Pseudomonas thivervalensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__86668","Neobacillus niacini","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__87645","Aquaspirillum arcticum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__88139","Modestobacter multiseptatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__88233","Lacticaseibacillus manihotivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__88916","Borreliella spielmanii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__89065","Pseudomonas abietaniphila","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__89067","Moritella japonica","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__89402","Colwellia hornerae","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__89784","Alicyclobacillus hesperidum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__89969","Hymenobacter chitinivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__90241","Moraxella lincolnii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__90245","Oligella urethralis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__906888","Nonlabens ulvanivorans","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__91359","Enterovibrio calviensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__927","Halothiobacillus neapolitanus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__930138","Aliicoccus persicus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__931","Thiobacillus thioparus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__94137","Filobacillus milosensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__942865","Cupriavidus plantarum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__942866","Cupriavidus alkaliphilus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__94624","Bordetella petrii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__94625","Brucella intermedia","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__94626","Brucella tritici","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__95485","Burkholderia stabilis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__95486","Burkholderia cenocepacia","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__96229","Legionella rowbothamii","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__96344","Cupriavidus oxalaticus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__96468","Nocardia vinacea","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__984","Pedobacter heparinus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__984307","Paraburkholderia kururiensis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__98668","Mycolicibacterium septicum","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__99117","Microlunatus capsulatus","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__993073","Microbacterium enclense","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__99807","Corynebacterium auriscanis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1
+"s__999183","Arcanobacterium canis","aerobic",TRUE,"Madin_2020","tas","always","medium","logical","aerophilicity",NA,NA,1

@@ -1,0 +1,997 @@
+"NCBI_ID","Taxon_name","Attribute","Attribute_value","Attribute_source","Evidence","Frequency","Confidence_in_curation","Attribute_type","Attribute_group","BacDive_ID","Type_strain","Score"
+"t__1006000","Kluyvera ascorbata ATCC 33433","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4973,"yes",1
+"t__102619","Helicobacter pylori NCTC 11638","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6101,"no",1
+"t__1027292","Sporosarcina newyorkensis 2681","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12002,"no",1
+"t__1032067","Campylobacter mucosalis CCUG 21559","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",143851,"no",1
+"t__1032240","Aliarcobacter thereius LMG 24486","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2099,"yes",1
+"t__1032488","Neisseria shayeganii 871","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10496,"yes",1
+"t__1033732","Alistipes senegalensis JC50","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",130658,"no",1
+"t__1033810","Haloplasma contractile SSD-17B","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17673,"yes",1
+"t__1035188","Haemophilus pittmaniae HK 85","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11710,"no",1
+"t__1035196","Peptostreptococcus anaerobius VPI 4330 = DSM 2949","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11843,"yes",1
+"t__1035839","Haemophilus sputorum CCUG 13788","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11717,"yes",1
+"t__1038929","Streptomyces xinghaiensis S187","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16464,"yes",1
+"t__1041147","Rhizobium leucaenae USDA 9039","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24483,"no",1
+"t__1041930","Methanocella conradii HZ254","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17669,"yes",1
+"t__1042878","Cupriavidus necator N-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2033,"yes",1
+"t__1050201","Allobaculum stercoricanis DSM 13633","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5364,"yes",1
+"t__1051646","Vibrio tubiashii ATCC 19109","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17330,"yes",1
+"t__1068979","Amycolatopsis thermoflava N1165","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13239,"yes",1
+"t__1069080","Succinispira mobilis DSM 6222","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",105,"yes",1
+"t__1069448","Nitriliruptor alkaliphilus DSM 45188","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17693,"yes",1
+"t__1072685","Basilea psittacipulmonis DSM 24701","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",130149,"yes",1
+"t__1078846","Methylovulum miyakonense HT12","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7213,"yes",1
+"t__1089549","Haloglycomyces albus DSM 45210","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5850,"yes",1
+"t__1089550","Salisaeta longa DSM 21114","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17797,"yes",1
+"t__1091046","Mycobacteroides abscessus subsp. bolletii BD","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8547,"yes",1
+"t__1095744","Haemophilus parahaemolyticus HK385","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11708,"yes",1
+"t__1095747","Fusobacterium necrophorum subsp. funduliforme ATCC 51357","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5776,"yes",1
+"t__1095769","Noviherbaspirillum massiliense JC206","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24269,"yes",1
+"t__1105261","Streptococcus agalactiae CCUG 44050","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",151408,"no",1
+"t__1105262","Streptococcus agalactiae CCUG 44074","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",151430,"no",1
+"t__1105266","Streptococcus agalactiae CCUG 44186","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",151515,"no",1
+"t__1110697","Nocardia asteroides NBRC 15531","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10640,"yes",1
+"t__1111729","Corynebacterium sputi DSM 45148","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3228,"yes",1
+"t__1114263","Methylomicrobium lacus LW14","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134110,"yes",1
+"t__1114962","Actinoalloteichus spitiensis RMV-1378","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13193,"yes",1
+"t__1114963","Novosphingobium barchaimii LL02","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23265,"yes",1
+"t__1114972","Furfurilactobacillus rossiae DSM 15814","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6601,"yes",1
+"t__1117316","Pseudoalteromonas marina DSM 17587","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12700,"yes",1
+"t__1117319","Pseudoalteromonas spongiae UST010723-006","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134140,"yes",1
+"t__1118062","Peptoniphilus obesi ph1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23452,"yes",1
+"t__1119529","Carboxydothermus ferrireducens DSM 11255","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16807,"yes",1
+"t__1120917","Acaricomes phytoseiuli DSM 14247","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7517,"yes",1
+"t__1120920","Acidaminobacter hydrogenoformans DSM 2784","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17960,"yes",1
+"t__1120921","Acidaminococcus intestini DSM 21505","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",99,"yes",1
+"t__1120928","Acinetobacter tjernbergiae DSM 14971 = CIP 107465","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8130,"yes",1
+"t__1120944","Actinomyces israelii DSM 43320","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",151,"yes",1
+"t__1120952","Aerococcus urinaeequi DSM 20341 = CCUG 28094","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",222,"yes",1
+"t__1120953","Aestuariibacter salexigens DSM 15300","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",438,"yes",1
+"t__1120955","Afifella marina DSM 2698","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13874,"yes",1
+"t__1120957","Aggregatibacter actinomycetemcomitans DSM 8324","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11752,"yes",1
+"t__1120958","Agrococcus lahaulensis DSM 17612","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7255,"yes",1
+"t__1120959","Agromyces italicus DSM 16388","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7276,"yes",1
+"t__1120962","Alcaligenes faecalis subsp. phenolicus DSM 16503","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",338,"yes",1
+"t__1120965","Algoriphagus mannitolivorans DSM 15301","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17700,"yes",1
+"t__1120967","Algoriphagus terrigena DSM 22685","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17708,"yes",1
+"t__1120975","Alkalibacter saccharofermentans DSM 14828","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5412,"yes",1
+"t__1120981","Alysiella filiformis DSM 16848","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10434,"yes",1
+"t__1120991","Anaerobranca zavarzinii DSM 18970","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17965,"yes",1
+"t__1120995","Anaerosphaera aminiphila DSM 21120","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11852,"yes",1
+"t__1121004","Aquaspirillum serpens DSM 68","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10435,"yes",1
+"t__1121007","Aquimarina muelleri DSM 19832","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5594,"yes",1
+"t__1121009","Archaeoglobus infectus DSM 18877","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18099,"yes",1
+"t__1121010","Arcicella aquatica DSM 17092","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3765,"yes",1
+"t__1121011","Arenibacter certesii DSM 19833","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5484,"yes",1
+"t__1121012","Arenibacter latericius DSM 15913","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5481,"yes",1
+"t__1121013","Arenimonas composti TR7-09 = DSM 18010","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17445,"yes",1
+"t__1121014","Arenimonas donghaensis DSM 18148 = HO3-R19","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17444,"yes",1
+"t__1121023","Atopobium fossor DSM 15642","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3042,"yes",1
+"t__1121024","Atopococcus tabaci DSM 17538","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2250,"yes",1
+"t__1121025","Atopostipes suicloacalis DSM 15692","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2251,"yes",1
+"t__1121089","Priestia endophytica DSM 13796","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1203,"yes",1
+"t__1121091","Fictibacillus gelatini DSM 15865","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1218,"yes",1
+"t__1121093","Ectobacillus panaciterrae DSM 19096","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1269,"yes",1
+"t__1121096","Bacteroides gallinarum DSM 18171 = JCM 13658","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1616,"yes",1
+"t__1121099","Bacteroides propionicifaciens DSM 19291 = JCM 14649","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1621,"yes",1
+"t__1121104","Balneola vulgaris DSM 17893","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17738,"yes",1
+"t__1121107","Bifidobacterium choerinum DSM 20434","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1699,"yes",1
+"t__1121115","Blautia wexlerae DSM 19850","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18075,"yes",1
+"t__1121126","Brochothrix thermosphacta DSM 20171 = FSL F6-1036","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6867,"yes",1
+"t__1121127","Paraburkholderia nodosa DSM 21604","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1978,"yes",1
+"t__1121132","Butyrivibrio hungatei DSM 14810","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6351,"yes",1
+"t__1121256","Caldanaerobius fijiensis DSM 17918","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16851,"yes",1
+"t__1121257","Caldanaerobius zeae DSM 13642","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16850,"yes",1
+"t__1121262","Caloramator proteoclasticus DSM 10124","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2519,"yes",1
+"t__1121270","Carboxydocella sporoproducens DSM 16521","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17980,"yes",1
+"t__1121287","Chryseobacterium gregarium DSM 19109","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5688,"yes",1
+"t__1121290","Clostridium acetireducens DSM 10703","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2786,"yes",1
+"t__1121293","Clostridium akagii DSM 12554","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2799,"yes",1
+"t__1121296","[Clostridium] aminophilum DSM 10710","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2787,"yes",1
+"t__1121297","Anaerocolumna aminovalerica DSM 1283","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2542,"yes",1
+"t__1121300","Thermoclostridium caenicola DSM 19027","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2854,"yes",1
+"t__1121309","Clostridium fallax DSM 2631","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2585,"yes",1
+"t__1121316","Clostridium grantii DSM 8605","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2775,"yes",1
+"t__1121321","Asaccharospora irregularis DSM 2635","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2605,"yes",1
+"t__1121325","Romboutsia lituseburensis DSM 797","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2614,"yes",1
+"t__1121327","Anaerotignum neopropionicum DSM 3847","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2765,"yes",1
+"t__1121330","Anaeromicropila populeti DSM 5832","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2761,"yes",1
+"t__1121331","Hathewaya proteolytica DSM 3090","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2648,"yes",1
+"t__1121339","Clostridium thermobutyricum DSM 4928","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2739,"yes",1
+"t__1121340","Clostridium thermopalmarium DSM 5974","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2763,"yes",1
+"t__1121348","Comamonas badia DSM 17552","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2931,"yes",1
+"t__1121350","Comamonas nitrativorans DSM 13191","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2929,"yes",1
+"t__1121360","Corynebacterium freiburgense DSM 45254","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3231,"yes",1
+"t__1121363","Corynebacterium lubricantis DSM 45231","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3230,"yes",1
+"t__1121383","Deinococcus murrayi DSM 11303","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3858,"yes",1
+"t__1121387","Dermatophilus congolensis DSM 44180 = NBRC 105199","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3940,"yes",1
+"t__1121390","Desulfacinum hydrothermale DSM 13146","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16673,"yes",1
+"t__1121395","Desulfitobacterium chlororespirans DSM 11544","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11770,"yes",1
+"t__1121406","Desulfocurvus vexinensis DSM 17965","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4069,"yes",1
+"t__1121413","Desulfonatronovibrio hydrogenovorans DSM 9292","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4034,"yes",1
+"t__1121418","Desulforhopalus singaporensis DSM 12130","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4028,"yes",1
+"t__1121431","Desulfallas thermosapovorans DSM 6562","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11817,"yes",1
+"t__1121433","Desulfovermiculus halophilus DSM 18834","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4045,"yes",1
+"t__1121434","Halodesulfovibrio aestuarii DSM 10141","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4126,"no",1
+"t__1121435","Desulfocurvibacter africanus subsp. africanus DSM 2603","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4071,"yes",1
+"t__1121439","Desulfohalovibrio alkalitolerans DSM 16529","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4159,"yes",1
+"t__1121445","Desulfovibrio desulfuricans DSM 642","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4073,"yes",1
+"t__1121446","Maridesulfovibrio ferrireducens DSM 16995","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4158,"yes",1
+"t__1121447","Maridesulfovibrio frigidus DSM 17176","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4157,"yes",1
+"t__1121461","Desulfovibrio psychrotolerans DSM 19430","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4167,"yes",1
+"t__1121470","Desulfurella multipotens DSM 8415","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4180,"yes",1
+"t__1121472","Desulfurispora thermophila DSM 16022","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11840,"yes",1
+"t__1121480","Pseudoduganella violaceinigra DSM 15887","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11377,"yes",1
+"t__1121481","Dyadobacter alkalitolerans DSM 23607","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3780,"yes",1
+"t__1121867","Enterovibrio calviensis DSM 14347","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17215,"yes",1
+"t__1121873","Erysipelothrix inopinata DSM 15511","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5372,"yes",1
+"t__1121885","Flavisolibacter ginsengiterrae DSM 18136","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17761,"yes",1
+"t__1121886","Flavobacterium croceum DSM 17960","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5562,"yes",1
+"t__1121896","Flavobacterium sasangense DSM 21067","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5574,"yes",1
+"t__1121905","Formivibrio citricus DSM 6150","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10459,"yes",1
+"t__1121907","Fructobacillus pseudoficulneus DSM 15468","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6863,"yes",1
+"t__1121925","Globicatella sulfidifaciens DSM 15739","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",234,"yes",1
+"t__1121926","Glycomyces arizonensis DSM 44726","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5841,"yes",1
+"t__1121933","Granulicoccus phenolivorans DSM 17626 = NBRC 107789 = JCM 15570","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12620,"yes",1
+"t__1121936","Halalkalibacillus halophilus DSM 18494","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1516,"yes",1
+"t__1121937","Haliea salexigens DSM 19537","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",495,"yes",1
+"t__1121945","Halorubrum ezzemoulense DSM 17463","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5947,"yes",1
+"t__1121949","Henriciella marina DSM 19595","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6221,"yes",1
+"t__1121952","Humibacter albus DSM 18994","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7498,"yes",1
+"t__1121955","Hymenobacter daecheongensis DSM 21074","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3810,"yes",1
+"t__1122124","Pseudidiomarina sediminum DSM 21906","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6237,"yes",1
+"t__1122125","Inquilinus limosus DSM 16000","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13941,"yes",1
+"t__1122128","Jeotgalicoccus marinus DSM 19772","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14413,"yes",1
+"t__1122134","Kangiella aquimarina DSM 16071","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",397,"yes",1
+"t__1122136","Kingella potus DSM 18304","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10464,"yes",1
+"t__1122137","Kordiimonas gwangyangensis DSM 19435 = JCM 12864","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17858,"yes",1
+"t__1122138","Kribbella catacumbae DSM 19601","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11081,"yes",1
+"t__1122139","Kushneria aurantia DSM 21353","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6084,"yes",1
+"t__1122140","Kushneria indalinina DSM 14324","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",132885,"yes",1
+"t__1122146","Ligilactobacillus ceti DSM 22408","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6677,"yes",1
+"t__1122153","Ligilactobacillus saerimneri DSM 16049","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6612,"yes",1
+"t__1122169","Legionella shakespearei DSM 23087","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6760,"yes",1
+"t__1122174","Leptotrichia wadei DSM 19758","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17867,"yes",1
+"t__1122175","Leucobacter chironomi DSM 19883","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7355,"yes",1
+"t__1122183","Luteimonas mephitis DSM 12574","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17466,"yes",1
+"t__1122187","Lysobacter oryzae DSM 21044","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17495,"yes",1
+"t__1122188","Lysobacter spongiicola DSM 21749","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17492,"yes",1
+"t__1122189","Malonomonas rubra DSM 5091","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4211,"yes",1
+"t__1122192","Marinactinospora thermotolerans DSM 45154","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11263,"yes",1
+"t__1122193","Mariniflexile fucanivorans DSM 18792","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5722,"yes",1
+"t__1122195","Marinitoga hydrogenitolerans DSM 16785","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17042,"yes",1
+"t__1122203","Marinococcus halotolerans DSM 16375","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1370,"yes",1
+"t__1122213","Maritalea myrionectae DSM 19524","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6196,"yes",1
+"t__1122214","Martelella mediterranea DSM 17316","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",531,"yes",1
+"t__1122216","Megamonas hypermegale DSM 1672","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17125,"yes",1
+"t__1122217","Megamonas rupellensis DSM 19944","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17127,"yes",1
+"t__1122226","Mesonia mobilis DSM 19841","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5617,"yes",1
+"t__1122227","Mesorhizobium albiziae DSM 21822","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11894,"yes",1
+"t__1122228","Alloscardovia criceti DSM 17774","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1758,"yes",1
+"t__1122233","Methermicoccus shengliensis DSM 18856","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17657,"yes",1
+"t__1122234","Methylobacterium komagatae DSM 19563","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7190,"yes",1
+"t__1122236","Methylophilus methylotrophus DSM 46235 = ATCC 53528","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7239,"yes",1
+"t__1122239","Microbacterium luticocti DSM 19459","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7433,"yes",1
+"t__1122240","Microvirgula aerodenitrificans DSM 15089","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10522,"yes",1
+"t__1122246","Moraxella pluranimalium DSM 22804","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8174,"yes",1
+"t__1122604","Nevskia soli DSM 19509","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17661,"yes",1
+"t__1122606","Niastella yeongjuensis DSM 17621","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17757,"yes",1
+"t__1122612","Novosphingobium acidiphilum DSM 19966","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14164,"yes",1
+"t__1122614","Pseudooceanicola nanhaiensis DSM 18065","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13688,"yes",1
+"t__1122620","Oligella urethralis DSM 7531","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",355,"yes",1
+"t__1122621","Olivibacter sitiensis DSM 17696","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14091,"yes",1
+"t__1122916","Paenibacillus assamensis DSM 18201","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11599,"yes",1
+"t__1122917","Paenibacillus daejeonensis DSM 15491","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11561,"yes",1
+"t__1122918","Paenibacillus fonticola DSM 21315","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11625,"yes",1
+"t__1122926","Paenibacillus taiwanensis DSM 18679","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11604,"yes",1
+"t__1122929","Pannonibacter phragmitetus DSM 14782","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13692,"yes",1
+"t__1122933","Paraoerskovia marina DSM 21750","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2386,"yes",1
+"t__1122940","Paucisalibacillus globulus DSM 18846","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1515,"yes",1
+"t__1122946","Pelobacter seleniigenes DSM 18267","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4225,"yes",1
+"t__1122947","Pelosinus fermentans DSM 17108","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17204,"yes",1
+"t__1122952","Persicirhabdus sediminis DSM 22463","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17212,"yes",1
+"t__1122953","Petrotoga halophila DSM 16923","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17051,"yes",1
+"t__1122958","Phenylobacterium composti DSM 19425","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2348,"yes",1
+"t__1122959","Photobacterium halotolerans DSM 18316","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17226,"yes",1
+"t__1122962","Pleomorphomonas koreensis DSM 23070","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7227,"yes",1
+"t__1122967","Pontibacter roseus DSM 17521","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3829,"yes",1
+"t__1122973","Porphyromonas levii DSM 23370","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12508,"yes",1
+"t__1122974","Porphyromonas macacae DSM 20710 = JCM 13914","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12504,"yes",1
+"t__1122979","Prevotella amnii DSM 23384 = JCM 14753","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12562,"yes",1
+"t__1122984","Prevotella intermedia ATCC 25611 = DSM 20706","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12531,"yes",1
+"t__1122986","Prevotella maculosa DSM 19339 = JCM 15638","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12557,"yes",1
+"t__1122987","Prevotella micans DSM 21469 = JCM 16134","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12564,"yes",1
+"t__1122991","Prevotella shahii DSM 15611 = JCM 12083","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12539,"yes",1
+"t__1122994","Propionibacterium acidifaciens DSM 21887","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12659,"yes",1
+"t__1122996","Propionibacterium cyclohexanicum DSM 16859","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12658,"yes",1
+"t__1122997","Acidipropionibacterium jensenii DSM 20535","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12651,"yes",1
+"t__1122999","Propionicicella superfundia DSM 22317","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12670,"yes",1
+"t__1123000","Propionigenium maris DSM 9537","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5782,"yes",1
+"t__1123004","Propionispora vibrioides DSM 13305","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17149,"yes",1
+"t__1123008","Proteiniphilum acetatigenes DSM 18083","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12514,"yes",1
+"t__1123011","Pseudobutyrivibrio ruminis DSM 9787","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6362,"yes",1
+"t__1123012","Pseudobutyrivibrio xylanivorans DSM 14809","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6365,"yes",1
+"t__1123023","Pseudonocardia acaciae DSM 45401","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13400,"yes",1
+"t__1123025","Pseudonocardia spinosispora DSM 44797","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13391,"yes",1
+"t__1123062","Falsiroseomonas stagni DSM 19981","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",75,"yes",1
+"t__1123065","Ruania albidiflava DSM 18029","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17801,"yes",1
+"t__1123066","Rubellimicrobium aerolatum DSM 19297","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13778,"yes",1
+"t__1123075","Ruminococcus gauvreauii DSM 19829","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17685,"yes",1
+"t__1123229","Salinarimonas rosea DSM 21201","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1829,"yes",1
+"t__1123230","Salinicoccus albus DSM 19776","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14437,"yes",1
+"t__1123239","Salsuginibacillus kocurii DSM 18087","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1548,"yes",1
+"t__1123248","Segetibacter koreensis DSM 18137","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17760,"yes",1
+"t__1123249","Selenomonas artemidis DSM 19719","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17161,"yes",1
+"t__1123251","Serinicoccus marinus DSM 15273","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6283,"yes",1
+"t__1123260","Soehngenia saccharolytica DSM 12858","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18010,"yes",1
+"t__1123263","Solobacterium moorei DSM 22971","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5375,"yes",1
+"t__1123264","Sphingobacterium multivorum DSM 11691","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14120,"yes",1
+"t__1123267","Sphingomonas astaxanthinifaciens DSM 22298","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14258,"yes",1
+"t__1123270","Novosphingopyxis baekryungensis DSM 16222","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14280,"yes",1
+"t__1123284","Sporolactobacillus vineae DSM 21990 = SL153","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14404,"yes",1
+"t__1123285","Sporolituus thermophilus DSM 23256","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17205,"yes",1
+"t__1123286","Sporomusa acidovorans DSM 3132","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17188,"yes",1
+"t__1123300","Streptococcus devriesei DSM 19639","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14834,"yes",1
+"t__1123301","Streptococcus didelphis DSM 15616","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14814,"yes",1
+"t__1123302","Streptococcus entericus DSM 14446","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14809,"yes",1
+"t__1123305","Streptococcus hyovaginalis DSM 12219","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14802,"yes",1
+"t__1123306","Streptococcus marimammalium DSM 18627","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14835,"yes",1
+"t__1123312","Streptococcus ovis DSM 16829","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14820,"yes",1
+"t__1123315","Streptococcus porci DSM 23759","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14845,"yes",1
+"t__1123324","Succinivibrio dextrinosolvens DSM 3072","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16637,"yes",1
+"t__1123360","Litoreibacter arenae DSM 19593","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13858,"yes",1
+"t__1123367","Thauera linaloolentis 47Lol = DSM 12138","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13913,"yes",1
+"t__1123370","Thermoanaerobacterium saccharolyticum DSM 7060","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18052,"yes",1
+"t__1123372","Thermodesulfobacterium hveragerdense DSM 12571","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16893,"yes",1
+"t__1123373","Thermodesulfobacterium thermophilum DSM 1276","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16895,"yes",1
+"t__1123394","Thiofaba tepidiphila DSM 19618","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6097,"yes",1
+"t__1123401","Thiothrix lacustris DSM 21227","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17084,"yes",1
+"t__1123402","Thorsellia anophelis DSM 18579","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5235,"yes",1
+"t__1123404","Tissierella praeacuta DSM 18095","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18019,"yes",1
+"t__1123487","Uliginosibacterium gangwonense DSM 18521","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13936,"yes",1
+"t__1123493","Vibrio litoralis DSM 17657","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17312,"yes",1
+"t__1123497","Vibrio rhizosphaerae DSM 18581","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17314,"yes",1
+"t__1123501","Wenxinia marina DSM 24838","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13839,"yes",1
+"t__1123503","Woodsholea maritima DSM 17123","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6218,"yes",1
+"t__1123504","Xenophilus azovorans DSM 13620","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3019,"yes",1
+"t__1123508","Zavarzinella formosa DSM 19928","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11946,"yes",1
+"t__1125747","Paraglaciecola agarilytica NO2","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134227,"yes",1
+"t__1127673","Aliiglaciecola lipolytica E3","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133419,"yes",1
+"t__1129374","Alishewanella jeotgali KCTC 22429","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",442,"yes",1
+"t__1129793","Paraglaciecola polaris LMG 21857","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",453,"yes",1
+"t__1131730","Neobacillus vireti LMG 21834","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1215,"yes",1
+"t__1132443","Methylosarcina fibrata AML-C10","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7210,"yes",1
+"t__1132509","Halococcus hamelinensis 100A6","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134189,"yes",1
+"t__1139996","Enterococcus saccharolyticus subsp. saccharolyticus ATCC 43076","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5323,"yes",1
+"t__1140002","Enterococcus avium ATCC 14025","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5270,"yes",1
+"t__1141660","Providencia sneebia DSM 19967","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5092,"yes",1
+"t__1141662","Providencia burhodogranariea DSM 19968","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5091,"yes",1
+"t__1150423","Bifidobacterium dentium JCM 1195 = DSM 20436","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1704,"yes",1
+"t__1150469","Pararhodospirillum photometricum DSM 122","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14004,"yes",1
+"t__1150626","Magnetospirillum molischianum DSM 120","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13956,"yes",1
+"t__1154817","Streptococcus agalactiae CCUG 44077","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",151433,"no",1
+"t__1158052","Mogibacterium timidum DSM 3998","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17994,"no",1
+"t__1158601","Enterococcus malodoratus ATCC 43197","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5317,"yes",1
+"t__1158603","Enterococcus casseliflavus ATCC 49996","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5272,"no",1
+"t__1159491","Cronobacter malonaticus LMG 23826","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5237,"yes",1
+"t__1159554","Cronobacter dublinensis subsp. dublinensis LMG 23823","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5239,"yes",1
+"t__1159560","Cronobacter dublinensis subsp. lausannensis LMG 23824","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5241,"yes",1
+"t__1161919","Erwinia piriflorinigrans CFBP 5888","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4404,"yes",1
+"t__1163617","Sulfuricella denitrificans skB26","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6152,"yes",1
+"t__1163730","Fervidicoccus fontis Kam940","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17820,"yes",1
+"t__1169286","Enterococcus faecalis ATCC 19433","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5292,"yes",1
+"t__1171373","Acidipropionibacterium acidipropionici ATCC 4875","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12634,"no",1
+"t__1175296","Methanomassiliicoccus luminyensis B10","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18149,"yes",1
+"t__1177117","Halomonas stevensii S18214","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6075,"yes",1
+"t__1177179","Alcanivorax hongdengensis A-11-3","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133431,"yes",1
+"t__1177185","Bacillus siamensis KCTC 13613","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1302,"yes",1
+"t__1177929","Thalassospira xianhensis MCCC 1A02616","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133545,"yes",1
+"t__1184252","Streptococcus suis S735","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14796,"yes",1
+"t__1184255","Silanimonas mangrovi AK13","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23345,"yes",1
+"t__1184609","Kineosphaera limosa NBRC 100340","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3941,"yes",1
+"t__1191523","Melioribacter roseus P3M-2","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24801,"yes",1
+"t__1195246","Alishewanella agri BL06","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",443,"no",1
+"t__1196653","Fusobacterium vincentii ATCC 51190","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5763,"no",1
+"t__1196835","Stutzerimonas stutzeri CCUG 29243","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134668,"no",1
+"t__1197174","Alishewanella aestuarii B11","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",441,"yes",1
+"t__1197906","Afipia birgiae 34632","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1782,"yes",1
+"t__1198630","Thermoanaerobacter thermohydrosulfuricus WC1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23329,"no",1
+"t__1200352","Corynebacterium terpenotabidum Y-11","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3208,"yes",1
+"t__1203608","Bacteroides nordii WAL 11050 = JCM 12987","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",139989,"yes",1
+"t__1203610","Parabacteroides gordonii MS-1 = DSM 23371","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12501,"yes",1
+"t__1204722","Helcobacillus massiliensis 6401990","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3920,"yes",1
+"t__1204725","Methanobacterium formicicum DSM 3637","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6928,"no",1
+"t__1204727","Paenibacillus urinalis 5402403","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11630,"yes",1
+"t__1205681","Bartonella rattaustraliani AUST/NH4","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1642,"yes",1
+"t__1205683","Yersinia massiliensis CCUG 53443","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5228,"yes",1
+"t__1206722","Nocardia araoensis NBRC 100135","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10786,"yes",1
+"t__1206726","Nocardia carnea NBRC 14403","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10655,"yes",1
+"t__1206729","Nocardia exalbida NBRC 100660","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10806,"yes",1
+"t__1206731","Nocardia jiangxiensis NBRC 101359","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10802,"yes",1
+"t__1206735","Nocardia takedensis NBRC 100417","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10780,"yes",1
+"t__1206737","Nocardia pneumoniae NBRC 100136","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10787,"yes",1
+"t__1206743","Nocardia veterana NBRC 100344","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10760,"yes",1
+"t__1209778","Salinisphaera japonica YTM-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133949,"yes",1
+"t__1209989","Tepidanaerobacter acetatoxydans Re1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16801,"yes",1
+"t__1210006","Streptococcus equinus ATCC 33317","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14719,"no",1
+"t__1210061","Nocardia africana NBRC 100379","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10753,"yes",1
+"t__1210062","Nocardia acidivorans NBRC 108247","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10818,"yes",1
+"t__1210071","Nocardia elegans NBRC 108235","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10795,"yes",1
+"t__1210075","Nocardia ignorata NBRC 108230","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10764,"yes",1
+"t__1210083","Nocardia lijiangensis NBRC 108240","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10801,"yes",1
+"t__1210086","Nocardia pseudobrasiliensis NBRC 108224","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10726,"yes",1
+"t__1210094","Nocardia speluncae NBRC 108251","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10820,"yes",1
+"t__1210101","Nocardia xishanensis NBRC 101358","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10797,"yes",1
+"t__1211024","Afipia massiliensis 34633","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1781,"yes",1
+"t__1214160","Streptococcus suis NCTC 10446","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14798,"no",1
+"t__1215099","Pseudomonas flavescens NBRC 103044","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13060,"yes",1
+"t__1215103","Pseudomonas indica NBRC 103045","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13071,"yes",1
+"t__1215107","Pseudomonas mandelii NBRC 103147","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13134,"yes",1
+"t__1215109","Pseudomonas migulae NBRC 103157","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13133,"yes",1
+"t__1215117","Pseudomonas straminea NBRC 16665","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13128,"yes",1
+"t__1216006","Vibrio aerogenes CECT 7868","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17291,"yes",1
+"t__1216970","Janibacter limosus NBRC 16128","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6248,"yes",1
+"t__1216971","Janibacter melonis NBRC 107855","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6263,"yes",1
+"t__1217420","Lactobacillus delbrueckii subsp. jakobsenii ZN7a-9 = DSM 26046","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24135,"yes",1
+"t__1217663","Acinetobacter johnsonii CIP 64.6","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8088,"yes",1
+"t__1217666","Acinetobacter junii CIP 107470 = MTCC 11364","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8087,"no",1
+"t__1218078","Paraburkholderia ginsengisoli NBRC 100965","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1975,"yes",1
+"t__1218079","Burkholderia gladioli NBRC 13700","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1911,"yes",1
+"t__1218083","Paraburkholderia oxyphila NBRC 105797","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1991,"yes",1
+"t__1218088","Enterococcus durans NBRC 100479 = LMG 10746","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5278,"yes",1
+"t__1218105","Cupriavidus necator NBRC 102504","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2000,"no",1
+"t__1218109","Arachnia propionica NBRC 14587","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12653,"yes",1
+"t__1219041","Sphingomonas azotifigens NBRC 15497","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14246,"yes",1
+"t__1219044","Sphingobium chlorophenolicum NBRC 16172","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14174,"yes",1
+"t__1219060","Sphingopyxis granuli NBRC 100800","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14281,"yes",1
+"t__1219070","Vibrio inusitatus NBRC 102082","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17343,"yes",1
+"t__1219356","Thauera butanivorans NBRC 103042","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13921,"yes",1
+"t__1219359","Erwinia amylovora NBRC 12687 = CFBP 1232","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4386,"yes",1
+"t__1220574","Gordonia amicalis NBRC 100051 = JCM 11271","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10601,"yes",1
+"t__1220586","Amphibacillus sediminis NBRC 103570","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1406,"yes",1
+"t__1220593","Stenotrophomonas maltophilia NBRC 14161","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17532,"yes",1
+"t__1220595","Geobacillus kaustophilus NBRC 102445","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1437,"yes",1
+"t__1223494","Tetragenococcus solitarius NBRC 100494","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5256,"yes",1
+"t__1223502","Geobacillus jurassicus NBRC 107829","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1452,"yes",1
+"t__1223503","Parageobacillus toebii NBRC 107807","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1449,"yes",1
+"t__1223507","Alkalihalobacillus trypoxylicola NBRC 102646","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1294,"yes",1
+"t__1223515","Corynebacterium humireducens NBRC 106098 = DSM 45392","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3240,"yes",1
+"t__1223527","Microbacterium hydrocarbonoxydans NBRC 103074","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7419,"yes",1
+"t__1223528","Microbacterium oleivorans NBRC 103075","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7420,"yes",1
+"t__1223530","Wandonia haliotis NBRC 105642","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133540,"yes",1
+"t__1223548","Nocardia mikamii NBRC 108933","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10826,"yes",1
+"t__1223568","Dickeya dianthicola NCPPB 453","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4351,"yes",1
+"t__1223802","Sulfuritalea hydrogenivorans sk43H","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13938,"yes",1
+"t__1224164","Corynebacterium vitaeruminis DSM 20294","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3128,"yes",1
+"t__1225176","Cecembia lonarensis LW9","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133802,"yes",1
+"t__1226679","Lactobacillus acidophilus DSM 20242","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6405,"no",1
+"t__1226752","Mycolicibacterium holsaticum DSM 44478 = JCM 12374","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8488,"yes",1
+"t__1227460","Haloferax larsenii JCM 13917","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24077,"yes",1
+"t__1227488","Haloterrigena salina JCM 13891","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5887,"yes",1
+"t__1230453","Haloferax elongans ATCC BAA-1513","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24080,"yes",1
+"t__1230454","Halorubrum aidingense JCM 13560","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5952,"yes",1
+"t__1230457","Haloterrigena limicola JCM 13563","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134201,"yes",1
+"t__1230460","Natronorubrum sulfidifaciens JCM 14089","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134219,"yes",1
+"t__1233099","Clostridium tunisiense TJ","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2814,"no",1
+"t__1234382","Thauera phenylacetica B4P","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13918,"yes",1
+"t__1234672","Komagataeibacter kakiaceti JCM 25156","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",45,"yes",1
+"t__1235809","Bacteroides pyogenes JCM 6292","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1595,"no",1
+"t__1235811","Prevotella disiens JCM 6334 = ATCC 29426","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12530,"yes",1
+"t__1236494","Prevotella pleuritidis JCM 14110","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134238,"yes",1
+"t__1236497","Prevotella oulorum JCM 14966","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",154665,"yes",1
+"t__1236498","Phocaeicola paurosaccharolyticus JCM 15092","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1625,"yes",1
+"t__1236508","Prevotella aurantiaca JCM 15754","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133542,"yes",1
+"t__1236509","Prevotella dentasini JCM 15908","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12565,"yes",1
+"t__1236514","Bacteroides stercorirosoris JCM 17103","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",131249,"yes",1
+"t__1236521","Porphyromonas macacae JCM 15984","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",150673,"no",1
+"t__1236535","Legionella pneumophila subsp. pneumophila JCM 7571","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6712,"yes",1
+"t__1236540","Prolixibacter bellariivorans JCM 13498","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134197,"yes",1
+"t__1236541","Shewanella algae JCM 14758","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134289,"yes",1
+"t__1236960","Stenotrophomonas pictorum JCM 9942","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13146,"yes",1
+"t__1236979","Marinifilum fragile JCM 15579","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133508,"yes",1
+"t__1237149","Fulvivirga imtechensis AK7","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133772,"yes",1
+"t__1238186","Leucobacter salsicius M1-8","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",132119,"yes",1
+"t__1245469","Bradyrhizobium oligotrophicum S58","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1784,"yes",1
+"t__1255617","Brevibacterium linens ATCC 9172","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1842,"yes",1
+"t__1255631","Paenibacillus lactis CIP 108827","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11563,"yes",1
+"t__1260625","Marinobacter salsuginis SD-14B","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",489,"yes",1
+"t__1262470","Herbaspirillum hiltneri N3","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11365,"yes",1
+"t__1265505","Desulfospira joergensenii DSM 10085","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3949,"yes",1
+"t__1265846","Listeria rocourtiae FSL F6-920","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6881,"yes",1
+"t__1268635","Legionella oakridgensis ATCC 33761 = DSM 21215","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6743,"yes",1
+"t__1276218","Spiroplasma platyhelix PALS-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14378,"yes",1
+"t__1276227","Spiroplasma chrysopicola DF-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14372,"yes",1
+"t__1276259","Spiroplasma phoeniceum P40","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14359,"yes",1
+"t__1285583","Corynebacterium casei LMG S-19264","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3207,"yes",1
+"t__1286106","Methylophaga lonarensis MPL","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11908,"yes",1
+"t__1286171","Peptoclostridium acidaminophilum DSM 3953","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5415,"yes",1
+"t__1288827","Actinomadura sputi DSM 45233","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17000,"yes",1
+"t__1288828","Gleimia hominis DSM 22168","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",194,"yes",1
+"t__1291050","Ruminiclostridium josui JCM 17888","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2840,"yes",1
+"t__1291742","Paucilactobacillus hokkaidonensis JCM 18461","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24132,"yes",1
+"t__1293052","Limnohabitans parvus II-B4","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3034,"yes",1
+"t__1293586","Vulcanisaeta souniana JCM 11219","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17022,"yes",1
+"t__1293588","Desulfothermus okinawensis JCM 13304","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4041,"yes",1
+"t__1294023","Syntrophomonas palmitatica JCM 14374","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16688,"yes",1
+"t__1297794","Coprobacillus cateniformis JCM 10604","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23017,"yes",1
+"t__1298606","Methanosarcina barkeri JCM 10043","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7087,"yes",1
+"t__1300163","Methanobacterium formicicum JCM 10132","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6924,"yes",1
+"t__1300343","Dokdonia donghaensis DSW-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5505,"yes",1
+"t__1300346","Maribacter dokdonensis DSW-8","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5608,"yes",1
+"t__1300348","Polaribacter dokdonensis DSW-5","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5627,"yes",1
+"t__1300350","Sulfitobacter donghicola DSW-25 = KCTC 12864 = JCM 14565","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13800,"yes",1
+"t__1302723","Agromyces ulmi JCM 13315","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7270,"yes",1
+"t__1303677","Paenarthrobacter nitroguajacolicus JCM 14115","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7592,"yes",1
+"t__1303681","Rhodococcus qingshengii JCM 15477","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11046,"yes",1
+"t__1304875","Aminobacterium mobile DSM 12262","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17768,"yes",1
+"t__1304880","Caldicoprobacter oshimai DSM 21659","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17803,"yes",1
+"t__1304886","Desulfotignum balticum DSM 7044","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3950,"yes",1
+"t__1305617","Porphyromonas crevioricanis JCM 15906","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",152858,"yes",1
+"t__1305624","Gordonia westfalica JCM 11757","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10603,"yes",1
+"t__1305629","Mycolicibacterium rufum JCM 16372","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8576,"yes",1
+"t__1305857","Cellulomonas composti JCM 14898","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2371,"yes",1
+"t__1307903","Acetobacter cerevisiae DSM 14362","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12,"yes",1
+"t__1307910","Acetobacter malorum DSM 14337","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13,"yes",1
+"t__1307912","Acetobacter oeni LMG 21952","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",19,"yes",1
+"t__1307929","Kozakia baliensis NRIC 0488","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",58,"yes",1
+"t__1307935","Gluconacetobacter johannae DSM 13595","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",44,"yes",1
+"t__1313304","Chitinivibrio alkaliphilus ACht1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",130839,"yes",1
+"t__1314753","Cytobacillus firmus NBRC 15306","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",675,"yes",1
+"t__1314754","Neobacillus fumarioli NBRC 102428","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1251,"yes",1
+"t__1316584","Selenomonas dianae ATCC 43527","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17162,"yes",1
+"t__1321608","Polaromonas jejuensis NBRC 106434","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2984,"yes",1
+"t__1334628","Burkholderia contaminans LMG 23361","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1989,"yes",1
+"t__1336250","Hallella seregens ATCC 51272","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24344,"yes",1
+"t__1336750","Spiroplasma alleghenense PLHS-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14377,"yes",1
+"t__1337093","Limimaricola cinnabarinus LL-001","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",130608,"yes",1
+"t__1341679","Acinetobacter indicus CIP 110367","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8148,"yes",1
+"t__1341692","Clostridium autoethanogenum DSM 10061","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2781,"no",1
+"t__1341694","Bifidobacterium indicum LMG 11587 = DSM 20214","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1707,"yes",1
+"t__1346611","Thermoclostridium stercorarium subsp. leptospartum DSM 9219","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2777,"yes",1
+"t__1347342","Formosa agariphila KMM 3901","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5588,"yes",1
+"t__1348630","Neobacillus soli NBRC 102451","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1217,"yes",1
+"t__1348657","Thauera terpenica 58Eu","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13914,"yes",1
+"t__1349757","Rossellomorea vietnamensis NBRC 101237","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1258,"yes",1
+"t__1349763","Curvibacter delicatus NBRC 14919","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2939,"yes",1
+"t__1349764","Dietzia papillomatosis NBRC 105045","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4259,"yes",1
+"t__1349765","Enterococcus canis NBRC 100695","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5343,"yes",1
+"t__1349775","Moraxella oblonga NBRC 102422","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8164,"yes",1
+"t__1349776","Paenibacillus elgii NBRC 100335","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11607,"yes",1
+"t__1349777","Paenibacillus glucanolyticus NBRC 15330","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11495,"yes",1
+"t__1349779","Paenibacillus illinoisensis NBRC 15959","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11549,"yes",1
+"t__1349788","Sulfurospirillum cavolei NBRC 109482","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2232,"yes",1
+"t__1354256","Buttiauxella warmboldiae ATCC 51608","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4319,"yes",1
+"t__1354263","Hafnia paralvei ATCC 29927","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133593,"yes",1
+"t__1354267","Moellerella wisconsensis ATCC 35017","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4983,"yes",1
+"t__1354268","Obesumbacterium proteus ATCC 12841","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4990,"yes",1
+"t__1367848","Cronobacter sakazakii NCIMB 8272","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",135600,"no",1
+"t__1368429","Rhizobium soli DS-42","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133544,"yes",1
+"t__1384054","Arenimonas malthae CC-JY-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17446,"yes",1
+"t__1385368","Skermanella aerolata KACC 11604","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13964,"yes",1
+"t__1385517","Lysobacter daejeonensis GH1-9","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17484,"yes",1
+"t__1385519","Knoellia aerolata DSM 18566","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6271,"yes",1
+"t__1385521","Knoellia subterranea KCTC 19937","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6270,"yes",1
+"t__1387569","Caldicellulosiruptor naganoensis NA10","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16836,"no",1
+"t__1388748","Siccibacter turicensis LMG 23730","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4378,"yes",1
+"t__1388753","Campylobacter peloridis LMG 23910","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",154935,"yes",1
+"t__1403343","Deinococcus wulumuqiensis R13","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23888,"no",1
+"t__1403346","Stutzerimonas xanthomarina DSM 18231","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13135,"yes",1
+"t__1403537","Fervidicella metallireducens AeB","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23861,"yes",1
+"t__1408422","Alkaliphilus transvaalensis ATCC 700919","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",130251,"yes",1
+"t__1408428","Bilophila wadsworthia ATCC 49260","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",146880,"yes",1
+"t__1408442","Helicobacter pametensis ATCC 51478","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24100,"yes",1
+"t__1410644","Bifidobacterium adolescentis DSM 20087","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1684,"no",1
+"t__1410646","Bifidobacterium merycicum DSM 6492","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1726,"yes",1
+"t__1410648","Bifidobacterium thermophilum DSM 20212","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1722,"no",1
+"t__1415780","Algiphilus aromaticivorans DG1253","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18152,"yes",1
+"t__1423715","Levilactobacillus acidifarinae DSM 19394","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6661,"yes",1
+"t__1423716","Ligilactobacillus acidipiscis DSM 15836","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6606,"yes",1
+"t__1423717","Lactobacillus acidophilus DSM 20079 = JCM 1132 = NBRC 13951 = CIP 76.13","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6404,"yes",1
+"t__1423720","Companilactobacillus alimentarius DSM 20249","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6410,"yes",1
+"t__1423725","Liquorilactobacillus aquaticus DSM 21051","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6691,"yes",1
+"t__1423735","Lapidilactobacillus concavus DSM 17758","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6636,"yes",1
+"t__1423749","Limosilactobacillus gastricus DSM 16045","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6617,"yes",1
+"t__1423788","Companilactobacillus bobalius DSM 19674","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6579,"no",1
+"t__1423789","Lactiplantibacillus paraplantarum DSM 10667","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6569,"yes",1
+"t__1423794","Limosilactobacillus pontis DSM 8475","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6562,"yes",1
+"t__1423800","Fructilactobacillus sanfranciscensis DSM 20451","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6519,"yes",1
+"t__1423805","Levilactobacillus spicheri DSM 15429","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6595,"yes",1
+"t__1423809","Lactobacillus taiwanensis DSM 21401","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6690,"yes",1
+"t__1423828","Lactobacillus kefiranofaciens subsp. kefirgranum DSM 10550 = JCM 8572","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6566,"yes",1
+"t__1432656","Thermococcus guaymasensis DSM 11113","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16875,"yes",1
+"t__1434111","Methanosarcina lacustris Z-7289","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7129,"no",1
+"t__1434119","Methanosarcina siciliae HI350","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7084,"no",1
+"t__1437601","Bifidobacterium cuniculi DSM 20435","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1701,"yes",1
+"t__1437607","Bifidobacterium saguini DSM 23967","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1752,"yes",1
+"t__1437609","Bifidobacterium callitrichos DSM 23973","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1754,"yes",1
+"t__1437612","Bifidobacterium adolescentis JCM 15918","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1748,"no",1
+"t__1437824","Castellaniella defragrans 65Phen","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",344,"no",1
+"t__1437875","Corynebacterium frankenforstense DSM 45800","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23876,"yes",1
+"t__1443111","Sulfitobacter guttiformis KCTC 32187","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13799,"yes",1
+"t__1449340","Carnobacterium jeotgali MS3","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2271,"yes",1
+"t__1449353","Phaeacidiphilus oryzae TH49","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14879,"yes",1
+"t__1451189","Corynebacterium falsenii DSM 44353","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3180,"yes",1
+"t__1453497","Kosmotoga arenicorallina S304","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17072,"yes",1
+"t__1454373","Actibacterium mucosum KCTC 23349","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24522,"yes",1
+"t__156889","Magnetococcus marinus MC-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133811,"yes",1
+"t__177439","Desulfotalea psychrophila LSv54","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4030,"yes",1
+"t__190192","Methanopyrus kandleri AV19","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7044,"yes",1
+"t__224911","Bradyrhizobium diazoefficiens USDA 110","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133983,"yes",1
+"t__225937","Marinobacter adhaerens HP15","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",493,"yes",1
+"t__243090","Rhodopirellula baltica SH 1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11942,"yes",1
+"t__246201","Streptococcus mitis NCTC 12261","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14734,"yes",1
+"t__252305","Pseudooceanicola batsensis HTCC2597","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13687,"yes",1
+"t__269796","Rhodospirillum rubrum ATCC 11170","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14005,"yes",1
+"t__272559","Bacteroides fragilis NCTC 9343","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1585,"yes",1
+"t__272831","Neisseria meningitidis FAM18","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10474,"no",1
+"t__272844","Pyrococcus abyssi GE5","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16859,"no",1
+"t__289376","Thermodesulfovibrio yellowstonii DSM 11347","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10537,"yes",1
+"t__289377","Thermodesulfobacterium commune DSM 2178","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16891,"yes",1
+"t__304371","Methanocella paludicola SANAE","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17667,"yes",1
+"t__309798","Coprothermobacter proteolyticus DSM 5265","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16899,"yes",1
+"t__314285","Congregibacter litoralis KT71","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17910,"yes",1
+"t__323259","Methanospirillum hungatei JF-1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7132,"yes",1
+"t__324831","Lactobacillus gasseri ATCC 33323 = JCM 1131","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6466,"yes",1
+"t__338963","Syntrophotalea carbinolica DSM 2380","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4218,"yes",1
+"t__340100","Bordetella petrii DSM 12804","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",382,"yes",1
+"t__350688","Alkaliphilus oremlandii OhILAs","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2863,"yes",1
+"t__351160","Methanocella arvoryzae MRE50","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17668,"yes",1
+"t__351627","Caldicellulosiruptor saccharolyticus DSM 8903","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18025,"yes",1
+"t__354245","Spongiispira norvegica DSM 17749","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17909,"yes",1
+"t__357804","Psychromonas ingrahamii 37","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13519,"yes",1
+"t__383372","Roseiflexus castenholzii DSM 13941","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2416,"yes",1
+"t__390333","Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842 = JCM 1002","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6449,"yes",1
+"t__391904","Bifidobacterium longum subsp. infantis ATCC 15697 = JCM 1222 = DSM 20088","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1743,"yes",1
+"t__396588","Thioalkalivibrio sulfidiphilus HL-EbGr7","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133741,"yes",1
+"t__398514","Bifidobacterium bifidum JCM 1254","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1691,"no",1
+"t__398515","Bifidobacterium bifidum DSM 20215","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1690,"no",1
+"t__402881","Parvibaculum lavamentivorans DS-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13867,"yes",1
+"t__411461","Dorea formicigenerans ATCC 27755","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6354,"yes",1
+"t__411466","Schaalia odontolytica ATCC 17982","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",156,"no",1
+"t__411467","Pseudoflavonifractor capillosus ATCC 29799","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18083,"yes",1
+"t__411468","[Clostridium] scindens ATCC 35704","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2748,"yes",1
+"t__411469","Anaerobutyricum hallii DSM 3353","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5428,"yes",1
+"t__411472","[Clostridium] symbiosum ATCC 14940","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2721,"yes",1
+"t__411490","Anaerostipes caccae L1-92","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6339,"yes",1
+"t__416591","Pseudothermotoga lettingae TMO","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17070,"yes",1
+"t__419665","Methanococcus aeolicus Nankai-3","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7001,"yes",1
+"t__421052","Acinetobacter rudis CIP 110305","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8147,"yes",1
+"t__429009","Ammonifex degensii KC4","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16789,"yes",1
+"t__431943","Clostridium kluyveri DSM 555","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2606,"yes",1
+"t__431944","Magnetospirillum gryphiswaldense MSR-1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13944,"yes",1
+"t__435590","Phocaeicola vulgatus ATCC 8482","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1601,"yes",1
+"t__435591","Parabacteroides distasonis ATCC 8503","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12497,"yes",1
+"t__441620","Methylorubrum populi BJ001","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133659,"yes",1
+"t__443152","Marinobacter algicola DG893","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",482,"yes",1
+"t__446466","Cellulomonas flavigena DSM 20109","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2354,"yes",1
+"t__451638","Roseburia faecis M72/1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6368,"yes",1
+"t__452637","Opitutus terrae PB90-1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11301,"yes",1
+"t__456442","Methanoregula boonei 6A8","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17856,"yes",1
+"t__457423","Actinoplanes teichomyceticus ATCC 31121","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7818,"yes",1
+"t__465515","Micrococcus luteus NCTC 2665","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7673,"yes",1
+"t__469378","Cryptobacterium curtum DSM 15641","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3053,"yes",1
+"t__469381","Dethiosulfovibrio peptidovorans DSM 11002","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17770,"yes",1
+"t__469617","Fusobacterium ulcerans ATCC 49185","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5773,"yes",1
+"t__471856","Jonesia denitrificans DSM 20603","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6314,"yes",1
+"t__479430","Actinospica robiniae DSM 44927","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17635,"yes",1
+"t__479432","Streptosporangium roseum DSM 43021","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16589,"yes",1
+"t__483214","Methanobrevibacter smithii DSM 2375","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6965,"no",1
+"t__483215","Bacteroides finegoldii DSM 17565","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1610,"yes",1
+"t__483216","Bacteroides eggerthii DSM 20697","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1583,"yes",1
+"t__483217","Phocaeicola dorei DSM 17855","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1612,"yes",1
+"t__484018","Phocaeicola plebeius DSM 17135","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1607,"yes",1
+"t__485913","Ktedonobacter racemifer DSM 44963","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17649,"yes",1
+"t__485916","Desulfofarcimen acetoxidans DSM 771","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11789,"yes",1
+"t__497964","Chthoniobacter flavus Ellin428","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24814,"yes",1
+"t__500632","[Clostridium] nexile DSM 1787","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2619,"yes",1
+"t__504474","Corynebacterium urealyticum DSM 7109","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3148,"yes",1
+"t__521002","Methanobrevibacter smithii DSM 2374","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6964,"no",1
+"t__521011","Methanosphaerula palustris E1-9c","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17855,"yes",1
+"t__521393","Actinomyces timonensis DSM 23838","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",193,"yes",1
+"t__523794","Leptotrichia buccalis C-1013-b","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17860,"yes",1
+"t__523849","Thermococcus litoralis DSM 5473","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16862,"yes",1
+"t__523851","Thermococcus peptonophilus OG-1 = JCM 9653","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16868,"yes",1
+"t__525247","Aerococcus christensenii DSM 15819 = CCUG 28831","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",226,"yes",1
+"t__525254","Anaerococcus lactolyticus ATCC 51172","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17971,"yes",1
+"t__525257","Chryseobacterium gleum ATCC 35910","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5667,"yes",1
+"t__525309","Limosilactobacillus antri DSM 16041","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6613,"yes",1
+"t__525903","Thermanaerovibrio acidaminovorans DSM 6589","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17780,"yes",1
+"t__526218","Sebaldella termitidis ATCC 33386","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17870,"yes",1
+"t__527000","Bacillus pseudomycoides DSM 12442","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1151,"yes",1
+"t__527002","Yersinia aldovae ATCC 35236","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5221,"yes",1
+"t__536049","Paradesulfitobacterium aromaticivorans UKTL","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11772,"yes",1
+"t__536227","Clostridium carboxidivorans P7","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2817,"yes",1
+"t__537007","Blautia hansenii DSM 20583","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18071,"yes",1
+"t__537970","Helicobacter canadensis MIT 98-5491","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",152593,"yes",1
+"t__537971","Helicobacter cinaedi CCUG 18818 = ATCC BAA-847","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6098,"yes",1
+"t__545243","Clostridium arbusti SL206","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2857,"yes",1
+"t__545695","Leadbettera azotonutricia ZAS-9","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14345,"yes",1
+"t__545697","Clostridium celatum DSM 1785","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2566,"yes",1
+"t__546271","Selenomonas sputigena ATCC 35185","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17159,"yes",1
+"t__546275","Fusobacterium periodonticum ATCC 33693","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5771,"yes",1
+"t__552535","Helicobacter pullorum NCTC 12824","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",135474,"yes",1
+"t__553174","Prevotella melaninogenica ATCC 25845","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12534,"yes",1
+"t__553481","Mycobacterium avium subsp. avium ATCC 25291","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8419,"yes",1
+"t__555079","Thermosediminibacter oceani DSM 16646","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18013,"yes",1
+"t__555088","Dethiobacter alkaliphilus AHT 1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16697,"yes",1
+"t__555779","Desulfonatronospira thiodismutans ASO3-1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4047,"yes",1
+"t__557433","Limosilactobacillus reuteri subsp. reuteri JCM 1112","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6507,"yes",1
+"t__561175","Actinomadura flavalba DSM 45200","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16999,"yes",1
+"t__563040","Sulfurimonas autotrophica DSM 16294","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6114,"yes",1
+"t__564766","Marinococcus luteus DSM 23126","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1371,"yes",1
+"t__566461","Streptomyces viridosporus ATCC 14672","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",15220,"no",1
+"t__570268","Nocardiopsis potens DSM 45234","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11237,"yes",1
+"t__572419","Mycoplasma amphoriforme A39","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134102,"yes",1
+"t__572479","Halanaerobium praevalens DSM 2228","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5861,"yes",1
+"t__573058","Peptoniphilus asaccharolyticus DSM 20463","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17996,"yes",1
+"t__573061","Clostridium cellulovorans 743B","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2568,"yes",1
+"t__573413","Sediminispirochaeta smaragdinae DSM 11293","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14329,"yes",1
+"t__573983","Moraxella porci DSM 25326","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8175,"yes",1
+"t__577650","Desulfobulbus propionicus DSM 2032","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4004,"yes",1
+"t__579137","Methanocaldococcus vulcanius M7","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6983,"yes",1
+"t__580340","Thermovirga lienii DSM 17291","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17776,"yes",1
+"t__584708","Aminomonas paucivorans DSM 12260","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17769,"yes",1
+"t__585506","Weissella paramesenteroides ATCC 33313","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6851,"yes",1
+"t__585520","Lactobacillus helveticus DSM 20075 = CGMCC 1.1877","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6471,"yes",1
+"t__585524","Lactobacillus amylolyticus DSM 11664","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6571,"yes",1
+"t__589924","Ferroglobus placidus DSM 10642","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18101,"yes",1
+"t__592029","Nonlabens dokdonensis DSW-6","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5723,"yes",1
+"t__595494","Tolumonas auensis DSM 9187","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",294,"yes",1
+"t__620914","Aquimarina agarilytica ZC1","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5596,"yes",1
+"t__632292","Caldicellulosiruptor hydrothermalis 108","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18028,"yes",1
+"t__633148","Thermosphaera aggregans DSM 11486","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4205,"yes",1
+"t__638303","Thermocrinis albus DSM 14484","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",524,"yes",1
+"t__641524","Cyclobacterium qasimii M12-11B","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133805,"yes",1
+"t__642492","Cellulosilyticum lentocellum DSM 5427","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6375,"yes",1
+"t__643562","Pseudodesulfovibrio aespoeensis Aspo-2","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4124,"yes",1
+"t__643648","Syntrophothermus lipocalidus DSM 12680","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16695,"yes",1
+"t__644295","Methanohalobium evestigatum Z-7303","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7062,"yes",1
+"t__644548","Gordonia neofelifaecis NRRL B-59395","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10623,"yes",1
+"t__644897","Cupidesulfovibrio termitidis HI1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4115,"yes",1
+"t__646529","Desulfosporosinus acidiphilus SJ4","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11781,"yes",1
+"t__647113","Methanothermococcus okinawensis IH1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7003,"yes",1
+"t__647171","Methanotorris formicicus Mc-S-70","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6988,"yes",1
+"t__649349","Leadbetterella byssophila DSM 17132","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3812,"yes",1
+"t__649755","Faecalitalea cylindroides ATCC 27803","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5423,"yes",1
+"t__651182","Desulfobacula toluolica Tol2","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3979,"yes",1
+"t__653733","Desulfurispirillum indicum S5","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2497,"yes",1
+"t__657309","Bacteroides xylanisolvens XB1A","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1626,"yes",1
+"t__662479","Haloferax mucosum ATCC BAA-1512","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24081,"yes",1
+"t__665571","Spirochaeta thermophila DSM 6192","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14322,"no",1
+"t__666681","Methylotenera versatilis 301","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",23100,"yes",1
+"t__667014","Thermodesulfatator indicus DSM 15286","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16889,"yes",1
+"t__667120","Edwardsiella anguillarum ET080813","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",131380,"yes",1
+"t__679926","Methanolacinia petrolearia DSM 11571","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7043,"yes",1
+"t__686660","Veillonella parvula ATCC 17745","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17173,"no",1
+"t__693661","Archaeoglobus veneficus SNP6","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",18098,"yes",1
+"t__693979","Bacteroides helcogenes P 36-108","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1591,"yes",1
+"t__694427","Paludibacter propionicigenes WB4","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12496,"yes",1
+"t__694436","Methanolacinia paynteri G-2000","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",7039,"yes",1
+"t__695939","Deinococcus hopiensis KR-140","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3876,"yes",1
+"t__698757","Pyrobaculum oguniense TE7","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17027,"yes",1
+"t__698758","Amphibacillus xylanus NBRC 15112","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1403,"yes",1
+"t__700015","Coriobacterium glomerans PW2","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3051,"yes",1
+"t__71421","Haemophilus influenzae Rd KW20","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11701,"no",1
+"t__717772","Thiomicrospira aerophila AL3","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11910,"yes",1
+"t__720554","Acetivibrio clariflavus DSM 19732","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2853,"yes",1
+"t__742727","Bacteroides oleiciplenus YIT 12058","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",1630,"yes",1
+"t__742742","Collinsella tanakaei YIT 12063","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3050,"yes",1
+"t__742817","Odoribacter laneus YIT 12061","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12521,"yes",1
+"t__743973","Taylorella equigenitalis ATCC 35865","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",366,"yes",1
+"t__745776","Deinococcus gobiensis I-0","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3893,"yes",1
+"t__755732","Fluviicola taffensis DSM 16823","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3249,"yes",1
+"t__756499","Desulfitobacterium dehalogenans ATCC 51507","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11762,"yes",1
+"t__758820","Aquiflexum balticum DSM 16537","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17714,"yes",1
+"t__760570","Streptococcus parasanguinis ATCC 15912","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14792,"yes",1
+"t__762968","Paraprevotella clara YIT 11840","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12569,"yes",1
+"t__765177","Desulfurococcus mucosus DSM 2162","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4198,"yes",1
+"t__765910","Marichromatium purpuratum 984","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2449,"yes",1
+"t__765911","Thiocystis violascens DSM 198","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2482,"yes",1
+"t__768672","Desulfurococcus amylolyticus DSM 16532","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4199,"no",1
+"t__796943","Oribacterium parvum ACB1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24115,"yes",1
+"t__858455","Rhodomicrobium udaipurense JA643","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",133915,"yes",1
+"t__85962","Helicobacter pylori 26695","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",150675,"no",1
+"t__868129","Prevotella bivia DSM 20514","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12525,"yes",1
+"t__872326","Lactobacillus equicursoris 66c","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24125,"no",1
+"t__875093","Streptococcus pseudoporcinus LQ 940-04","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14829,"yes",1
+"t__879212","Desulfobacter postgatei 2ac9","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3957,"yes",1
+"t__880074","Barnesiella viscericola DSM 18177","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12518,"yes",1
+"t__882085","Saccharomonospora saliphila YIM 90502","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13435,"yes",1
+"t__883111","Facklamia hominis CCUG 36813","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",138280,"yes",1
+"t__886377","Muricauda ruestringensis DSM 13258","facultatively anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5619,"yes",1
+"t__886872","Leuconostoc lactis KCTC 3773","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6814,"no",1
+"t__887324","Actinobacillus ureae ATCC 25976","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",11670,"yes",1
+"t__887325","Lachnoanaerobaculum saburreum DSM 3986","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6376,"yes",1
+"t__887327","Kingella kingae ATCC 23330","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",10461,"yes",1
+"t__887899","Mobiluncus holmesii ATCC 35242","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",209,"yes",1
+"t__888062","Dialister micraerophilus DSM 19965","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17123,"yes",1
+"t__888066","Enterococcus casseliflavus ATCC 12755","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5271,"no",1
+"t__888743","Prevotella multiformis DSM 16608","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12540,"yes",1
+"t__889205","Streptococcus pseudopneumoniae ATCC BAA-960 = CCUG 49455","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14831,"yes",1
+"t__891968","Acetomicrobium mobile DSM 13181","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17777,"yes",1
+"t__926550","Caldilinea aerophila DSM 14535 = NBRC 104270","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17632,"yes",1
+"t__926567","Thermanaerovibrio velox DSM 12556","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17781,"yes",1
+"t__927665","Parabacteroides goldsteinii DSM 19448 = WAL 12034","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12500,"yes",1
+"t__927691","Leuconostoc gelidum subsp. gelidum KCTC 3527","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6830,"yes",1
+"t__929558","Sulfurimonas gotlandica GD1","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24101,"yes",1
+"t__929713","Niabella soli DSM 19437","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17759,"yes",1
+"t__93061","Staphylococcus aureus subsp. aureus NCTC 8325","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",14451,"no",1
+"t__930944","Yersinia enterocolitica subsp. palearctica Y11","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",5217,"yes",1
+"t__933085","Legionella pneumophila subsp. pneumophila ATCC 33215","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6721,"no",1
+"t__933093","Legionella pneumophila subsp. pneumophila ATCC 43290","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6723,"no",1
+"t__935295","Leuconostoc pseudomesenteroides KCTC 3652","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",6833,"yes",1
+"t__938294","Anaerococcus pacaensis 9403502","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",24764,"yes",1
+"t__940190","Melissococcus plutonius ATCC 35311","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",130322,"yes",1
+"t__947969","Cellulomonas carbonis T26","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",2375,"yes",1
+"t__980445","Desulfoglaeba alkanexedens ALDC","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",16678,"yes",1
+"t__980518","Enterobacter mori LMG 25706","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",4384,"yes",1
+"t__981324","Acinetobacter bereziniae LMG 1003 = CIP 70.12","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",8145,"yes",1
+"t__981369","Streptacidiphilus rugosus AM-16","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",134321,"yes",1
+"t__990998","Vibrio ordalii ATCC 33509","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",17327,"yes",1
+"t__997349","Olsenella profusa DSM 13989","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",3060,"yes",1
+"t__997353","Prevotella pallens ATCC 700821","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12549,"yes",1
+"t__997355","Cutibacterium avidum ATCC 25577","anaerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",12641,"yes",1
+"t__999549","Leisingera caerulea DSM 24564","aerobic",TRUE,"BacDive","exp","always","high","logical","aerophilicity",13734,"yes",1
+"t__860575","Crocosphaera subtropica ATCC 51472","facultatively anaerobic",TRUE,"ProTraits","igc","always","medium","logical","aerophilicity",NA,NA,1
+"t__122586","Neisseria meningitidis MC58","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__159087","Dechloromonas aromatica RCB","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__170187","Streptococcus pneumoniae TIGR4","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__176299","Agrobacterium fabrum str. C58","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__186103","Streptococcus pyogenes MGAS8232","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__187420","Methanothermobacter thermautotrophicus str. Delta H","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__195102","Clostridium perfringens str. 13","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__196600","Vibrio vulnificus YJ016","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__198628","Dickeya dadantii 3937","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__199310","Escherichia coli CFT073","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__203124","Trichodesmium erythraeum IMS101","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__203267","Tropheryma whipplei str. Twist","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__204722","Brucella suis 1330","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__205913","Bifidobacterium longum DJO10A","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__205922","Pseudomonas fluorescens Pf0-1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__208963","Pseudomonas aeruginosa UCBPP-PA14","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__209261","Salmonella enterica subsp. enterica serovar Typhi str. Ty2","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__210007","Streptococcus mutans UA159","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__211110","Streptococcus agalactiae NEM316","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__211586","Shewanella oneidensis MR-1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__212042","Anaplasma phagocytophilum str. HZ","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__214092","Yersinia pestis CO92","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__216591","Burkholderia cenocepacia J2315","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__216596","Rhizobium leguminosarum bv. viciae 3841","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__218491","Pectobacterium atrosepticum SCRI1043","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__220664","Pseudomonas protegens Pf-5","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__221109","Oceanobacillus iheyensis HTE831","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__223926","Vibrio parahaemolyticus RIMD 2210633","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__224324","Aquifex aeolicus VF5","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__226186","Bacteroides thetaiotaomicron VPI-5482","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__228400","Histophilus somni 2336","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__228908","Nanoarchaeum equitans Kin4-M","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__234621","Rhodococcus erythropolis PR4","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__243160","Burkholderia mallei ATCC 23344","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__243230","Deinococcus radiodurans R1 = ATCC 13939 = DSM 20539","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__243233","Methylococcus capsulatus str. Bath","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__243276","Treponema pallidum subsp. pallidum str. Nichols","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__243277","Vibrio cholerae O1 biovar El Tor str. N16961","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__243365","Chromobacterium violaceum ATCC 12472","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__246197","Myxococcus xanthus DK 1622","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__255470","Dehalococcoides mccartyi CBDB1","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__257314","Lactobacillus johnsonii NCC 533","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__258594","Rhodopseudomonas palustris CGA009","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__261594","Bacillus anthracis str. 'Ames Ancestor'","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__262316","Mycobacterium avium subsp. paratuberculosis K-10","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__262698","Brucella abortus bv. 1 str. 9-941","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__262722","Mesomycoplasma hyopneumoniae 7448","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__264198","Cupriavidus pinatubonensis JMP134","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__266264","Cupriavidus metallidurans CH34","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__266834","Sinorhizobium meliloti 1021","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__266940","Kineococcus radiotolerans SRS30216 = ATCC BAA-149","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272558","Halalkalibacterium halodurans C-125","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272560","Burkholderia pseudomallei K96243","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272569","Haloarcula marismortui ATCC 43049","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272621","Lactobacillus acidophilus NCFM","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272623","Lactococcus lactis subsp. lactis Il1403","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272624","Legionella pneumophila subsp. pneumophila str. Philadelphia 1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272942","Rhodobacter capsulatus SB 1003","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272943","Cereibacter sphaeroides 2.4.1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__272944","Rickettsia conorii str. Malish 7","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__273057","Saccharolobus solfataricus P2","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__282459","Staphylococcus aureus subsp. aureus MSSA476","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__283165","Bartonella quintana str. Toulouse","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__283942","Idiomarina loihiensis L2TR","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__286636","Streptococcus pyogenes MGAS10394","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__2902295","Vibrio campbellii ATCC BAA-1116","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__290338","Citrobacter koseri ATCC BAA-895","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__290339","Cronobacter sakazakii ATCC BAA-894","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__290434","Borrelia garinii subsp. bavariensis PBi","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__290633","Gluconobacter oxydans 621H","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__293613","Rickettsia canadensis str. McKiel","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__295319","Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__297245","Legionella pneumophila str. Lens","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__299768","Streptococcus thermophilus CNRZ1066","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__300267","Shigella dysenteriae Sd197","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__309801","Thermomicrobium roseum DSM 5159","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__309807","Salinibacter ruber DSM 13855","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__311402","Allorhizobium ampelinum S4","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__314724","Borrelia turicatae 91E135","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__315730","Bacillus mycoides KBAB4","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__316058","Rhodopseudomonas palustris HaA2","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__316275","Aliivibrio salmonicida LFI1238","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__320372","Burkholderia pseudomallei 1710b","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__320389","Burkholderia mallei NCTC 10247","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__320483","Anaplasma marginale str. Florida","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__321967","Lacticaseibacillus paracasei ATCC 334","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__323097","Nitrobacter hamburgensis X14","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__323098","Nitrobacter winogradskyi Nb-255","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__323261","Nitrosococcus oceani ATCC 19707","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__324925","Pelodictyon phaeoclathratiforme BU-1","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__326297","Shewanella amazonensis SB2B","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__326442","Pseudoalteromonas translucida TAC125","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__329726","Acaryochloris marina MBIC11017","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__330779","Sulfolobus acidocaldarius DSM 639","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__331112","Escherichia coli HS","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__335541","Syntrophomonas wolfei subsp. wolfei str. Goettingen G311","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__336982","Mycobacterium tuberculosis F11","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__340322","Corynebacterium glutamicum R","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__343509","Sodalis glossinidius str. 'morsitans'","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__347257","Mycoplasmopsis agalactiae PG2","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__348780","Natronomonas pharaonis DSM 2160","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__349747","Yersinia pseudotuberculosis IP 31758","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__350054","Mycolicibacterium gilvum PYR-GCK","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__354242","Campylobacter jejuni subsp. jejuni 81-176","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__359787","Staphylococcus aureus subsp. aureus JH1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__360095","Bartonella bacilliformis KC583","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__360102","Yersinia pestis Antiqua","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__360104","Campylobacter concisus 13826","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__360105","Campylobacter curvus 525.92","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__364106","Escherichia coli UTI89","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__366394","Sinorhizobium medicae WSM419","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__367737","Aliarcobacter butzleri RM4018","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__369723","Salinispora tropica CNB-440","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__370553","Streptococcus pyogenes MGAS2096","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__373903","Halothermothrix orenii H 168","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__374833","Neisseria meningitidis 053442","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__378753","Kocuria rhizophila DC2201","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__380394","Acidithiobacillus ferrooxidans ATCC 53993","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__386585","Escherichia coli O157:H7 str. Sakai","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__387344","Levilactobacillus brevis ATCC 367","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__388396","Aliivibrio fischeri MJ11","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__391595","Roseobacter litoralis Och 149","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__391896","Rickettsia bellii OSU 85-389","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__393011","Francisella tularensis subsp. holarctica OSU18","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__394","Sinorhizobium fredii NGR234","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__395491","Rhizobium leguminosarum bv. trifolii WSM1325","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__395494","Gallionella capsiferriformans ES-2","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__395495","Leptothrix cholodnii SP-6","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__395963","Beijerinckia indica subsp. indica ATCC 9039","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__399549","Metallosphaera sedula DSM 5348","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__399741","Serratia proteamaculans 568","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__402626","Ralstonia pickettii 12J","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__404380","Citrifermentans bemidjiense Bem","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__405416","Acinetobacter baumannii ACICU","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__405440","Xylella fastidiosa M12","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__405532","Bacillus cereus B4264","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__406425","Burkholderia orbicola MC0-3","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__410289","Mycobacterium tuberculosis variant bovis BCG str. Pasteur 1173P2","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__410359","Pyrobaculum calidifontis JCM 11548","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__416348","Halorubrum lacusprofundi ATCC 49239","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__419610","Methylorubrum extorquens PA1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__419942","Sulfolobus islandicus Y.N.15.51","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__419947","Mycobacterium tuberculosis H37Ra","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__423212","Legionella pneumophila 2300/99 Alcoy","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__423368","Salmonella enterica subsp. enterica serovar Newport str. SL254","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__425104","Shewanella sediminis HAW-EB3","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__426368","Methanococcus maripaludis C7","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__428406","Ralstonia pickettii 12D","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__430066","Brucella abortus S19","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__434131","Neorickettsia risticii str. Illinois","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__434922","Coxiella burnetii Dugway 5J108-111","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__434924","Coxiella burnetii CbuK_Q154","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__436308","Nitrosopumilus maritimus SCM1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__436717","Acinetobacter oleivorans DR1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__439375","Brucella anthropi ATCC 49188","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__439843","Salmonella enterica subsp. enterica serovar Schwarzengrund str. CVM19633","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__439851","Salmonella enterica subsp. enterica serovar Dublin str. CT_02021853","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__440085","Methylorubrum extorquens CM4","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__441768","Acholeplasma laidlawii PG-8A","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__441771","Clostridium botulinum A str. Hall","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__441772","Clostridium botulinum F str. Langeland","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__443906","Clavibacter michiganensis subsp. michiganensis NCPPB 382","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__444158","Methanococcus maripaludis C6","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__445932","Elusimicrobium minutum Pei191","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__445985","Borreliella burgdorferi ZS7","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__452638","Polynucleobacter necessarius STIR1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__452659","Rickettsia rickettsii str. Iowa","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__452863","Pseudarthrobacter chlorophenolicus A6","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__454169","Salmonella enterica subsp. enterica serovar Heidelberg str. SL476","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__458234","Francisella tularensis subsp. holarctica FTNF002-00","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__469382","Halogeometricum borinquense DSM 11551","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__470137","Brucella suis ATCC 23445","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__471852","Thermomonospora curvata DSM 43183","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__471857","Saccharomonospora viridis DSM 43017","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__479431","Nakamurella multipartita DSM 44233","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__479435","Kribbella flavida DSM 17836","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__483179","Brucella canis ATCC 23365","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__485914","Halomicrobium mukohataei DSM 12286","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__486410","Streptococcus dysgalactiae subsp. equisimilis GGS_124","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__487213","Streptococcus pneumoniae Taiwan19F-14","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__488222","Streptococcus pneumoniae JJA","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__498761","Heliomicrobium modesticaldum Ice1","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__502801","Yersinia pseudotuberculosis PB1/+","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__509190","Caulobacter segnis ATCC 21756","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__512566","Streptococcus pneumoniae G54","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__515621","Clostridium botulinum Ba4 str. 657","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__517417","Chlorobaculum parvum NCIB 8327","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__521010","Borreliella bissettiae DN127","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__521095","Lancefieldella parvula DSM 20469","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__521674","Planctopirus limnophila DSM 3776","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__523850","Thermococcus onnurineus NA1","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__529507","Proteus mirabilis HI4320","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__536019","Mesorhizobium opportunistum WSM2075","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__536232","Clostridium botulinum A2 str. Kyoto","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__543728","Variovorax paradoxus S110","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__547559","Natrialba magadii ATCC 43099","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__548479","Mobiluncus curtisii ATCC 43063","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__550538","Salmonella enterica subsp. enterica serovar Gallinarum str. 287/91","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__553482","Streptococcus equi subsp. equi 4047","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__561231","Pectobacterium parmentieri WPP163","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__561304","Mycobacterium leprae Br4923","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__563041","Helicobacter pylori G27","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__565034","Brachyspira hyodysenteriae WA1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__565575","Ureaplasma urealyticum serovar 10 str. ATCC 33699","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__568703","Lacticaseibacillus rhamnosus GG","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__570508","Helicobacter pylori P12","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__572418","Mycobacterium tuberculosis variant africanum GM041182","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__582744","Methylovorus glucosetrophus SIP3-4","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__582899","Hyphomicrobium denitrificans ATCC 51888","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__583356","Ignisphaera aggregans DSM 17230","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__585035","Escherichia coli S88","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__585054","Escherichia fergusonii ATCC 35469","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__592021","Bacillus anthracis str. A0248","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__593588","Vibrio cholerae MJ-1236","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__595537","Variovorax paradoxus EPS","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__626418","Burkholderia glumae BGR1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__62977","Acinetobacter baylyi ADP1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__632772","Rhodococcus opacus B4","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__633145","Dehalococcoides mccartyi GT","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__633699","Lactobacillus johnsonii FI9785","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__634504","Bartonella grahamii as4aup","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__634956","Parageobacillus thermoglucosidasius C56-YS93","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__637381","Listeria monocytogenes 08-5923","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__637387","Mycoplasmopsis fermentans JER","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__645462","Clostridioides difficile CD196","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__652103","Rhodopseudomonas palustris DX-1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__653045","Streptomyces violaceusniger Tu 4113","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__679897","Helicobacter mustelae 12198","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__683837","Listeria seeligeri serovar 1/2b str. SLCC3954","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__688245","Comamonas testosteroni CNB-2","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__693978","Riemerella anatipestifer ATCC 11845 = DSM 15868","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__693982","Sinorhizobium meliloti AK83","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__701347","[Enterobacter] lignolyticus SCF1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__702459","Bifidobacterium bifidum PRL2010","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__710696","Intrasporangium calvum DSM 43043","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__712898","Pantoea vagans C9-1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__714359","Bacillus thuringiensis BMB171","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__717774","Marinomonas mediterranea MMB-1","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__743525","Thermus scotoductus SA-01","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__743718","Isoptericola variabilis 225","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__749219","Moraxella catarrhalis RH4","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__749927","Amycolatopsis mediterranei U32","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__76114","Aromatoleum aromaticum EbN1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__762051","Leuconostoc kimchii IMSNU 11154","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__762376","Achromobacter xylosoxidans A8","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__765698","Mesorhizobium ciceri biovar biserrulae WSM1271","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__767031","Prevotella denticola F0289","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__768066","Halomonas elongata DSM 2581","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__768492","Serratia plymuthica AS9","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__83332","Mycobacterium tuberculosis H37Rv","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__857087","Methylomonas methanica MC09","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__860228","Capnocytophaga canimorsus Cc5","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__866630","Haemophilus influenzae F3031","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__866768","Escherichia coli 'BL21-Gold(DE3)pLysS AG'","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__872331","Mesomycoplasma hyorhinis HUB-1","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__880447","Mycoplasma leachii PG50","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__880591","Ketogulonicigenium vulgare Y25","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__891391","Lactobacillus acidophilus 30SC","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__935198","Clostridium botulinum B str. Eklund 17B (NRP)","anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__936156","Bacillus subtilis BSn5","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__943945","Mycoplasmopsis fermentans M64","facultatively anaerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1
+"t__96563","Stutzerimonas stutzeri ATCC 17588 = LMG 11199","aerobic",TRUE,"BacMap","nas","always","low","logical","aerophilicity",NA,NA,1

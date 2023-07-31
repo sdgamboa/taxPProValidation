@@ -1,0 +1,360 @@
+"NCBI_ID","Taxon_name","Attribute","Attribute_value","Attribute_source","Evidence","Frequency","Confidence_in_curation","Attribute_type","Attribute_group","BacDive_ID","Type_strain","Score"
+"g__100175","Papillibacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__101","Flectobacillus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1013","Weeksella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1021","Beggiatoa","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__104204","Streptomonospora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1078829","Telmatobacter","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1080709","Methanomassiliicoccus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__109166","Desulfofrigus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__109168","Desulfotalea","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__109324","Pelospora","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__111142","Alishewanella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1123967","Porticoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1134403","Melioribacter","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1143004","Methyloferula","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1145345","Bauldia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__114627","Alkaliphilus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1154586","Gaiella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__115780","Desulfotignum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__117563","Granulicatella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__118004","Chrysiogenes","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__118747","Bulleidia","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__119044","Filomicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1198243","Rugosimonospora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__121820","Roseinatronobacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__121871","Haloterrigena","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1221209","Methylomarinum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1242734","Fuchsiella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__125287","Ornithinimicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1257","Peptostreptococcus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1263","Ruminococcus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1269","Micrococcus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1269048","Halorubellus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1269201","Salinarchaeum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1278221","Auraticoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__129957","Carboxydothermus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1303912","Desulfatitalea","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__13242","Rarobacter","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__133","Methylocystis","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1350","Enterococcus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__136491","Atopobacter","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1370","Marinococcus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1377992","Halovenus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1380","Atopobium","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1400058","Hwanghaeicola","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__140458","Thermacetogenium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__142577","Prauserella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1433997","Diaminobutyricimonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1434022","Naasia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1434028","Ornatilinea","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1434032","Pontimonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__145260","Methanothermobacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__146","Spirochaeta","anaerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__146","Spirochaeta","facultatively anaerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__146813","Dendrosporobacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__146936","Azonexus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1484107","Galbitalea","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1485","Clostridium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1494958","Pseudogracilibacillus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__149698","Massilia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__149711","Desulfovirga","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__150203","Blastomonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1502725","Effusibacillus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__152161","Stappia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1562","Desulfotomaculum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1562565","Pyrinomonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1565313","Methyloprofundus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__156972","Thioalkalicoccus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__156993","Reichenbachiella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__157","Treponema","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1578","Lactobacillus","aerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__1578","Lactobacillus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__157920","Cellulosimicrobium","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__158481","Hahella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__160795","Ureibacillus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__162290","Gallicola","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__162291","Planomicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1634037","Desulfoplanes","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1649284","Ercella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1649469","Methyloparacoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1649472","Natranaerobaculum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1649475","Paludibaculum","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1649478","Pelolinea","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1649503","Terrimicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1654934","Desulfoprunum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__165697","Sphingopyxis","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__165812","Sporanaerobacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1696","Brevibacterium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1699375","Natribaculum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1707","Cellulomonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__171","Leptospira","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__171413","Dolosicoccus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__173479","Gemmatimonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1738642","Pelagirhabdus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1768185","Terracidiphilus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1769738","Compostibacillus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__177399","Anaerophaga","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1775468","Silvibacterium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__178898","Carboxydocella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1792239","Caviibacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__18","Pelobacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1813","Amycolatopsis","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1829937","Longimonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1847","Pseudonocardia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1848399","Crassaminicella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1855405","Longibacter","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1855714","Anaerobium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1890291","Falcatimonas","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1897649","Pistricoccus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__191769","Marinilactibacillus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1918385","Acutalibacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1918536","Longicatena","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1918540","Muribaculum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1921569","Micropepsis","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__192992","Thermoleophilum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__194195","Alysiella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__196119","Methanotorris","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__1980514","Halodesulfurarchaeum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__198705","Lampropedia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2005","Microbispora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2005375","Alkalicoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2019","Thermomonospora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2023","Thermoactinomyces","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__202949","Thermanaeromonas","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__203522","Longispora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__204447","Skermanella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2048911","Brevitalea","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2060","Tsukamurella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2086","Anaeroplasma","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2093","Mycoplasma","aerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__2093","Mycoplasma","facultatively anaerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__209879","Allisonella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__210622","Anoxynatronum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__211469","Kineosphaera","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__212742","Morococcus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2132","Spiroplasma","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__217140","Arcicella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__218204","Garciella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2207","Methanosarcina","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2222","Methanothrix","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2225","Methanococcoides","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2237","Haloarcula","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2239","Halobacterium","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__224474","Desulfothermus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2251","Haloferax","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2260","Pyrococcus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2263","Thermococcus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2276","Pyrobaculum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,0.5
+"g__2276","Pyrobaculum","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,0.5
+"g__2282740","Desulfallas","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2282741","Desulfofundulus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2282743","Desulfohalotomaculum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__228398","Streptacidiphilus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2284","Sulfolobus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__228923","Guggenheimella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2295","Desulfobacterium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2299","Desulfosarcina","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2302","Thermoplasma","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2308","Pyrodictium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2319","Methanopyrus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2330","Halanaerobium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__234","Brucella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2351","Flexistipes","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__239934","Akkermansia","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__246876","Cryomorpha","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__252356","Maribacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__253183","Myceligenerans","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__256818","Gulosibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__264995","Anaerofustis","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__265487","Blastopirellula","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__265488","Rhodopirellula","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__265976","Serinicoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__269773","Atopococcus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2713","Aquifex","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2717","Cardiobacterium","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2733","Symbiobacterium","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2747","Carnobacterium","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__2782229","Epilithonimonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__278993","Thermincola","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__280472","Aquiflexum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__28138","Rikenella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__281472","Jiangella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__28194","Thermonema","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__28209","Chelatococcus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__28222","Desulfobacula","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__283","Comamonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__283785","Bizionia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__283810","Stackebrandtia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__286801","Segniliparus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__28884","Hydrogenovibrio","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__289201","Pontibacillus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__289244","Xylanimicrobium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__290180","Roseivirga","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__291988","Thermosediminibacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__292480","Atopostipes","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__292636","Thermoflavimicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__292691","Christiangramia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__29487","Photorhabdus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__29548","Rhodothermus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__295577","Chthoniobacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__307628","Petrimonas","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__317574","Methylothermus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__319458","Leadbetterella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__32068","Sebaldella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__32257","Kingella","aerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__32257","Kingella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__323449","Pontibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__33073","Zymobacter","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__332157","Larkinella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__332246","Halalkalicoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__337004","Microcella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__338583","Polymorphospora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__33877","Agromyces","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__33882","Microbacterium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__33981","Kineococcus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__33983","Luteococcus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__34037","Rahnella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__34102","Sphaerotilus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__349312","Krasilnikovia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__357","Agrobacterium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__35832","Bilophila","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__361607","Patulibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__363408","Nonlabens","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__365032","Aureispira","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__367298","Phycicoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__375928","Natranaerobius","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__376170","Haloplanus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__376488","Halotalea","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__37914","Dietzia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__37924","Thermocrispum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__389486","Sediminicola","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__390988","Actinocatenispora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__392733","Terriglobus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__396388","Aestuariimicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__402170","Lapillicoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__40323","Stenotrophomonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__404","Methylobacillus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__40544","Sutterella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__407","Methylobacterium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__419014","Alloscardovia","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,0.5
+"g__419014","Alloscardovia","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,0.5
+"g__42054","Chromohalobacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__423604","Elusimicrobium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__425","Methylosinus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__427753","Humibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__43356","Kutzneria","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__437755","Moryella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__44249","Paenibacillus","aerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__44249","Paenibacillus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__44262","Oxalophagus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__442869","Acanthopleuribacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__445","Legionella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__44675","Geothrix","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__44748","Sporobacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__453229","Desulfarculus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__457933","Elioraea","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__46254","Oenococcus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__46466","Halocella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__468938","Cerasicoccus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__475230","Pullulanibacillus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__475961","Longilinea","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__482144","Mechercharimyces","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__48736","Ralstonia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__49279","Gelidibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__497","Psychrobacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__501783","Cloacibacterium","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__507753","Acidiplasma","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__510701","Desulfurispora","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__52225","Mitsuokella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53244","Desulfonatronovibrio","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53246","Pseudoalteromonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53318","Desulfocapsa","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53355","Terrabacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53365","Catellatospora","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53416","Lonepinella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53457","Janibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53572","Deferribacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__53634","Acidimicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__538","Eikenella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__541","Zymomonas","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__54115","Methylosphaera","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__54293","Thermosyntropha","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__543311","Parvimonas","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__547","Enterobacter","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__551","Erwinia","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__570266","Methanocella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__57039","Malonomonas","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__574347","Modicisalibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__57493","Kocuria","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__57494","Nesterenkonia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__57665","Sulfurospirillum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__57739","Vogesella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__579","Kluyvera","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__583360","Umezawaea","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__588605","Robinsoniella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__59","Vitreoscilla","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__590","Salmonella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__59613","Skermania","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__59738","Marinilabilia","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__61170","Holdemania","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__613","Serratia","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__61653","Methylopila","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__61655","Methylorhabdus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__630723","Halarsenatibacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__63958","Demetria","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__644353","Halanaerobaculum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__65504","Virgisporangium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__65551","Meiothermus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__657","Photobacterium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__66848","Desulfonatronum","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__683756","Kinneretia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__690565","Serinibacter","aerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__690565","Serinibacter","anaerobic",TRUE,"Bergey's Manual","exp","sometimes","high","logical","aerophilicity",NA,NA,0.5
+"g__69655","Sulfurisphaera","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__69965","Macrococcus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__702","Plesiomonas","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__70411","Frateuria","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__72173","Citromicrobium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__72763","Tessaracoccus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__745153","Umboniibacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__747074","Tepidamorphus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__75683","Balneatrix","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__758601","Deinobacterium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__762296","Methylovulum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__76632","Thermobacillus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__76634","Mycetocola","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__76831","Myroides","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__77583","Craurococcus","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__79328","Chitinophaga","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__81461","Thermanaerovibrio","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__81894","Prosthecomicrobium","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__82980","Leminorella","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__83654","Leclercia","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__83867","Palaeococcus","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__84034","Propionispira","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__84036","Syntrophococcus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__84111","Eggerthella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__84162","Cryptobacterium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__84567","Pedobacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__846","Oxalobacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__85","Hyphomonas","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__863253","Marinicella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__866","Ruminobacter","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__88875","Ferribacterium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__89092","Ignavigranum","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__893","Desulfobulbus","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__89342","Desulfocella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__898","Desulfomicrobium","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__904708","Arenicella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__911113","Bryobacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__91914","Asaia","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__926359","Natronoarchaeum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__933","Thiomicrospira","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__940557","Granulicella","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__947525","Miniimonas","facultatively anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__96","Gallionella","anaerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__963","Herbaspirillum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__965","Oceanospirillum","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__97050","Ruegeria","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
+"g__99","Ancylobacter","aerobic",TRUE,"Bergey's Manual","exp","always","high","logical","aerophilicity",NA,NA,1
