@@ -1,4 +1,6 @@
 
+args <- commandArgs(trailingOnly = TRUE)
+
 library(logr)
 library(bugphyzz) # BiocManager::install('waldronlab/bugphyzz', force = TRUE)
 library(taxPPro) # BiocManager::install('sdgamboa/taxPPro', force = TRUE)
@@ -11,7 +13,7 @@ library(BiocParallel)
 library(tidyr)
 
 ## Start log
-phys_name <- 'growth temperature'
+phys_name <- args[[1]]
 logfile <- gsub(' ', '_', paste0(phys_name, "_log_file"))
 lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
 
@@ -52,7 +54,7 @@ phys <- map(phys, ~ {
         .x$Attribute_value <- TRUE
     }
     if (unique(.x$Attribute_type) == 'logical') {
-        .x <- filter(.x, Attribuje_value == TRUE)
+        .x <- filter(.x, Attribute_value == TRUE)
     }
     if ('Unit' %in% colnames(.x)) {
         ## fill empty units
