@@ -201,8 +201,11 @@ for (i in seq_along(holdout_subsets)) {
         set.seed(1234)
         size_gn <- round(length(gn_taxids) * per)
         holdout_gn_taxids <- sample(x = gn_taxids, size = size_gn, replace = FALSE)
-        holdout_subsets[[i]] <- myDF |> 
+        holdouts_df <- myDF |> 
             filter(NCBI_ID %in% holdout_gn_taxids)
+        if (!nrow(holdouts_df)) 
+            next
+        holdout_subsets[[i]] <- holdouts_df
         names(holdout_subsets)[i] <- 'holdout_gn'
         datName <- gsub(' ', '_', paste0(phys_name, '_prediction_gn'))
         data_ready[[datName]] <- myDF |> 
@@ -214,8 +217,11 @@ for (i in seq_along(holdout_subsets)) {
         set.seed(1234)
         size_sp <- round(length(sp_taxids) * per)
         holdout_sp_taxids <- sample(x = sp_taxids, size = size_sp, replace = FALSE)
-        holdout_subsets[[i]] <- myDF |> 
+        holdouts_df <- myDF |> 
             filter(NCBI_ID %in% holdout_sp_taxids)
+        if (!nrow(holdouts_df)) 
+            next
+        holdout_subsets[[i]] <- holdouts_df
         names(holdout_subsets)[i] <- 'holdout_sp'
         datName <- gsub(' ', '_', paste0(phys_name, '_prediction_sp'))
         data_ready[['phys_prediction_sp']] <- myDF |> 
@@ -227,21 +233,19 @@ for (i in seq_along(holdout_subsets)) {
         set.seed(1234)
         size_st <- round(length(st_taxids) * per)
         holdout_st_taxids <- sample(x = st_taxids, size = size_st, replace = FALSE)
-        holdout_subsets[[i]] <- myDF |> 
+        holdouts_df <- myDF |> 
             filter(NCBI_ID %in% holdout_st_taxids)
+        if (!nrow(holdouts_df)) 
+            next
+        holdout_subsets[[i]] <- holdouts_df
         names(holdout_subsets)[i] <- 'holdout_st'
         datName <- gsub(' ', '_', paste0(phys_name, '_prediction_st'))
         data_ready[[datName]] <- myDF |> 
             filter(!NCBI_ID %in% holdout_st_taxids)
     }
 }
+holdout_subsets <- discard(holdout_subsets, is.null)
 names(holdout_subsets) <- gsub(' ', '_', paste0(phys_name, '_', names(holdout_subsets)))
-
-positions <- which(map_lgl(holdout_subsets, ~ !nrow(.x)))
-names(holdout_subsets)[positions]
-
-
-
 for (i in seq_along(holdout_subsets)) {
     write.table(
         x = holdout_subsets[[i]],
