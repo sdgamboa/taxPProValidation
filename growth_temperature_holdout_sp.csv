@@ -1,0 +1,862 @@
+"NCBI_ID","Taxon_name","Attribute","Attribute_source","Evidence","Frequency","Confidence_in_curation","Unit","Attribute_type","Attribute_group","BacDive_ID","Type_strain","Attribute_range","Attribute_value","Score"
+"s__1018","Capnocytophaga ochracea","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1030271","Halomonas sp. YCSA31-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158123,"no","(>=25, <45)",TRUE,1
+"s__1033738","Kurthia sp. Dielmo","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160806,"no","(>=25, <45)",TRUE,1
+"s__103690","Nostoc sp. PCC 7120 = FACHB-418","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158218,"no","(<24.9)",TRUE,1
+"s__1049","Allochromatium vinosum","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__1053","Halorhodospira halophila","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__1054","Ectothiorhodospira shaposhnikovii","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__105972","Methylosarcina fibrata","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__107635","Methylosinus sp. LW3","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158080,"no","(>=25, <45)",TRUE,1
+"s__107636","Methylosinus sp. PW1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158083,"no","(>=25, <45)",TRUE,1
+"s__107637","Methylomonas sp. LW13","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158224,"no","(>=25, <45)",TRUE,1
+"s__1080226","Algibacter sp. sw096","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140434,"no","(>=25, <45)",TRUE,1
+"s__1081606","Streptomyces sp. MW-8","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160258,"no","(>=25, <45)",TRUE,1
+"s__1081619","Bacillus sp. B31C","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159941,"no","(>=25, <45)",TRUE,1
+"s__1081620","Streptomyces sp. G12","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",16021,"no","(>=25, <45)",TRUE,1
+"s__1092","Chlorobium limicola","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1095012","Clostridium sp. Hs50","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160976,"no","(>=25, <45)",TRUE,1
+"s__1097366","Flavobacterium sp. EC4","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",157660,"no","(>=25, <45)",TRUE,1
+"s__1113551","Rhodococcus sp. JCM 1966","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162581,"no","(>=25, <45)",TRUE,1
+"s__1118100","Paenibacillus sp. 33","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",11524,"no","(>=25, <45)",TRUE,1
+"s__1118453","Pseudomonas sp. JCM 5406","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165189,"no","(>=25, <45)",TRUE,1
+"s__1118455","Pseudomonas sp. JCM 5439","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165220,"no","(>=25, <45)",TRUE,1
+"s__1118463","Pseudomonas sp. JCM 5482","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165257,"no","(>=25, <45)",TRUE,1
+"s__1124745","Micromonospora sp. EL055","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160109,"yes","(>=25, <45)",TRUE,1
+"s__1128614","Bacillus sp. JCM 10530","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160982,"no","(>=25, <45)",TRUE,1
+"s__1128617","Pseudomonas sp. JCM 10534","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160985,"no","(>=25, <45)",TRUE,1
+"s__1129798","Pseudomonas sp. JCM 5497","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165264,"no","(>=25, <45)",TRUE,1
+"s__1129799","Pseudomonas sp. JCM 5498","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165265,"no","(>=25, <45)",TRUE,1
+"s__1134563","Prevotella sp. JCM 6348","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165394,"no","(>=25, <45)",TRUE,1
+"s__1142041","Rhodopirellula sp. 5IL30","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140061,"no","(>=25, <45)",TRUE,1
+"s__1143","Synechocystis sp.","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__1147","Synechocystis sp. PCC 6714","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1158988","Bacillus sp. G2-8","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159929,"no","(>=25, <45)",TRUE,1
+"s__1158991","Bacillus sp. H1-27","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159942,"no","(>=25, <45)",TRUE,1
+"s__1179","Desmonostoc muscorum","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__118323","Oscillatoria acuminata","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1183377","Pyrococcus sp. ST04","hyperthermophile (>61 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139929,"no","(>61)",TRUE,1
+"s__1184","Leptolyngbya boryana","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1192161","Paenibacillus sp. cmc22","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160442,"no","(>=25, <45)",TRUE,1
+"s__1198247","Micromonospora sp. 2806702","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160108,"no","(>=25, <45)",TRUE,1
+"s__1206642","Actinophytocola sp. I10A-01801","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159603,"no","(>=25, <45)",TRUE,1
+"s__1206644","Asanoa sp. I10A-01877","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159536,"no","(>=25, <45)",TRUE,1
+"s__1206654","Labedella sp. I10A-02267","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160203,"no","(>=25, <45)",TRUE,1
+"s__1208600","Bacillus sp. FJAT-14578","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159944,"no","(>=25, <45)",TRUE,1
+"s__1214227","Halorhabdus sp. S21","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140427,"no","(>=25, <45)",TRUE,1
+"s__1220703","Paenibacillus sp. SBD3-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160453,"no","(>=25, <45)",TRUE,1
+"s__123649","Thauera sp. O","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130651,"no","(>=25, <45)",TRUE,1
+"s__1260453","Bacillus sp. P-8","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130874,"no","(>=25, <45)",TRUE,1
+"s__1265","Ruminococcus flavefaciens","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1268284","Methylobacterium sp. Fc1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",157769,"no","(>=25, <45)",TRUE,1
+"s__1268973","Streptomyces sp. MK-19","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15762,"no","(>=25, <45)",TRUE,1
+"s__1270","Micrococcus luteus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1275","Kocuria rosea","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__127880","Bacillus sp. 13","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",861,"no","(>=25, <45)",TRUE,1
+"s__127881","Bacillus sp. 135","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",859,"no","(>=25, <45)",TRUE,1
+"s__127885","Bacillus sp. 27-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",860,"no","(>=25, <45)",TRUE,1
+"s__1295125","Thermococcus sp. JCM 11816","hyperthermophile (>61 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",161191,"no","(>61)",TRUE,1
+"s__1298599","Vibrio sp. JCM 18904","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162331,"no","(>=25, <45)",TRUE,1
+"s__1298611","Rhodococcus sp. JCM 9791","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",166062,"no","(>=25, <45)",TRUE,1
+"s__1298613","Cellulomonas sp. JCM 9808","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",166078,"no","(>=25, <45)",TRUE,1
+"s__1301085","Paenibacillus sp. JCM 18996","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162361,"no","(>=25, <45)",TRUE,1
+"s__1302248","Streptomyces sp. JCM 17819","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162115,"no","(>=25, <45)",TRUE,1
+"s__1325335","Anoxybacillus suryakundensis","thermophile (>=46, <60 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130160,"no","(>=46, <60)",TRUE,1
+"s__1334018","Geobacillus sp. 95","thermophile (>=46, <60 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158021,"no","(>=46, <60)",TRUE,1
+"s__1335","Streptococcus equinus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1335060","Rhizobium sp. Q54","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159039,"no","(>=25, <45)",TRUE,1
+"s__1336005","Acinetobacter sp. 7","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130447,"no","(>=25, <45)",TRUE,1
+"s__134","Methylocystis parvus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__135104","Dolichospermum spiroides","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1354277","Virgibacillus sp. CM-4","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159459,"no","(>=25, <45)",TRUE,1
+"s__135626","Shewanella olleyana","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__137816","Nodularia sphaerocarpa","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1381123","Aliihoeflea sp. 2WW","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139750,"no","(>=25, <45)",TRUE,1
+"s__1384035","Actinopolyspora sp. G5109","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160603,"no","(>=25, <45)",TRUE,1
+"s__1384039","Streptomyces sp. SM3513","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160263,"no","(>=25, <45)",TRUE,1
+"s__1389192","Cupriavidus sp. USMAHM13","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158071,"no","(>=25, <45)",TRUE,1
+"s__1395","[Bacillus] caldotenax","hyperthermophile (>61 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__140057","Roseospira marina","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",13960,"yes","(>=25, <45)",TRUE,1
+"s__141949","Thermomonas haemolytica","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,0.5
+"s__141949","Thermomonas haemolytica","thermophile (>=46, <60 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,0.5
+"s__1423","Bacillus subtilis","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1424423","Streptomyces sp. F","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15659,"no","(>=25, <45)",TRUE,1
+"s__1435607","Rhizobium sp. Khangiran2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160167,"no","(>=25, <45)",TRUE,1
+"s__1450150","Micromonospora sp. S3802","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160117,"no","(>=25, <45)",TRUE,1
+"s__1453586","Alistipes sp. CC-5826-wt-bac","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131513,"no","(>=25, <45)",TRUE,1
+"s__1454234","Tardiphaga sp. Co64-2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130223,"no","(>=25, <45)",TRUE,1
+"s__1460640","Bacillus sp. JCM 19046","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162379,"no","(>=25, <45)",TRUE,1
+"s__1460646","Nesterenkonia sp. JCM 19054","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162387,"no","(>=25, <45)",TRUE,1
+"s__1460650","Bacillus sp. JCM 19056","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162389,"no","(>=25, <45)",TRUE,1
+"s__1460652","Bacillus sp. JCM 19058","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162391,"no","(>=25, <45)",TRUE,1
+"s__1464546","Acidiphilium sp. JA12-A1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158200,"no","(>=25, <45)",TRUE,1
+"s__1465505","Lactobacillus sp. JCM 7727","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165582,"no","(>=25, <45)",TRUE,1
+"s__1465507","Lactobacillus sp. JCM 7733","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165587,"no","(>=25, <45)",TRUE,1
+"s__1465515","Lactobacillus sp. JCM 8684","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165920,"no","(>=25, <45)",TRUE,1
+"s__1465520","Lactobacillus sp. JCM 8691","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165926,"no","(>=25, <45)",TRUE,1
+"s__1465525","Lactobacillus sp. JCM 8681","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165917,"no","(>=25, <45)",TRUE,1
+"s__1465529","Lactobacillus sp. JCM 8693","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165928,"no","(>=25, <45)",TRUE,1
+"s__1465531","Lactobacillus sp. JCM 8696","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165931,"no","(>=25, <45)",TRUE,1
+"s__146919","Salinibacter ruber","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__146939","Azospira oryzae","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",13892,"yes","(>=25, <45)",TRUE,1
+"s__1476549","Streptomyces sp. S601","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160269,"no","(>=25, <45)",TRUE,1
+"s__1481924","Vibrio sp. JCM 19234","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162438,"no","(>=25, <45)",TRUE,1
+"s__1481933","Vibrio sp. JCM 19064","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162397,"no","(>=25, <45)",TRUE,1
+"s__1483603","Streptomyces sp. LL03","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159145,"no","(>=25, <45)",TRUE,1
+"s__1500473","Nocardiopsis sp. H249","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",24257,"no","(>=25, <45)",TRUE,1
+"s__1504709","Prauserella sp. PE36","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158466,"no","(>=25, <45)",TRUE,1
+"s__1547166","Halomonas sp. BH047","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158124,"no","(>=25, <45)",TRUE,1
+"s__156","Treponema zuelzerae","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__156838","Streptomyces sp. ES16","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15970,"no","(>=25, <45)",TRUE,1
+"s__1570098","Blastococcus sp. TPS357","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159422,"no","(>=25, <45)",TRUE,1
+"s__159632","Bacillus sp. G1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159970,"no","(>=25, <45)",TRUE,1
+"s__1609974","Clostridium sp. FS23","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",2683,"no","(>=25, <45)",TRUE,1
+"s__161719","Pseudoalteromonas sp. 05","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139878,"no","(>=25, <45)",TRUE,1
+"s__1639","Listeria monocytogenes","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,0.5
+"s__1639","Listeria monocytogenes","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,0.5
+"s__165800","Anabaenopsis sp. PCC 9215","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1664670","Pseudomonas sp. AZ10","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",157807,"no","(>=25, <45)",TRUE,1
+"s__1667025","Yersinia sp. JCM 1678","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",161869,"no","(>=25, <45)",TRUE,1
+"s__1667357","Clostridium sp. C8","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",2692,"no","(>=25, <45)",TRUE,1
+"s__1676743","Nonomuraea sp. ATC11","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159415,"no","(>=25, <45)",TRUE,1
+"s__1676748","Nonomuraea sp. MTCD31","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159416,"no","(>=25, <45)",TRUE,1
+"s__1679168","Bacillus sp. FJAT-27231","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159977,"no","(>=25, <45)",TRUE,1
+"s__1701856","Streptomyces sp. HG29","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160266,"no","(>=25, <45)",TRUE,1
+"s__1707394","Halomonas sp. JCM 11460","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",161165,"no","(>=25, <45)",TRUE,1
+"s__171121","Sulfurihydrogenibium subterraneum","hyperthermophile (>61 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__1735449","Promicromonospora sp. ED37","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159310,"no","(>=25, <45)",TRUE,1
+"s__1735453","Streptomyces sp. NTH33","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159151,"no","(>=25, <45)",TRUE,1
+"s__1735679","Sphingomonas sp. Leaf208","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131971,"no","(>=25, <45)",TRUE,1
+"s__1735683","Sphingomonas sp. Leaf17","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131942,"no","(>=25, <45)",TRUE,1
+"s__1735691","Sphingomonas sp. Leaf226","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131976,"no","(>=25, <45)",TRUE,1
+"s__1735692","Sphingomonas sp. Leaf25","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131963,"no","(>=25, <45)",TRUE,1
+"s__1736210","Rhodococcus sp. Leaf7","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131921,"no","(>=25, <45)",TRUE,1
+"s__1736216","Sphingomonas sp. Leaf34","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131951,"no","(>=25, <45)",TRUE,1
+"s__1736218","Pedobacter sp. Leaf41","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131865,"no","(>=25, <45)",TRUE,1
+"s__1736230","Sphingomonas sp. Leaf67","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131962,"no","(>=25, <45)",TRUE,1
+"s__1736231","Rhizobium sp. Leaf68","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132816,"no","(>=25, <45)",TRUE,1
+"s__1736238","Flavobacterium sp. Leaf82","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131721,"no","(>=25, <45)",TRUE,1
+"s__1736241","Methylobacterium sp. Leaf85","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131772,"no","(>=25, <45)",TRUE,1
+"s__1736243","Methylobacterium sp. Leaf87","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131774,"no","(>=25, <45)",TRUE,1
+"s__1736247","Methylobacterium sp. Leaf91","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131768,"no","(>=25, <45)",TRUE,1
+"s__1736252","Methylobacterium sp. Leaf100","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131767,"no","(>=25, <45)",TRUE,1
+"s__1736254","Methylobacterium sp. Leaf104","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131763,"no","(>=25, <45)",TRUE,1
+"s__1736256","Methylobacterium sp. Leaf108","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131766,"no","(>=25, <45)",TRUE,1
+"s__1736257","Methylobacterium sp. Leaf111","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131788,"no","(>=25, <45)",TRUE,1
+"s__1736258","Methylobacterium sp. Leaf112","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131787,"no","(>=25, <45)",TRUE,1
+"s__1736262","Methylobacterium sp. Leaf121","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131777,"no","(>=25, <45)",TRUE,1
+"s__1736263","Methylobacterium sp. Leaf122","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131780,"no","(>=25, <45)",TRUE,1
+"s__1736264","Methylobacterium sp. Leaf123","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131776,"no","(>=25, <45)",TRUE,1
+"s__1736265","Methylobacterium sp. Leaf125","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131785,"no","(>=25, <45)",TRUE,1
+"s__1736266","Duganella sp. Leaf126","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131708,"no","(>=25, <45)",TRUE,1
+"s__1736267","Pseudomonas sp. Leaf127","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131906,"no","(>=25, <45)",TRUE,1
+"s__1736269","Acinetobacter sp. Leaf130","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132689,"no","(>=25, <45)",TRUE,1
+"s__1736273","Arthrobacter sp. Leaf141","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131609,"no","(>=25, <45)",TRUE,1
+"s__1736285","Frigoribacterium sp. Leaf172","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132071,"no","(>=25, <45)",TRUE,1
+"s__1736290","Brevibacillus sp. Leaf182","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131659,"no","(>=25, <45)",TRUE,1
+"s__1736291","Curtobacterium sp. Leaf183","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131692,"no","(>=25, <45)",TRUE,1
+"s__1736296","Acidovorax sp. Leaf191","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131590,"no","(>=25, <45)",TRUE,1
+"s__1736300","Rhodococcus sp. Leaf225","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131923,"no","(>=25, <45)",TRUE,1
+"s__1736301","Sphingomonas sp. Leaf231","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131960,"no","(>=25, <45)",TRUE,1
+"s__1736302","Rhodococcus sp. Leaf233","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131922,"no","(>=25, <45)",TRUE,1
+"s__1736303","Arthrobacter sp. Leaf234","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131611,"no","(>=25, <45)",TRUE,1
+"s__1736304","Sphingomonas sp. Leaf242","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131961,"no","(>=25, <45)",TRUE,1
+"s__1736305","Agreia sp. Leaf244","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132298,"no","(>=25, <45)",TRUE,1
+"s__1736307","Rhodococcus sp. Leaf247","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131918,"no","(>=25, <45)",TRUE,1
+"s__1736311","Curtobacterium sp. Leaf261","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131691,"no","(>=25, <45)",TRUE,1
+"s__1736314","Leifsonia sp. Leaf264","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131738,"no","(>=25, <45)",TRUE,1
+"s__1736315","Pseudorhodoferax sp. Leaf265","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132309,"no","(>=25, <45)",TRUE,1
+"s__1736317","Aeromicrobium sp. Leaf272","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131598,"no","(>=25, <45)",TRUE,1
+"s__1736319","Rhodococcus sp. Leaf278","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131919,"no","(>=25, <45)",TRUE,1
+"s__1736321","Agreia sp. Leaf283","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132299,"no","(>=25, <45)",TRUE,1
+"s__1736325","Aeromicrobium sp. Leaf291","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131604,"no","(>=25, <45)",TRUE,1
+"s__1736326","Rathayibacter sp. Leaf294","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132304,"no","(>=25, <45)",TRUE,1
+"s__1736327","Rathayibacter sp. Leaf296","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132305,"no","(>=25, <45)",TRUE,1
+"s__1736331","Nocardioides sp. Leaf307","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131842,"no","(>=25, <45)",TRUE,1
+"s__1736332","Rhizobium sp. Leaf311","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132804,"no","(>=25, <45)",TRUE,1
+"s__1736333","Plantibacter sp. Leaf314","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131874,"no","(>=25, <45)",TRUE,1
+"s__1736339","Cellulomonas sp. Leaf334","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131681,"no","(>=25, <45)",TRUE,1
+"s__1736346","Bosea sp. Leaf344","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132078,"no","(>=25, <45)",TRUE,1
+"s__1736348","Microbacterium sp. Leaf351","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131809,"no","(>=25, <45)",TRUE,1
+"s__1736354","Geodermatophilus sp. Leaf369","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131727,"no","(>=25, <45)",TRUE,1
+"s__1736355","Rhizobium sp. Leaf371","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132810,"no","(>=25, <45)",TRUE,1
+"s__1736358","Rhizobium sp. Leaf384","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132808,"no","(>=25, <45)",TRUE,1
+"s__1736359","Rhizobium sp. Leaf386","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132807,"no","(>=25, <45)",TRUE,1
+"s__1736362","Cellulomonas sp. Leaf395","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131682,"no","(>=25, <45)",TRUE,1
+"s__1736363","Bradyrhizobium sp. Leaf396","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131657,"no","(>=25, <45)",TRUE,1
+"s__1736364","Methylobacterium sp. Leaf399","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139760,"no","(>=25, <45)",TRUE,1
+"s__1736372","Frigoribacterium sp. Leaf415","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132072,"no","(>=25, <45)",TRUE,1
+"s__1736376","Pseudomonas sp. Leaf434","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131901,"no","(>=25, <45)",TRUE,1
+"s__1736378","Aurantimonas sp. Leaf443","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132140,"no","(>=25, <45)",TRUE,1
+"s__1736387","Methylobacterium sp. Leaf469","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131782,"no","(>=25, <45)",TRUE,1
+"s__1736405","Bacillus sp. Soil768D1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131651,"no","(>=25, <45)",TRUE,1
+"s__1736421","Phycicoccus sp. Root101","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132324,"no","(>=25, <45)",TRUE,1
+"s__1736423","Devosia sp. Root105","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131694,"no","(>=25, <45)",TRUE,1
+"s__1736424","Kitasatospora sp. Root107","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132080,"no","(>=25, <45)",TRUE,1
+"s__1736431","Nocardioides sp. Root122","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131833,"no","(>=25, <45)",TRUE,1
+"s__1736436","Afipia sp. Root123D2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132894,"no","(>=25, <45)",TRUE,1
+"s__1736437","Rhizobium sp. Root1240","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132792,"no","(>=25, <45)",TRUE,1
+"s__1736438","Ensifer sp. Root1252","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132232,"no","(>=25, <45)",TRUE,1
+"s__1736442","Phenylobacterium sp. Root1277","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132088,"no","(>=25, <45)",TRUE,1
+"s__1736443","Brevundimonas sp. Root1279","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131662,"no","(>=25, <45)",TRUE,1
+"s__1736447","Sphingomonas sp. Root1294","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131938,"no","(>=25, <45)",TRUE,1
+"s__1736452","Streptomyces sp. Root1310","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131992,"no","(>=25, <45)",TRUE,1
+"s__1736454","Streptomyces sp. Root1319","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131993,"no","(>=25, <45)",TRUE,1
+"s__1736456","Rhizobium sp. Root1334","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132793,"no","(>=25, <45)",TRUE,1
+"s__1736460","Nocardioides sp. Root140","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131835,"no","(>=25, <45)",TRUE,1
+"s__1736465","Caulobacter sp. Root1455","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131667,"no","(>=25, <45)",TRUE,1
+"s__1736466","Pseudolabrys sp. Root1462","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132330,"no","(>=25, <45)",TRUE,1
+"s__1736467","Agromyces sp. Root1464","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132301,"no","(>=25, <45)",TRUE,1
+"s__1736469","Mesorhizobium sp. Root1471","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132759,"no","(>=25, <45)",TRUE,1
+"s__1736471","Duganella sp. Root1480D1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131704,"no","(>=25, <45)",TRUE,1
+"s__1736475","Nocardioides sp. Root151","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131836,"no","(>=25, <45)",TRUE,1
+"s__1736481","Mesorhizobium sp. Root172","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132760,"no","(>=25, <45)",TRUE,1
+"s__1736483","Microbacterium sp. Root180","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131795,"no","(>=25, <45)",TRUE,1
+"s__1736484","Terrabacter sp. Root181","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132004,"no","(>=25, <45)",TRUE,1
+"s__1736488","Nocardioides sp. Root190","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131837,"no","(>=25, <45)",TRUE,1
+"s__1736489","Duganella sp. Root198D2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131705,"no","(>=25, <45)",TRUE,1
+"s__1736503","Streptomyces sp. Root264","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131994,"no","(>=25, <45)",TRUE,1
+"s__1736505","Acidovorax sp. Root267","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131583,"no","(>=25, <45)",TRUE,1
+"s__1736507","Rhizobium sp. Root274","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132795,"no","(>=25, <45)",TRUE,1
+"s__1736512","Ensifer sp. Root31","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132240,"no","(>=25, <45)",TRUE,1
+"s__1736519","Caulobacter sp. Root342","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131668,"no","(>=25, <45)",TRUE,1
+"s__1736520","Caulobacter sp. Root343","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131669,"no","(>=25, <45)",TRUE,1
+"s__1736531","Devosia sp. Root413D1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131695,"no","(>=25, <45)",TRUE,1
+"s__1736538","Paenibacillus sp. Root444D2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131856,"no","(>=25, <45)",TRUE,1
+"s__1736539","Angustibacter sp. Root456","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132112,"no","(>=25, <45)",TRUE,1
+"s__1736541","Variovorax sp. Root473","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132041,"no","(>=25, <45)",TRUE,1
+"s__1736544","Bosea sp. Root483D1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132076,"no","(>=25, <45)",TRUE,1
+"s__1736547","Caulobacter sp. Root487D2Y","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131670,"no","(>=25, <45)",TRUE,1
+"s__1736548","Rhizobium sp. Root491","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132799,"no","(>=25, <45)",TRUE,1
+"s__1736549","Lysobacter sp. Root494","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131745,"no","(>=25, <45)",TRUE,1
+"s__1736560","Rhodanobacter sp. Root561","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132115,"no","(>=25, <45)",TRUE,1
+"s__1736561","Pseudomonas sp. Root562","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131898,"no","(>=25, <45)",TRUE,1
+"s__1736572","Rhodanobacter sp. Root627","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132116,"no","(>=25, <45)",TRUE,1
+"s__1736573","Streptomyces sp. Root63","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131998,"no","(>=25, <45)",TRUE,1
+"s__1736574","Pseudoxanthomonas sp. Root630","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131913,"no","(>=25, <45)",TRUE,1
+"s__1736579","Caulobacter sp. Root656","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131671,"no","(>=25, <45)",TRUE,1
+"s__1736581","Lysobacter sp. Root667","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131748,"no","(>=25, <45)",TRUE,1
+"s__1736587","Devosia sp. Root685","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131697,"no","(>=25, <45)",TRUE,1
+"s__1736590","Acidovorax sp. Root70","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131585,"no","(>=25, <45)",TRUE,1
+"s__1736596","Rhizobium sp. Root73","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132788,"no","(>=25, <45)",TRUE,1
+"s__1736603","Terrabacter sp. Root85","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132003,"no","(>=25, <45)",TRUE,1
+"s__1736606","Lysobacter sp. Root916","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131742,"no","(>=25, <45)",TRUE,1
+"s__1736608","Bacillus sp. Root920","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131639,"no","(>=25, <45)",TRUE,1
+"s__1736610","Flavobacterium sp. Root935","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131717,"no","(>=25, <45)",TRUE,1
+"s__1736611","Ensifer sp. Root954","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132231,"no","(>=25, <45)",TRUE,1
+"s__176102","Pseudoalteromonas agarivorans","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139874,"no","(>=25, <45)",TRUE,1
+"s__1775537","Pseudomonas sp. JCM 10068","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160860,"no","(>=25, <45)",TRUE,1
+"s__1775540","Cupriavidus sp. JCM 10169","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160884,"no","(>=25, <45)",TRUE,1
+"s__1775541","Pseudomonas sp. JCM 9490","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",166039,"no","(>=25, <45)",TRUE,1
+"s__1777157","Streptomyces sp. ACD6","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160283,"no","(>=25, <45)",TRUE,1
+"s__178878","Desulfotomaculum sp. WW1","hyperthermophile (>61 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23184,"no","(>61)",TRUE,1
+"s__1798224","Jiangella sp. DSM 45060","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",17824,"no","(>=25, <45)",TRUE,1
+"s__1805478","Olsenella timonensis","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160159,"no","(>=25, <45)",TRUE,1
+"s__1818664","Microbacterium sp. JCM 28244","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163441,"no","(>=25, <45)",TRUE,1
+"s__1818668","Sphingobium sp. JCM 28248","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163443,"no","(>=25, <45)",TRUE,1
+"s__1818670","Olivibacter sp. JCM 28250","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163445,"no","(>=25, <45)",TRUE,1
+"s__1818677","Streptomyces sp. JCM 28257","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163449,"no","(>=25, <45)",TRUE,1
+"s__1818688","Cellulomonas sp. JCM 28268","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163458,"no","(>=25, <45)",TRUE,1
+"s__1818690","Advenella sp. JCM 28270","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163461,"no","(>=25, <45)",TRUE,1
+"s__1818694","Paenibacillus sp. JCM 28274","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163465,"no","(>=25, <45)",TRUE,1
+"s__1818695","Microbacterium sp. JCM 28275","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163466,"no","(>=25, <45)",TRUE,1
+"s__1818699","Mesorhizobium sp. JCM 28279","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163470,"no","(>=25, <45)",TRUE,1
+"s__1818701","Promicromonospora sp. JCM 28281","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163472,"no","(>=25, <45)",TRUE,1
+"s__1818702","Microbacterium sp. JCM 28282","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163473,"no","(>=25, <45)",TRUE,1
+"s__1818709","Devosia sp. JCM 28289","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163478,"no","(>=25, <45)",TRUE,1
+"s__1818710","Sphingopyxis sp. JCM 28290","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163479,"no","(>=25, <45)",TRUE,1
+"s__1818714","Microbacterium sp. JCM 28294","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163482,"no","(>=25, <45)",TRUE,1
+"s__1818715","Rhodococcus sp. JCM 28295","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163483,"no","(>=25, <45)",TRUE,1
+"s__1818722","Rhodococcus sp. JCM 28302","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163491,"no","(>=25, <45)",TRUE,1
+"s__1818726","Chryseobacterium sp. JCM 28306","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163495,"no","(>=25, <45)",TRUE,1
+"s__1818729","Nocardioides sp. JCM 28309","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163497,"no","(>=25, <45)",TRUE,1
+"s__1818732","Lysinibacillus sp. JCM 28312","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163500,"no","(>=25, <45)",TRUE,1
+"s__1818733","Paenibacillus sp. JCM 28313","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163501,"no","(>=25, <45)",TRUE,1
+"s__1818734","Paenibacillus sp. JCM 28314","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163502,"no","(>=25, <45)",TRUE,1
+"s__1818737","Novosphingobium sp. JCM 28633","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163527,"no","(>=25, <45)",TRUE,1
+"s__1818740","Streptomyces sp. JCM 28636","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163529,"no","(>=25, <45)",TRUE,1
+"s__1818741","Chryseobacterium sp. JCM 28637","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163530,"no","(>=25, <45)",TRUE,1
+"s__1818751","Microbacterium sp. JCM 28647","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163538,"no","(>=25, <45)",TRUE,1
+"s__1818763","Rhizobium sp. JCM 28659","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163544,"no","(>=25, <45)",TRUE,1
+"s__1818767","Promicromonospora sp. JCM 28663","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163546,"no","(>=25, <45)",TRUE,1
+"s__1818774","Herbiconiux sp. JCM 28670","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163552,"no","(>=25, <45)",TRUE,1
+"s__1818775","Herbiconiux sp. JCM 28671","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163553,"no","(>=25, <45)",TRUE,1
+"s__1818779","Inquilinus sp. JCM 28675","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163556,"no","(>=25, <45)",TRUE,1
+"s__1818780","Microbacterium sp. JCM 28676","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163557,"no","(>=25, <45)",TRUE,1
+"s__1818784","Streptomyces sp. JCM 28680","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163558,"no","(>=25, <45)",TRUE,1
+"s__1818789","Bosea sp. JCM 28685","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163561,"no","(>=25, <45)",TRUE,1
+"s__1818791","Bacillus sp. JCM 28687","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163562,"no","(>=25, <45)",TRUE,1
+"s__1818806","Microbacterium sp. JCM 28702","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163568,"no","(>=25, <45)",TRUE,1
+"s__1818808","Microbacterium sp. JCM 28704","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163569,"no","(>=25, <45)",TRUE,1
+"s__1818817","Devosia sp. JCM 28713","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163572,"no","(>=25, <45)",TRUE,1
+"s__1818831","Streptomyces sp. JCM 28727","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163582,"no","(>=25, <45)",TRUE,1
+"s__1818840","Promicromonospora sp. JCM 28736","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163588,"no","(>=25, <45)",TRUE,1
+"s__1827323","Plantibacter sp. H53","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158062,"no","(>=25, <45)",TRUE,1
+"s__1827324","Microbacterium sp. H83","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",157951,"no","(>=25, <45)",TRUE,1
+"s__1827513","Streptomyces sp. 137","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15908,"no","(>=25, <45)",TRUE,1
+"s__1827548","Streptomyces sp. 270","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15915,"no","(>=25, <45)",TRUE,1
+"s__1828144","Streptomyces sp. t15","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159141,"no","(>=25, <45)",TRUE,1
+"s__1830","Rhodococcus ruber","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1857892","Streptomyces sp. MP131-18","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159149,"no","(>=25, <45)",TRUE,1
+"s__185874","Azospirillum sp. A1-3","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",13991,"no","(>=25, <45)",TRUE,1
+"s__1860161","Streptococcus sp. CCUG 49591","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",153439,"no","(>=25, <45)",TRUE,1
+"s__1868368","Bacillus sp. JCM 28786","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163593,"no","(>=25, <45)",TRUE,1
+"s__1868369","Bacillus sp. JCM 28791","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163597,"no","(>=25, <45)",TRUE,1
+"s__1868375","Bacillus sp. JCM 28804","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163609,"no","(>=25, <45)",TRUE,1
+"s__1868376","Bacillus sp. JCM 28816","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163622,"no","(>=25, <45)",TRUE,1
+"s__1868379","Bacillus sp. JCM 28824","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163630,"no","(>=25, <45)",TRUE,1
+"s__1868381","Bacillus sp. JCM 28831","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163637,"no","(>=25, <45)",TRUE,1
+"s__1868385","Bacillus sp. JCM 28845","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163650,"no","(>=25, <45)",TRUE,1
+"s__1868388","Bacillus sp. JCM 28849","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163654,"no","(>=25, <45)",TRUE,1
+"s__1868390","Bacillus sp. JCM 28854","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163660,"no","(>=25, <45)",TRUE,1
+"s__1868391","Bacillus sp. JCM 28855","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163661,"no","(>=25, <45)",TRUE,1
+"s__1868395","Bacillus sp. JCM 28857","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163663,"no","(>=25, <45)",TRUE,1
+"s__1868397","Bacillus sp. JCM 28859","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163665,"no","(>=25, <45)",TRUE,1
+"s__1868398","Bacillus sp. JCM 28861","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163667,"no","(>=25, <45)",TRUE,1
+"s__1868399","Bacillus sp. JCM 28862","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163668,"no","(>=25, <45)",TRUE,1
+"s__1868401","Bacillus sp. JCM 28869","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163675,"no","(>=25, <45)",TRUE,1
+"s__1868411","Bacillus sp. JCM 28812","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163618,"no","(>=25, <45)",TRUE,1
+"s__1868413","Bacillus sp. JCM 28814","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163620,"no","(>=25, <45)",TRUE,1
+"s__1868417","Bacillus sp. JCM 28830","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163636,"no","(>=25, <45)",TRUE,1
+"s__1868419","Bacillus sp. JCM 28835","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163641,"no","(>=25, <45)",TRUE,1
+"s__1868425","Bacillus sp. JCM 28842","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",163647,"no","(>=25, <45)",TRUE,1
+"s__187303","Methylocystis sp. SC2","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1880681","Pseudomonas sp. CCUG 61063","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",156288,"no","(>=25, <45)",TRUE,1
+"s__190125","Halobacterium sp. JCM 9447","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",166029,"no","(>=25, <45)",TRUE,1
+"s__191292","Rhodococcus aetherivorans","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23159,"no","(>=25, <45)",TRUE,1
+"s__1920190","Archangium sp. Cb G35","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",3510,"no","(>=25, <45)",TRUE,1
+"s__193093","Methylocystis sp. 62/12","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__193100","Methylocystis sp. Pi5/4","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__194436","Methylobacterium sp. PC30.44","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23087,"no","(>=25, <45)",TRUE,1
+"s__194438","Sphingomonas sp. BF2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",14208,"no","(>=25, <45)",TRUE,1
+"s__195064","Ectothiorhodospira mobilis","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__195253","Synechococcus sp. PCC 6312","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1975676","Flavobacterium sp. ACN2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160004,"no","(>=25, <45)",TRUE,1
+"s__198306","Streptomyces sp. LS151","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15973,"no","(>=25, <45)",TRUE,1
+"s__198307","Streptomyces sp. LS166","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15975,"no","(>=25, <45)",TRUE,1
+"s__1987051","Streptococcus sp. JCM 7886","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165642,"no","(>=25, <45)",TRUE,1
+"s__1987052","Streptococcus sp. JCM 7887","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165643,"no","(>=25, <45)",TRUE,1
+"s__1987056","Streptococcus sp. JCM 7891","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165645,"no","(>=25, <45)",TRUE,1
+"s__1987060","Streptococcus sp. JCM 5345","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",165143,"no","(>=25, <45)",TRUE,1
+"s__204462","Herbaspirillum sp. PIV-34-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",11360,"no","(>=25, <45)",TRUE,1
+"s__2045","Pimelobacter simplex","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__212194","Mycobacterium sp. DSM 3803","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",8330,"no","(>=25, <45)",TRUE,1
+"s__2135651","Rhizobium sp. PP-F2F-G48","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160165,"no","(>=25, <45)",TRUE,1
+"s__213632","Nostoc sp. 152","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__223904","Nocardioides sp. NS/27","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132769,"no","(>=25, <45)",TRUE,1
+"s__228575","Paenibacillus sp. MB 2039","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",157990,"no","(>=25, <45)",TRUE,1
+"s__2293","Desulfobacter postgatei","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__238813","Desulfotomaculum sp. OX39","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",11816,"no","(>=25, <45)",TRUE,1
+"s__24","Shewanella putrefaciens","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__246794","Moritella sp. 5710","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__2488819","Corynebacterium endometrii","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160020,"yes","(>=25, <45)",TRUE,1
+"s__2508867","Prevotella brunnea","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159436,"no","(>=25, <45)",TRUE,1
+"s__2574734","Aquibacillus sediminis","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158050,"no","(>=25, <45)",TRUE,1
+"s__258826","Anabaena sp. 202A1","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__2594913","Corynebacterium sanguinis","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",155219,"no","(>=25, <45)",TRUE,1
+"s__2605776","Bifidobacterium sp. WCA-178-WT-4B","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159328,"no","(>=25, <45)",TRUE,1
+"s__261021","Clostridium sp. EDB2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",2700,"no","(>=25, <45)",TRUE,1
+"s__264665","Anabaena sp. 123","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__265176","Microbacterium sp. Pei021","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160375,"no","(>=25, <45)",TRUE,1
+"s__265430","Bacillus sp. BA-54","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139689,"no","(>=25, <45)",TRUE,1
+"s__265944","Clostridium sp. 17cr1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23856,"no","(>=25, <45)",TRUE,1
+"s__266","Paracoccus denitrificans","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__271440","Streptomyces sp. 287","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15964,"no","(>=25, <45)",TRUE,1
+"s__272135","Plectonema terebrans","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__272920","Clostridium sp. ZIRB-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",2699,"no","(>=25, <45)",TRUE,1
+"s__2733571","Trueperella pecoris","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160523,"no","(>=25, <45)",TRUE,1
+"s__2736292","Prevotella sp. PJ1A","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160557,"no","(>=25, <45)",TRUE,1
+"s__2778647","Rhodanobacter sp. B2A1Ga4","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",166096,"no","(>=25, <45)",TRUE,1
+"s__278961","Terriglobus sp. TAA 43","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132010,"no","(<24.9)",TRUE,1
+"s__2802253","Bacillus sp. 111","thermophile (>=46, <60 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",845,"no","(>=46, <60)",TRUE,1
+"s__2810068","Agrobacterium sp. S2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",13532,"no","(>=25, <45)",TRUE,1
+"s__28134","Prevotella oralis","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28135","Prevotella oris","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28172","Vibrio metschnikovii","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__2817708","Streptomyces sp. DSM 40167","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15637,"no","(>=25, <45)",TRUE,1
+"s__284597","Streptomyces sp. RJ12","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15986,"no","(>=25, <45)",TRUE,1
+"s__284598","Streptomyces sp. BN7","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15982,"no","(>=25, <45)",TRUE,1
+"s__285040","Nocardioides sp. AN3","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162326,"no","(>=25, <45)",TRUE,1
+"s__2853165","Kitasatospora sp. DSM 101779","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159504,"no","(>=25, <45)",TRUE,1
+"s__285847","Micromonospora sp. NAR02","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",7959,"no","(>=25, <45)",TRUE,1
+"s__285929","Vibrio sp. R5","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",157900,"no","(>=25, <45)",TRUE,1
+"s__286436","Bacillus sp. S/2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23662,"no","(>=25, <45)",TRUE,1
+"s__292","Burkholderia cepacia","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29468","Methylocystis echinoides","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29533","Flavobacterium pectinovorum","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29536","Flavobacterium succinicans","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29549","Rhodothermus marinus","hyperthermophile (>61 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__303","Pseudomonas putida","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__304213","Colwellia sp. IE1-3","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23865,"no","(<24.9)",TRUE,1
+"s__305578","Bacillus sp. BA315","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159927,"no","(>=25, <45)",TRUE,1
+"s__306138","Clostridium sp. BA-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23857,"no","(>=25, <45)",TRUE,1
+"s__311999","Streptomyces sp. 134","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15796,"no","(>=25, <45)",TRUE,1
+"s__332184","Microbacterium sp. S1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",7388,"no","(>=25, <45)",TRUE,1
+"s__333987","Psychromonas sp. HS11","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__354247","Rheinheimera sp. Gbf-Ret-3","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",22960,"no","(>=25, <45)",TRUE,1
+"s__361319","Streptomyces sp. 14","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15838,"no","(>=25, <45)",TRUE,1
+"s__368455","Mycobacterium piscinum","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",8338,"no","(>=25, <45)",TRUE,1
+"s__369504","Pyrococcus sp. HT3","hyperthermophile (>61 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131125,"no","(>61)",TRUE,1
+"s__37450","Colwellia rossensis","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__37487","Marichromatium purpuratum","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__378403","Bosea sp. CRIB-13","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23802,"no","(>=25, <45)",TRUE,1
+"s__37921","Arthrobacter agilis","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__403960","Virgibacillus sp. SKW19","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160586,"no","(>=25, <45)",TRUE,1
+"s__404938","Thermus sp. AA/04","hyperthermophile (>61 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131027,"no","(>61)",TRUE,1
+"s__406341","Bosea sp. WAO","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139921,"no","(>=25, <45)",TRUE,1
+"s__410","Methylobacterium organophilum","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__411922","Sporomusa sp. An4","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139774,"no","(>=25, <45)",TRUE,1
+"s__414","Methylococcus capsulatus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__418192","Lactobacillus sp. JCM 1013","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160878,"no","(>=25, <45)",TRUE,1
+"s__420387","Paenibacillus sp. FH2071","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139841,"no","(>=25, <45)",TRUE,1
+"s__421528","Chryseobacterium sp. H30","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139917,"no","(>=25, <45)",TRUE,1
+"s__421629","Halorhodospira abdelmalekii","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__430618","Methanofollis sp. YCM2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158335,"no","(>=25, <45)",TRUE,1
+"s__443611","Duganella sp. BD-a14","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23171,"no","(>=25, <45)",TRUE,1
+"s__443613","Paracoccus sp. BD-d317","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131074,"no","(>=25, <45)",TRUE,1
+"s__449305","Desulfobacter sp. DSM 2057","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__449313","Desulfovibrio sp. DSM 9953","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",4098,"no","(>=25, <45)",TRUE,1
+"s__46234","Anabaena sp. 90","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__468055","Chryseobacterium sp. S5","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131121,"no","(>=25, <45)",TRUE,1
+"s__471","Acinetobacter calcoaceticus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__477704","Streptomyces sp. T5","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160277,"no","(>=25, <45)",TRUE,1
+"s__480519","Marinomonas sp. 382","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23168,"no","(<24.9)",TRUE,1
+"s__484413","Geobacillus sp. T4","thermophile (>=46, <60 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",1445,"no","(>=46, <60)",TRUE,1
+"s__48935","Novosphingobium aromaticivorans","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__490385","Thalassospira sp. G12-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132865,"no","(>=25, <45)",TRUE,1
+"s__490386","Colwellia sp. MN1-44","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139901,"no","(<24.9)",TRUE,1
+"s__49119","Marinobacter sp. CAB","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",476,"no","(>=25, <45)",TRUE,1
+"s__491961","Arthrobacter sp. G1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159917,"no","(>=25, <45)",TRUE,1
+"s__492800","Streptomyces sp. 7","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15879,"no","(>=25, <45)",TRUE,1
+"s__492804","Streptomyces sp. 9","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15839,"no","(>=25, <45)",TRUE,1
+"s__497785","Flavobacterium sp. FB7","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132736,"no","(<24.9)",TRUE,1
+"s__498332","Pseudomonas sp. BF64","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",12988,"no","(>=25, <45)",TRUE,1
+"s__498964","Bacillus sp. CJNY31","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",158855,"no","(>=25, <45)",TRUE,1
+"s__504804","Saccharopolyspora sp. 6015","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",13463,"no","(>=25, <45)",TRUE,1
+"s__509616","Streptomyces sp. SD 511","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159130,"no","(>=25, <45)",TRUE,1
+"s__509617","Streptomyces sp. SD 524","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159127,"no","(>=25, <45)",TRUE,1
+"s__509625","Streptomyces sp. SD 575","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160239,"no","(>=25, <45)",TRUE,1
+"s__512351","Micromonospora sp. 03-27","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160105,"no","(>=25, <45)",TRUE,1
+"s__520032","Nocardioides sp. KV-833","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139800,"no","(>=25, <45)",TRUE,1
+"s__520095","Brevibacterium sp. M1-12","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159988,"no","(>=25, <45)",TRUE,1
+"s__521477","Marinobacter sp. 908115","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139846,"no","(>=25, <45)",TRUE,1
+"s__52229","Hallella seregens","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__522615","Chelatococcus sp. TKE5A","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",1655,"no","(>=25, <45)",TRUE,1
+"s__526713","Marichromatium sp. JA350","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23847,"no","(>=25, <45)",TRUE,1
+"s__535901","Flavobacterium sp. YC6718","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139725,"no","(>=25, <45)",TRUE,1
+"s__538384","Arthrobacter sp. YC6002","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159911,"no","(>=25, <45)",TRUE,1
+"s__54295","Dolichospermum lemmermannii","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__549718","Mycoplasma sp. CSL7491-lung","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159547,"no","(>=25, <45)",TRUE,1
+"s__553611","Photobacterium leiognathi","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__565444","Albidovulum sp. S1K1","thermophile (>=46, <60 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140419,"no","(>=46, <60)",TRUE,1
+"s__568107","Oerskovia sp. SB3","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160737,"no","(>=25, <45)",TRUE,1
+"s__57028","Algoriphagus ratkowskyi","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__572033","Pedobacter sp. L2b-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",24547,"no","(>=25, <45)",TRUE,1
+"s__576456","Streptomyces sp. N1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15870,"no","(>=25, <45)",TRUE,1
+"s__58049","Colwellia sp. MT41","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__587413","Oscillatoria sp. PCC 6602","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__589291","Arthrobacter sp. E7","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159919,"no","(<24.9)",TRUE,1
+"s__589379","Actinomadura sp. 6192","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159895,"no","(>=25, <45)",TRUE,1
+"s__589390","Massilia sp. 6981","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130503,"no","(>=25, <45)",TRUE,1
+"s__595414","Rhodopirellula sp. CS126","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131268,"no","(>=25, <45)",TRUE,1
+"s__595415","Rhodopirellula sp. CS14","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131274,"no","(>=25, <45)",TRUE,1
+"s__595433","Rhodopirellula sp. K587","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131267,"no","(>=25, <45)",TRUE,1
+"s__595444","Rhodopirellula sp. SM35","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131272,"no","(>=25, <45)",TRUE,1
+"s__595464","Rhodopirellula sp. WH49","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131269,"no","(>=25, <45)",TRUE,1
+"s__621095","Halobacillus sp. H57B77","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160569,"no","(>=25, <45)",TRUE,1
+"s__621100","Marinobacter sp. H146B83","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139847,"no","(>=25, <45)",TRUE,1
+"s__621104","Marinobacter sp. H184B83","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139849,"no","(>=25, <45)",TRUE,1
+"s__621106","Marinobacter sp. H57B71","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139848,"no","(>=25, <45)",TRUE,1
+"s__627707","Halomicrobium sp. KM","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132938,"no","(>=25, <45)",TRUE,1
+"s__631220","Desulfovibrio sp. G11","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",4092,"no","(>=25, <45)",TRUE,1
+"s__633482","Sphingomonas sp. SC-N060","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",14217,"no","(>=25, <45)",TRUE,1
+"s__63652","Thiomicrospira sp. SL-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",11919,"no","(>=25, <45)",TRUE,1
+"s__641232","Bacillus sp. BH85065-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159931,"no","(>=25, <45)",TRUE,1
+"s__641235","Pontibacillus sp. BH85057-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160656,"no","(>=25, <45)",TRUE,1
+"s__641239","Salipiger sp. BH85027","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140436,"no","(>=25, <45)",TRUE,1
+"s__64178","Coleofasciculus chthonoplastes","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__643748","Halomicrobium sp. Bet58","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",132939,"no","(>=25, <45)",TRUE,1
+"s__645422","Mycoplasma sp. Sp22","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23143,"no","(>=25, <45)",TRUE,1
+"s__652434","Nocardioides sp. DN36","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",161801,"no","(>=25, <45)",TRUE,1
+"s__65553","Sulfurospirillum deleyianum","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__657418","Rheinheimera sp. BZ19","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140013,"no","(<24.9)",TRUE,1
+"s__662548","Variovorax sp. RA8","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",161802,"no","(>=25, <45)",TRUE,1
+"s__663","Vibrio alginolyticus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__664911","Phycicoccus sp. GT-36","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140134,"no","(>=25, <45)",TRUE,1
+"s__666","Vibrio cholerae","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__666686","Bacillus sp. 1NLA3E","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130179,"no","(>=25, <45)",TRUE,1
+"s__670","Vibrio parahaemolyticus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__680320","Leclercia sp. 349/07","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130308,"no","(>=25, <45)",TRUE,1
+"s__683136","Fervidobacterium sp. R8","hyperthermophile (>61 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139867,"no","(>61)",TRUE,1
+"s__683137","Thermosipho sp. G60","hyperthermophile (>61 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",139823,"no","(>61)",TRUE,1
+"s__686658","Nitratireductor sp. SL014B-25A2","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",140131,"no","(>=25, <45)",TRUE,1
+"s__691261","Pseudomonas sp. CT42","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",23208,"no","(>=25, <45)",TRUE,1
+"s__69322","Flavobacterium xanthum","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__705310","Paenibacillus sp. DLS-01","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160471,"no","(>=25, <45)",TRUE,1
+"s__743739","Sporolactobacillus sp. 2-1-A","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160066,"no","(>=25, <45)",TRUE,1
+"s__743740","Sporolactobacillus sp. 30-1","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160068,"no","(>=25, <45)",TRUE,1
+"s__745362","Streptomyces sp. TN17","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",159111,"no","(>=25, <45)",TRUE,1
+"s__754436","Photobacterium aphoticum","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",162441,"no","(>=25, <45)",TRUE,1
+"s__756689","Nocardia amikacinitolerans","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",10710,"no","(>=25, <45)",TRUE,1
+"s__766849","Virgibacillus sp. NCCP-134","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160584,"no","(>=25, <45)",TRUE,1
+"s__767706","Methylobacterium sp. 679","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",7161,"no","(>=25, <45)",TRUE,1
+"s__768536","Microbacterium sp. JCM 9634","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",166044,"no","(>=25, <45)",TRUE,1
+"s__796514","Burkholderia sp. CCUG 57241","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",155296,"no","(>=25, <45)",TRUE,1
+"s__831","Butyrivibrio fibrisolvens","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__854","Fusobacterium russii","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__864731","Acetobacter sp. Bo3","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131579,"no","(>=25, <45)",TRUE,1
+"s__867","Ruminobacter amylophilus","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__867607","Halomonas sp. 5A22","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",131156,"no","(>=25, <45)",TRUE,1
+"s__867642","Bacillus sp. C15","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",130875,"no","(>=25, <45)",TRUE,1
+"s__871572","Achromobacter sp. TA12-A","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",315,"no","(>=25, <45)",TRUE,1
+"s__889391","Nostoc sp. PCC 6411","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__891","Desulfuromonas acetoxidans","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__907582","Peptoniphilus sp. CCUG 47015","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",152534,"no","(>=25, <45)",TRUE,1
+"s__92608","Bacillus sp. WW3-SN6","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",929,"no","(>=25, <45)",TRUE,1
+"s__93461","Desulfobacterium sp. BSv41","psychrophile (<24.9 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",3974,"no","(<24.9)",TRUE,1
+"s__936572","Selenomonas sp. FOBRC6","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",160175,"no","(>=25, <45)",TRUE,1
+"s__944471","Streptomyces sp. 3344","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",15732,"no","(>=25, <45)",TRUE,1
+"s__96345","Flavobacterium psychrophilum","psychrophile (<24.9 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__971","Selenomonas ruminantium","mesophile (>=25, <45 Celcius)","Microbial Fatty Acid Compositions","exp","unknown","high","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__992942","Rhodococcus sp. OCT 10","mesophile (>=25, <45 Celcius)","BacDive","exp","always","high","Celcius","logical","growth temperature",10989,"no","(>=25, <45)",TRUE,1
+"s__101192","Methanomethylovorans hollandica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1015","Bergeyella zoohelcum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__101689","Phycicoccus elongatus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1033739","Kurthia massiliensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1033846","Marinobacter adhaerens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__104628","Helicobacter suis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1069073","Haloechinothrix halophila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1080712","Methanomassiliicoccus luminyensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__108150","Thermoanaerobacter italicus","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__1097","Chlorobaculum tepidum","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__1097667","Patulibacter medicamentivorans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1102","Prosthecochloris aestuarii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__110321","Sinorhizobium medicae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1120045","Rhizobium grahamii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1121721","Jongsikchunia kroppenstedtii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1121832","Fodinicurvata sediminis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1124597","Magnetococcus marinus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1147159","Ornithinibacillus scapharcae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1167637","Gillisia marina","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__118322","Lyngbya aestuarii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1184387","Mesotoga prima","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__118748","Bulleidia extructa","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__119219","Cupriavidus metallidurans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__119434","Halorubrum tebenquichense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__120962","Roseiflexus castenholzii","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__122355","Pseudomonas psychrophila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__125627","Thiofilum flexile","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1276","Kytococcus sedentarius","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1281","Staphylococcus carnosus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1282","Staphylococcus epidermidis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1288121","Alistipes senegalensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__129922","Saccharomonospora halophila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__132144","Candidatus Glomeribacter gigasporarum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__13264","Brachyspira innocens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__132919","Rhodococcus jostii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__133453","Caldilinea aerophila","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__1339","Streptococcus macacae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1346","Streptococcus iniae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1353277","Rhizobium freirei","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1354","Enterococcus hirae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__136094","Thermocrinis albus","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__138074","Serratia symbiotica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1381","Atopobium minutum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1382","Lancefieldella parvula","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__138595","Olsenella profusa","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1385985","Sphingobacterium paucimobilis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1405","Bacillus mycoides","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__140626","Lachnobacterium bovis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1452","Bacillus atrophaeus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__146826","Halorhabdus utahensis","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__147802","Lactobacillus iners","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__148","Sediminispirochaeta bajacaliforniensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1490","Paraclostridium bifermentans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__149715","Marinitoga piezophila","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__151276","Bacteroides coprosuis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1519","Clostridium tyrobutyricum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__152260","Chloroflexus aggregans","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__154","Spirochaeta thermophila","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__156974","Dysgonomonas gadei","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1575","Leifsonia xyli","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__1584","Lactobacillus delbrueckii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__158484","Cedecea davisae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1587","Lactobacillus helveticus","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__1588","Lentilactobacillus hilgardii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__158847","Megamonas hypermegale","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1597","Lacticaseibacillus paracasei","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__160386","Corynebacterium casei","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__160846","Natrialba taiwanensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1618","Liquorilactobacillus mali","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__165","Treponema saccharophilum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__165179","Prevotella copri","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__167964","Anaerolinea thermophila","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__1684","Bifidobacterium asteroides","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1693","Bifidobacterium minimum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1694","Bifidobacterium pseudolongum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1697","Corynebacterium ammoniagenes","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1708","Cellulomonas fimi","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1711","Cellulomonas flavigena","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1719","Corynebacterium pseudotuberculosis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__173366","Methylocystis rosea","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1744","Propionibacterium freudenreichii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__177400","Anaerophaga thermohalophila","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__177972","Shuttleworthia satelles","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__182210","Pseudodesulfovibrio aespoeensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__182262","Agarivorans albus","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__1836","Saccharopolyspora erythraea","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1852","Saccharomonospora viridis","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__185300","Paludibacter propionicigenes","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__187326","Megasphaera micronuciformis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__187327","Acidaminococcus intestini","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__187400","Paracoccus zeaxanthinifaciens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__187493","Thalassolituus oleivorans","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__189691","Paenibacillus elgii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1908","Streptomyces globisporus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__190898","Desulfotignum phosphitoxidans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__193","Azospirillum lipoferum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1938","Streptomyces viridochromogenes","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1969","Streptomyces chartreusis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__197162","Deferribacter desulfuricans","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__197222","Paraglaciecola mesophila","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__199","Campylobacter concisus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__1993","Actinomadura madurae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__200451","Pseudomonas poae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__2020","Thermomonospora curvata","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__202789","Actinobaculum massiliense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__203192","Stutzerimonas chloritidismutans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__2047","Rothia dentocariosa","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__208962","Escherichia albertii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__2115","Mycoplasmopsis fermentans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__213185","Methanotorris formicicus","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__214856","Alistipes finegoldii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__217","Helicobacter mustelae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__217159","Clostridium carboxidivorans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__2180","Methanothermus fervidus","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__2187","Methanococcus vannielii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__219748","Clostridium tunisiense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__220697","Thalassospira xiamenensis","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__222984","Natrinema altunense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__223527","Halomonas boliviensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__223903","Hymenobacter norwichensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__225762","Nocardiopsis alkaliphila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__228","Pseudoalteromonas haloplanktis","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__228745","Thermovibrio ammonificans","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__229731","Halobiforma lacisalsi","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__234831","Pseudoalteromonas sp. SM9913","psychrophile (<24.9 Celcius)","BacMap","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__2378","Sporomusa ovata","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__238","Elizabethkingia meningoseptica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__246787","Bacteroides cellulosilyticus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__247333","Serinicoccus marinus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__252307","Robiginitalea biformata","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__252966","Mahella australiensis","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__253107","Natronolimnohabitans innermongolicus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__253239","Ethanoligenens harbinense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__256839","Shewanella decolorationis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__258","Sphingobacterium spiritivorum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__258224","Corynebacterium resistens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__261299","Intestinibacter bartlettii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__261964","Kangiella koreensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__261965","Kangiella aquimarina","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__264574","Oceanimonas smirnovii","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__265425","Salinimonas chungwhensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__2702","Gardnerella vaginalis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__273376","Sphaerochaeta coccoides","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__278132","Limimaricola hongkongensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__280239","Nocardiopsis chromatogenes","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28025","Bifidobacterium animalis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28026","Bifidobacterium pseudocatenulatum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28038","Latilactobacillus curvatus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28112","Tannerella forsythia","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28123","Porphyromonas asaccharolytica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28136","Prevotella oulorum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28188","Capnocytophaga canimorsus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__281920","Porphyromonas uenonis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__28251","Ornithobacterium rhinotracheale","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__284016","Phenylobacterium zucineum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__286804","Segniliparus rugosus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__287535","Balneola vulgaris","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__288965","Acetivibrio clariflavus","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__29288","Natronococcus occultus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__293890","Agromyces subbeticus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29438","Pseudomonas savastanoi","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29449","Rhizobium etli","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29506","Leptospira inadai","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__29581","Janthinobacterium lividum","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__301541","Leptospira broomii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__302484","Haloferax larsenii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__304895","Catenulispora acidiphila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__307124","Calidithermus timidus","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__310297","Phocaeicola plebeius","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__310575","Advenella kashmirensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__310783","Deinococcus deserti","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__311334","Chryseobacterium taeanense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__313439","Streptococcus massiliensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__316068","Leadbetterella byssophila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__31958","Amycolatopsis orientalis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__320799","Gordonia soli","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__329186","Flavobacterium saliperosum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__33011","Cutibacterium granulosum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__33033","Parvimonas micra","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__33059","Acidithiobacillus caldus","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__33069","Pseudomonas viridiflava","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__336261","Thermovirga lienii","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__337","Burkholderia glumae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__337090","Chlorobium chlorochromatii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__338565","Erwinia tasmaniensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__33871","Coriobacterium glomerans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__33996","Gluconacetobacter diazotrophicus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__34","Myxococcus xanthus","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__34038","Rahnella aquatilis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__34090","Pelodictyon phaeoclathratiforme","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__351052","Alkalilimnicola ehrlichii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__351604","Geotalea uraniireducens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__356828","Alloscardovia criceti","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__357276","Phocaeicola dorei","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__357794","Psychromonas ingrahamii","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__358743","Enterocloster citroniae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__359359","Smaragdicoccus niigatensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__359408","Methylotenera mobilis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__360293","Leeuwenhoekiella blandensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__365489","Dyadobacter beijingensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__36821","Gordonia amarae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__36854","Desulfitobacterium dehalogenans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__37326","Nocardia brasiliensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__373391","Hydrogenovibrio halophilus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__376804","Phocaeicola barnesiae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__376805","Phocaeicola salanitronis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__377615","Thermobacillus composti","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__379064","Cyanobacterium aponinum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__379896","Paenibacillus fonticola","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__380397","Streptococcus ictaluri","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__384","Rhizobium leguminosarum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__386414","Prevotella timonensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__387090","Phocaeicola coprophilus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__387341","Halovivax ruber","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__388408","Roseibium alexandrii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__395922","Coraliomargarita akajimensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__396","Rhizobium phaseoli","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__39778","Veillonella dispar","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__39960","Erythrobacter litoralis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__40091","Helcococcus kunzii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__404386","Nonomuraea coxensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__411153","Gramella forsetii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__411361","Halogeometricum pallidum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__413810","Halalkalicoccus jeotgali","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__413812","Natronococcus jeotgali","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__413888","Caldicellulosiruptor hydrothermalis","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__416585","Halorubrum californiense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__416586","Selenomonas bovis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__418756","Salinicoccus albus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__427078","Salsuginibacillus kocurii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__427754","Humibacter albus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__432329","Deinococcus peraridilitoris","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__43661","Shewanella benthica","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__43674","Jonesia denitrificans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__437163","Halomicrobium katesii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__43765","Corynebacterium amycolatum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__43767","Rhodococcus equi","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__43995","Johnsonella ignava","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__444463","Sporolactobacillus vineae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__444922","Psychromonas ossibalaenae","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__446681","Eudoraea adriatica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__44674","Sulfurospirillum barnesii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__451374","Rudanella lutea","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__454155","Paraprevotella xylaniphila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__454162","Kiloniella laminariae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__454600","Gracilimonas tropica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__456455","Bizionia argentinensis","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__459527","Saccharibacillus kuerlensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__45972","Staphylococcus pasteuri","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__46355","Spirochaeta africana","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__46503","Parabacteroides merdae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__46541","Thermosipho melanesiensis","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__467094","Ilumatobacter coccineus","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__47055","Dethiosulfovibrio peptidovorans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__47678","Bacteroides caccae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__47735","Bibersteinia trehalosi","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__477976","Calditerrivibrio nitroreducens","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__479117","Brevibacterium ravenspurgense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__47920","Acidovorax delafieldii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__481139","Bartonella rattaustraliani","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__486","Neisseria lactamica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__487174","Barnesiella intestinihominis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__487316","Acinetobacter soli","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__488","Neisseria mucosa","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__489","Neisseria polysaccharea","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__496","Neisseria macacae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__502790","Aeromonas diversa","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__508770","Sciscionella marina","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__51173","Ureibacillus thermosphaericus","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__519051","Alcanivorax hongdengensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__519440","Deinococcus aquatilis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__520","Bordetella pertussis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__521377","Alkalihalophilus marmarensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__52584","Brachyspira pilosicoli","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__526216","Oceanibaculum indicum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__53358","Intrasporangium calvum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__53409","Pseudomonas coronafaciens","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__53412","Pseudomonas resinovorans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__53419","Treponema socranskii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__53461","Nakamurella multipartita","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__54005","Peptoniphilus harei","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__544580","Actinomyces oris","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__552","Erwinia amylovora","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__56807","Glaciecola pallidula","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__574560","Photorhabdus temperata","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__58343","Streptomyces canus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__584","Proteus mirabilis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__587753","Pseudomonas chlororaphis","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__59505","Actinotignum schaalii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__598660","Corynebacterium pyruviciproducens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__59893","Paenibacillus peoriae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__60920","Sanguibacter keddieii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__60961","Shewanella woodyi","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__61598","Lamprocystis purpurea","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__624","Shigella sonnei","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__626930","Bacteroides fluxus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__626934","Slackia piriformis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__626940","Phascolarctobacterium succinatutens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__632","Yersinia pestis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__633","Yersinia pseudotuberculosis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__63612","Sodalis glossinidius","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__644281","Methanocaldococcus sp. FS406-22","hyperthermophile (>61 Celcius)","BacMap","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__64602","Natrialba asiatica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__651","Aeromonas media","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__65700","Erwinia tracheiphila","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__658062","Candidatus Koribacter versatilis","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__665099","Cytobacillus oceanisediminis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__67299","Streptomyces flavogriseus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__67581","Streptomyces viridosporus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__67854","Actinobacillus succinogenes","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__68895","Cupriavidus basilensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__68909","Deinococcus geothermalis","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__69223","Musicola paradisiaca","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__69527","Natrinema pallidum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__69823","Selenomonas sputigena","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__69966","Macrococcus caseolyticus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__752140","Pedobacter arcticus","psychrophile (<24.9 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(<24.9)",TRUE,1
+"s__759620","Weissella ceti","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__76517","Campylobacter hominis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__77095","Prevotella bryantii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__782","Rickettsia prowazekii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__79967","Erwinia pyrifoliae","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__81468","Aminobacterium colombiense","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__82203","Centipeda periodontii","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__82996","Serratia plymuthica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__83560","Chlamydia muridarum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__83656","Streptomyces tsukubensis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__84163","Cryptobacterium curtum","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__84377","Brachyspira intermedia","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__85683","Salisediminibacterium selenitireducens","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__861","Fusobacterium ulcerans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__86304","Saccharophagus degradans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__863643","Thermincola potens","thermophile (>=46, <60 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=46, <60)",TRUE,1
+"s__88189","Thermus igniterrae","hyperthermophile (>61 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>61)",TRUE,1
+"s__885581","Desulfosporosinus acidiphilus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__90244","Oligella ureolytica","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__90245","Oligella urethralis","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__916","Nitrosomonas eutropha","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__920","Acidithiobacillus ferrooxidans","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__936594","Lachnoanaerobaculum sp. ICM7","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
+"s__984","Pedobacter heparinus","mesophile (>=25, <45 Celcius)","The Microbe Directory","nas","unknown","low","Celcius","logical","growth temperature",NA,NA,"(>=25, <45)",TRUE,1
