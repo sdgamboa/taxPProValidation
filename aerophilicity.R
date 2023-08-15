@@ -48,7 +48,6 @@ binaries <- c(
 phys_names <- showPhys()
 phys_names <- phys_names[which(!phys_names %in% exlclude_phys)]
 
-
 phys_names <- 'aerophilicity'
 
 phys <- physiologies(phys_names, full_source = FALSE)
