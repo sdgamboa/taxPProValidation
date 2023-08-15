@@ -224,7 +224,7 @@ for (i in seq_along(holdout_subsets)) {
         holdout_subsets[[i]] <- holdouts_df
         names(holdout_subsets)[i] <- 'holdout_sp'
         datName <- gsub(' ', '_', paste0(phys_name, '_prediction_sp'))
-        data_ready[['phys_prediction_sp']] <- myDF |> 
+        data_ready[[datName]] <- myDF |> 
             filter(!NCBI_ID %in% holdout_sp_taxids)
     }
     if (holdout_options[i] == 'holdout_st') {
@@ -256,9 +256,11 @@ for (i in seq_along(holdout_subsets)) {
     )
 }
 
+names(data_ready) <- gsub(' ', '_', names(data_ready))
+
+
 ## Propagation with taxPPro
 propagated <- bplapply(X = data_ready, BPPARAM = MulticoreParam(workers = n_threads), FUN = function(x) {
-
     input_tbl <- x |>
         select(NCBI_ID, Attribute, Score, Evidence) |>
         distinct() |>
@@ -331,10 +333,6 @@ propagated <- bplapply(X = data_ready, BPPARAM = MulticoreParam(workers = n_thre
     
     return(final_table)
 })
-
-propagated$aerophilicity_prediction_gn |> 
-    filter(NCBI_ID %in% sub('g__', '', unique(holdout_gn$NCBI_ID))) |> 
-    count(Evidence)
 
 for (i in seq_along(propagated)) {
     write.table(
