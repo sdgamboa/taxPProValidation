@@ -260,6 +260,7 @@ names(data_ready) <- gsub(' ', '_', names(data_ready))
 
 
 ## Propagation with taxPPro
+data_ready[[1]] <- NULL # Won't be used
 propagated <- bplapply(X = data_ready, BPPARAM = MulticoreParam(workers = n_threads), FUN = function(x) {
     input_tbl <- x |>
         select(NCBI_ID, Attribute, Score, Evidence) |>
