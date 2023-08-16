@@ -1,3 +1,4 @@
+library(logr)
 library(vroom)
 library(purrr)
 library(dplyr)
@@ -9,7 +10,14 @@ library(ggpubr)
 source('function.R')
 
 args <- commandArgs(trailingOnly = TRUE)
-phys_name <- args[[1]]
+phys_name <- sub(" ", "_", args[[1]])
+
+logfile <- gsub(' ', '_', paste0(phys_name, "_auc_log_file"))
+lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
+msg <- paste0(
+    'Doing AUC-ROC for ', phys_name
+)
+log_print(msg, blank_after = TRUE)
 holdouts <- importHoldouts(phys_name)
 predictions <- importPredictions(phys_name)
 roc_res <- map2(holdouts, predictions, ~ doRoc(.x, .y))
@@ -35,3 +43,5 @@ png(
 )
 p
 dev.off()
+
+log_close()

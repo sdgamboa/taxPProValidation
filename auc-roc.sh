@@ -35,9 +35,10 @@ physiologies=(
     'hydrogen gas producing'
 )
 
+
 for i in "${physiologies[@]}"
 do
-    echo "generateing data for $i"
-    /usr/bin/Rscript generate_data.R "$i"
+    echo "Performing AUC-ROC for $i"
+    /usr/bin/Rscript auc-roc.R "$i"
 done
 
