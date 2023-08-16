@@ -11,7 +11,7 @@ shape   X   Note: AUC was good for some and not so good for others (ranks).
 motility    X   Note: good auc values.
 arrangement X   Note: Bad auc values. Possibly too many individual attributes. Maybe I'll just use the tables for these ones.
 coding genes X Note: Very bad performance for AUC values.
-genome size
+genome size X Note: Very bad performance for AUC values.
 extreme environment
 spore formation
 animal pathogen
