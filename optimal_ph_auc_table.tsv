@@ -1,0 +1,9 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"optimal_ph_all"	"optimal_ph"	"acidic_(<6)"	0.5	0.5
+"optimal_ph_all"	"optimal_ph"	"alkaline_(>=8,_<9.76)"	0.5	0.5
+"optimal_ph_all"	"optimal_ph"	"neutral_(>=6,_<8)"	0.5	0.5
+"optimal_ph_all"	"optimal_ph"	"very_alkaline_(>9.76)"	0.5	0.5
+"optimal_ph_sp"	"optimal_ph"	"acidic_(<6)"	0.5	0.5
+"optimal_ph_sp"	"optimal_ph"	"alkaline_(>=8,_<9.76)"	0.5	0.5
+"optimal_ph_sp"	"optimal_ph"	"neutral_(>=6,_<8)"	0.5	0.5
+"optimal_ph_sp"	"optimal_ph"	"very_alkaline_(>9.76)"	0.5	0.5

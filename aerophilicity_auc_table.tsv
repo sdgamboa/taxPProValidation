@@ -1,0 +1,13 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"aerophilicity_all"	"aerophilicity"	"aerobic"	0.89	0.78
+"aerophilicity_all"	"aerophilicity"	"anaerobic"	0.95	0.78
+"aerophilicity_all"	"aerophilicity"	"facultatively_anaerobic"	0.5	0.78
+"aerophilicity_gn"	"aerophilicity"	"aerobic"	0.9	0.78
+"aerophilicity_gn"	"aerophilicity"	"anaerobic"	0.95	0.78
+"aerophilicity_gn"	"aerophilicity"	"facultatively_anaerobic"	0.5	0.78
+"aerophilicity_sp"	"aerophilicity"	"aerobic"	0.89	0.79
+"aerophilicity_sp"	"aerophilicity"	"anaerobic"	0.97	0.79
+"aerophilicity_sp"	"aerophilicity"	"facultatively_anaerobic"	0.5	0.79
+"aerophilicity_st"	"aerophilicity"	"aerobic"	0.89	0.78
+"aerophilicity_st"	"aerophilicity"	"anaerobic"	0.94	0.78
+"aerophilicity_st"	"aerophilicity"	"facultatively_anaerobic"	0.5	0.78

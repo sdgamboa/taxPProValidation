@@ -1,0 +1,7 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"biosafety_level_all"	"biosafety_level"	"biosafety_level_1"	0.5	0.5
+"biosafety_level_all"	"biosafety_level"	"biosafety_level_2"	0.5	0.5
+"biosafety_level_all"	"biosafety_level"	"biosafety_level_3"	0.5	0.5
+"biosafety_level_st"	"biosafety_level"	"biosafety_level_1"	0.5	0.5
+"biosafety_level_st"	"biosafety_level"	"biosafety_level_2"	0.5	0.5
+"biosafety_level_st"	"biosafety_level"	"biosafety_level_3"	0.5	0.5
