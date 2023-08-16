@@ -1,5 +1,5 @@
 importHoldouts <- function(phys = 'aerophilicity') {
-    regex <- paste0(phys, '.*holdout.*csv')
+    regex <- paste0('^', phys, '_holdout.*csv')
     fnames <- list.files(pattern = regex)
     purrr::map(
         fnames, ~ vroom::vroom(.x, delim = ',', show_col_types = FALSE)
@@ -12,7 +12,7 @@ importHoldouts <- function(phys = 'aerophilicity') {
 }
 
 importPredictions <- function(phys = 'aerophilicity') {
-    regex <- paste0(phys, '.*prediction.*csv')
+    regex <- paste0('^', phys, '_prediction.*csv')
     fnames <- list.files(pattern = regex)
     purrr::map(
         fnames, ~ vroom::vroom(
@@ -22,6 +22,8 @@ importPredictions <- function(phys = 'aerophilicity') {
                 Attribute = vroom::col_character(),
                 Score = vroom::col_double(),
                 Evidence = vroom::col_character(),
+                Attribute_source = vroom::col_character(),
+                Confidence_in_curation= vroom::col_character()
             )
         )
     ) |> 

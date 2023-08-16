@@ -1,83 +1,17 @@
 ========================================================================= 
 Log Path: shape_auc_log_file.log 
+Program Path: /mnt/STORE1/bighome/samuelgamboa/Projects/taxPProValidation/auc-roc.R 
 Working Directory: /mnt/STORE1/bighome/samuelgamboa/Projects/taxPProValidation 
 User Name: samuelgamboa 
 R Version: 4.3.1 (2023-06-16) 
 Machine: supermicro x86_64 
 Operating System: Linux 5.4.0-150-generic #167-Ubuntu SMP Mon May 15 17:35:05 UTC 2023 
 Base Packages: stats graphics grDevices utils datasets methods base Other Packages: ggpubr_0.6.0 rlang_1.1.1 pROC_1.18.4 ggplot2_3.4.3 tidyr_1.3.0 dplyr_1.1.2 purrr_1.0.2 vroom_1.6.3 logr_1.3.4 
-Log Start Time: 2023-08-16 12:30:57.239817 
+Log Start Time: 2023-08-16 14:55:10.53048 
 ========================================================================= 
 Doing AUC-ROC for shape 
 
-Error in map(roc_res, ~plotAucRoc(.x)) : [1m[22m [36mℹ With name: spore_shape_sp. [1mCaused by error in `sapply(data, methods::is, "roc") | sapply(data, methods::is, "smooth.roc")`:[22m [33m! operations are possible only for numeric, logical or complex types Calls: map ... .handleSimpleError -> h -> <Anonymous> -> <Anonymous> -> signal_abort 
-Traceback: 
- [1] "16: stop(fallback)"                                                                                 
- [2] "15: signal_abort(cnd, .file)"                                                                       
- [3] "14: rlang::abort(message, ..., call = call, use_cli_format = TRUE, "                                
- [4] "        .frame = .frame)"                                                                           
- [5] "13: cli::cli_abort(message, location = i, name = name, parent = cnd, "                              
- [6] "        call = error_call, class = \"purrr_error_indexed\")"                                        
- [7] "12: h(simpleError(msg, call))"                                                                      
- [8] "11: .handleSimpleError(function (cnd) "                                                             
- [9] "    {"                                                                                              
-[10] "        if (i == 0L) {"                                                                             
-[11] "        }"                                                                                          
-[12] "        else {"                                                                                     
-[13] "            message <- c(i = \"In index: {i}.\")"                                                   
-[14] "            if (!is.null(names) && !is.na(names[[i]]) && names[[i]] != "                            
-[15] "                \"\") {"                                                                            
-[16] "                name <- names[[i]]"                                                                 
-[17] "                message <- c(message, i = \"With name: {name}.\")"                                  
-[18] "            }"                                                                                      
-[19] "            else {"                                                                                 
-[20] "                name <- NULL"                                                                       
-[21] "            }"                                                                                      
-[22] "            cli::cli_abort(message, location = i, name = name, parent = cnd, "                      
-[23] "                call = error_call, class = \"purrr_error_indexed\")"                                
-[24] "        }"                                                                                          
-[25] "    }, \"operations are possible only for numeric, logical or complex types\", "                    
-[26] "        base::quote(sapply(data, methods::is, \"roc\") | sapply(data, "                             
-[27] "            methods::is, \"smooth.roc\")))"                                                         
-[28] "10: ggroc.list(rocRes, legacy.axes = TRUE)"                                                         
-[29] "9: pROC::ggroc(rocRes, legacy.axes = TRUE)"                                                         
-[30] "8: plotAucRoc(.x)"                                                                                  
-[31] "7: .f(.x[[i]], ...)"                                                                                
-[32] "6: .Primitive(\".Call\")(list(name = \"map_impl\", address = <pointer: 0x564dd1354330>, "           
-[33] "       dll = list(name = \"purrr\", path = \"/mnt/STORE1/lib/R/bioc-release/purrr/libs/purrr.so\", "
-[34] "           dynamicLookup = FALSE, handle = <pointer: 0x564dd30155b0>, "                             
-[35] "           info = <pointer: 0x564dd1340da0>), numParameters = 6L), "                                
-[36] "       <environment>, \"list\", FALSE, 8L, c(\"shape_all\", \"shape_gn\", "                         
-[37] "       \"shape_sp\", \"shape_st\", \"spore_shape_all\", \"spore_shape_gn\", "                       
-[38] "       \"spore_shape_sp\", \"spore_shape_st\"), 7L)"                                                
-[39] "5: call_with_cleanup(map_impl, environment(), .type, .progress, "                                   
-[40] "       n, names, i)"                                                                                
-[41] "4: withCallingHandlers(expr, error = function(cnd) {"                                               
-[42] "       if (i == 0L) {"                                                                              
-[43] "       }"                                                                                           
-[44] "       else {"                                                                                      
-[45] "           message <- c(i = \"In index: {i}.\")"                                                    
-[46] "           if (!is.null(names) && !is.na(names[[i]]) && names[[i]] != "                             
-[47] "               \"\") {"                                                                             
-[48] "               name <- names[[i]]"                                                                  
-[49] "               message <- c(message, i = \"With name: {name}.\")"                                   
-[50] "           }"                                                                                       
-[51] "           else {"                                                                                  
-[52] "               name <- NULL"                                                                        
-[53] "           }"                                                                                       
-[54] "           cli::cli_abort(message, location = i, name = name, parent = cnd, "                       
-[55] "               call = error_call, class = \"purrr_error_indexed\")"                                 
-[56] "       }"                                                                                           
-[57] "   })"                                                                                              
-[58] "3: with_indexed_errors(i = i, names = names, error_call = .purrr_error_call, "                      
-[59] "       call_with_cleanup(map_impl, environment(), .type, .progress, "                               
-[60] "           n, names, i))"                                                                           
-[61] "2: map_(\"list\", .x, .f, ..., .progress = .progress)"                                              
-[62] "1: map(roc_res, ~plotAucRoc(.x))"                                                                   
-Warning message:
-[1m[22mUse of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-[36mℹ Please use `"attribute_group"` instead of `.data$attribute_group`
 ========================================================================= 
-Log End Time: 2023-08-16 12:31:26.515725 
-Log Elapsed Time: 0 00:00:29 
+Log End Time: 2023-08-16 14:55:34.291471 
+Log Elapsed Time: 0 00:00:23 
 ========================================================================= 
