@@ -32,6 +32,68 @@ importPredictions <- function(phys = 'aerophilicity') {
         })
 }
 
+getTestSet <- function(df) {
+    df |> 
+        dplyr::select(.data$NCBI_ID, .data$Attribute, .data$Score) |> 
+        dplyr::arrange(.data$NCBI_ID) |> 
+        dplyr::distinct() |> 
+        tidyr::pivot_wider(
+            names_from = 'Attribute', values_from = 'Score', values_fill = 0
+        ) |> 
+        tidyr::pivot_longer(
+            cols = 2:last_col(), names_to = 'Attribute', values_to = 'Score'
+        ) |> 
+        dplyr::rename(tScore = .data$Score) |> 
+        dplyr::mutate(tPosNeg = ifelse(.data$tScore > 0, 1, 0))
+}
 
+getPredictedSet <- function(df) {
+    df |> 
+        dplyr::select(.data$NCBI_ID, .data$Attribute, .data$Score) |> 
+        dplyr::arrange(.data$NCBI_ID) |> 
+        dplyr::distinct() |> 
+        dplyr::rename(pScore = .data$Score) |> 
+        dplyr::mutate(NCBI_ID = as.character(.data$NCBI_ID)) |> 
+        dplyr::mutate(Attribute = sub('^.*:', '', .data$Attribute)) |> 
+        dplyr::mutate(Attribute = sub('_', ' ', .data$Attribute))
+}
 
+doRoc <- function(df1, df2) {
+    testSet <- getTestSet(df1)
+    predictedSet <- getPredictedSet(df2)
+    res <- dplyr::left_join(
+        testSet, predictedSet, by = c('NCBI_ID', 'Attribute')
+    ) |> 
+        dplyr::mutate(pScore = ifelse(is.na(.data$pScore), 0, .data$pScore))
+    splitted_res <- split(res, res$Attribute)
+    roc_objs <- purrr::map(splitted_res, ~  {
+        tryCatch(
+            error = function(e) e,
+            pROC::roc(.x$tPosNeg, as.double(.x$pScore))
+        )
+    }) |> 
+        purrr::discard(is_error)
+    return(roc_objs)
+}
 
+getAucTable <- function(rocRes, physName) {
+    aucs <- purrr:::map_dbl(rocRes, ~ pROC::auc(.x))
+    df <- data.frame(attribute = names(aucs), attribute_auc = aucs)
+    rownames(df) <- NULL
+    df <- df |> 
+        dplyr::mutate(attribute_group = physName) |> 
+        dplyr::relocate(.data$attribute_group) |> 
+        dplyr::mutate(attribute_group_auc = mean(attribute_auc)) |> 
+        dplyr::mutate(
+            attribute_auc = round(attribute_auc, digits = 2),
+            attribute_group_auc = round(attribute_group_auc, digits = 2)
+        )
+    return(df)
+}
+
+plotAucRoc <- function(rocRes) {
+    pROC::ggroc(rocRes, legacy.axes = TRUE) +
+        ggplot2::labs(x = '1 - Specificity', y = 'Specificity') +
+        ggplot2::scale_color_discrete(name = 'Attribute') + 
+        ggplot2::theme_bw() 
+}
