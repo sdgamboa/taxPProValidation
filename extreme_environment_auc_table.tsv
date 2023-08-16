@@ -1,0 +1,5 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"extreme_environment_all"	"extreme_environment"	"Extreme_environment--FALSE"	0.5	0.5
+"extreme_environment_all"	"extreme_environment"	"Extreme_environment--TRUE"	0.5	0.5
+"extreme_environment_sp"	"extreme_environment"	"Extreme_environment--FALSE"	0.5	0.5
+"extreme_environment_sp"	"extreme_environment"	"Extreme_environment--TRUE"	0.5	0.5

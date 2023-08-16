@@ -10,7 +10,7 @@ library(ggpubr)
 source('function.R')
 
 args <- commandArgs(trailingOnly = TRUE)
-args <- 'genome size'
+args <- 'extreme environment'
 phys_name <- gsub(" ", "_", args[[1]])
 
 logfile <- gsub(' ', '_', paste0(phys_name, "_auc_log_file"))

@@ -12,7 +12,7 @@ motility    X   Note: good auc values.
 arrangement X   Note: Bad auc values. Possibly too many individual attributes. Maybe I'll just use the tables for these ones.
 coding genes X Note: Very bad performance for AUC values.
 genome size X Note: Very bad performance for AUC values.
-extreme environment
+extreme environment X   Note: Very bad performance for AUC values.
 spore formation
 animal pathogen
 plant pathogenicity
