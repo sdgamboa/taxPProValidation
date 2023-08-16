@@ -2,37 +2,36 @@
 
 A repo for testing some validation strategies for bugphyzz
 
-
-acetate producing
 aerophilicity   X
-animal pathogen
-antimicrobial resistance
-antimicrobial sensitivity
-arrangement
-biofilm forming
+growth temperature  X
+disease association X   Note: Too many attributes. Only use the table of AUC values.
 biosafety level
-butyrate producing
-coding genes
-COGEM pathogenicity rating
-disease association
-extreme environment
-genome size
 gram stain
-growth medium
-growth temperature
-health associated
-hemolysis
-hydrogen gas producing
-lactate producing
-length
-motility
-mutation rate per site per generation
-mutation rate per site per year
-optimal ph
-pathogenicity human
-plant pathogenicity
 shape
-sphingolipid producing
+motility
+arrangement
+coding genes
+genome size
+extreme environment
 spore formation
-spore shape
+animal pathogen
+plant pathogenicity
+optimal ph
 width
+COGEM pathogenicity rating
+mutation rate per site per year
+antimicrobial sensitivity
+pathogenicity human
+hemolysis
+length
+biofilm forming
+growth medium
+mutation rate per site per generation
+spore shape
+health associated
+sphingolipid producing
+acetate producing
+butyrate producing
+lactate producing
+hydrogen gas producing
+

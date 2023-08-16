@@ -7,11 +7,11 @@ R Version: 4.3.1 (2023-06-16)
 Machine: supermicro x86_64 
 Operating System: Linux 5.4.0-150-generic #167-Ubuntu SMP Mon May 15 17:35:05 UTC 2023 
 Base Packages: stats graphics grDevices utils datasets methods base Other Packages: ggpubr_0.6.0 rlang_1.1.1 pROC_1.18.4 ggplot2_3.4.3 tidyr_1.3.0 dplyr_1.1.2 purrr_1.0.2 vroom_1.6.3 logr_1.3.4 
-Log Start Time: 2023-08-16 12:55:50.678093 
+Log Start Time: 2023-08-16 13:55:44.278755 
 ========================================================================= 
 Doing AUC-ROC for aerophilicity 
 
 ========================================================================= 
-Log End Time: 2023-08-16 12:56:21.271695 
-Log Elapsed Time: 0 00:00:30 
+Log End Time: 2023-08-16 13:56:09.692309 
+Log Elapsed Time: 0 00:00:25 
 ========================================================================= 

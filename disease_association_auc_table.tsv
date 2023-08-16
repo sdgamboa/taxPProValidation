@@ -1,0 +1,100 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"disease_association_all"	"disease_association"	"abortion"	0.5	0.74
+"disease_association_all"	"disease_association"	"abscess"	0.5	0.74
+"disease_association_all"	"disease_association"	"Acne"	0.5	0.74
+"disease_association_all"	"disease_association"	"african tick-bite fever"	0.5	0.74
+"disease_association_all"	"disease_association"	"anemia"	0.5	0.74
+"disease_association_all"	"disease_association"	"anthrax"	1	0.74
+"disease_association_all"	"disease_association"	"Arthritis"	1	0.74
+"disease_association_all"	"disease_association"	"bacillary angiomatosis"	1	0.74
+"disease_association_all"	"disease_association"	"bacteremia"	0.48	0.74
+"disease_association_all"	"disease_association"	"bacterial leaf blight"	0.75	0.74
+"disease_association_all"	"disease_association"	"bacterial vaginosis"	0.5	0.74
+"disease_association_all"	"disease_association"	"botulism"	1	0.74
+"disease_association_all"	"disease_association"	"brucellosis"	0.99	0.74
+"disease_association_all"	"disease_association"	"canker"	0.5	0.74
+"disease_association_all"	"disease_association"	"cat scratch fever"	0.5	0.74
+"disease_association_all"	"disease_association"	"cholera"	1	0.74
+"disease_association_all"	"disease_association"	"colitis"	0.74	0.74
+"disease_association_all"	"disease_association"	"cystitis"	0.5	0.74
+"disease_association_all"	"disease_association"	"diarrhea"	1	0.74
+"disease_association_all"	"disease_association"	"duodenal lesions"	0.5	0.74
+"disease_association_all"	"disease_association"	"dysentery"	0.88	0.74
+"disease_association_all"	"disease_association"	"ehrlichiosis"	0.5	0.74
+"disease_association_all"	"disease_association"	"encephalitis"	0.5	0.74
+"disease_association_all"	"disease_association"	"endocarditis"	0.5	0.74
+"disease_association_all"	"disease_association"	"Foodborne Illness"	0.99	0.74
+"disease_association_all"	"disease_association"	"Gastroenteritis"	0.8	0.74
+"disease_association_all"	"disease_association"	"Haemophilus"	0.5	0.74
+"disease_association_all"	"disease_association"	"infection"	0.74	0.74
+"disease_association_all"	"disease_association"	"legionnaire's disease"	1	0.74
+"disease_association_all"	"disease_association"	"leprosy"	1	0.74
+"disease_association_all"	"disease_association"	"Lyme Disease"	1	0.74
+"disease_association_all"	"disease_association"	"mastitis"	0.47	0.74
+"disease_association_all"	"disease_association"	"melioidosis"	1	0.74
+"disease_association_all"	"disease_association"	"meningoencephalitis"	0.5	0.74
+"disease_association_all"	"disease_association"	"Periodontal disorder"	0.67	0.74
+"disease_association_all"	"disease_association"	"plague"	1	0.74
+"disease_association_all"	"disease_association"	"Plant chlorosis"	1	0.74
+"disease_association_all"	"disease_association"	"pneumonia"	0.86	0.74
+"disease_association_all"	"disease_association"	"pyelonephritis"	0.5	0.74
+"disease_association_all"	"disease_association"	"reaction to black rot"	1	0.74
+"disease_association_all"	"disease_association"	"respiratory infection"	1	0.74
+"disease_association_all"	"disease_association"	"respiratory system disease"	0.5	0.74
+"disease_association_all"	"disease_association"	"septicemia"	0.49	0.74
+"disease_association_all"	"disease_association"	"sorghum"	0.5	0.74
+"disease_association_all"	"disease_association"	"syphilis"	1	0.74
+"disease_association_all"	"disease_association"	"Toxic Shock Syndrome"	1	0.74
+"disease_association_all"	"disease_association"	"tuberculosis"	1	0.74
+"disease_association_all"	"disease_association"	"Tuberculosis"	0.5	0.74
+"disease_association_all"	"disease_association"	"tumors"	0.5	0.74
+"disease_association_all"	"disease_association"	"ulcer"	0.99	0.74
+"disease_association_all"	"disease_association"	"urinary tract infection"	0.77	0.74
+"disease_association_sp"	"disease_association"	"bacterial leaf blight"	1	1
+"disease_association_sp"	"disease_association"	"infection"	1	1
+"disease_association_sp"	"disease_association"	"pneumonia"	1	1
+"disease_association_st"	"disease_association"	"abscess"	0.5	0.78
+"disease_association_st"	"disease_association"	"acrodermatitis"	0.5	0.78
+"disease_association_st"	"disease_association"	"anaplasmosis"	1	0.78
+"disease_association_st"	"disease_association"	"anemia"	0.5	0.78
+"disease_association_st"	"disease_association"	"Arthritis"	0.74	0.78
+"disease_association_st"	"disease_association"	"bacillary angiomatosis"	0.5	0.78
+"disease_association_st"	"disease_association"	"bacteremia"	0.48	0.78
+"disease_association_st"	"disease_association"	"bacterial leaf blight"	1	0.78
+"disease_association_st"	"disease_association"	"botulism"	1	0.78
+"disease_association_st"	"disease_association"	"canker"	1	0.78
+"disease_association_st"	"disease_association"	"Caries"	1	0.78
+"disease_association_st"	"disease_association"	"cat scratch fever"	0.5	0.78
+"disease_association_st"	"disease_association"	"cell lysis"	0.5	0.78
+"disease_association_st"	"disease_association"	"colitis"	0.99	0.78
+"disease_association_st"	"disease_association"	"diarrhea"	0.75	0.78
+"disease_association_st"	"disease_association"	"dysentery"	1	0.78
+"disease_association_st"	"disease_association"	"ehrlichiosis"	0.5	0.78
+"disease_association_st"	"disease_association"	"endocarditis"	0.49	0.78
+"disease_association_st"	"disease_association"	"Foodborne Illness"	1	0.78
+"disease_association_st"	"disease_association"	"Furunculosis"	0.5	0.78
+"disease_association_st"	"disease_association"	"Gastroenteritis"	0.92	0.78
+"disease_association_st"	"disease_association"	"Glanders"	1	0.78
+"disease_association_st"	"disease_association"	"heartwater"	0.99	0.78
+"disease_association_st"	"disease_association"	"infection"	0.76	0.78
+"disease_association_st"	"disease_association"	"kidney disease"	0.5	0.78
+"disease_association_st"	"disease_association"	"legionnaire's disease"	1	0.78
+"disease_association_st"	"disease_association"	"leprosy"	1	0.78
+"disease_association_st"	"disease_association"	"Lyme Disease"	1	0.78
+"disease_association_st"	"disease_association"	"melioidosis"	1	0.78
+"disease_association_st"	"disease_association"	"meningitis"	0.49	0.78
+"disease_association_st"	"disease_association"	"meningoencephalitis"	0.5	0.78
+"disease_association_st"	"disease_association"	"Periodontal disorder"	0.48	0.78
+"disease_association_st"	"disease_association"	"plague"	1	0.78
+"disease_association_st"	"disease_association"	"pneumonia"	0.9	0.78
+"disease_association_st"	"disease_association"	"reaction to black rot"	0.5	0.78
+"disease_association_st"	"disease_association"	"respiratory infection"	1	0.78
+"disease_association_st"	"disease_association"	"septicemia"	0.99	0.78
+"disease_association_st"	"disease_association"	"Terrabacteria group"	0.5	0.78
+"disease_association_st"	"disease_association"	"Toxic Shock Syndrome"	1	0.78
+"disease_association_st"	"disease_association"	"trench fever"	0.5	0.78
+"disease_association_st"	"disease_association"	"tuberculosis"	1	0.78
+"disease_association_st"	"disease_association"	"Tuberculosis"	0.5	0.78
+"disease_association_st"	"disease_association"	"typhus"	1	0.78
+"disease_association_st"	"disease_association"	"ulcer"	1	0.78
+"disease_association_st"	"disease_association"	"urinary tract infection"	0.99	0.78
