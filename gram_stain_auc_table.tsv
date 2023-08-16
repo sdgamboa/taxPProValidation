@@ -1,0 +1,13 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"gram_stain_all"	"gram_stain"	"gram_stain_negative"	0.5	0.5
+"gram_stain_all"	"gram_stain"	"gram_stain_positive"	0.5	0.5
+"gram_stain_all"	"gram_stain"	"gram_stain_variable"	0.5	0.5
+"gram_stain_gn"	"gram_stain"	"gram_stain_negative"	0.5	0.5
+"gram_stain_gn"	"gram_stain"	"gram_stain_positive"	0.5	0.5
+"gram_stain_gn"	"gram_stain"	"gram_stain_variable"	0.5	0.5
+"gram_stain_sp"	"gram_stain"	"gram_stain_negative"	0.5	0.5
+"gram_stain_sp"	"gram_stain"	"gram_stain_positive"	0.5	0.5
+"gram_stain_sp"	"gram_stain"	"gram_stain_variable"	0.5	0.5
+"gram_stain_st"	"gram_stain"	"gram_stain_negative"	0.5	0.5
+"gram_stain_st"	"gram_stain"	"gram_stain_positive"	0.5	0.5
+"gram_stain_st"	"gram_stain"	"gram_stain_variable"	0.5	0.5

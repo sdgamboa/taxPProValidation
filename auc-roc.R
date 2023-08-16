@@ -35,8 +35,6 @@ write.table(
     row.names = FALSE
 )
 
-plotAucRoc(roc_res[[2]])
-
 roc_plots <- map(roc_res, ~ plotAucRoc(.x))
 p <- ggarrange(
     plotlist = roc_plots,
