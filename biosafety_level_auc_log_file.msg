@@ -1,4 +1,4 @@
-Error in map(roc_res, ~plotAucRoc(.x)) : [1m[22m [36mℹ[39m With name: biosafety_level_sp. [1mCaused by error in `sapply(data, methods::is, "roc") | sapply(data, methods::is, "smooth.roc")`:[22m [33m![39m operations are possible only for numeric, logical or complex types Calls: map ... .handleSimpleError -> h -> <Anonymous> -> <Anonymous> -> signal_abort 
+Error in map(roc_res, ~plotAucRoc(.x)) : [38;5;250m [36mℹ[38;5;250m With name: biosafety_level_sp.[39m [1mCaused by error in `sapply(data, methods::is, "roc") | sapply(data, methods::is, "smooth.roc")`:[22m [33m![39m operations are possible only for numeric, logical or complex types 
 Traceback: 
  [1] "16: stop(fallback)"                                                                                 
  [2] "15: signal_abort(cnd, .file)"                                                                       
@@ -28,13 +28,13 @@ Traceback:
 [26] "        base::quote(sapply(data, methods::is, \"roc\") | sapply(data, "                             
 [27] "            methods::is, \"smooth.roc\")))"                                                         
 [28] "10: ggroc.list(rocRes, legacy.axes = TRUE)"                                                         
-[29] "9: pROC::ggroc(rocRes, legacy.axes = TRUE)"                                                         
+[29] "9: pROC::ggroc(rocRes, legacy.axes = TRUE) at function.R#95"                                        
 [30] "8: plotAucRoc(.x)"                                                                                  
 [31] "7: .f(.x[[i]], ...)"                                                                                
-[32] "6: .Primitive(\".Call\")(list(name = \"map_impl\", address = <pointer: 0x55f6ff242330>, "           
+[32] "6: .Primitive(\".Call\")(list(name = \"map_impl\", address = <pointer: 0x5642ce36e770>, "           
 [33] "       dll = list(name = \"purrr\", path = \"/mnt/STORE1/lib/R/bioc-release/purrr/libs/purrr.so\", "
-[34] "           dynamicLookup = FALSE, handle = <pointer: 0x55f700f035b0>, "                             
-[35] "           info = <pointer: 0x55f6ff22eda0>), numParameters = 6L), "                                
+[34] "           dynamicLookup = FALSE, handle = <pointer: 0x5642d398c720>, "                             
+[35] "           info = <pointer: 0x5642d10b41a0>), numParameters = 6L), "                                
 [36] "       <environment>, \"list\", FALSE, 3L, c(\"biosafety_level_all\", "                             
 [37] "       \"biosafety_level_sp\", \"biosafety_level_st\"), 2L)"                                        
 [38] "5: call_with_cleanup(map_impl, environment(), .type, .progress, "                                   
@@ -61,6 +61,3 @@ Traceback:
 [59] "           n, names, i))"                                                                           
 [60] "2: map_(\"list\", .x, .f, ..., .progress = .progress)"                                              
 [61] "1: map(roc_res, ~plotAucRoc(.x))"                                                                   
-Warning message:
-[1m[22mUse of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-[36mℹ[39m Please use `"attribute_group"` instead of `.data$attribute_group`

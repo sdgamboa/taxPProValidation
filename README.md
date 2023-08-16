@@ -5,7 +5,7 @@ A repo for testing some validation strategies for bugphyzz
 aerophilicity   X
 growth temperature  X
 disease association X   Note: Too many attributes. Only use the table of AUC values.
-biosafety level
+biosafety level X   Note: Some biosafety data (sp) couldn't be used for auc beacause there were too few holdouts (like 5).
 gram stain
 shape
 motility

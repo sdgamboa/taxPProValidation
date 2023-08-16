@@ -10,7 +10,7 @@ library(ggpubr)
 source('function.R')
 
 args <- commandArgs(trailingOnly = TRUE)
-args <- 'biosafety level'
+args <- 'gram stain'
 phys_name <- gsub(" ", "_", args[[1]])
 
 logfile <- gsub(' ', '_', paste0(phys_name, "_auc_log_file"))
@@ -20,8 +20,11 @@ msg <- paste0(
 )
 log_print(msg, blank_after = TRUE)
 holdouts <- importHoldouts(phys_name)
+holdouts <- map(holdouts, ~ modify_at(.x, .at = 'Attribute', function(x) gsub(' ', '_', x)))
 predictions <- importPredictions(phys_name)
-roc_res <- map2(holdouts, predictions, ~ doRoc(.x, .y))
+predictions <- map(predictions, ~ modify_at(.x, .at = 'Attribute', function(x) gsub(' ', '_', x)))
+roc_res <- map2(holdouts, predictions, ~ doRoc(.x, .y)) |> 
+    discard(~ !length(.x))
 names(roc_res) <- sub("_(holdout|prediction)", "", names(roc_res))
 auc_table <- map(roc_res, ~ getAucTable(.x, phys_name)) |> 
     bind_rows(.id = 'rank')
@@ -31,6 +34,8 @@ write.table(
     x = auc_table, file = table_fname, sep = "\t", quote = TRUE, 
     row.names = FALSE
 )
+
+plotAucRoc(roc_res[[2]])
 
 roc_plots <- map(roc_res, ~ plotAucRoc(.x))
 p <- ggarrange(
