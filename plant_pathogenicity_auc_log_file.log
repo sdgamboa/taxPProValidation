@@ -1,0 +1,19 @@
+========================================================================= 
+Log Path: plant_pathogenicity_auc_log_file.log 
+Working Directory: /mnt/STORE1/bighome/samuelgamboa/Projects/taxPProValidation 
+User Name: samuelgamboa 
+R Version: 4.3.1 (2023-06-16) 
+Machine: supermicro x86_64 
+Operating System: Linux 5.4.0-150-generic #167-Ubuntu SMP Mon May 15 17:35:05 UTC 2023 
+Base Packages: stats graphics grDevices utils datasets methods base Other Packages: ggpubr_0.6.0 rlang_1.1.1 pROC_1.18.4 ggplot2_3.4.3 tidyr_1.3.0 dplyr_1.1.2 purrr_1.0.2 vroom_1.6.3 logr_1.3.4 
+Log Start Time: 2023-08-16 12:32:15.184944 
+========================================================================= 
+Doing AUC-ROC for plant_pathogenicity 
+
+Warning message:
+[1m[22mUse of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+[36mℹ Please use `"attribute_group"` instead of `.data$attribute_group`
+========================================================================= 
+Log End Time: 2023-08-16 12:32:17.927383 
+Log Elapsed Time: 0 00:00:02 
+========================================================================= 

@@ -10,6 +10,7 @@ library(ggpubr)
 source('function.R')
 
 args <- commandArgs(trailingOnly = TRUE)
+args <- 'growth_temperature'
 phys_name <- sub(" ", "_", args[[1]])
 
 logfile <- gsub(' ', '_', paste0(phys_name, "_auc_log_file"))
@@ -45,3 +46,4 @@ p
 dev.off()
 
 log_close()
+

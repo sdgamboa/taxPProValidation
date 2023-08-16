@@ -1,0 +1,13 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"coding_genes_all"	"coding_genes"	"average (>=601, <6000)"	0.82	0.82
+"coding_genes_all"	"coding_genes"	"small (>=474, <600)"	0.86	0.82
+"coding_genes_all"	"coding_genes"	"very large (>6001)"	0.85	0.82
+"coding_genes_all"	"coding_genes"	"very small (<473)"	0.75	0.82
+"coding_genes_sp"	"coding_genes"	"average (>=601, <6000)"	0.77	0.74
+"coding_genes_sp"	"coding_genes"	"small (>=474, <600)"	0.83	0.74
+"coding_genes_sp"	"coding_genes"	"very large (>6001)"	0.87	0.74
+"coding_genes_sp"	"coding_genes"	"very small (<473)"	0.5	0.74
+"coding_genes_st"	"coding_genes"	"average (>=601, <6000)"	0.88	0.9
+"coding_genes_st"	"coding_genes"	"small (>=474, <600)"	1	0.9
+"coding_genes_st"	"coding_genes"	"very large (>6001)"	0.89	0.9
+"coding_genes_st"	"coding_genes"	"very small (<473)"	0.83	0.9

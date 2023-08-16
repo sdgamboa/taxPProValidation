@@ -1,0 +1,13 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"growth_temperature_all"	"growth_temperature"	"hyperthermophile (>61 Celcius)"	0.97	0.87
+"growth_temperature_all"	"growth_temperature"	"mesophile (>=25, <45 Celcius)"	0.87	0.87
+"growth_temperature_all"	"growth_temperature"	"psychrophile (<24.9 Celcius)"	0.83	0.87
+"growth_temperature_all"	"growth_temperature"	"thermophile (>=46, <60 Celcius)"	0.82	0.87
+"growth_temperature_sp"	"growth_temperature"	"hyperthermophile (>61 Celcius)"	0.98	0.86
+"growth_temperature_sp"	"growth_temperature"	"mesophile (>=25, <45 Celcius)"	0.83	0.86
+"growth_temperature_sp"	"growth_temperature"	"psychrophile (<24.9 Celcius)"	0.77	0.86
+"growth_temperature_sp"	"growth_temperature"	"thermophile (>=46, <60 Celcius)"	0.89	0.86
+"growth_temperature_st"	"growth_temperature"	"hyperthermophile (>61 Celcius)"	0.98	0.89
+"growth_temperature_st"	"growth_temperature"	"mesophile (>=25, <45 Celcius)"	0.88	0.89
+"growth_temperature_st"	"growth_temperature"	"psychrophile (<24.9 Celcius)"	0.8	0.89
+"growth_temperature_st"	"growth_temperature"	"thermophile (>=46, <60 Celcius)"	0.91	0.89

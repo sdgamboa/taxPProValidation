@@ -34,8 +34,8 @@ importPredictions <- function(phys = 'aerophilicity') {
 
 getTestSet <- function(df) {
     df |> 
-        dplyr::select(.data$NCBI_ID, .data$Attribute, .data$Score) |> 
-        dplyr::arrange(.data$NCBI_ID) |> 
+        dplyr::select(NCBI_ID, Attribute, Score) |> 
+        dplyr::arrange(NCBI_ID) |> 
         dplyr::distinct() |> 
         tidyr::pivot_wider(
             names_from = 'Attribute', values_from = 'Score', values_fill = 0
@@ -43,19 +43,19 @@ getTestSet <- function(df) {
         tidyr::pivot_longer(
             cols = 2:last_col(), names_to = 'Attribute', values_to = 'Score'
         ) |> 
-        dplyr::rename(tScore = .data$Score) |> 
-        dplyr::mutate(tPosNeg = ifelse(.data$tScore > 0, 1, 0))
+        dplyr::rename(tScore = Score) |> 
+        dplyr::mutate(tPosNeg = ifelse(tScore > 0, 1, 0))
 }
 
 getPredictedSet <- function(df) {
     df |> 
-        dplyr::select(.data$NCBI_ID, .data$Attribute, .data$Score) |> 
-        dplyr::arrange(.data$NCBI_ID) |> 
+        dplyr::select(NCBI_ID, Attribute, Score) |> 
+        dplyr::arrange(NCBI_ID) |> 
         dplyr::distinct() |> 
-        dplyr::rename(pScore = .data$Score) |> 
-        dplyr::mutate(NCBI_ID = as.character(.data$NCBI_ID)) |> 
-        dplyr::mutate(Attribute = sub('^.*:', '', .data$Attribute)) |> 
-        dplyr::mutate(Attribute = sub('_', ' ', .data$Attribute))
+        dplyr::rename(pScore = Score) |> 
+        dplyr::mutate(NCBI_ID = as.character(NCBI_ID)) |> 
+        dplyr::mutate(Attribute = sub('^.*:', '', Attribute)) |> 
+        dplyr::mutate(Attribute = sub('_', ' ', Attribute))
 }
 
 doRoc <- function(df1, df2) {
@@ -64,7 +64,7 @@ doRoc <- function(df1, df2) {
     res <- dplyr::left_join(
         testSet, predictedSet, by = c('NCBI_ID', 'Attribute')
     ) |> 
-        dplyr::mutate(pScore = ifelse(is.na(.data$pScore), 0, .data$pScore))
+        dplyr::mutate(pScore = ifelse(is.na(pScore), 0, pScore))
     splitted_res <- split(res, res$Attribute)
     roc_objs <- purrr::map(splitted_res, ~  {
         tryCatch(
@@ -82,7 +82,7 @@ getAucTable <- function(rocRes, physName) {
     rownames(df) <- NULL
     df <- df |> 
         dplyr::mutate(attribute_group = physName) |> 
-        dplyr::relocate(.data$attribute_group) |> 
+        dplyr::relocate(attribute_group) |> 
         dplyr::mutate(attribute_group_auc = mean(attribute_auc)) |> 
         dplyr::mutate(
             attribute_auc = round(attribute_auc, digits = 2),

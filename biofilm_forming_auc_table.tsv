@@ -1,0 +1,5 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"biofilm_forming_all"	"biofilm_forming"	"biofilm formation--FALSE"	0.7	0.68
+"biofilm_forming_all"	"biofilm_forming"	"biofilm formation--TRUE"	0.66	0.68
+"biofilm_forming_sp"	"biofilm_forming"	"biofilm formation--FALSE"	0.7	0.68
+"biofilm_forming_sp"	"biofilm_forming"	"biofilm formation--TRUE"	0.66	0.68

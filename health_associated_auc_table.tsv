@@ -1,0 +1,5 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"health_associated_all"	"health_associated"	"Health associated--FALSE"	0.58	0.62
+"health_associated_all"	"health_associated"	"Health associated--TRUE"	0.67	0.62
+"health_associated_sp"	"health_associated"	"Health associated--FALSE"	0.58	0.62
+"health_associated_sp"	"health_associated"	"Health associated--TRUE"	0.67	0.62
