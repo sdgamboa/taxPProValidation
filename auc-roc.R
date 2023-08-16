@@ -10,7 +10,6 @@ library(ggpubr)
 source('function.R')
 
 args <- commandArgs(trailingOnly = TRUE)
-args <- 'spore formation'
 phys_name <- gsub(" ", "_", args[[1]])
 
 logfile <- gsub(' ', '_', paste0(phys_name, "_auc_log_file"))
