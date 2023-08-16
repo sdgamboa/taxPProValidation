@@ -7,8 +7,8 @@ growth temperature  X
 disease association X   Note: Too many attributes. Only use the table of AUC values.
 biosafety level X   Note: Some biosafety data (sp) couldn't be used for auc beacause there were too few holdouts (like 5).
 gram stain X Note: Very low auc values.
-shape
-motility
+shape   X   Note: AUC was good for some and not so good for others (ranks).
+motility    X   Note: good auc values.
 arrangement
 coding genes
 genome size
