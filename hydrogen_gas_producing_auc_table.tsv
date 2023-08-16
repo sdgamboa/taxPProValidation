@@ -1,3 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"hydrogen_gas_producing_all"	"hydrogen_gas_producing"	"hydrogen_gas_producing--FALSE"	0.5	0.5
-"hydrogen_gas_producing_all"	"hydrogen_gas_producing"	"hydrogen_gas_producing--TRUE"	0.5	0.5
