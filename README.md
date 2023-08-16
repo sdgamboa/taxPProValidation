@@ -9,7 +9,7 @@ biosafety level X   Note: Some biosafety data (sp) couldn't be used for auc beac
 gram stain X Note: Very low auc values.
 shape   X   Note: AUC was good for some and not so good for others (ranks).
 motility    X   Note: good auc values.
-arrangement
+arrangement X   Note: Bad auc values. Possibly too many individual attributes. Maybe I'll just use the tables for these ones.
 coding genes
 genome size
 extreme environment
