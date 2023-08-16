@@ -1,5 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"plant_pathogenicity_all"	"plant_pathogenicity"	"plant pathogenity--FALSE"	0.72	0.78
-"plant_pathogenicity_all"	"plant_pathogenicity"	"plant pathogenity--TRUE"	0.84	0.78
-"plant_pathogenicity_sp"	"plant_pathogenicity"	"plant pathogenity--FALSE"	0.72	0.78
-"plant_pathogenicity_sp"	"plant_pathogenicity"	"plant pathogenity--TRUE"	0.84	0.78

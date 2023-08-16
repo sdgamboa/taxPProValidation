@@ -1,5 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"animal_pathogen_all"	"animal_pathogen"	"animal pathogen--FALSE"	0.71	0.79
-"animal_pathogen_all"	"animal_pathogen"	"animal pathogen--TRUE"	0.87	0.79
-"animal_pathogen_sp"	"animal_pathogen"	"animal pathogen--FALSE"	0.63	0.75
-"animal_pathogen_sp"	"animal_pathogen"	"animal pathogen--TRUE"	0.88	0.75

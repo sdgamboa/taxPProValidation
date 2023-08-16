@@ -1,5 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"spore_formation_all"	"spore_formation"	"spore formation--FALSE"	0.87	0.9
-"spore_formation_all"	"spore_formation"	"spore formation--TRUE"	0.94	0.9
-"spore_formation_st"	"spore_formation"	"spore formation--FALSE"	0.84	0.91
-"spore_formation_st"	"spore_formation"	"spore formation--TRUE"	0.98	0.91

@@ -1,5 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"motility_all"	"motility"	"motility--FALSE"	0.84	0.84
-"motility_all"	"motility"	"motility--TRUE"	0.84	0.84
-"motility_st"	"motility"	"motility--FALSE"	0.84	0.84
-"motility_st"	"motility"	"motility--TRUE"	0.84	0.84
