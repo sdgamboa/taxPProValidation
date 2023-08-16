@@ -11,7 +11,7 @@ source('function.R')
 
 args <- commandArgs(trailingOnly = TRUE)
 args <- 'growth_temperature'
-phys_name <- sub(" ", "_", args[[1]])
+phys_name <- gsub(" ", "_", args[[1]])
 
 logfile <- gsub(' ', '_', paste0(phys_name, "_auc_log_file"))
 lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
