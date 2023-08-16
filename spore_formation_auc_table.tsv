@@ -1,0 +1,5 @@
+"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
+"spore_formation_all"	"spore_formation"	"spore_formation--FALSE"	0.5	0.5
+"spore_formation_all"	"spore_formation"	"spore_formation--TRUE"	0.5	0.5
+"spore_formation_st"	"spore_formation"	"spore_formation--FALSE"	0.5	0.5
+"spore_formation_st"	"spore_formation"	"spore_formation--TRUE"	0.5	0.5

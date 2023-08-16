@@ -13,7 +13,7 @@ arrangement X   Note: Bad auc values. Possibly too many individual attributes. M
 coding genes X Note: Very bad performance for AUC values.
 genome size X Note: Very bad performance for AUC values.
 extreme environment X   Note: Very bad performance for AUC values.
-spore formation
+spore formation X Note: very bad.
 animal pathogen
 plant pathogenicity
 optimal ph
