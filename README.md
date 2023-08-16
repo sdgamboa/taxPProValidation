@@ -10,7 +10,7 @@ gram stain X Note: Very low auc values.
 shape   X   Note: AUC was good for some and not so good for others (ranks).
 motility    X   Note: good auc values.
 arrangement X   Note: Bad auc values. Possibly too many individual attributes. Maybe I'll just use the tables for these ones.
-coding genes
+coding genes X Note: Very bad performance for AUC values.
 genome size
 extreme environment
 spore formation

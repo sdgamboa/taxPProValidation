@@ -10,7 +10,7 @@ library(ggpubr)
 source('function.R')
 
 args <- commandArgs(trailingOnly = TRUE)
-args <- 'arrangement'
+args <- 'coding genes'
 phys_name <- gsub(" ", "_", args[[1]])
 
 logfile <- gsub(' ', '_', paste0(phys_name, "_auc_log_file"))
