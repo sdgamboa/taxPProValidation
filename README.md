@@ -40,3 +40,14 @@ hydrogen gas producing
 These physiologies throw an error beacuse:
 1) too few data.
 2) all test are 1 and all predicted are 0.
+
+pathogenicity_human
+sphingolipid_producing
+acetate_producing
+butyrate_producing
+lactate_producing
+
+
+
+
+
