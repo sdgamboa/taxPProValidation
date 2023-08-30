@@ -1,0 +1,51 @@
+---
+title: "Double annotations"
+author: "Samuel Gamboa"
+format: html
+editor: visual
+---
+
+## Double annotations
+
+Load packages:
+
+```{r}
+library(bugphyzz)
+library(taxPPro)
+library(dplyr)
+```
+
+Import bugphyzz
+
+```{r}
+phys <- physiologies('aerophilicity')
+aer <- filter(phys[[1]], Attribute_value == TRUE)
+
+```
+
+Get duplicates
+
+```{r}
+con <- getConflicts(aer)
+agr <- getAgreements(aer)
+dan <- getDoubleAnnotations(aer)
+```
+
+```{r}
+
+table(dan$Rank)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
