@@ -32,20 +32,5 @@ dan <- getDoubleAnnotations(aer)
 ```
 
 ```{r}
-
 table(dan$Rank)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

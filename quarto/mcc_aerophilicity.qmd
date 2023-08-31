@@ -1,0 +1,88 @@
+---
+title: "MCC aerophilicity"
+format: html
+editor: visual
+---
+
+```{r, message=FALSE}
+library(purrr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(mltools)
+```
+
+Import holdouts
+
+```{r import holdouts}
+holdout_fnames <- list.files(
+    path = '../', pattern = 'aerophilicity.*holdout.*csv', full.names = TRUE
+)
+holdouts <- map(holdout_fnames, read.csv)
+names(holdouts) <- sub('^\\.\\.//(.*)_holdout_(.*)\\.csv', '\\1_\\2', holdout_fnames)
+map_int(holdouts, nrow)
+```
+
+Import predictions
+
+```{r import predictions}
+prediction_fnames <- list.files(
+    path = '../', pattern = 'aerophilicity.*prediction.*csv', full.names = TRUE
+)
+predictions <- map(prediction_fnames, read.csv)
+predictions <- map(predictions, ~ {
+    .x |> 
+        mutate(
+            NCBI_ID = case_when(
+                Rank == 'strain' ~ paste0('t__', NCBI_ID),
+                TRUE ~ paste0(sub('^(\\w).*$', '\\1__', Rank), NCBI_ID)
+            )
+        )
+})
+names(predictions) <- sub('^\\.\\.//(.*)_prediction_(.*)\\.csv', '\\1_\\2', prediction_fnames)
+map_int(predictions, nrow)
+```
+
+Confusion matrix
+
+```{r confusion matrix}
+h <- holdouts$aerophilicity_sp |> 
+    select(NCBI_ID, Attribute, Score) |> 
+    rename(hScore = Score) |> 
+    mutate_at(.vars = c('NCBI_ID', 'Attribute'), .funs = as.character) |> 
+    complete(NCBI_ID, Attribute, fill = list(hScore = 0))
+p <- predictions$aerophilicity_sp |> 
+    filter(NCBI_ID %in% h$NCBI_ID) |> 
+    select(NCBI_ID, Attribute, Score) |> 
+    rename(pScore = Score) |> 
+    mutate_at(.vars = c('NCBI_ID', 'Attribute'), .funs = as.character) |> 
+    complete(NCBI_ID, Attribute, fill = list(hScore = 0))
+hp <- left_join(h, p, by = c('NCBI_ID', 'Attribute')) |> 
+    mutate(real_value = ifelse(hScore >= 0.5, 1, 0)) |> 
+    mutate(pred_value = ifelse(pScore >= 0.5, 1, 0)) |> 
+    mutate(posNeg = case_when(
+        real_value == 1 & pred_value == 1 ~ 'TP',
+        real_value == 0 & pred_value == 0 ~ 'TN',
+        real_value == 1 & pred_value == 0 ~ 'FN',
+        real_value == 0 & pred_value == 1 ~ 'FP'
+    )) |> 
+    {\(y) split(y, y$Attribute)}() |> 
+    map(~ table(pull(.x, posNeg)))
+head(hp)
+```
+
+```{r run mcc}
+mcc <- map_dbl(hp, ~ {
+    mcc(
+        TP = .x['TP'],
+        FP = .x['FP'],
+        TN = .x['TN'],
+        FN = .x['FN']
+    )
+})
+mcc_res <- tibble(
+    attribute = names(mcc),
+    mcc = mcc
+)
+mcc_res
+```
