@@ -6,17 +6,18 @@ editor: visual
 
 Import packages:
 
-
 ```{r, message=FALSE}
 library(bugphyzz)
 library(taxPPro)
 ```
 
 
-
-
 ```{r, message=FALSE}
 phys <- physiologies('aerophilicity')
 aer <- phys[[1]]
+```
+
+```{r}
+df <- prepareDataForPropagation(aer)
 ```
 
