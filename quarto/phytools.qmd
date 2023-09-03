@@ -4,20 +4,65 @@ format: html
 editor: visual
 ---
 
-Import packages:
+Load packages:
 
-```{r, message=FALSE}
+```{r load packages, message=FALSE}
 library(bugphyzz)
-library(taxPPro)
+library(readr)
+library(dplyr)
+library(bugphyzzExports)
 ```
 
+Import physiologies:
 
-```{r, message=FALSE}
+```{r import data, message=FALSE}
 phys <- physiologies('aerophilicity')
-aer <- phys[[1]]
+df <- phys[[1]]
+dim(df)
 ```
 
-```{r}
-df <- prepareDataForPropagation(aer)
+Filter only valid attributes using the file in bugphyzz:
+
+```{r filter valid attributes}
+## in case there are any invalid attribute in the data
+fname <- system.file(
+    'extdata', 'attributes.tsv', package = 'bugphyzz', mustWork = TRUE
+)
+attributes <- read_tsv(fname, show_col_types = FALSE)
+valid_attributes <- attributes |> 
+    filter(attribute_group == 'aerophilicity') |> 
+    pull(attribute) |> 
+    unique()
+df <- filter(df, Attribute %in% valid_attributes)
 ```
+
+Make sure that all NCBI IDs have valid taxon names and all ranks are valid:
+
+```{r check taxon names and ranks}
+## This might not be necessary for some datasets
+set1 <- filter(df, !is.na(NCBI_ID))
+set2 <- filter(df, is.na(NCBI_ID))
+set1$Rank <- checkRank(set1$NCBI_ID)
+set1$Taxon_name <- checkTaxonName(set1$NCBI_ID)
+data <- bind_rows(set1, set2)
+```
+
+Prepare data for propagation:
+
+```{r prepare data}
+data_ready <- tryCatch(
+    error = function(e) e,
+    {
+        data |> 
+            prepareDataForPropagation() |> 
+            mergeOriginalAndEarlyASR() |> 
+            group_by(NCBI_ID) |> 
+            mutate(Score = Score / sum(Score)) |> 
+            ungroup() |> 
+            distinct()
+    }
+)
+```
+
+
 
