@@ -1,27 +1,28 @@
-library(bugphyzz)
-library(dplyr)
-library(taxPPro)
-library(bugphyzzExports)
+library(phytools)
 
-phys <- physiologies('aerophilicity')
-df <- phys[[1]]
+data("primate.tree")
+data("primate.data")
+tree <- primate.tree
+data <- primate.data
+rm(primate.tree)
+rm(primate.data)
+activity <- data$Activity_pattern
+names(activity) <- rownames(data)
+labs <- sample(tree$tip.label, 10)
 
-fname <- system.file(
-    'extdata', 'attributes.tsv', package = 'bugphyzz', mustWork = TRUE
-)
+m <- to.matrix(activity, levels(activity))
+m[labs,] <- rep(1/ncol(m), ncol(m))
+m['Lagothrix_lagotricha',] <- c(1, 0, 0)
+m2 <- matrix(c(1, 0, 0), nrow = 1)
+rownames(m2) <- '91'
+colnames(m2) <- colnames(m)
+mat <- rbind(m, m2)
 
-attributes <- readr::read_tsv(fname, show_col_types = FALSE)
-valid_attributes <- attributes |> 
-    filter(attribute_group == 'aerophilicity') |> 
-    pull(attribute) |> 
-    unique()
+# m <- m[-which(rownames(m) == 'Lagothrix_lagotricha'),]
+fit <- fitMk(tree, m)
+ace <- ancr(fit, tips = TRUE, internal = TRUE)
 
-df <- df |> 
-    filter(Attribute_value == TRUE) |> 
-    filter(Attribute %in% valid_attributes)
-
-set1 <- filter(df, !is.na(NCBI_ID))
-set2 <- filter(df, is.na(NCBI_ID))
-set1$Rank <- checkRank(set1$NCBI_ID)
-set1$Taxon_name <- checkTaxonName(set1$NCBI_ID)
-df2 <- bind_rows(set1, set2)
+res <- ace$ace
+plot(ace, args.plotTree = list(direction = "upwards"))
+tips <- sapply(labs, function(x, y) which(y == x), y = tree$tip.label)
+add.arrow(tree, tips, arrl = 3, offset = 2, lwd = 2, col = palette()[4])

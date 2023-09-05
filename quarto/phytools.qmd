@@ -66,3 +66,18 @@ data_ready <- tryCatch(
 
 
 
+```{r}
+data('tree_list')
+data_tree <- as.Node(tree_list)
+
+
+```
+
+
+
+```{r}
+asr2 <- asr
+```
+
+
+
