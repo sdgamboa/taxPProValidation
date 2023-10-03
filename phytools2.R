@@ -1,11 +1,6 @@
-## ----include = FALSE-----------------------------------------------------------------------------------------------------
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
 
+# Packages ----------------------------------------------------------------
 
-## ----setup, message=FALSE------------------------------------------------------------------------------------------------
 library(bugphyzz)
 library(taxPPro)
 library(data.tree)
@@ -15,16 +10,35 @@ library(purrr)
 library(tidyr)
 library(ggplot2)
 
-
-## ----import physiology, message=FALSE------------------------------------------------------------------------------------
+# Import data -------------------------------------------------------------
 phys_name <- 'aerophilicity'
 phys <- physiologies(phys_name)
 
+# Filter data -------------------------------------------------------------
+filtered_data <- phys[[1]] |> 
+    filterData()
 
-## ----warning=FALSE-------------------------------------------------------------------------------------------------------
-phys_data_ready <- phys[[1]] |> 
-    filterData() |> 
-    getDataReady()
+set_with_ids <- getSetWithIDs(filtered_data)
+taxa_with_ids <- set_with_ids |> 
+    filter(Rank == 'species') |> 
+    pull(NCBI_ID) |> 
+    unique()
+
+sample_size_sp <- round(length(taxa_with_ids) * 0.3)
+set.seed(1234)
+test_taxa <- sample(taxa_with_ids, size = sample_size_sp, replace = FALSE)
+test_set <- set_with_ids |> 
+    filter(NCBI_ID %in% test_taxa)
+
+set_with_ids <- set_with_ids |> 
+    filter(!NCBI_ID %in% test_taxa)
+set_without_ids <- getSetWithoutIDs(filtered_data, set_with_ids) |> 
+    filter(!NCBI_ID %in% test_taxa)
+
+phys_data_ready <- dplyr::bind_rows(set_with_ids, set_without_ids) |>
+    tidyr::complete(NCBI_ID, Attribute, fill = list(Score = 0)) |>
+    dplyr::arrange(NCBI_ID, Attribute)
+
 phys_data_list <- split(phys_data_ready, factor(phys_data_ready$NCBI_ID))
 
 
