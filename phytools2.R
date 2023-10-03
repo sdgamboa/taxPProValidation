@@ -252,6 +252,138 @@ add_taxa_1 <- phys_data_ready |>
     filter(!NCBI_ID %in% unique(output$NCBI_ID))
 add_taxa_2 <- new_taxa_for_ncbi_tree |> 
     filter(!NCBI_ID %in% unique(output$NCBI_ID))
-final_output <- bind_rows(list(output, add_taxa_1, add_taxa_2)) |> 
-    filter(Score > min_thr)
+final_output <- bind_rows(list(output, add_taxa_1, add_taxa_2))
+    # filter(Score > min_thr)
 
+
+test_taxa %in% final_output$NCBI_ID |> mean()
+
+predicted_set <- final_output |> 
+    filter(NCBI_ID %in% test_taxa) |> 
+    arrange(NCBI_ID, Attribute, Score) |> 
+    select(NCBI_ID, Attribute, pScore = Score)
+
+test_set_complete <- test_set |> 
+    complete(NCBI_ID, Attribute, fill = list(Score = 0)) |> 
+    arrange(NCBI_ID, Attribute, Score) |> 
+    select(NCBI_ID, Attribute, tScore = Score)
+
+hist(test_set_complete$tScore)
+hist(predicted_set$pScore)
+
+
+## aerobic
+aerobic_p <- predicted_set |> 
+    filter(Attribute == 'aerobic') |> 
+    arrange(NCBI_ID, Attribute)
+aerobic_t <- test_set_complete |> 
+    filter(Attribute == 'aerobic') |> 
+    arrange(NCBI_ID, Attribute)
+aerobic <- left_join(aerobic_p, aerobic_t) |> 
+    mutate(
+        pPosNeg = ifelse(pScore > 0.25, 1, 0),
+        tPosNeg = ifelse(tScore > 0.25, 1, 0)
+    ) |> 
+    mutate(
+        PosNeg = case_when(
+            tPosNeg == 1 & pPosNeg == 1 ~ 'TP',
+            tPosNeg == 1 & pPosNeg == 0 ~ 'FN',
+            tPosNeg == 0 & pPosNeg == 0 ~ 'TN',
+            tPosNeg == 0 & pPosNeg == 1 ~ 'FP'
+        )
+    )
+aer_count <- count(aerobic, PosNeg)
+aer_count
+aer_mcc <- mcc(preds = aerobic$pPosNeg, actuals = aerobic$tPosNeg)
+aer_mcc
+
+## aerobic
+anaerobic_p <- predicted_set |> 
+    filter(Attribute == 'anaerobic') |> 
+    arrange(NCBI_ID, Attribute)
+anaerobic_t <- test_set_complete |> 
+    filter(Attribute == 'anaerobic') |> 
+    arrange(NCBI_ID, Attribute)
+anaerobic <- left_join(anaerobic_p, anaerobic_t) |> 
+    mutate(
+        pPosNeg = ifelse(pScore > 0.25, 1, 0),
+        tPosNeg = ifelse(tScore > 0.25, 1, 0)
+    ) |> 
+    mutate(
+        PosNeg = case_when(
+            tPosNeg == 1 & pPosNeg == 1 ~ 'TP',
+            tPosNeg == 1 & pPosNeg == 0 ~ 'FN',
+            tPosNeg == 0 & pPosNeg == 0 ~ 'TN',
+            tPosNeg == 0 & pPosNeg == 1 ~ 'FP'
+        )
+    )
+ana_count <- count(anaerobic, PosNeg)
+ana_count
+ana_mcc <- mcc(preds = anaerobic$pPosNeg, actuals = anaerobic$tPosNeg)
+ana_mcc
+
+fac_p <- predicted_set |> 
+    filter(Attribute == 'facultatively anaerobic') |> 
+    arrange(NCBI_ID, Attribute)
+fac_t <- test_set_complete |> 
+    filter(Attribute == 'facultatively anaerobic') |> 
+    arrange(NCBI_ID, Attribute)
+fac <- left_join(fac_p, fac_t) |> 
+    mutate(
+        pPosNeg = ifelse(pScore > 0.25, 1, 0),
+        tPosNeg = ifelse(tScore > 0.25, 1, 0)
+    ) |> 
+    mutate(
+        PosNeg = case_when(
+            tPosNeg == 1 & pPosNeg == 1 ~ 'TP',
+            tPosNeg == 1 & pPosNeg == 0 ~ 'FN',
+            tPosNeg == 0 & pPosNeg == 0 ~ 'TN',
+            tPosNeg == 0 & pPosNeg == 1 ~ 'FP'
+        )
+    )
+fac_count <- count(fac, PosNeg)
+fac_count
+fac_mcc <- mcc(preds = fac$pPosNeg, actuals = fac$tPosNeg)
+fac_mcc
+
+
+at_p <- predicted_set |> 
+    filter(Attribute == 'aerotolerant') |> 
+    arrange(NCBI_ID, Attribute)
+at_t <- test_set_complete |> 
+    filter(Attribute == 'aerotolerant') |> 
+    arrange(NCBI_ID, Attribute)
+at <- left_join(at_p, at_t) |> 
+    mutate(tScore = ifelse(is.na(tScore), 0, tScore)) |> 
+    mutate(
+        pPosNeg = ifelse(pScore > 0.25, 1, 0),
+        tPosNeg = ifelse(tScore > 0.25, 1, 0)
+    ) |> 
+    mutate(
+        PosNeg = case_when(
+            tPosNeg == 1 & pPosNeg == 1 ~ 'TP',
+            tPosNeg == 1 & pPosNeg == 0 ~ 'FN',
+            tPosNeg == 0 & pPosNeg == 0 ~ 'TN',
+            tPosNeg == 0 & pPosNeg == 1 ~ 'FP'
+        )
+    )
+at_count <- count(at, PosNeg)
+at_count 
+at_mcc <- mcc(preds = at$pPosNeg, actuals = at$tPosNeg)
+at_mcc
+
+## aerobic - species
+aer_count
+aer_mcc
+
+## anerobic - species
+ana_count
+ana_mcc
+
+## facultatively anaerobic - species
+fac_count
+fac_mcc
+
+## aertoloerant - species
+at_count 
+at_mcc
