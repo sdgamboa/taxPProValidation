@@ -1,6 +1,11 @@
 # taxPProValidation
 
-A repo for testing some validation strategies for bugphyzz
+
+Validation of propagation method. Functions for this propagation
+are stored in waldronlab/taxPPro
+
+
+Some technical notes about previous strategis for validation (AUC):
 
 aerophilicity   X
 growth temperature  X
