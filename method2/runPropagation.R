@@ -325,6 +325,7 @@ propagated <- bplapply(
     }
 )
 
+## Export test sets
 for (i in seq_along(folds$test_sets)) {
     fold_n <- names(folds$test_sets)[i]
     fname <- paste0('method2/',phys_name, '_test_', fold_n, '.csv')
@@ -333,3 +334,24 @@ for (i in seq_along(folds$test_sets)) {
         quote = TRUE
     )
 }
+
+## Export propagated sets
+for (i in seq_along(propagated)) {
+    fold_n <- names(propagated)[i]
+    fname <- paste0('method2/',phys_name, '_propagated_', fold_n, '.csv')
+    write.csv(
+        x = propagated[[i]], file = fname, row.names = FALSE,
+        quote = TRUE
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
