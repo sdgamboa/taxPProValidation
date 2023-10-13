@@ -325,12 +325,11 @@ propagated <- bplapply(
     }
 )
 
-
 for (i in seq_along(folds$test_sets)) {
     fold_n <- names(folds$test_sets)[i]
-    fname <- paste0(phys_name, 'test', fold_n, '.tsv')
-    write.table()
+    fname <- paste0('method2/',phys_name, '_test_', fold_n, '.csv')
+    write.csv(
+        x = folds$test_sets[[i]], file = fname, row.names = FALSE,
+        quote = TRUE
+    )
 }
-
-
-
