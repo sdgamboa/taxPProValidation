@@ -338,7 +338,7 @@ for (i in seq_along(folds$test_sets)) {
 ## Export propagated sets
 for (i in seq_along(propagated)) {
     fold_n <- names(propagated)[i]
-    fname <- paste0('method2/',phys_name, '_propagated_', fold_n, '.csv')
+    fname <- paste0(phys_name, '_propagated_', fold_n, '.csv')
     write.csv(
         x = propagated[[i]], file = fname, row.names = FALSE,
         quote = TRUE
