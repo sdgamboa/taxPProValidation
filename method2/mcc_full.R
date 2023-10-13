@@ -18,8 +18,11 @@ library(ggplot2)
 library(ape)
 library(bugphyzzExports)
 library(mltools)
+library(ggplot2)
+library(forcats)
 
 library(BiocParallel)
+
 multicoreParam <- MulticoreParam(workers = 11)
 
 getFolds10 <- function(dat, set_seed = 9013) {
@@ -65,16 +68,6 @@ if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
 }
 
 filtered_bp_data <- filterData(bp_data)
-# suppressWarnings({
-#     set_with_ids <- getSetWithIDs(filtered_bp_data) |> 
-#         filter(Rank %in% rank)
-# })
-# test_sets <- getFolds10(set_with_ids)
-
-# phys <- map(test_sets, ~ {
-#     filtered_bp_data |> 
-#         filter(!NCBI_ID %in% unique(.x$NCBI_ID))
-# })
 
 attr_type <- unique(filtered_bp_data$Attribute_type)
 if (attr_type == 'binary') {
@@ -138,7 +131,6 @@ nodes_df <- data.frame(
     distinct()
 
 start_time <- Sys.time()
-
 propagated <- bplapply(
     X = phys_data_ready,
     BPPARAM = multicoreParam,
@@ -332,72 +324,13 @@ propagated <- bplapply(
 
     }
 )
-end_time <- Sys.time()
-difftime(end_time, start_time, units = 'mins')
 
 
-
-x <- map2(
-    .x = folds$test_sets,
-    .y = propagated,
-    .f = ~ {
-        test <- select(.x, NCBI_ID, Attribute, tScore = Score)
-        estimated <- select(.y, NCBI_ID, Attribute, eScore = Score)
-        left_join(test, estimated, by = c('NCBI_ID', 'Attribute'))
-    }
-)
-
-y <- x |> 
-    map(~ complete(.x, NCBI_ID, Attribute, fill = list(tScore = 0, eScore = 0)))
-
-
-z <- y |> 
-    map(~ {
-        output <- .x |> 
-            mutate(eScore = ifelse(eScore >= 0.25, 1, 0)) |> 
-            mutate(
-                PosNeg = case_when(
-                    tScore == 1 & eScore == 1 ~ 'TP',
-                    tScore == 1 & eScore == 0 ~ 'FN',
-                    tScore == 0 & eScore == 0 ~ 'TN',
-                    tScore == 0 & eScore == 1 ~ 'FP'
-                )
-                
-            )
-        return(output)
-    })
-
-
-h <- z |> 
-    map( ~ {
-        l <- split(.x, factor(.x$Attribute))
-    }) |> 
-    list_flatten()
-map(h, ~ table(.x$PosNeg))
-
-r <- map_dbl(h, ~ {
-    mcc(preds = .x$eScore, actuals = .x$tScore)
-})
-
-jkl <- r |> 
-    as.data.frame() |> 
-    tibble::rownames_to_column(var = 'dataset') |> 
-    separate(col = 'dataset', into = c('fold', 'attribute'), sep = '_') |> 
-    arrange(attribute)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for (i in seq_along(folds$test_sets)) {
+    fold_n <- names(folds$test_sets)[i]
+    fname <- paste0(phys_name, 'test', fold_n, '.tsv')
+    write.table()
+}
 
 
 
