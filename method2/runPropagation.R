@@ -338,16 +338,16 @@ propagated <- bplapply(
             }
         })
         
-        ncbi_tree$Do(
-            function(node_var) {
-                taxPool(
-                    node = node_var,
-                    grp = Attribute_group_var,
-                    typ = Attribute_type_var
-                )
-            },
-            traversal = 'post-order'
-        )
+        # ncbi_tree$Do(
+        #     function(node_var) {
+        #         taxPool(
+        #             node = node_var,
+        #             grp = Attribute_group_var,
+        #             typ = Attribute_type_var
+        #         )
+        #     },
+        #     traversal = 'post-order'
+        # )
         
         ncbi_tree$Do(inh2, traversal = 'pre-order')
         
