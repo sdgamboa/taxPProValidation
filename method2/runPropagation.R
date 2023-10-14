@@ -23,7 +23,14 @@ library(forcats)
 
 library(BiocParallel)
 
-multicoreParam <- MulticoreParam(workers = 11)
+n_cores <- parallel::detectCores()
+if (n_cores <= 16) {
+    n_cores <- 5
+} else {
+    n_cores <- 10
+}
+
+multicoreParam <- MulticoreParam(workers = n_cores)
 
 # getFolds10 <- function(dat, set_seed = 9013) {
 #     taxids <- unique(dat$NCBI_ID)
