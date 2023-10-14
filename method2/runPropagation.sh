@@ -30,7 +30,7 @@ physiologies=(
 #    'spore shape'
 #    'health associated'
 #    'sphingolipid producing'
-#    'acetate producing'
+    'acetate producing'
 #    'butyrate producing'
 #    'lactate producing'
 #    'hydrogen gas producing'
@@ -41,13 +41,13 @@ myRes=$(echo $myVar | grep -e "waldronlab" | wc -l)
 
 for i in "${physiologies[@]}"
 do
-    echo "generateing data for $i"
+    echo generating data for "$i"
     if [ $myRes -eq 0 ]; then
         echo "I'm not on supermicro"
-        Rscript runPropagation.R "$i" $1
+        Rscript runPropagation.R "$i" "$1"
     elif [ $myRes -eq 1 ]; then
         echo "I'm on supermicro"
-        /usr/bin/Rscript runPropagation.R
+        /usr/bin/Rscript runPropagation.R "$i" "$1"
     fi
 done
 
