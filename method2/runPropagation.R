@@ -25,26 +25,59 @@ library(BiocParallel)
 
 multicoreParam <- MulticoreParam(workers = 11)
 
-getFolds10 <- function(dat, set_seed = 9013) {
-    taxids <- unique(dat$NCBI_ID)
-    set.seed(set_seed)
-    test_index <- caret::createFolds(
-        taxids, k = 10, list = TRUE, returnTrain = FALSE
-    )
-    test_taxids <- lapply(test_index, function(x) taxids[x]) 
-    test_sets <- lapply(test_taxids, function(x) dat[dat$NCBI_ID %in% x,])
+# getFolds10 <- function(dat, set_seed = 9013) {
+#     taxids <- unique(dat$NCBI_ID)
+#     set.seed(set_seed)
+#     test_index <- caret::createFolds(
+#         taxids, k = 10, list = TRUE, returnTrain = FALSE
+#     )
+#     test_taxids <- lapply(test_index, function(x) taxids[x]) 
+#     test_sets <- lapply(test_taxids, function(x) dat[dat$NCBI_ID %in% x,])
+     
+#     set.seed(set_seed)
+#     train_index <- caret::createFolds(
+#         taxids, k = 10, list = TRUE, returnTrain = TRUE 
+#     )
+#     train_taxids <- lapply(train_index, function(x) taxids[x]) 
+#     train_sets <- lapply(train_taxids, function(x) dat[dat$NCBI_ID %in% x,])
+#     
+#     output <- list(
+#         test_sets = test_sets, train_sets = train_sets
+#     )
+#     return(output)
+# }
+
+getFolds10 <- function(dat, k_value = 10) {
+    taxa <- unique(dat$NCBI_ID)
+    k_value <- 10
+    set.seed(1234)
+    taxa_folds <- cvTools::cvFolds(length(taxa), K = k_value)
     
-    set.seed(set_seed)
-    train_index <- caret::createFolds(
-        taxids, k = 10, list = TRUE, returnTrain = TRUE 
+    test_taxids <- vector('list', k_value)
+    train_taxids <- vector('list', k_value)
+    
+    for(i in 1:k_value){
+        fold_name <- paste0('Fold', i)
+        names(test_taxids)[i] <- fold_name
+        test_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which == i]]
+        names(train_taxids)[i] <- fold_name
+        train_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which != i]]
+    }
+    
+    test_sets <- purrr::map(
+        test_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
     )
-    train_taxids <- lapply(train_index, function(x) taxids[x]) 
-    train_sets <- lapply(train_taxids, function(x) dat[dat$NCBI_ID %in% x,])
+    train_sets <- purrr::map(
+        train_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
+    )
     
     output <- list(
-        test_sets = test_sets, train_sets = train_sets
+        test_sets = test_sets,
+        train_sets = train_sets
     )
+    
     return(output)
+    
 }
 
 phys_name <- args[[1]]
@@ -52,8 +85,8 @@ rank <- args[[2]]
 if (rank == 'all')
     rank <- c('genus', 'species', 'strain')
 
-# phys_name <- 'aerophilicity'
-# rank <- c('genus', 'species', 'strain')
+phys_name <- 'acetate producing'
+rank <- c('genus', 'species', 'strain')
 
 bp_data <- physiologies(phys_name)[[1]]
 
@@ -71,6 +104,16 @@ filtered_bp_data <- filterData(bp_data)
 
 attr_type <- unique(filtered_bp_data$Attribute_type)
 if (attr_type == 'binary') {
+    set_with_ids <- getSetWithIDs(filtered_bp_data) |>
+        purrr::discard(~ all(is.na(.x)))
+    folds <- getFolds10(set_with_ids)
+    set_without_ids <- getSetWithoutIDs(
+        filtered_bp_data, set_with_ids = set_with_ids
+    ) |>
+        purrr::discard(~ all(is.na(.x)))
+   phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
+       map(~ completeBinaryData(.x)) |> 
+       map(~ arrange(.x, NCBI_ID, Attribute))
     # set_with_ids <- getSetWithIDs(tbl) |>
     #     purrr::discard(~ all(is.na(.x)))
     # set_without_ids <- getSetWithoutIDs(tbl, set_with_ids) |>
@@ -344,14 +387,4 @@ for (i in seq_along(propagated)) {
         quote = TRUE
     )
 }
-
-
-
-
-
-
-
-
-
-
 

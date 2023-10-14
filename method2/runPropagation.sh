@@ -39,6 +39,6 @@ physiologies=(
 for i in "${physiologies[@]}"
 do
     echo "generateing data for $i"
-    /usr/local/bin/Rscript generate_data.R "$i" $1
+    /usr/bin/Rscript runPropagation.R "$i" $1
 done
 
