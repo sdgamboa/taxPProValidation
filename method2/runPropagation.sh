@@ -36,9 +36,18 @@ physiologies=(
 #    'hydrogen gas producing'
 )
 
+myVar=$(which R)
+myRes=$(echo $myVar | grep -e "waldronlab" | wc -l)
+
 for i in "${physiologies[@]}"
 do
     echo "generateing data for $i"
-    /usr/bin/Rscript runPropagation.R "$i" $1
+    if [ $myRes -eq 0 ]; then
+        echo "I'm not on supermicro"
+        Rscript runPropagation.R "$i" $1
+    elif [ $myRes -eq 1 ]; then
+        echo "I'm on supermicro"
+        /usr/bin/Rscript runPropagation.R
+    fi
 done
 
