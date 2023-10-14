@@ -6,7 +6,6 @@
 args <- commandArgs(trailingOnly = TRUE)
 
 ## Setup ####
-library(logr)
 library(bugphyzz)
 library(taxPPro)
 library(data.tree)
