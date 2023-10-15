@@ -87,17 +87,17 @@ getFolds10 <- function(dat, k_value = 10) {
 }
 
 phys_name <- args[[1]]
-rank <- args[[2]]
-if (rank == 'all')
-    rank <- c('genus', 'species', 'strain')
+rank_var <- args[[2]]
+if (rank_var == 'all')
+    rank_var <- c('genus', 'species', 'strain')
 
-# phys_name <- 'acetate producing'
-# rank <- c('genus', 'species', 'strain')
+phys_name <- 'habitat'
+rank_var <- c('genus', 'species', 'strain')
 
 bp_data <- physiologies(phys_name)[[1]]
 
 at <- unique(bp_data$Attribute_type)
-dat_name <- bp_data$Attribute_group
+dat_name <- unique(bp_data$Attribute_group)
 if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
     res <- rangeToLogicalThr(bp_data, THRESHOLDS()[[dat_name]])
     res$Attribute_type <- 'multistate-intersection'
@@ -111,7 +111,12 @@ filtered_bp_data <- filterData(bp_data)
 attr_type <- unique(filtered_bp_data$Attribute_type)
 if (attr_type == 'binary') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
-        purrr::discard(~ all(is.na(.x)))
+        purrr::discard(~ all(is.na(.x))) |> 
+        filter(Rank %in% rank_var)
+    if (!norw(set_with_ids)) {
+        message('Not enough data for validation')
+        quit(save = 'no')
+    }
     folds <- getFolds10(set_with_ids)
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
@@ -120,15 +125,13 @@ if (attr_type == 'binary') {
    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
        map(~ completeBinaryData(.x)) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
-    # set_with_ids <- getSetWithIDs(tbl) |>
-    #     purrr::discard(~ all(is.na(.x)))
-    # set_without_ids <- getSetWithoutIDs(tbl, set_with_ids) |>
-    #     purrr::discard(~ all(is.na(.x)))
-    # dataset <- dplyr::bind_rows(set_with_ids, set_without_ids)
-    # output <- completeBinaryData(dataset)
 } else if (attr_type == 'multistate-intersection') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
         purrr::discard(~ all(is.na(.x)))
+    if (!norw(set_with_ids)) {
+        message('Not enough data for validation')
+        quit(save = 'no')
+    }
     folds <- getFolds10(set_with_ids)
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
@@ -138,22 +141,53 @@ if (attr_type == 'binary') {
        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
 } else if (attr_type == 'multistate-union') {
-    # tbl$Attribute_group_2 <- sub('--(TRUE|FALSE)', '', tbl$Attribute)
-    # l <- split(tbl, factor(tbl$Attribute_group_2))
-    # output <- vector('list', length(l))
-    # for (i in seq_along(output)) {
-    #     set_with_ids <- getSetWithIDs(l[[i]]) |>
-    #         purrr::discard(~ all(is.na(.x)))
-    #     set_without_ids <- getSetWithoutIDs(l[[i]], set_with_ids) |>
-    #         purrr::discard(~ all(is.na(.x)))
-    #     dataset <- dplyr::bind_rows(set_with_ids, set_without_ids)
-    #     # output[[i]] <- completeBinaryData(dataset)
-    #     if (is.null(dataset))
-    #         next
-    #     names(output)[i] <- names(l)[i]
-    #     output[[i]] <- completeBinaryData(dataset)
-    # }
+    ## If multistate-union, don't run for all of the attributes.
+    ## just run for the three with the highest number of annotations
+    filtered_bp_data$Attribute_group_2 <- sub(
+        '--(TRUE|FALSE)', '', filtered_bp_data$Attribute
+    )
+    l <- split(filtered_bp_data, factor(filtered_bp_data$Attribute_group_2))
+    sets_with_ids <- vector('list', length(l))
+    for (i in seq_along(sets_with_ids)) {
+        names(sets_with_ids)[i] <- names(l)[i]
+        suppressWarnings({
+            res <- getSetWithIDs(l[[i]]) |>
+                purrr::discard(~ all(is.na(.x)))
+        })
+        if (!is.null(res))
+            sets_with_ids[[i]] <- res
+    }
+    select_names <- 
+        names(head(sort(map_int(sets_with_ids, nrow), decreasing = TRUE), 3))
+    sets_with_ids <- sets_with_ids[select_names] 
+    
+    
+    folds <- map(sets_with_ids, getFolds10)
+    
+    test_sets <- map(folds, ~ .x[['test_sets']])
+    
+    train_sets <- map(folds, ~ .x[['train_sets']])
+    
+    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
+        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
+        map(~ arrange(.x, NCBI_ID, Attribute))
+    
+    
+    l2 <- l[select_names]
+    
+    output <- vector('list', length(l2))
+    for (i in seq_along(output)) {
+        set_without_ids <- getSetWithoutIDs(l2[[i]], sets_with_ids[[i]]) |>
+            purrr::discard(~ all(is.na(.x)))
+        dataset <- dplyr::bind_rows(sets_with_ids[[i]], set_without_ids)
+        if (is.null(dataset))
+            next
+        names(output)[i] <- names(l2)[i]
+        output[[i]] <- completeBinaryData(dataset)
+    }
 }
+
+
 
 # phys_data_ready <- list_flatten(phys_data_ready)
 
@@ -289,8 +323,15 @@ propagated <- bplapply(
                 NCBI_ID = case_when(
                     Rank == 'kingdom' ~ paste0('k__', NCBI_ID),
                     Rank == 'phylum' ~ paste0('p__', NCBI_ID),
+
+
+
+
+
                     Rank == 'class' ~ paste0('c__', NCBI_ID),
                     Rank == 'order' ~ paste0('o__', NCBI_ID),
+
+
                     Rank == 'family' ~ paste0('f__', NCBI_ID),
                     Rank == 'genus' ~ paste0('g__', NCBI_ID),
                     Rank == 'species' ~ paste0('s__', NCBI_ID),
