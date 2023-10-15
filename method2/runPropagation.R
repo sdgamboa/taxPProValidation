@@ -378,6 +378,7 @@ propagated <- bplapply(
 for (i in seq_along(folds$test_sets)) {
     fold_n <- names(folds$test_sets)[i]
     fname <- paste0(phys_name, '_test_', fold_n, '.csv')
+    fname <- gsub(" ", "_", fname)
     write.csv(
         x = folds$test_sets[[i]], file = fname, row.names = FALSE,
         quote = TRUE
@@ -388,6 +389,7 @@ for (i in seq_along(folds$test_sets)) {
 for (i in seq_along(propagated)) {
     fold_n <- names(propagated)[i]
     fname <- paste0(phys_name, '_propagated_', fold_n, '.csv')
+    fname <- gsub(" ", "_", fname)
     write.csv(
         x = propagated[[i]], file = fname, row.names = FALSE,
         quote = TRUE
