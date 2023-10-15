@@ -91,8 +91,8 @@ rank_var <- args[[2]]
 if (rank_var == 'all')
     rank_var <- c('genus', 'species', 'strain')
 
-phys_name <- 'habitat'
-rank_var <- c('genus', 'species', 'strain')
+# phys_name <- 'habitat'
+# rank_var <- c('genus', 'species', 'strain')
 
 bp_data <- physiologies(phys_name)[[1]]
 
@@ -443,4 +443,3 @@ for (i in seq_along(propagated)) {
         quote = TRUE
     )
 }
-
