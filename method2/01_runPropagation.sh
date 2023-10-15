@@ -1,7 +1,8 @@
 #! /usr/bin/bash
 
 physiologies=(
-    'aerophilicity'
+#    'aerophilicity'
+    'habitat'
 #   'antimicrobial resitance'
 #    'growth temperature'
 #    'disease association'
@@ -30,7 +31,7 @@ physiologies=(
 #    'spore shape'
 #    'health associated'
 #    'sphingolipid producing'
-    'acetate producing'
+#    'acetate producing'
 #    'butyrate producing'
 #    'lactate producing'
 #    'hydrogen gas producing'
@@ -44,10 +45,10 @@ do
     echo generating data for "$i"
     if [ $myRes -eq 0 ]; then
         echo "I'm not on supermicro"
-        Rscript runPropagation.R "$i" "$1"
+        Rscript 01_runPropagation.R "$i" "$1"
     elif [ $myRes -eq 1 ]; then
         echo "I'm on supermicro"
-        /usr/bin/Rscript runPropagation.R "$i" "$1"
+        /usr/bin/Rscript 01_runPropagation.R "$i" "$1"
     fi
 done
 
