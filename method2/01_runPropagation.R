@@ -96,6 +96,8 @@ if (rank_var == 'all')
 
 bp_data <- physiologies(phys_name)[[1]]
 
+
+message('Tryin ranges')
 at <- unique(bp_data$Attribute_type)
 dat_name <- unique(bp_data$Attribute_group)
 if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
@@ -106,8 +108,11 @@ if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
     quit(save = "no")
 }
 
+
+message('filtering data')
 filtered_bp_data <- filterData(bp_data)
 
+message('train and test sets')
 attr_type <- unique(filtered_bp_data$Attribute_type)
 if (attr_type == 'binary') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
@@ -143,6 +148,9 @@ if (attr_type == 'binary') {
 } else if (attr_type == 'multistate-union') {
     ## If multistate-union, don't run for all of the attributes.
     ## just run for the three with the highest number of annotations
+    
+    
+    message('createing sets with IDs')
     filtered_bp_data$Attribute_group_2 <- sub(
         '--(TRUE|FALSE)', '', filtered_bp_data$Attribute
     )
@@ -157,6 +165,8 @@ if (attr_type == 'binary') {
         if (!is.null(res))
             sets_with_ids[[i]] <- res
     }
+    
+    message('Creating folds')
     select_names <- 
         names(head(sort(map_int(sets_with_ids, nrow), decreasing = TRUE), 3))
     sets_with_ids <- sets_with_ids[select_names] 
@@ -166,6 +176,8 @@ if (attr_type == 'binary') {
     
     l2 <- l[select_names]
     
+    message('Getting sets without IDs')
+    
     phys_data_ready <- vector('list', length(l2))
     for (i in seq_along(select_names)) {
         
@@ -174,7 +186,7 @@ if (attr_type == 'binary') {
         
         datasets <- map2(.x = train_sets[[i]], .y = res, bind_rows)
         # dataset <- dplyr::bind_rows(sets_with_ids[[i]], set_without_ids)
-        if (all(is.null(dataset)))
+        if (all(is.null(datasets)))
             next
         names(phys_data_ready)[i] <- names(l2)[i]
         
@@ -197,6 +209,8 @@ if (attr_type == 'binary') {
 }
 
 # phys_data_ready <- list_flatten(phys_data_ready)
+
+message('Finished preparing data')
 
 ## Prepare tree data ####
 data('tree_list')
