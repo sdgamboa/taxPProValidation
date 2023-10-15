@@ -91,8 +91,8 @@ rank <- args[[2]]
 if (rank == 'all')
     rank <- c('genus', 'species', 'strain')
 
-phys_name <- 'acetate producing'
-rank <- c('genus', 'species', 'strain')
+# phys_name <- 'acetate producing'
+# rank <- c('genus', 'species', 'strain')
 
 bp_data <- physiologies(phys_name)[[1]]
 
