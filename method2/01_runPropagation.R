@@ -160,34 +160,41 @@ if (attr_type == 'binary') {
     select_names <- 
         names(head(sort(map_int(sets_with_ids, nrow), decreasing = TRUE), 3))
     sets_with_ids <- sets_with_ids[select_names] 
-    
-    
     folds <- map(sets_with_ids, getFolds10)
-    
     test_sets <- map(folds, ~ .x[['test_sets']])
-    
     train_sets <- map(folds, ~ .x[['train_sets']])
-    
-    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
-        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
-        map(~ arrange(.x, NCBI_ID, Attribute))
-    
     
     l2 <- l[select_names]
     
-    output <- vector('list', length(l2))
-    for (i in seq_along(output)) {
-        set_without_ids <- getSetWithoutIDs(l2[[i]], sets_with_ids[[i]]) |>
-            purrr::discard(~ all(is.na(.x)))
-        dataset <- dplyr::bind_rows(sets_with_ids[[i]], set_without_ids)
-        if (is.null(dataset))
+    phys_data_ready <- vector('list', length(l2))
+    for (i in seq_along(select_names)) {
+        
+        res <- map(train_sets[[i]], ~ getSetWithoutIDs(l2[[i]], .x)) |> 
+            map(~ purrr::discard(.x, ~ all(is.na(.x))))
+        
+        datasets <- map2(.x = train_sets[[i]], .y = res, bind_rows)
+        # dataset <- dplyr::bind_rows(sets_with_ids[[i]], set_without_ids)
+        if (all(is.null(dataset)))
             next
-        names(output)[i] <- names(l2)[i]
-        output[[i]] <- completeBinaryData(dataset)
+        names(phys_data_ready)[i] <- names(l2)[i]
+        
+        phys_data_ready[[i]] <- map(datasets, completeBinaryData)
+        # output[[i]] <- completeBinaryData(dataset)
+        
+        # set_without_ids <- getSetWithoutIDs(l2[[i]], sets_with_ids[[i]]) |>
+        #     purrr::discard(~ all(is.na(.x)))
+        # dataset <- dplyr::bind_rows(sets_with_ids[[i]], set_without_ids)
+        # if (is.null(dataset))
+        #     next
+        # names(output)[i] <- names(l2)[i]
+        # output[[i]] <- completeBinaryData(dataset)
     }
+    phys_data_ready <- discard(phys_data_ready, is.null)
+    phys_data_ready <- list_flatten(phys_data_ready)
+    test_sets <- list_flatten(test_sets)
+    test_sets <- test_sets[names(phys_data_ready)]
+    folds <- list(test_sets = test_sets) # just to make it compatible with the export code
 }
-
-
 
 # phys_data_ready <- list_flatten(phys_data_ready)
 
