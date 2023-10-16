@@ -5,7 +5,6 @@ library(tidyr)
 library(mltools)
 library(ggplot2)
 
-
 listFiles <- function() {
     wd <- getwd()
     if (grepl('method2', wd)) {
@@ -18,6 +17,8 @@ listFiles <- function() {
 (fileNames <- listFiles())
 
 physName <- 'aerophilicity'
+rankVar <- 'all'
+
 physFileNames <- sort(grep(physName, fileNames, value = TRUE))
 tbls <- map(physFileNames, ~ read_csv(.x, show_col_types = FALSE))
 names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', physFileNames)
@@ -38,7 +39,7 @@ sets <- map2(
         x <- select(.x, NCBI_ID, Attribute, tScore = Score)
         y <- select(.y, NCBI_ID, Attribute, pScore = Score)
         left_join(x, y, by = c('NCBI_ID', 'Attribute'))
-        
+        # full_join(x, y, by = c('NCBI_ID', 'Attribute'))
     }
 ) |> 
     map(~ {
@@ -62,7 +63,66 @@ sets <- map2(
     }) |> 
     {\(y) set_names(y, sub('_(test|propagated)', '', names(y)))}()
 
-result <- map(sets, ~ {
+
+pn <- map(sets, ~ {
+    dat <- .x |> 
+        mutate(
+            PosNeg = factor(
+                PosNeg, levels = c('TP', 'FP', 'FN', 'TN')
+            )
+        ) |> 
+        group_by(Attribute, PosNeg, .drop = FALSE) |> 
+        summarise(
+            n = n()
+        ) |> 
+        ungroup()
+    # dat <- count(.x, Attribute, PosNeg)
+    # colnames(dat)[1] <- c('PosNeg')
+    dat
+    # m <- matrix(as.character(table(.x$PosNeg)), nrow = 2, byrow = TRUE)
+    # colnames(m) <- c('T', 'F')
+    # rownames(m) <- c('T', 'F')
+    # m
+}) |> 
+    bind_rows(.id = 'set_names') |> 
+    mutate(
+        set_names = sub('_(all|genus|species|strain)_(Fold[0-9]+)', " \\1 \\2", set_names)
+    ) |> 
+    separate(
+        col = 'set_names', into = c('Attribute_group', 'Rank', 'Fold'),
+        sep = " "
+    )
+
+(
+    p1 <- pn |> 
+        mutate(Attribute = paste0(Attribute_group, '_', Attribute)) |> 
+        mutate(
+            Rank = factor(Rank, levels = rank_order, ordered = TRUE)
+        ) |> 
+        ggplot(aes(Attribute, n)) +
+        # geom_point(
+        #     aes(color = PosNeg),
+        #     shape = 21,
+        #     position = position_jitterdodge(dodge.width = 0.9),
+        #     alpha = 1
+        # ) +
+        geom_point(
+            aes(color = PosNeg),
+            shape = 21,
+            position = 'jitter',
+            # position = position_jitterdodge(dodge.width = 0.9),
+            alpha = 1
+        ) +
+        # geom_boxplot(aes(color = PosNeg), alpha = 0) +
+        facet_wrap(~Rank, nrow = 1 ) +
+        theme_bw() +
+        theme(
+            axis.text.x = element_text(angle = 45, hjust = 1)
+        )
+        
+)
+
+mcc_res <- map(sets, ~ {
    dats <- split(.x, factor(.x$Attribute)) 
    map(dats, function(y) {
        mcc(preds = y$pPosNeg, actuals = y$tPosNeg)
@@ -76,24 +136,54 @@ result <- map(sets, ~ {
     as_tibble() |> 
     set_names(c('fold', 'mcc')) |> 
     mutate(
-        fold = sub('_Fold[0-9]+_', " Fold ", fold)
+        fold = sub('_(all|genus|species|strain)_(Fold[0-9]+)_', " \\1 \\2 ", fold)
     ) |> 
     separate(
-        col = 'fold', into = c('Attribute_group', 'Fold', 'Attribute'),
+        col = 'fold', into = c('Attribute_group', 'Rank', 'Fold', 'Attribute'),
         sep = " "
     )
 
-result |> 
-    mutate(Attribute = paste0(Attribute_group, '_', Attribute)) |> 
-    ggplot(aes(Attribute, mcc)) +
-    geom_boxplot(aes(group = Attribute)) +
-    scale_y_continuous(
-        breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
-    ) + 
-    theme_bw() +
-    theme(
-        axis.text.x = element_text(angle = 45, hjust = 1)
-    )
-    
+rank_order <- c(
+    'all', 'genus', 'species', 'strain'
+)
+
+(
+    p2 <- mcc_res |> 
+        mutate(Attribute = paste0(Attribute_group, '_', Attribute)) |> 
+        mutate(
+            Rank = factor(Rank, levels = rank_order, ordered = TRUE)
+        ) |> 
+        ggplot(aes(Attribute, mcc)) +
+        geom_violin(aes(group = Attribute, fill = Attribute)) +
+        facet_wrap(~Rank) +
+        # geom_point() +
+        # scale_y_continuous(
+        #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
+        # ) + 
+        theme_bw() +
+        theme(
+            axis.text.x = element_text(angle = 45, hjust = 1)
+        )
+)
 
 
+# Export files ------------------------------------------------------------
+
+wd <- getwd()
+if (grepl('method2', wd)) {
+    physName <- physName
+} else {
+    physName <- file.path('method2', physName)
+}
+
+pn_fname <- paste0(physName, '_', 'pn.tsv')
+write_tsv(pn, pn_fname)
+
+mcc_results_fname <- paste0(physName, '_', 'mcc.tsv')
+write_tsv(mcc_res, mcc_results_fname)
+
+p1_fname <- paste0(physName, '_', 'pn.png')
+ggsave(p1_fname, p1, width = 8, height = 7, units = 'in')
+
+p2_fname <- paste0(physName, '_', 'mcc.png')
+ggsave(p2_fname, p2, width = 8, height = 7, units = 'in')
