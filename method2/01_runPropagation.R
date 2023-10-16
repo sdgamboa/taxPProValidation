@@ -118,7 +118,7 @@ if (attr_type == 'binary') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
         purrr::discard(~ all(is.na(.x))) |> 
         filter(Rank %in% rank_var)
-    if (!norw(set_with_ids)) {
+    if (!nrow(set_with_ids)) {
         message('Not enough data for validation')
         quit(save = 'no')
     }
@@ -133,7 +133,7 @@ if (attr_type == 'binary') {
 } else if (attr_type == 'multistate-intersection') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
         purrr::discard(~ all(is.na(.x)))
-    if (!norw(set_with_ids)) {
+    if (!nrow(set_with_ids)) {
         message('Not enough data for validation')
         quit(save = 'no')
     }

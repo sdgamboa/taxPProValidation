@@ -1,13 +1,13 @@
 #! /usr/bin/bash
 
 physiologies=(
-#    'aerophilicity'
+    'aerophilicity'
     'habitat'
-#   'antimicrobial resitance'
-#    'growth temperature'
+    'antimicrobial resitance'
+    'growth temperature'
 #    'disease association'
 #    'biosafety level'
-#    'gram stain'
+    'gram stain'
 #    'shape'
 #    'motility'
 #    'arrangement'
@@ -17,7 +17,7 @@ physiologies=(
 #    'spore formation'
 #    'animal pathogen'
 #    'plant pathogenicity'
-#    'optimal ph'
+    'optimal ph'
 #    'width'
 #    'COGEM pathogenicity rating'
 #    'mutation rate per site per year'
@@ -30,11 +30,11 @@ physiologies=(
 #    'mutation rate per site per generation'
 #    'spore shape'
 #    'health associated'
-#    'sphingolipid producing'
-#    'acetate producing'
-#    'butyrate producing'
-#    'lactate producing'
-#    'hydrogen gas producing'
+    'sphingolipid producing'
+    'acetate producing'
+    'butyrate producing'
+    'lactate producing'
+    'hydrogen gas producing'
 )
 
 myVar=$(which R)
