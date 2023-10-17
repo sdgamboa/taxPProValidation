@@ -116,7 +116,7 @@ rank_order <- c('all', 'genus', 'species', 'strain')
             alpha = 1
         ) +
         # geom_boxplot(aes(color = PosNeg), alpha = 0) +
-        facet_wrap(~Rank, nrow = 1 ) +
+        facet_wrap(~Rank) +
         theme_bw() +
         theme(
             axis.text.x = element_text(angle = 45, hjust = 1)
@@ -156,13 +156,14 @@ mcc_res <- data.frame(
         ggplot(aes(Attribute, mcc)) +
         geom_violin(aes(group = Attribute, fill = Attribute)) +
         facet_wrap(~Rank) +
-        geom_point() +
+        # geom_point() +
         # scale_y_continuous(
         #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
         # ) + 
         theme_bw() +
         theme(
-            axis.text.x = element_text(angle = 45, hjust = 1)
+            axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = 'none'
         )
 )
 
