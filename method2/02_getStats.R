@@ -17,7 +17,7 @@ listFiles <- function() {
 (fileNames <- listFiles())
 
 physName <- 'aerophilicity'
-rankVar <- 'all'
+# rankVar <- 'all'
 
 physFileNames <- sort(grep(physName, fileNames, value = TRUE))
 tbls <- map(physFileNames, ~ read_csv(.x, show_col_types = FALSE))
@@ -93,6 +93,8 @@ pn <- map(sets, ~ {
         sep = " "
     )
 
+rank_order <- c('all', 'genus', 'species', 'strain')
+
 (
     p1 <- pn |> 
         mutate(Attribute = paste0(Attribute_group, '_', Attribute)) |> 
@@ -122,30 +124,28 @@ pn <- map(sets, ~ {
         
 )
 
-mcc_res <- map(sets, ~ {
-   dats <- split(.x, factor(.x$Attribute)) 
+mcc_res0 <- map(sets, ~ {
+   dats <- split(.x, factor(.x$Attribute))
    map(dats, function(y) {
        mcc(preds = y$pPosNeg, actuals = y$tPosNeg)
    })
 }) |> 
-    list_flatten() |> 
-    as.data.frame() |> 
-    t() |> 
-    as.data.frame() |> 
-    tibble::rownames_to_column(var = 'fold') |> 
-    as_tibble() |> 
-    set_names(c('fold', 'mcc')) |> 
+    list_flatten()
+
+mcc_res <- data.frame(
+    dat_name = gsub(' ', '_', names(mcc_res0)),
+    mcc = as.double(mcc_res0)
+) |> 
     mutate(
-        fold = sub('_(all|genus|species|strain)_(Fold[0-9]+)_', " \\1 \\2 ", fold)
-    ) |> 
+        dat_name = sub(
+            '_(all|genus|species|strain)_(Fold[0-9]+)_', " \\1 \\2 ", dat_name 
+        )
+    ) |>  
     separate(
-        col = 'fold', into = c('Attribute_group', 'Rank', 'Fold', 'Attribute'),
+        col = 'dat_name', into = c('Attribute_group', 'Rank', 'Fold', 'Attribute'),
         sep = " "
     )
 
-rank_order <- c(
-    'all', 'genus', 'species', 'strain'
-)
 
 (
     p2 <- mcc_res |> 
@@ -156,7 +156,7 @@ rank_order <- c(
         ggplot(aes(Attribute, mcc)) +
         geom_violin(aes(group = Attribute, fill = Attribute)) +
         facet_wrap(~Rank) +
-        # geom_point() +
+        geom_point() +
         # scale_y_continuous(
         #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
         # ) + 

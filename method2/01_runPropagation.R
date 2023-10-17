@@ -88,8 +88,9 @@ getFolds10 <- function(dat, k_value = 10) {
 
 phys_name <- args[[1]]
 rank_var <- args[[2]]
-if (rank_var == 'all')
+if (rank_var == 'all') {
     rank_var <- c('genus', 'species', 'strain')
+}
 
 # phys_name <- 'habitat'
 # rank_var <- c('genus', 'species', 'strain')
@@ -97,7 +98,7 @@ if (rank_var == 'all')
 bp_data <- physiologies(phys_name)[[1]]
 
 
-message('Tryin ranges')
+message('Trying ranges')
 at <- unique(bp_data$Attribute_type)
 dat_name <- unique(bp_data$Attribute_group)
 if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
@@ -132,7 +133,8 @@ if (attr_type == 'binary') {
        map(~ arrange(.x, NCBI_ID, Attribute))
 } else if (attr_type == 'multistate-intersection') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
-        purrr::discard(~ all(is.na(.x)))
+        purrr::discard(~ all(is.na(.x))) |> 
+        filter(Rank %in% rank_var)
     if (!nrow(set_with_ids)) {
         message('Not enough data for validation')
         quit(save = 'no')
@@ -160,9 +162,10 @@ if (attr_type == 'binary') {
         names(sets_with_ids)[i] <- names(l)[i]
         suppressWarnings({
             res <- getSetWithIDs(l[[i]]) |>
-                purrr::discard(~ all(is.na(.x)))
+                purrr::discard(~ all(is.na(.x))) |> 
+                filter(Rank %in% rank_var)
         })
-        if (!is.null(res))
+        if (length(res) > 0)
             sets_with_ids[[i]] <- res
     }
     
