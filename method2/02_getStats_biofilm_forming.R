@@ -18,7 +18,7 @@ listFiles <- function() {
 (fileNames <- listFiles())
 
 ## name always with underscode instead of  space
-physName <- 'acetate_producing'
+physName <- 'biofilm_forming'
 
 (physFileNames <- sort(grep(physName, fileNames, value = TRUE)))
 tbls <- map(physFileNames, ~ read_csv(.x, show_col_types = FALSE))
@@ -27,69 +27,73 @@ testSets <- tbls[grep('test', names(tbls))]
 propSets <- tbls[grep('propagated', names(tbls))]
 
 
-## Let's add some true negatives to the testSets
-d <- getDistantTips()
-clusters <- d |> 
-    mutate(
-        cl = strsplit(cluster, '\\+')
-    ) |> 
-    select(-cluster) |> 
-    unnest(cl) |> 
-    select(distant_NCBI_ID = NCBI_ID, cl) |> 
-    unique() |> 
-    group_by(cl) |> 
-    slice_max(order_by = distant_NCBI_ID, n = 1, with_ties = FALSE)
-  
-myFun <- function(x, clusters) {
-    ts <- x |> 
-        mutate(taxid = as.character(taxid))
-    pos <- match(ts$NCBI_ID, clusters$cl)
-    pos <- pos[!is.na(pos)]
-    jk <- left_join(ts, clusters, by = c('NCBI_ID' = 'cl'))
-    
-    jk2 <- jk |> 
-        dplyr::filter(!is.na(distant_NCBI_ID)) |> 
-        select(
-            -NCBI_ID, -Taxon_name
-        ) |>
-        rename(NCBI_ID = distant_NCBI_ID) |> 
-        separate(
-            col = 'Attribute', into = c('Attribute', 'Attribute_value'),
-            sep = '--'
-        ) |> 
-        mutate(
-            Attribute_value = !as.logical(Attribute_value),
-            Attribute = paste0(Attribute,'--', as.character(Attribute_value))
-        ) |> 
-        mutate(
-            Rank = case_when(
-                grepl('g__', NCBI_ID) ~ 'genus',
-                grepl('s__', NCBI_ID) ~ 'species',
-                grepl('t__', NCBI_ID) ~ 'strain',
-                TRUE ~ NA
-            )
-        ) |> 
-        select(-Attribute_value) |> 
-        mutate(
-            Attribute_source = NA,
-            Confidence_in_curation = NA,
-            Evidence = NA,
-            Frequency = NA,
-            Score = 1
-        ) |> 
-        mutate(
-    taxid = sub('^\\w__', '', NCBI_ID)
-        )
-    output <- bind_rows(ts, jk2)
-    return(output)
-} 
+map(testSets, ~ table(.x$Attribute))
 
-testSets <- map(testSets, ~ {
-    tryCatch(
-        error = function(e) NULL,
-        myFun(.x, clusters)
-    )
-})
+
+
+## Let's add some true negatives to the testSets
+# d <- getDistantTips()
+# clusters <- d |> 
+#     mutate(
+#         cl = strsplit(cluster, '\\+')
+#     ) |> 
+#     select(-cluster) |> 
+#     unnest(cl) |> 
+#     select(distant_NCBI_ID = NCBI_ID, cl) |> 
+#     unique() |> 
+#     group_by(cl) |> 
+#     slice_max(order_by = distant_NCBI_ID, n = 1, with_ties = FALSE)
+#   
+# myFun <- function(x, clusters) {
+#     ts <- x |> 
+#         mutate(taxid = as.character(taxid))
+#     pos <- match(ts$NCBI_ID, clusters$cl)
+#     pos <- pos[!is.na(pos)]
+#     jk <- left_join(ts, clusters, by = c('NCBI_ID' = 'cl'))
+#     
+#     jk2 <- jk |> 
+#         dplyr::filter(!is.na(distant_NCBI_ID)) |> 
+#         select(
+#             -NCBI_ID, -Taxon_name
+#         ) |>
+#         rename(NCBI_ID = distant_NCBI_ID) |> 
+#         separate(
+#             col = 'Attribute', into = c('Attribute', 'Attribute_value'),
+#             sep = '--'
+#         ) |> 
+#         mutate(
+#             Attribute_value = !as.logical(Attribute_value),
+#             Attribute = paste0(Attribute,'--', as.character(Attribute_value))
+#         ) |> 
+#         mutate(
+#             Rank = case_when(
+#                 grepl('g__', NCBI_ID) ~ 'genus',
+#                 grepl('s__', NCBI_ID) ~ 'species',
+#                 grepl('t__', NCBI_ID) ~ 'strain',
+#                 TRUE ~ NA
+#             )
+#         ) |> 
+#         select(-Attribute_value) |> 
+#         mutate(
+#             Attribute_source = NA,
+#             Confidence_in_curation = NA,
+#             Evidence = NA,
+#             Frequency = NA,
+#             Score = 1
+#         ) |> 
+#         mutate(
+#     taxid = sub('^\\w__', '', NCBI_ID)
+#         )
+#     output <- bind_rows(ts, jk2)
+#     return(output)
+# } 
+# 
+# testSets <- map(testSets, ~ {
+#     tryCatch(
+#         error = function(e) NULL,
+#         myFun(.x, clusters)
+#     )
+# })
 
 
 
@@ -217,16 +221,15 @@ pn <- map(sets, ~ {
     bind_rows(.id = 'set_names') |> 
     mutate(
         set_names = sub(
-            '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)',
-            " \\2 \\1 \\3",
+            '_(all|genus|species|strain)_(Fold[0-9]+)',
+            " \\1 \\2",
             set_names
         )
-    ) |> 
+    ) |>  
     separate(
-        col = 'set_names', into = c('Attribute_group', 'Attribute0', 'Rank', 'Fold'),
+        col = 'set_names', into = c('Attribute_group', 'Rank', 'Fold'),
         sep = " "
-    ) |> 
-    select(-Attribute0)
+    )
 
 rank_order <- c('all', 'genus', 'species', 'strain')
 
@@ -251,7 +254,7 @@ rank_order <- c('all', 'genus', 'species', 'strain')
             alpha = 1
         ) +
         # geom_boxplot(aes(color = PosNeg), alpha = 0) +
-        facet_wrap(~Rank) +
+        facet_wrap(~Rank, scales = 'free_x') +
         theme_bw() +
         theme(
             axis.text.x = element_text(angle = 45, hjust = 1)
@@ -273,15 +276,28 @@ mcc_res <- data.frame(
 ) |> 
     mutate(
         dat_name = sub(
-            '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)_', 
-            " \\2 \\1 \\3 ",
+            '_(all|genus|species|strain)_(Fold[0-9]+)_(.*)$',
+            " \\1 \\2 \\3",
             dat_name 
         )
     ) |>  
     separate(
-        col = 'dat_name', into = c('Attribute_group', 'Attribute0', 'Rank', 'Fold', 'Attribute'),
+        col = 'dat_name', into = c('Attribute_group', 'Rank', 'Fold', 'Attribute'),
         sep = " "
     )
+    
+    
+    # mutate(
+    #     dat_name = sub(
+    #         '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)_', 
+    #         " \\2 \\1 \\3 ",
+    #         dat_name 
+    #     )
+    # ) |>  
+    # separate(
+    #     col = 'dat_name', into = c('Attribute_group', 'Attribute0', 'Rank', 'Fold', 'Attribute'),
+    #     sep = " "
+    # )
 
 
 (

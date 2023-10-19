@@ -16,7 +16,7 @@ listFiles <- function() {
 
 (fileNames <- listFiles())
 
-physName <- 'aerophilicity'
+physName <- 'gram_stain'
 # rankVar <- 'all'
 
 physFileNames <- sort(grep(physName, fileNames, value = TRUE))
@@ -169,7 +169,7 @@ mcc_res <- data.frame(
 
 
 # Export files ------------------------------------------------------------
-
+physName <- 'gram_stain'
 wd <- getwd()
 if (grepl('method2', wd)) {
     physName <- physName

@@ -1,0 +1,481 @@
+Attribute_group	Rank	Fold	Attribute	PosNeg	n
+aerophilicity	all	Fold1	aerobic	TP	563
+aerophilicity	all	Fold1	aerobic	FP	0
+aerophilicity	all	Fold1	aerobic	FN	49
+aerophilicity	all	Fold1	aerobic	TN	333
+aerophilicity	all	Fold1	anaerobic	TP	229
+aerophilicity	all	Fold1	anaerobic	FP	0
+aerophilicity	all	Fold1	anaerobic	FN	19
+aerophilicity	all	Fold1	anaerobic	TN	697
+aerophilicity	all	Fold1	facultatively anaerobic	TP	54
+aerophilicity	all	Fold1	facultatively anaerobic	FP	0
+aerophilicity	all	Fold1	facultatively anaerobic	FN	44
+aerophilicity	all	Fold1	facultatively anaerobic	TN	847
+aerophilicity	all	Fold10	aerobic	TP	583
+aerophilicity	all	Fold10	aerobic	FP	0
+aerophilicity	all	Fold10	aerobic	FN	40
+aerophilicity	all	Fold10	aerobic	TN	321
+aerophilicity	all	Fold10	anaerobic	TP	215
+aerophilicity	all	Fold10	anaerobic	FP	0
+aerophilicity	all	Fold10	anaerobic	FN	29
+aerophilicity	all	Fold10	anaerobic	TN	700
+aerophilicity	all	Fold10	facultatively anaerobic	TP	57
+aerophilicity	all	Fold10	facultatively anaerobic	FP	0
+aerophilicity	all	Fold10	facultatively anaerobic	FN	32
+aerophilicity	all	Fold10	facultatively anaerobic	TN	855
+aerophilicity	all	Fold2	aerobic	TP	577
+aerophilicity	all	Fold2	aerobic	FP	0
+aerophilicity	all	Fold2	aerobic	FN	40
+aerophilicity	all	Fold2	aerobic	TN	328
+aerophilicity	all	Fold2	anaerobic	TP	218
+aerophilicity	all	Fold2	anaerobic	FP	0
+aerophilicity	all	Fold2	anaerobic	FN	21
+aerophilicity	all	Fold2	anaerobic	TN	706
+aerophilicity	all	Fold2	facultatively anaerobic	TP	56
+aerophilicity	all	Fold2	facultatively anaerobic	FP	0
+aerophilicity	all	Fold2	facultatively anaerobic	FN	47
+aerophilicity	all	Fold2	facultatively anaerobic	TN	842
+aerophilicity	all	Fold3	aerobic	TP	577
+aerophilicity	all	Fold3	aerobic	FP	0
+aerophilicity	all	Fold3	aerobic	FN	31
+aerophilicity	all	Fold3	aerobic	TN	337
+aerophilicity	all	Fold3	anaerobic	TP	221
+aerophilicity	all	Fold3	anaerobic	FP	0
+aerophilicity	all	Fold3	anaerobic	FN	25
+aerophilicity	all	Fold3	anaerobic	TN	699
+aerophilicity	all	Fold3	facultatively anaerobic	TP	66
+aerophilicity	all	Fold3	facultatively anaerobic	FP	0
+aerophilicity	all	Fold3	facultatively anaerobic	FN	40
+aerophilicity	all	Fold3	facultatively anaerobic	TN	839
+aerophilicity	all	Fold4	aerobic	TP	580
+aerophilicity	all	Fold4	aerobic	FP	0
+aerophilicity	all	Fold4	aerobic	FN	35
+aerophilicity	all	Fold4	aerobic	TN	330
+aerophilicity	all	Fold4	anaerobic	TP	226
+aerophilicity	all	Fold4	anaerobic	FP	0
+aerophilicity	all	Fold4	anaerobic	FN	21
+aerophilicity	all	Fold4	anaerobic	TN	698
+aerophilicity	all	Fold4	facultatively anaerobic	TP	49
+aerophilicity	all	Fold4	facultatively anaerobic	FP	0
+aerophilicity	all	Fold4	facultatively anaerobic	FN	52
+aerophilicity	all	Fold4	facultatively anaerobic	TN	844
+aerophilicity	all	Fold5	aerobic	TP	561
+aerophilicity	all	Fold5	aerobic	FP	0
+aerophilicity	all	Fold5	aerobic	FN	39
+aerophilicity	all	Fold5	aerobic	TN	345
+aerophilicity	all	Fold5	anaerobic	TP	240
+aerophilicity	all	Fold5	anaerobic	FP	0
+aerophilicity	all	Fold5	anaerobic	FN	21
+aerophilicity	all	Fold5	anaerobic	TN	684
+aerophilicity	all	Fold5	facultatively anaerobic	TP	71
+aerophilicity	all	Fold5	facultatively anaerobic	FP	0
+aerophilicity	all	Fold5	facultatively anaerobic	FN	38
+aerophilicity	all	Fold5	facultatively anaerobic	TN	836
+aerophilicity	all	Fold6	aerobic	TP	573
+aerophilicity	all	Fold6	aerobic	FP	0
+aerophilicity	all	Fold6	aerobic	FN	52
+aerophilicity	all	Fold6	aerobic	TN	320
+aerophilicity	all	Fold6	anaerobic	TP	209
+aerophilicity	all	Fold6	anaerobic	FP	0
+aerophilicity	all	Fold6	anaerobic	FN	13
+aerophilicity	all	Fold6	anaerobic	TN	723
+aerophilicity	all	Fold6	facultatively anaerobic	TP	74
+aerophilicity	all	Fold6	facultatively anaerobic	FP	0
+aerophilicity	all	Fold6	facultatively anaerobic	FN	43
+aerophilicity	all	Fold6	facultatively anaerobic	TN	828
+aerophilicity	all	Fold7	aerobic	TP	592
+aerophilicity	all	Fold7	aerobic	FP	0
+aerophilicity	all	Fold7	aerobic	FN	36
+aerophilicity	all	Fold7	aerobic	TN	317
+aerophilicity	all	Fold7	anaerobic	TP	215
+aerophilicity	all	Fold7	anaerobic	FP	0
+aerophilicity	all	Fold7	anaerobic	FN	20
+aerophilicity	all	Fold7	anaerobic	TN	710
+aerophilicity	all	Fold7	facultatively anaerobic	TP	55
+aerophilicity	all	Fold7	facultatively anaerobic	FP	0
+aerophilicity	all	Fold7	facultatively anaerobic	FN	42
+aerophilicity	all	Fold7	facultatively anaerobic	TN	848
+aerophilicity	all	Fold8	aerobic	TP	603
+aerophilicity	all	Fold8	aerobic	FP	0
+aerophilicity	all	Fold8	aerobic	FN	29
+aerophilicity	all	Fold8	aerobic	TN	313
+aerophilicity	all	Fold8	anaerobic	TP	205
+aerophilicity	all	Fold8	anaerobic	FP	0
+aerophilicity	all	Fold8	anaerobic	FN	18
+aerophilicity	all	Fold8	anaerobic	TN	722
+aerophilicity	all	Fold8	facultatively anaerobic	TP	69
+aerophilicity	all	Fold8	facultatively anaerobic	FP	0
+aerophilicity	all	Fold8	facultatively anaerobic	FN	38
+aerophilicity	all	Fold8	facultatively anaerobic	TN	838
+aerophilicity	all	Fold9	aerobic	TP	577
+aerophilicity	all	Fold9	aerobic	FP	0
+aerophilicity	all	Fold9	aerobic	FN	35
+aerophilicity	all	Fold9	aerobic	TN	332
+aerophilicity	all	Fold9	anaerobic	TP	227
+aerophilicity	all	Fold9	anaerobic	FP	0
+aerophilicity	all	Fold9	anaerobic	FN	28
+aerophilicity	all	Fold9	anaerobic	TN	689
+aerophilicity	all	Fold9	facultatively anaerobic	TP	57
+aerophilicity	all	Fold9	facultatively anaerobic	FP	0
+aerophilicity	all	Fold9	facultatively anaerobic	FN	38
+aerophilicity	all	Fold9	facultatively anaerobic	TN	849
+aerophilicity	genus	Fold1	aerobic	TP	62
+aerophilicity	genus	Fold1	aerobic	FP	0
+aerophilicity	genus	Fold1	aerobic	FN	6
+aerophilicity	genus	Fold1	aerobic	TN	51
+aerophilicity	genus	Fold1	anaerobic	TP	39
+aerophilicity	genus	Fold1	anaerobic	FP	0
+aerophilicity	genus	Fold1	anaerobic	FN	1
+aerophilicity	genus	Fold1	anaerobic	TN	79
+aerophilicity	genus	Fold1	facultatively anaerobic	TP	2
+aerophilicity	genus	Fold1	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold1	facultatively anaerobic	FN	9
+aerophilicity	genus	Fold1	facultatively anaerobic	TN	108
+aerophilicity	genus	Fold10	aerobic	TP	56
+aerophilicity	genus	Fold10	aerobic	FP	0
+aerophilicity	genus	Fold10	aerobic	FN	6
+aerophilicity	genus	Fold10	aerobic	TN	56
+aerophilicity	genus	Fold10	anaerobic	TP	40
+aerophilicity	genus	Fold10	anaerobic	FP	0
+aerophilicity	genus	Fold10	anaerobic	FN	1
+aerophilicity	genus	Fold10	anaerobic	TN	77
+aerophilicity	genus	Fold10	facultatively anaerobic	TP	7
+aerophilicity	genus	Fold10	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold10	facultatively anaerobic	FN	11
+aerophilicity	genus	Fold10	facultatively anaerobic	TN	100
+aerophilicity	genus	Fold2	aerobic	TP	61
+aerophilicity	genus	Fold2	aerobic	FP	0
+aerophilicity	genus	Fold2	aerobic	FN	1
+aerophilicity	genus	Fold2	aerobic	TN	57
+aerophilicity	genus	Fold2	anaerobic	TP	38
+aerophilicity	genus	Fold2	anaerobic	FP	0
+aerophilicity	genus	Fold2	anaerobic	FN	4
+aerophilicity	genus	Fold2	anaerobic	TN	77
+aerophilicity	genus	Fold2	facultatively anaerobic	TP	8
+aerophilicity	genus	Fold2	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold2	facultatively anaerobic	FN	9
+aerophilicity	genus	Fold2	facultatively anaerobic	TN	102
+aerophilicity	genus	Fold3	aerobic	TP	61
+aerophilicity	genus	Fold3	aerobic	FP	0
+aerophilicity	genus	Fold3	aerobic	FN	3
+aerophilicity	genus	Fold3	aerobic	TN	55
+aerophilicity	genus	Fold3	anaerobic	TP	36
+aerophilicity	genus	Fold3	anaerobic	FP	0
+aerophilicity	genus	Fold3	anaerobic	FN	1
+aerophilicity	genus	Fold3	anaerobic	TN	82
+aerophilicity	genus	Fold3	facultatively anaerobic	TP	4
+aerophilicity	genus	Fold3	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold3	facultatively anaerobic	FN	16
+aerophilicity	genus	Fold3	facultatively anaerobic	TN	99
+aerophilicity	genus	Fold4	aerobic	TP	67
+aerophilicity	genus	Fold4	aerobic	FP	0
+aerophilicity	genus	Fold4	aerobic	FN	1
+aerophilicity	genus	Fold4	aerobic	TN	51
+aerophilicity	genus	Fold4	anaerobic	TP	29
+aerophilicity	genus	Fold4	anaerobic	FP	0
+aerophilicity	genus	Fold4	anaerobic	FN	5
+aerophilicity	genus	Fold4	anaerobic	TN	85
+aerophilicity	genus	Fold4	facultatively anaerobic	TP	4
+aerophilicity	genus	Fold4	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold4	facultatively anaerobic	FN	15
+aerophilicity	genus	Fold4	facultatively anaerobic	TN	100
+aerophilicity	genus	Fold5	aerobic	TP	59
+aerophilicity	genus	Fold5	aerobic	FP	0
+aerophilicity	genus	Fold5	aerobic	FN	4
+aerophilicity	genus	Fold5	aerobic	TN	55
+aerophilicity	genus	Fold5	anaerobic	TP	35
+aerophilicity	genus	Fold5	anaerobic	FP	0
+aerophilicity	genus	Fold5	anaerobic	FN	4
+aerophilicity	genus	Fold5	anaerobic	TN	79
+aerophilicity	genus	Fold5	facultatively anaerobic	TP	5
+aerophilicity	genus	Fold5	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold5	facultatively anaerobic	FN	15
+aerophilicity	genus	Fold5	facultatively anaerobic	TN	98
+aerophilicity	genus	Fold6	aerobic	TP	62
+aerophilicity	genus	Fold6	aerobic	FP	0
+aerophilicity	genus	Fold6	aerobic	FN	0
+aerophilicity	genus	Fold6	aerobic	TN	56
+aerophilicity	genus	Fold6	anaerobic	TP	35
+aerophilicity	genus	Fold6	anaerobic	FP	0
+aerophilicity	genus	Fold6	anaerobic	FN	2
+aerophilicity	genus	Fold6	anaerobic	TN	81
+aerophilicity	genus	Fold6	facultatively anaerobic	TP	8
+aerophilicity	genus	Fold6	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold6	facultatively anaerobic	FN	15
+aerophilicity	genus	Fold6	facultatively anaerobic	TN	95
+aerophilicity	genus	Fold7	aerobic	TP	60
+aerophilicity	genus	Fold7	aerobic	FP	0
+aerophilicity	genus	Fold7	aerobic	FN	3
+aerophilicity	genus	Fold7	aerobic	TN	55
+aerophilicity	genus	Fold7	anaerobic	TP	40
+aerophilicity	genus	Fold7	anaerobic	FP	0
+aerophilicity	genus	Fold7	anaerobic	FN	4
+aerophilicity	genus	Fold7	anaerobic	TN	74
+aerophilicity	genus	Fold7	facultatively anaerobic	TP	1
+aerophilicity	genus	Fold7	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold7	facultatively anaerobic	FN	14
+aerophilicity	genus	Fold7	facultatively anaerobic	TN	103
+aerophilicity	genus	Fold8	aerobic	TP	63
+aerophilicity	genus	Fold8	aerobic	FP	0
+aerophilicity	genus	Fold8	aerobic	FN	3
+aerophilicity	genus	Fold8	aerobic	TN	52
+aerophilicity	genus	Fold8	anaerobic	TP	32
+aerophilicity	genus	Fold8	anaerobic	FP	0
+aerophilicity	genus	Fold8	anaerobic	FN	8
+aerophilicity	genus	Fold8	anaerobic	TN	78
+aerophilicity	genus	Fold8	facultatively anaerobic	TP	6
+aerophilicity	genus	Fold8	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold8	facultatively anaerobic	FN	10
+aerophilicity	genus	Fold8	facultatively anaerobic	TN	102
+aerophilicity	genus	Fold9	aerobic	TP	56
+aerophilicity	genus	Fold9	aerobic	FP	0
+aerophilicity	genus	Fold9	aerobic	FN	5
+aerophilicity	genus	Fold9	aerobic	TN	57
+aerophilicity	genus	Fold9	anaerobic	TP	41
+aerophilicity	genus	Fold9	anaerobic	FP	0
+aerophilicity	genus	Fold9	anaerobic	FN	3
+aerophilicity	genus	Fold9	anaerobic	TN	74
+aerophilicity	genus	Fold9	facultatively anaerobic	TP	5
+aerophilicity	genus	Fold9	facultatively anaerobic	FP	0
+aerophilicity	genus	Fold9	facultatively anaerobic	FN	10
+aerophilicity	genus	Fold9	facultatively anaerobic	TN	103
+aerophilicity	species	Fold1	aerobic	TP	370
+aerophilicity	species	Fold1	aerobic	FP	0
+aerophilicity	species	Fold1	aerobic	FN	5
+aerophilicity	species	Fold1	aerobic	TN	110
+aerophilicity	species	Fold1	anaerobic	TP	78
+aerophilicity	species	Fold1	anaerobic	FP	0
+aerophilicity	species	Fold1	anaerobic	FN	8
+aerophilicity	species	Fold1	anaerobic	TN	399
+aerophilicity	species	Fold1	facultatively anaerobic	TP	29
+aerophilicity	species	Fold1	facultatively anaerobic	FP	0
+aerophilicity	species	Fold1	facultatively anaerobic	FN	9
+aerophilicity	species	Fold1	facultatively anaerobic	TN	447
+aerophilicity	species	Fold10	aerobic	TP	375
+aerophilicity	species	Fold10	aerobic	FP	0
+aerophilicity	species	Fold10	aerobic	FN	9
+aerophilicity	species	Fold10	aerobic	TN	100
+aerophilicity	species	Fold10	anaerobic	TP	85
+aerophilicity	species	Fold10	anaerobic	FP	0
+aerophilicity	species	Fold10	anaerobic	FN	5
+aerophilicity	species	Fold10	anaerobic	TN	394
+aerophilicity	species	Fold10	facultatively anaerobic	TP	20
+aerophilicity	species	Fold10	facultatively anaerobic	FP	0
+aerophilicity	species	Fold10	facultatively anaerobic	FN	5
+aerophilicity	species	Fold10	facultatively anaerobic	TN	459
+aerophilicity	species	Fold2	aerobic	TP	373
+aerophilicity	species	Fold2	aerobic	FP	0
+aerophilicity	species	Fold2	aerobic	FN	9
+aerophilicity	species	Fold2	aerobic	TN	103
+aerophilicity	species	Fold2	anaerobic	TP	71
+aerophilicity	species	Fold2	anaerobic	FP	0
+aerophilicity	species	Fold2	anaerobic	FN	6
+aerophilicity	species	Fold2	anaerobic	TN	408
+aerophilicity	species	Fold2	facultatively anaerobic	TP	29
+aerophilicity	species	Fold2	facultatively anaerobic	FP	0
+aerophilicity	species	Fold2	facultatively anaerobic	FN	11
+aerophilicity	species	Fold2	facultatively anaerobic	TN	445
+aerophilicity	species	Fold3	aerobic	TP	383
+aerophilicity	species	Fold3	aerobic	FP	0
+aerophilicity	species	Fold3	aerobic	FN	10
+aerophilicity	species	Fold3	aerobic	TN	92
+aerophilicity	species	Fold3	anaerobic	TP	62
+aerophilicity	species	Fold3	anaerobic	FP	0
+aerophilicity	species	Fold3	anaerobic	FN	5
+aerophilicity	species	Fold3	anaerobic	TN	418
+aerophilicity	species	Fold3	facultatively anaerobic	TP	21
+aerophilicity	species	Fold3	facultatively anaerobic	FP	0
+aerophilicity	species	Fold3	facultatively anaerobic	FN	10
+aerophilicity	species	Fold3	facultatively anaerobic	TN	454
+aerophilicity	species	Fold4	aerobic	TP	366
+aerophilicity	species	Fold4	aerobic	FP	0
+aerophilicity	species	Fold4	aerobic	FN	9
+aerophilicity	species	Fold4	aerobic	TN	110
+aerophilicity	species	Fold4	anaerobic	TP	78
+aerophilicity	species	Fold4	anaerobic	FP	0
+aerophilicity	species	Fold4	anaerobic	FN	13
+aerophilicity	species	Fold4	anaerobic	TN	394
+aerophilicity	species	Fold4	facultatively anaerobic	TP	30
+aerophilicity	species	Fold4	facultatively anaerobic	FP	0
+aerophilicity	species	Fold4	facultatively anaerobic	FN	9
+aerophilicity	species	Fold4	facultatively anaerobic	TN	446
+aerophilicity	species	Fold5	aerobic	TP	371
+aerophilicity	species	Fold5	aerobic	FP	0
+aerophilicity	species	Fold5	aerobic	FN	19
+aerophilicity	species	Fold5	aerobic	TN	94
+aerophilicity	species	Fold5	anaerobic	TP	71
+aerophilicity	species	Fold5	anaerobic	FP	0
+aerophilicity	species	Fold5	anaerobic	FN	7
+aerophilicity	species	Fold5	anaerobic	TN	406
+aerophilicity	species	Fold5	facultatively anaerobic	TP	20
+aerophilicity	species	Fold5	facultatively anaerobic	FP	0
+aerophilicity	species	Fold5	facultatively anaerobic	FN	13
+aerophilicity	species	Fold5	facultatively anaerobic	TN	451
+aerophilicity	species	Fold6	aerobic	TP	363
+aerophilicity	species	Fold6	aerobic	FP	0
+aerophilicity	species	Fold6	aerobic	FN	9
+aerophilicity	species	Fold6	aerobic	TN	112
+aerophilicity	species	Fold6	anaerobic	TP	79
+aerophilicity	species	Fold6	anaerobic	FP	0
+aerophilicity	species	Fold6	anaerobic	FN	7
+aerophilicity	species	Fold6	anaerobic	TN	398
+aerophilicity	species	Fold6	facultatively anaerobic	TP	28
+aerophilicity	species	Fold6	facultatively anaerobic	FP	0
+aerophilicity	species	Fold6	facultatively anaerobic	FN	9
+aerophilicity	species	Fold6	facultatively anaerobic	TN	447
+aerophilicity	species	Fold7	aerobic	TP	380
+aerophilicity	species	Fold7	aerobic	FP	0
+aerophilicity	species	Fold7	aerobic	FN	8
+aerophilicity	species	Fold7	aerobic	TN	96
+aerophilicity	species	Fold7	anaerobic	TP	75
+aerophilicity	species	Fold7	anaerobic	FP	0
+aerophilicity	species	Fold7	anaerobic	FN	6
+aerophilicity	species	Fold7	anaerobic	TN	403
+aerophilicity	species	Fold7	facultatively anaerobic	TP	19
+aerophilicity	species	Fold7	facultatively anaerobic	FP	0
+aerophilicity	species	Fold7	facultatively anaerobic	FN	11
+aerophilicity	species	Fold7	facultatively anaerobic	TN	454
+aerophilicity	species	Fold8	aerobic	TP	359
+aerophilicity	species	Fold8	aerobic	FP	0
+aerophilicity	species	Fold8	aerobic	FN	8
+aerophilicity	species	Fold8	aerobic	TN	117
+aerophilicity	species	Fold8	anaerobic	TP	82
+aerophilicity	species	Fold8	anaerobic	FP	0
+aerophilicity	species	Fold8	anaerobic	FN	5
+aerophilicity	species	Fold8	anaerobic	TN	397
+aerophilicity	species	Fold8	facultatively anaerobic	TP	34
+aerophilicity	species	Fold8	facultatively anaerobic	FP	0
+aerophilicity	species	Fold8	facultatively anaerobic	FN	10
+aerophilicity	species	Fold8	facultatively anaerobic	TN	440
+aerophilicity	species	Fold9	aerobic	TP	384
+aerophilicity	species	Fold9	aerobic	FP	0
+aerophilicity	species	Fold9	aerobic	FN	9
+aerophilicity	species	Fold9	aerobic	TN	91
+aerophilicity	species	Fold9	anaerobic	TP	65
+aerophilicity	species	Fold9	anaerobic	FP	0
+aerophilicity	species	Fold9	anaerobic	FN	8
+aerophilicity	species	Fold9	anaerobic	TN	411
+aerophilicity	species	Fold9	facultatively anaerobic	TP	28
+aerophilicity	species	Fold9	facultatively anaerobic	FP	0
+aerophilicity	species	Fold9	facultatively anaerobic	FN	3
+aerophilicity	species	Fold9	facultatively anaerobic	TN	453
+aerophilicity	strain	Fold1	aerobic	TP	161
+aerophilicity	strain	Fold1	aerobic	FP	0
+aerophilicity	strain	Fold1	aerobic	FN	15
+aerophilicity	strain	Fold1	aerobic	TN	166
+aerophilicity	strain	Fold1	anaerobic	TP	115
+aerophilicity	strain	Fold1	anaerobic	FP	0
+aerophilicity	strain	Fold1	anaerobic	FN	10
+aerophilicity	strain	Fold1	anaerobic	TN	217
+aerophilicity	strain	Fold1	facultatively anaerobic	TP	26
+aerophilicity	strain	Fold1	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold1	facultatively anaerobic	FN	15
+aerophilicity	strain	Fold1	facultatively anaerobic	TN	301
+aerophilicity	strain	Fold10	aerobic	TP	140
+aerophilicity	strain	Fold10	aerobic	FP	0
+aerophilicity	strain	Fold10	aerobic	FN	16
+aerophilicity	strain	Fold10	aerobic	TN	186
+aerophilicity	strain	Fold10	anaerobic	TP	117
+aerophilicity	strain	Fold10	anaerobic	FP	0
+aerophilicity	strain	Fold10	anaerobic	FN	13
+aerophilicity	strain	Fold10	anaerobic	TN	212
+aerophilicity	strain	Fold10	facultatively anaerobic	TP	32
+aerophilicity	strain	Fold10	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold10	facultatively anaerobic	FN	24
+aerophilicity	strain	Fold10	facultatively anaerobic	TN	286
+aerophilicity	strain	Fold2	aerobic	TP	148
+aerophilicity	strain	Fold2	aerobic	FP	0
+aerophilicity	strain	Fold2	aerobic	FN	15
+aerophilicity	strain	Fold2	aerobic	TN	179
+aerophilicity	strain	Fold2	anaerobic	TP	112
+aerophilicity	strain	Fold2	anaerobic	FP	0
+aerophilicity	strain	Fold2	anaerobic	FN	11
+aerophilicity	strain	Fold2	anaerobic	TN	219
+aerophilicity	strain	Fold2	facultatively anaerobic	TP	40
+aerophilicity	strain	Fold2	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold2	facultatively anaerobic	FN	16
+aerophilicity	strain	Fold2	facultatively anaerobic	TN	286
+aerophilicity	strain	Fold3	aerobic	TP	156
+aerophilicity	strain	Fold3	aerobic	FP	0
+aerophilicity	strain	Fold3	aerobic	FN	5
+aerophilicity	strain	Fold3	aerobic	TN	181
+aerophilicity	strain	Fold3	anaerobic	TP	116
+aerophilicity	strain	Fold3	anaerobic	FP	0
+aerophilicity	strain	Fold3	anaerobic	FN	8
+aerophilicity	strain	Fold3	anaerobic	TN	218
+aerophilicity	strain	Fold3	facultatively anaerobic	TP	30
+aerophilicity	strain	Fold3	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold3	facultatively anaerobic	FN	27
+aerophilicity	strain	Fold3	facultatively anaerobic	TN	285
+aerophilicity	strain	Fold4	aerobic	TP	151
+aerophilicity	strain	Fold4	aerobic	FP	0
+aerophilicity	strain	Fold4	aerobic	FN	15
+aerophilicity	strain	Fold4	aerobic	TN	176
+aerophilicity	strain	Fold4	anaerobic	TP	114
+aerophilicity	strain	Fold4	anaerobic	FP	0
+aerophilicity	strain	Fold4	anaerobic	FN	9
+aerophilicity	strain	Fold4	anaerobic	TN	219
+aerophilicity	strain	Fold4	facultatively anaerobic	TP	34
+aerophilicity	strain	Fold4	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold4	facultatively anaerobic	FN	19
+aerophilicity	strain	Fold4	facultatively anaerobic	TN	289
+aerophilicity	strain	Fold5	aerobic	TP	161
+aerophilicity	strain	Fold5	aerobic	FP	0
+aerophilicity	strain	Fold5	aerobic	FN	5
+aerophilicity	strain	Fold5	aerobic	TN	176
+aerophilicity	strain	Fold5	anaerobic	TP	112
+aerophilicity	strain	Fold5	anaerobic	FP	0
+aerophilicity	strain	Fold5	anaerobic	FN	14
+aerophilicity	strain	Fold5	anaerobic	TN	216
+aerophilicity	strain	Fold5	facultatively anaerobic	TP	33
+aerophilicity	strain	Fold5	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold5	facultatively anaerobic	FN	17
+aerophilicity	strain	Fold5	facultatively anaerobic	TN	292
+aerophilicity	strain	Fold6	aerobic	TP	174
+aerophilicity	strain	Fold6	aerobic	FP	0
+aerophilicity	strain	Fold6	aerobic	FN	6
+aerophilicity	strain	Fold6	aerobic	TN	162
+aerophilicity	strain	Fold6	anaerobic	TP	105
+aerophilicity	strain	Fold6	anaerobic	FP	0
+aerophilicity	strain	Fold6	anaerobic	FN	10
+aerophilicity	strain	Fold6	anaerobic	TN	227
+aerophilicity	strain	Fold6	facultatively anaerobic	TP	36
+aerophilicity	strain	Fold6	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold6	facultatively anaerobic	FN	11
+aerophilicity	strain	Fold6	facultatively anaerobic	TN	295
+aerophilicity	strain	Fold7	aerobic	TP	170
+aerophilicity	strain	Fold7	aerobic	FP	0
+aerophilicity	strain	Fold7	aerobic	FN	11
+aerophilicity	strain	Fold7	aerobic	TN	161
+aerophilicity	strain	Fold7	anaerobic	TP	104
+aerophilicity	strain	Fold7	anaerobic	FP	0
+aerophilicity	strain	Fold7	anaerobic	FN	7
+aerophilicity	strain	Fold7	anaerobic	TN	231
+aerophilicity	strain	Fold7	facultatively anaerobic	TP	32
+aerophilicity	strain	Fold7	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold7	facultatively anaerobic	FN	18
+aerophilicity	strain	Fold7	facultatively anaerobic	TN	292
+aerophilicity	strain	Fold8	aerobic	TP	173
+aerophilicity	strain	Fold8	aerobic	FP	0
+aerophilicity	strain	Fold8	aerobic	FN	8
+aerophilicity	strain	Fold8	aerobic	TN	161
+aerophilicity	strain	Fold8	anaerobic	TP	96
+aerophilicity	strain	Fold8	anaerobic	FP	0
+aerophilicity	strain	Fold8	anaerobic	FN	10
+aerophilicity	strain	Fold8	anaerobic	TN	236
+aerophilicity	strain	Fold8	facultatively anaerobic	TP	37
+aerophilicity	strain	Fold8	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold8	facultatively anaerobic	FN	18
+aerophilicity	strain	Fold8	facultatively anaerobic	TN	287
+aerophilicity	strain	Fold9	aerobic	TP	169
+aerophilicity	strain	Fold9	aerobic	FP	0
+aerophilicity	strain	Fold9	aerobic	FN	15
+aerophilicity	strain	Fold9	aerobic	TN	158
+aerophilicity	strain	Fold9	anaerobic	TP	116
+aerophilicity	strain	Fold9	anaerobic	FP	0
+aerophilicity	strain	Fold9	anaerobic	FN	7
+aerophilicity	strain	Fold9	anaerobic	TN	219
+aerophilicity	strain	Fold9	facultatively anaerobic	TP	19
+aerophilicity	strain	Fold9	facultatively anaerobic	FP	0
+aerophilicity	strain	Fold9	facultatively anaerobic	FN	16
+aerophilicity	strain	Fold9	facultatively anaerobic	TN	307

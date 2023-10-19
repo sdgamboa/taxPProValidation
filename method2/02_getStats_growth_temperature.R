@@ -16,7 +16,7 @@ listFiles <- function() {
 
 (fileNames <- listFiles())
 
-physName <- 'growth te'
+physName <- 'growth_temperature'
 # rankVar <- 'all'
 
 physFileNames <- sort(grep(physName, fileNames, value = TRUE))
@@ -154,9 +154,9 @@ mcc_res <- data.frame(
             Rank = factor(Rank, levels = rank_order, ordered = TRUE)
         ) |> 
         ggplot(aes(Attribute, mcc)) +
-        geom_violin(aes(group = Attribute, fill = Attribute)) +
+        geom_boxplot(aes(group = Attribute, fill = Attribute)) +
         facet_wrap(~Rank) +
-        # geom_point() +
+        geom_point(position = 'jitter') +
         # scale_y_continuous(
         #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
         # ) + 

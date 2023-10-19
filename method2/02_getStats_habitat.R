@@ -18,7 +18,7 @@ listFiles <- function() {
 (fileNames <- listFiles())
 
 ## name always with underscode instead of  space
-physName <- 'acetate_producing'
+physName <- 'habitat'
 
 (physFileNames <- sort(grep(physName, fileNames, value = TRUE)))
 tbls <- map(physFileNames, ~ read_csv(.x, show_col_types = FALSE))
@@ -251,7 +251,7 @@ rank_order <- c('all', 'genus', 'species', 'strain')
             alpha = 1
         ) +
         # geom_boxplot(aes(color = PosNeg), alpha = 0) +
-        facet_wrap(~Rank) +
+        facet_wrap(~Rank, scales = 'free_x') +
         theme_bw() +
         theme(
             axis.text.x = element_text(angle = 45, hjust = 1)
