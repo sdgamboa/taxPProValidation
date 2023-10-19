@@ -38,58 +38,108 @@ clusters <- d |>
     unique() |> 
     group_by(cl) |> 
     slice_max(order_by = distant_NCBI_ID, n = 1, with_ties = FALSE)
+  
+myFun <- function(x, clusters) {
+    ts <- x |> 
+        mutate(taxid = as.character(taxid))
+    pos <- match(ts$NCBI_ID, clusters$cl)
+    pos <- pos[!is.na(pos)]
+    jk <- left_join(ts, clusters, by = c('NCBI_ID' = 'cl'))
     
-
-ts <- testSets[[1]]
-pos <- match(ts$NCBI_ID, clusters$cl)
-pos <- pos[!is.na(pos)]
-jk <- left_join(ts, clusters, by = c('NCBI_ID' = 'cl'))
-
-jk2 <- jk |> 
-    dplyr::filter(!is.na(distant_NCBI_ID)) |> 
-    select(
-        -NCBI_ID, -Taxon_name
-    ) |>
-    rename(NCBI_ID = distant_NCBI_ID) |> 
-    separate(
-        col = 'Attribute', into = c('Attribute', 'Attribute_value'),
-        sep = '--'
-    ) |> 
-    mutate(
-        Attribute_value = !as.logical(Attribute_value),
-        Attribute = paste0(Attribute,'--', as.character(Attribute_value))
-    ) |> 
-    mutate(
-        Rank = case_when(
-            grepl('g__', NCBI_ID) ~ 'genus',
-            grepl('s__', NCBI_ID) ~ 'species',
-            grepl('t__', NCBI_ID) ~ 'strain',
-            TRUE ~ NA
+    jk2 <- jk |> 
+        dplyr::filter(!is.na(distant_NCBI_ID)) |> 
+        select(
+            -NCBI_ID, -Taxon_name
+        ) |>
+        rename(NCBI_ID = distant_NCBI_ID) |> 
+        separate(
+            col = 'Attribute', into = c('Attribute', 'Attribute_value'),
+            sep = '--'
+        ) |> 
+        mutate(
+            Attribute_value = !as.logical(Attribute_value),
+            Attribute = paste0(Attribute,'--', as.character(Attribute_value))
+        ) |> 
+        mutate(
+            Rank = case_when(
+                grepl('g__', NCBI_ID) ~ 'genus',
+                grepl('s__', NCBI_ID) ~ 'species',
+                grepl('t__', NCBI_ID) ~ 'strain',
+                TRUE ~ NA
+            )
+        ) |> 
+        select(-Attribute_value) |> 
+        mutate(
+            Attribute_source = NA,
+            Confidence_in_curation = NA,
+            Evidence = NA,
+            Frequency = NA,
+            Score = 1
+        ) |> 
+        mutate(
+            taxid = sub('^\\w__', '', NCBI_ID)
         )
-    ) |> 
-    select(-Attribute_value) |> 
-    mutate(
-        Attribute_source = NA,
-        Confidence_in_curation = NA,
-        Evidence = NA,
-        Frequency = NA,
-        Score = 1
-    ) |> 
-    mutate(
-        taxid = sub('^\\w__', '', NCBI_ID)
-    )
-    
+    output <- bind_rows(ts, jk2)
+    return(output)
+} 
+
+testSets <- map(testSets, ~ myFun(.x, clusters))
 
 
 
 
+# ts <- testSets[[1]] |> 
+#     mutate(taxid = as.character(taxid))
+# pos <- match(ts$NCBI_ID, clusters$cl)
+# pos <- pos[!is.na(pos)]
+# jk <- left_join(ts, clusters, by = c('NCBI_ID' = 'cl'))
+# 
+# jk2 <- jk |> 
+#     dplyr::filter(!is.na(distant_NCBI_ID)) |> 
+#     select(
+#         -NCBI_ID, -Taxon_name
+#     ) |>
+#     rename(NCBI_ID = distant_NCBI_ID) |> 
+#     separate(
+#         col = 'Attribute', into = c('Attribute', 'Attribute_value'),
+#         sep = '--'
+#     ) |> 
+#     mutate(
+#         Attribute_value = !as.logical(Attribute_value),
+#         Attribute = paste0(Attribute,'--', as.character(Attribute_value))
+#     ) |> 
+#     mutate(
+#         Rank = case_when(
+#             grepl('g__', NCBI_ID) ~ 'genus',
+#             grepl('s__', NCBI_ID) ~ 'species',
+#             grepl('t__', NCBI_ID) ~ 'strain',
+#             TRUE ~ NA
+#         )
+#     ) |> 
+#     select(-Attribute_value) |> 
+#     mutate(
+#         Attribute_source = NA,
+#         Confidence_in_curation = NA,
+#         Evidence = NA,
+#         Frequency = NA,
+#         Score = 1
+#     ) |> 
+#     mutate(
+#         taxid = sub('^\\w__', '', NCBI_ID)
+#     )
+#     
 
-data.frame(
-    x = map_int(testSets, nrow),
-    y = map_int(x, nrow)
-    
-) |> 
-    View()
+
+# data.frame(
+#     x = map_int(testSets, nrow),
+#     y = map_int(x, nrow)
+#     
+# ) |> 
+#     View()
+
+
+
+
 
 attrs <- map(tbls, ~ unique(pull(.x, Attribute))) |> 
     unlist() |> 
