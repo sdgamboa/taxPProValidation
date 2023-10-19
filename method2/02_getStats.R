@@ -28,27 +28,60 @@ propSets <- tbls[grep('propagated', names(tbls))]
 
 ## Let's add some true negatives to the testSets
 d <- getDistantTips()
+clusters <- d |> 
+    mutate(
+        cl = strsplit(cluster, '\\+')
+    ) |> 
+    select(-cluster) |> 
+    unnest(cl) |> 
+    select(distant_NCBI_ID = NCBI_ID, cl) |> 
+    unique() |> 
+    group_by(cl) |> 
+    slice_max(order_by = distant_NCBI_ID, n = 1, with_ties = FALSE)
+    
 
+ts <- testSets[[1]]
+pos <- match(ts$NCBI_ID, clusters$cl)
+pos <- pos[!is.na(pos)]
+jk <- left_join(ts, clusters, by = c('NCBI_ID' = 'cl'))
 
-myFun <- function(dat, d) {
-    cl <- d$cluster
-    ncbi_ids <- dat$NCBI_ID
-    test_cl <- purrr::map_chr(
-        ncbi__ids, ~ {
-            rgx <- paste0('\\b', .x, '\\b')
-            res <- grep(rgx, cl, value = TRUE)
-            if (!length(res))
-                return(NA)
-            return(res)
-        }
+jk2 <- jk |> 
+    dplyr::filter(!is.na(distant_NCBI_ID)) |> 
+    select(
+        -NCBI_ID, -Taxon_name
+    ) |>
+    rename(NCBI_ID = distant_NCBI_ID) |> 
+    separate(
+        col = 'Attribute', into = c('Attribute', 'Attribute_value'),
+        sep = '--'
+    ) |> 
+    mutate(
+        Attribute_value = !as.logical(Attribute_value),
+        Attribute = paste0(Attribute,'--', as.character(Attribute_value))
+    ) |> 
+    mutate(
+        Rank = case_when(
+            grepl('g__', NCBI_ID) ~ 'genus',
+            grepl('s__', NCBI_ID) ~ 'species',
+            grepl('t__', NCBI_ID) ~ 'strain',
+            TRUE ~ NA
+        )
+    ) |> 
+    select(-Attribute_value) |> 
+    mutate(
+        Attribute_source = NA,
+        Confidence_in_curation = NA,
+        Evidence = NA,
+        Frequency = NA,
+        Score = 1
+    ) |> 
+    mutate(
+        taxid = sub('^\\w__', '', NCBI_ID)
     )
-    return(test_cl)
-}
+    
 
 
 
-
-x <- lapply(testSets, function(x) left_join(x, d, by = 'NCBI_ID'))
 
 
 data.frame(
