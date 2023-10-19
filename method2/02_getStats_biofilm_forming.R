@@ -322,7 +322,7 @@ mcc_res <- data.frame(
 
 
 # Export files ------------------------------------------------------------
-
+physName <- 'biofilm_forming'
 wd <- getwd()
 if (grepl('method2', wd)) {
     physName <- physName
