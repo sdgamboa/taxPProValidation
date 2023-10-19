@@ -156,7 +156,7 @@ mcc_res <- data.frame(
         ggplot(aes(Attribute, mcc)) +
         geom_boxplot(aes(group = Attribute, fill = Attribute)) +
         facet_wrap(~Rank) +
-        geom_point(position = 'jitter') +
+        geom_point(position = 'jitter', shape = 2) +
         # scale_y_continuous(
         #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
         # ) + 
