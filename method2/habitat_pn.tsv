@@ -1,0 +1,721 @@
+Attribute_group	Rank	Fold	Attribute	PosNeg	n
+habitat	all	Fold1	free-living--FALSE	TP	108
+habitat	all	Fold1	free-living--FALSE	FP	0
+habitat	all	Fold1	free-living--FALSE	FN	0
+habitat	all	Fold1	free-living--FALSE	TN	126
+habitat	all	Fold1	free-living--TRUE	TP	119
+habitat	all	Fold1	free-living--TRUE	FP	0
+habitat	all	Fold1	free-living--TRUE	FN	7
+habitat	all	Fold1	free-living--TRUE	TN	2
+habitat	all	Fold10	free-living--FALSE	TP	108
+habitat	all	Fold10	free-living--FALSE	FP	0
+habitat	all	Fold10	free-living--FALSE	FN	0
+habitat	all	Fold10	free-living--FALSE	TN	125
+habitat	all	Fold10	free-living--TRUE	TP	121
+habitat	all	Fold10	free-living--TRUE	FP	0
+habitat	all	Fold10	free-living--TRUE	FN	4
+habitat	all	Fold10	free-living--TRUE	TN	2
+habitat	all	Fold2	free-living--FALSE	TP	113
+habitat	all	Fold2	free-living--FALSE	FP	0
+habitat	all	Fold2	free-living--FALSE	FN	0
+habitat	all	Fold2	free-living--FALSE	TN	126
+habitat	all	Fold2	free-living--TRUE	TP	121
+habitat	all	Fold2	free-living--TRUE	FP	0
+habitat	all	Fold2	free-living--TRUE	FN	5
+habitat	all	Fold2	free-living--TRUE	TN	2
+habitat	all	Fold3	free-living--FALSE	TP	111
+habitat	all	Fold3	free-living--FALSE	FP	0
+habitat	all	Fold3	free-living--FALSE	FN	0
+habitat	all	Fold3	free-living--FALSE	TN	125
+habitat	all	Fold3	free-living--TRUE	TP	121
+habitat	all	Fold3	free-living--TRUE	FP	0
+habitat	all	Fold3	free-living--TRUE	FN	4
+habitat	all	Fold3	free-living--TRUE	TN	2
+habitat	all	Fold4	free-living--FALSE	TP	113
+habitat	all	Fold4	free-living--FALSE	FP	0
+habitat	all	Fold4	free-living--FALSE	FN	0
+habitat	all	Fold4	free-living--FALSE	TN	125
+habitat	all	Fold4	free-living--TRUE	TP	121
+habitat	all	Fold4	free-living--TRUE	FP	0
+habitat	all	Fold4	free-living--TRUE	FN	4
+habitat	all	Fold4	free-living--TRUE	TN	2
+habitat	all	Fold5	free-living--FALSE	TP	109
+habitat	all	Fold5	free-living--FALSE	FP	0
+habitat	all	Fold5	free-living--FALSE	FN	0
+habitat	all	Fold5	free-living--FALSE	TN	125
+habitat	all	Fold5	free-living--TRUE	TP	119
+habitat	all	Fold5	free-living--TRUE	FP	0
+habitat	all	Fold5	free-living--TRUE	FN	6
+habitat	all	Fold5	free-living--TRUE	TN	2
+habitat	all	Fold6	free-living--FALSE	TP	114
+habitat	all	Fold6	free-living--FALSE	FP	0
+habitat	all	Fold6	free-living--FALSE	FN	0
+habitat	all	Fold6	free-living--FALSE	TN	125
+habitat	all	Fold6	free-living--TRUE	TP	123
+habitat	all	Fold6	free-living--TRUE	FP	0
+habitat	all	Fold6	free-living--TRUE	FN	2
+habitat	all	Fold6	free-living--TRUE	TN	2
+habitat	all	Fold7	free-living--FALSE	TP	109
+habitat	all	Fold7	free-living--FALSE	FP	0
+habitat	all	Fold7	free-living--FALSE	FN	0
+habitat	all	Fold7	free-living--FALSE	TN	125
+habitat	all	Fold7	free-living--TRUE	TP	122
+habitat	all	Fold7	free-living--TRUE	FP	0
+habitat	all	Fold7	free-living--TRUE	FN	3
+habitat	all	Fold7	free-living--TRUE	TN	2
+habitat	all	Fold8	free-living--FALSE	TP	112
+habitat	all	Fold8	free-living--FALSE	FP	0
+habitat	all	Fold8	free-living--FALSE	FN	0
+habitat	all	Fold8	free-living--FALSE	TN	125
+habitat	all	Fold8	free-living--TRUE	TP	120
+habitat	all	Fold8	free-living--TRUE	FP	0
+habitat	all	Fold8	free-living--TRUE	FN	5
+habitat	all	Fold8	free-living--TRUE	TN	2
+habitat	all	Fold9	free-living--FALSE	TP	106
+habitat	all	Fold9	free-living--FALSE	FP	0
+habitat	all	Fold9	free-living--FALSE	FN	0
+habitat	all	Fold9	free-living--FALSE	TN	125
+habitat	all	Fold9	free-living--TRUE	TP	121
+habitat	all	Fold9	free-living--TRUE	FP	0
+habitat	all	Fold9	free-living--TRUE	FN	4
+habitat	all	Fold9	free-living--TRUE	TN	2
+habitat	all	Fold1	host-associated--FALSE	TP	96
+habitat	all	Fold1	host-associated--FALSE	FP	0
+habitat	all	Fold1	host-associated--FALSE	FN	7
+habitat	all	Fold1	host-associated--FALSE	TN	114
+habitat	all	Fold1	host-associated--TRUE	TP	107
+habitat	all	Fold1	host-associated--TRUE	FP	0
+habitat	all	Fold1	host-associated--TRUE	FN	7
+habitat	all	Fold1	host-associated--TRUE	TN	2
+habitat	all	Fold10	host-associated--FALSE	TP	93
+habitat	all	Fold10	host-associated--FALSE	FP	0
+habitat	all	Fold10	host-associated--FALSE	FN	9
+habitat	all	Fold10	host-associated--FALSE	TN	114
+habitat	all	Fold10	host-associated--TRUE	TP	105
+habitat	all	Fold10	host-associated--TRUE	FP	0
+habitat	all	Fold10	host-associated--TRUE	FN	9
+habitat	all	Fold10	host-associated--TRUE	TN	2
+habitat	all	Fold2	host-associated--FALSE	TP	98
+habitat	all	Fold2	host-associated--FALSE	FP	0
+habitat	all	Fold2	host-associated--FALSE	FN	3
+habitat	all	Fold2	host-associated--FALSE	TN	114
+habitat	all	Fold2	host-associated--TRUE	TP	105
+habitat	all	Fold2	host-associated--TRUE	FP	0
+habitat	all	Fold2	host-associated--TRUE	FN	9
+habitat	all	Fold2	host-associated--TRUE	TN	2
+habitat	all	Fold3	host-associated--FALSE	TP	98
+habitat	all	Fold3	host-associated--FALSE	FP	0
+habitat	all	Fold3	host-associated--FALSE	FN	3
+habitat	all	Fold3	host-associated--FALSE	TN	114
+habitat	all	Fold3	host-associated--TRUE	TP	108
+habitat	all	Fold3	host-associated--TRUE	FP	0
+habitat	all	Fold3	host-associated--TRUE	FN	6
+habitat	all	Fold3	host-associated--TRUE	TN	2
+habitat	all	Fold4	host-associated--FALSE	TP	105
+habitat	all	Fold4	host-associated--FALSE	FP	0
+habitat	all	Fold4	host-associated--FALSE	FN	0
+habitat	all	Fold4	host-associated--FALSE	TN	114
+habitat	all	Fold4	host-associated--TRUE	TP	111
+habitat	all	Fold4	host-associated--TRUE	FP	0
+habitat	all	Fold4	host-associated--TRUE	FN	3
+habitat	all	Fold4	host-associated--TRUE	TN	2
+habitat	all	Fold5	host-associated--FALSE	TP	98
+habitat	all	Fold5	host-associated--FALSE	FP	0
+habitat	all	Fold5	host-associated--FALSE	FN	5
+habitat	all	Fold5	host-associated--FALSE	TN	114
+habitat	all	Fold5	host-associated--TRUE	TP	108
+habitat	all	Fold5	host-associated--TRUE	FP	0
+habitat	all	Fold5	host-associated--TRUE	FN	6
+habitat	all	Fold5	host-associated--TRUE	TN	2
+habitat	all	Fold6	host-associated--FALSE	TP	98
+habitat	all	Fold6	host-associated--FALSE	FP	0
+habitat	all	Fold6	host-associated--FALSE	FN	5
+habitat	all	Fold6	host-associated--FALSE	TN	114
+habitat	all	Fold6	host-associated--TRUE	TP	107
+habitat	all	Fold6	host-associated--TRUE	FP	0
+habitat	all	Fold6	host-associated--TRUE	FN	7
+habitat	all	Fold6	host-associated--TRUE	TN	2
+habitat	all	Fold7	host-associated--FALSE	TP	98
+habitat	all	Fold7	host-associated--FALSE	FP	0
+habitat	all	Fold7	host-associated--FALSE	FN	6
+habitat	all	Fold7	host-associated--FALSE	TN	114
+habitat	all	Fold7	host-associated--TRUE	TP	110
+habitat	all	Fold7	host-associated--TRUE	FP	0
+habitat	all	Fold7	host-associated--TRUE	FN	4
+habitat	all	Fold7	host-associated--TRUE	TN	2
+habitat	all	Fold8	host-associated--FALSE	TP	103
+habitat	all	Fold8	host-associated--FALSE	FP	0
+habitat	all	Fold8	host-associated--FALSE	FN	3
+habitat	all	Fold8	host-associated--FALSE	TN	114
+habitat	all	Fold8	host-associated--TRUE	TP	108
+habitat	all	Fold8	host-associated--TRUE	FP	0
+habitat	all	Fold8	host-associated--TRUE	FN	6
+habitat	all	Fold8	host-associated--TRUE	TN	2
+habitat	all	Fold9	host-associated--FALSE	TP	98
+habitat	all	Fold9	host-associated--FALSE	FP	0
+habitat	all	Fold9	host-associated--FALSE	FN	8
+habitat	all	Fold9	host-associated--FALSE	TN	114
+habitat	all	Fold9	host-associated--TRUE	TP	108
+habitat	all	Fold9	host-associated--TRUE	FP	0
+habitat	all	Fold9	host-associated--TRUE	FN	6
+habitat	all	Fold9	host-associated--TRUE	TN	2
+habitat	all	Fold1	not host-associated--FALSE	TP	175
+habitat	all	Fold1	not host-associated--FALSE	FP	0
+habitat	all	Fold1	not host-associated--FALSE	FN	0
+habitat	all	Fold1	not host-associated--FALSE	TN	188
+habitat	all	Fold1	not host-associated--TRUE	TP	180
+habitat	all	Fold1	not host-associated--TRUE	FP	0
+habitat	all	Fold1	not host-associated--TRUE	FN	8
+habitat	all	Fold1	not host-associated--TRUE	TN	2
+habitat	all	Fold10	not host-associated--FALSE	TP	170
+habitat	all	Fold10	not host-associated--FALSE	FP	0
+habitat	all	Fold10	not host-associated--FALSE	FN	0
+habitat	all	Fold10	not host-associated--FALSE	TN	187
+habitat	all	Fold10	not host-associated--TRUE	TP	177
+habitat	all	Fold10	not host-associated--TRUE	FP	0
+habitat	all	Fold10	not host-associated--TRUE	FN	10
+habitat	all	Fold10	not host-associated--TRUE	TN	2
+habitat	all	Fold2	not host-associated--FALSE	TP	173
+habitat	all	Fold2	not host-associated--FALSE	FP	0
+habitat	all	Fold2	not host-associated--FALSE	FN	0
+habitat	all	Fold2	not host-associated--FALSE	TN	188
+habitat	all	Fold2	not host-associated--TRUE	TP	183
+habitat	all	Fold2	not host-associated--TRUE	FP	0
+habitat	all	Fold2	not host-associated--TRUE	FN	5
+habitat	all	Fold2	not host-associated--TRUE	TN	2
+habitat	all	Fold3	not host-associated--FALSE	TP	171
+habitat	all	Fold3	not host-associated--FALSE	FP	0
+habitat	all	Fold3	not host-associated--FALSE	FN	0
+habitat	all	Fold3	not host-associated--FALSE	TN	188
+habitat	all	Fold3	not host-associated--TRUE	TP	181
+habitat	all	Fold3	not host-associated--TRUE	FP	0
+habitat	all	Fold3	not host-associated--TRUE	FN	7
+habitat	all	Fold3	not host-associated--TRUE	TN	2
+habitat	all	Fold4	not host-associated--FALSE	TP	177
+habitat	all	Fold4	not host-associated--FALSE	FP	0
+habitat	all	Fold4	not host-associated--FALSE	FN	0
+habitat	all	Fold4	not host-associated--FALSE	TN	188
+habitat	all	Fold4	not host-associated--TRUE	TP	185
+habitat	all	Fold4	not host-associated--TRUE	FP	0
+habitat	all	Fold4	not host-associated--TRUE	FN	3
+habitat	all	Fold4	not host-associated--TRUE	TN	2
+habitat	all	Fold5	not host-associated--FALSE	TP	178
+habitat	all	Fold5	not host-associated--FALSE	FP	0
+habitat	all	Fold5	not host-associated--FALSE	FN	0
+habitat	all	Fold5	not host-associated--FALSE	TN	188
+habitat	all	Fold5	not host-associated--TRUE	TP	184
+habitat	all	Fold5	not host-associated--TRUE	FP	0
+habitat	all	Fold5	not host-associated--TRUE	FN	4
+habitat	all	Fold5	not host-associated--TRUE	TN	2
+habitat	all	Fold6	not host-associated--FALSE	TP	175
+habitat	all	Fold6	not host-associated--FALSE	FP	0
+habitat	all	Fold6	not host-associated--FALSE	FN	0
+habitat	all	Fold6	not host-associated--FALSE	TN	188
+habitat	all	Fold6	not host-associated--TRUE	TP	183
+habitat	all	Fold6	not host-associated--TRUE	FP	0
+habitat	all	Fold6	not host-associated--TRUE	FN	5
+habitat	all	Fold6	not host-associated--TRUE	TN	2
+habitat	all	Fold7	not host-associated--FALSE	TP	175
+habitat	all	Fold7	not host-associated--FALSE	FP	0
+habitat	all	Fold7	not host-associated--FALSE	FN	0
+habitat	all	Fold7	not host-associated--FALSE	TN	188
+habitat	all	Fold7	not host-associated--TRUE	TP	183
+habitat	all	Fold7	not host-associated--TRUE	FP	0
+habitat	all	Fold7	not host-associated--TRUE	FN	5
+habitat	all	Fold7	not host-associated--TRUE	TN	2
+habitat	all	Fold8	not host-associated--FALSE	TP	173
+habitat	all	Fold8	not host-associated--FALSE	FP	0
+habitat	all	Fold8	not host-associated--FALSE	FN	0
+habitat	all	Fold8	not host-associated--FALSE	TN	187
+habitat	all	Fold8	not host-associated--TRUE	TP	182
+habitat	all	Fold8	not host-associated--TRUE	FP	0
+habitat	all	Fold8	not host-associated--TRUE	FN	5
+habitat	all	Fold8	not host-associated--TRUE	TN	2
+habitat	all	Fold9	not host-associated--FALSE	TP	171
+habitat	all	Fold9	not host-associated--FALSE	FP	0
+habitat	all	Fold9	not host-associated--FALSE	FN	0
+habitat	all	Fold9	not host-associated--FALSE	TN	187
+habitat	all	Fold9	not host-associated--TRUE	TP	177
+habitat	all	Fold9	not host-associated--TRUE	FP	0
+habitat	all	Fold9	not host-associated--TRUE	FN	10
+habitat	all	Fold9	not host-associated--TRUE	TN	2
+habitat	species	Fold1	free-living--FALSE	TP	108
+habitat	species	Fold1	free-living--FALSE	FP	0
+habitat	species	Fold1	free-living--FALSE	FN	0
+habitat	species	Fold1	free-living--FALSE	TN	125
+habitat	species	Fold1	free-living--TRUE	TP	121
+habitat	species	Fold1	free-living--TRUE	FP	0
+habitat	species	Fold1	free-living--TRUE	FN	4
+habitat	species	Fold1	free-living--TRUE	TN	2
+habitat	species	Fold10	free-living--FALSE	TP	114
+habitat	species	Fold10	free-living--FALSE	FP	0
+habitat	species	Fold10	free-living--FALSE	FN	0
+habitat	species	Fold10	free-living--FALSE	TN	124
+habitat	species	Fold10	free-living--TRUE	TP	120
+habitat	species	Fold10	free-living--TRUE	FP	0
+habitat	species	Fold10	free-living--TRUE	FN	4
+habitat	species	Fold10	free-living--TRUE	TN	2
+habitat	species	Fold2	free-living--FALSE	TP	110
+habitat	species	Fold2	free-living--FALSE	FP	0
+habitat	species	Fold2	free-living--FALSE	FN	0
+habitat	species	Fold2	free-living--FALSE	TN	124
+habitat	species	Fold2	free-living--TRUE	TP	118
+habitat	species	Fold2	free-living--TRUE	FP	0
+habitat	species	Fold2	free-living--TRUE	FN	6
+habitat	species	Fold2	free-living--TRUE	TN	2
+habitat	species	Fold3	free-living--FALSE	TP	112
+habitat	species	Fold3	free-living--FALSE	FP	0
+habitat	species	Fold3	free-living--FALSE	FN	0
+habitat	species	Fold3	free-living--FALSE	TN	124
+habitat	species	Fold3	free-living--TRUE	TP	119
+habitat	species	Fold3	free-living--TRUE	FP	0
+habitat	species	Fold3	free-living--TRUE	FN	5
+habitat	species	Fold3	free-living--TRUE	TN	2
+habitat	species	Fold4	free-living--FALSE	TP	113
+habitat	species	Fold4	free-living--FALSE	FP	0
+habitat	species	Fold4	free-living--FALSE	FN	0
+habitat	species	Fold4	free-living--FALSE	TN	124
+habitat	species	Fold4	free-living--TRUE	TP	121
+habitat	species	Fold4	free-living--TRUE	FP	0
+habitat	species	Fold4	free-living--TRUE	FN	3
+habitat	species	Fold4	free-living--TRUE	TN	2
+habitat	species	Fold5	free-living--FALSE	TP	109
+habitat	species	Fold5	free-living--FALSE	FP	0
+habitat	species	Fold5	free-living--FALSE	FN	0
+habitat	species	Fold5	free-living--FALSE	TN	124
+habitat	species	Fold5	free-living--TRUE	TP	117
+habitat	species	Fold5	free-living--TRUE	FP	0
+habitat	species	Fold5	free-living--TRUE	FN	7
+habitat	species	Fold5	free-living--TRUE	TN	2
+habitat	species	Fold6	free-living--FALSE	TP	111
+habitat	species	Fold6	free-living--FALSE	FP	0
+habitat	species	Fold6	free-living--FALSE	FN	0
+habitat	species	Fold6	free-living--FALSE	TN	124
+habitat	species	Fold6	free-living--TRUE	TP	120
+habitat	species	Fold6	free-living--TRUE	FP	0
+habitat	species	Fold6	free-living--TRUE	FN	4
+habitat	species	Fold6	free-living--TRUE	TN	2
+habitat	species	Fold7	free-living--FALSE	TP	107
+habitat	species	Fold7	free-living--FALSE	FP	0
+habitat	species	Fold7	free-living--FALSE	FN	0
+habitat	species	Fold7	free-living--FALSE	TN	124
+habitat	species	Fold7	free-living--TRUE	TP	119
+habitat	species	Fold7	free-living--TRUE	FP	0
+habitat	species	Fold7	free-living--TRUE	FN	5
+habitat	species	Fold7	free-living--TRUE	TN	2
+habitat	species	Fold8	free-living--FALSE	TP	112
+habitat	species	Fold8	free-living--FALSE	FP	0
+habitat	species	Fold8	free-living--FALSE	FN	0
+habitat	species	Fold8	free-living--FALSE	TN	124
+habitat	species	Fold8	free-living--TRUE	TP	123
+habitat	species	Fold8	free-living--TRUE	FP	0
+habitat	species	Fold8	free-living--TRUE	FN	1
+habitat	species	Fold8	free-living--TRUE	TN	2
+habitat	species	Fold9	free-living--FALSE	TP	106
+habitat	species	Fold9	free-living--FALSE	FP	0
+habitat	species	Fold9	free-living--FALSE	FN	0
+habitat	species	Fold9	free-living--FALSE	TN	124
+habitat	species	Fold9	free-living--TRUE	TP	119
+habitat	species	Fold9	free-living--TRUE	FP	0
+habitat	species	Fold9	free-living--TRUE	FN	5
+habitat	species	Fold9	free-living--TRUE	TN	2
+habitat	species	Fold1	host-associated--FALSE	TP	96
+habitat	species	Fold1	host-associated--FALSE	FP	0
+habitat	species	Fold1	host-associated--FALSE	FN	7
+habitat	species	Fold1	host-associated--FALSE	TN	114
+habitat	species	Fold1	host-associated--TRUE	TP	107
+habitat	species	Fold1	host-associated--TRUE	FP	0
+habitat	species	Fold1	host-associated--TRUE	FN	7
+habitat	species	Fold1	host-associated--TRUE	TN	2
+habitat	species	Fold10	host-associated--FALSE	TP	93
+habitat	species	Fold10	host-associated--FALSE	FP	0
+habitat	species	Fold10	host-associated--FALSE	FN	9
+habitat	species	Fold10	host-associated--FALSE	TN	114
+habitat	species	Fold10	host-associated--TRUE	TP	105
+habitat	species	Fold10	host-associated--TRUE	FP	0
+habitat	species	Fold10	host-associated--TRUE	FN	9
+habitat	species	Fold10	host-associated--TRUE	TN	2
+habitat	species	Fold2	host-associated--FALSE	TP	98
+habitat	species	Fold2	host-associated--FALSE	FP	0
+habitat	species	Fold2	host-associated--FALSE	FN	3
+habitat	species	Fold2	host-associated--FALSE	TN	114
+habitat	species	Fold2	host-associated--TRUE	TP	105
+habitat	species	Fold2	host-associated--TRUE	FP	0
+habitat	species	Fold2	host-associated--TRUE	FN	9
+habitat	species	Fold2	host-associated--TRUE	TN	2
+habitat	species	Fold3	host-associated--FALSE	TP	98
+habitat	species	Fold3	host-associated--FALSE	FP	0
+habitat	species	Fold3	host-associated--FALSE	FN	3
+habitat	species	Fold3	host-associated--FALSE	TN	114
+habitat	species	Fold3	host-associated--TRUE	TP	108
+habitat	species	Fold3	host-associated--TRUE	FP	0
+habitat	species	Fold3	host-associated--TRUE	FN	6
+habitat	species	Fold3	host-associated--TRUE	TN	2
+habitat	species	Fold4	host-associated--FALSE	TP	105
+habitat	species	Fold4	host-associated--FALSE	FP	0
+habitat	species	Fold4	host-associated--FALSE	FN	0
+habitat	species	Fold4	host-associated--FALSE	TN	114
+habitat	species	Fold4	host-associated--TRUE	TP	111
+habitat	species	Fold4	host-associated--TRUE	FP	0
+habitat	species	Fold4	host-associated--TRUE	FN	3
+habitat	species	Fold4	host-associated--TRUE	TN	2
+habitat	species	Fold5	host-associated--FALSE	TP	98
+habitat	species	Fold5	host-associated--FALSE	FP	0
+habitat	species	Fold5	host-associated--FALSE	FN	5
+habitat	species	Fold5	host-associated--FALSE	TN	114
+habitat	species	Fold5	host-associated--TRUE	TP	108
+habitat	species	Fold5	host-associated--TRUE	FP	0
+habitat	species	Fold5	host-associated--TRUE	FN	6
+habitat	species	Fold5	host-associated--TRUE	TN	2
+habitat	species	Fold6	host-associated--FALSE	TP	98
+habitat	species	Fold6	host-associated--FALSE	FP	0
+habitat	species	Fold6	host-associated--FALSE	FN	5
+habitat	species	Fold6	host-associated--FALSE	TN	114
+habitat	species	Fold6	host-associated--TRUE	TP	107
+habitat	species	Fold6	host-associated--TRUE	FP	0
+habitat	species	Fold6	host-associated--TRUE	FN	7
+habitat	species	Fold6	host-associated--TRUE	TN	2
+habitat	species	Fold7	host-associated--FALSE	TP	98
+habitat	species	Fold7	host-associated--FALSE	FP	0
+habitat	species	Fold7	host-associated--FALSE	FN	6
+habitat	species	Fold7	host-associated--FALSE	TN	114
+habitat	species	Fold7	host-associated--TRUE	TP	110
+habitat	species	Fold7	host-associated--TRUE	FP	0
+habitat	species	Fold7	host-associated--TRUE	FN	4
+habitat	species	Fold7	host-associated--TRUE	TN	2
+habitat	species	Fold8	host-associated--FALSE	TP	103
+habitat	species	Fold8	host-associated--FALSE	FP	0
+habitat	species	Fold8	host-associated--FALSE	FN	3
+habitat	species	Fold8	host-associated--FALSE	TN	114
+habitat	species	Fold8	host-associated--TRUE	TP	108
+habitat	species	Fold8	host-associated--TRUE	FP	0
+habitat	species	Fold8	host-associated--TRUE	FN	6
+habitat	species	Fold8	host-associated--TRUE	TN	2
+habitat	species	Fold9	host-associated--FALSE	TP	98
+habitat	species	Fold9	host-associated--FALSE	FP	0
+habitat	species	Fold9	host-associated--FALSE	FN	8
+habitat	species	Fold9	host-associated--FALSE	TN	114
+habitat	species	Fold9	host-associated--TRUE	TP	108
+habitat	species	Fold9	host-associated--TRUE	FP	0
+habitat	species	Fold9	host-associated--TRUE	FN	6
+habitat	species	Fold9	host-associated--TRUE	TN	2
+habitat	species	Fold1	not host-associated--FALSE	TP	174
+habitat	species	Fold1	not host-associated--FALSE	FP	0
+habitat	species	Fold1	not host-associated--FALSE	FN	0
+habitat	species	Fold1	not host-associated--FALSE	TN	187
+habitat	species	Fold1	not host-associated--TRUE	TP	182
+habitat	species	Fold1	not host-associated--TRUE	FP	0
+habitat	species	Fold1	not host-associated--TRUE	FN	5
+habitat	species	Fold1	not host-associated--TRUE	TN	2
+habitat	species	Fold10	not host-associated--FALSE	TP	164
+habitat	species	Fold10	not host-associated--FALSE	FP	0
+habitat	species	Fold10	not host-associated--FALSE	FN	0
+habitat	species	Fold10	not host-associated--FALSE	TN	186
+habitat	species	Fold10	not host-associated--TRUE	TP	179
+habitat	species	Fold10	not host-associated--TRUE	FP	0
+habitat	species	Fold10	not host-associated--TRUE	FN	7
+habitat	species	Fold10	not host-associated--TRUE	TN	2
+habitat	species	Fold2	not host-associated--FALSE	TP	175
+habitat	species	Fold2	not host-associated--FALSE	FP	0
+habitat	species	Fold2	not host-associated--FALSE	FN	0
+habitat	species	Fold2	not host-associated--FALSE	TN	187
+habitat	species	Fold2	not host-associated--TRUE	TP	178
+habitat	species	Fold2	not host-associated--TRUE	FP	0
+habitat	species	Fold2	not host-associated--TRUE	FN	9
+habitat	species	Fold2	not host-associated--TRUE	TN	2
+habitat	species	Fold3	not host-associated--FALSE	TP	171
+habitat	species	Fold3	not host-associated--FALSE	FP	0
+habitat	species	Fold3	not host-associated--FALSE	FN	0
+habitat	species	Fold3	not host-associated--FALSE	TN	187
+habitat	species	Fold3	not host-associated--TRUE	TP	182
+habitat	species	Fold3	not host-associated--TRUE	FP	0
+habitat	species	Fold3	not host-associated--TRUE	FN	5
+habitat	species	Fold3	not host-associated--TRUE	TN	2
+habitat	species	Fold4	not host-associated--FALSE	TP	166
+habitat	species	Fold4	not host-associated--FALSE	FP	0
+habitat	species	Fold4	not host-associated--FALSE	FN	0
+habitat	species	Fold4	not host-associated--FALSE	TN	187
+habitat	species	Fold4	not host-associated--TRUE	TP	178
+habitat	species	Fold4	not host-associated--TRUE	FP	0
+habitat	species	Fold4	not host-associated--TRUE	FN	9
+habitat	species	Fold4	not host-associated--TRUE	TN	2
+habitat	species	Fold5	not host-associated--FALSE	TP	180
+habitat	species	Fold5	not host-associated--FALSE	FP	0
+habitat	species	Fold5	not host-associated--FALSE	FN	0
+habitat	species	Fold5	not host-associated--FALSE	TN	187
+habitat	species	Fold5	not host-associated--TRUE	TP	183
+habitat	species	Fold5	not host-associated--TRUE	FP	0
+habitat	species	Fold5	not host-associated--TRUE	FN	4
+habitat	species	Fold5	not host-associated--TRUE	TN	2
+habitat	species	Fold6	not host-associated--FALSE	TP	177
+habitat	species	Fold6	not host-associated--FALSE	FP	0
+habitat	species	Fold6	not host-associated--FALSE	FN	0
+habitat	species	Fold6	not host-associated--FALSE	TN	187
+habitat	species	Fold6	not host-associated--TRUE	TP	183
+habitat	species	Fold6	not host-associated--TRUE	FP	0
+habitat	species	Fold6	not host-associated--TRUE	FN	4
+habitat	species	Fold6	not host-associated--TRUE	TN	2
+habitat	species	Fold7	not host-associated--FALSE	TP	174
+habitat	species	Fold7	not host-associated--FALSE	FP	0
+habitat	species	Fold7	not host-associated--FALSE	FN	0
+habitat	species	Fold7	not host-associated--FALSE	TN	187
+habitat	species	Fold7	not host-associated--TRUE	TP	178
+habitat	species	Fold7	not host-associated--TRUE	FP	0
+habitat	species	Fold7	not host-associated--TRUE	FN	9
+habitat	species	Fold7	not host-associated--TRUE	TN	2
+habitat	species	Fold8	not host-associated--FALSE	TP	174
+habitat	species	Fold8	not host-associated--FALSE	FP	0
+habitat	species	Fold8	not host-associated--FALSE	FN	0
+habitat	species	Fold8	not host-associated--FALSE	TN	186
+habitat	species	Fold8	not host-associated--TRUE	TP	182
+habitat	species	Fold8	not host-associated--TRUE	FP	0
+habitat	species	Fold8	not host-associated--TRUE	FN	4
+habitat	species	Fold8	not host-associated--TRUE	TN	2
+habitat	species	Fold9	not host-associated--FALSE	TP	174
+habitat	species	Fold9	not host-associated--FALSE	FP	0
+habitat	species	Fold9	not host-associated--FALSE	FN	0
+habitat	species	Fold9	not host-associated--FALSE	TN	186
+habitat	species	Fold9	not host-associated--TRUE	TP	181
+habitat	species	Fold9	not host-associated--TRUE	FP	0
+habitat	species	Fold9	not host-associated--TRUE	FN	5
+habitat	species	Fold9	not host-associated--TRUE	TN	2
+habitat	strain	Fold1	aquatic biome--FALSE	TP	18
+habitat	strain	Fold1	aquatic biome--FALSE	FP	0
+habitat	strain	Fold1	aquatic biome--FALSE	FN	0
+habitat	strain	Fold1	aquatic biome--FALSE	TN	19
+habitat	strain	Fold1	aquatic biome--TRUE	TP	19
+habitat	strain	Fold1	aquatic biome--TRUE	FP	0
+habitat	strain	Fold1	aquatic biome--TRUE	FN	0
+habitat	strain	Fold1	aquatic biome--TRUE	TN	2
+habitat	strain	Fold10	aquatic biome--FALSE	TP	16
+habitat	strain	Fold10	aquatic biome--FALSE	FP	0
+habitat	strain	Fold10	aquatic biome--FALSE	FN	0
+habitat	strain	Fold10	aquatic biome--FALSE	TN	18
+habitat	strain	Fold10	aquatic biome--TRUE	TP	17
+habitat	strain	Fold10	aquatic biome--TRUE	FP	0
+habitat	strain	Fold10	aquatic biome--TRUE	FN	1
+habitat	strain	Fold10	aquatic biome--TRUE	TN	2
+habitat	strain	Fold2	aquatic biome--FALSE	TP	16
+habitat	strain	Fold2	aquatic biome--FALSE	FP	0
+habitat	strain	Fold2	aquatic biome--FALSE	FN	0
+habitat	strain	Fold2	aquatic biome--FALSE	TN	18
+habitat	strain	Fold2	aquatic biome--TRUE	TP	18
+habitat	strain	Fold2	aquatic biome--TRUE	FP	0
+habitat	strain	Fold2	aquatic biome--TRUE	FN	0
+habitat	strain	Fold2	aquatic biome--TRUE	TN	2
+habitat	strain	Fold3	aquatic biome--FALSE	TP	16
+habitat	strain	Fold3	aquatic biome--FALSE	FP	0
+habitat	strain	Fold3	aquatic biome--FALSE	FN	0
+habitat	strain	Fold3	aquatic biome--FALSE	TN	18
+habitat	strain	Fold3	aquatic biome--TRUE	TP	17
+habitat	strain	Fold3	aquatic biome--TRUE	FP	0
+habitat	strain	Fold3	aquatic biome--TRUE	FN	1
+habitat	strain	Fold3	aquatic biome--TRUE	TN	2
+habitat	strain	Fold4	aquatic biome--FALSE	TP	15
+habitat	strain	Fold4	aquatic biome--FALSE	FP	0
+habitat	strain	Fold4	aquatic biome--FALSE	FN	0
+habitat	strain	Fold4	aquatic biome--FALSE	TN	18
+habitat	strain	Fold4	aquatic biome--TRUE	TP	18
+habitat	strain	Fold4	aquatic biome--TRUE	FP	0
+habitat	strain	Fold4	aquatic biome--TRUE	FN	0
+habitat	strain	Fold4	aquatic biome--TRUE	TN	2
+habitat	strain	Fold5	aquatic biome--FALSE	TP	16
+habitat	strain	Fold5	aquatic biome--FALSE	FP	0
+habitat	strain	Fold5	aquatic biome--FALSE	FN	0
+habitat	strain	Fold5	aquatic biome--FALSE	TN	18
+habitat	strain	Fold5	aquatic biome--TRUE	TP	17
+habitat	strain	Fold5	aquatic biome--TRUE	FP	0
+habitat	strain	Fold5	aquatic biome--TRUE	FN	1
+habitat	strain	Fold5	aquatic biome--TRUE	TN	2
+habitat	strain	Fold6	aquatic biome--FALSE	TP	15
+habitat	strain	Fold6	aquatic biome--FALSE	FP	0
+habitat	strain	Fold6	aquatic biome--FALSE	FN	0
+habitat	strain	Fold6	aquatic biome--FALSE	TN	18
+habitat	strain	Fold6	aquatic biome--TRUE	TP	18
+habitat	strain	Fold6	aquatic biome--TRUE	FP	0
+habitat	strain	Fold6	aquatic biome--TRUE	FN	0
+habitat	strain	Fold6	aquatic biome--TRUE	TN	2
+habitat	strain	Fold7	aquatic biome--FALSE	TP	15
+habitat	strain	Fold7	aquatic biome--FALSE	FP	0
+habitat	strain	Fold7	aquatic biome--FALSE	FN	0
+habitat	strain	Fold7	aquatic biome--FALSE	TN	18
+habitat	strain	Fold7	aquatic biome--TRUE	TP	17
+habitat	strain	Fold7	aquatic biome--TRUE	FP	0
+habitat	strain	Fold7	aquatic biome--TRUE	FN	1
+habitat	strain	Fold7	aquatic biome--TRUE	TN	2
+habitat	strain	Fold8	aquatic biome--FALSE	TP	17
+habitat	strain	Fold8	aquatic biome--FALSE	FP	0
+habitat	strain	Fold8	aquatic biome--FALSE	FN	0
+habitat	strain	Fold8	aquatic biome--FALSE	TN	18
+habitat	strain	Fold8	aquatic biome--TRUE	TP	18
+habitat	strain	Fold8	aquatic biome--TRUE	FP	0
+habitat	strain	Fold8	aquatic biome--TRUE	FN	0
+habitat	strain	Fold8	aquatic biome--TRUE	TN	2
+habitat	strain	Fold9	aquatic biome--FALSE	TP	17
+habitat	strain	Fold9	aquatic biome--FALSE	FP	0
+habitat	strain	Fold9	aquatic biome--FALSE	FN	0
+habitat	strain	Fold9	aquatic biome--FALSE	TN	18
+habitat	strain	Fold9	aquatic biome--TRUE	TP	18
+habitat	strain	Fold9	aquatic biome--TRUE	FP	0
+habitat	strain	Fold9	aquatic biome--TRUE	FN	0
+habitat	strain	Fold9	aquatic biome--TRUE	TN	2
+habitat	strain	Fold1	colonization of host--FALSE	TP	44
+habitat	strain	Fold1	colonization of host--FALSE	FP	0
+habitat	strain	Fold1	colonization of host--FALSE	FN	0
+habitat	strain	Fold1	colonization of host--FALSE	TN	47
+habitat	strain	Fold1	colonization of host--TRUE	TP	45
+habitat	strain	Fold1	colonization of host--TRUE	FP	0
+habitat	strain	Fold1	colonization of host--TRUE	FN	2
+habitat	strain	Fold1	colonization of host--TRUE	TN	2
+habitat	strain	Fold10	colonization of host--FALSE	TP	45
+habitat	strain	Fold10	colonization of host--FALSE	FP	0
+habitat	strain	Fold10	colonization of host--FALSE	FN	0
+habitat	strain	Fold10	colonization of host--FALSE	TN	47
+habitat	strain	Fold10	colonization of host--TRUE	TP	47
+habitat	strain	Fold10	colonization of host--TRUE	FP	0
+habitat	strain	Fold10	colonization of host--TRUE	FN	0
+habitat	strain	Fold10	colonization of host--TRUE	TN	2
+habitat	strain	Fold2	colonization of host--FALSE	TP	44
+habitat	strain	Fold2	colonization of host--FALSE	FP	0
+habitat	strain	Fold2	colonization of host--FALSE	FN	0
+habitat	strain	Fold2	colonization of host--FALSE	TN	47
+habitat	strain	Fold2	colonization of host--TRUE	TP	45
+habitat	strain	Fold2	colonization of host--TRUE	FP	0
+habitat	strain	Fold2	colonization of host--TRUE	FN	2
+habitat	strain	Fold2	colonization of host--TRUE	TN	2
+habitat	strain	Fold3	colonization of host--FALSE	TP	44
+habitat	strain	Fold3	colonization of host--FALSE	FP	0
+habitat	strain	Fold3	colonization of host--FALSE	FN	0
+habitat	strain	Fold3	colonization of host--FALSE	TN	47
+habitat	strain	Fold3	colonization of host--TRUE	TP	45
+habitat	strain	Fold3	colonization of host--TRUE	FP	0
+habitat	strain	Fold3	colonization of host--TRUE	FN	2
+habitat	strain	Fold3	colonization of host--TRUE	TN	2
+habitat	strain	Fold4	colonization of host--FALSE	TP	45
+habitat	strain	Fold4	colonization of host--FALSE	FP	0
+habitat	strain	Fold4	colonization of host--FALSE	FN	0
+habitat	strain	Fold4	colonization of host--FALSE	TN	47
+habitat	strain	Fold4	colonization of host--TRUE	TP	46
+habitat	strain	Fold4	colonization of host--TRUE	FP	0
+habitat	strain	Fold4	colonization of host--TRUE	FN	1
+habitat	strain	Fold4	colonization of host--TRUE	TN	2
+habitat	strain	Fold5	colonization of host--FALSE	TP	45
+habitat	strain	Fold5	colonization of host--FALSE	FP	0
+habitat	strain	Fold5	colonization of host--FALSE	FN	0
+habitat	strain	Fold5	colonization of host--FALSE	TN	47
+habitat	strain	Fold5	colonization of host--TRUE	TP	46
+habitat	strain	Fold5	colonization of host--TRUE	FP	0
+habitat	strain	Fold5	colonization of host--TRUE	FN	1
+habitat	strain	Fold5	colonization of host--TRUE	TN	2
+habitat	strain	Fold6	colonization of host--FALSE	TP	46
+habitat	strain	Fold6	colonization of host--FALSE	FP	0
+habitat	strain	Fold6	colonization of host--FALSE	FN	0
+habitat	strain	Fold6	colonization of host--FALSE	TN	47
+habitat	strain	Fold6	colonization of host--TRUE	TP	46
+habitat	strain	Fold6	colonization of host--TRUE	FP	0
+habitat	strain	Fold6	colonization of host--TRUE	FN	1
+habitat	strain	Fold6	colonization of host--TRUE	TN	2
+habitat	strain	Fold7	colonization of host--FALSE	TP	44
+habitat	strain	Fold7	colonization of host--FALSE	FP	0
+habitat	strain	Fold7	colonization of host--FALSE	FN	0
+habitat	strain	Fold7	colonization of host--FALSE	TN	47
+habitat	strain	Fold7	colonization of host--TRUE	TP	45
+habitat	strain	Fold7	colonization of host--TRUE	FP	0
+habitat	strain	Fold7	colonization of host--TRUE	FN	2
+habitat	strain	Fold7	colonization of host--TRUE	TN	2
+habitat	strain	Fold8	colonization of host--FALSE	TP	45
+habitat	strain	Fold8	colonization of host--FALSE	FP	0
+habitat	strain	Fold8	colonization of host--FALSE	FN	0
+habitat	strain	Fold8	colonization of host--FALSE	TN	47
+habitat	strain	Fold8	colonization of host--TRUE	TP	45
+habitat	strain	Fold8	colonization of host--TRUE	FP	0
+habitat	strain	Fold8	colonization of host--TRUE	FN	2
+habitat	strain	Fold8	colonization of host--TRUE	TN	2
+habitat	strain	Fold9	colonization of host--FALSE	TP	44
+habitat	strain	Fold9	colonization of host--FALSE	FP	0
+habitat	strain	Fold9	colonization of host--FALSE	FN	0
+habitat	strain	Fold9	colonization of host--FALSE	TN	47
+habitat	strain	Fold9	colonization of host--TRUE	TP	44
+habitat	strain	Fold9	colonization of host--TRUE	FP	0
+habitat	strain	Fold9	colonization of host--TRUE	FN	3
+habitat	strain	Fold9	colonization of host--TRUE	TN	2
+habitat	strain	Fold1	multiple--FALSE	TP	30
+habitat	strain	Fold1	multiple--FALSE	FP	0
+habitat	strain	Fold1	multiple--FALSE	FN	0
+habitat	strain	Fold1	multiple--FALSE	TN	30
+habitat	strain	Fold1	multiple--TRUE	TP	30
+habitat	strain	Fold1	multiple--TRUE	FP	0
+habitat	strain	Fold1	multiple--TRUE	FN	0
+habitat	strain	Fold1	multiple--TRUE	TN	1
+habitat	strain	Fold10	multiple--FALSE	TP	29
+habitat	strain	Fold10	multiple--FALSE	FP	0
+habitat	strain	Fold10	multiple--FALSE	FN	0
+habitat	strain	Fold10	multiple--FALSE	TN	29
+habitat	strain	Fold10	multiple--TRUE	TP	29
+habitat	strain	Fold10	multiple--TRUE	FP	0
+habitat	strain	Fold10	multiple--TRUE	FN	0
+habitat	strain	Fold10	multiple--TRUE	TN	1
+habitat	strain	Fold2	multiple--FALSE	TP	30
+habitat	strain	Fold2	multiple--FALSE	FP	0
+habitat	strain	Fold2	multiple--FALSE	FN	0
+habitat	strain	Fold2	multiple--FALSE	TN	30
+habitat	strain	Fold2	multiple--TRUE	TP	30
+habitat	strain	Fold2	multiple--TRUE	FP	0
+habitat	strain	Fold2	multiple--TRUE	FN	0
+habitat	strain	Fold2	multiple--TRUE	TN	1
+habitat	strain	Fold3	multiple--FALSE	TP	30
+habitat	strain	Fold3	multiple--FALSE	FP	0
+habitat	strain	Fold3	multiple--FALSE	FN	0
+habitat	strain	Fold3	multiple--FALSE	TN	30
+habitat	strain	Fold3	multiple--TRUE	TP	30
+habitat	strain	Fold3	multiple--TRUE	FP	0
+habitat	strain	Fold3	multiple--TRUE	FN	0
+habitat	strain	Fold3	multiple--TRUE	TN	1
+habitat	strain	Fold4	multiple--FALSE	TP	30
+habitat	strain	Fold4	multiple--FALSE	FP	0
+habitat	strain	Fold4	multiple--FALSE	FN	0
+habitat	strain	Fold4	multiple--FALSE	TN	30
+habitat	strain	Fold4	multiple--TRUE	TP	30
+habitat	strain	Fold4	multiple--TRUE	FP	0
+habitat	strain	Fold4	multiple--TRUE	FN	0
+habitat	strain	Fold4	multiple--TRUE	TN	2
+habitat	strain	Fold5	multiple--FALSE	TP	27
+habitat	strain	Fold5	multiple--FALSE	FP	0
+habitat	strain	Fold5	multiple--FALSE	FN	0
+habitat	strain	Fold5	multiple--FALSE	TN	30
+habitat	strain	Fold5	multiple--TRUE	TP	29
+habitat	strain	Fold5	multiple--TRUE	FP	0
+habitat	strain	Fold5	multiple--TRUE	FN	1
+habitat	strain	Fold5	multiple--TRUE	TN	1
+habitat	strain	Fold6	multiple--FALSE	TP	29
+habitat	strain	Fold6	multiple--FALSE	FP	0
+habitat	strain	Fold6	multiple--FALSE	FN	0
+habitat	strain	Fold6	multiple--FALSE	TN	30
+habitat	strain	Fold6	multiple--TRUE	TP	30
+habitat	strain	Fold6	multiple--TRUE	FP	0
+habitat	strain	Fold6	multiple--TRUE	FN	0
+habitat	strain	Fold6	multiple--TRUE	TN	2
+habitat	strain	Fold7	multiple--FALSE	TP	29
+habitat	strain	Fold7	multiple--FALSE	FP	0
+habitat	strain	Fold7	multiple--FALSE	FN	0
+habitat	strain	Fold7	multiple--FALSE	TN	29
+habitat	strain	Fold7	multiple--TRUE	TP	29
+habitat	strain	Fold7	multiple--TRUE	FP	0
+habitat	strain	Fold7	multiple--TRUE	FN	0
+habitat	strain	Fold7	multiple--TRUE	TN	2
+habitat	strain	Fold8	multiple--FALSE	TP	29
+habitat	strain	Fold8	multiple--FALSE	FP	0
+habitat	strain	Fold8	multiple--FALSE	FN	0
+habitat	strain	Fold8	multiple--FALSE	TN	29
+habitat	strain	Fold8	multiple--TRUE	TP	29
+habitat	strain	Fold8	multiple--TRUE	FP	0
+habitat	strain	Fold8	multiple--TRUE	FN	0
+habitat	strain	Fold8	multiple--TRUE	TN	2
+habitat	strain	Fold9	multiple--FALSE	TP	29
+habitat	strain	Fold9	multiple--FALSE	FP	0
+habitat	strain	Fold9	multiple--FALSE	FN	0
+habitat	strain	Fold9	multiple--FALSE	TN	29
+habitat	strain	Fold9	multiple--TRUE	TP	29
+habitat	strain	Fold9	multiple--TRUE	FP	0
+habitat	strain	Fold9	multiple--TRUE	FN	0
+habitat	strain	Fold9	multiple--TRUE	TN	2

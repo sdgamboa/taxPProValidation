@@ -140,12 +140,15 @@ testSets <- map(testSets, ~ myFun(.x, clusters))
 
 
 
-
 attrs <- map(tbls, ~ unique(pull(.x, Attribute))) |> 
     unlist() |> 
     unique()
-
 thr <- 1 / length(attrs)
+
+attr_typ <- unique(testSets[[1]]$Attribute_type)
+if (attr_typ == 'multisatate-union') {
+    thr <- 0.5
+}
 
 sets <- map2(
     .x = testSets,
@@ -276,8 +279,8 @@ mcc_res <- data.frame(
             Rank = factor(Rank, levels = rank_order, ordered = TRUE)
         ) |> 
         ggplot(aes(Attribute, mcc)) +
-        geom_violin(aes(group = Attribute, fill = Attribute)) +
-        facet_wrap(~Rank) +
+        geom_boxplot(aes(group = Attribute, fill = Attribute)) +
+        facet_wrap(~ Rank, scales = 'free_x') +
         # geom_point() +
         # scale_y_continuous(
         #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
@@ -310,3 +313,4 @@ ggsave(p1_fname, p1, width = 8, height = 7, units = 'in')
 
 p2_fname <- paste0(physName, '_', 'mcc.png')
 ggsave(p2_fname, p2, width = 8, height = 7, units = 'in')
+
