@@ -4,6 +4,7 @@ library(readr)
 library(tidyr)
 library(mltools)
 library(ggplot2)
+library(taxPPro)
 
 listFiles <- function() {
     wd <- getwd()
@@ -16,15 +17,46 @@ listFiles <- function() {
 
 (fileNames <- listFiles())
 
-physName <- 'growth te'
-# rankVar <- 'all'
+physName <- 'habitat'
 
-physFileNames <- sort(grep(physName, fileNames, value = TRUE))
+(physFileNames <- sort(grep(physName, fileNames, value = TRUE)))
 tbls <- map(physFileNames, ~ read_csv(.x, show_col_types = FALSE))
 names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', physFileNames)
 testSets <- tbls[grep('test', names(tbls))]
 propSets <- tbls[grep('propagated', names(tbls))]
 
+
+## Let's add some true negatives to the testSets
+d <- getDistantTips()
+
+
+myFun <- function(dat, d) {
+    cl <- d$cluster
+    ncbi_ids <- dat$NCBI_ID
+    test_cl <- purrr::map_chr(
+        ncbi__ids, ~ {
+            rgx <- paste0('\\b', .x, '\\b')
+            res <- grep(rgx, cl, value = TRUE)
+            if (!length(res))
+                return(NA)
+            return(res)
+        }
+    )
+    return(test_cl)
+}
+
+
+
+
+x <- lapply(testSets, function(x) left_join(x, d, by = 'NCBI_ID'))
+
+
+data.frame(
+    x = map_int(testSets, nrow),
+    y = map_int(x, nrow)
+    
+) |> 
+    View()
 
 attrs <- map(tbls, ~ unique(pull(.x, Attribute))) |> 
     unlist() |> 
@@ -86,12 +118,17 @@ pn <- map(sets, ~ {
 }) |> 
     bind_rows(.id = 'set_names') |> 
     mutate(
-        set_names = sub('_(all|genus|species|strain)_(Fold[0-9]+)', " \\1 \\2", set_names)
+        set_names = sub(
+            '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)',
+            " \\2 \\1 \\3",
+            set_names
+        )
     ) |> 
     separate(
-        col = 'set_names', into = c('Attribute_group', 'Rank', 'Fold'),
+        col = 'set_names', into = c('Attribute_group', 'Attribute0', 'Rank', 'Fold'),
         sep = " "
-    )
+    ) |> 
+    select(-Attribute0)
 
 rank_order <- c('all', 'genus', 'species', 'strain')
 
@@ -138,11 +175,13 @@ mcc_res <- data.frame(
 ) |> 
     mutate(
         dat_name = sub(
-            '_(all|genus|species|strain)_(Fold[0-9]+)_', " \\1 \\2 ", dat_name 
+            '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)_', 
+            " \\2 \\1 \\3 ",
+            dat_name 
         )
     ) |>  
     separate(
-        col = 'dat_name', into = c('Attribute_group', 'Rank', 'Fold', 'Attribute'),
+        col = 'dat_name', into = c('Attribute_group', 'Attribute0', 'Rank', 'Fold', 'Attribute'),
         sep = " "
     )
 

@@ -92,7 +92,7 @@ if (rank_var == 'all') {
     rank_var <- c('genus', 'species', 'strain')
 }
 
-# phys_name <- 'habitat'
+# phys_name <- 'acetate producing'
 # rank_var <- c('genus', 'species', 'strain')
 
 bp_data <- physiologies(phys_name)[[1]]
