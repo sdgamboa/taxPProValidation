@@ -27,83 +27,23 @@ names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', physFileNames)
 testSets <- tbls[grep('test', names(tbls))]
 propSets <- tbls[grep('propagated', names(tbls))]
 
-## Let's add some true negatives to the testSets
-## TODO This is very biased. I should change this code.
-# d <- getDistantTips()
-# clusters <- d |> 
-#     mutate(
-#         cl = strsplit(cluster, '\\+')
-#     ) |> 
-#     select(-cluster) |> 
-#     unnest(cl) |> 
-#     select(distant_NCBI_ID = NCBI_ID, cl) |> 
-#     unique() |> 
-#     group_by(cl) |> 
-#     slice_max(order_by = distant_NCBI_ID, n = 1, with_ties = FALSE) |> 
-#     ungroup()
+
+
+
+
+
+
+
  
 data('tree_list')
 ncbi_tree <- as.Node(tree_list)
 ncbi_nodes <- ncbi_tree$Get(
     attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name)
-)
-
-
-
-
-
-
- 
-myFun <- function(x, clusters) {
-    ts <- x |> 
-        mutate(taxid = as.character(taxid))
-    pos <- match(ts$NCBI_ID, clusters$cl)
-    pos <- pos[!is.na(pos)]
-    jk <- left_join(ts, clusters, by = c('NCBI_ID' = 'cl'))
-    
-    jk2 <- jk |> 
-        dplyr::filter(!is.na(distant_NCBI_ID)) |> 
-        select(
-            -NCBI_ID, -Taxon_name
-        ) |>
-        rename(NCBI_ID = distant_NCBI_ID) |> 
-        separate(
-            col = 'Attribute', into = c('Attribute', 'Attribute_value'),
-            sep = '--'
-        ) |> 
-        mutate(
-            Attribute_value = !as.logical(Attribute_value),
-            Attribute = paste0(Attribute,'--', as.character(Attribute_value))
-        ) |> 
-        mutate(
-            Rank = case_when(
-                grepl('g__', NCBI_ID) ~ 'genus',
-                grepl('s__', NCBI_ID) ~ 'species',
-                grepl('t__', NCBI_ID) ~ 'strain',
-                TRUE ~ NA
-            )
-        ) |> 
-        select(-Attribute_value) |> 
-        mutate(
-            Attribute_source = NA,
-            Confidence_in_curation = NA,
-            Evidence = NA,
-            Frequency = NA,
-            Score = 1
-        ) |> 
-        mutate(
-    taxid = sub('^\\w__', '', NCBI_ID)
-        )
-    output <- bind_rows(ts, jk2)
-    return(output)
-} 
-
-testSets <- map(testSets, ~ {
-    tryCatch(
-        error = function(e) NULL,
-        myFun(.x, clusters)
-    )
-})
+) |> 
+    unname()
+rm(ncbi_tree)
+rm(tree_list)
+gc()
 
 attrs <- map(tbls, ~ unique(pull(.x, Attribute))) |> 
     unlist() |> 
@@ -124,36 +64,79 @@ propSets <- propSets[lgl_vct]
 testSets <- map(testSets, distinct)
 propSets <- map(propSets, distinct)
 
-testSets <- map(testSets, ~ {
-    .x |> 
-        mutate(Score = ifelse(grepl('--FALSE', Attribute), 0, Score)) |> 
-        mutate(Attribute = sub('--(TRUE|FALSE)$', '', Attribute)) 
-})
 
-propSets <- map(propSets, ~ {
-    .x |> 
-        mutate(Score = ifelse(grepl('--FALSE', Attribute), 0, Score)) |> 
-        mutate(Attribute = sub('--(TRUE|FALSE)$', '', Attribute)) 
-})
+getNegatives <- function(dat) {
+    ranks <- unique(dat$Rank)
+    ranks <- factor(ranks, levels = c('genus', 'species', 'strain'))
+    ranks <- case_when(
+        ranks == 'genus' ~ 'g__',
+        ranks == 'species' ~ 's__',
+        ranks == 'strain' ~ 't__'
+    )
+    ranks <- paste0('^(', paste0(ranks, collapse = '|'), ')')
+    selected_nodes <- ncbi_nodes[which(grepl(ranks, ncbi_nodes))]
+    
+    l <- split(dat, dat$Attribute)
+    if (length(l) == 2) {
+        trues <- l[which(grepl('TRUE', names(l)))][[1]]
+        falses <- l[which(grepl('FALSE', names(l)))][[1]]
+        
+        if (nrow(trues) > nrow(falses)) {
+            ncbi_ids <- unique(dat$NCBI_ID)
+            n <- length(ncbi_ids)
+            selected_nodes <- selected_nodes[!selected_nodes %in% ncbi_ids]
+            set.seed(20308)
+            new_negatives <- sample(selected_nodes, n) 
+            output <- data.frame(
+                NCBI_ID = new_negatives,
+                Attribute = unique(dat$Attribute),
+                tScore = 0
+            )
+        } else {
+            return(NULL)
+        }
+        
+    } else {
+        ncbi_ids <- unique(dat$NCBI_ID)
+        n <- length(ncbi_ids)
+        selected_nodes <- selected_nodes[!selected_nodes %in% ncbi_ids]
+        set.seed(20308)
+        new_negatives <- sample(selected_nodes, n) 
+        output <- data.frame(
+            NCBI_ID = new_negatives,
+            Attribute = unique(dat$Attribute),
+            Score = 0
+        )
+    }
+    return(output)
+}
 
+# getNegatives(df)
+
+testSetsPlus <- map(testSets, ~ bind_rows(.x, getNegatives(.x)))
 
 sets <- map2(
-    .x = testSets,
+    .x = testSetsPlus,
     .y = propSets,
     .f = ~ {
         x <- select(.x, NCBI_ID, Attribute, tScore = Score)
         y <- select(.y, NCBI_ID, Attribute, pScore = Score)
-        left_join(x, y, by = c('NCBI_ID', 'Attribute'))
+        left_join(x, y, by = c('NCBI_ID', 'Attribute')) |> 
+            mutate_at(
+                .vars = c('tScore', 'pScore'), .funs = function(x) {
+                    ifelse(is.na(x), 0, x)
+            })
     }
-) |> 
-    map(~ {
-        complete(
-            .x, NCBI_ID, Attribute, fill = list(tScore = 0, pScore = 0)
-        )
-    }) |> 
+) |>
+    # map(~ {
+    #     complete(
+    #         .x, NCBI_ID, Attribute, fill = list(tScore = 0, pScore = 0)
+    #     )
+    # }) |> 
     map(~ {
         mutate(
             .x,
+            Attribute = sub('--(TRUE|FALSE)', '', Attribute),
             tPosNeg = ifelse(tScore > thr, 1, 0),
             pPosNeg = ifelse(pScore > thr, 1, 0),
             PosNeg = case_when(
@@ -167,7 +150,6 @@ sets <- map2(
     }) |> 
     {\(y) set_names(y, sub('_(test|propagated)', '', names(y)))}()
 
-
 pn <- map(sets, ~ {
     dat <- .x |> 
         mutate(
@@ -180,13 +162,7 @@ pn <- map(sets, ~ {
             n = n()
         ) |> 
         ungroup()
-    # dat <- count(.x, Attribute, PosNeg)
-    # colnames(dat)[1] <- c('PosNeg')
     dat
-    # m <- matrix(as.character(table(.x$PosNeg)), nrow = 2, byrow = TRUE)
-    # colnames(m) <- c('T', 'F')
-    # rownames(m) <- c('T', 'F')
-    # m
 }) |> 
     bind_rows(.id = 'set_names') |> 
     mutate(
