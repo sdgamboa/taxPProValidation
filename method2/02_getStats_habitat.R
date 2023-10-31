@@ -216,16 +216,38 @@ mcc_res <- data.frame(
     )
 
 
+
+mcc_res_summary <- mcc_res |> 
+    mutate(Attribute = paste0(Attribute_group, '_', Attribute)) |> 
+    mutate(
+        Rank = factor(Rank, levels = rank_order, ordered = TRUE)
+    ) |> 
+    group_by(Attribute_group, Rank, Attribute) |> 
+    summarise(
+        mean = mean(mcc),
+        CI = paste0(t.test(mcc, conf.level = 0.95)$conf.int, collapse = ' ')
+    ) |> 
+    ungroup() |> 
+    separate(col = 'CI', into = c('lower_ci', 'higher_ci'), sep = ' ') |> 
+    mutate_at(.vars = c('lower_ci', 'higher_ci'), .funs = as.double)
+
+
+
 (
-    p2 <- mcc_res |> 
+    p2 <- mcc_res_summary |> 
         mutate(Attribute = paste0(Attribute_group, '_', Attribute)) |> 
         mutate(
             Rank = factor(Rank, levels = rank_order, ordered = TRUE)
         ) |> 
-        ggplot(aes(Attribute, mcc)) +
-        geom_boxplot(aes(group = Attribute, fill = Attribute)) +
+        ggplot(aes(Attribute, mean)) +
+        geom_point(size = 2) +
+        geom_errorbar(
+            aes(ymin = mean - lower_ci, ymax = mean + higher_ci),
+            width = 0.2
+        ) +
+        # geom_boxplot(aes(group = Attribute, fill = Attribute)) +
         facet_wrap(~ Rank, scales = 'free_x') +
-        geom_point() +
+        # geom_point() +
         # scale_y_continuous(
         #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
         # ) + 
