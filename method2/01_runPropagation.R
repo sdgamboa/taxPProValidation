@@ -1,12 +1,6 @@
-## Script for performing propagation and mcc
-## This script should take a single physiology name only
-## The script should take a second argument indicating the rank
-## (all, genus, species, strain)
+# args <- commandArgs(trailingOnly = TRUE)
+args <- list('habitat', 'all')
 
-args <- commandArgs(trailingOnly = TRUE)
-args <- list('acetate producing', 'all')
-
-## Setup ####
 library(bugphyzz)
 library(taxPPro)
 library(data.tree)
@@ -20,7 +14,6 @@ library(bugphyzzExports)
 library(mltools)
 library(ggplot2)
 library(forcats)
-
 library(BiocParallel)
 
 n_cores <- parallel::detectCores()
@@ -32,37 +25,20 @@ if (n_cores <= 16) {
 
 multicoreParam <- MulticoreParam(workers = n_cores)
 
-# getFolds10 <- function(dat, set_seed = 9013) {
-#     taxids <- unique(dat$NCBI_ID)
-#     set.seed(set_seed)
-#     test_index <- caret::createFolds(
-#         taxids, k = 10, list = TRUE, returnTrain = FALSE
-#     )
-#     test_taxids <- lapply(test_index, function(x) taxids[x]) 
-#     test_sets <- lapply(test_taxids, function(x) dat[dat$NCBI_ID %in% x,])
-     
-#     set.seed(set_seed)
-#     train_index <- caret::createFolds(
-#         taxids, k = 10, list = TRUE, returnTrain = TRUE 
-#     )
-#     train_taxids <- lapply(train_index, function(x) taxids[x]) 
-#     train_sets <- lapply(train_taxids, function(x) dat[dat$NCBI_ID %in% x,])
-#     
-#     output <- list(
-#         test_sets = test_sets, train_sets = train_sets
-#     )
-#     return(output)
-# }
+data('tree_list')
+ncbi_tree <- as.Node(tree_list)
+ncbi_nodes <- ncbi_tree$Get(
+    attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name)
+) |> 
+    unname()
 
 getFolds10 <- function(dat, k_value = 10) {
     taxa <- unique(dat$NCBI_ID)
     k_value <- 10
     set.seed(1234)
     taxa_folds <- cvTools::cvFolds(length(taxa), K = k_value)
-    
     test_taxids <- vector('list', k_value)
     train_taxids <- vector('list', k_value)
-    
     for(i in 1:k_value){
         fold_name <- paste0('Fold', i)
         names(test_taxids)[i] <- fold_name
@@ -70,21 +46,79 @@ getFolds10 <- function(dat, k_value = 10) {
         names(train_taxids)[i] <- fold_name
         train_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which != i]]
     }
-    
     test_sets <- purrr::map(
         test_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
     )
     train_sets <- purrr::map(
         train_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
     )
-    
     output <- list(
         test_sets = test_sets,
         train_sets = train_sets
     )
-    
     return(output)
-    
+}
+
+getNegatives <- function(dat) {
+    ranks <- unique(dat$Rank)
+    atgrp <- unique(dat$Attribute_group)
+    attyp <- unique(dat$Attribute_type)
+    ranks <- factor(ranks, levels = c('genus', 'species', 'strain'))
+    ranks <- case_when(
+        ranks == 'genus' ~ 'g__',
+        ranks == 'species' ~ 's__',
+        ranks == 'strain' ~ 't__'
+    ) |> 
+        {\(y) paste0('^(', paste0(y, collapse = '|'), ')')}()
+    selected_nodes <- ncbi_nodes[which(grepl(ranks, ncbi_nodes))]
+    l <- split(dat, dat$Attribute)
+    if (length(l) == 2) {
+        trues <- l[which(grepl('TRUE', names(l)))][[1]]
+        falses <- l[which(grepl('FALSE', names(l)))][[1]]
+        
+        if (nrow(trues) > nrow(falses)) {
+            ncbi_ids <- unique(dat$NCBI_ID)
+            n <- length(ncbi_ids)
+            selected_nodes <- selected_nodes[!selected_nodes %in% ncbi_ids]
+            set.seed(20308)
+            negatives_imputation <- sample(selected_nodes, n) 
+            output <- data.frame(
+                NCBI_ID = negatives_imputation,
+                Attribute = sub('--TRUE$', '--FALSE', dat$Attribute),
+                Score = 1
+            ) |> 
+                mutate(
+                    taxid = sub('\\w__', '', NCBI_ID),
+                    Taxon_name = taxizedb::taxid2name(taxid),
+                    Rank = taxizedb::taxid2rank(taxid),
+                    Attribute_group = atgrp,
+                    Attribute_type = attyp
+                )
+            
+        } else {
+            return(NULL)
+        }
+        
+    } else {
+        ncbi_ids <- unique(dat$NCBI_ID)
+        n <- length(ncbi_ids)
+        selected_nodes <- selected_nodes[!selected_nodes %in% ncbi_ids]
+        set.seed(20308)
+        negatives_imputation <- sample(selected_nodes, n) 
+        output <- data.frame(
+            NCBI_ID = negatives_imputation,
+            Attribute = sub('--TRUE$', '--FALSE', dat$Attribute),
+            Score = 1
+        ) |> 
+            mutate(
+                taxid = sub('\\w__', '', NCBI_ID),
+                Taxon_name = taxizedb::taxid2name(taxid),
+                Rank = taxizedb::taxid2rank(taxid),
+                Attribute_group = atgrp,
+                Attribute_type = attyp
+            )
+    }
+    return(output)
 }
 
 phys_name <- args[[1]]
@@ -93,13 +127,8 @@ if (rank_var == 'all') {
     rank_var <- c('genus', 'species', 'strain')
 }
 
-# phys_name <- 'acetate producing'
-# rank_var <- c('genus', 'species', 'strain')
-
 bp_data <- physiologies(phys_name)[[1]]
 
-
-message('Trying ranges')
 at <- unique(bp_data$Attribute_type)
 dat_name <- unique(bp_data$Attribute_group)
 if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
@@ -109,13 +138,9 @@ if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
 } else if (at == 'range' && !dat_name %in% names(THRESHOLDS())) {
     quit(save = "no")
 }
-
-
-message('filtering data')
 filtered_bp_data <- filterData(bp_data)
-
-message('train and test sets')
 attr_type <- unique(filtered_bp_data$Attribute_type)
+
 if (attr_type == 'binary') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
         purrr::discard(~ all(is.na(.x))) |> 
@@ -125,6 +150,7 @@ if (attr_type == 'binary') {
         quit(save = 'no')
     }
     folds <- getFolds10(set_with_ids)
+    folds$test_sets <- map(folds$test_sets, ~ bind_rows(.x, getNegatives(.x)))
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
     ) |>
@@ -132,6 +158,7 @@ if (attr_type == 'binary') {
    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
        map(~ completeBinaryData(.x)) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
+   
 } else if (attr_type == 'multistate-intersection') {
     set_with_ids <- getSetWithIDs(filtered_bp_data) |>
         purrr::discard(~ all(is.na(.x))) |> 
@@ -141,6 +168,7 @@ if (attr_type == 'binary') {
         quit(save = 'no')
     }
     folds <- getFolds10(set_with_ids)
+    folds$test_sets <- map(folds$test_sets, ~ bind_rows(.x, getNegatives(.x)))
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
     ) |>
@@ -148,12 +176,8 @@ if (attr_type == 'binary') {
    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
+   
 } else if (attr_type == 'multistate-union') {
-    ## If multistate-union, don't run for all of the attributes.
-    ## just run for the three with the highest number of annotations
-    
-    
-    message('createing sets with IDs')
     filtered_bp_data$Attribute_group_2 <- sub(
         '--(TRUE|FALSE)', '', filtered_bp_data$Attribute
     )
@@ -169,83 +193,46 @@ if (attr_type == 'binary') {
         if (length(res) > 0)
             sets_with_ids[[i]] <- res
     }
-    
-    message('Creating folds')
     select_names <- 
         names(head(sort(map_int(sets_with_ids, nrow), decreasing = TRUE), 3))
     sets_with_ids <- sets_with_ids[select_names] 
-    folds <- map(sets_with_ids, getFolds10)
-    test_sets <- map(folds, ~ .x[['test_sets']])
-    train_sets <- map(folds, ~ .x[['train_sets']])
+    folds <- purrr::map(sets_with_ids, getFolds10)
     
+    for (i in seq_along(folds)) {
+        folds[[i]]$test_sets <- purrr::map(folds[[i]]$test_sets, ~ bind_rows(.x, getNegatives(.x)))
+        
+    }
+    test_sets <- purrr::map(folds, ~ .x[['test_sets']])
+    train_sets <- purrr::map(folds, ~ .x[['train_sets']])
     l2 <- l[select_names]
-    
-    message('Getting sets without IDs')
-    
     phys_data_ready <- vector('list', length(l2))
     for (i in seq_along(select_names)) {
-        
         res <- map(train_sets[[i]], ~ getSetWithoutIDs(l2[[i]], .x)) |> 
             map(~ purrr::discard(.x, ~ all(is.na(.x))))
-        
         datasets <- map2(.x = train_sets[[i]], .y = res, bind_rows)
-        # dataset <- dplyr::bind_rows(sets_with_ids[[i]], set_without_ids)
         if (all(is.null(datasets)))
             next
         names(phys_data_ready)[i] <- names(l2)[i]
-        
         phys_data_ready[[i]] <- map(datasets, completeBinaryData)
-        # output[[i]] <- completeBinaryData(dataset)
-        
-        # set_without_ids <- getSetWithoutIDs(l2[[i]], sets_with_ids[[i]]) |>
-        #     purrr::discard(~ all(is.na(.x)))
-        # dataset <- dplyr::bind_rows(sets_with_ids[[i]], set_without_ids)
-        # if (is.null(dataset))
-        #     next
-        # names(output)[i] <- names(l2)[i]
-        # output[[i]] <- completeBinaryData(dataset)
     }
     phys_data_ready <- discard(phys_data_ready, is.null)
     phys_data_ready <- list_flatten(phys_data_ready)
     test_sets <- list_flatten(test_sets)
     test_sets <- test_sets[names(phys_data_ready)]
-    folds <- list(test_sets = test_sets) # just to make it compatible with the export code
+    folds <- list(test_sets = test_sets) # convert to list to make it compatible with export code (below)
 }
 
 # phys_data_ready <- list_flatten(phys_data_ready)
-
-message('Finished preparing data')
-
-## Prepare tree data ####
-data('tree_list')
-ncbi_tree <- as.Node(tree_list)
 
 ltp <- ltp()
 tree <- reorder(ltp$tree, 'postorder')
 tip_data <- ltp$tip_data
 node_data <- ltp$node_data
 
-
-# tx <- grep('_taxid$', colnames(tip_data), value = TRUE)
-# nodes <- flatten(map(tx, ~ split(tip_data, factor(tip_data[[.x]]))))
-# nodes <- map(nodes, ~ .x[['tip_label']])
-# node_names <- map_int(nodes, ~ getMRCATaxPPro(tree, .x))
-# node_names <- node_names[!is.na(node_names)]
-# nodes_df <- data.frame(
-    # node = unname(node_names),
-    # node_label = names(node_names)
-# ) |>
-    # group_by(node) |>
-    # mutate(node_label = paste0(unique(node_label), collapse = '+')) |>
-    # ungroup() |>
-    # distinct()
-
-start_time <- Sys.time()
 propagated <- bplapply(
     X = phys_data_ready,
     BPPARAM = multicoreParam,
-    FUN = function(dat)
-    {
+    FUN = function(dat) {
         Attribute_group_var <- unique(dat$Attribute_group) |>
             {\(y) y[!is.na(y)]}()
         current_phys <- Attribute_group_var
@@ -255,36 +242,24 @@ propagated <- bplapply(
         current_attribute_nms <- unique(dat$Attribute) |>
             {\(y) y[!is.na(y)]}()
         
-        
         dat_n_tax <- length(unique(dat$NCBI_ID))
-        
         node_list <- split(
             x = dat, f = factor(dat$NCBI_ID)
         )
-        
-        tim <- system.time({
-            ncbi_tree$Do(function(node) {
-                if (node$name %in% names(node_list))
-                    node$attribute_tbl <- node_list[[node$name]]
-            })
+        ncbi_tree$Do(function(node) {
+            if (node$name %in% names(node_list))
+                node$attribute_tbl <- node_list[[node$name]]
         })
-        
-        tim <- system.time({
-            ncbi_tree$Do(
-                function(node) {
-                    taxPool(
-                        node = node,
-                        grp = Attribute_group_var,
-                        typ = Attribute_type_var)
-                },
-                traversal = 'post-order'
-            )
-        })
-        
-        tim <- system.time({
-            ncbi_tree$Do(inh1, traversal = 'pre-order')
-        })
-        
+        ncbi_tree$Do(
+            function(node) {
+                taxPool(
+                    node = node,
+                    grp = Attribute_group_var,
+                    typ = Attribute_type_var)
+            },
+            traversal = 'post-order'
+        )
+        ncbi_tree$Do(inh1, traversal = 'pre-order')
         new_dat <- ncbi_tree$Get(
             'attribute_tbl', filterFun = function(node) {
                 grepl('^[gst]__', node$name)
@@ -294,14 +269,13 @@ propagated <- bplapply(
             bind_rows() |>
             arrange(NCBI_ID, Attribute) |>
             filter(!NCBI_ID %in% dat$NCBI_ID) |>
-            bind_rows(dat) # After this chunk is run, new_data also includes annotations in dat
+            bind_rows(dat)
         
         if (all(!new_dat$taxid %in% tip_data$taxid)) {
-            output[[i]] <- new_dat ## get the filtered data in the output
+            output[[i]] <- new_dat
             next
         }
         
-        ## Annotate pruned tree ####
         tip_data_annotated <- left_join(
             tip_data,
             select(new_dat, taxid, Attribute, Score),
@@ -352,14 +326,11 @@ propagated <- bplapply(
         input_matrix <- rbind(annotated_tips, no_annotated_tips)
         input_matrix <- input_matrix[tree$tip.label,]
         
-        tim <- system.time({
-            fit <- fitMk(
-                tree = tree, x = input_matrix, model = 'ER',
-                pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
-            )
-            asr <- ancr(object = fit, tips = TRUE)
-        })
-        
+        fit <- fitMk(
+            tree = tree, x = input_matrix, model = 'ER',
+            pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
+        )
+        asr <- ancr(object = fit, tips = TRUE)
         res <- asr$ace
         node_rows <- length(tree$tip.label) + 1:tree$Nnode
         rownames(res)[node_rows] <- tree$node.label
@@ -369,19 +340,13 @@ propagated <- bplapply(
             tibble::rownames_to_column(var = 'node_label') |>
             filter(!grepl('^n\\d+', node_label))
         
-        ## Get annotations for nodes
-        # nodes_annotated <- res[which(grepl('^\\d+(\\+\\d+)*', rownames(res))),]
         node_data_annotated <- ltp$node_data |>
             filter(node_label %in% unique(res_df$node_label)) |>
             select(node_label, taxid, Taxon_name, Rank)
         
         nodes_annotated <- node_data_annotated |>
             left_join(res_df, by = 'node_label') |>
-            # select(taxid, Taxon_name, Rank) |>
             mutate(Rank = ifelse(Rank == 'superkingdom', 'kingdom', Rank)) |>
-            # new_taxa_from_nodes <- nodes_annotated |>
-            # mutate(Rank = taxizedb::taxid2rank(taxid)) |>
-            # mutate(Rank = ifelse(Rank == 'superkingdom', 'kingdom', Rank)) |>
             mutate(
                 NCBI_ID = case_when(
                     Rank == 'kingdom' ~ paste0('k__', taxid),
@@ -410,8 +375,6 @@ propagated <- bplapply(
                 Confidence_in_curation = NA,
                 Attribute_group = Attribute_group_var,
                 Attribute_type = Attribute_type_var,
-                # taxid = sub('\\w__', '', NCBI_ID),
-                # Taxon_name = taxizedb::taxid2name(taxid, db = 'ncbi'),
                 Frequency = case_when(
                     Score == 1 ~ 'always',
                     Score > 0.9 ~ 'usually',
@@ -427,21 +390,16 @@ propagated <- bplapply(
             new_taxa_for_ncbi_tree, factor(new_taxa_for_ncbi_tree$NCBI_ID)
         )
         
-        tim <- system.time({
-            ncbi_tree$Do(function(node) {
-                cond1 <- node$name %in% names(new_taxa_for_ncbi_tree_list)
-                cond2 <- is.null(node$attribute_tbl) || all(is.na(node$attribute_tbl))
-                if (cond1 && cond2) {
-                    node$attribute_tbl <- new_taxa_for_ncbi_tree_list[[node$name]]
-                }
-            })
+        ncbi_tree$Do(function(node) {
+            cond1 <- node$name %in% names(new_taxa_for_ncbi_tree_list)
+            cond2 <- is.null(node$attribute_tbl) || all(is.na(node$attribute_tbl))
+            if (cond1 && cond2) {
+                node$attribute_tbl <- new_taxa_for_ncbi_tree_list[[node$name]]
+            }
         })
         
-        tim <- system.time({
-            ncbi_tree$Do(inh2, traversal = 'pre-order')
-        })
+        ncbi_tree$Do(inh2, traversal = 'pre-order')
         
-        ## Extracting files ####
         result <- ncbi_tree$Get(
             attribute = 'attribute_tbl', simplify = FALSE,
             filterFun = function(node) {
@@ -450,7 +408,6 @@ propagated <- bplapply(
         ) |>
             bind_rows() |>
             discard(~ all(is.na(.x)))
-        min_thr <- 1 / length(unique(dat$Attribute))
         
         add_taxa_1 <- dat |>
             filter(!NCBI_ID %in% unique(result$NCBI_ID)) |>
@@ -458,17 +415,8 @@ propagated <- bplapply(
         add_taxa_2 <- new_taxa_for_ncbi_tree |>
             filter(!NCBI_ID %in% unique(result$NCBI_ID)) |>
             discard(~ all(is.na(.x)))
-        final_result <- bind_rows(list(result, add_taxa_1, add_taxa_2)) |>
-            filter(Score > min_thr)
-        
-        final_result_size <- lobstr::obj_size(final_result)
-        # output[[i]] <- final_result
-        
-        tim <- system.time({
-            ncbi_tree$Do(cleanNode)
-        })
-        
-        nrow_fr <- nrow(final_result)
+        final_result <- bind_rows(list(result, add_taxa_1, add_taxa_2))
+        ncbi_tree$Do(cleanNode)
         return(final_result)
     }
 )
@@ -477,7 +425,6 @@ if (all(c('genus', 'species', 'strain') %in% rank_var)) {
     rank_var <- 'all'
 }
 
-## Export test sets
 for (i in seq_along(folds$test_sets)) {
     fold_n <- names(folds$test_sets)[i]
     fname <- paste0(phys_name, '_test_', rank_var, '_', fold_n, '.csv')
@@ -488,7 +435,6 @@ for (i in seq_along(folds$test_sets)) {
     )
 }
 
-## Export propagated sets
 for (i in seq_along(propagated)) {
     fold_n <- names(propagated)[i]
     fname <- paste0(phys_name, '_propagated_', rank_var, '_', fold_n, '.csv')

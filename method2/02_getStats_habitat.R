@@ -17,33 +17,19 @@ listFiles <- function() {
 }
 
 fileNames <- listFiles()
-
-## name always with underscore instead of  space
 physName <- 'habitat'
 
 physFileNames <- sort(grep(physName, fileNames, value = TRUE))
-tbls <- map(physFileNames, ~ read_csv(.x, show_col_types = FALSE))
+
+# physFileNames <- grep('all', physFileNames, value = TRUE)
+# physFileNames <- physFileNames[which(!grepl('test', physFileNames))]
+# additionalTestFiles <- list.files(pattern = 'habitat.*test.*csv', full.names = TRUE)
+# physFileNames <- c(physFileNames, additionalTestFiles)
+
+tbls <- purrr::map(physFileNames, ~ read_csv(.x, show_col_types = FALSE))
 names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', physFileNames)
 testSets <- tbls[grep('test', names(tbls))]
 propSets <- tbls[grep('propagated', names(tbls))]
-
-
-
-
-
-
-
-
- 
-data('tree_list')
-ncbi_tree <- as.Node(tree_list)
-ncbi_nodes <- ncbi_tree$Get(
-    attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name)
-) |> 
-    unname()
-rm(ncbi_tree)
-rm(tree_list)
-gc()
 
 attrs <- map(tbls, ~ unique(pull(.x, Attribute))) |> 
     unlist() |> 
@@ -52,72 +38,39 @@ thr <- 1 / length(attrs)
 
 attr_typ <- unique(propSets[[1]]$Attribute_type)
 attr_typ <- attr_typ[!is.na(attr_typ)]
-if (attr_typ == 'multisatate-union') {
+if (attr_typ == 'multistate-union') {
     thr <- 0.5
 }
 
 lgl_vct <- map_lgl(testSets, ~ !is.null(.x))
 
-testSets <- testSets[lgl_vct]
-propSets <- propSets[lgl_vct]
-
-testSets <- map(testSets, distinct)
-propSets <- map(propSets, distinct)
-
-
-getNegatives <- function(dat) {
-    ranks <- unique(dat$Rank)
-    ranks <- factor(ranks, levels = c('genus', 'species', 'strain'))
-    ranks <- case_when(
-        ranks == 'genus' ~ 'g__',
-        ranks == 'species' ~ 's__',
-        ranks == 'strain' ~ 't__'
-    )
-    ranks <- paste0('^(', paste0(ranks, collapse = '|'), ')')
-    selected_nodes <- ncbi_nodes[which(grepl(ranks, ncbi_nodes))]
-    
-    l <- split(dat, dat$Attribute)
-    if (length(l) == 2) {
-        trues <- l[which(grepl('TRUE', names(l)))][[1]]
-        falses <- l[which(grepl('FALSE', names(l)))][[1]]
-        
-        if (nrow(trues) > nrow(falses)) {
-            ncbi_ids <- unique(dat$NCBI_ID)
-            n <- length(ncbi_ids)
-            selected_nodes <- selected_nodes[!selected_nodes %in% ncbi_ids]
-            set.seed(20308)
-            new_negatives <- sample(selected_nodes, n) 
-            output <- data.frame(
-                NCBI_ID = new_negatives,
-                Attribute = unique(dat$Attribute),
-                tScore = 0
-            )
-        } else {
-            return(NULL)
-        }
-        
-    } else {
-        ncbi_ids <- unique(dat$NCBI_ID)
-        n <- length(ncbi_ids)
-        selected_nodes <- selected_nodes[!selected_nodes %in% ncbi_ids]
-        set.seed(20308)
-        new_negatives <- sample(selected_nodes, n) 
-        output <- data.frame(
-            NCBI_ID = new_negatives,
-            Attribute = unique(dat$Attribute),
-            Score = 0
+testSets <- map(testSets[lgl_vct], distinct)
+propSets <- map(propSets[lgl_vct], distinct)
+testSetsPlus <- map(testSets, ~ {
+    .x |> 
+        mutate(
+            Score = case_when(
+                Score > thr & grepl('--FALSE', Attribute) ~ 0,
+                Score > thr & grepl('--TRUE', Attribute) ~ 1
+            ),
+            Attribute = sub('--(TRUE|FALSE)', '', Attribute)
+        ) |> 
+        select(-Attribute_group_2)
+})
+propSetsPlus <- map(propSets, ~ {
+    .x |> 
+        mutate(
+            Score = case_when(
+                Score > thr & grepl('--FALSE', Attribute) ~ 0,
+                Score > thr & grepl('--TRUE', Attribute) ~ 1
+            ),
+            Attribute = sub('--(TRUE|FALSE)', '', Attribute)
         )
-    }
-    return(output)
-}
-
-# getNegatives(df)
-
-testSetsPlus <- map(testSets, ~ bind_rows(.x, getNegatives(.x)))
+})
 
 sets <- map2(
     .x = testSetsPlus,
-    .y = propSets,
+    .y = propSetsPlus,
     .f = ~ {
         x <- select(.x, NCBI_ID, Attribute, tScore = Score)
         y <- select(.y, NCBI_ID, Attribute, pScore = Score)
@@ -127,7 +80,7 @@ sets <- map2(
                     ifelse(is.na(x), 0, x)
             })
     }
-) |>
+) |> 
     # map(~ {
     #     complete(
     #         .x, NCBI_ID, Attribute, fill = list(tScore = 0, pScore = 0)
@@ -136,9 +89,8 @@ sets <- map2(
     map(~ {
         mutate(
             .x,
-            Attribute = sub('--(TRUE|FALSE)', '', Attribute),
-            tPosNeg = ifelse(tScore > thr, 1, 0),
-            pPosNeg = ifelse(pScore > thr, 1, 0),
+            tPosNeg = tScore,
+            pPosNeg = pScore,
             PosNeg = case_when(
                 tPosNeg == 1 & pPosNeg == 1 ~ 'TP',
                 tPosNeg == 1 & pPosNeg == 0 ~ 'FN',
@@ -151,18 +103,11 @@ sets <- map2(
     {\(y) set_names(y, sub('_(test|propagated)', '', names(y)))}()
 
 pn <- map(sets, ~ {
-    dat <- .x |> 
-        mutate(
-            PosNeg = factor(
-                PosNeg, levels = c('TP', 'FP', 'FN', 'TN')
-            )
-        ) |> 
+    .x |> 
+        mutate(PosNeg = factor(PosNeg, levels = c('TP', 'FP', 'FN', 'TN'))) |> 
         group_by(Attribute, PosNeg, .drop = FALSE) |> 
-        summarise(
-            n = n()
-        ) |> 
+        summarise(n = n()) |> 
         ungroup()
-    dat
 }) |> 
     bind_rows(.id = 'set_names') |> 
     mutate(
@@ -209,13 +154,50 @@ rank_order <- c('all', 'genus', 'species', 'strain')
         
 )
 
+# sets[[1]] |> 
+#     count(PosNeg) |> 
+#     mutate(PosNeg = factor(PosNeg, levels = c('TP', 'FP', 'FN', 'TN'))) |> 
+#     complete(PosNeg, fill = list(n = 0)) |> 
+#     arrange(PosNeg) |> 
+#     pull(n) |> 
+#     matrix(nrow = 2, ncol =2, byrow = TRUE) |> 
+#     {\(y) mcc(confusionM = y)}()
+    
 mcc_res0 <- map(sets, ~ {
-   dats <- split(.x, factor(.x$Attribute))
-   map(dats, function(y) {
-       mcc(preds = y$pPosNeg, actuals = y$tPosNeg)
-   })
-}) |> 
-    list_flatten()
+    .x |> 
+        count(PosNeg) |> 
+        mutate(PosNeg = factor(PosNeg, levels = c('TP', 'FP', 'FN', 'TN'))) |> 
+        complete(PosNeg, fill = list(n = 0)) |> 
+        arrange(PosNeg) |> 
+        pull(n) |> 
+        matrix(nrow = 2, ncol =2, byrow = TRUE) |> 
+        {\(y) mcc(confusionM = y)}()
+})
+
+
+# mcc_res0 <- map(sets, ~ {
+#    dats <- split(.x, factor(.x$Attribute))
+#    map(dats, function(y) {
+#        mcc(preds = y$pPosNeg, actuals = y$tPosNeg)
+#    })
+# }) |> 
+#     list_flatten()
+
+# mcc_res <- data.frame(
+#     dat_name = gsub(' ', '_', names(mcc_res0)),
+#     mcc = as.double(mcc_res0)
+# ) |> 
+#     mutate(
+#         dat_name = sub(
+#             '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)_', 
+#             " \\2 \\1 \\3 ",
+#             dat_name 
+#         )
+#     ) |>  
+#     separate(
+#         col = 'dat_name', into = c('Attribute_group', 'Attribute0', 'Rank', 'Fold', 'Attribute'),
+#         sep = " "
+#     )
 
 mcc_res <- data.frame(
     dat_name = gsub(' ', '_', names(mcc_res0)),
@@ -223,13 +205,13 @@ mcc_res <- data.frame(
 ) |> 
     mutate(
         dat_name = sub(
-            '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)_', 
-            " \\2 \\1 \\3 ",
+            '_(all|genus|species|strain)_(.*)_(Fold[0-9]+)', 
+            " \\2 \\1 \\3",
             dat_name 
         )
     ) |>  
     separate(
-        col = 'dat_name', into = c('Attribute_group', 'Attribute0', 'Rank', 'Fold', 'Attribute'),
+        col = 'dat_name', into = c('Attribute_group', 'Attribute', 'Rank', 'Fold'),
         sep = " "
     )
 
@@ -243,7 +225,7 @@ mcc_res <- data.frame(
         ggplot(aes(Attribute, mcc)) +
         geom_boxplot(aes(group = Attribute, fill = Attribute)) +
         facet_wrap(~ Rank, scales = 'free_x') +
-        # geom_point() +
+        geom_point() +
         # scale_y_continuous(
         #     breaks = seq(0, 1, 0.1), limits = c(0.3, 1.1)
         # ) + 
