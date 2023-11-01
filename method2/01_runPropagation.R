@@ -1,5 +1,5 @@
-args <- commandArgs(trailingOnly = TRUE)
-# args <- list('habitat', 'all')
+# args <- commandArgs(trailingOnly = TRUE)
+args <- list('acetate producing', 'all')
 
 library(bugphyzz)
 library(taxPPro)
@@ -11,7 +11,7 @@ library(tidyr)
 library(ggplot2)
 library(ape)
 library(bugphyzzExports)
-library(mltools)
+library(cvTools)
 library(ggplot2)
 library(forcats)
 library(BiocParallel)
@@ -28,7 +28,8 @@ multicoreParam <- MulticoreParam(workers = n_cores)
 data('tree_list')
 ncbi_tree <- as.Node(tree_list)
 ncbi_nodes <- ncbi_tree$Get(
-    attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name)
+    attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name),
+    simplify = TRUE
 ) |> 
     unname()
 
@@ -36,7 +37,7 @@ getFolds10 <- function(dat, k_value = 10) {
     taxa <- unique(dat$NCBI_ID)
     k_value <- 10
     set.seed(1234)
-    taxa_folds <- cvTools::cvFolds(length(taxa), K = k_value)
+    taxa_folds <- cvFolds(length(taxa), K = k_value)
     test_taxids <- vector('list', k_value)
     train_taxids <- vector('list', k_value)
     for(i in 1:k_value){
@@ -129,20 +130,24 @@ if (rank_var == 'all') {
 
 bp_data <- physiologies(phys_name)[[1]]
 
-at <- unique(bp_data$Attribute_type)
-dat_name <- unique(bp_data$Attribute_group)
-if (at == 'range' && dat_name %in% names(THRESHOLDS())) {
-    res <- rangeToLogicalThr(bp_data, THRESHOLDS()[[dat_name]])
+attribute_type <- unique(bp_data$Attribute_type)
+attribute_group <- unique(bp_data$Attribute_group)
+if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
+    res <- rangeToLogicalThr(bp_data, THRESHOLDS()[[attribute_group]])
     res$Attribute_type <- 'multistate-intersection'
     bp_data <- res
-} else if (at == 'range' && !dat_name %in% names(THRESHOLDS())) {
+    ## defining the attribute_type variable here again because it changed
+    ## from range to multistate-intersection (if the type was originally a range)
+    attribute_type <- unique(bp_data$Attribute_type)
+} else if (attribute_type == 'range' && !attribute_group %in% names(THRESHOLDS())) {
     quit(save = "no")
 }
-filtered_bp_data <- filterData(bp_data)
-attr_type <- unique(filtered_bp_data$Attribute_type)
 
-if (attr_type == 'binary') {
-    set_with_ids <- getSetWithIDs(filtered_bp_data) |>
+filtered_bp_data <- filterData(bp_data)
+
+if (attribute_type == 'binary') {
+    set_with_ids <- filtered_bp_data |> 
+        getSetWithIDs() |>
         purrr::discard(~ all(is.na(.x))) |> 
         filter(Rank %in% rank_var)
     if (!nrow(set_with_ids)) {
@@ -159,8 +164,9 @@ if (attr_type == 'binary') {
        map(~ completeBinaryData(.x)) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
    
-} else if (attr_type == 'multistate-intersection') {
-    set_with_ids <- getSetWithIDs(filtered_bp_data) |>
+} else if (attribute_type == 'multistate-intersection') {
+    set_with_ids <- filtered_bp_data |>
+        getSetWithIDs() |>
         purrr::discard(~ all(is.na(.x))) |> 
         filter(Rank %in% rank_var)
     if (!nrow(set_with_ids)) {
@@ -168,7 +174,6 @@ if (attr_type == 'binary') {
         quit(save = 'no')
     }
     folds <- getFolds10(set_with_ids)
-    folds$test_sets <- map(folds$test_sets, ~ bind_rows(.x, getNegatives(.x)))
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
     ) |>
@@ -197,7 +202,6 @@ if (attr_type == 'binary') {
         names(head(sort(map_int(sets_with_ids, nrow), decreasing = TRUE), 3))
     sets_with_ids <- sets_with_ids[select_names] 
     folds <- purrr::map(sets_with_ids, getFolds10)
-    
     for (i in seq_along(folds)) {
         folds[[i]]$test_sets <- purrr::map(folds[[i]]$test_sets, ~ bind_rows(.x, getNegatives(.x)))
         
@@ -219,10 +223,8 @@ if (attr_type == 'binary') {
     phys_data_ready <- list_flatten(phys_data_ready)
     test_sets <- list_flatten(test_sets)
     test_sets <- test_sets[names(phys_data_ready)]
-    folds <- list(test_sets = test_sets) # convert to list to make it compatible with export code (below)
+    folds <- list(test_sets = test_sets) # convert to list just to make it compatible with export code (below)
 }
-
-# phys_data_ready <- list_flatten(phys_data_ready)
 
 ltp <- ltp()
 tree <- reorder(ltp$tree, 'postorder')
@@ -233,19 +235,17 @@ propagated <- bplapply(
     X = phys_data_ready,
     BPPARAM = multicoreParam,
     FUN = function(dat) {
-        Attribute_group_var <- unique(dat$Attribute_group) |>
-            {\(y) y[!is.na(y)]}()
-        current_phys <- Attribute_group_var
-        Attribute_type_var <- unique(dat$Attribute_type) |>
-            {\(y) y[!is.na(y)]}()
-        current_type <- Attribute_type_var
-        current_attribute_nms <- unique(dat$Attribute) |>
+        # Attribute_group_var <- unique(dat$Attribute_group) |>
+            # {\(y) y[!is.na(y)]}()
+        # current_phys <- Attribute_group_var
+        # Attribute_type_var <- unique(dat$Attribute_type) |>
+            # {\(y) y[!is.na(y)]}()
+        # current_type <- Attribute_type_var
+        attribute_nms <- unique(dat$Attribute) |>
             {\(y) y[!is.na(y)]}()
         
         dat_n_tax <- length(unique(dat$NCBI_ID))
-        node_list <- split(
-            x = dat, f = factor(dat$NCBI_ID)
-        )
+        node_list <- split(dat, factor(dat$NCBI_ID))
         ncbi_tree$Do(function(node) {
             if (node$name %in% names(node_list))
                 node$attribute_tbl <- node_list[[node$name]]
@@ -254,12 +254,13 @@ propagated <- bplapply(
             function(node) {
                 taxPool(
                     node = node,
-                    grp = Attribute_group_var,
-                    typ = Attribute_type_var)
+                    grp = attribute_group,
+                    typ = attribute_type)
             },
             traversal = 'post-order'
         )
         ncbi_tree$Do(inh1, traversal = 'pre-order')
+        
         new_dat <- ncbi_tree$Get(
             'attribute_tbl', filterFun = function(node) {
                 grepl('^[gst]__', node$name)
@@ -269,9 +270,11 @@ propagated <- bplapply(
             bind_rows() |>
             arrange(NCBI_ID, Attribute) |>
             filter(!NCBI_ID %in% dat$NCBI_ID) |>
-            bind_rows(dat)
+            bind_rows(dat) # new_dat includes annotations from sources and new data inh/taxpool
         
-        if (all(!new_dat$taxid %in% tip_data$taxid)) {
+        per <- mean(!new_dat$taxid %in% tip_data$taxid) * 100
+        if (per > 1) {
+            message('Not enough coverage of the phylogenetic tree for propagation (min 1%)')
             output[[i]] <- new_dat
             next
         }
@@ -291,13 +294,13 @@ propagated <- bplapply(
             tibble::column_to_rownames(var = 'tip_label') |>
             as.matrix()
         
-        if (Attribute_type_var %in% c('binary', 'multistate-union')) {
+        if (attribute_type %in% c('binary', 'multistate-union')) {
             no_annotated_tips <- tip_data |>
                 filter(!tip_label %in% rownames(annotated_tips)) |>
                 select(tip_label) |>
                 mutate(
                     Attribute = factor(
-                        current_attribute_nms[[1]], levels = current_attribute_nms
+                        attribute_nms[[1]], levels = attribute_nms
                     )
                 ) |>
                 complete(tip_label, Attribute) |>
@@ -306,20 +309,21 @@ propagated <- bplapply(
                 tibble::column_to_rownames(var = 'tip_label') |>
                 as.matrix() |>
                 {\(y) y[,colnames(annotated_tips)]}()
-        } else if (Attribute_type_var == 'multistate-intersection') {
+            
+        } else if (attribute_type_var == 'multistate-intersection') {
             no_annotated_tip_names <- tip_data |>
                 filter(!tip_label %in% rownames(annotated_tips)) |>
                 pull(tip_label)
-            fill_value <- 1 / length(current_attribute_nms)
+            fill_value <- 1 / length(attribute_nms)
             vct <- rep(
                 fill_value,
-                length(no_annotated_tip_names) * length(current_attribute_nms)
+                length(no_annotated_tip_names) * length(attribute_nms)
             )
             no_annotated_tips <- matrix(
                 data = vct,
                 nrow = length(no_annotated_tip_names),
-                ncol = length(current_attribute_nms),
-                dimnames = list(no_annotated_tip_names, current_attribute_nms)
+                ncol = length(attribute_nms),
+                dimnames = list(no_annotated_tip_names, attribute_nms)
             )
         }
         
@@ -340,7 +344,7 @@ propagated <- bplapply(
             tibble::rownames_to_column(var = 'node_label') |>
             filter(!grepl('^n\\d+', node_label))
         
-        node_data_annotated <- ltp$node_data |>
+        node_data_annotated <- node_data |>
             filter(node_label %in% unique(res_df$node_label)) |>
             select(node_label, taxid, Taxon_name, Rank)
         
