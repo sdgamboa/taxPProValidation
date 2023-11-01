@@ -1,5 +1,5 @@
-# args <- commandArgs(trailingOnly = TRUE)
-args <- list('habitat', 'all')
+args <- commandArgs(trailingOnly = TRUE)
+# args <- list('habitat', 'all')
 
 suppressMessages({
     library(bugphyzz)
