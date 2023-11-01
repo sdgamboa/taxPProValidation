@@ -1,20 +1,22 @@
 # args <- commandArgs(trailingOnly = TRUE)
 args <- list('acetate producing', 'all')
 
-library(bugphyzz)
-library(taxPPro)
-library(data.tree)
-library(phytools)
-library(dplyr)
-library(purrr)
-library(tidyr)
-library(ggplot2)
-library(ape)
-library(bugphyzzExports)
-library(cvTools)
-library(ggplot2)
-library(forcats)
-library(BiocParallel)
+suppressMessages({
+    library(bugphyzz)
+    library(taxPPro)
+    library(data.tree)
+    library(phytools)
+    library(dplyr)
+    library(purrr)
+    library(tidyr)
+    library(ggplot2)
+    library(ape)
+    library(bugphyzzExports)
+    library(cvTools)
+    library(ggplot2)
+    library(forcats)
+    library(BiocParallel)
+})
 
 n_cores <- parallel::detectCores()
 if (n_cores <= 16) {
@@ -127,8 +129,9 @@ rank_var <- args[[2]]
 if (rank_var == 'all') {
     rank_var <- c('genus', 'species', 'strain')
 }
-
-bp_data <- physiologies(phys_name)[[1]]
+suppressMessages({
+    bp_data <- physiologies(phys_name)[[1]]
+})
 
 attribute_type <- unique(bp_data$Attribute_type)
 attribute_group <- unique(bp_data$Attribute_group)
@@ -136,8 +139,6 @@ if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
     res <- rangeToLogicalThr(bp_data, THRESHOLDS()[[attribute_group]])
     res$Attribute_type <- 'multistate-intersection'
     bp_data <- res
-    ## defining the attribute_type variable here again because it changed
-    ## from range to multistate-intersection (if the type was originally a range)
     attribute_type <- unique(bp_data$Attribute_type)
 } else if (attribute_type == 'range' && !attribute_group %in% names(THRESHOLDS())) {
     quit(save = "no")
@@ -226,7 +227,9 @@ if (attribute_type == 'binary') {
     folds <- list(test_sets = test_sets) # convert to list just to make it compatible with export code (below)
 }
 
-ltp <- ltp()
+suppressMessages({
+    ltp <- ltp()
+})
 tree <- reorder(ltp$tree, 'postorder')
 tip_data <- ltp$tip_data
 node_data <- ltp$node_data
@@ -235,12 +238,6 @@ propagated <- bplapply(
     X = phys_data_ready,
     BPPARAM = multicoreParam,
     FUN = function(dat) {
-        # Attribute_group_var <- unique(dat$Attribute_group) |>
-            # {\(y) y[!is.na(y)]}()
-        # current_phys <- Attribute_group_var
-        # Attribute_type_var <- unique(dat$Attribute_type) |>
-            # {\(y) y[!is.na(y)]}()
-        # current_type <- Attribute_type_var
         attribute_nms <- unique(dat$Attribute) |>
             {\(y) y[!is.na(y)]}()
         
@@ -270,18 +267,19 @@ propagated <- bplapply(
             bind_rows() |>
             arrange(NCBI_ID, Attribute) |>
             filter(!NCBI_ID %in% dat$NCBI_ID) |>
-            bind_rows(dat) # new_dat includes annotations from sources and new data inh/taxpool
+            bind_rows(dat)
         
-        per <- mean(!new_dat$taxid %in% tip_data$taxid) * 100
-        if (per > 1) {
-            message('Not enough coverage of the phylogenetic tree for propagation (min 1%)')
-            output[[i]] <- new_dat
-            next
+        new_taxids <- new_dat |> 
+            pull(taxid) |> 
+            {\(y) y[!is.na(y)]}()
+        per <- mean(tip_data$taxid %in% new_taxids) * 100
+        if (per < 1) {
+            return(NULL)
         }
         
         tip_data_annotated <- left_join(
-            tip_data,
-            select(new_dat, taxid, Attribute, Score),
+            x = tip_data,
+            y = select(new_dat, taxid, Attribute, Score),
             by = 'taxid'
         )
         
@@ -424,6 +422,11 @@ propagated <- bplapply(
         return(final_result)
     }
 )
+
+if (all(map_lgl(propagated, is.null))) {
+    message('Not enough data for ASR. Stopping after taxonomic pooling.')
+    quit(save = 'no')
+}
 
 if (all(c('genus', 'species', 'strain') %in% rank_var)) {
     rank_var <- 'all'
