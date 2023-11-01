@@ -1,9 +1,11 @@
 
-if (interactive()) {
-    args <- list('habitat', 'all')
-} else {
-    args <- commandArgs(trailingOnly = TRUE)
-}
+args <- commandArgs(trailingOnly = TRUE)
+
+# if (interactive()) {
+#     args <- list('aerophilicity', 'all')
+# } else {
+#     args <- commandArgs(trailingOnly = TRUE)
+# }
 
 suppressMessages({
     library(bugphyzz)
@@ -310,7 +312,7 @@ propagated <- bplapply(
                 as.matrix() |>
                 {\(y) y[,colnames(annotated_tips)]}()
             
-        } else if (attribute_type_var == 'multistate-intersection') {
+        } else if (attribute_type == 'multistate-intersection') {
             no_annotated_tip_names <- tip_data |>
                 filter(!tip_label %in% rownames(annotated_tips)) |>
                 pull(tip_label)
