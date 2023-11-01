@@ -1,5 +1,5 @@
 # args <- commandArgs(trailingOnly = TRUE)
-args <- list('acetate producing', 'all')
+args <- list('habitat', 'all')
 
 suppressMessages({
     library(bugphyzz)
@@ -183,7 +183,7 @@ if (attribute_type == 'binary') {
        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
    
-} else if (attr_type == 'multistate-union') {
+} else if (attribute_type == 'multistate-union') {
     filtered_bp_data$Attribute_group_2 <- sub(
         '--(TRUE|FALSE)', '', filtered_bp_data$Attribute
     )
@@ -240,7 +240,6 @@ propagated <- bplapply(
     FUN = function(dat) {
         attribute_nms <- unique(dat$Attribute) |>
             {\(y) y[!is.na(y)]}()
-        
         dat_n_tax <- length(unique(dat$NCBI_ID))
         node_list <- split(dat, factor(dat$NCBI_ID))
         ncbi_tree$Do(function(node) {
@@ -257,7 +256,6 @@ propagated <- bplapply(
             traversal = 'post-order'
         )
         ncbi_tree$Do(inh1, traversal = 'pre-order')
-        
         new_dat <- ncbi_tree$Get(
             'attribute_tbl', filterFun = function(node) {
                 grepl('^[gst]__', node$name)
@@ -375,8 +373,8 @@ propagated <- bplapply(
             mutate(
                 Attribute_source = NA,
                 Confidence_in_curation = NA,
-                Attribute_group = Attribute_group_var,
-                Attribute_type = Attribute_type_var,
+                Attribute_group = attribute_group,
+                Attribute_type = attribute_type,
                 Frequency = case_when(
                     Score == 1 ~ 'always',
                     Score > 0.9 ~ 'usually',
