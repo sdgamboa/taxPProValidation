@@ -1,11 +1,6 @@
 
-args <- commandArgs(trailingOnly = TRUE)
-
-# if (interactive()) {
-#     args <- list('aerophilicity', 'all')
-# } else {
-#     args <- commandArgs(trailingOnly = TRUE)
-# }
+# args <- commandArgs(trailingOnly = TRUE)
+args <- list('acetate producing', 'all')
 
 suppressMessages({
     library(bugphyzz)
@@ -22,6 +17,7 @@ suppressMessages({
     library(ggplot2)
     library(forcats)
     library(BiocParallel)
+    library(logr)
 })
 
 n_cores <- parallel::detectCores()
