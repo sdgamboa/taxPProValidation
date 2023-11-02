@@ -489,7 +489,7 @@ for (i in seq_along(propagated)) {
 
 msg <- paste0(
     'Propagation workflow finished for ', phys_name, '. Rank: ', rank_var, '.',
-    ' Finished at ', System.time(), '.'
+    ' Finished at ', Sys.time(), '.'
 )
 log_print(msg, blank_after = TRUE)
 log_close()
