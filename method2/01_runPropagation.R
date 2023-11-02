@@ -1,6 +1,6 @@
 
-# args <- commandArgs(trailingOnly = TRUE)
-args <- list('acetate producing', 'all')
+args <- commandArgs(trailingOnly = TRUE)
+# args <- list('growth temperature', 'all')
 
 suppressMessages({
     library(bugphyzz)
@@ -20,14 +20,32 @@ suppressMessages({
     library(logr)
 })
 
+logfile <- gsub(" ", "_", paste0("logFile_", args[[1]], "_", args[[2]]))
+lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
+
+phys_name <- args[[1]]
+rank_var <- args[[2]]
+
+msg <- paste0(
+    'Propagating ', phys_name, '. Rank: ', rank_var
+)
+log_print(msg, blank_after = FALSE)
+
+msg <- paste0('Starting at ', Sys.time())
+log_print(msg, blank_after = TRUE)
+
 n_cores <- parallel::detectCores()
 if (n_cores <= 16) {
     n_cores <- 5
 } else {
     n_cores <- 10
 }
-
 multicoreParam <- MulticoreParam(workers = n_cores)
+
+msg <- paste0(
+    'Using ', n_cores, ' cores.'
+)
+log_print(msg, blank_after = TRUE)
 
 data('tree_list')
 ncbi_tree <- as.Node(tree_list)
@@ -126,11 +144,11 @@ getNegatives <- function(dat) {
     return(output)
 }
 
-phys_name <- args[[1]]
-rank_var <- args[[2]]
+
 if (rank_var == 'all') {
     rank_var <- c('genus', 'species', 'strain')
 }
+
 suppressMessages({
     bp_data <- physiologies(phys_name)[[1]]
 })
@@ -143,10 +161,12 @@ if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
     bp_data <- res
     attribute_type <- unique(bp_data$Attribute_type)
 } else if (attribute_type == 'range' && !attribute_group %in% names(THRESHOLDS())) {
-    quit(save = "no")
+    # quit(save = "no")
 }
 
-filtered_bp_data <- filterData(bp_data)
+suppressMessages({
+    filtered_bp_data <- filterData(bp_data)
+})
 
 if (attribute_type == 'binary') {
     set_with_ids <- filtered_bp_data |> 
@@ -274,7 +294,7 @@ propagated <- bplapply(
             {\(y) y[!is.na(y)]}()
         per <- mean(tip_data$taxid %in% new_taxids) * 100
         if (per < 1) {
-            return(NULL)
+            return(per)
         }
         
         tip_data_annotated <- left_join(
@@ -423,15 +443,26 @@ propagated <- bplapply(
     }
 )
 
-if (all(map_lgl(propagated, is.null))) {
-    message('Not enough data for ASR. Stopping after taxonomic pooling.')
-    quit(save = 'no')
-}
-
 if (all(c('genus', 'species', 'strain') %in% rank_var)) {
     rank_var <- 'all'
 }
 
+lgl_vct <- map_lgl(propagated, is.data.frame)
+if (all(!lgl_vct)) {
+    msg <- paste0(
+        'Not enough data for ASR for ', phys_name, '. Rank:', rank_var, '.',
+        ' Quitting R script. Finishing at ', Sys.time(), '.'
+    )
+    log_print(msg, blank_after = TRUE)
+    quit(save = 'no')
+}
+
+propagated <- propagated[which(lgl_vct)]
+
+msg <- paste0(
+    'Saving test sets for ', phys_name, ' ', rank_var, '.'
+)
+log_print(msg)
 for (i in seq_along(folds$test_sets)) {
     fold_n <- names(folds$test_sets)[i]
     fname <- paste0(phys_name, '_test_', rank_var, '_', fold_n, '.csv')
@@ -442,6 +473,10 @@ for (i in seq_along(folds$test_sets)) {
     )
 }
 
+msg <- paste0(
+    'Saving training sets for ', phys_name, ' ', rank_var, '.'
+)
+log_print(msg)
 for (i in seq_along(propagated)) {
     fold_n <- names(propagated)[i]
     fname <- paste0(phys_name, '_propagated_', rank_var, '_', fold_n, '.csv')
@@ -451,3 +486,10 @@ for (i in seq_along(propagated)) {
         quote = TRUE
     )
 }
+
+msg <- paste0(
+    'Propagation workflow finished for ', phys_name, '. Rank: ', rank_var, '.',
+    ' Finished at ', System.time(), '.'
+)
+log_print(msg, blank_after = TRUE)
+log_close()
