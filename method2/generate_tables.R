@@ -19,7 +19,7 @@ listFiles <- function(phys_name = NULL) {
     return(physFileNames)
 }
 
-## multistate-intersection
+## multistate-intersection ####
 fileNames <- listFiles(physName)
 tbls <- map(fileNames, ~ read.csv(.x))
 names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', fileNames)
@@ -86,8 +86,7 @@ write_tsv(x = foldData, file = outputFileName1)
 outputFileName2 <- paste0(physName, '_mcc_summary.tsv')
 write_tsv(x = foldDataSummary1, file = outputFileName2)
 
-## binary
-
+## binary ####
 fileNames <- listFiles(physName)
 tbls <- map(fileNames, ~ read.csv(.x))
 names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', fileNames)
@@ -146,8 +145,10 @@ foldData <- map2(.x = testSets, .y = propSets, .f = ~ {
         left_join(testDat, predDat, by = c('NCBI_ID', 'Attribute')) |> 
             complete(NCBI_ID, Attribute, fill = list(tScore = 0, pScore = 0)) |> 
             mutate(
-                tPosNeg = ifelse(tScore > thr, 1, 0),
-                pPosNeg = ifelse(pScore > thr, 1, 0),
+                # tPosNeg = ifelse(tScore > thr, 1, 0),
+                tPosNeg = tScore,
+                # pPosNeg = ifelse(pscore > thr, 1, 0),
+                pPosNeg = pScore,
                 PosNeg = case_when(
                     tPosNeg == 1 & pPosNeg == 1 ~ 'TP',
                     tPosNeg == 1 & pPosNeg == 0 ~ 'FN',
@@ -190,12 +191,12 @@ foldDataSummary1 <- foldData |>
     ) |> 
     ungroup()
 
-outputFileName1 <- paste0(physName, '_fold_data.tsv')
+## Export tables ####
+outputFileName1 <- gsub(' ', '_', paste0(physName, '_fold_data.tsv'))
 write_tsv(x = foldData, file = outputFileName1)
-outputFileName2 <- paste0(physName, '_mcc_summary.tsv')
+outputFileName2 <- gsub(' ', '_', paste0(physName, '_mcc_summary.tsv'))
 write_tsv(x = foldDataSummary1, file = outputFileName2)
 
-## multistate-union
 
 
 
