@@ -1,0 +1,121 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+aerophilicity	all	Fold1	aerobic	564	0	48	333	0.897477294021374
+aerophilicity	all	Fold1	anaerobic	230	0	18	697	0.9508268689498084
+aerophilicity	all	Fold1	facultatively anaerobic	54	0	44	847	0.7237468644557459
+aerophilicity	all	Fold10	aerobic	583	0	40	321	0.9121981125549068
+aerophilicity	all	Fold10	anaerobic	214	0	30	700	0.9170638272923501
+aerophilicity	all	Fold10	facultatively anaerobic	57	0	32	855	0.7857125172161703
+aerophilicity	all	Fold2	aerobic	578	0	39	328	0.915008707414662
+aerophilicity	all	Fold2	anaerobic	218	0	21	706	0.9411621245564762
+aerophilicity	all	Fold2	facultatively anaerobic	56	0	47	842	0.7175969206806094
+aerophilicity	all	Fold3	aerobic	577	0	31	337	0.932238764857221
+aerophilicity	all	Fold3	anaerobic	221	0	25	699	0.9313177667390699
+aerophilicity	all	Fold3	facultatively anaerobic	66	0	40	839	0.7709133705015644
+aerophilicity	all	Fold4	aerobic	581	0	34	330	0.9254581543739218
+aerophilicity	all	Fold4	anaerobic	227	0	20	698	0.9452135551661341
+aerophilicity	all	Fold4	facultatively anaerobic	49	0	52	844	0.676012258954988
+aerophilicity	all	Fold5	aerobic	561	0	39	345	0.9165364490842686
+aerophilicity	all	Fold5	anaerobic	240	0	21	684	0.9445367488064866
+aerophilicity	all	Fold5	facultatively anaerobic	71	0	38	836	0.7893386122284193
+aerophilicity	all	Fold6	aerobic	575	0	50	320	0.892006544637244
+aerophilicity	all	Fold6	anaerobic	210	0	12	723	0.9646252798376842
+aerophilicity	all	Fold6	facultatively anaerobic	74	0	43	828	0.7754057548190838
+aerophilicity	all	Fold7	aerobic	592	0	36	317	0.9200751685600854
+aerophilicity	all	Fold7	anaerobic	215	0	20	710	0.9433069693756898
+aerophilicity	all	Fold7	facultatively anaerobic	55	0	42	848	0.7350187204434275
+aerophilicity	all	Fold8	aerobic	605	0	27	313	0.9387541251682874
+aerophilicity	all	Fold8	anaerobic	205	0	18	722	0.9470594412508607
+aerophilicity	all	Fold8	facultatively anaerobic	69	0	38	838	0.7854211877692769
+aerophilicity	all	Fold9	aerobic	577	0	35	332	0.9235240406540632
+aerophilicity	all	Fold9	anaerobic	227	0	28	689	0.9248959367293941
+aerophilicity	all	Fold9	facultatively anaerobic	57	0	38	849	0.7578227877792834
+aerophilicity	genus	Fold1	aerobic	62	0	6	51	0.9032106474595007
+aerophilicity	genus	Fold1	anaerobic	39	0	1	79	0.9812300953395182
+aerophilicity	genus	Fold1	facultatively anaerobic	2	0	9	108	0.40967324519935133
+aerophilicity	genus	Fold10	aerobic	57	0	5	56	0.9186935749841081
+aerophilicity	genus	Fold10	anaerobic	39	0	2	77	0.9628800577212464
+aerophilicity	genus	Fold10	facultatively anaerobic	7	0	11	100	0.5919040043371478
+aerophilicity	genus	Fold2	aerobic	60	0	2	57	0.9669214673961564
+aerophilicity	genus	Fold2	anaerobic	38	0	4	77	0.9274062241147344
+aerophilicity	genus	Fold2	facultatively anaerobic	8	0	9	102	0.6575959492214292
+aerophilicity	genus	Fold3	aerobic	60	0	4	55	0.9348479437673818
+aerophilicity	genus	Fold3	anaerobic	36	0	1	82	0.9804337851346921
+aerophilicity	genus	Fold3	facultatively anaerobic	4	0	16	99	0.4149384448848748
+aerophilicity	genus	Fold4	aerobic	67	0	1	51	0.9830290707024659
+aerophilicity	genus	Fold4	anaerobic	30	0	4	85	0.9179850920431568
+aerophilicity	genus	Fold4	facultatively anaerobic	4	0	15	100	0.4278625498405581
+aerophilicity	genus	Fold5	aerobic	59	0	4	55	0.9343531843023135
+aerophilicity	genus	Fold5	anaerobic	35	0	4	79	0.9242218211381413
+aerophilicity	genus	Fold5	facultatively anaerobic	5	0	15	98	0.4656330736664175
+aerophilicity	genus	Fold6	aerobic	62	0	0	56	1
+aerophilicity	genus	Fold6	anaerobic	34	0	3	81	0.9413290530417012
+aerophilicity	genus	Fold6	facultatively anaerobic	8	0	15	95	0.5480832572857851
+aerophilicity	genus	Fold7	aerobic	60	0	3	55	0.9503261906509312
+aerophilicity	genus	Fold7	anaerobic	40	0	4	74	0.928693093799487
+aerophilicity	genus	Fold7	facultatively anaerobic	1	0	14	103	0.24225907349252923
+aerophilicity	genus	Fold8	aerobic	63	0	3	52	0.9499891256445914
+aerophilicity	genus	Fold8	anaerobic	32	0	8	78	0.8518106569824289
+aerophilicity	genus	Fold8	facultatively anaerobic	6	0	10	102	0.5843952918554847
+aerophilicity	genus	Fold9	aerobic	57	0	4	57	0.9344262295081968
+aerophilicity	genus	Fold9	anaerobic	42	0	2	74	0.9640673406565404
+aerophilicity	genus	Fold9	facultatively anaerobic	5	0	10	103	0.5512121263720411
+aerophilicity	species	Fold1	aerobic	370	0	5	110	0.97147728534538
+aerophilicity	species	Fold1	anaerobic	78	0	8	399	0.9429470777698888
+aerophilicity	species	Fold1	facultatively anaerobic	29	0	9	447	0.8649251805023577
+aerophilicity	species	Fold10	aerobic	375	0	9	100	0.9465352075240355
+aerophilicity	species	Fold10	anaerobic	85	0	5	394	0.9657169880613853
+aerophilicity	species	Fold10	facultatively anaerobic	20	0	5	459	0.8895950260342217
+aerophilicity	species	Fold2	aerobic	373	0	9	103	0.9476158920328472
+aerophilicity	species	Fold2	anaerobic	71	0	6	408	0.9532651645433526
+aerophilicity	species	Fold2	facultatively anaerobic	29	0	11	445	0.8411367100015792
+aerophilicity	species	Fold3	aerobic	382	0	11	92	0.9317742569372454
+aerophilicity	species	Fold3	anaerobic	62	0	5	418	0.9562609045707813
+aerophilicity	species	Fold3	facultatively anaerobic	21	0	10	454	0.814137457544812
+aerophilicity	species	Fold4	aerobic	367	0	8	110	0.955152544979487
+aerophilicity	species	Fold4	anaerobic	77	0	14	394	0.9039464338966382
+aerophilicity	species	Fold4	facultatively anaerobic	30	0	9	446	0.8683404951709192
+aerophilicity	species	Fold5	aerobic	371	0	19	94	0.8895684188767863
+aerophilicity	species	Fold5	anaerobic	72	0	6	406	0.9537473749715504
+aerophilicity	species	Fold5	facultatively anaerobic	20	0	13	451	0.767515771675159
+aerophilicity	species	Fold6	aerobic	364	0	8	112	0.95564724074604
+aerophilicity	species	Fold6	anaerobic	79	0	7	398	0.9501197470504892
+aerophilicity	species	Fold6	facultatively anaerobic	28	0	9	447	0.8612901765006713
+aerophilicity	species	Fold7	aerobic	380	0	8	96	0.9508124994966402
+aerophilicity	species	Fold7	anaerobic	75	0	6	403	0.9551662999231703
+aerophilicity	species	Fold7	facultatively anaerobic	19	0	11	454	0.786353135989351
+aerophilicity	species	Fold8	aerobic	359	0	8	117	0.9568681885428272
+aerophilicity	species	Fold8	anaerobic	82	0	5	397	0.9647827431126155
+aerophilicity	species	Fold8	facultatively anaerobic	34	0	10	440	0.8692269873603531
+aerophilicity	species	Fold9	aerobic	385	0	8	91	0.9489365802334003
+aerophilicity	species	Fold9	anaerobic	65	0	8	411	0.9345642152029583
+aerophilicity	species	Fold9	facultatively anaerobic	28	0	3	453	0.9472505114325186
+aerophilicity	strain	Fold1	aerobic	163	0	13	166	0.9267551259550724
+aerophilicity	strain	Fold1	anaerobic	115	0	10	217	0.937801346575471
+aerophilicity	strain	Fold1	facultatively anaerobic	26	0	15	301	0.7772029710224354
+aerophilicity	strain	Fold10	aerobic	142	0	14	186	0.9200752477588241
+aerophilicity	strain	Fold10	anaerobic	118	0	12	212	0.9268580981282593
+aerophilicity	strain	Fold10	facultatively anaerobic	32	0	24	286	0.7260777782663272
+aerophilicity	strain	Fold2	aerobic	147	0	16	179	0.9098589573784774
+aerophilicity	strain	Fold2	anaerobic	111	0	12	219	0.9249643642169519
+aerophilicity	strain	Fold2	facultatively anaerobic	40	0	16	286	0.8224614048911217
+aerophilicity	strain	Fold3	aerobic	156	0	5	181	0.9710289465237257
+aerophilicity	strain	Fold3	anaerobic	117	0	7	218	0.9561346915508802
+aerophilicity	strain	Fold3	facultatively anaerobic	30	0	27	285	0.6933752452815364
+aerophilicity	strain	Fold4	aerobic	154	0	12	176	0.9319309296435276
+aerophilicity	strain	Fold4	anaerobic	114	0	9	219	0.9435273723846194
+aerophilicity	strain	Fold4	facultatively anaerobic	34	0	19	289	0.7758452165535388
+aerophilicity	strain	Fold5	aerobic	161	0	5	176	0.9711268023238979
+aerophilicity	strain	Fold5	anaerobic	112	0	14	216	0.9136643851522572
+aerophilicity	strain	Fold5	facultatively anaerobic	33	0	17	292	0.7897400334213466
+aerophilicity	strain	Fold6	aerobic	174	0	6	162	0.9654754565201837
+aerophilicity	strain	Fold6	anaerobic	105	0	10	227	0.9351569050079455
+aerophilicity	strain	Fold6	facultatively anaerobic	36	0	11	295	0.8593154419571328
+aerophilicity	strain	Fold7	aerobic	170	0	11	161	0.9376351673512653
+aerophilicity	strain	Fold7	anaerobic	102	0	9	231	0.9404570481736311
+aerophilicity	strain	Fold7	facultatively anaerobic	32	0	18	292	0.7764268862406938
+aerophilicity	strain	Fold8	aerobic	174	0	7	161	0.9598284837574077
+aerophilicity	strain	Fold8	anaerobic	96	0	10	236	0.932118509023527
+aerophilicity	strain	Fold8	facultatively anaerobic	37	0	18	287	0.7956288929648151
+aerophilicity	strain	Fold9	aerobic	170	0	14	158	0.9212550238718376
+aerophilicity	strain	Fold9	anaerobic	116	0	7	219	0.9559700289805569
+aerophilicity	strain	Fold9	facultatively anaerobic	19	0	16	307	0.7183080025689689
