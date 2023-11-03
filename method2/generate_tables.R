@@ -119,6 +119,7 @@ testSets <- map(testSets, ~ {
         )
 })
 
+
 propSets <- map(propSets, ~ {
     chr <- .x$Attribute |> 
         {\(y) y[!is.na(y)]}() |> 
