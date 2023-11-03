@@ -1,0 +1,55 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+width	all	Fold1	average	1	0	10	69	0.2817829147538592
+width	all	Fold1	large	0	0	2	78	0
+width	all	Fold1	small	66	0	1	13	0.9564058518840857
+width	all	Fold10	average	1	0	14	64	0.23388213848187445
+width	all	Fold10	large	0	0	3	76	0
+width	all	Fold10	small	58	0	2	19	0.9352022105422841
+width	all	Fold10	very large	0	0	1	78	0
+width	all	Fold2	average	1	0	14	65	0.2342057229768425
+width	all	Fold2	large	0	0	1	79	0
+width	all	Fold2	small	63	0	1	16	0.9625334218796219
+width	all	Fold3	average	2	0	11	67	0.3635242789425084
+width	all	Fold3	large	0	0	1	79	0
+width	all	Fold3	small	61	0	6	13	0.7892641774904011
+width	all	Fold3	very large	0	0	1	79	0
+width	all	Fold4	average	2	0	7	71	0.4497546022879613
+width	all	Fold4	small	66	0	5	9	0.7730365535202529
+width	all	Fold5	average	1	0	14	65	0.2342057229768425
+width	all	Fold5	small	65	0	0	15	1
+width	all	Fold6	average	3	0	12	65	0.41089070180665904
+width	all	Fold6	large	0	0	3	77	0
+width	all	Fold6	small	59	0	3	18	0.9031435117216847
+width	all	Fold7	average	1	0	12	67	0.25541839970809654
+width	all	Fold7	small	61	0	6	13	0.7892641774904011
+width	all	Fold8	average	1	0	11	68	0.2678244906760903
+width	all	Fold8	small	66	0	2	12	0.9121034881575903
+width	all	Fold9	average	0	0	18	61	0
+width	all	Fold9	small	59	0	2	18	0.9330015022917639
+width	genus	Fold1	average	1	0	10	69	0.2817829147538592
+width	genus	Fold1	large	0	0	2	78	0
+width	genus	Fold1	small	66	0	1	13	0.9564058518840857
+width	genus	Fold10	average	1	0	14	64	0.23388213848187445
+width	genus	Fold10	large	0	0	3	76	0
+width	genus	Fold10	small	58	0	2	19	0.9352022105422841
+width	genus	Fold10	very large	0	0	1	78	0
+width	genus	Fold2	average	1	0	14	65	0.2342057229768425
+width	genus	Fold2	large	0	0	1	79	0
+width	genus	Fold2	small	63	0	1	16	0.9625334218796219
+width	genus	Fold3	average	2	0	11	67	0.3635242789425084
+width	genus	Fold3	large	0	0	1	79	0
+width	genus	Fold3	small	61	0	6	13	0.7892641774904011
+width	genus	Fold3	very large	0	0	1	79	0
+width	genus	Fold4	average	2	0	7	71	0.4497546022879613
+width	genus	Fold4	small	66	0	5	9	0.7730365535202529
+width	genus	Fold5	average	1	0	14	65	0.2342057229768425
+width	genus	Fold5	small	65	0	0	15	1
+width	genus	Fold6	average	3	0	12	65	0.41089070180665904
+width	genus	Fold6	large	0	0	3	77	0
+width	genus	Fold6	small	59	0	3	18	0.9031435117216847
+width	genus	Fold7	average	1	0	12	67	0.25541839970809654
+width	genus	Fold7	small	61	0	6	13	0.7892641774904011
+width	genus	Fold8	average	1	0	11	68	0.2678244906760903
+width	genus	Fold8	small	66	0	2	12	0.9121034881575903
+width	genus	Fold9	average	0	0	18	61	0
+width	genus	Fold9	small	59	0	2	18	0.9330015022917639

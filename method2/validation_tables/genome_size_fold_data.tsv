@@ -1,0 +1,116 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+genome_size	all	Fold1	average	5	0	7	418	0.6401592939016253
+genome_size	all	Fold1	large	378	0	11	41	0.8753089231213104
+genome_size	all	Fold1	small	0	0	1	429	0
+genome_size	all	Fold1	very large	22	0	7	401	0.8634843013090435
+genome_size	all	Fold10	average	11	0	6	412	0.7986055959187973
+genome_size	all	Fold10	large	371	0	19	39	0.7997844537209967
+genome_size	all	Fold10	small	0	0	2	427	0
+genome_size	all	Fold10	very large	14	0	6	409	0.8305898615275106
+genome_size	all	Fold2	average	9	0	2	419	0.9023829390504167
+genome_size	all	Fold2	large	386	0	5	39	0.9354298813960363
+genome_size	all	Fold2	small	1	0	0	429	1
+genome_size	all	Fold2	very large	23	0	4	403	0.9184115871872717
+genome_size	all	Fold3	average	12	0	8	410	0.7671484513518119
+genome_size	all	Fold3	large	375	0	9	46	0.9037485068515265
+genome_size	all	Fold3	small	2	0	1	427	0.8155421719739039
+genome_size	all	Fold3	very large	13	0	11	406	0.7262080263409255
+genome_size	all	Fold4	average	13	0	11	406	0.7262080263409255
+genome_size	all	Fold4	large	372	0	13	45	0.8658314668424067
+genome_size	all	Fold4	small	0	0	3	427	0
+genome_size	all	Fold4	very large	16	0	3	411	0.9143320245436151
+genome_size	all	Fold5	average	7	0	5	418	0.7592352338161918
+genome_size	all	Fold5	large	368	0	20	42	0.8015614957028658
+genome_size	all	Fold5	small	0	0	3	427	0
+genome_size	all	Fold5	very large	22	0	6	402	0.879863434781527
+genome_size	all	Fold6	average	12	0	6	411	0.8106012216420464
+genome_size	all	Fold6	large	369	0	17	43	0.8277098688205942
+genome_size	all	Fold6	small	0	0	1	428	0
+genome_size	all	Fold6	very large	21	0	3	405	0.9319689782769532
+genome_size	all	Fold7	average	9	0	7	413	0.7437237390321758
+genome_size	all	Fold7	large	365	0	16	48	0.8476461154325395
+genome_size	all	Fold7	small	0	0	2	427	0
+genome_size	all	Fold7	very large	23	0	7	399	0.8680139836788743
+genome_size	all	Fold8	average	9	0	5	415	0.7969969144436214
+genome_size	all	Fold8	large	360	0	16	53	0.8575722460888031
+genome_size	all	Fold8	small	0	0	5	424	0
+genome_size	all	Fold8	very large	19	0	15	395	0.7337429837079211
+genome_size	all	Fold9	average	10	0	7	412	0.7605313761891666
+genome_size	all	Fold9	large	369	0	7	53	0.931068363694278
+genome_size	all	Fold9	small	2	0	4	423	0.5746396895740179
+genome_size	all	Fold9	very large	21	0	9	399	0.8273807004815932
+genome_size	species	Fold1	average	1	0	5	138	0.4010475792710397
+genome_size	species	Fold1	large	110	0	9	25	0.8244292802667472
+genome_size	species	Fold1	small	0	0	1	143	0
+genome_size	species	Fold1	very large	11	0	7	126	0.760885910252682
+genome_size	species	Fold10	average	3	0	4	136	0.6452337023220694
+genome_size	species	Fold10	large	117	0	9	17	0.7791937224739797
+genome_size	species	Fold10	very large	9	0	2	132	0.8977584024968696
+genome_size	species	Fold2	average	1	0	3	140	0.4947274449181537
+genome_size	species	Fold2	large	120	0	8	16	0.7905694150420948
+genome_size	species	Fold2	small	0	0	1	143	0
+genome_size	species	Fold2	very large	9	0	2	133	0.8978087803427888
+genome_size	species	Fold3	average	1	0	4	139	0.4409144978401078
+genome_size	species	Fold3	large	119	0	15	10	0.5960066112024387
+genome_size	species	Fold3	small	0	0	1	143	0
+genome_size	species	Fold3	very large	2	0	3	139	0.6257389997232455
+genome_size	species	Fold4	average	2	0	3	139	0.6257389997232455
+genome_size	species	Fold4	large	122	0	11	11	0.6772345358451187
+genome_size	species	Fold4	small	0	0	1	143	0
+genome_size	species	Fold4	very large	2	0	3	139	0.6257389997232455
+genome_size	species	Fold5	average	3	0	0	141	1
+genome_size	species	Fold5	large	125	0	5	14	0.8417256229267932
+genome_size	species	Fold5	small	0	0	1	143	0
+genome_size	species	Fold5	very large	6	0	5	133	0.7250459982682085
+genome_size	species	Fold6	average	2	0	2	140	0.7021094974994095
+genome_size	species	Fold6	large	112	0	9	23	0.8156526565875619
+genome_size	species	Fold6	very large	13	0	7	124	0.7843896834944473
+genome_size	species	Fold7	large	129	0	4	11	0.8433731057418904
+genome_size	species	Fold7	small	0	0	2	142	0
+genome_size	species	Fold7	very large	5	0	4	135	0.7345531603115877
+genome_size	species	Fold8	average	1	0	2	140	0.5732700041451516
+genome_size	species	Fold8	large	112	0	11	20	0.7664619619756226
+genome_size	species	Fold8	very large	11	0	6	126	0.7859052479933757
+genome_size	species	Fold9	average	0	0	5	138	0
+genome_size	species	Fold9	large	105	0	12	26	0.7836039099693787
+genome_size	species	Fold9	small	0	0	1	142	0
+genome_size	species	Fold9	very large	14	0	6	123	0.8169711503260787
+genome_size	strain	Fold1	average	7	0	3	276	0.8321496970374801
+genome_size	strain	Fold1	large	256	0	3	27	0.9431729902702312
+genome_size	strain	Fold1	small	0	0	2	284	0
+genome_size	strain	Fold1	very large	9	0	6	271	0.766161608349246
+genome_size	strain	Fold10	average	10	0	4	271	0.8389851630965257
+genome_size	strain	Fold10	large	251	0	5	29	0.9144846467369735
+genome_size	strain	Fold10	small	0	0	2	283	0
+genome_size	strain	Fold10	very large	10	0	3	272	0.8722609476751558
+genome_size	strain	Fold2	average	9	0	2	275	0.9012626521891646
+genome_size	strain	Fold2	large	250	0	3	33	0.9517337345336013
+genome_size	strain	Fold2	small	1	0	1	284	0.7058651528692204
+genome_size	strain	Fold2	very large	13	0	7	266	0.7958224257542216
+genome_size	strain	Fold3	average	6	0	3	277	0.8121107126025426
+genome_size	strain	Fold3	large	257	0	2	27	0.9611685738169466
+genome_size	strain	Fold3	small	1	0	2	283	0.5753209122279352
+genome_size	strain	Fold3	very large	11	0	4	271	0.8500980335624042
+genome_size	strain	Fold4	average	8	0	7	271	0.7210437412103438
+genome_size	strain	Fold4	large	252	0	3	31	0.9492302472444382
+genome_size	strain	Fold4	very large	9	0	7	270	0.7404628272614073
+genome_size	strain	Fold5	average	9	0	7	270	0.7404628272614073
+genome_size	strain	Fold5	large	248	0	7	31	0.8907273729026056
+genome_size	strain	Fold5	small	0	0	2	284	0
+genome_size	strain	Fold5	very large	10	0	3	273	0.872278375988647
+genome_size	strain	Fold6	average	5	0	4	277	0.7400319529719871
+genome_size	strain	Fold6	large	261	0	4	21	0.9095717424793831
+genome_size	strain	Fold6	small	0	0	2	284	0
+genome_size	strain	Fold6	very large	8	0	2	276	0.891204019468352
+genome_size	strain	Fold7	average	8	0	3	275	0.848188929679971
+genome_size	strain	Fold7	large	248	0	5	33	0.9226367547608852
+genome_size	strain	Fold7	small	0	0	2	284	0
+genome_size	strain	Fold7	very large	15	0	5	266	0.8579990452346764
+genome_size	strain	Fold8	average	7	0	7	272	0.6981799174515237
+genome_size	strain	Fold8	large	258	0	3	25	0.939464963198296
+genome_size	strain	Fold8	small	0	0	1	285	0
+genome_size	strain	Fold8	very large	8	0	2	276	0.891204019468352
+genome_size	strain	Fold9	average	7	0	3	275	0.8321334287032746
+genome_size	strain	Fold9	large	258	0	8	19	0.8261595987094035
+genome_size	strain	Fold9	small	0	0	3	282	0
+genome_size	strain	Fold9	very large	3	0	3	279	0.7033355181304508

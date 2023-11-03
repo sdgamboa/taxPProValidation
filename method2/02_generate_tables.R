@@ -6,7 +6,7 @@ library(mltools)
 
 # args <- commandArgs(trailingOnly = TRUE)
 # physName <- gsub('_', ' ', args[[1]])
-physName <- 'aerophilicity'
+physName <- 'spore formation'
 
 links_tsv <- system.file(
     'extdata', 'links.tsv', package = 'bugphyzz', mustWork = TRUE
@@ -17,9 +17,14 @@ attribute_type <- links |>
     filter(physiology == physName) |> 
     pull(attribute_type)
 
-# if (!length(attribute_type)) {
-#     quit(save = 'no')
-# }
+if (!length(attribute_type)) {
+    # quit(save = 'no')
+    message('not here')
+}
+
+if (attribute_type %in% c('numeric', 'range')) {
+    attribute_type <- 'multistate-intersection'
+}
 
 listFiles <- function(phys_name = NULL) {
     phys_name <- gsub(' ', '_', phys_name)
@@ -307,3 +312,4 @@ outputFileName1 <- gsub(' ', '_', paste0(physName, '_fold_data.tsv'))
 write_tsv(x = foldData, file = outputFileName1)
 outputFileName2 <- gsub(' ', '_', paste0(physName, '_mcc_summary.tsv'))
 write_tsv(x = foldDataSummary1, file = outputFileName2)
+
