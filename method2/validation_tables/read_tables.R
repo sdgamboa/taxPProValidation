@@ -7,5 +7,6 @@ fileNames <- list.files(
 )
 
 dat <- map(fileNames, ~ read_tsv(.x, show_col_types = FALSE)) |> 
-    bind_rows()
+    bind_rows() |> 
+    arrange(-meanMCC)
 write_tsv(x = dat, file = 'method2/validation_tables/merged_data.tsv')
