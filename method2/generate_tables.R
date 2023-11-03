@@ -303,12 +303,3 @@ outputFileName1 <- gsub(' ', '_', paste0(physName, '_fold_data.tsv'))
 write_tsv(x = foldData, file = outputFileName1)
 outputFileName2 <- gsub(' ', '_', paste0(physName, '_mcc_summary.tsv'))
 write_tsv(x = foldDataSummary1, file = outputFileName2)
-
-
-
-
-
-
-
-
-
