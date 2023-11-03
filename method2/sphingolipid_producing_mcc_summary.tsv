@@ -1,3 +1,0 @@
-Physiology	Rank	Attribute	meanTP	sdTP	meanFP	sdFP	meanFN	sdFN	meanTN	sdTN	meanMCC	sdMCC
-sphingolipid_producing	all	Sphingolipid_producing	0	0	0	0	2	0	2	0	0	0
-sphingolipid_producing	genus	Sphingolipid_producing	0	0	0	0	1.9	0.31622776601683794	1.9	0.31622776601683794	0	0

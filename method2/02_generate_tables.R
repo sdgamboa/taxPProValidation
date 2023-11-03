@@ -4,8 +4,9 @@ library(dplyr)
 library(tidyr)
 library(mltools)
 
-args <- commandArgs(trailingOnly = TRUE)
-physName <- gsub('_', ' ', args[[1]])
+# args <- commandArgs(trailingOnly = TRUE)
+# physName <- gsub('_', ' ', args[[1]])
+physName <- 'aerophilicity'
 
 links_tsv <- system.file(
     'extdata', 'links.tsv', package = 'bugphyzz', mustWork = TRUE
@@ -16,9 +17,9 @@ attribute_type <- links |>
     filter(physiology == physName) |> 
     pull(attribute_type)
 
-if (!length(attribute_type)) {
-    quit(save = 'no')
-}
+# if (!length(attribute_type)) {
+#     quit(save = 'no')
+# }
 
 listFiles <- function(phys_name = NULL) {
     phys_name <- gsub(' ', '_', phys_name)
