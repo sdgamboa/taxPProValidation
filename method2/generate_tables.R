@@ -276,10 +276,10 @@ foldData <- map2(.x = testSets, .y = propSets, .f = ~ {
         )
 }) |> 
     {\(y) set_names(y, sub('_(test|propagated)', '', names(y)))}() |> 
-    {\(y) set_names(y, sub('^(.*)_(all|genus|species|strain)_(Fold.*)$', '\\1 \\2 \\3', names(y)))}() |> 
+    {\(y) set_names(y, sub('^(.*)_(all|genus|species|strain)_(.*)_(Fold.*)$', '\\1 \\3 \\2 \\4', names(y)))}() |> 
     bind_rows(.id = 'Fold') |> 
     separate(
-        col = 'Fold', into = c('Physiology', 'Rank', 'Fold'), sep = ' '
+        col = 'Fold', into = c('Physiology', 'Attribute', 'Rank', 'Fold'), sep = ' '
     ) 
 
 foldDataSummary1 <- foldData |> 
@@ -297,14 +297,6 @@ foldDataSummary1 <- foldData |>
         sdMCC = sd(MCC)
     ) |> 
     ungroup()
-
-
-
-
-
-
-
-
 
 ## Export tables ####
 outputFileName1 <- gsub(' ', '_', paste0(physName, '_fold_data.tsv'))
