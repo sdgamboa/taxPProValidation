@@ -185,19 +185,12 @@ arrangement	all	v-formation	0	0	0	0	1.5	1.224744871391589	155.5	1.22474487139158
 arrangement	genus	palisade	0	0	0	0	1	0	38	0	0	0
 arrangement	genus	reverse Y-branched filaments	0	0	0	0	1	0	38	0	0	0
 arrangement	genus	unbranched	0	0	0	0	1.5714285714285714	1.1338934190276817	37.42857142857143	1.1338934190276817	0	0
-arrangement	strain	filamentous	0	NA	0	NA	1	NA	63	NA	0	NA
 arrangement	strain	tetrads	0	0	0	0	1	0	63.833333333333336	0.408248290463863	0	0
-arrangement	strain	v-formation	0	NA	0	NA	1	NA	64	NA	0	NA
-biosafety_level	species	biosafety level 2	0	NA	0	NA	1	NA	1	NA	0	NA
 biosafety_level	strain	biosafety level 3	0	0	0	0	2	1.4142135623730951	355	1.4142135623730951	0	0
 coding_genes	species	very small	0	0	0	0	1.6666666666666667	0.5163977794943222	142.33333333333334	0.5163977794943222	0	0
 genome_size	species	small	0	0	0	0	1.1428571428571428	0.3779644730092272	142.71428571428572	0.4879500364742666	0	0
 length	all	large	0	0	0	0	1	0	62.666666666666664	0.5163977794943222	0	0
-length	all	very large	0	NA	0	NA	2	NA	61	NA	0	NA
 length	genus	large	0	0	0	0	1	0	62.666666666666664	0.5163977794943222	0	0
-length	genus	very large	0	NA	0	NA	2	NA	61	NA	0	NA
-mutation_rate_per_site_per_generation	all	fast	0	NA	0	NA	1	NA	2	NA	0	NA
-mutation_rate_per_site_per_generation	species	fast	0	NA	0	NA	1	NA	2	NA	0	NA
 mutation_rate_per_site_per_year	all	medium fast	0	0	0	0	1	0	2.6666666666666665	0.5773502691896257	0	0
 mutation_rate_per_site_per_year	species	medium fast	0	0	0	0	1	0	2.6666666666666665	0.5773502691896257	0	0
 optimal_ph	all	very alkaline	0	0	0	0	1.6	0.8944271909999159	86.2	0.8366600265340756	0	0
@@ -206,54 +199,34 @@ shape	all	bent filament	0	0	0	0	1	0	395.6	0.5477225575051661	0	0
 shape	all	clavate	0	0	0	0	1.5714285714285714	1.1338934190276817	395	1	0	0
 shape	all	coccobacillus	0	0	0	0	3.7	1.888562063228706	393	1.9436506316151	0	0
 shape	all	discoid	0	0	0	0	1.2857142857142858	0.4879500364742666	395.42857142857144	0.7867957924694432	0	0
-shape	all	dumbbell-shaped	0	NA	0	NA	1	NA	396	NA	0	NA
 shape	all	flat	0	0	0	0	1.6666666666666667	0.5773502691896257	395	0	0	0
-shape	all	polyhedral shape	0	NA	0	NA	1	NA	396	NA	0	NA
-shape	all	rectangle	0	NA	0	NA	1	NA	396	NA	0	NA
 shape	all	sigmoid	0	0	0	0	1	0	395.5	0.7071067811865476	0	0
 shape	all	tetrahedral	0	0	0	0	1	0	395.5	0.7071067811865476	0	0
 shape	all	triangle	0	0	0	0	1	0	395.6	0.5477225575051661	0	0
 shape	all	u-shaped	0	0	0	0	1	0	396	0	0	0
-shape	all	wrinkled	0	NA	0	NA	1	NA	396	NA	0	NA
 shape	genus	bent filament	0	0	0	0	1.6666666666666667	0.5773502691896257	116	0	0	0
 shape	genus	clavate	0	0	0	0	1.375	0.5175491695067657	116.25	0.8864052604279183	0	0
 shape	genus	coccobacillus	0	0	0	0	4.111111111111111	1.90029237516523	113.66666666666669	1.7320508075688772	0	0
 shape	genus	discoid	0	0	0	0	1.2857142857142858	0.4879500364742666	116.28571428571428	0.7559289460184544	0	0
-shape	genus	dumbbell-shaped	0	NA	0	NA	1	NA	117	NA	0	NA
 shape	genus	flat	0	0	0	0	1.25	0.5	116.5	0.5773502691896257	0	0
-shape	genus	polyhedral shape	0	NA	0	NA	1	NA	117	NA	0	NA
-shape	genus	rectangle	0	NA	0	NA	1	NA	117	NA	0	NA
 shape	genus	sigmoid	0	0	0	0	1	0	117	0	0	0
 shape	genus	tetrahedral	0	0	0	0	1	0	116.5	0.7071067811865476	0	0
 shape	genus	triangle	0	0	0	0	1.25	0.5	116.25	0.957427107756338	0	0
 shape	genus	u-shaped	0	0	0	0	1	0	117	0	0	0
-shape	genus	wrinkled	0	NA	0	NA	1	NA	117	NA	0	NA
 spore_shape	all	bacillus	0	0	0	0	1.5	1	69.25	0.957427107756338	0	0
-spore_shape	all	branched	0	NA	0	NA	1	NA	69	NA	0	NA
 spore_shape	all	cell chain	0	0	0	0	1	0	69	0	0	0
 spore_shape	all	coccus	0	0	0	0	2.888888888888889	1.1666666666666667	67.88888888888889	1.1666666666666667	0	0
-spore_shape	all	sigmoid	0	NA	0	NA	1	NA	70	NA	0	NA
-spore_shape	all	spirillum	0	NA	0	NA	1	NA	70	NA	0	NA
 spore_shape	genus	bacillus	0	0	0	0	1.2	0.44721359549995793	8.2	0.8366600265340756	0	0
-spore_shape	genus	branched	0	NA	0	NA	1	NA	8	NA	0	NA
 spore_shape	genus	cell chain	0	0	0	0	1	0	8.5	0.7071067811865476	0	0
 spore_shape	genus	coccus	0	0	0	0	2.888888888888889	0.927960727138337	6.666666666666667	1.224744871391589	0	0
-spore_shape	genus	sigmoid	0	NA	0	NA	1	NA	9	NA	0	NA
-spore_shape	genus	spirillum	0	NA	0	NA	1	NA	9	NA	0	NA
 sphingolipid_producing	all	Sphingolipid_producing	0	0	0	0	2	0	2	0	0	0
 sphingolipid_producing	genus	Sphingolipid_producing	0	0	0	0	1.9	0.31622776601683794	1.9	0.31622776601683794	0	0
 spore_shape	all	bacillus	0	0	0	0	1.5	1	69.25	0.957427107756338	0	0
-spore_shape	all	branched	0	NA	0	NA	1	NA	69	NA	0	NA
 spore_shape	all	cell chain	0	0	0	0	1	0	69	0	0	0
 spore_shape	all	coccus	0	0	0	0	2.888888888888889	1.1666666666666667	67.88888888888889	1.1666666666666667	0	0
-spore_shape	all	sigmoid	0	NA	0	NA	1	NA	70	NA	0	NA
-spore_shape	all	spirillum	0	NA	0	NA	1	NA	70	NA	0	NA
 spore_shape	genus	bacillus	0	0	0	0	1.2	0.44721359549995793	8.2	0.8366600265340756	0	0
-spore_shape	genus	branched	0	NA	0	NA	1	NA	8	NA	0	NA
 spore_shape	genus	cell chain	0	0	0	0	1	0	8.5	0.7071067811865476	0	0
 spore_shape	genus	coccus	0	0	0	0	2.888888888888889	0.927960727138337	6.666666666666667	1.224744871391589	0	0
-spore_shape	genus	sigmoid	0	NA	0	NA	1	NA	9	NA	0	NA
-spore_shape	genus	spirillum	0	NA	0	NA	1	NA	9	NA	0	NA
 width	all	large	0	0	0	0	2	1	77.8	1.3038404810405295	0	0
 width	all	very large	0	0	0	0	1	0	78.5	0.7071067811865476	0	0
 width	genus	large	0	0	0	0	2	1	77.8	1.3038404810405295	0	0

@@ -1,6 +1,7 @@
 library(purrr)
 library(readr)
 library(dplyr)
+library(tidyr)
 
 fileNames <- list.files(
     'method2/validation_tables/', pattern = "mcc", full.names = TRUE
@@ -8,5 +9,8 @@ fileNames <- list.files(
 
 dat <- map(fileNames, ~ read_tsv(.x, show_col_types = FALSE)) |> 
     bind_rows() |> 
-    arrange(-meanMCC)
+    arrange(-meanMCC) |> 
+    drop_na()
 write_tsv(x = dat, file = 'method2/validation_tables/merged_data.tsv')
+
+
