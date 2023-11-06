@@ -1,0 +1,3 @@
+Physiology	Rank	Attribute	meanSource	sdSource	meanTaxpool	sdTaxpool	meanInh1	sdInh1	meanAsr	sdAsr	meanInh2	sdInh2
+sphingolipid_producing	all	Sphingolipid producing	18	0	NA	NA	1264.5	102.14396158799055	2935.4	0.5163977794943222	71512.2	102.25871329351081
+sphingolipid_producing	genus	Sphingolipid producing	17.1	0.31622776601683794	NA	NA	1259.1	104.92478787737011	2936.3	0.6749485577105528	71518.5	104.67860866056212
