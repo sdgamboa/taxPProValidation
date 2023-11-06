@@ -34,8 +34,25 @@ l <- map2(mcc, counts, ~ {
 
 dat <- l |> 
     bind_rows() |> 
+    arrange(Physiology, Rank, Attribute, -meanMCC) |> 
+    relocate(Physiology, Rank, Attribute, meanMCC, sdMCC) |> 
     arrange(-meanMCC) |> 
     drop_na()
 write_tsv(x = dat, file = 'method2/validation_tables/merged_data.tsv')
+
+
+
+dat |> 
+    ggplot(aes(x = meanMCC)) +
+    geom_histogram()
+
+
+dat |> 
+    arrange(Physiology, Rank, Attribute, -meanMCC) |> 
+    relocate(Physiology, Rank, Attribute, meanMCC) |> 
+    View()
+
+
+
 
 
