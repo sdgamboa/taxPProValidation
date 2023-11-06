@@ -3,11 +3,36 @@ library(readr)
 library(dplyr)
 library(tidyr)
 
-fileNames <- list.files(
-    'method2/validation_tables/', pattern = "mcc", full.names = TRUE
+dirpath <- file.path('method2', 'validation_tables')
+
+mccFileNames <- list.files(
+    path = dirpath, 
+    pattern = "mcc", 
+    full.names = TRUE
 )
 
-dat <- map(fileNames, ~ read_tsv(.x, show_col_types = FALSE)) |> 
+countFileNames <- list.files(
+    path = dirpath,
+    pattern = 'count',
+    full.names = TRUE
+)
+
+mcc <- map(mccFileNames, ~ {
+    read.table(.x, header = TRUE, sep = '\t')
+})
+names(mcc) <- sub('^.*/(.*)_mcc_.*$', '\\1', mccFileNames)
+
+counts <- map(countFileNames, ~ {
+    read.table(.x, header = TRUE, sep = '\t')
+})
+names(counts) <- sub('^.*/(.*)_count_.*$', '\\1', countFileNames)
+counts <- counts[names(mcc)]
+
+l <- map2(mcc, counts, ~ {
+    left_join(.x, .y)
+})
+
+dat <- l |> 
     bind_rows() |> 
     arrange(-meanMCC) |> 
     drop_na()
