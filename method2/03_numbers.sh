@@ -11,9 +11,9 @@ do
     echo generating count summary for "$i"
     if [ $myRes -eq 0 ]; then
         echo "I'm not on supermicro"
-        Rscript 02_generate_tables.R "$i"
+        Rscript 03_numbers.R "$i"
     elif [ $myRes -eq 1 ]; then
         echo "I'm on supermicro"
-        /usr/bin/Rscript 02_generate_tables.R "$i"
+        /usr/bin/Rscript 03_numbers.R "$i"
     fi
 done
