@@ -1,10 +1,16 @@
-library(purrr)
-library(readr)
-library(dplyr)
-library(tidyr)
+
+suppressMessages({
+    library(purrr)
+    library(readr)
+    library(dplyr)
+    library(tidyr)
+})
 
 args <- commandArgs(trailingOnly = TRUE)
 physName <- args[[1]]
+physName <- 'length'
+
+message('Creating count summary for ', physName)
 
 listFiles <- function(phys_name = NULL) {
     phys_name <- gsub(' ', '_', phys_name)
@@ -21,7 +27,7 @@ listFiles <- function(phys_name = NULL) {
 
 fileNames <- listFiles(physName)
 fileNames <- grep('propagated', fileNames, value = TRUE)
-sets <- map(fileNames, ~ read_csv(.x, show_col_types = FALSE))
+sets <- map(fileNames, read.csv)
 
 attribute_type <- sets[[1]]$Attribute_type |> 
     {\(y) y[!is.na(y)]}() |> 
@@ -41,11 +47,20 @@ countSummary <- function(dat, thr) {
             (Evidence %in% c('asr', 'tax', 'inh', 'inh2') & Score >= thr) |
                 Evidence == 'Source'
         ) |> 
+        mutate(
+            Evidence = factor(
+                Evidence,
+                levels = c('Source', 'asr', 'tax', 'inh', 'inh2')
+            )
+        ) |> 
         dplyr::count(Attribute, Evidence) |> 
-        tidyr::drop_na() |> 
+        group_by(Attribute) |> 
+        complete(Evidence, fill = list(n = 0)) |> 
+        ungroup() |> 
+        tidyr::drop_na() |>
         tidyr::pivot_wider(
             names_from = 'Evidence', values_from = 'n', values_fill = 0
-        ) 
+        )
 }
 
 if (attribute_type == 'multistate-intersection') {
@@ -60,13 +75,13 @@ if (attribute_type == 'multistate-intersection') {
         bind_rows(.id = 'Fold') |> 
         separate(
             col = 'Fold', into = c('Physiology', 'Rank', 'Fold'), sep = ' '
-        ) |>  
+        ) |> 
         group_by(Physiology, Rank, Attribute) |> 
         summarise(
             meanSource = mean(Source),
             sdSource = sd(Source),
-            meanTaxpool = mean(tax),
-            sdTaxpool = sd(tax),
+            # meanTaxpool = mean(tax),
+            # sdTaxpool = sd(tax),
             meanInh1 = mean(inh),
             sdInh1 = sd(inh),
             meanAsr = mean(asr),
