@@ -8,7 +8,7 @@ myRes=$(echo $myVar | grep -e "waldronlab" | wc -l)
 
 for i in "${physiologies[@]}"
 do
-    echo generating data for "$i"
+    echo generating count summary for "$i"
     if [ $myRes -eq 0 ]; then
         echo "I'm not on supermicro"
         Rscript 02_generate_tables.R "$i"
