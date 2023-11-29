@@ -260,10 +260,31 @@ propagated <- bplapply(
     X = phys_data_ready,
     BPPARAM = multicoreParam,
     FUN = function(dat) {
-        attribute_nms <- unique(dat$Attribute) |>
-            {\(y) y[!is.na(y)]}()
+
+        attribute_group <- dat$Attribute_group |>
+            {\(y) y[!is.na(y)]}() |>
+            unique()
+        attribute_type <- dat$Attribute_type |>
+            {\(y) y[!is.na(y)]}() |>
+            unique()
+        attribute_nms <- dat$Attribute |>
+            {\(y) y[!is.na(y)]}() |>
+            unique()
+
         dat_n_tax <- length(unique(dat$NCBI_ID))
         node_list <- split(dat, factor(dat$NCBI_ID))
+
+        not_in_ncbi_tree <- all(!names(node_list) %in% ncbiTreeNodes)
+
+        if (not_in_ncbi_tree) {
+            msg <- paste0(
+                'Not enough data for propagation for ', phys_name, '. Rank:', rank_var, '.',
+                ' Quitting R script. Finishing at ', Sys.time(), '.'
+            )
+            log_print(msg, blank_after = TRUE)
+            quit(save = 'no')
+        }
+
         ncbi_tree$Do(function(node) {
             if (node$name %in% names(node_list))
                 node$attribute_tbl <- node_list[[node$name]]
@@ -291,6 +312,7 @@ propagated <- bplapply(
         
         new_taxids <- new_dat |> 
             pull(taxid) |> 
+            unique() |>
             {\(y) y[!is.na(y)]}()
         per <- mean(tip_data$taxid %in% new_taxids) * 100
         if (per < 1) {
@@ -300,7 +322,8 @@ propagated <- bplapply(
         tip_data_annotated <- left_join(
             x = tip_data,
             y = select(new_dat, taxid, Attribute, Score),
-            by = 'taxid'
+            by = 'taxid',
+            relationship = 'many-to-many'
         )
         
         annotated_tips <- tip_data_annotated |>
@@ -354,20 +377,62 @@ propagated <- bplapply(
         )
         asr <- ancr(object = fit, tips = TRUE)
         res <- asr$ace
-        node_rows <- length(tree$tip.label) + 1:tree$Nnode
-        rownames(res)[node_rows] <- tree$node.label
-        res <- res[tree$node.label,]
-        res_df <- res |>
+        rows_with_nodes <- length(tree$tip.label) + 1:tree$Nnode
+        rownames(res)[rows_with_nodes] <- tree$node.label
+
+
+        res <- res[!grepl('^n\\d+$', rownames(res)),]
+        res <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
+
+        res_tips_df <- res |>
+            as.data.frame() |>
+            tibble::rownames_to_column(var = 'tip_label') |>
+            filter(!grepl('^\\d+(\\+\\d+)*$', tip_label))
+
+        res_nodes_df <- res |>
             as.data.frame() |>
             tibble::rownames_to_column(var = 'node_label') |>
-            filter(!grepl('^n\\d+', node_label))
-        
-        node_data_annotated <- node_data |>
-            filter(node_label %in% unique(res_df$node_label)) |>
-            select(node_label, taxid, Taxon_name, Rank)
-        
-        nodes_annotated <- node_data_annotated |>
-            left_join(res_df, by = 'node_label') |>
+            filter(grepl('^\\d+(\\+\\d+)*$', node_label))
+
+    ## Get annotations for tips and nodes
+        new_tips_data <- ltp$tip_data |>
+            filter(tip_label %in% unique(res_tips_df$tip_label)) |>
+            select(tip_label, taxid, Taxon_name, Rank) |>
+            group_by(taxid) |>
+            slice_max(order_by = tip_label, n = 1) |>
+            ungroup() |>
+            left_join(res_tips_df, by = 'tip_label') |>
+            mutate(
+                NCBI_ID = case_when(
+                    Rank == 'species' ~ paste0('s__', taxid),
+                    Rank == 'strain' ~ paste0('t__', taxid)
+                )
+            ) |>
+            filter(Rank %in% c('species', 'strain')) |>
+            mutate(Evidence = 'asr') |>
+            relocate(NCBI_ID, taxid, Taxon_name, Rank, Evidence) |>
+            pivot_longer(
+            cols = 7:last_col(), names_to = 'Attribute', values_to = 'Score'
+            ) |>
+            mutate(
+                Attribute_source = NA,
+                Confidence_in_curation = NA,
+                Attribute_group = attribute_group,
+                Attribute_type = attribute_type,
+                Frequency = case_when(
+                    Score == 1 ~ 'always',
+                    Score > 0.9 ~ 'usually',
+                    Score >= 0.5 ~ 'sometimes',
+                    Score > 0 & Score < 0.5 ~ 'rarely',
+                    Score == 0 ~ 'never'
+                )
+            ) |>
+            select(-tip_label)
+
+        new_nodes_data <- ltp$node_data |>
+            filter(node_label %in% unique(res_nodes_df$node_label)) |>
+            select(node_label, taxid, Taxon_name, Rank) |>
+            left_join(res_nodes_df, by = 'node_label') |>
             mutate(Rank = ifelse(Rank == 'superkingdom', 'kingdom', Rank)) |>
             mutate(
                 NCBI_ID = case_when(
@@ -390,7 +455,7 @@ propagated <- bplapply(
             mutate(Evidence = 'asr') |>
             relocate(NCBI_ID, taxid, Taxon_name, Rank, Evidence) |>
             pivot_longer(
-                cols = 7:last_col(), names_to = 'Attribute', values_to = 'Score'
+            cols = 7:last_col(), names_to = 'Attribute', values_to = 'Score'
             ) |>
             mutate(
                 Attribute_source = NA,
@@ -404,10 +469,15 @@ propagated <- bplapply(
                     Score > 0 & Score < 0.5 ~ 'rarely',
                     Score == 0 ~ 'never'
                 )
-            )
-        
-        new_taxa_for_ncbi_tree <- nodes_annotated |>
+            ) |>
+            select(-node_label) |>
+            filter(!NCBI_ID %in% new_dat$NCBI_ID)
+
+        new_taxa_for_ncbi_tree <- bind_rows(
+            list(new_tips_data, new_nodes_data)
+        ) |>
             relocate(NCBI_ID, Rank, Attribute, Score, Evidence)
+
         new_taxa_for_ncbi_tree_list <- split(
             new_taxa_for_ncbi_tree, factor(new_taxa_for_ncbi_tree$NCBI_ID)
         )
@@ -420,7 +490,7 @@ propagated <- bplapply(
             }
         })
         
-        ncbi_tree$Do(inh2, traversal = 'pre-order')
+        ncbi_tree$Do(function(nd) inh1(node = nd, adjF = 0.1, evidence_label = 'inh2'), traversal = 'pre-order')
         
         result <- ncbi_tree$Get(
             attribute = 'attribute_tbl', simplify = FALSE,
@@ -430,14 +500,15 @@ propagated <- bplapply(
         ) |>
             bind_rows() |>
             discard(~ all(is.na(.x)))
+
+        min_thr <- 1 / length(unique(dat$Attribute))
         
-        add_taxa_1 <- dat |>
-            filter(!NCBI_ID %in% unique(result$NCBI_ID)) |>
-            discard(~ all(is.na(.x)))
-        add_taxa_2 <- new_taxa_for_ncbi_tree |>
-            filter(!NCBI_ID %in% unique(result$NCBI_ID)) |>
-            discard(~ all(is.na(.x)))
-        final_result <- bind_rows(list(result, add_taxa_1, add_taxa_2))
+        final_result <- bind_rows(
+            new_dat, # contains source, tax, and inh,
+            new_taxa_for_ncbi_tree, # only contains asr (not in new_dat)
+            filter(result, Evidence == 'inh2')
+        ) |>
+            filter(Score > min_thr)
         ncbi_tree$Do(cleanNode)
         return(final_result)
     }
