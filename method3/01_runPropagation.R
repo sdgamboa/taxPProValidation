@@ -274,7 +274,7 @@ propagated <- bplapply(
         dat_n_tax <- length(unique(dat$NCBI_ID))
         node_list <- split(dat, factor(dat$NCBI_ID))
 
-        not_in_ncbi_tree <- all(!names(node_list) %in% ncbiTreeNodes)
+        not_in_ncbi_tree <- all(!names(node_list) %in% ncbi_nodes)
 
         if (not_in_ncbi_tree) {
             msg <- paste0(
