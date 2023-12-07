@@ -1,0 +1,164 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+shape	all	Fold1	bacillus	238	0	44	115	0.7812936280694763
+shape	all	Fold1	coccobacillus	0	0	7	390	0
+shape	all	Fold1	coccus	56	0	31	310	0.7649587991992179
+shape	all	Fold1	discoid	0	0	2	395	0
+shape	all	Fold1	dumbbell-shaped	0	0	1	396	0
+shape	all	Fold1	elliptic	0	0	14	383	0
+shape	all	Fold1	filamentous	0	0	8	389	0
+shape	all	Fold1	flat	0	0	2	395	0
+shape	all	Fold1	pleiomorphic cell	2	0	9	386	0.4215157044143126
+shape	all	Fold1	rectangle	0	0	1	396	0
+shape	all	Fold1	spirillum	19	0	6	372	0.8648332255044946
+shape	all	Fold1	staphylococcus	0	0	2	395	0
+shape	all	Fold1	tail	0	0	6	391	0
+shape	all	Fold1	triangle	0	0	1	396	0
+shape	all	Fold10	bacillus	254	0	39	103	0.7929713348862348
+shape	all	Fold10	clavate	0	0	1	395	0
+shape	all	Fold10	coccobacillus	0	0	3	393	0
+shape	all	Fold10	coccus	49	0	29	318	0.7587514975733685
+shape	all	Fold10	discoid	0	0	1	395	0
+shape	all	Fold10	elliptic	2	0	11	383	0.38671818764774385
+shape	all	Fold10	filamentous	3	0	5	388	0.6084644670262905
+shape	all	Fold10	pleiomorphic cell	1	0	3	392	0.49809764687537406
+shape	all	Fold10	spirillum	15	0	4	377	0.883846845658805
+shape	all	Fold10	staphylococcus	0	0	1	395	0
+shape	all	Fold10	tail	0	0	2	394	0
+shape	all	Fold10	triangle	0	0	1	395	0
+shape	all	Fold2	bacillus	270	0	44	84	0.7511933181770758
+shape	all	Fold2	bent filament	0	0	1	396	0
+shape	all	Fold2	clavate	0	0	2	395	0
+shape	all	Fold2	coccobacillus	0	0	1	396	0
+shape	all	Fold2	coccus	39	0	20	338	0.7899928024803999
+shape	all	Fold2	discoid	0	0	1	396	0
+shape	all	Fold2	elliptic	0	0	11	386	0
+shape	all	Fold2	filamentous	3	0	3	391	0.7044096062668476
+shape	all	Fold2	flat	0	0	2	395	0
+shape	all	Fold2	pleiomorphic cell	0	0	9	388	0
+shape	all	Fold2	sigmoid	0	0	1	396	0
+shape	all	Fold2	spirillum	10	0	10	377	0.6979112431815188
+shape	all	Fold2	staphylococcus	0	0	2	395	0
+shape	all	Fold2	tail	2	0	3	392	0.6300492245185734
+shape	all	Fold2	tetrahedral	0	0	1	396	0
+shape	all	Fold2	u-shaped	0	0	1	396	0
+shape	all	Fold3	bacillus	254	0	37	106	0.8043689129002165
+shape	all	Fold3	bent filament	0	0	1	396	0
+shape	all	Fold3	coccobacillus	0	0	3	394	0
+shape	all	Fold3	coccus	63	0	31	303	0.7797482859720606
+shape	all	Fold3	discoid	0	0	1	396	0
+shape	all	Fold3	elliptic	0	0	9	388	0
+shape	all	Fold3	filamentous	0	0	6	391	0
+shape	all	Fold3	pleiomorphic cell	0	0	5	392	0
+shape	all	Fold3	spirillum	12	0	4	381	0.8615148241369921
+shape	all	Fold3	staphylococcus	1	0	3	393	0.49810245994781094
+shape	all	Fold3	tail	0	0	1	396	0
+shape	all	Fold3	wrinkled	0	0	1	396	0
+shape	all	Fold4	bacillus	242	0	49	107	0.7552500768951311
+shape	all	Fold4	clavate	0	0	1	396	0
+shape	all	Fold4	coccobacillus	0	0	2	395	0
+shape	all	Fold4	coccus	58	0	34	305	0.7531303574982253
+shape	all	Fold4	discoid	0	0	1	396	0
+shape	all	Fold4	elliptic	0	0	11	386	0
+shape	all	Fold4	filamentous	1	0	1	395	0.7062134052376617
+shape	all	Fold4	pleiomorphic cell	0	0	4	393	0
+shape	all	Fold4	spirillum	14	0	3	380	0.9039241061839424
+shape	all	Fold4	staphylococcus	0	0	3	394	0
+shape	all	Fold4	tail	2	0	2	393	0.7053143656770219
+shape	all	Fold4	triangle	0	0	1	396	0
+shape	all	Fold5	bacillus	272	0	32	93	0.8158947300518099
+shape	all	Fold5	clavate	0	0	1	396	0
+shape	all	Fold5	coccobacillus	0	0	4	393	0
+shape	all	Fold5	coccus	47	0	23	327	0.7920265920087404
+shape	all	Fold5	discoid	0	0	1	396	0
+shape	all	Fold5	elliptic	0	0	12	385	0
+shape	all	Fold5	filamentous	1	0	4	392	0.44494920831460977
+shape	all	Fold5	pleiomorphic cell	0	0	9	388	0
+shape	all	Fold5	spirillum	13	0	5	379	0.8442856667248574
+shape	all	Fold5	staphylococcus	0	0	5	392	0
+shape	all	Fold5	tail	4	0	1	393	0.893291409981764
+shape	all	Fold5	u-shaped	0	0	1	396	0
+shape	all	Fold6	bacillus	258	0	42	97	0.7746895409724378
+shape	all	Fold6	bent filament	0	0	1	396	0
+shape	all	Fold6	clavate	0	0	4	393	0
+shape	all	Fold6	coccobacillus	0	0	5	392	0
+shape	all	Fold6	coccus	51	0	26	320	0.7826663555611151
+shape	all	Fold6	elliptic	2	0	11	384	0.3867322466183662
+shape	all	Fold6	filamentous	0	0	3	394	0
+shape	all	Fold6	pleiomorphic cell	0	0	13	384	0
+shape	all	Fold6	spirillum	11	0	7	379	0.7746152498253219
+shape	all	Fold6	tail	1	0	3	393	0.49810245994781094
+shape	all	Fold6	triangle	0	0	1	396	0
+shape	all	Fold7	bacillus	258	0	44	95	0.7641186223654614
+shape	all	Fold7	coccobacillus	0	0	4	393	0
+shape	all	Fold7	coccus	47	0	28	322	0.7592979213282052
+shape	all	Fold7	elliptic	1	0	12	384	0.27311549679956754
+shape	all	Fold7	filamentous	3	0	1	393	0.8649256885423785
+shape	all	Fold7	pleiomorphic cell	0	0	9	388	0
+shape	all	Fold7	polyhedral shape	0	0	1	396	0
+shape	all	Fold7	spirillum	17	0	4	376	0.8949874335797482
+shape	all	Fold7	tail	0	0	5	392	0
+shape	all	Fold8	bacillus	249	0	49	98	0.7463557997803539
+shape	all	Fold8	bent filament	0	0	1	395	0
+shape	all	Fold8	clavate	0	0	1	395	0
+shape	all	Fold8	coccobacillus	0	0	2	394	0
+shape	all	Fold8	coccus	44	0	28	324	0.75
+shape	all	Fold8	discoid	0	0	2	394	0
+shape	all	Fold8	elliptic	0	0	16	380	0
+shape	all	Fold8	filamentous	1	0	9	386	0.31260441293644875
+shape	all	Fold8	pleiomorphic cell	0	0	14	382	0
+shape	all	Fold8	sigmoid	0	0	1	395	0
+shape	all	Fold8	spirillum	18	0	3	375	0.9221388919541469
+shape	all	Fold8	staphylococcus	0	0	4	392	0
+shape	all	Fold8	tail	1	0	1	394	0.7062111420922145
+shape	all	Fold8	triangle	0	0	1	395	0
+shape	all	Fold9	bacillus	243	0	44	109	0.7766578245994694
+shape	all	Fold9	bent filament	0	0	1	395	0
+shape	all	Fold9	clavate	0	0	1	395	0
+shape	all	Fold9	coccobacillus	0	0	6	390	0
+shape	all	Fold9	coccus	52	0	25	319	0.7913569657089522
+shape	all	Fold9	elliptic	0	0	10	386	0
+shape	all	Fold9	filamentous	0	0	8	388	0
+shape	all	Fold9	flat	0	0	1	395	0
+shape	all	Fold9	pleiomorphic cell	0	0	11	385	0
+shape	all	Fold9	spirillum	21	0	6	369	0.8748333174572933
+shape	all	Fold9	staphylococcus	0	0	4	392	0
+shape	all	Fold9	tail	1	0	0	395	1
+shape	all	Fold9	tetrahedral	0	0	1	395	0
+spore_shape	all	Fold1	elliptic	1	0	4	66	0.4342481186734475
+spore_shape	all	Fold1	endospore	55	0	15	1	0.22160131510697959
+spore_shape	all	Fold10	cell chain	0	0	1	69	0
+spore_shape	all	Fold10	coccus	0	0	3	67	0
+spore_shape	all	Fold10	elliptic	0	0	1	69	0
+spore_shape	all	Fold10	endospore	55	0	14	1	0.2305213582693749
+spore_shape	all	Fold2	bacillus	0	0	3	68	0
+spore_shape	all	Fold2	coccus	0	0	3	68	0
+spore_shape	all	Fold2	elliptic	1	0	4	66	0.4342481186734475
+spore_shape	all	Fold2	endospore	55	0	11	5	0.5103103630798288
+spore_shape	all	Fold2	sigmoid	0	0	1	70	0
+spore_shape	all	Fold2	spirillum	0	0	1	70	0
+spore_shape	all	Fold3	bacillus	0	0	1	70	0
+spore_shape	all	Fold3	coccus	0	0	2	69	0
+spore_shape	all	Fold3	elliptic	0	0	2	69	0
+spore_shape	all	Fold3	endospore	61	0	10	0	0
+spore_shape	all	Fold4	coccus	0	0	3	68	0
+spore_shape	all	Fold4	elliptic	0	0	6	65	0
+spore_shape	all	Fold4	endospore	54	0	14	3	0.3743506488634663
+spore_shape	all	Fold5	coccus	0	0	5	66	0
+spore_shape	all	Fold5	elliptic	0	0	1	70	0
+spore_shape	all	Fold5	endospore	61	0	10	1	0.2794727063560078
+spore_shape	all	Fold6	coccus	0	0	4	67	0
+spore_shape	all	Fold6	elliptic	0	0	4	67	0
+spore_shape	all	Fold6	endospore	59	0	11	1	0.26502470684465484
+spore_shape	all	Fold7	bacillus	0	0	1	70	0
+spore_shape	all	Fold7	coccus	0	0	3	68	0
+spore_shape	all	Fold7	elliptic	1	0	4	66	0.4342481186734475
+spore_shape	all	Fold7	endospore	54	0	15	2	0.3034330424545042
+spore_shape	all	Fold8	coccus	0	0	1	70	0
+spore_shape	all	Fold8	elliptic	1	0	1	69	0.7020378500174638
+spore_shape	all	Fold8	endospore	59	0	11	1	0.26502470684465484
+spore_shape	all	Fold9	bacillus	0	0	1	69	0
+spore_shape	all	Fold9	branched	0	0	1	69	0
+spore_shape	all	Fold9	cell chain	0	0	1	69	0
+spore_shape	all	Fold9	coccus	0	0	2	68	0
+spore_shape	all	Fold9	elliptic	1	0	2	67	0.5689213456924789
+spore_shape	all	Fold9	endospore	55	0	11	4	0.4714045207910317

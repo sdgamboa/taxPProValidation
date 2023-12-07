@@ -1,0 +1,11 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+animal_pathogen	all	Fold1	animal_pathogen	29	4	37	100	0.49401773324670595
+animal_pathogen	all	Fold10	animal_pathogen	29	6	51	83	0.36357970608715456
+animal_pathogen	all	Fold2	animal_pathogen	22	2	46	100	0.4275963757778901
+animal_pathogen	all	Fold3	animal_pathogen	29	3	44	94	0.46388266359068264
+animal_pathogen	all	Fold4	animal_pathogen	23	3	40	104	0.4522496541746486
+animal_pathogen	all	Fold5	animal_pathogen	25	2	41	102	0.4794094794094794
+animal_pathogen	all	Fold6	animal_pathogen	22	1	46	100	0.44852867144583564
+animal_pathogen	all	Fold7	animal_pathogen	27	0	48	94	0.48816990808009625
+animal_pathogen	all	Fold8	animal_pathogen	23	4	40	102	0.4320170589022074
+animal_pathogen	all	Fold9	animal_pathogen	16	0	41	112	0.4533001465017236

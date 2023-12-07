@@ -1,0 +1,31 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+aerophilicity	all	Fold1	aerobic	499	0	114	333	0.7787326624702294
+aerophilicity	all	Fold1	anaerobic	211	0	37	697	0.898842804930729
+aerophilicity	all	Fold1	facultatively anaerobic	50	0	48	847	0.6948677436499723
+aerophilicity	all	Fold10	aerobic	548	0	77	321	0.8409327197796385
+aerophilicity	all	Fold10	anaerobic	201	0	43	700	0.8809631217521775
+aerophilicity	all	Fold10	facultatively anaerobic	50	0	39	855	0.7330005437580086
+aerophilicity	all	Fold2	aerobic	523	0	94	328	0.8116876886083249
+aerophilicity	all	Fold2	anaerobic	191	0	48	706	0.8650364560638605
+aerophilicity	all	Fold2	facultatively anaerobic	48	0	55	842	0.6613964058730997
+aerophilicity	all	Fold3	aerobic	512	0	96	337	0.8095696026494409
+aerophilicity	all	Fold3	anaerobic	201	0	45	699	0.876158331868143
+aerophilicity	all	Fold3	facultatively anaerobic	57	0	49	839	0.7127857237742057
+aerophilicity	all	Fold4	aerobic	527	0	88	330	0.8225012729660719
+aerophilicity	all	Fold4	anaerobic	215	0	32	698	0.912298654988452
+aerophilicity	all	Fold4	facultatively anaerobic	51	0	50	844	0.6904414645051626
+aerophilicity	all	Fold5	aerobic	510	0	90	345	0.8210590301765658
+aerophilicity	all	Fold5	anaerobic	216	0	45	684	0.8811927363350223
+aerophilicity	all	Fold5	facultatively anaerobic	61	0	48	836	0.7274927585971445
+aerophilicity	all	Fold6	aerobic	538	0	88	320	0.8210108165454006
+aerophilicity	all	Fold6	anaerobic	193	0	29	723	0.9142445826947919
+aerophilicity	all	Fold6	facultatively anaerobic	63	0	54	828	0.7109813678954643
+aerophilicity	all	Fold7	aerobic	555	0	74	317	0.8457897569272893
+aerophilicity	all	Fold7	anaerobic	197	0	38	710	0.8920260911402776
+aerophilicity	all	Fold7	facultatively anaerobic	48	0	49	848	0.6839690595688309
+aerophilicity	all	Fold8	aerobic	544	0	88	313	0.8196734973097449
+aerophilicity	all	Fold8	anaerobic	182	0	41	722	0.8787990773344835
+aerophilicity	all	Fold8	facultatively anaerobic	56	0	51	838	0.7023818061664712
+aerophilicity	all	Fold9	aerobic	540	0	72	332	0.8515291668268925
+aerophilicity	all	Fold9	anaerobic	211	0	44	689	0.8819191258054143
+aerophilicity	all	Fold9	facultatively anaerobic	52	0	43	849	0.7217907084219221

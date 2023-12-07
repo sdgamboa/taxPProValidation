@@ -1,0 +1,28 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+width	all	Fold1	average	1	0	10	69	0.2817829147538592
+width	all	Fold1	large	0	0	2	78	0
+width	all	Fold1	small	51	0	16	13	0.5841445967678663
+width	all	Fold10	average	1	0	14	64	0.23388213848187445
+width	all	Fold10	large	0	0	3	76	0
+width	all	Fold10	small	41	0	19	19	0.5845225972250061
+width	all	Fold10	very large	0	0	1	78	0
+width	all	Fold2	average	1	0	14	65	0.2342057229768425
+width	all	Fold2	large	0	0	1	79	0
+width	all	Fold2	small	46	0	18	16	0.5815799980377996
+width	all	Fold3	average	1	0	12	67	0.25541839970809654
+width	all	Fold3	large	0	0	1	79	0
+width	all	Fold3	small	44	0	23	13	0.4869780234841718
+width	all	Fold3	very large	0	0	1	79	0
+width	all	Fold4	average	1	0	8	71	0.3160053053730427
+width	all	Fold4	small	49	0	22	9	0.4476197841354619
+width	all	Fold5	average	1	0	14	65	0.2342057229768425
+width	all	Fold5	small	50	0	15	15	0.6201736729460423
+width	all	Fold6	average	2	0	13	65	0.3333333333333333
+width	all	Fold6	large	0	0	3	77	0
+width	all	Fold6	small	46	0	16	18	0.6267291072018609
+width	all	Fold7	average	1	0	12	67	0.25541839970809654
+width	all	Fold7	small	42	0	25	13	0.4630918327520637
+width	all	Fold8	average	1	0	11	68	0.2678244906760903
+width	all	Fold8	small	53	0	15	12	0.588562000776613
+width	all	Fold9	average	0	0	18	61	0
+width	all	Fold9	small	47	0	14	18	0.6583324686997158

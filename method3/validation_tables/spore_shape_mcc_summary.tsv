@@ -1,0 +1,9 @@
+Physiology	Rank	Attribute	meanTP	sdTP	meanFP	sdFP	meanFN	sdFN	meanTN	sdTN	meanMCC	sdMCC
+spore_shape	all	bacillus	0	0	0	0	1.5	1	69.25	0.9574271077563381	0	0
+spore_shape	all	branched	0	NA	0	NA	1	NA	69	NA	0	NA
+spore_shape	all	cell chain	0	0	0	0	1	0	69	0	0	0
+spore_shape	all	coccus	0	0	0	0	2.888888888888889	1.1666666666666667	67.88888888888889	1.1666666666666667	0	0
+spore_shape	all	elliptic	0.5	0.5270462766947299	0	0	2.9	1.728840330651992	67.4	1.7126976771553504	0.25737035517302853	0.28281284131953593
+spore_shape	all	endospore	56.8	2.859681411936962	0	0	12.2	2.043961295567452	1.9	1.5951314818673865	0.2921143368610503	0.1423491302703457
+spore_shape	all	sigmoid	0	NA	0	NA	1	NA	70	NA	0	NA
+spore_shape	all	spirillum	0	NA	0	NA	1	NA	70	NA	0	NA

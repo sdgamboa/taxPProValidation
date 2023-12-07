@@ -1,0 +1,2 @@
+Physiology	Rank	Attribute	meanTP	sdTP	meanFP	sdFP	meanFN	sdFN	meanTN	sdTN	meanMCC	sdMCC
+plant_pathogenicity	all	plant_pathogenity	0	0	0	0	9.2	1.9888578520235065	138.4	2.1186998109427604	0	0

@@ -1,0 +1,36 @@
+Physiology	Rank	Fold	Attribute	TP	FP	FN	TN	MCC
+optimal_ph	all	Fold1	acidic	0	0	6	82	0
+optimal_ph	all	Fold1	alkaline	2	0	8	78	0.42590532849121443
+optimal_ph	all	Fold1	neutral	68	0	6	16	0.8174990326016712
+optimal_ph	all	Fold10	acidic	2	0	5	80	0.5185629788417315
+optimal_ph	all	Fold10	alkaline	0	0	17	70	0
+optimal_ph	all	Fold10	neutral	56	0	6	25	0.8534681648595454
+optimal_ph	all	Fold10	very alkaline	0	0	1	86	0
+optimal_ph	all	Fold2	acidic	1	0	3	84	0.49130368444051753
+optimal_ph	all	Fold2	alkaline	3	0	7	78	0.5246847793171238
+optimal_ph	all	Fold2	neutral	68	0	7	15	0.7862453931068966
+optimal_ph	all	Fold2	very alkaline	0	0	1	87	0
+optimal_ph	all	Fold3	acidic	0	0	6	82	0
+optimal_ph	all	Fold3	alkaline	4	0	12	72	0.4629100498862757
+optimal_ph	all	Fold3	neutral	55	0	12	22	0.7288125211307637
+optimal_ph	all	Fold4	acidic	2	0	5	81	0.5187513759338115
+optimal_ph	all	Fold4	alkaline	2	0	13	73	0.3364198189370588
+optimal_ph	all	Fold4	neutral	57	0	7	24	0.8303710791159926
+optimal_ph	all	Fold4	very alkaline	0	0	2	86	0
+optimal_ph	all	Fold5	acidic	0	0	8	80	0
+optimal_ph	all	Fold5	alkaline	2	0	7	79	0.4518123138262885
+optimal_ph	all	Fold5	neutral	67	0	6	17	0.8236382628849559
+optimal_ph	all	Fold6	acidic	1	0	8	79	0.31763815489597846
+optimal_ph	all	Fold6	alkaline	6	0	9	73	0.5967391062898507
+optimal_ph	all	Fold6	neutral	57	0	8	24	0.8109823103448729
+optimal_ph	all	Fold7	acidic	2	0	4	82	0.5637636538163321
+optimal_ph	all	Fold7	alkaline	6	0	8	74	0.6218999773930959
+optimal_ph	all	Fold7	neutral	59	0	7	23	0.827860818829793
+optimal_ph	all	Fold7	very alkaline	0	0	3	85	0
+optimal_ph	all	Fold8	acidic	2	0	4	82	0.5637636538163321
+optimal_ph	all	Fold8	alkaline	2	0	13	73	0.3364198189370588
+optimal_ph	all	Fold8	neutral	59	0	8	22	0.8035988702571744
+optimal_ph	all	Fold8	very alkaline	0	0	1	87	0
+optimal_ph	all	Fold9	acidic	1	0	6	80	0.3645413082882446
+optimal_ph	all	Fold9	alkaline	2	0	7	78	0.45157675828971866
+optimal_ph	all	Fold9	neutral	60	0	12	16	0.6900655593423543
