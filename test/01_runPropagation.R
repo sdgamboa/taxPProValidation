@@ -32,9 +32,7 @@ log_print(msg, blank_after = FALSE)
 msg <- paste0('Starting at ', Sys.time())
 log_print(msg, blank_after = TRUE)
 
-
 # Set cores ---------------------------------------------------------------
-
 n_cores <- parallel::detectCores()
 if (n_cores <= 16) {
     n_cores <- 5
@@ -46,7 +44,6 @@ msg <- paste0('Using ', n_cores, ' cores.')
 log_print(msg, blank_after = TRUE)
 
 # Import tree data --------------------------------------------------------
-
 ## NCBI taxonomy
 data('tree_list')
 ncbi_tree <- as.Node(tree_list)
@@ -64,33 +61,56 @@ node_data <- ltp$node_data
 genus_tips <- ltp$genus_tips
 
 # Define functions --------------------------------------------------------
-
-getFolds10 <- function(dat, k_value = 10) {
-    taxa <- unique(dat$NCBI_ID)
+# getFolds10 <- function(dat, k_value = 10) {
+#     taxa <- unique(dat$NCBI_ID)
+#     k_value <- 10
+#     set.seed(1234)
+#     taxa_folds <- cvFolds(length(taxa), K = k_value)
+#     test_taxids <- vector('list', k_value)
+#     train_taxids <- vector('list', k_value)
+#     for(i in 1:k_value){
+#         fold_name <- paste0('Fold', i)
+#         names(test_taxids)[i] <- fold_name
+#         test_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which == i]]
+#         names(train_taxids)[i] <- fold_name
+#         train_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which != i]]
+#     }
+#     test_sets <- purrr::map(
+#         test_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
+#     )
+#     train_sets <- purrr::map(
+#         train_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
+#     )
+#     output <- list(
+#         test_sets = test_sets,
+#         train_sets = train_sets
+#     )
+#     return(output)
+# }
+getFolds <- function(dat, k_value = 10) {
     k_value <- 10
     set.seed(1234)
-    taxa_folds <- cvFolds(length(taxa), K = k_value)
-    test_taxids <- vector('list', k_value)
-    train_taxids <- vector('list', k_value)
+    cv_folds <- cvTools::cvFolds(nrow(dat), K = k_value)
+    test_sets <- vector('list', k_value)
+    train_sets <- vector('list', k_value)
     for(i in 1:k_value){
         fold_name <- paste0('Fold', i)
-        names(test_taxids)[i] <- fold_name
-        test_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which == i]]
-        names(train_taxids)[i] <- fold_name
-        train_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which != i]]
+        names(test_sets)[i] <- fold_name
+        test_sets[[i]] <- dat[cv_folds$subsets[cv_folds$which == i],]
+        names(train_sets)[i] <- fold_name
+        train_sets[[i]] <- dat[cv_folds$subsets[cv_folds$which != i],]
     }
-    test_sets <- purrr::map(
-        test_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
-    )
-    train_sets <- purrr::map(
-        train_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
-    )
-    output <- list(
+    list(
         test_sets = test_sets,
         train_sets = train_sets
     )
-    return(output)
 }
+
+
+
+
+
+
 
 getNegatives <- function(dat) {
     ranks <- unique(dat$Rank)
@@ -155,17 +175,13 @@ getNegatives <- function(dat) {
 }
 
 # Import bugphyzz data ----------------------------------------------------
-
-if (rank_var == 'all') {
+if (rank_var == 'all')
     rank_var <- c('genus', 'species', 'strain')
-}
 
-suppressMessages({
-    bp_data <- physiologies(phys_name)[[1]]
-})
-
+bp_data <- physiologies(phys_name)[[1]]
 attribute_type <- unique(bp_data$Attribute_type)
 attribute_group <- unique(bp_data$Attribute_group)
+
 if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
     res <- rangeToLogicalThr(bp_data, THRESHOLDS()[[attribute_group]])
     res$Attribute_type <- 'multistate-intersection'
@@ -175,9 +191,13 @@ if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
     # quit(save = "no")
 }
 
-suppressMessages({
-    filtered_bp_data <- filterData(bp_data)
-})
+## Remove rows that will not be used
+## The Rank column is removed at this step.
+## This is recovered in a later step when getting sets with IDs or without IDs.
+filtered_bp_data <- filterData(bp_data)
+
+## Warnings can be present in the next code chunk with conditionals about the
+## attribute type.
 
 if (attribute_type == 'binary') {
     set_with_ids <- filtered_bp_data |> 
@@ -207,15 +227,44 @@ if (attribute_type == 'binary') {
         message('Not enough data for validation')
         quit(save = 'no')
     }
-    folds <- getFolds10(set_with_ids)
+    l <- split(set_with_ids, factor(set_with_ids$Attribute)) |> 
+        discard(~ nrow(.x) < 10) |> 
+        map(getFolds)
+    myAttributes <- names(l) 
+    ## Get test sets
+    output <- vector('list', length(myAttributes))
+    for (i in seq_along(output)) {
+        names(output)[i] <- myAttributes[i]
+        output[[i]] <- pluck(l, myAttributes[i], 'test_sets')
+    }
+    test_sets <- vector('list', 10)
+    for (i in 1:10) {
+        names(test_sets)[i] <- paste0('Fold', i)
+        for (j in seq_along(output)) {
+            test_sets[[i]] <- bind_rows(output[[j]][[i]], test_sets[[i]])
+        }
+    }
+    ## Get train
+    output <- vector('list', length(myAttributes))
+    for (i in seq_along(output)) {
+        names(output)[i] <- myAttributes[i]
+        output[[i]] <- pluck(l, myAttributes[i], 'train_sets')
+    }
+    train_sets <- vector('list', 10)
+    for (i in 1:10) {
+        names(train_sets)[i] <- paste0('Fold', i)
+        for (j in seq_along(output)) {
+            train_sets[[i]] <- bind_rows(output[[j]][[i]], train_sets[[i]])
+        }
+    }
+    folds <- list(test_sets = test_sets, train_sets = train_sets)
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
     ) |>
         purrr::discard(~ all(is.na(.x)))
-   phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
+    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
-   
 } else if (attribute_type == 'multistate-union') {
     filtered_bp_data$Attribute_group_2 <- sub(
         '--(TRUE|FALSE)', '', filtered_bp_data$Attribute
@@ -302,7 +351,7 @@ propagated <- bplapply(
             },
             traversal = 'post-order'
         )
-        ncbi_tree$Do(inh1, traversal = 'pre-order')
+        # ncbi_tree$Do(inh1, traversal = 'pre-order')
         new_dat <- ncbi_tree$Get(
             'attribute_tbl', filterFun = function(node) {
                 grepl('^[gst]__', node$name)
@@ -339,6 +388,12 @@ propagated <- bplapply(
             tibble::column_to_rownames(var = 'tip_label') |>
             as.matrix()
         
+        annotated_gn_tips <- grep('g__', rownames(annotated_tips), value = TRUE)
+        remove_gn_tips <- genus_tips[!genus_tips %in% annotated_gn_tips]
+        
+        tip_data <- tip_data |> 
+            filter(!tip_label %in% remove_gn_tips)
+        
         if (attribute_type %in% c('binary', 'multistate-union')) {
             no_annotated_tips <- tip_data |>
                 filter(!tip_label %in% rownames(annotated_tips)) |>
@@ -372,18 +427,48 @@ propagated <- bplapply(
             )
         }
         
+        
+        tree <- ape::drop.tip(phy = tree, tip = remove_gn_tips)
         input_matrix <- rbind(annotated_tips, no_annotated_tips)
         input_matrix <- input_matrix[tree$tip.label,]
         
-        fit <- fitMk(
-            tree = tree, x = input_matrix, model = 'ER',
-            pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
-        )
-        asr <- ancr(object = fit, tips = TRUE)
-        res <- asr$ace
-        rows_with_nodes <- length(tree$tip.label) + 1:tree$Nnode
-        rownames(res)[rows_with_nodes] <- tree$node.label
+        
+       models <- c(ER = 'ER', ARD = 'ARD', SYM = 'SYM')
+       fittedModels <- map(models, ~ {
+           message('Fitting ', .x)
+           start_time <- Sys.time()
+           message(start_time)
+           if (.x == 'ER') {
+                r <- fitMk(
+                    tree = tree, x = input_matrix, model = .x,
+                    pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
+                )
+           } else {
+                r <- fitMk.parallel(
+                    tree = tree, x = input_matrix, model = .x,
+                    pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE,
+                    ncores = n_cores
+                )
+           }
+           end_time <- Sys.time()
+           elapsed_time <- difftime(end_time, start_time)
+           message('Took ', elapsed_time)
+           return(r)
+       })
+       
+       bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
+       asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
+       res <- as.data.frame(asr$ace)
+       res <- res |> 
+           mutate(label = c(tree$tip.label, tree$node.label)) |>
+           filter(!grepl('^n\\d+$', label)) |> 
+           filter(!is.na(label))
+           
+       
+       rows_with_nodes <- length(tree$tip.label) + 1:tree$Nnode
+       rownames(res)[rows_with_nodes] <- tree$node.label
 
+       new_annotations <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
 
         res <- res[!grepl('^n\\d+$', rownames(res)),]
         res <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
