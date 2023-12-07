@@ -62,7 +62,7 @@
         tip_data_annotated <- left_join(
             x = tip_data,
             y = select(dat, taxid, Attribute, Score),
-            by = 'taxid',
+            by = 'taxid', # joining by taxid helps to join cases like 561 and g__561
             relationship = 'many-to-many'
         )
         
@@ -112,7 +112,6 @@
         input_matrix <- rbind(annotated_tips, no_annotated_tips)
         input_matrix <- input_matrix[tree$tip.label,]
         
-        
         models <- c(ER = 'ER', ARD = 'ARD', SYM = 'SYM')
         fittedModels <- map(models, ~ {
                 message('Fitting ', .x)
@@ -138,37 +137,17 @@
         
         bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
         asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
-        res <- as.data.frame(asr$ace)
-        res <- res |> 
+        res <- as.data.frame(asr$ace) |> 
                 mutate(label = c(tree$tip.label, tree$node.label)) |>
                 filter(!grepl('^n\\d+$', label)) |> 
-                filter(label != 'NA') 
-        
-        # input_matrix <- rbind(annotated_tips, no_annotated_tips)
-        # input_matrix <- input_matrix[tree$tip.label,]
-        # 
-        # fit <- fitMk(
-        #     tree = tree, x = input_matrix, model = 'ER',
-        #     pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
-        # )
-        # asr <- ancr(object = fit, tips = TRUE)
-        # res <- asr$ace
-        # rows_with_nodes <- length(tree$tip.label) + 1:tree$Nnode
-        # rownames(res)[rows_with_nodes] <- tree$node.label
-        # 
-        # 
-        # res <- res[!grepl('^n\\d+$', rownames(res)),]
-        # res <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
-        
+                filter(label != 'NA') |> 
+                filter(!label %in% rownames(annotated_tips))
         res_tips_df <- res |>
             as.data.frame() |>
-            tibble::rownames_to_column(var = 'tip_label') |>
-            filter(!grepl('^\\d+(\\+\\d+)*$', tip_label))
-        
+            filter(!grepl('^\\d+(\\+\\d+)*$', label))
         res_nodes_df <- res |>
             as.data.frame() |>
-            tibble::rownames_to_column(var = 'node_label') |>
-            filter(grepl('^\\d+(\\+\\d+)*$', node_label))
+            filter(grepl('^\\d+(\\+\\d+)*$', label))
         
         ## Get annotations for tips and nodes
         new_tips_data <- ltp$tip_data |>
