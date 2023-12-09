@@ -1,0 +1,4 @@
+Physiology	Rank	Attribute	meanSource	sdSource	meanInh1	sdInh1	meanAsr	sdAsr	meanInh2	sdInh2
+width	all	average	122	NA	0	NA	94	NA	5664	NA
+width	all	large	9	NA	0	NA	8	NA	650	NA
+width	all	small	586	NA	0	NA	21566	NA	34842	NA

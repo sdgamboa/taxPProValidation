@@ -75,6 +75,12 @@
             tibble::column_to_rownames(var = 'tip_label') |>
             as.matrix()
         
+        annotated_gn_tips <- grep('g__', rownames(annotated_tips), value = TRUE)
+        remove_gn_tips <- gn_tips[!gn_tips %in% annotated_gn_tips]
+        
+        tip_data <- tip_data |> 
+            filter(!tip_label %in% remove_gn_tips)
+        
         if (attribute_type %in% c('binary', 'multistate-union')) {
             no_annotated_tips <- tip_data |>
                 filter(!tip_label %in% rownames(annotated_tips)) |>
@@ -108,7 +114,7 @@
             )
         }
        
-        tree <- ape::drop.tip(phy = tree, tip = remove_gn_tips)
+        tree <- ape::drop.tip(phy = tree, tip = remove_gn_tips) ## After removing this, node numbers change
         input_matrix <- rbind(annotated_tips, no_annotated_tips)
         input_matrix <- input_matrix[tree$tip.label,]
         
@@ -137,20 +143,23 @@
         
         bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
         asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
-        res <- as.data.frame(asr$ace) |> 
-                mutate(label = c(tree$tip.label, tree$node.label)) |>
-                filter(!grepl('^n\\d+$', label)) |> 
-                filter(label != 'NA') |> 
-                filter(!label %in% rownames(annotated_tips))
+        res <- asr$ace |> 
+            as.data.frame() |> 
+            mutate(label = c(tree$tip.label, tree$node.label)) |> # Use this instead of rownames_to_colmn because labels are lost in res$ace
+            filter(!grepl('^n\\d+$', label)) |> 
+            filter(label != 'NA') |> 
+            filter(!label %in% rownames(annotated_tips)) # this also remove all remaining genus tips # this correspond to original annotations so the will be in the sources
         res_tips_df <- res |>
             as.data.frame() |>
-            filter(!grepl('^\\d+(\\+\\d+)*$', label))
+            filter(!grepl('^\\d+(\\+\\d+)*$', label)) |> 
+            rename(tip_label = label)
         res_nodes_df <- res |>
             as.data.frame() |>
-            filter(grepl('^\\d+(\\+\\d+)*$', label))
+            filter(grepl('^\\d+(\\+\\d+)*$', label)) |> 
+            rename(node_label = label)
         
         ## Get annotations for tips and nodes
-        new_tips_data <- ltp$tip_data |>
+        new_tips_data <- tip_data |>
             filter(tip_label %in% unique(res_tips_df$tip_label)) |>
             select(tip_label, taxid, Taxon_name, Rank) |>
             group_by(taxid) |>
@@ -184,7 +193,7 @@
             ) |>
             select(-tip_label)
         
-        new_nodes_data <- ltp$node_data |>
+        new_nodes_data <- node_data |>
             filter(node_label %in% unique(res_nodes_df$node_label)) |>
             select(node_label, taxid, Taxon_name, Rank) |>
             left_join(res_nodes_df, by = 'node_label') |>
@@ -226,17 +235,22 @@
                 )
             ) |>
             select(-node_label) |>
-            filter(!NCBI_ID %in% new_dat$NCBI_ID)
+            filter(!NCBI_ID %in% dat$NCBI_ID)
         
-        new_taxa_for_ncbi_tree <- bind_rows(
-            list(new_tips_data, new_nodes_data)
-        ) |>
+        new_taxa_for_ncbi_tree <- bind_rows(new_tips_data, new_nodes_data) |>
             relocate(NCBI_ID, Rank, Attribute, Score, Evidence)
         
         new_taxa_for_ncbi_tree_list <- split(
             new_taxa_for_ncbi_tree, factor(new_taxa_for_ncbi_tree$NCBI_ID)
         )
         
+        ## Add annotations from sources
+        ncbi_tree$Do(function(node) {
+            if (node$name %in% names(node_list))
+                node$attribute_tbl <- node_list[[node$name]]
+        })
+       
+        ## Add annotatiosn from ASR 
         ncbi_tree$Do(function(node) {
             cond1 <- node$name %in% names(new_taxa_for_ncbi_tree_list)
             cond2 <- is.null(node$attribute_tbl) || all(is.na(node$attribute_tbl))
@@ -251,6 +265,8 @@
             attribute = 'attribute_tbl', simplify = FALSE,
             filterFun = function(node) {
                 node$name != 'ArcBac' && !is.null(node$attribute_tbl)
+                # grepl('^gst__', node$name)
+                
             }
         ) |>
             bind_rows() |>
@@ -259,7 +275,7 @@
         min_thr <- 1 / length(unique(dat$Attribute))
         
         final_result <- bind_rows(
-            new_dat, # contains source, tax, and inh,
+            dat, # contains source and tax
             new_taxa_for_ncbi_tree, # only contains asr (not in new_dat)
             filter(result, Evidence == 'inh2')
         ) |>

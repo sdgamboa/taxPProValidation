@@ -47,18 +47,19 @@ log_print(msg, blank_after = TRUE)
 ## NCBI taxonomy
 data('tree_list')
 ncbi_tree <- as.Node(tree_list)
-ncbi_nodes <- ncbi_tree$Get(
-    attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name),
-    simplify = TRUE
-) |> 
-    unname()
+# ncbi_nodes <- ncbi_tree$Get(
+#     attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name),
+#     simplify = TRUE
+# ) |> 
+#     unname()
 
 ## LTP tree
 ltp <- ltp3()
 tree <- ltp$tree
 tip_data <- ltp$tip_data
 node_data <- ltp$node_data
-genus_tips <- ltp$genus_tips
+gn_tips <- ltp$gn_tips
+all_tips <- ltp$all_tips
 
 # Define functions --------------------------------------------------------
 # getFolds10 <- function(dat, k_value = 10) {
@@ -87,9 +88,9 @@ genus_tips <- ltp$genus_tips
 #     )
 #     return(output)
 # }
-getFolds <- function(dat, k_value = 10) {
-    k_value <- 10
-    set.seed(1234)
+getFolds <- function(dat, k_value = 10, seed = 1234) {
+    k_value <- k_value
+    set.seed(seed)
     cv_folds <- cvTools::cvFolds(nrow(dat), K = k_value)
     test_sets <- vector('list', k_value)
     train_sets <- vector('list', k_value)
@@ -100,15 +101,9 @@ getFolds <- function(dat, k_value = 10) {
         names(train_sets)[i] <- fold_name
         train_sets[[i]] <- dat[cv_folds$subsets[cv_folds$which != i],]
     }
-    list(
-        test_sets = test_sets,
-        train_sets = train_sets
-    )
+    output <- list(test_sets = test_sets, train_sets = train_sets)
+    return(output)
 }
-
-
-
-
 
 
 
@@ -174,10 +169,9 @@ getNegatives <- function(dat) {
     return(output)
 }
 
-# Import bugphyzz data ----------------------------------------------------
-if (rank_var == 'all')
-    rank_var <- c('genus', 'species', 'strain')
 
+# Import and prepare bugphyzz data ----------------------------------------
+if (rank_var == 'all') rank_var <- c('genus', 'species', 'strain')
 bp_data <- physiologies(phys_name)[[1]]
 attribute_type <- unique(bp_data$Attribute_type)
 attribute_group <- unique(bp_data$Attribute_group)
@@ -192,14 +186,17 @@ if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
 }
 
 ## Remove rows that will not be used
-## The Rank column is removed at this step.
-## This is recovered in a later step when getting sets with IDs or without IDs.
+## The Rank column is removed in this step.
+## This Rank column is generated again  in a later in the script
+## The main reason for doing this is that some taxis have ranks that do not
+## correspond to current annotations in the NCBI
 filtered_bp_data <- filterData(bp_data)
 
 ## Warnings can be present in the next code chunk with conditionals about the
 ## attribute type.
 
 if (attribute_type == 'binary') {
+    ## section for binary data ####
     set_with_ids <- filtered_bp_data |> 
         getSetWithIDs() |>
         purrr::discard(~ all(is.na(.x))) |> 
@@ -219,6 +216,7 @@ if (attribute_type == 'binary') {
        map(~ arrange(.x, NCBI_ID, Attribute))
    
 } else if (attribute_type == 'multistate-intersection') {
+    ## Section for multistate intersection ####
     set_with_ids <- filtered_bp_data |>
         getSetWithIDs() |>
         purrr::discard(~ all(is.na(.x))) |> 
@@ -227,45 +225,30 @@ if (attribute_type == 'binary') {
         message('Not enough data for validation')
         quit(save = 'no')
     }
-    l <- split(set_with_ids, factor(set_with_ids$Attribute)) |> 
+    folds <- set_with_ids |> 
+        {\(y) split(y, factor(y$Attribute))}() |> 
         discard(~ nrow(.x) < 10) |> 
-        map(getFolds)
-    myAttributes <- names(l) 
-    ## Get test sets
-    output <- vector('list', length(myAttributes))
-    for (i in seq_along(output)) {
-        names(output)[i] <- myAttributes[i]
-        output[[i]] <- pluck(l, myAttributes[i], 'test_sets')
-    }
-    test_sets <- vector('list', 10)
-    for (i in 1:10) {
-        names(test_sets)[i] <- paste0('Fold', i)
-        for (j in seq_along(output)) {
-            test_sets[[i]] <- bind_rows(output[[j]][[i]], test_sets[[i]])
-        }
-    }
-    ## Get train
-    output <- vector('list', length(myAttributes))
-    for (i in seq_along(output)) {
-        names(output)[i] <- myAttributes[i]
-        output[[i]] <- pluck(l, myAttributes[i], 'train_sets')
-    }
-    train_sets <- vector('list', 10)
-    for (i in 1:10) {
-        names(train_sets)[i] <- paste0('Fold', i)
-        for (j in seq_along(output)) {
-            train_sets[[i]] <- bind_rows(output[[j]][[i]], train_sets[[i]])
-        }
-    }
-    folds <- list(test_sets = test_sets, train_sets = train_sets)
+        purrr::map(getFolds)
+     testFolds <- names(l) |> 
+        purrr::map(~ pluck(l, .x, 'test_sets')) |> 
+        set_names(names(l)) |> 
+        pmap(bind_rows)
+     trainFolds <- names(l) |> 
+        purrr::map(~ pluck(l, .x, 'train_sets')) |> 
+        set_names(names(l)) |> 
+        pmap(bind_rows)
+    
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
     ) |>
         purrr::discard(~ all(is.na(.x)))
-    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
+    
+    phys_data_ready <- map(trainFolds, ~ bind_rows(.x, set_without_ids)) |> 
        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
        map(~ arrange(.x, NCBI_ID, Attribute))
+    
 } else if (attribute_type == 'multistate-union') {
+    ## Section for multistate-union data ####
     filtered_bp_data$Attribute_group_2 <- sub(
         '--(TRUE|FALSE)', '', filtered_bp_data$Attribute
     )
@@ -606,6 +589,8 @@ propagated <- bplapply(
 if (all(c('genus', 'species', 'strain') %in% rank_var)) {
     rank_var <- 'all'
 }
+
+# propagated <- list(Fold1 = final_result)
 
 lgl_vct <- map_lgl(propagated, is.data.frame)
 if (all(!lgl_vct)) {
