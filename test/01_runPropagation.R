@@ -265,59 +265,19 @@ propagated <- bplapply(
         attribute_nms <- dat$Attribute |>
             {\(y) y[!is.na(y)]}() |>
             unique()
-        
-        ntax_dat <- length(unique(dat$NCBI_ID))
-        # node_list <- split(dat, factor(dat$NCBI_ID))
-        
-        not_in_ncbi_tree <- all(!names(node_list) %in% ncbi_nodes)
-        
-        if (not_in_ncbi_tree) {
-            msg <- paste0(
-                'Not enough data for propagation for ', phys_name, '. Rank:', rank_var, '.',
-                ' Quitting R script. Finishing at ', Sys.time(), '.'
-            )
-            log_print(msg, blank_after = TRUE)
-            quit(save = 'no')
-        }
-        
-        ncbi_tree$Do(function(node) {
-            if (node$name %in% names(node_list))
-                node$attribute_tbl <- node_list[[node$name]]
-        })
-        ncbi_tree$Do(
-            function(node) {
-                taxPool(
-                    node = node,
-                    grp = attribute_group,
-                    typ = attribute_type)
-            },
-            traversal = 'post-order'
-        )
-        # ncbi_tree$Do(inh1, traversal = 'pre-order')
-        new_dat <- ncbi_tree$Get(
-            'attribute_tbl', filterFun = function(node) {
-                grepl('^[gst]__', node$name)
-            }
-        ) |>
-            discard(~ all(is.na(.x))) |>
-            bind_rows() |>
-            arrange(NCBI_ID, Attribute) |>
-            filter(!NCBI_ID %in% dat$NCBI_ID) |>
-            bind_rows(dat)
-        
-        new_taxids <- new_dat |> 
-            pull(taxid) |> 
-            unique() |>
-            {\(y) y[!is.na(y)]}()
-        per <- mean(tip_data$taxid %in% new_taxids) * 100
-        if (per < 1) {
-            return(per)
+        dat_n_tax <- length(unique(dat$NCBI_ID))
+        node_list <- split(dat, factor(dat$NCBI_ID))
+
+        per_annotated_tips <- round(mean(unique(dat$NCBI_ID) %in% tree$tip.label) * 100)
+        if (per_annotated_tips < 1) {
+            message('Not enough annotations for ASR for ', attribute_group)
+            return(per_annotated_tips)
         }
         
         tip_data_annotated <- left_join(
             x = tip_data,
-            y = select(new_dat, taxid, Attribute, Score),
-            by = 'taxid',
+            y = select(dat, taxid, Attribute, Score),
+            by = 'taxid', # joining by taxid helps to join cases like 561 and g__561
             relationship = 'many-to-many'
         )
         
@@ -391,42 +351,32 @@ propagated <- bplapply(
                     pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE,
                     ncores = n_cores
                 )
-            }
-            end_time <- Sys.time()
-            elapsed_time <- difftime(end_time, start_time)
-            message('Took ', elapsed_time)
-            return(r)
-        })
-        
-        bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
-        asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
-        res <- as.data.frame(asr$ace)
-        res <- res |> 
-            mutate(label = c(tree$tip.label, tree$node.label)) |>
+           }
+           end_time <- Sys.time()
+           elapsed_time <- difftime(end_time, start_time)
+           message('fitting model took like ', elapsed_time)
+           return(r)
+       })
+       
+       bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
+       asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
+        res <- asr$ace |> 
+            as.data.frame() |> 
+            mutate(label = c(tree$tip.label, tree$node.label)) |> # Use this instead of rownames_to_colmn because labels are lost in res$ace
             filter(!grepl('^n\\d+$', label)) |> 
-            filter(!is.na(label))
-        
-        
-        rows_with_nodes <- length(tree$tip.label) + 1:tree$Nnode
-        rownames(res)[rows_with_nodes] <- tree$node.label
-        
-        new_annotations <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
-        
-        res <- res[!grepl('^n\\d+$', rownames(res)),]
-        res <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
-        
+            filter(label != 'NA') |> 
+            filter(!label %in% rownames(annotated_tips)) # this also remove all remaining genus tips # this correspond to original annotations so the will be in the sources
         res_tips_df <- res |>
             as.data.frame() |>
-            tibble::rownames_to_column(var = 'tip_label') |>
-            filter(!grepl('^\\d+(\\+\\d+)*$', tip_label))
-        
+            filter(!grepl('^\\d+(\\+\\d+)*$', label)) |> 
+            rename(tip_label = label)
         res_nodes_df <- res |>
             as.data.frame() |>
-            tibble::rownames_to_column(var = 'node_label') |>
-            filter(grepl('^\\d+(\\+\\d+)*$', node_label))
+            filter(grepl('^\\d+(\\+\\d+)*$', label)) |> 
+            rename(node_label = label)
         
         ## Get annotations for tips and nodes
-        new_tips_data <- ltp$tip_data |>
+        new_tips_data <- tip_data |>
             filter(tip_label %in% unique(res_tips_df$tip_label)) |>
             select(tip_label, taxid, Taxon_name, Rank) |>
             group_by(taxid) |>
@@ -460,7 +410,7 @@ propagated <- bplapply(
             ) |>
             select(-tip_label)
         
-        new_nodes_data <- ltp$node_data |>
+        new_nodes_data <- node_data |>
             filter(node_label %in% unique(res_nodes_df$node_label)) |>
             select(node_label, taxid, Taxon_name, Rank) |>
             left_join(res_nodes_df, by = 'node_label') |>
@@ -502,17 +452,22 @@ propagated <- bplapply(
                 )
             ) |>
             select(-node_label) |>
-            filter(!NCBI_ID %in% new_dat$NCBI_ID)
+            filter(!NCBI_ID %in% dat$NCBI_ID)
         
-        new_taxa_for_ncbi_tree <- bind_rows(
-            list(new_tips_data, new_nodes_data)
-        ) |>
+        new_taxa_for_ncbi_tree <- bind_rows(new_tips_data, new_nodes_data) |>
             relocate(NCBI_ID, Rank, Attribute, Score, Evidence)
         
         new_taxa_for_ncbi_tree_list <- split(
             new_taxa_for_ncbi_tree, factor(new_taxa_for_ncbi_tree$NCBI_ID)
         )
         
+        ## Add annotations from sources
+        ncbi_tree$Do(function(node) {
+            if (node$name %in% names(node_list))
+                node$attribute_tbl <- node_list[[node$name]]
+        })
+       
+        ## Add annotatiosn from ASR 
         ncbi_tree$Do(function(node) {
             cond1 <- node$name %in% names(new_taxa_for_ncbi_tree_list)
             cond2 <- is.null(node$attribute_tbl) || all(is.na(node$attribute_tbl))
@@ -527,6 +482,8 @@ propagated <- bplapply(
             attribute = 'attribute_tbl', simplify = FALSE,
             filterFun = function(node) {
                 node$name != 'ArcBac' && !is.null(node$attribute_tbl)
+                # grepl('^gst__', node$name)
+                
             }
         ) |>
             bind_rows() |>
@@ -535,7 +492,7 @@ propagated <- bplapply(
         min_thr <- 1 / length(unique(dat$Attribute))
         
         final_result <- bind_rows(
-            new_dat, # contains source, tax, and inh,
+            dat, # contains source and tax
             new_taxa_for_ncbi_tree, # only contains asr (not in new_dat)
             filter(result, Evidence == 'inh2')
         ) |>
