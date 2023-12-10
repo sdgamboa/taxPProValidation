@@ -47,47 +47,11 @@ log_print(msg, blank_after = TRUE)
 ## NCBI taxonomy
 data('tree_list')
 ncbi_tree <- as.Node(tree_list)
-# ncbi_nodes <- ncbi_tree$Get(
-#     attribute = 'name', filterFun = function(node) grepl('^[gst]__', node$name),
-#     simplify = TRUE
-# ) |> 
-#     unname()
 
 ## LTP tree
 ltp <- ltp3()
-tree <- ltp$tree
-tip_data <- ltp$tip_data
-node_data <- ltp$node_data
-gn_tips <- ltp$gn_tips
-all_tips <- ltp$all_tips
 
 # Define functions --------------------------------------------------------
-# getFolds10 <- function(dat, k_value = 10) {
-#     taxa <- unique(dat$NCBI_ID)
-#     k_value <- 10
-#     set.seed(1234)
-#     taxa_folds <- cvFolds(length(taxa), K = k_value)
-#     test_taxids <- vector('list', k_value)
-#     train_taxids <- vector('list', k_value)
-#     for(i in 1:k_value){
-#         fold_name <- paste0('Fold', i)
-#         names(test_taxids)[i] <- fold_name
-#         test_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which == i]]
-#         names(train_taxids)[i] <- fold_name
-#         train_taxids[[i]] <- taxa[taxa_folds$subsets[taxa_folds$which != i]]
-#     }
-#     test_sets <- purrr::map(
-#         test_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
-#     )
-#     train_sets <- purrr::map(
-#         train_taxids, ~ dplyr::filter(dat, .data$NCBI_ID %in% .x)
-#     )
-#     output <- list(
-#         test_sets = test_sets,
-#         train_sets = train_sets
-#     )
-#     return(output)
-# }
 getFolds <- function(dat, k_value = 10, seed = 1234) {
     k_value <- k_value
     set.seed(seed)
@@ -104,8 +68,6 @@ getFolds <- function(dat, k_value = 10, seed = 1234) {
     output <- list(test_sets = test_sets, train_sets = train_sets)
     return(output)
 }
-
-
 
 getNegatives <- function(dat) {
     ranks <- unique(dat$Rank)
@@ -177,6 +139,7 @@ attribute_type <- unique(bp_data$Attribute_type)
 attribute_group <- unique(bp_data$Attribute_group)
 
 if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
+    message('Converting ', phys_name, ' from range to multistate-intersection.')
     res <- rangeToLogicalThr(bp_data, THRESHOLDS()[[attribute_group]])
     res$Attribute_type <- 'multistate-intersection'
     bp_data <- res
@@ -186,15 +149,15 @@ if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
 }
 
 ## Remove rows that will not be used
-## The Rank column is removed in this step.
-## This Rank column is generated again  in a later in the script
-## The main reason for doing this is that some taxis have ranks that do not
+## The Rank column is removed at this step.
+## This Rank column is generated again later in the script
+## The main reason for doing this is that some taxids have ranks that do not
 ## correspond to current annotations in the NCBI
 filtered_bp_data <- filterData(bp_data)
 
-## Warnings can be present in the next code chunk with conditionals about the
-## attribute type.
-
+## There will be some warnings here regargint taxizedb::taxid2rank.
+## These can be ignored since they will be dealt with in the bugphyzzExports
+## repository.
 if (attribute_type == 'binary') {
     ## section for binary data ####
     set_with_ids <- filtered_bp_data |> 
@@ -211,17 +174,19 @@ if (attribute_type == 'binary') {
         filtered_bp_data, set_with_ids = set_with_ids
     ) |>
         purrr::discard(~ all(is.na(.x)))
-   phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
-       map(~ completeBinaryData(.x)) |> 
-       map(~ arrange(.x, NCBI_ID, Attribute))
-   
+    phys_data_ready <- map(folds$train_sets, ~ bind_rows(.x, set_without_ids)) |> 
+        map(~ completeBinaryData(.x)) |> 
+        map(~ arrange(.x, NCBI_ID, Attribute))
+    
 } else if (attribute_type == 'multistate-intersection') {
-    ## Section for multistate intersection ####
+    ## Section for multistate-intersection ####
     set_with_ids <- filtered_bp_data |>
         getSetWithIDs() |>
         purrr::discard(~ all(is.na(.x))) |> 
         filter(Rank %in% rank_var)
     if (!nrow(set_with_ids)) {
+        ## Sources are supposed to be used for propagation only.
+        ## Not those from taxonomic pooling.
         message('Not enough data for validation')
         quit(save = 'no')
     }
@@ -229,23 +194,23 @@ if (attribute_type == 'binary') {
         {\(y) split(y, factor(y$Attribute))}() |> 
         discard(~ nrow(.x) < 10) |> 
         purrr::map(getFolds)
-     testFolds <- names(l) |> 
-        purrr::map(~ pluck(l, .x, 'test_sets')) |> 
-        set_names(names(l)) |> 
+    ## test folds will be saved later in the script
+    testFolds <- folds |> 
+        names()|> 
+        purrr::map(~ pluck(folds, .x, 'test_sets')) |> 
+        set_names(names(folds)) |> 
         pmap(bind_rows)
-     trainFolds <- names(l) |> 
-        purrr::map(~ pluck(l, .x, 'train_sets')) |> 
-        set_names(names(l)) |> 
+    trainFolds <- names(folds) |> 
+        purrr::map(~ pluck(folds, .x, 'train_sets')) |> 
+        set_names(names(folds)) |> 
         pmap(bind_rows)
-    
-    set_without_ids <- getSetWithoutIDs(
-        filtered_bp_data, set_with_ids = set_with_ids
-    ) |>
+    set_without_ids <- filtered_bp_data |> 
+        getSetWithoutIDs(set_with_ids) |>
         purrr::discard(~ all(is.na(.x)))
-    
-    phys_data_ready <- map(trainFolds, ~ bind_rows(.x, set_without_ids)) |> 
-       map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
-       map(~ arrange(.x, NCBI_ID, Attribute))
+    phys_data_ready <- trainFolds |> 
+        map(~ bind_rows(.x, set_without_ids)) |> 
+        map(~ complete(.x, NCBI_ID, Attribute, fill = list(Score = 0))) |> 
+        map(~ arrange(.x, NCBI_ID, Attribute))
     
 } else if (attribute_type == 'multistate-union') {
     ## Section for multistate-union data ####
@@ -296,22 +261,16 @@ propagated <- bplapply(
     X = phys_data_ready,
     BPPARAM = multicoreParam,
     FUN = function(dat) {
-
-        attribute_group <- dat$Attribute_group |>
-            {\(y) y[!is.na(y)]}() |>
-            unique()
-        attribute_type <- dat$Attribute_type |>
-            {\(y) y[!is.na(y)]}() |>
-            unique()
+        
         attribute_nms <- dat$Attribute |>
             {\(y) y[!is.na(y)]}() |>
             unique()
-
-        dat_n_tax <- length(unique(dat$NCBI_ID))
-        node_list <- split(dat, factor(dat$NCBI_ID))
-
+        
+        ntax_dat <- length(unique(dat$NCBI_ID))
+        # node_list <- split(dat, factor(dat$NCBI_ID))
+        
         not_in_ncbi_tree <- all(!names(node_list) %in% ncbi_nodes)
-
+        
         if (not_in_ncbi_tree) {
             msg <- paste0(
                 'Not enough data for propagation for ', phys_name, '. Rank:', rank_var, '.',
@@ -320,7 +279,7 @@ propagated <- bplapply(
             log_print(msg, blank_after = TRUE)
             quit(save = 'no')
         }
-
+        
         ncbi_tree$Do(function(node) {
             if (node$name %in% names(node_list))
                 node$attribute_tbl <- node_list[[node$name]]
@@ -416,57 +375,57 @@ propagated <- bplapply(
         input_matrix <- input_matrix[tree$tip.label,]
         
         
-       models <- c(ER = 'ER', ARD = 'ARD', SYM = 'SYM')
-       fittedModels <- map(models, ~ {
-           message('Fitting ', .x)
-           start_time <- Sys.time()
-           message(start_time)
-           if (.x == 'ER') {
+        models <- c(ER = 'ER', ARD = 'ARD', SYM = 'SYM')
+        fittedModels <- map(models, ~ {
+            message('Fitting ', .x)
+            start_time <- Sys.time()
+            message(start_time)
+            if (.x == 'ER') {
                 r <- fitMk(
                     tree = tree, x = input_matrix, model = .x,
                     pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
                 )
-           } else {
+            } else {
                 r <- fitMk.parallel(
                     tree = tree, x = input_matrix, model = .x,
                     pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE,
                     ncores = n_cores
                 )
-           }
-           end_time <- Sys.time()
-           elapsed_time <- difftime(end_time, start_time)
-           message('Took ', elapsed_time)
-           return(r)
-       })
-       
-       bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
-       asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
-       res <- as.data.frame(asr$ace)
-       res <- res |> 
-           mutate(label = c(tree$tip.label, tree$node.label)) |>
-           filter(!grepl('^n\\d+$', label)) |> 
-           filter(!is.na(label))
-           
-       
-       rows_with_nodes <- length(tree$tip.label) + 1:tree$Nnode
-       rownames(res)[rows_with_nodes] <- tree$node.label
-
-       new_annotations <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
-
+            }
+            end_time <- Sys.time()
+            elapsed_time <- difftime(end_time, start_time)
+            message('Took ', elapsed_time)
+            return(r)
+        })
+        
+        bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
+        asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
+        res <- as.data.frame(asr$ace)
+        res <- res |> 
+            mutate(label = c(tree$tip.label, tree$node.label)) |>
+            filter(!grepl('^n\\d+$', label)) |> 
+            filter(!is.na(label))
+        
+        
+        rows_with_nodes <- length(tree$tip.label) + 1:tree$Nnode
+        rownames(res)[rows_with_nodes] <- tree$node.label
+        
+        new_annotations <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
+        
         res <- res[!grepl('^n\\d+$', rownames(res)),]
         res <- res[which(!rownames(res) %in% rownames(annotated_tips)),]
-
+        
         res_tips_df <- res |>
             as.data.frame() |>
             tibble::rownames_to_column(var = 'tip_label') |>
             filter(!grepl('^\\d+(\\+\\d+)*$', tip_label))
-
+        
         res_nodes_df <- res |>
             as.data.frame() |>
             tibble::rownames_to_column(var = 'node_label') |>
             filter(grepl('^\\d+(\\+\\d+)*$', node_label))
-
-    ## Get annotations for tips and nodes
+        
+        ## Get annotations for tips and nodes
         new_tips_data <- ltp$tip_data |>
             filter(tip_label %in% unique(res_tips_df$tip_label)) |>
             select(tip_label, taxid, Taxon_name, Rank) |>
@@ -484,7 +443,7 @@ propagated <- bplapply(
             mutate(Evidence = 'asr') |>
             relocate(NCBI_ID, taxid, Taxon_name, Rank, Evidence) |>
             pivot_longer(
-            cols = 7:last_col(), names_to = 'Attribute', values_to = 'Score'
+                cols = 7:last_col(), names_to = 'Attribute', values_to = 'Score'
             ) |>
             mutate(
                 Attribute_source = NA,
@@ -500,7 +459,7 @@ propagated <- bplapply(
                 )
             ) |>
             select(-tip_label)
-
+        
         new_nodes_data <- ltp$node_data |>
             filter(node_label %in% unique(res_nodes_df$node_label)) |>
             select(node_label, taxid, Taxon_name, Rank) |>
@@ -527,7 +486,7 @@ propagated <- bplapply(
             mutate(Evidence = 'asr') |>
             relocate(NCBI_ID, taxid, Taxon_name, Rank, Evidence) |>
             pivot_longer(
-            cols = 7:last_col(), names_to = 'Attribute', values_to = 'Score'
+                cols = 7:last_col(), names_to = 'Attribute', values_to = 'Score'
             ) |>
             mutate(
                 Attribute_source = NA,
@@ -544,12 +503,12 @@ propagated <- bplapply(
             ) |>
             select(-node_label) |>
             filter(!NCBI_ID %in% new_dat$NCBI_ID)
-
+        
         new_taxa_for_ncbi_tree <- bind_rows(
             list(new_tips_data, new_nodes_data)
         ) |>
             relocate(NCBI_ID, Rank, Attribute, Score, Evidence)
-
+        
         new_taxa_for_ncbi_tree_list <- split(
             new_taxa_for_ncbi_tree, factor(new_taxa_for_ncbi_tree$NCBI_ID)
         )
@@ -572,7 +531,7 @@ propagated <- bplapply(
         ) |>
             bind_rows() |>
             discard(~ all(is.na(.x)))
-
+        
         min_thr <- 1 / length(unique(dat$Attribute))
         
         final_result <- bind_rows(
