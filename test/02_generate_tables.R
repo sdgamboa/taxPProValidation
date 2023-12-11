@@ -3,17 +3,18 @@ library(purrr)
 library(dplyr)
 library(tidyr)
 library(mltools)
+library(ggplot2)
 
 # args <- commandArgs(trailingOnly = TRUE)
 # physName <- gsub('_', ' ', args[[1]])
 physName <- 'width'
 
-links_tsv <- system.file(
+bp_links_tsv <- system.file(
     'extdata', 'links.tsv', package = 'bugphyzz', mustWork = TRUE
 )
-links <- read_tsv(links_tsv, show_col_types = FALSE)
+bp_links <- read_tsv(bp_links_tsv, show_col_types = FALSE)
 
-attribute_type <- links |> 
+attribute_type <- bp_links |> 
     filter(physiology == physName) |> 
     pull(attribute_type)
 
@@ -26,39 +27,48 @@ if (attribute_type %in% c('numeric', 'range')) {
     attribute_type <- 'multistate-intersection'
 }
 
-
-fileNames <- list.files('.', pattern = '.csv', full.names = TRUE)
-
-
-
-
-
-
-listFiles <- function(phys_name = NULL) {
+listFiles <- function(phys_name = NULL, dir_name = 'test') {
     phys_name <- gsub(' ', '_', phys_name)
     wd <- getwd()
-    if (grepl('method3', wd)) {
+    if (grepl(dir_name, wd)) {
         physFileNames <- list.files(pattern = 'csv', full.names = TRUE)
     } else {
-        physFileNames <- list.files('method3', pattern = 'csv', full.names = TRUE)
+        physFileNames <- list.files(dir_name, pattern = 'csv', full.names = TRUE)
     }
     if (!is.null(phys_name))
         physFileNames <- sort(grep(phys_name, physFileNames, value = TRUE))
     return(physFileNames)
 }
 
+fileNames <- listFiles(physName)
+tbls <- map(fileNames, ~ read.csv(.x))
+names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', fileNames)
+testSets <- tbls[grep('test', names(tbls))]
+propSets <- tbls[grep('propagated', names(tbls))]
+testFoldNames <- sub('^.*(Fold[0-9]+)', '\\1', names(testSets))
+propFoldNames <- sub('^.*(Fold[0-9]+)', '\\1', names(propSets))
+namesInCommon <- intersect(testFoldNames, propFoldNames)
+testSets <- testSets[sort(map_chr(paste0(namesInCommon ,'$'), ~ grep(.x, names(testSets), value = TRUE)))]
+propSets <- propSets[sort(map_chr(paste0(namesInCommon ,'$'), ~ grep(.x, names(propSets), value = TRUE)))]
+
+## Export plots with Scores
+plotList <- propSets |> 
+    purrr::map(~ {
+        .x |> 
+            ggplot(aes(Score)) +
+            geom_histogram(binwidth = 0.1)
+    })
+for (i in seq_along(plotList)) {
+    plotFileName <- paste0(names(plotList)[i], '.png' )
+    ggsave(filename = plotFileName, plot = plotList[[i]], )
+}
+
 
 if (attribute_type == 'multistate-intersection') {
-    # fileNames <- listFiles(physName)
-    tbls <- map(fileNames, ~ read.csv(.x))
-    names(tbls) <- sub('^.*/(.*)\\.csv', '\\1', fileNames)
-    testSets <- tbls[grep('test', names(tbls))]
-    propSets <- tbls[grep('propagated', names(tbls))]
-    
     attrs <- map(tbls, ~ unique(pull(.x, Attribute))) |> 
         unlist() |> 
         unique()
-    thr <- 1 / length(attrs)
+    thr <- 1 / length(attrs) # This number only takes into account attributes that were actually propagated
     
     foldData <- map2(.x = testSets, .y = propSets, .f = ~ {
         testDat <- select(.x, NCBI_ID, Attribute, tScore = Score) 
@@ -94,7 +104,7 @@ if (attribute_type == 'multistate-intersection') {
             col = 'Fold', into = c('Physiology', 'Rank', 'Fold'), sep = ' '
         ) 
     
-    foldDataSummary1 <- foldData |> 
+    foldDataSummary <- foldData |> 
         group_by(Physiology, Rank, Attribute) |> 
         summarise(
             meanTP = mean(TP),
@@ -196,7 +206,7 @@ if (attribute_type == 'multistate-intersection') {
             col = 'Fold', into = c('Physiology', 'Rank', 'Fold'), sep = ' '
         ) 
     
-    foldDataSummary1 <- foldData |> 
+    foldDataSummary <- foldData |> 
         group_by(Physiology, Rank, Attribute) |> 
         summarise(
             meanTP = mean(TP),
@@ -298,7 +308,7 @@ if (attribute_type == 'multistate-intersection') {
             col = 'Fold', into = c('Physiology', 'Attribute', 'Rank', 'Fold'), sep = ' '
         ) 
     
-    foldDataSummary1 <- foldData |> 
+    foldDataSummary <- foldData |> 
         group_by(Physiology, Rank, Attribute) |> 
         summarise(
             meanTP = mean(TP),
@@ -319,5 +329,5 @@ if (attribute_type == 'multistate-intersection') {
 outputFileName1 <- gsub(' ', '_', paste0(physName, '_fold_data.tsv'))
 write_tsv(x = foldData, file = outputFileName1)
 outputFileName2 <- gsub(' ', '_', paste0(physName, '_mcc_summary.tsv'))
-write_tsv(x = foldDataSummary1, file = outputFileName2)
+write_tsv(x = foldDataSummary, file = outputFileName2)
 
