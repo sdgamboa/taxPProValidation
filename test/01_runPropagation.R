@@ -24,9 +24,9 @@ logfile <- gsub(" ", "_", paste0("logFile_", args[[1]], "_", args[[2]]))
 lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
 
 phys_name <- args[[1]]
-rank_var <- args[[2]]
+rank_arg <- args[[2]]
 
-msg <- paste0('Propagating ', phys_name, '. Rank: ', rank_var)
+msg <- paste0('Propagating ', phys_name, '. Rank: ', rank_arg)
 log_print(msg, blank_after = FALSE)
 
 msg <- paste0('Starting at ', Sys.time())
@@ -50,6 +50,7 @@ ncbi_tree <- as.Node(tree_list)
 
 ## LTP tree
 ltp <- ltp3()
+tree <- ltp$tree
 
 # Define functions --------------------------------------------------------
 getFolds <- function(dat, k_value = 10, seed = 1234) {
@@ -133,7 +134,11 @@ getNegatives <- function(dat) {
 
 
 # Import and prepare bugphyzz data ----------------------------------------
-if (rank_var == 'all') rank_var <- c('genus', 'species', 'strain')
+if (rank_arg == 'all') {
+    rank_var <- c('genus', 'species', 'strain')
+} else {
+    rank_var <- rank_arg
+} 
 bp_data <- physiologies(phys_name)[[1]]
 attribute_type <- unique(bp_data$Attribute_type)
 attribute_group <- unique(bp_data$Attribute_group)
@@ -155,7 +160,7 @@ if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
 ## correspond to current annotations in the NCBI
 filtered_bp_data <- filterData(bp_data)
 
-## There will be some warnings here regargint taxizedb::taxid2rank.
+## There will be some warnings here from taxizedb::taxid2rank
 ## These can be ignored since they will be dealt with in the bugphyzzExports
 ## repository.
 if (attribute_type == 'binary') {
@@ -185,8 +190,7 @@ if (attribute_type == 'binary') {
         purrr::discard(~ all(is.na(.x))) |> 
         filter(Rank %in% rank_var)
     if (!nrow(set_with_ids)) {
-        ## Sources are supposed to be used for propagation only.
-        ## Not those from taxonomic pooling.
+        ## Only data from sources are supposed to be used for propagation.
         message('Not enough data for validation')
         quit(save = 'no')
     }
@@ -194,13 +198,13 @@ if (attribute_type == 'binary') {
         {\(y) split(y, factor(y$Attribute))}() |> 
         discard(~ nrow(.x) < 10) |> 
         purrr::map(getFolds)
-    ## test folds will be saved later in the script
-    testFolds <- folds |> 
+    testFolds <- folds |> # exported later in the script
         names()|> 
         purrr::map(~ pluck(folds, .x, 'test_sets')) |> 
         set_names(names(folds)) |> 
         pmap(bind_rows)
-    trainFolds <- names(folds) |> 
+    trainFolds <- folds |> 
+        names() |>
         purrr::map(~ pluck(folds, .x, 'train_sets')) |> 
         set_names(names(folds)) |> 
         pmap(bind_rows)
@@ -265,17 +269,17 @@ propagated <- bplapply(
         attribute_nms <- dat$Attribute |>
             {\(y) y[!is.na(y)]}() |>
             unique()
-        dat_n_tax <- length(unique(dat$NCBI_ID))
+        
         node_list <- split(dat, factor(dat$NCBI_ID))
-
-        per_annotated_tips <- round(mean(unique(dat$NCBI_ID) %in% tree$tip.label) * 100)
+        per_annotated_tips <- 
+            round(mean(unique(dat$NCBI_ID) %in% tree$tip.label) * 100)
         if (per_annotated_tips < 1) {
             message('Not enough annotations for ASR for ', attribute_group)
             return(per_annotated_tips)
         }
         
         tip_data_annotated <- left_join(
-            x = tip_data,
+            x = ltp$tip_data,
             y = select(dat, taxid, Attribute, Score),
             by = 'taxid', # joining by taxid helps to join cases like 561 and g__561
             relationship = 'many-to-many'
@@ -283,21 +287,21 @@ propagated <- bplapply(
         
         annotated_tips <- tip_data_annotated |>
             select(tip_label, Attribute, Score) |>
-            filter(!is.na(Attribute)) |>
+            filter(!is.na(Attribute)) |> 
             pivot_wider(
                 names_from = 'Attribute', values_from = 'Score', values_fill = 0
             ) |>
-            tibble::column_to_rownames(var = 'tip_label') |>
+            tibble::column_to_rownames(var = 'tip_label') |> 
             as.matrix()
         
         annotated_gn_tips <- grep('g__', rownames(annotated_tips), value = TRUE)
-        remove_gn_tips <- genus_tips[!genus_tips %in% annotated_gn_tips]
+        remove_gn_tips <- ltp$gn_tips[!ltp$gn_tips %in% annotated_gn_tips]
         
-        tip_data <- tip_data |> 
+        tip_data_subset <- ltp$tip_data |>
             filter(!tip_label %in% remove_gn_tips)
         
         if (attribute_type %in% c('binary', 'multistate-union')) {
-            no_annotated_tips <- tip_data |>
+            no_annotated_tips <- tip_data_subset |>
                 filter(!tip_label %in% rownames(annotated_tips)) |>
                 select(tip_label) |>
                 mutate(
@@ -313,7 +317,7 @@ propagated <- bplapply(
                 {\(y) y[,colnames(annotated_tips)]}()
             
         } else if (attribute_type == 'multistate-intersection') {
-            no_annotated_tip_names <- tip_data |>
+            no_annotated_tip_names <- tip_data_subset |>
                 filter(!tip_label %in% rownames(annotated_tips)) |>
                 pull(tip_label)
             fill_value <- 1 / length(attribute_nms)
@@ -329,43 +333,56 @@ propagated <- bplapply(
             )
         }
         
-        
         tree <- ape::drop.tip(phy = tree, tip = remove_gn_tips)
         input_matrix <- rbind(annotated_tips, no_annotated_tips)
         input_matrix <- input_matrix[tree$tip.label,]
         
         
-        models <- c(ER = 'ER', ARD = 'ARD', SYM = 'SYM')
-        fittedModels <- map(models, ~ {
-            message('Fitting ', .x)
-            start_time <- Sys.time()
-            message(start_time)
-            if (.x == 'ER') {
-                r <- fitMk(
-                    tree = tree, x = input_matrix, model = .x,
-                    pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
-                )
-            } else {
-                r <- fitMk.parallel(
-                    tree = tree, x = input_matrix, model = .x,
-                    pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE,
-                    ncores = n_cores
-                )
-           }
-           end_time <- Sys.time()
-           elapsed_time <- difftime(end_time, start_time)
-           message('fitting model took like ', elapsed_time)
-           return(r)
-       })
-       
-       bestModel <- names(sort(aic.w(aic = map_dbl(fittedModels, AIC)), decreasing = TRUE))[1]
-       asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
+        # models <- c(ER = 'ER', ARD = 'ARD') # let's exclude SYM for a while
+        # fittedModels <- map(models, ~ {
+        #     message('Fitting ', .x, ' for ', phys_name)
+        #     start_time <- Sys.time()
+        #     message(start_time)
+        #     if (.x == 'ER') {
+        #         r <- fitMk(
+        #             tree = tree, x = input_matrix, model = .x,
+        #             pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
+        #         )
+        #     } else {
+        #         r <- fitMk.parallel(
+        #             tree = tree, x = input_matrix, model = .x,
+        #             pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE,
+        #             ncores = n_cores
+        #         )
+        #     }
+        #     end_time <- Sys.time()
+        #     elapsed_time <- difftime(end_time, start_time)
+        #     message('fitting model took like ', elapsed_time)
+        #     return(r)
+        # })
+        
+        # bestModel <- fittedModels |> 
+        #     map_dbl(AIC) |> 
+        #     aic.w() |> 
+        #     sort(decreasing = TRUE) |> 
+        #     names() |> 
+        #     {\(y) y[1]}()
+        
+        # asr <- ancr(fittedModels[[bestModel]], tips = TRUE)
+        
+        
+        fit <- fitMk(
+            tree = tree, x = input_matrix, model = 'ER',
+            pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE
+        )
+        asr <- ancr(fit, tips = TRUE)
+        
         res <- asr$ace |> 
             as.data.frame() |> 
-            mutate(label = c(tree$tip.label, tree$node.label)) |> # Use this instead of rownames_to_colmn because labels are lost in res$ace
+            mutate(label = c(tree$tip.label, tree$node.label)) |>
             filter(!grepl('^n\\d+$', label)) |> 
             filter(label != 'NA') |> 
-            filter(!label %in% rownames(annotated_tips)) # this also remove all remaining genus tips # this correspond to original annotations so the will be in the sources
+            filter(!label %in% rownames(annotated_tips)) # this removes all genus annotations in the tree. They are already in the sources
         res_tips_df <- res |>
             as.data.frame() |>
             filter(!grepl('^\\d+(\\+\\d+)*$', label)) |> 
@@ -376,7 +393,7 @@ propagated <- bplapply(
             rename(node_label = label)
         
         ## Get annotations for tips and nodes
-        new_tips_data <- tip_data |>
+        new_tips_data <- ltp$tip_data |>
             filter(tip_label %in% unique(res_tips_df$tip_label)) |>
             select(tip_label, taxid, Taxon_name, Rank) |>
             group_by(taxid) |>
@@ -410,7 +427,7 @@ propagated <- bplapply(
             ) |>
             select(-tip_label)
         
-        new_nodes_data <- node_data |>
+        new_nodes_data <- ltp$node_data |>
             filter(node_label %in% unique(res_nodes_df$node_label)) |>
             select(node_label, taxid, Taxon_name, Rank) |>
             left_join(res_nodes_df, by = 'node_label') |>
@@ -462,12 +479,12 @@ propagated <- bplapply(
         )
         
         ## Add annotations from sources
-        ncbi_tree$Do(function(node) {
-            if (node$name %in% names(node_list))
-                node$attribute_tbl <- node_list[[node$name]]
-        })
-       
-        ## Add annotatiosn from ASR 
+        # ncbi_tree$Do(function(node) {
+        #     if (node$name %in% names(node_list))
+        #         node$attribute_tbl <- node_list[[node$name]]
+        # })
+        
+        ## Add annotations from ASR 
         ncbi_tree$Do(function(node) {
             cond1 <- node$name %in% names(new_taxa_for_ncbi_tree_list)
             cond2 <- is.null(node$attribute_tbl) || all(is.na(node$attribute_tbl))
@@ -476,35 +493,35 @@ propagated <- bplapply(
             }
         })
         
-        ncbi_tree$Do(function(nd) inh1(node = nd, adjF = 0.1, evidence_label = 'inh2'), traversal = 'pre-order')
+        ## Inheritance comes from either tax or asr
+        ncbi_tree$Do(
+            fun = function(nd) inh1(nd, adjF = 0.1, evidence_label = 'inh'),
+            traversal = 'pre-order'
+        )
         
-        result <- ncbi_tree$Get(
+        # min_thr <- 1 / length(attribute_nms)
+        
+        inh_dat <- ncbi_tree$Get(
             attribute = 'attribute_tbl', simplify = FALSE,
             filterFun = function(node) {
-                node$name != 'ArcBac' && !is.null(node$attribute_tbl)
-                # grepl('^gst__', node$name)
+                grepl('^[gst]__', node$name) && !is.null(node$attribute_tbl)
                 
             }
         ) |>
             bind_rows() |>
-            discard(~ all(is.na(.x)))
+            discard(~ all(is.na(.x))) |> 
+            filter(Evidence == 'inh') |> 
+            filter(!NCBI_ID %in% unique(dat$NCBI_ID))
         
-        min_thr <- 1 / length(unique(dat$Attribute))
-        
-        final_result <- bind_rows(
+        result <- bind_rows(
             dat, # contains source and tax
             new_taxa_for_ncbi_tree, # only contains asr (not in new_dat)
-            filter(result, Evidence == 'inh2')
-        ) |>
-            filter(Score > min_thr)
+            inh_dat
+        )
         ncbi_tree$Do(cleanNode)
-        return(final_result)
+        return(result)
     }
 )
-
-if (all(c('genus', 'species', 'strain') %in% rank_var)) {
-    rank_var <- 'all'
-}
 
 # propagated <- list(Fold1 = final_result)
 
@@ -521,26 +538,26 @@ if (all(!lgl_vct)) {
 propagated <- propagated[which(lgl_vct)]
 
 msg <- paste0(
-    'Saving test sets for ', phys_name, ' ', rank_var, '.'
+    'Saving test sets for ', phys_name, ' ', rank_arg, '.'
 )
 log_print(msg)
-for (i in seq_along(folds$test_sets)) {
-    fold_n <- names(folds$test_sets)[i]
-    fname <- paste0(phys_name, '_test_', rank_var, '_', fold_n, '.csv')
+for (i in seq_along(testFolds)) {
+    fold_n <- names(testFolds)[i]
+    fname <- paste0(phys_name, '_test_', rank_arg, '_', fold_n, '.csv')
     fname <- gsub(" ", "_", fname)
     write.csv(
-        x = folds$test_sets[[i]], file = fname, row.names = FALSE,
+        x = testFolds[[i]], file = fname, row.names = FALSE,
         quote = TRUE
     )
 }
 
 msg <- paste0(
-    'Saving training sets for ', phys_name, ' ', rank_var, '.'
+    'Saving training sets for ', phys_name, ' ', rank_arg, '.'
 )
 log_print(msg)
 for (i in seq_along(propagated)) {
     fold_n <- names(propagated)[i]
-    fname <- paste0(phys_name, '_propagated_', rank_var, '_', fold_n, '.csv')
+    fname <- paste0(phys_name, '_propagated_', rank_arg, '_', fold_n, '.csv')
     fname <- gsub(" ", "_", fname)
     write.csv(
         x = propagated[[i]], file = fname, row.names = FALSE,
@@ -549,8 +566,9 @@ for (i in seq_along(propagated)) {
 }
 
 msg <- paste0(
-    'Propagation workflow finished for ', phys_name, '. Rank: ', rank_var, '.',
+    'Propagation workflow finished for ', phys_name, '. Rank: ', rank_arg, '.',
     ' Finished at ', Sys.time(), '.'
 )
 log_print(msg, blank_after = TRUE)
 log_close()
+
