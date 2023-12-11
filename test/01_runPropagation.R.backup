@@ -279,36 +279,6 @@ for (i in seq_along(propagated)) {
         return(per_annotated_tips)
     }
     
-    ncbi_tree$Do(function(node) {
-        if (node$name %in% names(node_list))
-            node$attribute_tbl <- node_list[[node$name]]
-    })
-    
-    ncbi_tree$Do(
-        function(node) {
-            taxPool(
-                node = node,
-                grp = attribute_group,
-                typ = attribute_type)
-        },
-        traversal = 'post-order'
-    )
-    ncbi_tree$Do(inh1, traversal = 'pre-order')
-    
-    
-    
-    new_dat <- ncbi_tree$Get(
-        'attribute_tbl', filterFun = function(node) {
-            grepl('^[gst]__', node$name)
-        }
-    ) |>
-        discard(~ all(is.na(.x))) |>
-        bind_rows() |>
-        arrange(NCBI_ID, Attribute) |>
-        filter(!NCBI_ID %in% dat$NCBI_ID) |>
-        bind_rows(dat)
-    dat <- new_dat
-    
     tip_data_annotated <- left_join(
         x = ltp$tip_data,
         y = select(dat, taxid, Attribute, Score),
@@ -502,7 +472,11 @@ for (i in seq_along(propagated)) {
         new_taxa_for_ncbi_tree, factor(new_taxa_for_ncbi_tree$NCBI_ID)
     )
     
-
+    ## Add annotations from sources
+    # ncbi_tree$Do(function(node) {
+    #     if (node$name %in% names(node_list))
+    #         node$attribute_tbl <- node_list[[node$name]]
+    # })
     
     ## Add annotations from ASR 
     ncbi_tree$Do(function(node) {
