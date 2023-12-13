@@ -4,15 +4,15 @@ library(dplyr)
 library(tidyr)
 library(mltools)
 
-physName <- 'habitat'
+physName <- 'width'
 
 listFiles <- function(phys_name = NULL) {
     phys_name <- gsub(' ', '_', phys_name)
     wd <- getwd()
-    if (grepl('method2', wd)) {
+    if (grepl('method3', wd)) {
         physFileNames <- list.files(pattern = 'csv', full.names = TRUE)
     } else {
-        physFileNames <- list.files('method2', pattern = 'csv', full.names = TRUE)
+        physFileNames <- list.files('method3', pattern = 'csv', full.names = TRUE)
     }
     if (!is.null(phys_name))
         physFileNames <- sort(grep(phys_name, physFileNames, value = TRUE))

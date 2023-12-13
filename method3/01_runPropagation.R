@@ -298,7 +298,7 @@ propagated <- bplapply(
             },
             traversal = 'post-order'
         )
-        ncbi_tree$Do(inh1, traversal = 'pre-order')
+        # ncbi_tree$Do(inh1, traversal = 'pre-order')
         new_dat <- ncbi_tree$Get(
             'attribute_tbl', filterFun = function(node) {
                 grepl('^[gst]__', node$name)
@@ -506,7 +506,7 @@ propagated <- bplapply(
         final_result <- bind_rows(
             new_dat, # contains source, tax, and inh,
             new_taxa_for_ncbi_tree, # only contains asr (not in new_dat)
-            filter(result, Evidence == 'inh2')
+            filter(result, Evidence == 'inh')
         ) |>
             filter(Score > min_thr)
         ncbi_tree$Do(cleanNode)

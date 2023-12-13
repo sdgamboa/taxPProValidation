@@ -17,39 +17,33 @@ suppressMessages({
     library(ggplot2)
     library(forcats)
     library(BiocParallel)
+    library(VennDiagram)
     library(logr)
 })
 
 logfile <- gsub(" ", "_", paste0("logFile_", args[[1]], "_", args[[2]]))
 lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
 
-phys_name <- args[[1]]
+attribute_group <- args[[1]]
 rank_arg <- args[[2]]
 
-msg <- paste0('Propagating ', phys_name, '. Rank: ', rank_arg)
+msg <- paste0('Propagating ', attribute_group, '. Rank: ', rank_arg)
 log_print(msg, blank_after = FALSE)
 
 msg <- paste0('Starting at ', Sys.time())
 log_print(msg, blank_after = TRUE)
 
-# Set cores ---------------------------------------------------------------
-## Let's remove this paralelization step here
-# n_cores <- parallel::detectCores()
-# if (n_cores <= 16) {
-#     n_cores <- 5
-# } else {
-#     n_cores <- 10
-# }
-# multicoreParam <- MulticoreParam(workers = n_cores)
-# msg <- paste0('Using ', n_cores, ' cores.')
-# log_print(msg, blank_after = TRUE)
-
 # Import tree data --------------------------------------------------------
-## NCBI taxonomy
 data('tree_list')
 ncbi_tree <- as.Node(tree_list)
-
-## LTP tree
+ncbi_gst_nodes <- ncbi_tree$Get(
+    attribute = 'name',
+    filterFun = function(node) {
+        grepl('^[gst]__', node$name)
+    },
+    simplify = TRUE
+) |> 
+    unname()
 ltp <- ltp3()
 tree <- ltp$tree
 
@@ -133,19 +127,17 @@ getNegatives <- function(dat) {
     return(output)
 }
 
-
 # Import and prepare bugphyzz data ----------------------------------------
 if (rank_arg == 'all') {
     rank_var <- c('genus', 'species', 'strain')
 } else {
     rank_var <- rank_arg
 } 
-bp_data <- physiologies(phys_name)[[1]]
+bp_data <- physiologies(attribute_group)[[1]]
 attribute_type <- unique(bp_data$Attribute_type)
-attribute_group <- unique(bp_data$Attribute_group)
 
 if (attribute_type == 'range' && attribute_group %in% names(THRESHOLDS())) {
-    message('Converting ', phys_name, ' from range to multistate-intersection.')
+    message('Converting ', attribute_group, ' from range to multistate-intersection.')
     res <- rangeToLogicalThr(bp_data, THRESHOLDS()[[attribute_group]])
     res$Attribute_type <- 'multistate-intersection'
     bp_data <- res
@@ -262,8 +254,6 @@ if (attribute_type == 'binary') {
     folds <- list(test_sets = test_sets) # convert to list just to make it compatible with export code (below)
 }
 
-
-
 propagated <- vector('list', length(phys_data_ready))
 for (i in seq_along(propagated)) {
     dat <- phys_data_ready[[i]]
@@ -272,42 +262,73 @@ for (i in seq_along(propagated)) {
         unique()
     
     node_list <- split(dat, factor(dat$NCBI_ID))
-    per_annotated_tips <- 
-        round(mean(unique(dat$NCBI_ID) %in% tree$tip.label) * 100)
-    if (per_annotated_tips < 1) {
-        message('Not enough annotations for ASR for ', attribute_group)
-        return(per_annotated_tips)
-    }
+    
+    tipVar <- ltp$tip_data$NCBI_ID |> 
+        {\(y) y[!is.na(y)]}() |> 
+        unique()
+    
+    setsForVenn <- list(
+        ncbiSet = ncbi_gst_nodes,
+        ltpSet = tipVar,
+        sourceSet = names(node_list)
+    )
+    vennFileName <- paste0(attribute_group, '_venn_befTax_Fold', i, '.png')
+    venn_plot <- venn.diagram(
+        x = setsForVenn, disable.logging = TRUE, filename = vennFileName,
+        imagetype = "png"
+    )
     
     ncbi_tree$Do(function(node) {
         if (node$name %in% names(node_list))
             node$attribute_tbl <- node_list[[node$name]]
     })
     
-    ncbi_tree$Do(
-        function(node) {
-            taxPool(
-                node = node,
-                grp = attribute_group,
-                typ = attribute_type)
-        },
-        traversal = 'post-order'
+    # ncbi_tree$Do(
+    #     function(node) {
+    #         taxPool(
+    #             node = node,
+    #             grp = attribute_group,
+    #             typ = attribute_type)
+    #     },
+    #     traversal = 'post-order'
+    # )
+    # 
+    # tax_dat <- ncbi_tree$Get(
+    #     'attribute_tbl', filterFun = function(node) {
+    #         grepl('^[gst]__', node$name)
+    #     }
+    # ) |>
+    #     discard(~ all(is.na(.x))) |>
+    #     bind_rows() |>
+    #     arrange(NCBI_ID, Attribute) |>
+    #     filter(Evidence %in% c('tax'))
+    
+    # dat <- bind_rows(dat, tax_dat) 
+    
+    setsForVenn <- list(
+        ncbiSet = ncbi_gst_nodes,
+        ltpSet = tipVar,
+        sourceSet = unique(dat$NCBI_ID)
     )
-    ncbi_tree$Do(inh1, traversal = 'pre-order')
+    vennFileName <- paste0(attribute_group, '_venn_aftTax_Fold', i, '.png')
+    venn_plot <- venn.diagram(
+        x = setsForVenn, disable.logging = TRUE, filename = vennFileName,
+        imagetype = "png"
+    )
     
+    perTips <- round(mean(tipVar %in% unique(dat$NCBI_ID)) * 100)
+    msg <- paste0('Percentage of tips annotated: ', perTips, '%')
+    log_print(msg, blank_after = TRUE)
     
+    perAnn <- round(mean(unique(dat$NCBI_ID) %in% tipVar) * 100)
+    msg <- paste0('Percentage of annotated taxa used: ', perAnn, '%')
+    log_print(msg, blank_after = TRUE)
     
-    new_dat <- ncbi_tree$Get(
-        'attribute_tbl', filterFun = function(node) {
-            grepl('^[gst]__', node$name)
-        }
-    ) |>
-        discard(~ all(is.na(.x))) |>
-        bind_rows() |>
-        arrange(NCBI_ID, Attribute) |>
-        filter(!NCBI_ID %in% dat$NCBI_ID) |>
-        bind_rows(dat)
-    dat <- new_dat
+    if (perTips < 1) {
+        message('Not enough annotations for ASR for ', attribute_group)
+        propagated[[i]] <- perTips
+        names(propagated)[i] <- names(phys_data_ready)[i]
+    }
     
     tip_data_annotated <- left_join(
         x = ltp$tip_data,
@@ -369,9 +390,9 @@ for (i in seq_along(propagated)) {
     input_matrix <- input_matrix[tree$tip.label,]
     
     
-    models <- c(ER = 'ER', ARD = 'ARD', SYM = 'SYM') 
+    models <- c(ER = 'ER', ARD = 'ARD', SYM = 'SYM')
     fittedModels <- map(models, ~ {
-        message('Fitting ', .x, ' for ', phys_name)
+        message('Fitting ', .x, ' for ', attribute_group)
         start_time <- Sys.time()
         message(start_time)
         if (.x == 'ER') {
@@ -383,7 +404,7 @@ for (i in seq_along(propagated)) {
             r <- fitMk.parallel(
                 tree = tree, x = input_matrix, model = .x,
                 pi = 'fitzjohn', lik.func = 'pruning', logscale = TRUE,
-                ncores = 20 
+                ncores = 10 
             )
         }
         end_time <- Sys.time()
@@ -502,8 +523,6 @@ for (i in seq_along(propagated)) {
         new_taxa_for_ncbi_tree, factor(new_taxa_for_ncbi_tree$NCBI_ID)
     )
     
-
-    
     ## Add annotations from ASR 
     ncbi_tree$Do(function(node) {
         cond1 <- node$name %in% names(new_taxa_for_ncbi_tree_list)
@@ -534,9 +553,9 @@ for (i in seq_along(propagated)) {
         filter(!NCBI_ID %in% unique(dat$NCBI_ID))
     
     result <- bind_rows(
-        dat, # contains source and tax
-        new_taxa_for_ncbi_tree, # only contains asr (not in new_dat)
-        inh_dat
+        dat, # contains source and tax (tax comes preparation)
+        new_taxa_for_ncbi_tree, # only contains asr
+        inh_dat  # contains inheritance
     )
     ncbi_tree$Do(cleanNode)
     names(propagated)[i] <- names(phys_data_ready)[i]
@@ -546,7 +565,7 @@ for (i in seq_along(propagated)) {
 lgl_vct <- map_lgl(propagated, is.data.frame)
 if (all(!lgl_vct)) {
     msg <- paste0(
-        'Not enough data for ASR for ', phys_name, '. Rank:', rank_var, '.',
+        'Not enough data for ASR for ', attribute_group, '. Rank:', rank_var, '.',
         ' Quitting R script. Finishing at ', Sys.time(), '.'
     )
     log_print(msg, blank_after = TRUE)
@@ -556,12 +575,12 @@ if (all(!lgl_vct)) {
 propagated <- propagated[which(lgl_vct)]
 
 msg <- paste0(
-    'Saving test sets for ', phys_name, ' ', rank_arg, '.'
+    'Saving test sets for ', attribute_group, ' ', rank_arg, '.'
 )
 log_print(msg)
 for (i in seq_along(testFolds)) {
     fold_n <- names(testFolds)[i]
-    fname <- paste0(phys_name, '_test_', rank_arg, '_', fold_n, '.csv')
+    fname <- paste0(attribute_group, '_test_', rank_arg, '_', fold_n, '.csv')
     fname <- gsub(" ", "_", fname)
     write.csv(
         x = testFolds[[i]], file = fname, row.names = FALSE,
@@ -570,12 +589,12 @@ for (i in seq_along(testFolds)) {
 }
 
 msg <- paste0(
-    'Saving training sets for ', phys_name, ' ', rank_arg, '.'
+    'Saving training sets for ', attribute_group, ' ', rank_arg, '.'
 )
 log_print(msg)
 for (i in seq_along(propagated)) {
     fold_n <- names(propagated)[i]
-    fname <- paste0(phys_name, '_propagated_', rank_arg, '_', fold_n, '.csv')
+    fname <- paste0(attribute_group, '_propagated_', rank_arg, '_', fold_n, '.csv')
     fname <- gsub(" ", "_", fname)
     write.csv(
         x = propagated[[i]], file = fname, row.names = FALSE,
@@ -584,9 +603,8 @@ for (i in seq_along(propagated)) {
 }
 
 msg <- paste0(
-    'Propagation workflow finished for ', phys_name, '. Rank: ', rank_arg, '.',
+    'Propagation workflow finished for ', attribute_group, '. Rank: ', rank_arg, '.',
     ' Finished at ', Sys.time(), '.'
 )
 log_print(msg, blank_after = TRUE)
 log_close()
-
