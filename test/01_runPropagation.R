@@ -1,6 +1,6 @@
 
 # args <- commandArgs(trailingOnly = TRUE)
-args <- list('width', 'all')
+args <- list('habitat', 'all')
 
 suppressMessages({
     library(bugphyzz)
@@ -65,7 +65,7 @@ getFolds <- function(dat, k_value = 10, seed = 1234) {
     return(output)
 }
 
-getNegatives <- function(dat) {
+getNegatives <- function(dat, ncbi_nodes) {
     ranks <- unique(dat$Rank)
     atgrp <- unique(dat$Attribute_group)
     attyp <- unique(dat$Attribute_type)
@@ -166,8 +166,8 @@ if (attribute_type == 'binary') {
         message('Not enough data for validation')
         quit(save = 'no')
     }
-    folds <- getFolds10(set_with_ids)
-    folds$test_sets <- map(folds$test_sets, ~ bind_rows(.x, getNegatives(.x)))
+    folds <- getFolds(set_with_ids)
+    folds$test_sets <- map(folds$test_sets, ~ bind_rows(.x, getNegatives(.x, ncbi_nodes = ncbi_gst_nodes)))
     set_without_ids <- getSetWithoutIDs(
         filtered_bp_data, set_with_ids = set_with_ids
     ) |>
