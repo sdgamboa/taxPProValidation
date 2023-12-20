@@ -68,7 +68,7 @@ for (i in seq_along(predSets)) {
 ## Plot ####
 plotList <- map2(testSets, predSets, plot)
 p <- ggarrange(plotlist = plotList, ncol = 5, nrow = 2)
-ggsave(filename = 'growth_temperature.png', plot = p, width = 15, height = 8, units = 'in')
+ggsave(filename = 'growth_temperature.png', plot = p, width = 12, height = 6, units = 'in')
 
 ## Metrics ####
 summaryDat <- map2(testSets, predSets, calcMetrics) |> 
