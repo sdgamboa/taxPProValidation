@@ -41,6 +41,7 @@ valuesDat <- left_join(tip_data, dat, by = c('taxid' = 'NCBI_ID')) |>
 colnames(valuesDat) <- c('taxa', 'trait1')
 
 ## Create folds
+set.seed(1234)
 foldN <- cvFolds(n = nrow(valuesDat), K = 10)
 testSets <- vector('list', 10)
 trainSets <- vector('list', 10)
