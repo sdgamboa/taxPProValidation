@@ -27,10 +27,17 @@ lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
 attribute_group <- args[[1]]
 rank_arg <- args[[2]]
 
+if (rank_arg == 'all') {
+    ## rank_arg will be used for naming the output text files.
+    rank_var <- c('genus', 'species', 'strain')
+} else {
+    rank_var <- rank_arg
+} 
+
 msg <- paste0('Propagating ', attribute_group, '. Rank: ', rank_arg)
 log_print(msg, blank_after = FALSE)
 
-msg <- paste0('Starting at ', Sys.time())
+msg <- paste0('Starting time: ', Sys.time())
 log_print(msg, blank_after = TRUE)
 
 # Import tree data --------------------------------------------------------
@@ -44,7 +51,7 @@ ncbi_gst_nodes <- ncbi_tree$Get(
     simplify = TRUE
 ) |> 
     unname()
-ltp <- ltp3()
+ltp <- ltp()
 tree <- ltp$tree
 
 # Define functions --------------------------------------------------------
@@ -128,11 +135,7 @@ getNegatives <- function(dat, ncbi_nodes) {
 }
 
 # Import and prepare bugphyzz data ----------------------------------------
-if (rank_arg == 'all') {
-    rank_var <- c('genus', 'species', 'strain')
-} else {
-    rank_var <- rank_arg
-} 
+
 bp_data <- physiologies(attribute_group)[[1]]
 attribute_type <- unique(bp_data$Attribute_type)
 
