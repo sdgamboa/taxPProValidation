@@ -104,4 +104,11 @@ outputDat <- do.call('cbind', list(d1, d2, stats)) |>
         RMSE_mean, RMSE_sd
     )
 
+
+histList <- map(predSets, ~ {
+    .x |> 
+        ggplot(aes(metadata_NSTI)) +
+        geom_histogram()
+})
+
 write.table(outputDat, file = 'growth_temperature.tsv', sep = '\t', quote = FALSE, row.names = FALSE)
