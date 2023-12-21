@@ -1,0 +1,2 @@
+phys	R_squared_mean	R_squared_sd	MSE_mean	MSE_sd	RMSE_mean	RMSE_sd	mean_real_values	min_real_values	max_real_values	sd_real_values
+coding_genes	0.731	0.038	706738.125	217633.086	832.958	119.81	3482.58592132505	476	14018	1620.68393105728

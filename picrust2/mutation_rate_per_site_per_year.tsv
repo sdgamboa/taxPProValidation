@@ -1,0 +1,2 @@
+phys	R_squared_mean	R_squared_sd	MSE_mean	MSE_sd	RMSE_mean	RMSE_sd	mean_real_values	min_real_values	max_real_values	sd_real_values
+mutation_rate_per_site_per_year	-181.833	491.188	331.583	892.58	10.826	15.434	8.83037037037037	0.07	102	19.7595378102053

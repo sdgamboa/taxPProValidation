@@ -1,0 +1,2 @@
+phys	R_squared_mean	R_squared_sd	MSE_mean	MSE_sd	RMSE_mean	RMSE_sd	mean_real_values	min_real_values	max_real_values	sd_real_values
+genome_size	0.724	0.033	974936121467.766	236471761220.106	981659.091	111960.067	3919077.54558011	580076	16040666	1895143.79059185
