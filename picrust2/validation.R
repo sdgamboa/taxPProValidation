@@ -28,8 +28,9 @@ calcMetrics <- function(testSet, predSet) {
     rmse <- sqrt(mse)
     mae <- mean(abs(predicted_values - actual_values))
     
-    ss_total <- sum((actual_values - mean(actual_values))^2)
-    ss_residual <- sum((actual_values - predicted_values)^2)
+    ## use lm
+    ss_total <- sum( (actual_values - mean(actual_values))^2 )
+    ss_residual <- sum( (actual_values - predicted_values)^2 )
     r_squared <- 1 - (ss_residual / ss_total)
     
     mape <- mean(abs((actual_values - predicted_values) / actual_values)) * 100
