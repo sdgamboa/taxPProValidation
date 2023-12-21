@@ -1,3 +1,7 @@
+
+args <- commandArgs(trailingOnly = TRUE)
+physName <- args[[1]]
+
 library(taxPPro)
 library(dplyr)
 library(purrr)
@@ -51,7 +55,7 @@ plot <- function(testSet, predSet) {
 
 ## Read files ####
 testSetsF <- list.files('test_folds', full.names = TRUE)
-testSetsF <- grep('growth_temperature', testSetsF, value = TRUE)
+testSetsF <- grep(paste0('\\b', physName, '_test'), testSetsF, value = TRUE)
 testSets <- vector('list', length(testSetsF))
 for (i in seq_along(testSets)) {
     ## the extension of the files is csv, but they're actually tsv
@@ -59,7 +63,7 @@ for (i in seq_along(testSets)) {
 }
 
 predSetsF <- list.files('predicted', full.names = TRUE)
-predSetsF <- grep('growth_temperature', predSetsF, value = TRUE)
+predSetsF <- grep(paste0('\\b', physName, '_train'), predSetsF, value = TRUE)
 predSets <- vector('list', length(predSetsF))
 for (i in seq_along(predSets)) {
     predSets[[i]] <- readr::read_tsv(predSetsF[[i]], show_col_types = FALSE)
@@ -69,7 +73,7 @@ for (i in seq_along(predSets)) {
 ## Plot ####
 plotList <- map2(testSets, predSets, plot)
 p <- ggarrange(plotlist = plotList, ncol = 5, nrow = 2)
-ggsave(filename = 'growth_temperature.png', plot = p, width = 12, height = 6, units = 'in')
+ggsave(filename = paste0(physName, '.png'), plot = p, width = 12, height = 6, units = 'in')
 
 ## Metrics ####
 summaryDat <- map2(testSets, predSets, calcMetrics) |> 
@@ -98,17 +102,16 @@ d2 <- as.data.frame(matrix(data = summaryDat$sd, nrow = 1))
 colnames(d2) <- paste0(summaryDat$Metric, '_sd')
    
 outputDat <- do.call('cbind', list(d1, d2, stats)) |> 
-    mutate(phys = 'growth_temperature') |> 
+    mutate(phys = physName) |> 
     relocate(
         phys, R_squared_mean, R_squared_sd, MSE_mean, MSE_sd,
         RMSE_mean, RMSE_sd
     )
 
+#histList <- map(predSets, ~ {
+#    .x |> 
+#        ggplot(aes(metadata_NSTI)) +
+#        geom_histogram()
+#})
 
-histList <- map(predSets, ~ {
-    .x |> 
-        ggplot(aes(metadata_NSTI)) +
-        geom_histogram()
-})
-
-write.table(outputDat, file = 'growth_temperature.tsv', sep = '\t', quote = FALSE, row.names = FALSE)
+write.table(outputDat, file = paste0(physName, '.tsv'), sep = '\t', quote = FALSE, row.names = FALSE)

@@ -1,3 +1,6 @@
+
+args <- commandArgs(trailingOnly = TRUE)
+
 library(taxPPro)
 library(bugphyzz)
 library(ape)
@@ -10,7 +13,8 @@ tip_data <- ltp$tip_data
 node_data <- ltp$node_data
 gn_tips <- ltp$gn_tips
 
-physName <- 'growth temperature'
+physName <- args[[1]]
+physName <- gsub('_', ' ', physName)
 
 gt <- physiologies(physName)[[1]]
 

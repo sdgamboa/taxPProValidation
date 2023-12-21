@@ -6,6 +6,3 @@ do
     hsp.py -n -t LTP_all_08_2023.newick --observed_trait_table train_folds/$i.csv -m scp -o predicted/$i.tsv --processes 1
 done
 
-
-
-#hsp.py -n -t LTP_all_08_2023.newick --observed_trait_table trait_table.tab -m scp -o output.tsv --processes 8
