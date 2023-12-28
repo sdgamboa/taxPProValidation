@@ -13,16 +13,73 @@ seed <- 42342
 phys_name <- 'aerophilicity'
 aer <- physiologies(phys_name)[[1]]
 dat <- getDataReady(filterData(aer))
+# dat <- filter(dat, NCBI_ID %in% unique(tip_data$NCBI_ID))
+dat <- tip_data |> 
+    left_join(dat, by = 'NCBI_ID', relationship = 'many-to-many') |> 
+    # select(tip_label, Attribute, Score) |> 
+    filter(!is.na(Attribute))
+    # {\(y) split(y, y$Attribute)}()
+    # pivot_wider(names_from = 'Attribute', values_from = 'Score', values_fill = 0) |> 
+    # tibble::column_to_rownames(var = 'tip_label') |> 
+    # as.matrix()
+
+keep_ids <- dat |> 
+    filter(!is.na(Taxon_name)) |> 
+    {\(y) split(y, y$Attribute)}() |> 
+    discard(~ nrow(.x) < 10) |> 
+    map(~ unique(pull(.x, NCBI_ID)))
+
+set.seed(seed)
+cv_folds <- map(keep_ids, ~ {cvFolds(n = length(.x), K = 10)})
+
+test_folds <- vector('list', 10)
+train_folds <- vector('list', 10)
+for (i in 1:10) {
+    fold_name <- paste0('Fold', i)
+    test_vct <- vector('list', length(cv_folds))
+    for (j in seq_along(x)) {
+        test_vct[[j]] <- keep_ids[[j]][cv_folds[[j]]$which == i]
+    }
+    test_folds[[i]] <- unique(unlist(test_vct))
+    names(test_folds)[i] <- fold_name
+    train_vct <- vector('list', length(cv_folds))
+    for (j in seq_along(x)) {
+        train_vct[[j]] <- keep_ids[[j]][cv_folds[[j]]$which != i]
+    }
+    train_folds[[i]] <- unique(unlist(train_vct))
+    names(train_folds)[i] <- fold_name
+}
+
+
+
+
+
+fdat <- filter(dat, Attribute %in% keep_attr)
+keep_ncbi <- fdat |> 
+    count(NCBI_ID, wt = Score, name = 'Score') |> 
+    filter(Score == 1) |> 
+    pull(NCBI_ID) |> 
+    unique()
+fdat <- filter(fdat, NCBI_ID %in% keep_ncbi)
+
+
+
+l <- split(fdat, fdat$Attribute) |> 
+    map(~ filter(.x, !is.na(Taxon_name))) |> 
+    map(~ pull(.x, NCBI_ID))
+
+
 
 ltp <- ltp()
 tip_data <- ltp$tip_data
 tree <- ltp$tree
 
-mat <- tip_data |> 
-    left_join(dat, by = 'NCBI_ID', relationship = 'many-to-many') |> 
+dat <- tip_data |> 
+    left_join(fdat, by = 'NCBI_ID', relationship = 'many-to-many') |> 
     select(tip_label, Attribute, Score) |> 
     filter(!is.na(Attribute)) |> 
-    pivot_wider(names_from = 'Attribute', values_from = 'Score') |> 
+    # {\(y) split(y, y$Attribute)}()
+    pivot_wider(names_from = 'Attribute', values_from = 'Score', values_fill = 0) |> 
     tibble::column_to_rownames(var = 'tip_label') |> 
     as.matrix()
 
@@ -34,7 +91,14 @@ train_folds <- vector('list', 10)
 for (i in 1:10) {
     fold_name <- paste0('Fold', i)
     names(test_folds)[i] <- fold_name
+    
+    
+    
     test_folds[[i]] <- mat[cv_folds$which == i,]
+    
+    
+    
+    
     names(train_folds)[i] <- fold_name
     train_folds[[i]] <- mat[cv_folds$which != i,]
 }
