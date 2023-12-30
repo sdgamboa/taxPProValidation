@@ -13,86 +13,90 @@ seed <- 42342
 phys_name <- 'aerophilicity'
 rank_arg <- 'all'
 
+## Tree data (taxPPro) ####
 ltp <- ltp()
 tree <- ltp$tree
 tip_data <- ltp$tip_data
 node_data <- ltp$node_data
 
+## bugphyzz data
 aer <- physiologies(phys_name)[[1]]
-dat <- getDataReady(filterData(aer)) 
-fdat <- filter(dat, NCBI_ID %in% unique(tip_data$NCBI_ID))
-
+dat <- getDataReady(filterData(aer)) |> 
+    filter(!is.na(Evidence))
+fdat <- dat |> 
+    filter(NCBI_ID %in% unique(tip_data$NCBI_ID)) |> 
+    filter(!duplicated(NCBI_ID))
+remove_ids <- split(fdat, fdat$Attribute) |> 
+    keep(~ nrow(.x) < 10) |> 
+    map(~ pull(.x, NCBI_ID)) |> 
+    unlist() |> 
+    unique()
+fdat <- filter(fdat, !NCBI_ID %in% remove_ids)
 keep_ids <- fdat |> 
-    filter(!is.na(Taxon_name)) |> 
+    select(NCBI_ID, Attribute) |> 
+    filter(!duplicated(NCBI_ID)) |>
     {\(y) split(y, y$Attribute)}() |> 
     discard(~ nrow(.x) < 10) |> 
     map(~ unique(pull(.x, NCBI_ID)))
 
-
-
-
-
-
-
-
-
-
-# dat <- filter(dat, NCBI_ID %in% unique(tip_data$NCBI_ID))
-dat <- tip_data |> 
-    left_join(dat, by = 'NCBI_ID', relationship = 'many-to-many') |> 
-    # select(tip_label, Attribute, Score) |> 
-    filter(!is.na(Attribute))
-    # {\(y) split(y, y$Attribute)}()
-    # pivot_wider(names_from = 'Attribute', values_from = 'Score', values_fill = 0) |> 
-    # tibble::column_to_rownames(var = 'tip_label') |> 
-    # as.matrix()
-
-keep_ids <- dat |> 
-    filter(!is.na(Taxon_name)) |> 
-    {\(y) split(y, y$Attribute)}() |> 
-    discard(~ nrow(.x) < 10) |> 
-    map(~ unique(pull(.x, NCBI_ID)))
-
+## Create folds ####
+keep_ids <- split(fdat, fdat$Attribute)
 set.seed(seed)
-cv_folds <- map(keep_ids, ~ {cvFolds(n = length(.x), K = 10)})
+cv_folds <- map(keep_ids, ~ cvFolds(n = nrow(.x), K = 10))
 
 test_folds <- vector('list', 10)
 train_folds <- vector('list', 10)
 for (i in 1:10) {
     fold_name <- paste0('Fold', i)
-    test_vct <- vector('list', length(cv_folds))
-    for (j in seq_along(x)) {
-        test_vct[[j]] <- keep_ids[[j]][cv_folds[[j]]$which == i]
+    
+    test_dfs <- vector('list', length(cv_folds))
+    for (j in seq_along(cv_folds)) {
+        test_dfs[[j]] <- keep_ids[[j]][cv_folds[[j]]$which == i,]
     }
-    test_folds[[i]] <- unique(unlist(test_vct))
+    # test_folds[[i]] <- filter(fdat, NCBI_ID %in% unique(unlist(test_vct)))
+    test_folds[[i]] <- bind_rows(test_dfs)
     names(test_folds)[i] <- fold_name
-    train_vct <- vector('list', length(cv_folds))
-    for (j in seq_along(x)) {
-        train_vct[[j]] <- keep_ids[[j]][cv_folds[[j]]$which != i]
+    
+    train_dfs <- vector('list', length(cv_folds))
+    for (j in seq_along(cv_folds)) {
+        train_dfs[[j]] <- keep_ids[[j]][cv_folds[[j]]$which != i,]
     }
-    train_folds[[i]] <- unique(unlist(train_vct))
+    train_folds[[i]] <- bind_rows(train_dfs)
+    # train_folds[[i]] <- filter(fdat, NCBI_ID %in% unique(unlist(train_vct)))
+    # train_folds[[i]]
     names(train_folds)[i] <- fold_name
 }
 
-fdat <- filter(dat, Attribute %in% keep_attr)
-keep_ncbi <- fdat |> 
-    count(NCBI_ID, wt = Score, name = 'Score') |> 
-    filter(Score == 1) |> 
-    pull(NCBI_ID) |> 
-    unique()
-fdat <- filter(fdat, NCBI_ID %in% keep_ncbi)
+## Check that none of the ids in the test sets are in the train sets
+map2_lgl(test_folds, train_folds, ~ any(.x$NCBI_ID %in% .y$NCBI_ID))
+
+## Create input matrix for tree
+known_priors <- vector('list', length(train_folds))
+for (i in seq_along(train_folds)) {
+    names(known_priors)[i] <- paste0('Fold', i)
+    known_priors[[i]] <- tip_data |> 
+        left_join(
+            train_folds[[i]], by = 'NCBI_ID', relationship = 'many-to-many'
+        ) |> 
+        filter(!is.na(Attribute)) |> 
+        select(tip_label, Attribute, Score) |> 
+        pivot_wider(
+            names_from = 'Attribute', values_from = 'Score', values_fill = 0
+        ) |> 
+        tibble::column_to_rownames(var = 'tip_label') |> 
+        as.matrix()
+}
+
+input_matrix <- vector('list', length(known_priors))
+for (i in seq_along(known_priors)) {
+    
+}
 
 
 
-l <- split(fdat, fdat$Attribute) |> 
-    map(~ filter(.x, !is.na(Taxon_name))) |> 
-    map(~ pull(.x, NCBI_ID))
 
 
 
-ltp <- ltp()
-tip_data <- ltp$tip_data
-tree <- ltp$tree
 
 dat <- tip_data |> 
     left_join(fdat, by = 'NCBI_ID', relationship = 'many-to-many') |> 
