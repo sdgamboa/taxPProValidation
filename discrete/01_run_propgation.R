@@ -1,17 +1,33 @@
 
-library(phytools)
-library(castor)
-library(cvTools)
-library(taxPPro)
-library(bugphyzz)
-library(dplyr)
-library(tidyr)
-library(purrr)
-library(mltools)
+
+args <- commandArgs(trailingOnly = TRUE)
+
+suppressMessages({
+    library(phytools)
+    library(castor)
+    library(cvTools)
+    library(taxPPro)
+    library(bugphyzz)
+    library(dplyr)
+    library(tidyr)
+    library(purrr)
+    library(mltools)
+    library(logr)
+})
+
 
 seed <- 42342
-phys_name <- 'aerophilicity'
-rank_arg <- 'all'
+phys_name <- args[[1]]
+rank_arg <- args[[2]]
+
+logfile <- paste0(phys_name, '_', rank_arg, '_phytools-ltp')
+lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
+
+msg <- paste0('Predicting ', phys_name, '. Rank: ', rank_arg)
+log_print(msg, blank_after = TRUE)
+
+msg <- paste0('Stratint at ', Sys.time())
+log_print(msg, blank_after = TRUE)
 
 ## Tree data (taxPPro) ####
 ltp <- ltp()
@@ -20,9 +36,9 @@ tip_data <- ltp$tip_data
 node_data <- ltp$node_data
 
 ## bugphyzz data
-aer <- physiologies(phys_name)[[1]]
-dat <- getDataReady(filterData(aer)) |> 
-    filter(!is.na(Evidence))
+phys <- physiologies(phys_name)[[1]]
+dat <- getDataReady(filterData(phys)) |> 
+    filter(!is.na(Evidence)) # NA in the evidence column means that an observation was imputed
 fdat <- dat |> 
     filter(NCBI_ID %in% unique(tip_data$NCBI_ID)) |> 
     filter(!duplicated(NCBI_ID))
@@ -32,45 +48,39 @@ remove_ids <- split(fdat, fdat$Attribute) |>
     unlist() |> 
     unique()
 fdat <- filter(fdat, !NCBI_ID %in% remove_ids)
-keep_ids <- fdat |> 
-    select(NCBI_ID, Attribute) |> 
-    filter(!duplicated(NCBI_ID)) |>
-    {\(y) split(y, y$Attribute)}() |> 
-    discard(~ nrow(.x) < 10) |> 
-    map(~ unique(pull(.x, NCBI_ID)))
 
 ## Create folds ####
-keep_ids <- split(fdat, fdat$Attribute)
+keep_this <- split(fdat, fdat$Attribute)
 set.seed(seed)
-cv_folds <- map(keep_ids, ~ cvFolds(n = nrow(.x), K = 10))
+cv_folds <- map(keep_this, ~ cvFolds(n = nrow(.x), K = 10))
 
 test_folds <- vector('list', 10)
 train_folds <- vector('list', 10)
 for (i in 1:10) {
     fold_name <- paste0('Fold', i)
     
+    ## Code for creatint test folds
     test_dfs <- vector('list', length(cv_folds))
     for (j in seq_along(cv_folds)) {
-        test_dfs[[j]] <- keep_ids[[j]][cv_folds[[j]]$which == i,]
+        test_dfs[[j]] <- keep_this[[j]][cv_folds[[j]]$which == i,]
     }
-    # test_folds[[i]] <- filter(fdat, NCBI_ID %in% unique(unlist(test_vct)))
     test_folds[[i]] <- bind_rows(test_dfs)
     names(test_folds)[i] <- fold_name
     
+    ## Code fro creating train folds
     train_dfs <- vector('list', length(cv_folds))
     for (j in seq_along(cv_folds)) {
-        train_dfs[[j]] <- keep_ids[[j]][cv_folds[[j]]$which != i,]
+        train_dfs[[j]] <- keep_this[[j]][cv_folds[[j]]$which != i,]
     }
     train_folds[[i]] <- bind_rows(train_dfs)
-    # train_folds[[i]] <- filter(fdat, NCBI_ID %in% unique(unlist(train_vct)))
-    # train_folds[[i]]
     names(train_folds)[i] <- fold_name
 }
 
 ## Check that none of the ids in the test sets are in the train sets
-map2_lgl(test_folds, train_folds, ~ any(.x$NCBI_ID %in% .y$NCBI_ID))
+## Value here must be TRUE
+all(map2_lgl(test_folds, train_folds, ~ !any(.x$NCBI_ID %in% .y$NCBI_ID)))
 
-## Create input matrix for tree
+## Create input matrix for tree ####
 known_priors <- vector('list', length(train_folds))
 for (i in seq_along(train_folds)) {
     names(known_priors)[i] <- paste0('Fold', i)
@@ -87,168 +97,76 @@ for (i in seq_along(train_folds)) {
         as.matrix()
 }
 
-input_matrix <- vector('list', length(known_priors))
+input_mats <- vector('list', length(known_priors))
 for (i in seq_along(known_priors)) {
-    
+   tips <- tree$tip.label[!tree$tip.label %in% rownames(known_priors[[i]])] 
+   input_mat <- matrix(
+       data = rep(1/ncol(known_priors[[i]]), length(tips) * ncol(known_priors[[i]])),
+       ncol = ncol(known_priors[[i]]),
+       dimnames = list(rownames = tips, colnames = colnames(known_priors[[i]]))
+   )
+   input_mat <- rbind(input_mat, known_priors[[i]])
+   input_mat[tree$tip.label]
+   names(input_mats)[i] <- paste0('Fold', i)
+   input_mats[[i]] <- input_mat
 }
 
-
-
-
-
-
-
-dat <- tip_data |> 
-    left_join(fdat, by = 'NCBI_ID', relationship = 'many-to-many') |> 
-    select(tip_label, Attribute, Score) |> 
-    filter(!is.na(Attribute)) |> 
-    # {\(y) split(y, y$Attribute)}()
-    pivot_wider(names_from = 'Attribute', values_from = 'Score', values_fill = 0) |> 
-    tibble::column_to_rownames(var = 'tip_label') |> 
-    as.matrix()
-
-set.seed(seed)
-cv_folds <- cvFolds(n = nrow(mat), K = 10)
-test_folds <- vector('list', 10)
-train_folds <- vector('list', 10)
-
-for (i in 1:10) {
+## Run prediction/propagation ####
+predictions <- vector('list', length(input_mats))
+for (i in seq_along(input_mats)) {
     fold_name <- paste0('Fold', i)
-    names(test_folds)[i] <- fold_name
-    
-    
-    
-    test_folds[[i]] <- mat[cv_folds$which == i,]
-    
-    
-    
-    
-    names(train_folds)[i] <- fold_name
-    train_folds[[i]] <- mat[cv_folds$which != i,]
-}
-
-myFun <- function(m, td = tip_data, s, tr = tree) {
-    if (isTRUE(!s %in% c('phy', 'cas')))
-        stop('Use cas or phy for s', call. = FALSE)
-    row_names <- td |> 
-        filter(!tip_label %in% rownames(m)) |> 
-        pull(tip_label)
-    if (s == 'phy') {
-        data <- rep(1/ncol(m), length(row_names) * ncol(m))
-    } else if (s == 'cas') {
-        data <- rep(NA, length(row_names) * ncol(m))
-    }
-    output <- matrix(
-        data = data, ncol = ncol(m),
-        dimnames = list(rownames = row_names, colnames = colnames(m))
-    )
-    output <- rbind(output, m)
-    output <- output[tr$tip.label,]
-    return(output)
-}
-
-predicted_phy <- vector('list', 10)
-predicted_cas <- vector('list', 10)
-
-for (i in 1:10) {
-    fold_name <- paste0('Fold', i)
-    message('Predicting states for ', fold_name, ' with phytools.' )
-    system.time({
-        input_phys <- myFun(m = train_folds[[i]], s = 'phy')
-        fit <- fitMk(tree = tree, x = input_phys, model = 'ER', pi = 'equal')
-        res_phy <- ancr(fit, tips = TRUE)$ace
-        rownames(res_phy) <- c(tree$tip.label, tree$node.label)
-        predicted_phy[[i]] <- res_phy
-        names(predicted_phy)[i] <- fold_name
-    })
-    
-    message('Predicting states for ', fold_name, ' with castor.' )
-    system.time({
-        input_cas <- myFun(m = train_folds[[i]], s = 'cas')
-        res_cas <- hsp_mk_model(
-            tree = tree, tip_priors = input_cas, tip_states = NULL,
-            check_input = FALSE, rate_model = 'ER', root_prior = 'flat'
-        )$likelihoods
-        rownames(res_cas) <- c(tree$tip.label, tree$node.label)
-        predicted_cas[[i]] <- res_cas
-        names(predicted_cas)[i] <- fold_name
-    })
-}
-
-getPN <- function(predf, testf) {
-    predf <- predf[rownames(testf),]
-    predf[predf > 0.5] <- 'P' ## becomes character
-    predf[predf != 'P'] <- 'N'
-    pred <- predf |> 
-        as.data.frame() |> 
-        tibble::rownames_to_column(var = 'label') |> 
-        pivot_longer(
-            names_to = 'attribute', values_to = 'predPN', cols = 2:last_col()
-        ) |> 
-        arrange(label, attribute)
+    message('Running predictions for ', fold_name)
+    tim <- system.time({
+        fit <- fitMk(
+            tree = tree, x = input_mats[[i]], model = 'ER', pi = 'equal'
+        )
+        names(predictions)[[i]] <- fold_name
         
-    testf[testf > 0.5] <- 'P'
-    testf[testf != 'P'] <- 'N'
-    test <- testf |> 
+        
+        predictions[[i]] <- ancr(object = fit, tips = TRUE)$ace
+    })
+    log_print(tim, blank_after = FALSE)
+}
+
+## ASR only predictions
+predictions_tips <- vector('list', length(predictions))
+for (i in seq_along(predictions)) {
+    x <- predictions[[i]]
+    x <- x[1:Ntip(tree),]
+    names(predictions_tips)[[i]] <- paste0('Fold', i)
+    predictions_tips[[i]] <- x |> 
         as.data.frame() |> 
-        tibble::rownames_to_column(var = 'label') |> 
+        tibble::rownames_to_column(var = 'tip_label') |> 
         pivot_longer(
-            names_to = 'attribute', values_to = 'testPN', cols = 2:last_col()
+        names_to = 'Attribute', values_to = 'Score', cols = 2:last_col()
         ) |> 
-        arrange(label, attribute)
-    
-    df <- left_join(test, pred, by = c('label', 'attribute')) |> 
-        mutate(TF = case_when(
-            testPN == 'P' & predPN == 'P' ~ 'TP',
-            testPN == 'P' & predPN == 'N' ~ 'FN',
-            testPN == 'N' & predPN == 'N' ~ 'TN',
-            testPN == 'N' & predPN == 'P' ~ 'FP'
-        ))
-    
-    l3 <- split(df, df$attribute) |> 
-        map(~ {count(.x, TF)}) |> 
-        discard(~ nrow(.x) < 4) |> 
-        map( ~ {
-            mcc(
-                TP = pull(filter(.x, TF == 'TP'), n), 
-                FP = pull(filter(.x, TF == 'FP'), n), 
-                TN = pull(filter(.x, TF == 'TN'), n),
-                FN = pull(filter(.x, TF == 'FN'), n),
-            )
-        })
-    data.frame(
-        attribute = names(l3),
-        mcc = unlist(l3, use.names = FALSE)
+        left_join(tip_data, by = 'tip_label')
+}
+
+
+msg <- paste0('Writing files')
+log_print(msg, blank_after = TRUE)
+
+## Write test sets
+for (i in seq_along(test_folds)) {
+    fname <- paste0(
+        phys_name, '_', rank_arg, '_phytools-ltp_test_Fold', i, '.csv'
+    )
+    write.csv(
+        x = test_folds[[i]], file = fname, quote = TRUE, row.names = FALSE
     )
 }
 
-hh <- getPN(predicted_phy[[1]], test_folds[[1]])
-
-phyRes <- vector('list', 10)
-casRes <- vector('list', 10)
-
-for (i in 1:10) {
-    fold_name <- paste0('Fold', i)
-    names(phyRes)[i] <- fold_name
-    phyRes[[i]] <- getPN(predicted_phy[[i]], test_folds[[i]])
-    names(casRes)[i] <- fold_name
-    casRes[[i]] <- getPN(predicted_cas[[i]], test_folds[[i]])
+## Write predicted sets
+for (i in seq_along(predictions_tips)) {
+    fname <- paste0(
+        phys_name, '_', rank_arg, '_phytools-ltp_predicted_Fold', i, '.csv'
+    )
+    write.csv(
+        x = predictions_tips[[i]], file = fname, quote = TRUE, row.names = FALSE
+    )
 }
 
-phyRes |> 
-    bind_rows() |> 
-    group_by(attribute) |> 
-    summarise(
-        mean = mean(mcc),
-        sd = sd(mcc)
-    ) |> 
-    ungroup()
-
-casRes |> 
-    bind_rows() |> 
-    group_by(attribute) |> 
-    summarise(
-        mean = mean(mcc),
-        sd = sd(mcc)
-    ) |> 
-    ungroup()
+msg <- paste0('Script finihsed at ', Sys.time())
+log_print(msg, blank_after = FALSE)
+log_close()
