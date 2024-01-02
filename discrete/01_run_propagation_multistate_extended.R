@@ -1,7 +1,6 @@
 
-
 args <- commandArgs(trailingOnly = TRUE)
-args <- list('aerophilicity', 'all')
+
 suppressMessages({
     library(phytools)
     library(castor)
@@ -32,7 +31,7 @@ lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
 msg <- paste0('Predicting ', phys_name, '. Rank: ', rank_arg)
 log_print(msg, blank_after = TRUE)
 
-msg <- paste0('Strating at ', Sys.time())
+msg <- paste0('Stratint at ', Sys.time())
 log_print(msg, blank_after = TRUE)
 
 ## Tree data (taxPPro) ####
@@ -46,19 +45,10 @@ phys <- physiologies(gsub('_', ' ', phys_name))[[1]]
 dat <- getDataReady(filterData(phys)) |> 
     filter(!is.na(Evidence)) |> # NA in the evidence column means that an observation was imputed 
     filter(Rank %in% rank_var) 
+
 fdat <- dat |> 
     filter(NCBI_ID %in% unique(tip_data$NCBI_ID)) |> 
     filter(!duplicated(NCBI_ID))
-
-if (!nrow(fdat)) {
-    msg <- paste0(
-        'Not enough data for propagation of: ', phys_name, '; rank: ', rank_arg,
-        'Quitting.'
-    )
-    log_print(msg)
-    quit(save = 'no')
-}
-
 remove_ids <- split(fdat, fdat$Attribute) |> 
     keep(~ nrow(.x) < 10) |> 
     map(~ pull(.x, NCBI_ID)) |> 
@@ -68,16 +58,6 @@ fdat <- filter(fdat, !NCBI_ID %in% remove_ids)
 
 ## Create folds ####
 keep_this <- split(fdat, fdat$Attribute)
-
-if (!length(keep_this)) {
-    msg <- paste0(
-        'Not enough data for propagation of: ', phys_name, '; rank: ', rank_arg,
-        'Quitting.'
-    )
-    log_print(msg)
-    quit(save = 'no')
-}
-
 set.seed(seed)
 cv_folds <- map(keep_this, ~ cvFolds(n = nrow(.x), K = 10))
 

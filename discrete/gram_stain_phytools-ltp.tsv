@@ -1,0 +1,4 @@
+physiology	rank	method	attribute	mean	sd
+gram stain	all	phytools-ltp	gram stain negative	0.931506416203771	0.00826395105939291
+gram stain	all	phytools-ltp	gram stain positive	0.91291801443638	0.00843952601558481
+gram stain	all	phytools-ltp	gram stain variable	0.147648814584044	0.10999814395229
