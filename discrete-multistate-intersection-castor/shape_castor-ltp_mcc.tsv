@@ -6,3 +6,17 @@ shape	all	castor-ltp	elliptic	-0.000861727484432139	0.00272502157317285
 shape	all	castor-ltp	filamentous	-0.00488430197411274	0.00516071565828862
 shape	all	castor-ltp	spirillum	0.0495030248861618	0.102881490293947
 shape	all	castor-ltp	tail	0	0
+shape	genus	castor-ltp	bacillus	-0.157795225621037	0.0927717005351558
+shape	genus	castor-ltp	coccobacillus	-0.000952380952380952	0.00301169300968417
+shape	genus	castor-ltp	coccus	0.0973417102996659	0.134198973826665
+shape	genus	castor-ltp	elliptic	-0.00316376102845742	0.0066698808124295
+shape	genus	castor-ltp	filamentous	-0.00549863467275069	0.00731248741502636
+shape	genus	castor-ltp	spirillum	-0.00346230392252278	0.00731836420427248
+shape	species	castor-ltp	bacillus	-0.172297111652696	0.16731405006195
+shape	species	castor-ltp	coccus	0.0484452141651805	0.153197218496623
+shape	species	castor-ltp	spirillum	0	0
+shape	species	castor-ltp	tail	0	0
+shape	strain	castor-ltp	bacillus	-0.293082092711177	0.197034183773696
+shape	strain	castor-ltp	coccus	0.0986229856241685	0.192735250898545
+shape	strain	castor-ltp	filamentous	-0.00763157894736842	0.0122932266956876
+shape	strain	castor-ltp	spirillum	-0.0107463176408983	0.0173085005259123

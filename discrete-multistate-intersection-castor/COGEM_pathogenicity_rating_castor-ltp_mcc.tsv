@@ -2,3 +2,6 @@ physiology	rank	method	attribute	mean	sd
 COGEM pathogenicity rating	all	castor-ltp	COGEM pathogenicity rating 1	0	0
 COGEM pathogenicity rating	all	castor-ltp	COGEM pathogenicity rating 2	0	0
 COGEM pathogenicity rating	all	castor-ltp	COGEM pathogenicity rating 3	0	0
+COGEM pathogenicity rating	species	castor-ltp	COGEM pathogenicity rating 1	0	0
+COGEM pathogenicity rating	species	castor-ltp	COGEM pathogenicity rating 2	0	0
+COGEM pathogenicity rating	species	castor-ltp	COGEM pathogenicity rating 3	0	0

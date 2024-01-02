@@ -2,6 +2,15 @@ physiology	rank	method	attribute	mean_mcc	sd_mcc	ltp_and_bugphyzz	bugphyzz	ltp
 aerophilicity	all	castor-ltp	aerobic	0.1	0.02	8530	10771	23031
 aerophilicity	all	castor-ltp	anaerobic	0.14	0.04	2399	3766	23031
 aerophilicity	all	castor-ltp	facultatively anaerobic	-0.02	0.02	970	1575	23031
+aerophilicity	genus	castor-ltp	aerobic	-0.13	0.09	631	639	23031
+aerophilicity	genus	castor-ltp	anaerobic	-0.02	0.05	392	398	23031
+aerophilicity	genus	castor-ltp	facultatively anaerobic	-0.03	0.05	173	174	23031
+aerophilicity	species	castor-ltp	aerobic	0.08	0.02	7152	8418	23031
+aerophilicity	species	castor-ltp	anaerobic	0.05	0.05	1387	2162	23031
+aerophilicity	species	castor-ltp	facultatively anaerobic	-0.02	0.01	683	901	23031
+aerophilicity	strain	castor-ltp	aerobic	-0.14	0.07	747	1714	23031
+aerophilicity	strain	castor-ltp	anaerobic	0.17	0.09	620	1206	23031
+aerophilicity	strain	castor-ltp	facultatively anaerobic	0.01	0.07	114	500	23031
 arrangement	all	castor-ltp	branched	0	0.01	97	109	23031
 arrangement	all	castor-ltp	cell chain	-0.01	0.02	219	448	23031
 arrangement	all	castor-ltp	cell cluster	0	0.01	97	130	23031
@@ -9,18 +18,53 @@ arrangement	all	castor-ltp	filamentous	-0.01	0.01	24	68	23031
 arrangement	all	castor-ltp	paired cells	-0.02	0.02	376	775	23031
 arrangement	all	castor-ltp	single	0.03	0.09	368	771	23031
 arrangement	all	castor-ltp	tetrads	0	0	28	44	23031
+arrangement	genus	castor-ltp	branched	-0.02	0.03	87	90	23031
+arrangement	genus	castor-ltp	cell chain	0	0	108	109	23031
+arrangement	genus	castor-ltp	cell cluster	0.05	0.18	70	73	23031
+arrangement	genus	castor-ltp	paired cells	0	0	193	194	23031
+arrangement	genus	castor-ltp	single	-0.01	0.02	221	228	23031
+arrangement	species	castor-ltp	cell chain	0	0	78	174	23031
+arrangement	species	castor-ltp	cell cluster	0	0	17	22	23031
+arrangement	species	castor-ltp	filamentous	0	0	24	67	23031
+arrangement	species	castor-ltp	paired cells	0	0	97	322	23031
+arrangement	strain	castor-ltp	branched	-0.01	0.02	10	19	23031
+arrangement	strain	castor-ltp	cell chain	0	0	33	165	23031
+arrangement	strain	castor-ltp	paired cells	0	0	86	259	23031
+arrangement	strain	castor-ltp	single	0.03	0.1	147	526	23031
 biosafety level	all	castor-ltp	biosafety level 1	0.11	0.02	9076	11160	23031
 biosafety level	all	castor-ltp	biosafety level 2	-0.04	0.02	851	1320	23031
 biosafety level	all	castor-ltp	biosafety level 3	0	0	12	15	23031
+biosafety level	species	castor-ltp	biosafety level 1	0.09	0.02	7623	8195	23031
+biosafety level	species	castor-ltp	biosafety level 2	-0.02	0.02	586	717	23031
+biosafety level	strain	castor-ltp	biosafety level 1	0.09	0.07	1453	2965	23031
+biosafety level	strain	castor-ltp	biosafety level 2	-0.05	0.02	265	603	23031
 COGEM pathogenicity rating	all	castor-ltp	COGEM pathogenicity rating 1	0	0	164	489	23031
 COGEM pathogenicity rating	all	castor-ltp	COGEM pathogenicity rating 2	0	0	267	514	23031
 COGEM pathogenicity rating	all	castor-ltp	COGEM pathogenicity rating 3	0	0	19	33	23031
+COGEM pathogenicity rating	species	castor-ltp	COGEM pathogenicity rating 1	0	0	164	489	23031
+COGEM pathogenicity rating	species	castor-ltp	COGEM pathogenicity rating 2	0	0	267	514	23031
+COGEM pathogenicity rating	species	castor-ltp	COGEM pathogenicity rating 3	0	0	19	33	23031
 gram stain	all	castor-ltp	gram stain negative	-0.29	0.03	5515	7508	23031
 gram stain	all	castor-ltp	gram stain positive	-0.19	0.02	3223	4466	23031
 gram stain	all	castor-ltp	gram stain variable	0.01	0.05	130	155	23031
+gram stain	genus	castor-ltp	gram stain negative	0.16	0.05	786	816	23031
+gram stain	genus	castor-ltp	gram stain positive	-0.06	0.12	423	427	23031
+gram stain	genus	castor-ltp	gram stain variable	0	0.01	44	45	23031
+gram stain	species	castor-ltp	gram stain negative	-0.07	0.03	4034	5179	23031
+gram stain	species	castor-ltp	gram stain positive	-0.26	0.02	2502	3237	23031
+gram stain	species	castor-ltp	gram stain variable	-0.01	0	75	85	23031
+gram stain	strain	castor-ltp	gram stain negative	0.11	0.06	695	1513	23031
+gram stain	strain	castor-ltp	gram stain positive	-0.02	0.08	298	802	23031
+gram stain	strain	castor-ltp	gram stain variable	0	0	11	25	23031
 hemolysis	all	castor-ltp	alpha	0	0	94	112	23031
 hemolysis	all	castor-ltp	beta	0	0	131	195	23031
 hemolysis	all	castor-ltp	gamma	0	0	266	345	23031
+hemolysis	species	castor-ltp	alpha	0	0	74	77	23031
+hemolysis	species	castor-ltp	beta	0	0	115	159	23031
+hemolysis	species	castor-ltp	gamma	0	0	201	228	23031
+hemolysis	strain	castor-ltp	alpha	0	0	20	35	23031
+hemolysis	strain	castor-ltp	beta	0	0	16	36	23031
+hemolysis	strain	castor-ltp	gamma	0	0	65	117	23031
 shape	all	castor-ltp	bacillus	-0.11	0.07	1511	2960	23031
 shape	all	castor-ltp	coccobacillus	0	0	35	37	23031
 shape	all	castor-ltp	coccus	0.09	0.12	441	781	23031
@@ -28,6 +72,23 @@ shape	all	castor-ltp	elliptic	0	0	109	122	23031
 shape	all	castor-ltp	filamentous	0	0.01	45	60	23031
 shape	all	castor-ltp	spirillum	0.05	0.1	96	202	23031
 shape	all	castor-ltp	tail	0	0	15	34	23031
+shape	genus	castor-ltp	bacillus	-0.16	0.09	806	840	23031
+shape	genus	castor-ltp	coccobacillus	0	0	35	37	23031
+shape	genus	castor-ltp	coccus	0.1	0.13	292	319	23031
+shape	genus	castor-ltp	elliptic	0	0.01	109	122	23031
+shape	genus	castor-ltp	filamentous	-0.01	0.01	33	36	23031
+shape	genus	castor-ltp	spirillum	0	0.01	53	59	23031
+shape	species	castor-ltp	bacillus	-0.17	0.17	409	1299	23031
+shape	species	castor-ltp	coccus	0.05	0.15	67	203	23031
+shape	species	castor-ltp	spirillum	0	0	26	78	23031
+shape	species	castor-ltp	tail	0	0	15	34	23031
+shape	strain	castor-ltp	bacillus	-0.29	0.2	296	821	23031
+shape	strain	castor-ltp	coccus	0.1	0.19	82	259	23031
+shape	strain	castor-ltp	filamentous	-0.01	0.01	10	18	23031
+shape	strain	castor-ltp	spirillum	-0.01	0.02	17	65	23031
 spore shape	all	castor-ltp	coccus	0	0	26	26	23031
 spore shape	all	castor-ltp	elliptic	0	0	34	34	23031
 spore shape	all	castor-ltp	endospore	0	0	281	689	23031
+spore shape	genus	castor-ltp	coccus	0	0	26	26	23031
+spore shape	genus	castor-ltp	elliptic	0	0	34	34	23031
+spore shape	genus	castor-ltp	endospore	0	0	73	76	23031

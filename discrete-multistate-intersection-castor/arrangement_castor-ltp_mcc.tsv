@@ -6,3 +6,16 @@ arrangement	all	castor-ltp	filamentous	-0.00632883385002743	0.0102469198489056
 arrangement	all	castor-ltp	paired cells	-0.0168198702584963	0.0218724970789727
 arrangement	all	castor-ltp	single	0.0283709215433395	0.0888949001345637
 arrangement	all	castor-ltp	tetrads	0	0
+arrangement	genus	castor-ltp	branched	-0.0187309346974859	0.0307801451160312
+arrangement	genus	castor-ltp	cell chain	0	0
+arrangement	genus	castor-ltp	cell cluster	0.0517564193697858	0.179481192066016
+arrangement	genus	castor-ltp	paired cells	0	0
+arrangement	genus	castor-ltp	single	-0.0108306072214776	0.0228329248416914
+arrangement	species	castor-ltp	cell chain	0	0
+arrangement	species	castor-ltp	cell cluster	0	0
+arrangement	species	castor-ltp	filamentous	0	0
+arrangement	species	castor-ltp	paired cells	0	0
+arrangement	strain	castor-ltp	branched	-0.00666666666666667	0.0210818510677892
+arrangement	strain	castor-ltp	cell chain	0	0
+arrangement	strain	castor-ltp	paired cells	0	0
+arrangement	strain	castor-ltp	single	0.0308606699924184	0.0975900072948533

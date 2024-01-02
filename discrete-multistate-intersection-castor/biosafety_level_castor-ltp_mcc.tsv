@@ -2,3 +2,7 @@ physiology	rank	method	attribute	mean	sd
 biosafety level	all	castor-ltp	biosafety level 1	0.105153871940959	0.0199872773280795
 biosafety level	all	castor-ltp	biosafety level 2	-0.0353872264809833	0.01752168018853
 biosafety level	all	castor-ltp	biosafety level 3	-0.000418496651032232	0.000696196471144192
+biosafety level	species	castor-ltp	biosafety level 1	0.0869522686235672	0.0199875199425268
+biosafety level	species	castor-ltp	biosafety level 2	-0.0232922522137836	0.017368675523871
+biosafety level	strain	castor-ltp	biosafety level 1	0.0892408554545436	0.0662427629100596
+biosafety level	strain	castor-ltp	biosafety level 2	-0.0502893347911381	0.0242693338659506
