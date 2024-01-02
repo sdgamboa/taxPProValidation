@@ -1,0 +1,5 @@
+Attribute	inLTP	notInLTP	inDat	notInDat	totalLTP	totalDat
+aerobic	8530	2241	8530	14501	23031	10771
+aerotolerant	4	1	4	23027	23031	5
+anaerobic	2399	1367	2399	20632	23031	3766
+facultatively anaerobic	970	605	970	22061	23031	1575

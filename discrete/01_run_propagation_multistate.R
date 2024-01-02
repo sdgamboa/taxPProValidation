@@ -1,7 +1,7 @@
 
 
 args <- commandArgs(trailingOnly = TRUE)
-args <- list('aerophilicity', 'all')
+# args <- list('aerophilicity', 'all')
 suppressMessages({
     library(phytools)
     library(castor)
@@ -14,7 +14,6 @@ suppressMessages({
     library(mltools)
     library(logr)
 })
-
 
 seed <- 42342
 phys_name <- args[[1]]
@@ -106,6 +105,44 @@ for (i in 1:10) {
 ## Check that none of the ids in the test sets are in the train sets
 ## Value here must be TRUE
 all(map2_lgl(test_folds, train_folds, ~ !any(.x$NCBI_ID %in% .y$NCBI_ID)))
+
+
+
+## 
+inLTP <- map_int(split(dat, dat$Attribute), ~ {
+    sum(unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
+})
+notInLTP <- map_dbl(split(dat, dat$Attribute), ~ {
+    sum(!unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
+})
+
+inDat <- map_int(split(dat, dat$Attribute), ~ {
+    sum(unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
+})
+
+notInDat <- map_int(split(dat, dat$Attribute), ~ {
+    sum(!unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
+})
+
+totalDat <- map_int(split(dat, dat$Attribute), ~ {
+    length(unique(.x$NCBI_ID))
+})
+
+totalLTP <- length(unique(tip_data$NCBI_ID))
+counts <- data.frame(
+    Attribute = names(inLTP),
+    inLTP = unname(inLTP),
+    notInLTP = unname(notInLTP),
+    totalDat = unname(totalDat),
+    inDat = unname(inDat),
+    notInDat = unname(notInDat),
+    totalLTP = unname(totalLTP)
+)
+write.table(
+    x = counts, file = paste0(phys_name, '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
+    row.names = FALSE, quote = FALSE, sep = '\t'
+)
+
 
 ## Create input matrix for tree ####
 known_priors <- vector('list', length(train_folds))
