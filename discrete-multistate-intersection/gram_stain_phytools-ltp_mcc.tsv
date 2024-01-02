@@ -1,0 +1,13 @@
+physiology	rank	method	attribute	mean	sd
+gram stain	all	phytools-ltp	gram stain negative	0.931506416203771	0.00826395105939291
+gram stain	all	phytools-ltp	gram stain positive	0.91291801443638	0.00843952601558481
+gram stain	all	phytools-ltp	gram stain variable	0.147648814584044	0.10999814395229
+gram stain	genus	phytools-ltp	gram stain negative	0.869146620949332	0.0468408010904188
+gram stain	genus	phytools-ltp	gram stain positive	0.853026406841623	0.0449535574856971
+gram stain	genus	phytools-ltp	gram stain variable	0.189528401005195	0.263988581995936
+gram stain	species	phytools-ltp	gram stain negative	0.95276209861386	0.0119201237526516
+gram stain	species	phytools-ltp	gram stain positive	0.933773478835734	0.0133895266629727
+gram stain	species	phytools-ltp	gram stain variable	0.204295423321095	0.130064648070013
+gram stain	strain	phytools-ltp	gram stain negative	0.876918845164748	0.0385597555077198
+gram stain	strain	phytools-ltp	gram stain positive	0.884212201851005	0.0361528074599159
+gram stain	strain	phytools-ltp	gram stain variable	0.169356236397351	0.366406673267293
