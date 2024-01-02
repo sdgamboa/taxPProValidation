@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp
-mutation rate per site per generation	-20.9093041240531	56.0998014646873	species	19	26	23031
+physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp	method
+mutation rate per site per generation	-20.9093041240531	56.0998014646873	species	19	26	23031	castor-ltp

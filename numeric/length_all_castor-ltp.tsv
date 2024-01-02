@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp
-length	-0.934861187691834	1.25060257839238	all	605	636	23031
+physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp	method
+length	-0.934861187691834	1.25060257839238	all	605	636	23031	castor-ltp

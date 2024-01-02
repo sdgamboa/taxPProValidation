@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp
-coding genes	0.638106007408835	0.119053307860598	species	700	1440	23031
+physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp	method
+coding genes	0.638106007408835	0.119053307860598	species	700	1440	23031	castor-ltp

@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp
-genome size	0.712359095082499	0.0686899131565486	all	1409	4298	23031
+physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp	method
+genome size	0.712359095082499	0.0686899131565486	all	1409	4298	23031	castor-ltp

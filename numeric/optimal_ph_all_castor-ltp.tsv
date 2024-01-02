@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp
-optimal ph	0.00820282194608172	0.21544342825425	all	290	878	23031
+physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp	method
+optimal ph	0.00820282194608172	0.21544342825425	all	290	878	23031	castor-ltp

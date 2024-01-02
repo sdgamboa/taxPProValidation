@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp
-growth temperature	0.657406639830856	0.0755180795047915	all	2455	7271	23031
+physiology	r_squared_mean	r_squared_sd	rank	ltp_and_bugphyzz	bugphyzz	ltp	method
+growth temperature	0.657406639830856	0.0755180795047915	all	2455	7271	23031	castor-ltp

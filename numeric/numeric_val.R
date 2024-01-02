@@ -189,8 +189,10 @@ metrics <- map2(hsp, testSets, ~ {
     select(-Metric) |> 
     as.data.frame()
 
+
 output_tsv <- cbind(metrics, counts) |> 
-    relocate(physiology)
+    relocate(physiology) |> 
+    mutate(method = 'castor-ltp')
 
 
 
