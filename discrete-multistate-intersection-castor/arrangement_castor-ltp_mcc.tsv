@@ -1,0 +1,8 @@
+physiology	rank	method	attribute	mean	sd
+arrangement	all	castor-ltp	branched	-0.00352672807929299	0.0111524934186368
+arrangement	all	castor-ltp	cell chain	-0.0120158246739444	0.0196974805545672
+arrangement	all	castor-ltp	cell cluster	-0.00287836831251702	0.00910219981240913
+arrangement	all	castor-ltp	filamentous	-0.00632883385002743	0.0102469198489056
+arrangement	all	castor-ltp	paired cells	-0.0168198702584963	0.0218724970789727
+arrangement	all	castor-ltp	single	0.0283709215433395	0.0888949001345637
+arrangement	all	castor-ltp	tetrads	0	0

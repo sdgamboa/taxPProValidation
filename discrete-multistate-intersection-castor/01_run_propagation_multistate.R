@@ -25,7 +25,7 @@ if (rank_arg == 'all') {
     rank_var <- rank_arg
 }
 
-logfile <- paste0(phys_name, '_', rank_arg, '_phytools-ltp')
+logfile <- paste0(phys_name, '_', rank_arg, '_castor-ltp')
 lf <- log_open(logfile, logdir = FALSE, compact = TRUE, show_notes = FALSE)
 
 msg <- paste0('Predicting ', phys_name, '. Rank: ', rank_arg)
@@ -137,7 +137,7 @@ counts <- data.frame(
     totalLTP = unname(totalLTP)
 )
 write.table(
-    x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
+    x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_castor-ltp_counts', '.tsv'),
     row.names = FALSE, quote = FALSE, sep = '\t'
 )
 
@@ -178,13 +178,24 @@ for (i in seq_along(input_mats)) {
     fold_name <- paste0('Fold', i)
     message('Running predictions for ', fold_name)
     tim <- system.time({
-        fit <- fitMk(
-            tree = tree, x = input_mats[[i]], model = 'ER', pi = 'equal'
-        )
-        names(predictions)[[i]] <- fold_name
+        res <- hsp_mk_model(
+            tree = tree, tip_priors = input_mats[[i]], tip_states = NULL,
+            check_input = FALSE, rate_model = 'ER', root_prior = 'flat'
+        )$likelihoods
+        rownames(res) <- c(tree$tip.label, tree$node.label)
+        predictions[[i]] <- res
         
+        # rownames(res_cas) <- c(tree$tip.label, tree$node.label)
+        # predicted_cas[[i]] <- res_cas
+        # names(predicted_cas)[i] <- fold_name
         
-        predictions[[i]] <- ancr(object = fit, tips = TRUE)$ace
+        # fit <- fitMk(
+        #     tree = tree, x = input_mats[[i]], model = 'ER', pi = 'equal'
+        # )
+        # names(predictions)[[i]] <- fold_name
+        # 
+        # 
+        # predictions[[i]] <- ancr(object = fit, tips = TRUE)$ace
     })
     log_print(tim, blank_after = FALSE)
 }
@@ -211,7 +222,7 @@ log_print(msg, blank_after = TRUE)
 ## Write test sets
 for (i in seq_along(test_folds)) {
     fname <- paste0(
-        gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_test_Fold', i, '.csv'
+        gsub(' ', '_', phys_name), '_', rank_arg, '_castor-ltp_test_Fold', i, '.csv'
     )
     write.csv(
         x = test_folds[[i]], file = fname, quote = TRUE, row.names = FALSE
@@ -221,7 +232,7 @@ for (i in seq_along(test_folds)) {
 ## Write predicted sets
 for (i in seq_along(predictions_tips)) {
     fname <- paste0(
-        gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_predicted_Fold', i, '.csv'
+        gsub(' ', '_', phys_name), '_', rank_arg, '_castor-ltp_predicted_Fold', i, '.csv'
     )
     write.csv(
         x = predictions_tips[[i]], file = fname, quote = TRUE, row.names = FALSE

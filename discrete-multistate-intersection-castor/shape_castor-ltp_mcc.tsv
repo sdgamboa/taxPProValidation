@@ -1,0 +1,8 @@
+physiology	rank	method	attribute	mean	sd
+shape	all	castor-ltp	bacillus	-0.105704654762939	0.0650230987849729
+shape	all	castor-ltp	coccobacillus	-0.000495049504950495	0.00156548399018237
+shape	all	castor-ltp	coccus	0.0949609699069774	0.117893899036048
+shape	all	castor-ltp	elliptic	-0.000861727484432139	0.00272502157317285
+shape	all	castor-ltp	filamentous	-0.00488430197411274	0.00516071565828862
+shape	all	castor-ltp	spirillum	0.0495030248861618	0.102881490293947
+shape	all	castor-ltp	tail	0	0

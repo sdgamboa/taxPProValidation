@@ -1,0 +1,4 @@
+physiology	rank	method	attribute	mean	sd
+gram stain	all	castor-ltp	gram stain negative	-0.294183953361428	0.0290770709217506
+gram stain	all	castor-ltp	gram stain positive	-0.192650340291008	0.0228803664317822
+gram stain	all	castor-ltp	gram stain variable	0.00775701764635717	0.0457588187587921

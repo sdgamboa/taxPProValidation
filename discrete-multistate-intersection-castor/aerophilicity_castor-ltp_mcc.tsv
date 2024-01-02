@@ -1,0 +1,4 @@
+physiology	rank	method	attribute	mean	sd
+aerophilicity	all	castor-ltp	aerobic	0.100556277063461	0.022826655274672
+aerophilicity	all	castor-ltp	anaerobic	0.143530185724959	0.042638392906996
+aerophilicity	all	castor-ltp	facultatively anaerobic	-0.0239954133650408	0.0176848618789296
