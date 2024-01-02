@@ -32,7 +32,9 @@ summary <- left_join(
     #     dat_per = round(indat / totaldat * 100)
     # ) |> 
     select(-indat, -notinltp, -indat, -notindat) |> 
-    rename(mean_mcc = mean, sd_mcc = sd)
+    rename(mean_mcc = mean, sd_mcc = sd) |> 
+    mutate(mean_mcc = round(mean_mcc, 2)) |> 
+    mutate(sd_mcc = round(sd_mcc, 2))
 
 # summary |> 
 #     mutate(
