@@ -27,5 +27,6 @@ dat <- lapply(fnames, function(x) {
     )
 
 write.table(
-    x = dat, file = 'validation_summary.tsv', quote = FALSE, sep = '\t'
+    x = dat, file = 'validation_summary.tsv', quote = FALSE, sep = '\t',
+    row.names = FALSE
 )
