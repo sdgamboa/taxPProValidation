@@ -1,4 +1,4 @@
-physiology	rank	method	attribute	mean_mcc	sd_mcc	inltp	totaldat	totalltp
+physiology	rank	method	attribute	mean_mcc	sd_mcc	ltp_and_bugphyzz	bugphyzz	ltp
 aerophilicity	all	phytools-ltp	aerobic	0.73	0.02	8530	10771	23031
 aerophilicity	all	phytools-ltp	anaerobic	0.88	0.02	2399	3766	23031
 aerophilicity	all	phytools-ltp	facultatively anaerobic	0.25	0.06	970	1575	23031
