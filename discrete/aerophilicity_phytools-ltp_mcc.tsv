@@ -1,0 +1,13 @@
+physiology	rank	method	attribute	mean	sd
+aerophilicity	all	phytools-ltp	aerobic	0.731476285237036	0.0190102375927709
+aerophilicity	all	phytools-ltp	anaerobic	0.880986566683805	0.0189715324779331
+aerophilicity	all	phytools-ltp	facultatively anaerobic	0.248953152252997	0.0564371272018447
+aerophilicity	genus	phytools-ltp	aerobic	0.745225703005751	0.0528370205824072
+aerophilicity	genus	phytools-ltp	anaerobic	0.848285143237362	0.0655217970577679
+aerophilicity	genus	phytools-ltp	facultatively anaerobic	0.522120945132588	0.114813046395003
+aerophilicity	species	phytools-ltp	aerobic	0.704668197816916	0.0276240884603766
+aerophilicity	species	phytools-ltp	anaerobic	0.872655254965583	0.0321664058471017
+aerophilicity	species	phytools-ltp	facultatively anaerobic	0.248448109792701	0.0645495230652454
+aerophilicity	strain	phytools-ltp	aerobic	0.774305548331485	0.0557188583892783
+aerophilicity	strain	phytools-ltp	anaerobic	0.863674597807607	0.0520187980779344
+aerophilicity	strain	phytools-ltp	facultatively anaerobic	0.383313867768935	0.088185555261474

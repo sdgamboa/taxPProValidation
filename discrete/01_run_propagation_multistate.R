@@ -106,8 +106,6 @@ for (i in 1:10) {
 ## Value here must be TRUE
 all(map2_lgl(test_folds, train_folds, ~ !any(.x$NCBI_ID %in% .y$NCBI_ID)))
 
-
-
 ## 
 inLTP <- map_int(split(dat, dat$Attribute), ~ {
     sum(unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
@@ -139,10 +137,9 @@ counts <- data.frame(
     totalLTP = unname(totalLTP)
 )
 write.table(
-    x = counts, file = paste0(phys_name, '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
+    x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
     row.names = FALSE, quote = FALSE, sep = '\t'
 )
-
 
 ## Create input matrix for tree ####
 known_priors <- vector('list', length(train_folds))
@@ -214,7 +211,7 @@ log_print(msg, blank_after = TRUE)
 ## Write test sets
 for (i in seq_along(test_folds)) {
     fname <- paste0(
-        phys_name, '_', rank_arg, '_phytools-ltp_test_Fold', i, '.csv'
+        gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_test_Fold', i, '.csv'
     )
     write.csv(
         x = test_folds[[i]], file = fname, quote = TRUE, row.names = FALSE
@@ -224,7 +221,7 @@ for (i in seq_along(test_folds)) {
 ## Write predicted sets
 for (i in seq_along(predictions_tips)) {
     fname <- paste0(
-        phys_name, '_', rank_arg, '_phytools-ltp_predicted_Fold', i, '.csv'
+        gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_predicted_Fold', i, '.csv'
     )
     write.csv(
         x = predictions_tips[[i]], file = fname, quote = TRUE, row.names = FALSE

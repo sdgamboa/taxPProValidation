@@ -1,0 +1,13 @@
+Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
+branched	97	12	109	97	22934	23031
+cell chain	219	229	448	219	22812	23031
+cell cluster	97	33	130	97	22934	23031
+filamentous	24	44	68	24	23007	23031
+paired cells	376	399	775	376	22655	23031
+palisade	3	1	4	3	23028	23031
+reverse Y-branched filaments	2	1	3	2	23029	23031
+rosettes	9	0	9	9	23022	23031
+single	368	403	771	368	22663	23031
+tetrads	28	16	44	28	23003	23031
+unbranched	11	0	11	11	23020	23031
+v-formation	8	1	9	8	23023	23031

@@ -4,16 +4,19 @@ suppressMessages({
     library(purrr)
     library(tidyr)
     library(mltools)
+    library(logr)
 })
 
 phys_name <- args[[1]]
 method <- args[[2]]
 
-rank <- 'all'
+log_open(paste0(phys_name, '_', method, '_mcc'), logdir = TRUE, show_notes = TRUE)
+# rank <- 'all'
 
 dir <- file.path('.')
 
-pattern <- paste0(phys_name, '_', rank, '_', method, '.*csv')
+# pattern <- paste0(phys_name, '_', rank, '_', method, '.*csv')
+pattern <- paste0('^', phys_name, '_(all|genus|species|strain)_', method, '.*csv')
 fnames <- list.files(path = dir, pattern = pattern, full.names = TRUE)
 
 l <- map(fnames, read.csv)
@@ -76,7 +79,9 @@ mcc_df <- data.frame(dat_name = names(mcc), mcc = unname(mcc)) |>
     ) |> 
     ungroup()
 
-fname <- paste0(phys_name, '_', method, '.tsv')
+fname <- paste0(phys_name, '_', method, '_mcc.tsv')
 write.table(
     x = mcc_df, file = fname, sep = '\t', row.names = FALSE, quote = FALSE
 )
+
+log_close()
