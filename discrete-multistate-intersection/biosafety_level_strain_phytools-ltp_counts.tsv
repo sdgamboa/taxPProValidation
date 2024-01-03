@@ -1,4 +1,4 @@
-Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
-biosafety level 1	1453	1512	2965	1453	21578	23031
-biosafety level 2	265	338	603	265	22766	23031
-biosafety level 3	2	2	4	2	23029	23031
+Attribute	ltp_bp	ltp_bp_phys	bp	ltp
+biosafety level 1	1453	1720	2965	23031
+biosafety level 2	265	1720	603	23031
+biosafety level 3	2	1720	4	23031

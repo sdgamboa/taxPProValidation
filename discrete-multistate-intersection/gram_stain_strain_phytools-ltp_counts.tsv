@@ -1,4 +1,4 @@
-Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
-gram stain negative	695	818	1513	695	22336	23031
-gram stain positive	298	504	802	298	22733	23031
-gram stain variable	11	14	25	11	23020	23031
+Attribute	ltp_bp	ltp_bp_phys	bp	ltp
+gram stain negative	695	1004	1513	23031
+gram stain positive	298	1004	802	23031
+gram stain variable	11	1004	25	23031

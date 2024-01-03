@@ -1,9 +1,9 @@
-Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
-bacillus	6	0	6	6	23025	23031
-branched	1	0	1	1	23030	23031
-cell chain	2	0	2	2	23029	23031
-coccus	26	0	26	26	23005	23031
-elliptic	34	0	34	34	22997	23031
-endospore	73	3	76	73	22958	23031
-sigmoid	1	0	1	1	23030	23031
-spirillum	1	0	1	1	23030	23031
+Attribute	ltp_bp	ltp_bp_phys	bp	ltp
+bacillus	6	92	6	23031
+branched	1	92	1	23031
+cell chain	2	92	2	23031
+coccus	26	92	26	23031
+elliptic	34	92	34	23031
+endospore	73	92	76	23031
+sigmoid	1	92	1	23031
+spirillum	1	92	1	23031

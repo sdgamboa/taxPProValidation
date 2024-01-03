@@ -1,5 +1,5 @@
-Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
-aerobic	8530	2241	10771	8530	14501	23031
-aerotolerant	4	1	5	4	23027	23031
-anaerobic	2399	1367	3766	2399	20632	23031
-facultatively anaerobic	970	605	1575	970	22061	23031
+Attribute	ltp_bp	ltp_bp_phys	bp	ltp
+aerobic	8530	11728	10771	23031
+aerotolerant	4	11728	5	23031
+anaerobic	2399	11728	3766	23031
+facultatively anaerobic	970	11728	1575	23031

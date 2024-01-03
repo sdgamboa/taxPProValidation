@@ -1,5 +1,5 @@
-Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
-alpha	20	15	35	20	23011	23031
-beta	16	20	36	16	23015	23031
-CAMP test	0	3	3	0	23031	23031
-gamma	65	52	117	65	22966	23031
+Attribute	ltp_bp	ltp_bp_phys	bp	ltp
+alpha	20	94	35	23031
+beta	16	94	36	23031
+CAMP test	0	94	3	23031
+gamma	65	94	117	23031

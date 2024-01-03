@@ -1,8 +1,8 @@
-Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
-bacillus	409	890	1299	409	22622	23031
-coccus	67	136	203	67	22964	23031
-dumbbell-shaped	2	0	2	2	23029	23031
-filamentous	2	4	6	2	23029	23031
-spirillum	26	52	78	26	23005	23031
-staphylococcus	21	4	25	21	23010	23031
-tail	15	19	34	15	23016	23031
+Attribute	ltp_bp	ltp_bp_phys	bp	ltp
+bacillus	409	527	1299	23031
+coccus	67	527	203	23031
+dumbbell-shaped	2	527	2	23031
+filamentous	2	527	6	23031
+spirillum	26	527	78	23031
+staphylococcus	21	527	25	23031
+tail	15	527	34	23031
