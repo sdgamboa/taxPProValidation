@@ -2,15 +2,15 @@
 
 physiologies=(
     "animal_pathogen"
-    "antimicrobial_sensitivity"
-    "biofilm_forming"
-    "extreme_environment"
-    "health_associated"
-    "hydrogen_gas_producing"
-    "lactate_producing"
-    "motility"
-    "plant_pathogenicity"
-    "spore_formation"
+#    "antimicrobial_sensitivity"
+#    "biofilm_forming"
+#    "extreme_environment"
+#    "health_associated"
+#    "hydrogen_gas_producing"
+#    "lactate_producing"
+#    "motility"
+#    "plant_pathogenicity"
+#    "spore_formation"
 )
 
 myVar=$(which R)
