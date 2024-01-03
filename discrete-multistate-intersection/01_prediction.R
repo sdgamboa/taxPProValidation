@@ -127,14 +127,13 @@ totalDat <- map_int(split(dat, dat$Attribute), ~ {
 })
 
 totalLTP <- length(unique(tip_data$NCBI_ID))
+
 counts <- data.frame(
     Attribute = names(inLTP),
-    inLTP = unname(inLTP),
-    notInLTP = unname(notInLTP),
-    totalDat = unname(totalDat),
-    inDat = unname(inDat),
-    notInDat = unname(notInDat),
-    totalLTP = unname(totalLTP)
+    ltp_bp = unname(inLTP),
+    ltp_bp_phys = sum(unique(tip_data$NCBI_ID) %in% unique(dat$NCBI_ID)),
+    bp = unname(totalDat),
+    ltp = unname(totalLTP)
 )
 write.table(
     x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
