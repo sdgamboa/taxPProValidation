@@ -85,7 +85,7 @@ train_folds <- vector('list', 10)
 for (i in 1:10) {
     fold_name <- paste0('Fold', i)
     
-    ## Code for creatint test folds
+    ## Code for creating test folds
     test_dfs <- vector('list', length(cv_folds))
     for (j in seq_along(cv_folds)) {
         test_dfs[[j]] <- keep_this[[j]][cv_folds[[j]]$which == i,]
