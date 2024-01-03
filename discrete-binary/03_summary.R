@@ -4,7 +4,7 @@ library(readr)
 library(ggplot2)
 library(ggrepel)
 
-dir_path <- file.path('.')
+dir_path <- file.path('discrete-binary')
 fnames <- list.files(dir_path, '(counts|mcc).*tsv', full.names = TRUE, recursive = FALSE)
 
 l <- map(fnames, ~ read_tsv(.x, show_col_types = FALSE))

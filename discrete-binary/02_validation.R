@@ -1,4 +1,5 @@
 args <- commandArgs(trailingOnly = TRUE)
+# args <- list('animal_pathogen', 'phytools-ltp')
 suppressMessages({
     library(dplyr)
     library(purrr)
@@ -26,15 +27,23 @@ new_phys_name <- gsub('_', ' ', phys_name)
 names(l) <- paste0(new_phys_name, '_', sub(regex, '\\1\\2', names(l)))
 
 test_folds <- l[grep('test', names(l))]
-predicted_folds <- l[grep('predicted', names(l))]
+predicted_folds <- l[grep('predicted', names(l))] |> 
+    map( ~ {
+        .x |> 
+            group_by(NCBI_ID) |> 
+            slice_max(order_by = Score, n = 1, with_ties = FALSE) |> 
+            ungroup()
+    })
 
 myFun <- function(x, y) {
     x <- x |> 
         select(NCBI_ID, Attribute, Score) |> 
-        complete(NCBI_ID, Attribute, fill = list(Score = 0)) |> 
+        # complete(NCBI_ID, Attribute, fill = list(Score = 0)) |> 
         arrange(NCBI_ID, Attribute) |> 
         rename(tScore = Score) |> 
-        mutate(tPN = ifelse(tScore > 0.5, 1, 0))
+        mutate(tPN = ifelse(grepl('--TRUE$', Attribute), 1, 0)) |> 
+        mutate(Attribute = sub('--(TRUE|FALSE)$', '', Attribute))
+        
     y <- y |> 
         select(NCBI_ID, Attribute, Score) |> 
         group_by(NCBI_ID, Attribute) |> 
@@ -43,7 +52,9 @@ myFun <- function(x, y) {
         arrange(NCBI_ID, Attribute) |> 
         filter(NCBI_ID %in% unique(x$NCBI_ID)) |> 
         rename(pScore = Score) |> 
-        mutate(pPN = ifelse(pScore > 0.5, 1, 0))
+        mutate(pPN = ifelse(grepl('--TRUE$', Attribute), 1, 0)) |> 
+        mutate(Attribute = sub('--(TRUE|FALSE)$', '', Attribute))
+        # mutate(pPN = ifelse(pScore > 0.5, 1, 0))
     output <- left_join(x, y, by = c('NCBI_ID', 'Attribute')) |> 
         mutate(
             TF = case_when(
@@ -51,7 +62,6 @@ myFun <- function(x, y) {
                 tPN == 1 & pPN == 0 ~ 'FN',
                 tPN == 0 & pPN == 1 ~ 'FP',
                 tPN == 0 & pPN == 0 ~ 'TN'
-                
             )
         ) |> 
         {\(y) split(y, y$Attribute)}()
