@@ -1,7 +1,7 @@
 
 
-args <- commandArgs(trailingOnly = TRUE)
-# args <- list('aerophilicity', 'all')
+# args <- commandArgs(trailingOnly = TRUE)
+args <- list('animal pathogen', 'all')
 suppressMessages({
     library(phytools)
     library(castor)

@@ -1,0 +1,3 @@
+Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
+animal pathogen--FALSE	357	660	1017	357	22674	23031
+animal pathogen--TRUE	643	412	1055	643	22388	23031
