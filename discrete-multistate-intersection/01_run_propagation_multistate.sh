@@ -4,9 +4,9 @@ physiologies=(
     'aerophilicity'
     'gram_stain'
     'biosafety_level'
-    'COGEM pathogenicity rating'
+    'COGEM_pathogenicity_rating'
     'shape'
-    'spore shape'
+    'spore_shape'
     'arrangement'
     'hemolysis'
 )
