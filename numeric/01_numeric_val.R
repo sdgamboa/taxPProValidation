@@ -90,8 +90,8 @@ if (!nrow(fdat)) {
 counts <- data.frame(
     physiology = gsub('_', ' ', phys_name),
     rank = rank_arg,
-    ltp_and_bugphyzz = length(unique(fdat$NCBI_ID)),
-    bugphyzz = length(unique(dat$NCBI_ID)),
+    ltp_bp = length(unique(fdat$NCBI_ID)),
+    bp = length(unique(dat$NCBI_ID)),
     ltp = length(unique(tip_data$NCBI_ID))
 )
 
