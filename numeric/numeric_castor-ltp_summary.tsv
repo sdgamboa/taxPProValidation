@@ -1,20 +1,20 @@
-physiology	rank	r_squared_mean	r_squared_sd	ltp_and_bugphyzz	bugphyzz	ltp	method
-coding genes	all	0.715716620363852	0.0359029492463212	1410	4303	23031	castor-ltp
-coding genes	species	0.638106007408835	0.119053307860598	700	1440	23031	castor-ltp
-coding genes	strain	0.617484931867495	0.107964389938683	710	2863	23031	castor-ltp
-genome size	all	0.712359095082499	0.0686899131565486	1409	4298	23031	castor-ltp
-genome size	species	0.654452486238994	0.118147883450791	700	1437	23031	castor-ltp
-genome size	strain	0.603009354388736	0.111601408725509	709	2861	23031	castor-ltp
-growth temperature	all	0.657406639830856	0.0755180795047915	2455	7271	23031	castor-ltp
-growth temperature	species	0.402567055562989	0.147885933763888	637	3154	23031	castor-ltp
-growth temperature	strain	0.692881719279397	0.102980537977422	1818	4117	23031	castor-ltp
-length	all	-0.934861187691834	1.25060257839238	605	636	23031	castor-ltp
-length	genus	-0.934861187691834	1.25060257839238	605	636	23031	castor-ltp
-mutation rate per site per generation	all	-20.9093041240531	56.0998014646873	19	26	23031	castor-ltp
-mutation rate per site per generation	species	-20.9093041240531	56.0998014646873	19	26	23031	castor-ltp
-mutation rate per site per year	all	-181.833220899102	491.188283411357	24	33	23031	castor-ltp
-mutation rate per site per year	species	-181.833220899102	491.188283411357	24	33	23031	castor-ltp
-optimal ph	all	0.00820282194608172	0.21544342825425	290	878	23031	castor-ltp
-optimal ph	species	0.00820282194608172	0.21544342825425	290	878	23031	castor-ltp
-width	all	-0.39922309367546	0.626331289309784	756	812	23031	castor-ltp
-width	genus	-0.39922309367546	0.626331289309784	756	812	23031	castor-ltp
+physiology	rank	r2_mean	r2_sd	ltp_bp_phys	bp_phys	ltp	method
+coding genes	all	0.72	0.04	1410	4303	23031	castor-ltp
+coding genes	species	0.64	0.12	700	1440	23031	castor-ltp
+coding genes	strain	0.62	0.11	710	2863	23031	castor-ltp
+genome size	all	0.71	0.07	1409	4298	23031	castor-ltp
+genome size	species	0.65	0.12	700	1437	23031	castor-ltp
+genome size	strain	0.6	0.11	709	2861	23031	castor-ltp
+growth temperature	all	0.66	0.08	2455	7271	23031	castor-ltp
+growth temperature	species	0.4	0.15	637	3154	23031	castor-ltp
+growth temperature	strain	0.69	0.1	1818	4117	23031	castor-ltp
+length	all	-0.93	1.25	605	636	23031	castor-ltp
+length	genus	-0.93	1.25	605	636	23031	castor-ltp
+mutation rate per site per generation	all	-20.91	56.1	19	26	23031	castor-ltp
+mutation rate per site per generation	species	-20.91	56.1	19	26	23031	castor-ltp
+mutation rate per site per year	all	-181.83	491.19	24	33	23031	castor-ltp
+mutation rate per site per year	species	-181.83	491.19	24	33	23031	castor-ltp
+optimal ph	all	0.01	0.22	290	878	23031	castor-ltp
+optimal ph	species	0.01	0.22	290	878	23031	castor-ltp
+width	all	-0.4	0.63	756	812	23031	castor-ltp
+width	genus	-0.4	0.63	756	812	23031	castor-ltp

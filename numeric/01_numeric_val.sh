@@ -20,10 +20,10 @@ do
             echo generating data for "$i"
         if [ $myRes -eq 0 ]; then
             echo "I'm not on supermicro"
-            Rscript numeric_val.R "$i" "$1"
+            Rscript 01_numeric_val.R "$i" "$1"
         elif [ $myRes -eq 1 ]; then
             echo "I'm on supermicro"
-            /usr/bin/Rscript numeric_val.R "$i" "$1"
+            /usr/bin/Rscript 01_numeric_val.R "$i" "$1"
         fi
 
     ) &

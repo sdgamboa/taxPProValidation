@@ -1,6 +1,5 @@
 
 args <- commandArgs(trailingOnly = TRUE)
-# args <- c('growth_temperature', 'all')
 
 library(taxPPro)
 library(dplyr)
@@ -33,15 +32,8 @@ tree <- ltp$tree
 tip_data <- ltp$tip_data
 node_data <- ltp$node_data
 
-# label_data <- bind_rows(
-#     distinct(select(as_tibble(tip_data), label = tip_label, taxid)),
-#     distinct(select(as_tibble(node_data), label = node_label, taxid))
-# )
-
 ## bugphyzz data ####
 phys <- physiologies(gsub('_', ' ', phys_name))[[1]]
-# cg <- physiologies('coding genes')[[1]]
-# w <- physiologies('width')[[1]]
 
 modifyNumeric <- function(x) {
     x |>
@@ -75,10 +67,8 @@ if (!nrow(dat)) {
     log_close()
 }
     
-dat$NCBI_ID[which(duplicated(dat$NCBI_ID))]
-
 fdat <- dat |> 
-    # filter(Rank %in% rank_var) |> 
+    filter(Rank %in% rank_var) |>
     filter(NCBI_ID %in% unique(tip_data$NCBI_ID))
 
 if (!nrow(fdat)) {
@@ -86,14 +76,16 @@ if (!nrow(fdat)) {
     quit(save = 'no')
     log_close()
 }
-    
+
+
 counts <- data.frame(
     physiology = gsub('_', ' ', phys_name),
     rank = rank_arg,
-    ltp_bp = length(unique(fdat$NCBI_ID)),
-    bp = length(unique(dat$NCBI_ID)),
+    ltp_bp_phys = length(unique(fdat$NCBI_ID)),
+    bp_phys = length(unique(dat$NCBI_ID)),
     ltp = length(unique(tip_data$NCBI_ID))
 )
+
 
 tip_data_annotated <- left_join(tip_data, fdat, by = c('NCBI_ID')) |>
     select(tip_label, Attribute_value) # I don't need to filter NAs here
@@ -130,16 +122,9 @@ for (i in seq_along(trainSets)) {
     input_vector <- input_vector[tree$tip.label]
 
     res <- hsp_squared_change_parsimony(
-        ## slightly better results than hsp_independent_contrasts
-        ## for growth temp
         tree = tree, tip_states = input_vector, weighted = TRUE,
         check_input = TRUE
     )
-
-    # res <- hsp_independent_contrasts( # pic in ape::ace ?
-    #     tree = tree, tip_states = input_vector, weighted = TRUE,
-    #     check_input = TRUE
-    # )
 
     statesDF <- data.frame(
         label = tree$tip.label,
@@ -149,8 +134,6 @@ for (i in seq_along(trainSets)) {
     states <- statesDF$value
     names(states) <- statesDF$label
 
-    # commonNames <- intersect(names(states), names(testSets[[i]]))
-    # hsp[[i]] <- states[commonNames]
     hsp[[i]] <- states[names(testSets[[i]])]
 }
 
@@ -194,29 +177,9 @@ output_tsv <- cbind(metrics, counts) |>
     relocate(physiology) |> 
     mutate(method = 'castor-ltp')
 
-
-
-# plotList <- map2(hsp, testSets, ~ {
-#     df <- data.frame(pred = .x, actual = .y)
-#     df |>
-#         ggplot(aes(pred, actual)) +
-#         geom_point()
-# })
-# 
-# p <- ggpubr::ggarrange(plotlist = plotList, ncol = 5, nrow = 2)
-
-
 write.table(
     x = output_tsv, file = paste0(logfile, '.tsv'), sep = '\t', quote = FALSE,
     row.names = FALSE
 )
 
-# ggsave('inst/scripts/castor_gt.png', width = 12, height = 4)
 log_close()
-
-
-
-
-
-
-
