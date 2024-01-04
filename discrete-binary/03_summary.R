@@ -19,6 +19,9 @@ counts <- l[grep('counts', names(l))] |>
     mutate(method = sub('^.*(all|genus|species|strain)_(.*)$', '\\2', var)) |> 
     select(-var) |> 
     {\(y) set_names(y, tolower(names(y)))}()
+    # select(-ltp_bp) |> 
+    # mutate(attribute = sub('--(TRUE|FALSE)$', '', attribute)) |> 
+    # distinct()
 
 mcc <- l[grep('mcc', names(l))] |> 
     bind_rows() |> 
@@ -31,13 +34,13 @@ summary <- left_join(
     #     ltp_per = round(inltp / totalltp * 100),
     #     dat_per = round(indat / totaldat * 100)
     # ) |> 
-    select(-indat, -notinltp, -indat, -notindat) |> 
+    # select(-indat, -notinltp, -indat, -notindat) |> 
     rename(
         mean_mcc = mean,
-        sd_mcc = sd,
-        ltp_and_bugphyzz = inltp,
-        ltp = totalltp,
-        bugphyzz = totaldat
+        sd_mcc = sd
+        # ltp_and_bugphyzz = inltp,
+        # ltp = totalltp,
+        # bugphyzz = totaldat
     ) |> 
     mutate(mean_mcc = round(mean_mcc, 2)) |> 
     mutate(sd_mcc = round(sd_mcc, 2)) 

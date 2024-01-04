@@ -1,16 +1,17 @@
 #! /usr/bin/bash
 
 physiologies=(
-    "animal_pathogen"
-    "antimicrobial_sensitivity"
-    "biofilm_forming"
-    "extreme_environment"
-    "health_associated"
-    "hydrogen_gas_producing"
-    "lactate_producing"
-    "motility"
-    "plant_pathogenicity"
-    "spore_formation"
+#    "animal_pathogen"
+#    "antimicrobial_sensitivity"
+#    "biofilm_forming"
+#    "extreme_environment"
+#    "health_associated"
+#    "hydrogen_gas_producing"
+#    "lactate_producing"
+#    "motility"
+#    "plant_pathogenicity"
+#    "spore_formation"
+    "host-associated"
 )
 
 myVar=$(which R)

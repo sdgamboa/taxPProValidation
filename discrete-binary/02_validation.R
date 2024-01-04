@@ -1,5 +1,5 @@
 args <- commandArgs(trailingOnly = TRUE)
-args <- list('animal_pathogen', 'phytools-ltp')
+# args <- list('host-associated', 'phytools-ltp')
 suppressMessages({
     library(dplyr)
     library(purrr)
@@ -14,7 +14,7 @@ method <- args[[2]]
 log_open(paste0(phys_name, '_', method, '_mcc'), logdir = TRUE, show_notes = TRUE)
 # rank <- 'all'
 
-dir <- file.path('discrete-binary/')
+dir <- file.path('.')
 
 # pattern <- paste0(phys_name, '_', rank, '_', method, '.*csv')
 pattern <- paste0('^', phys_name, '_(all|genus|species|strain)_', method, '.*csv')

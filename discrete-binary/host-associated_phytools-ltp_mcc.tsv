@@ -1,0 +1,3 @@
+physiology	rank	method	attribute	mean	sd
+host-associated	all	phytools-ltp	host-associated	0.590130400979189	0.0725461517042291
+host-associated	species	phytools-ltp	host-associated	0.608344649595197	0.0699073919376558

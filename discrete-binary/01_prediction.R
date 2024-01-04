@@ -1,6 +1,6 @@
 
 args <- commandArgs(trailingOnly = TRUE)
-# args <- list('animal pathogen', 'all')
+args <- list('animal pathogen', 'all')
 suppressMessages({
     library(phytools)
     library(castor)
@@ -109,21 +109,20 @@ all(map2_lgl(test_folds, train_folds, ~ !any(.x$NCBI_ID %in% .y$NCBI_ID)))
 inLTP <- map_int(split(dat, dat$Attribute), ~ {
     sum(unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
 })
-notInLTP <- map_dbl(split(dat, dat$Attribute), ~ {
-    sum(!unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
-})
 
-inDat <- map_int(split(dat, dat$Attribute), ~ {
-    sum(unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
-})
+# inDat <- map_int(split(dat, dat$Attribute), ~ {
+#     sum(unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
+# })
 
-notInDat <- map_int(split(dat, dat$Attribute), ~ {
-    sum(!unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
-})
+# notInDat <- map_int(split(dat, dat$Attribute), ~ {
+#     sum(!unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
+# })
 
 totalDat <- map_int(split(dat, dat$Attribute), ~ {
     length(unique(.x$NCBI_ID))
 })
+
+totalDat <- length(unique(dat$NCBI_ID))
 
 totalLTP <- length(unique(tip_data$NCBI_ID))
 
