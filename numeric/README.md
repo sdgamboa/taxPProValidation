@@ -6,4 +6,4 @@ One-liners for performing prediction and validation of numeric attributes:
 /usr/bin/Rscript --vanilla 02_summary_numeric.R # path to Rscript might vary
 ```
 
-Output is in the `numeric_castor-ltp_summary.tsv` file.
+Output is in the [numeric_castor-ltp_summary.tsv](./numeric_castor-ltp_summary.tsv) file.
