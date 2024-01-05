@@ -4,7 +4,7 @@ library(readr)
 library(ggplot2)
 library(ggrepel)
 
-dir_path <- file.path('discrete-binary')
+dir_path <- file.path('.')
 fnames <- list.files(dir_path, '(counts|mcc).*tsv', full.names = TRUE, recursive = FALSE)
 
 l <- map(fnames, ~ read_tsv(.x, show_col_types = FALSE))
@@ -19,13 +19,11 @@ counts <- l[grep('counts', names(l))] |>
     mutate(method = sub('^.*(all|genus|species|strain)_(.*)$', '\\2', var)) |> 
     select(-var) |> 
     {\(y) set_names(y, tolower(names(y)))}()
-    # select(-ltp_bp) |> 
-    # mutate(attribute = sub('--(TRUE|FALSE)$', '', attribute)) |> 
-    # distinct()
 
 mcc <- l[grep('mcc', names(l))] |> 
     bind_rows() |> 
-    {\(y) set_names(y, tolower(names(y)))}()
+    {\(y) set_names(y, tolower(names(y)))}() |> 
+    mutate(attribute = physiology)
 
 summary <- left_join(
     mcc, counts, by = c('physiology', 'attribute', 'rank', 'method')
@@ -65,9 +63,6 @@ summary <- left_join(
 #     theme(legend.position = 'bottom') 
 
 write.table(
-    x = summary, file = 'discrete_multistate_summary.tsv', 
+    x = summary, file = 'discrete_binary_summary.tsv', 
     row.names = FALSE, sep = '\t', quote = FALSE
 )
-
-
-

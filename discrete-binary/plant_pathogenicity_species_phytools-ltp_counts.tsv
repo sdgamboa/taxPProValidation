@@ -1,3 +1,2 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-plant pathogenity--FALSE	524	568	1384	23031
-plant pathogenity--TRUE	44	568	92	23031
+Attribute	ltp_bp_phys	bp_phys	ltp
+plant pathogenicity	568	1476	23501

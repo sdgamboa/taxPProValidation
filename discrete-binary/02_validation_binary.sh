@@ -2,7 +2,6 @@
 
 physiologies=(
    "animal_pathogen"
-   "host-associated"
    "antimicrobial_sensitivity"
    "biofilm_forming"
    "extreme_environment"
@@ -12,6 +11,7 @@ physiologies=(
    "motility"
    "plant_pathogenicity"
    "spore_formation"
+   "host-associated"
 )
 
 myVar=$(which R)
@@ -23,10 +23,10 @@ do
             echo generating data for "$i"
         if [ $myRes -eq 0 ]; then
             echo "I'm not on supermicro"
-            Rscript 02_validation.R "$i" "$1"
+            Rscript 02_validation_binary.R "$i" "$1"
         elif [ $myRes -eq 1 ]; then
             echo "I'm on supermicro"
-            /usr/bin/Rscript 02_validation.R "$i" "$1"
+            /usr/bin/Rscript 02_validation_binary.R "$i" "$1"
         fi
 
     ) &

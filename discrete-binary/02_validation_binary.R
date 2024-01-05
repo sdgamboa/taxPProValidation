@@ -1,5 +1,7 @@
 args <- commandArgs(trailingOnly = TRUE)
-# args <- list('host-associated', 'phytools-ltp')
+
+# args <- c('host-associated', 'phytools-ltp')
+
 suppressMessages({
     library(dplyr)
     library(purrr)
@@ -12,13 +14,18 @@ phys_name <- args[[1]]
 method <- args[[2]]
 
 log_open(paste0(phys_name, '_', method, '_mcc'), logdir = TRUE, show_notes = TRUE)
-# rank <- 'all'
 
+# dir <- file.path('discrete-binary')
 dir <- file.path('.')
 
-# pattern <- paste0(phys_name, '_', rank, '_', method, '.*csv')
 pattern <- paste0('^', phys_name, '_(all|genus|species|strain)_', method, '.*csv')
 fnames <- list.files(path = dir, pattern = pattern, full.names = TRUE)
+
+if (!length(fnames)) {
+    msg <- paste0('Not enough data for prediction of ', phys_name)
+    log_print(msg, blank_after = TRUE)
+    quit(save = "no")
+}
 
 l <- map(fnames, read.csv)
 names(l) <- sub("^(.*/)*(.*)\\.csv$", "\\2", fnames)
@@ -38,7 +45,6 @@ predicted_folds <- l[grep('predicted', names(l))] |>
 myFun <- function(x, y) {
     x <- x |> 
         select(NCBI_ID, Attribute, Score) |> 
-        # complete(NCBI_ID, Attribute, fill = list(Score = 0)) |> 
         arrange(NCBI_ID, Attribute) |> 
         rename(tScore = Score) |> 
         mutate(tPN = ifelse(grepl('--TRUE$', Attribute), 1, 0)) |> 
@@ -54,7 +60,6 @@ myFun <- function(x, y) {
         rename(pScore = Score) |> 
         mutate(pPN = ifelse(grepl('--TRUE$', Attribute), 1, 0)) |> 
         mutate(Attribute = sub('--(TRUE|FALSE)$', '', Attribute))
-        # mutate(pPN = ifelse(pScore > 0.5, 1, 0))
     output <- left_join(x, y, by = c('NCBI_ID', 'Attribute')) |> 
         mutate(
             TF = case_when(

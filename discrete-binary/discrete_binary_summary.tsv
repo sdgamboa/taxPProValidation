@@ -1,0 +1,19 @@
+physiology	rank	method	attribute	mean_mcc	sd_mcc	ltp_bp_phys	bp_phys	ltp
+animal pathogen	all	phytools-ltp	animal pathogen	0.5	0.07	999	2071	23501
+animal pathogen	species	phytools-ltp	animal pathogen	0.52	0.07	879	1782	23501
+antimicrobial sensitivity	all	phytools-ltp	antimicrobial sensitivity	0.61	0.19	304	825	23501
+antimicrobial sensitivity	species	phytools-ltp	antimicrobial sensitivity	0.61	0.19	304	825	23501
+biofilm forming	all	phytools-ltp	biofilm forming	0.38	0.28	180	423	23501
+biofilm forming	species	phytools-ltp	biofilm forming	0.38	0.28	180	423	23501
+extreme environment	all	phytools-ltp	extreme environment	0.5	0.09	708	1856	23501
+extreme environment	species	phytools-ltp	extreme environment	0.5	0.09	708	1856	23501
+host-associated	all	phytools-ltp	host-associated	0.59	0.07	900	2492	23501
+host-associated	species	phytools-ltp	host-associated	0.61	0.07	890	2482	23501
+motility	all	phytools-ltp	motility	0.63	0.04	5793	6529	23501
+motility	species	phytools-ltp	motility	0.62	0.04	5122	5331	23501
+motility	strain	phytools-ltp	motility	0.53	0.1	671	1198	23501
+plant pathogenicity	all	phytools-ltp	plant pathogenicity	0.52	0.25	568	1476	23501
+plant pathogenicity	species	phytools-ltp	plant pathogenicity	0.52	0.25	568	1476	23501
+spore formation	all	phytools-ltp	spore formation	0.89	0.03	4177	4731	23501
+spore formation	species	phytools-ltp	spore formation	0.89	0.03	3673	3809	23501
+spore formation	strain	phytools-ltp	spore formation	0.76	0.12	504	922	23501

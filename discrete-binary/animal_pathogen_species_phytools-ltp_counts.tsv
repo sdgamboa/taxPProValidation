@@ -1,3 +1,2 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-animal pathogen--FALSE	357	879	1017	23031
-animal pathogen--TRUE	523	879	766	23031
+Attribute	ltp_bp_phys	bp_phys	ltp
+animal pathogen	879	1782	23501

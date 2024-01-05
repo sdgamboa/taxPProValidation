@@ -1,6 +1,5 @@
 
 args <- commandArgs(trailingOnly = TRUE)
-args <- list('animal pathogen', 'all')
 suppressMessages({
     library(phytools)
     library(castor)
@@ -42,8 +41,9 @@ node_data <- ltp$node_data
 ## bugphyzz data
 phys <- physiologies(gsub('_', ' ', phys_name))[[1]]
 dat <- getDataReady(filterData(phys)) |> 
-    filter(!is.na(Evidence)) |> # NA in the evidence column means that an observation was imputed 
+    filter(!is.na(Evidence)) |>
     filter(Rank %in% rank_var) 
+
 fdat <- dat |> 
     filter(NCBI_ID %in% unique(tip_data$NCBI_ID)) |> 
     filter(!duplicated(NCBI_ID))
@@ -105,34 +105,14 @@ for (i in 1:10) {
 ## Value here must be TRUE
 all(map2_lgl(test_folds, train_folds, ~ !any(.x$NCBI_ID %in% .y$NCBI_ID)))
 
-## 
-inLTP <- map_int(split(dat, dat$Attribute), ~ {
-    sum(unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
-})
-
-# inDat <- map_int(split(dat, dat$Attribute), ~ {
-#     sum(unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
-# })
-
-# notInDat <- map_int(split(dat, dat$Attribute), ~ {
-#     sum(!unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
-# })
-
-totalDat <- map_int(split(dat, dat$Attribute), ~ {
-    length(unique(.x$NCBI_ID))
-})
-
-totalDat <- length(unique(dat$NCBI_ID))
-
-totalLTP <- length(unique(tip_data$NCBI_ID))
-
 counts <- data.frame(
-    Attribute = names(inLTP),
-    ltp_bp = unname(inLTP),
+    Attribute = gsub("_", " ", phys_name),
     ltp_bp_phys = sum(unique(tip_data$NCBI_ID) %in% unique(dat$NCBI_ID)),
-    bp = unname(totalDat),
-    ltp = unname(totalLTP)
-)
+    bp_phys = length(unique(dat$NCBI_ID)),
+    ltp = Ntip(tree)
+
+    )
+
 write.table(
     x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
     row.names = FALSE, quote = FALSE, sep = '\t'

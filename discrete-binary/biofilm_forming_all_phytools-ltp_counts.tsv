@@ -1,3 +1,2 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-biofilm formation--FALSE	42	180	144	23031
-biofilm formation--TRUE	138	180	279	23031
+Attribute	ltp_bp_phys	bp_phys	ltp
+biofilm forming	180	423	23501

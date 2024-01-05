@@ -1,3 +1,2 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-motility--FALSE	367	671	647	23031
-motility--TRUE	304	671	551	23031
+Attribute	ltp_bp_phys	bp_phys	ltp
+motility	671	1198	23501

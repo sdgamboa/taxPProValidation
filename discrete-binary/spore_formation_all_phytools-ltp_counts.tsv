@@ -1,3 +1,2 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-spore formation--FALSE	2824	4177	3209	23031
-spore formation--TRUE	1356	4177	1527	23031
+Attribute	ltp_bp_phys	bp_phys	ltp
+spore formation	4177	4731	23501
