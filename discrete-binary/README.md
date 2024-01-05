@@ -21,4 +21,4 @@ Create summary:
 /usr/bin/Rscript --vanilla 03_summary_binary.R 
 ```
 
-Output is in the `discrete_binary_summary.tsv` file.
+Output is in the (discrete_binary_summary.tsv)[./discrete_binary_summary.tsv].
