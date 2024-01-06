@@ -1,5 +1,5 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-alpha	94	435	112	23031
-beta	131	435	195	23031
-CAMP test	2	435	5	23031
-gamma	266	435	345	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+alpha	94	112	435	587	23501
+beta	131	195	435	587	23501
+CAMP test	2	5	435	587	23501
+gamma	266	345	435	587	23501

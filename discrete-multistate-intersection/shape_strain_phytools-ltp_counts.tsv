@@ -1,5 +1,5 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-bacillus	296	405	821	23031
-coccus	82	405	259	23031
-filamentous	10	405	18	23031
-spirillum	17	405	65	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+bacillus	296	821	405	1163	23501
+coccus	82	259	405	1163	23501
+filamentous	10	18	405	1163	23501
+spirillum	17	65	405	1163	23501

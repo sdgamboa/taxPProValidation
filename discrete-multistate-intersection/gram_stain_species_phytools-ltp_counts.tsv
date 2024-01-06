@@ -1,4 +1,4 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-gram stain negative	4034	6609	5179	23031
-gram stain positive	2502	6609	3237	23031
-gram stain variable	75	6609	85	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+gram stain negative	4034	5179	6609	8498	23501
+gram stain positive	2502	3237	6609	8498	23501
+gram stain variable	75	85	6609	8498	23501

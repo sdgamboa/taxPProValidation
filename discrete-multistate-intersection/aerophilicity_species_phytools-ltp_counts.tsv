@@ -1,5 +1,5 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-aerobic	7152	9078	8418	23031
-aerotolerant	4	9078	5	23031
-anaerobic	1387	9078	2162	23031
-facultatively anaerobic	683	9078	901	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+aerobic	7152	8418	9078	11268	23501
+aerotolerant	4	5	9078	11268	23501
+anaerobic	1387	2162	9078	11268	23501
+facultatively anaerobic	683	901	9078	11268	23501

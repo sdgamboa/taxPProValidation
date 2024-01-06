@@ -1,20 +1,20 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-bacillus	806	1113	840	23031
-bent filament	5	1113	5	23031
-clavate	9	1113	11	23031
-coccobacillus	35	1113	37	23031
-coccus	292	1113	319	23031
-discoid	7	1113	9	23031
-dumbbell-shaped	1	1113	1	23031
-elliptic	109	1113	122	23031
-filamentous	33	1113	36	23031
-flat	5	1113	5	23031
-pleiomorphic cell	83	1113	89	23031
-polyhedral shape	1	1113	1	23031
-rectangle	1	1113	1	23031
-sigmoid	2	1113	2	23031
-spirillum	53	1113	59	23031
-tetrahedral	2	1113	2	23031
-triangle	5	1113	5	23031
-u-shaped	2	1113	2	23031
-wrinkled	0	1113	1	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+bacillus	806	840	1113	1177	23501
+bent filament	5	5	1113	1177	23501
+clavate	9	11	1113	1177	23501
+coccobacillus	35	37	1113	1177	23501
+coccus	292	319	1113	1177	23501
+discoid	7	9	1113	1177	23501
+dumbbell-shaped	1	1	1113	1177	23501
+elliptic	109	122	1113	1177	23501
+filamentous	33	36	1113	1177	23501
+flat	5	5	1113	1177	23501
+pleiomorphic cell	83	89	1113	1177	23501
+polyhedral shape	1	1	1113	1177	23501
+rectangle	1	1	1113	1177	23501
+sigmoid	2	2	1113	1177	23501
+spirillum	53	59	1113	1177	23501
+tetrahedral	2	2	1113	1177	23501
+triangle	5	5	1113	1177	23501
+u-shaped	2	2	1113	1177	23501
+wrinkled	0	1	1113	1177	23501

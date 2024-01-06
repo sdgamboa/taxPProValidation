@@ -1,9 +1,9 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-bacillus	6	300	6	23031
-branched	1	300	1	23031
-cell chain	2	300	2	23031
-coccus	26	300	26	23031
-elliptic	34	300	34	23031
-endospore	281	300	689	23031
-sigmoid	1	300	1	23031
-spirillum	1	300	1	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+bacillus	6	6	300	708	23501
+branched	1	1	300	708	23501
+cell chain	2	2	300	708	23501
+coccus	26	26	300	708	23501
+elliptic	34	34	300	708	23501
+endospore	281	689	300	708	23501
+sigmoid	1	1	300	708	23501
+spirillum	1	1	300	708	23501

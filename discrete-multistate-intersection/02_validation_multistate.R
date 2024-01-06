@@ -11,13 +11,16 @@ phys_name <- args[[1]]
 method <- args[[2]]
 
 log_open(paste0(phys_name, '_', method, '_mcc'), logdir = TRUE, show_notes = TRUE)
-# rank <- 'all'
 
 dir <- file.path('.')
 
-# pattern <- paste0(phys_name, '_', rank, '_', method, '.*csv')
 pattern <- paste0('^', phys_name, '_(all|genus|species|strain)_', method, '.*csv')
 fnames <- list.files(path = dir, pattern = pattern, full.names = TRUE)
+if (!length(fnames)) {
+    msg <- paste0("Not enough data for prediction: ", phys_name)
+    log_print(msg, blank_after = TRUE)
+    quit(save = "no")
+}
 
 l <- map(fnames, read.csv)
 names(l) <- sub("^(.*/)*(.*)\\.csv$", "\\2", fnames)

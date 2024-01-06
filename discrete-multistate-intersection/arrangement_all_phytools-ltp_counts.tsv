@@ -1,13 +1,13 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-branched	97	741	109	23031
-cell chain	219	741	448	23031
-cell cluster	97	741	130	23031
-filamentous	24	741	68	23031
-paired cells	376	741	775	23031
-palisade	3	741	4	23031
-reverse Y-branched filaments	2	741	3	23031
-rosettes	9	741	9	23031
-single	368	741	771	23031
-tetrads	28	741	44	23031
-unbranched	11	741	11	23031
-v-formation	8	741	9	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+branched	97	109	741	1568	23501
+cell chain	219	448	741	1568	23501
+cell cluster	97	130	741	1568	23501
+filamentous	24	68	741	1568	23501
+paired cells	376	775	741	1568	23501
+palisade	3	4	741	1568	23501
+reverse Y-branched filaments	2	3	741	1568	23501
+rosettes	9	9	741	1568	23501
+single	368	771	741	1568	23501
+tetrads	28	44	741	1568	23501
+unbranched	11	11	741	1568	23501
+v-formation	8	9	741	1568	23501

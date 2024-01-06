@@ -1,7 +1,7 @@
-Attribute	ltp_bp	ltp_bp_phys	bp	ltp
-cell chain	78	188	174	23031
-cell cluster	17	188	22	23031
-filamentous	24	188	67	23031
-paired cells	97	188	322	23031
-single	0	188	17	23031
-tetrads	6	188	18	23031
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
+cell chain	78	174	188	532	23501
+cell cluster	17	22	188	532	23501
+filamentous	24	67	188	532	23501
+paired cells	97	322	188	532	23501
+single	0	17	188	532	23501
+tetrads	6	18	188	532	23501

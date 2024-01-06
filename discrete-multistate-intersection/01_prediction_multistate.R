@@ -40,11 +40,12 @@ tree <- ltp$tree
 tip_data <- ltp$tip_data
 node_data <- ltp$node_data
 
-## bugphyzz data
+## bugphyzz data ####
 phys <- physiologies(gsub('_', ' ', phys_name))[[1]]
 dat <- getDataReady(filterData(phys)) |> 
-    filter(!is.na(Evidence)) |> # NA in the evidence column means that an observation was imputed 
+    filter(!is.na(Evidence)) |>  
     filter(Rank %in% rank_var) 
+
 fdat <- dat |> 
     filter(NCBI_ID %in% unique(tip_data$NCBI_ID)) |> 
     filter(!duplicated(NCBI_ID))
@@ -107,33 +108,25 @@ for (i in 1:10) {
 all(map2_lgl(test_folds, train_folds, ~ !any(.x$NCBI_ID %in% .y$NCBI_ID)))
 
 ## 
-inLTP <- map_int(split(dat, dat$Attribute), ~ {
+ltp_bp <- map_int(split(dat, dat$Attribute), ~ {
     sum(unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
 })
-notInLTP <- map_dbl(split(dat, dat$Attribute), ~ {
-    sum(!unique(.x$NCBI_ID) %in% unique(tip_data$NCBI_ID))
-})
 
-inDat <- map_int(split(dat, dat$Attribute), ~ {
-    sum(unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
-})
-
-notInDat <- map_int(split(dat, dat$Attribute), ~ {
-    sum(!unique(tip_data$NCBI_ID) %in% unique(.x$NCBI_ID))
-})
-
-totalDat <- map_int(split(dat, dat$Attribute), ~ {
+bp <- map_int(split(dat, dat$Attribute), ~ {
     length(unique(.x$NCBI_ID))
 })
 
-totalLTP <- length(unique(tip_data$NCBI_ID))
+ltp_bp_phys <- sum(unique(tip_data$NCBI_ID) %in% unique(dat$NCBI_ID))
+
+bp_phys <- length(unique(dat$NCBI_ID))
 
 counts <- data.frame(
-    Attribute = names(inLTP),
-    ltp_bp = unname(inLTP),
-    ltp_bp_phys = sum(unique(tip_data$NCBI_ID) %in% unique(dat$NCBI_ID)),
-    bp = unname(totalDat),
-    ltp = unname(totalLTP)
+    Attribute = names(ltp_bp),
+    ltp_bp = unname(ltp_bp),
+    bp = unname(bp),
+    ltp_bp_phys = ltp_bp_phys ,
+    bp_phys = bp_phys,
+    ltp = Ntip(tree)
 )
 write.table(
     x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
