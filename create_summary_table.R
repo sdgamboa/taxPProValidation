@@ -10,6 +10,11 @@ fnames <- c(
         path = 'numeric',
         pattern = 'summary.*tsv',
         full.names = TRUE
+    ),
+    list.files(
+        path = 'discrete-binary',
+        pattern = 'summary.*tsv',
+        full.names = TRUE
     )
 )
 
@@ -20,7 +25,7 @@ dat <- lapply(fnames, function(x) {
     relocate(
         method, rank, physiology, attribute,
         mcc_mean = mean_mcc, mcc_sd = sd_mcc,
-        r_squared_mean, r_squared_sd,
+        r2_mean, r2_sd,
     ) |> 
     mutate(
         attribute = ifelse(is.na(attribute), physiology, attribute)
