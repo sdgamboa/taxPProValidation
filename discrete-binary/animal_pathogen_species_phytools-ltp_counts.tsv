@@ -1,2 +1,2 @@
-Attribute	ltp_bp_phys	bp_phys	ltp
-animal pathogen	879	1782	23501
+Attribute	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_Sd
+animal pathogen	879	1782	23501	0.157	0.111

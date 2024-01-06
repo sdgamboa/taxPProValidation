@@ -1,4 +1,4 @@
-Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
-biosafety level 1	1453	2965	1720	3570	23501
-biosafety level 2	265	603	1720	3570	23501
-biosafety level 3	2	4	1720	3570	23501
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_sd
+biosafety level 1	1453	2965	1720	3570	23501	0.094	0.062
+biosafety level 2	265	603	1720	3570	23501	0.094	0.062
+biosafety level 3	2	4	1720	3570	23501	0.094	0.062

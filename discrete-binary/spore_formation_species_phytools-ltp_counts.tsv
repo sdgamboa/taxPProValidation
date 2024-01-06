@@ -1,2 +1,2 @@
-Attribute	ltp_bp_phys	bp_phys	ltp
-spore formation	3673	3809	23501
+Attribute	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_Sd
+spore formation	3673	3809	23501	0.096	0.097

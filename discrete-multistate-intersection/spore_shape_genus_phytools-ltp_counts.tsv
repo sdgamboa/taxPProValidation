@@ -1,9 +1,9 @@
-Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
-bacillus	6	6	92	95	23501
-branched	1	1	92	95	23501
-cell chain	2	2	92	95	23501
-coccus	26	26	92	95	23501
-elliptic	34	34	92	95	23501
-endospore	73	76	92	95	23501
-sigmoid	1	1	92	95	23501
-spirillum	1	1	92	95	23501
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_sd
+bacillus	6	6	92	95	23501	0.371	0.198
+branched	1	1	92	95	23501	0.371	0.198
+cell chain	2	2	92	95	23501	0.371	0.198
+coccus	26	26	92	95	23501	0.371	0.198
+elliptic	34	34	92	95	23501	0.371	0.198
+endospore	73	76	92	95	23501	0.371	0.198
+sigmoid	1	1	92	95	23501	0.371	0.198
+spirillum	1	1	92	95	23501	0.371	0.198

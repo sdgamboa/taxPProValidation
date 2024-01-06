@@ -120,18 +120,7 @@ ltp_bp_phys <- sum(unique(tip_data$NCBI_ID) %in% unique(dat$NCBI_ID))
 
 bp_phys <- length(unique(dat$NCBI_ID))
 
-counts <- data.frame(
-    Attribute = names(ltp_bp),
-    ltp_bp = unname(ltp_bp),
-    bp = unname(bp),
-    ltp_bp_phys = ltp_bp_phys ,
-    bp_phys = bp_phys,
-    ltp = Ntip(tree)
-)
-write.table(
-    x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
-    row.names = FALSE, quote = FALSE, sep = '\t'
-)
+
 
 ## Create input matrix for tree ####
 known_priors <- vector('list', length(train_folds))
@@ -149,6 +138,31 @@ for (i in seq_along(train_folds)) {
         tibble::column_to_rownames(var = 'tip_label') |> 
         as.matrix()
 }
+
+## Code for creating and exporting counts ####
+
+nsti_input <- map(known_priors, rownames) |>
+    unlist(use.names = FALSE) |>
+    unique()
+
+nsti <- getNsti(tree, nsti_input)$nsti
+
+counts <- data.frame(
+    Attribute = names(ltp_bp),
+    ltp_bp = unname(ltp_bp),
+    bp = unname(bp),
+    ltp_bp_phys = ltp_bp_phys ,
+    bp_phys = bp_phys,
+    ltp = Ntip(tree),
+    nsti_mean = round(mean(nsti), 3),
+    nsti_sd = round(sd(nsti), 3)
+)
+
+write.table(
+    x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),
+    row.names = FALSE, quote = FALSE, sep = '\t'
+)
+####
 
 input_mats <- vector('list', length(known_priors))
 for (i in seq_along(known_priors)) {

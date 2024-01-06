@@ -1,2 +1,2 @@
-Attribute	ltp_bp_phys	bp_phys	ltp
-motility	5122	5331	23501
+Attribute	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_Sd
+motility	5122	5331	23501	0.071	0.069

@@ -1,5 +1,5 @@
-Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
-alpha	20	35	94	176	23501
-beta	16	36	94	176	23501
-CAMP test	0	3	94	176	23501
-gamma	65	117	94	176	23501
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_sd
+alpha	20	35	94	176	23501	0.343	0.181
+beta	16	36	94	176	23501	0.343	0.181
+CAMP test	0	3	94	176	23501	0.343	0.181
+gamma	65	117	94	176	23501	0.343	0.181

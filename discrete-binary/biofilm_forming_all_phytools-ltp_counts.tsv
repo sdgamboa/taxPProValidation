@@ -1,2 +1,2 @@
-Attribute	ltp_bp_phys	bp_phys	ltp
-biofilm forming	180	423	23501
+Attribute	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_Sd
+biofilm forming	180	423	23501	0.239	0.178

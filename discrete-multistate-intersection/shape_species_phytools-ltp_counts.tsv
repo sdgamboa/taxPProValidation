@@ -1,8 +1,8 @@
-Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp
-bacillus	409	1299	527	1629	23501
-coccus	67	203	527	1629	23501
-dumbbell-shaped	2	2	527	1629	23501
-filamentous	2	6	527	1629	23501
-spirillum	26	78	527	1629	23501
-staphylococcus	21	25	527	1629	23501
-tail	15	34	527	1629	23501
+Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_sd
+bacillus	409	1299	527	1629	23501	0.182	0.131
+coccus	67	203	527	1629	23501	0.182	0.131
+dumbbell-shaped	2	2	527	1629	23501	0.182	0.131
+filamentous	2	6	527	1629	23501	0.182	0.131
+spirillum	26	78	527	1629	23501	0.182	0.131
+staphylococcus	21	25	527	1629	23501	0.182	0.131
+tail	15	34	527	1629	23501	0.182	0.131
