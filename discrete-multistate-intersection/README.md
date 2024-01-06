@@ -18,3 +18,5 @@ Create summary:
 ```
 /usr/bin/Rscript --vanilla 03_summary_multistate.R
 ```
+
+Output is in the [discrete_multistate_summary.tsv](./discrete_multistate_summary.tsv) file.
