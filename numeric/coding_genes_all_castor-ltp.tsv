@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	method
-coding genes	0.715716620363852	0.0359029492463212	all	1410	4303	23031	castor-ltp
+physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_median	nsti_sd	method
+coding genes	0.715716620363852	0.0359029492463212	all	1410	4303	23031	0.101	0	0.07	castor-ltp

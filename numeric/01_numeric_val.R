@@ -1,5 +1,6 @@
 
 args <- commandArgs(trailingOnly = TRUE)
+# args <- list('growth_temperature', 'all')
 
 library(taxPPro)
 library(dplyr)
@@ -77,18 +78,25 @@ if (!nrow(fdat)) {
     log_close()
 }
 
+tip_data_annotated <- left_join(tip_data, fdat, by = c('NCBI_ID')) |>
+    select(tip_label, Attribute_value) # I don't need to filter NAs here
+
+known_tips <- tip_data_annotated |> 
+    filter(!is.na(Attribute_value)) |> 
+    pull(tip_label)
+
+nsti <- getNsti(tree, known_tips)
 
 counts <- data.frame(
     physiology = gsub('_', ' ', phys_name),
     rank = rank_arg,
     ltp_bp_phys = length(unique(fdat$NCBI_ID)),
     bp_phys = length(unique(dat$NCBI_ID)),
-    ltp = length(unique(tip_data$NCBI_ID))
+    ltp = length(unique(tip_data$NCBI_ID)),
+    nsti_mean = round(mean(nsti$nsti), 3),
+    nsti_median = round(median(nsti$nsti, 3)),
+    nsti_sd = round(sd(nsti$nsti), 3)
 )
-
-
-tip_data_annotated <- left_join(tip_data, fdat, by = c('NCBI_ID')) |>
-    select(tip_label, Attribute_value) # I don't need to filter NAs here
 
 allTips <- tip_data_annotated$Attribute_value
 names(allTips) <- tip_data_annotated$tip_label

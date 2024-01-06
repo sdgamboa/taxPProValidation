@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	method
-width	-0.39922309367546	0.626331289309784	genus	756	812	23031	castor-ltp
+physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_median	nsti_sd	method
+width	-0.39922309367546	0.626331289309784	genus	756	812	23031	0.105	0	0.076	castor-ltp

@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	method
-optimal ph	0.00820282194608172	0.21544342825425	all	290	878	23031	castor-ltp
+physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_median	nsti_sd	method
+optimal ph	0.00820282194608172	0.21544342825425	all	290	878	23031	0.18	0	0.11	castor-ltp
