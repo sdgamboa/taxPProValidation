@@ -87,6 +87,9 @@ known_tips <- tip_data_annotated |>
 
 nsti <- getNsti(tree, known_tips)
 
+# dist <- castor::get_all_pairwise_distances(tree = tree, only_clades = known_tips)
+# dist <- dist[lower.tri(dist)]
+
 counts <- data.frame(
     physiology = gsub('_', ' ', phys_name),
     rank = rank_arg,
@@ -94,8 +97,9 @@ counts <- data.frame(
     bp_phys = length(unique(dat$NCBI_ID)),
     ltp = length(unique(tip_data$NCBI_ID)),
     nsti_mean = round(mean(nsti$nsti), 3),
-    nsti_median = round(median(nsti$nsti, 3)),
     nsti_sd = round(sd(nsti$nsti), 3)
+    # dist_mean = round(mean(dist), 3),
+    # dist_sd = round(sd(dist), 3)
 )
 
 allTips <- tip_data_annotated$Attribute_value

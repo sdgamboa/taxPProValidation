@@ -1,2 +1,2 @@
-physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_median	nsti_sd	method
-mutation rate per site per generation	-20.9093041240531	56.0998014646873	all	19	26	23031	0.342	0	0.184	castor-ltp
+physiology	r_squared_mean	r_squared_sd	rank	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_sd	method
+mutation rate per site per generation	-20.9093041240531	56.0998014646873	all	19	26	23031	0.342	0.184	castor-ltp
