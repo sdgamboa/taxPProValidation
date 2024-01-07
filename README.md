@@ -10,3 +10,5 @@ Code for generating the main table:
 
 This must be run after running the scripts in the discrete-binary,
 discrete-multistate-intersection, and numeric directories.
+
+Output is in [validation_summary.tsv](./validation_summary.tsv)
