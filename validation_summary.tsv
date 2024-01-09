@@ -98,9 +98,9 @@ castor-ltp	strain	coding genes	coding genes	NA	NA	0.62	0.11	NA	NA	710	2863	23031
 castor-ltp	all	genome size	genome size	NA	NA	0.71	0.07	NA	NA	1409	4298	23031	0.101	0.07
 castor-ltp	species	genome size	genome size	NA	NA	0.65	0.12	NA	NA	700	1437	23031	0.135	0.096
 castor-ltp	strain	genome size	genome size	NA	NA	0.6	0.11	NA	NA	709	2861	23031	0.132	0.077
-castor-ltp	all	growth temperature	growth temperature	NA	NA	0.66	0.08	NA	NA	2455	7271	23031	0.083	0.06
-castor-ltp	species	growth temperature	growth temperature	NA	NA	0.4	0.15	NA	NA	637	3154	23031	0.146	0.103
-castor-ltp	strain	growth temperature	growth temperature	NA	NA	0.69	0.1	NA	NA	1818	4117	23031	0.093	0.062
+castor-ltp	all	growth temperature	growth temperature	NA	NA	0.54	0.04	NA	NA	14251	21033	23031	0.036	0.042
+castor-ltp	species	growth temperature	growth temperature	NA	NA	0.45	0.05	NA	NA	12433	16916	23031	0.044	0.053
+castor-ltp	strain	growth temperature	growth temperature	NA	NA	0.7	0.1	NA	NA	1818	4117	23031	0.093	0.062
 castor-ltp	all	length	length	NA	NA	-0.93	1.25	NA	NA	605	636	23031	0.118	0.077
 castor-ltp	genus	length	length	NA	NA	-0.93	1.25	NA	NA	605	636	23031	0.118	0.077
 castor-ltp	all	mutation rate per site per generation	mutation rate per site per generation	NA	NA	-20.91	56.1	NA	NA	19	26	23031	0.342	0.184

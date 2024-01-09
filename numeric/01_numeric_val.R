@@ -59,7 +59,12 @@ modifyNumeric <- function(x) {
         dplyr::distinct()
 }
 
-dat <- modifyNumeric(phys) |> 
+# dat <- modifyNumeric(phys) |> 
+#     filter(Rank %in% rank_var)
+
+dat <- phys |> 
+    filterData() |> 
+    getDataReady() |> 
     filter(Rank %in% rank_var)
 
 if (!nrow(dat)) {
@@ -137,6 +142,17 @@ for (i in seq_along(trainSets)) {
         tree = tree, tip_states = input_vector, weighted = TRUE,
         check_input = TRUE
     )
+    
+    # res <- hsp_independent_contrasts(
+    #     tree = tree, tip_states = input_vector, weighted = TRUE,
+    #     check_input = TRUE
+    # )
+    
+    # res <- hsp_subtree_averaging(
+    #     tree = tree, tip_states = input_vector,
+    #     check_input = TRUE
+    # )
+
 
     statesDF <- data.frame(
         label = tree$tip.label,
@@ -160,7 +176,8 @@ metrics <- map2(hsp, testSets, ~ {
 
     ss_total <- sum((actual_values - mean(actual_values))^2)
     ss_residual <- sum((actual_values - predicted_values)^2)
-    r_squared <- 1 - (ss_residual / ss_total)
+    # r_squared <- 1 - (ss_residual / ss_total)
+    r_squared <- summary(lm(formula = actual_values ~ predicted_values))$r.squared
 
     mape <- mean(abs((actual_values - predicted_values) / actual_values)) * 100
 
