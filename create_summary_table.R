@@ -29,7 +29,12 @@ dat <- lapply(fnames, function(x) {
     ) |> 
     mutate(
         attribute = ifelse(is.na(attribute), physiology, attribute)
+    ) |> 
+    mutate(
+        ltp_bp_per = round(ltp_bp / ltp * 100),
+        ltp_bp_phys_per = round(ltp_bp_phys / ltp * 100)
     )
+
 
 write.table(
     x = dat, file = 'validation_summary.tsv', quote = FALSE, sep = '\t',
