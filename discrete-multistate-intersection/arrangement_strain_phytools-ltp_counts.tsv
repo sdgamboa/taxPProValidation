@@ -1,9 +1,0 @@
-Attribute	ltp_bp	bp	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_sd
-branched	10	19	177	646	23501	0.23	0.108
-cell chain	33	165	177	646	23501	0.23	0.108
-cell cluster	10	35	177	646	23501	0.23	0.108
-filamentous	0	1	177	646	23501	0.23	0.108
-paired cells	86	259	177	646	23501	0.23	0.108
-single	147	526	177	646	23501	0.23	0.108
-tetrads	2	6	177	646	23501	0.23	0.108
-v-formation	0	1	177	646	23501	0.23	0.108

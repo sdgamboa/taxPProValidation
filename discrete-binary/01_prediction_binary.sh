@@ -12,6 +12,8 @@ physiologies=(
     "plant_pathogenicity"
     "spore_formation"
     "host-associated"
+    'sphingolipid_producing'
+    'butyrate_producing'
 )
 
 myVar=$(which R)

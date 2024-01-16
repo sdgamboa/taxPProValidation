@@ -23,14 +23,6 @@ phytools-ltp	genus	arrangement	cell chain	-0.04	0.03	NA	NA	108	109	376	390	23501
 phytools-ltp	genus	arrangement	cell cluster	0.05	0.23	NA	NA	70	73	376	390	23501	0.137	0.086	0	2
 phytools-ltp	genus	arrangement	paired cells	0.09	0.19	NA	NA	193	194	376	390	23501	0.137	0.086	1	2
 phytools-ltp	genus	arrangement	single	-0.02	0.03	NA	NA	221	228	376	390	23501	0.137	0.086	1	2
-phytools-ltp	species	arrangement	cell chain	0.66	0.14	NA	NA	78	174	188	532	23501	0.298	0.178	0	1
-phytools-ltp	species	arrangement	cell cluster	0.53	0.49	NA	NA	17	22	188	532	23501	0.298	0.178	0	1
-phytools-ltp	species	arrangement	filamentous	0.94	0.09	NA	NA	24	67	188	532	23501	0.298	0.178	0	1
-phytools-ltp	species	arrangement	paired cells	0.93	0.1	NA	NA	97	322	188	532	23501	0.298	0.178	0	1
-phytools-ltp	strain	arrangement	branched	0.19	0.43	NA	NA	10	19	177	646	23501	0.23	0.108	0	1
-phytools-ltp	strain	arrangement	cell chain	0.05	0.22	NA	NA	33	165	177	646	23501	0.23	0.108	0	1
-phytools-ltp	strain	arrangement	paired cells	-0.01	0.16	NA	NA	86	259	177	646	23501	0.23	0.108	0	1
-phytools-ltp	strain	arrangement	single	0.48	0.21	NA	NA	147	526	177	646	23501	0.23	0.108	1	1
 phytools-ltp	all	biosafety level	biosafety level 1	0.56	0.05	NA	NA	9076	11160	9928	12477	23501	0.051	0.051	39	42
 phytools-ltp	all	biosafety level	biosafety level 2	0.54	0.05	NA	NA	851	1320	9928	12477	23501	0.051	0.051	4	42
 phytools-ltp	all	biosafety level	biosafety level 3	0.24	0.4	NA	NA	12	15	9928	12477	23501	0.051	0.051	0	42
@@ -62,9 +54,6 @@ phytools-ltp	all	hemolysis	gamma	0.5	0.18	NA	NA	266	345	435	587	23501	0.272	0.18
 phytools-ltp	species	hemolysis	alpha	0.42	0.15	NA	NA	74	77	341	411	23501	0.282	0.188	0	1
 phytools-ltp	species	hemolysis	beta	0.32	0.18	NA	NA	115	159	341	411	23501	0.282	0.188	0	1
 phytools-ltp	species	hemolysis	gamma	0.56	0.18	NA	NA	201	228	341	411	23501	0.282	0.188	1	1
-phytools-ltp	strain	hemolysis	alpha	0.34	0.48	NA	NA	20	35	94	176	23501	0.343	0.181	0	0
-phytools-ltp	strain	hemolysis	beta	-0.05	0.06	NA	NA	16	36	94	176	23501	0.343	0.181	0	0
-phytools-ltp	strain	hemolysis	gamma	0.58	0.18	NA	NA	65	117	94	176	23501	0.343	0.181	0	0
 phytools-ltp	all	shape	bacillus	0.54	0.07	NA	NA	1511	2960	2045	3969	23501	0.071	0.051	6	9
 phytools-ltp	all	shape	coccobacillus	0	0	NA	NA	35	37	2045	3969	23501	0.071	0.051	0	9
 phytools-ltp	all	shape	coccus	0.63	0.07	NA	NA	441	781	2045	3969	23501	0.071	0.051	2	9
@@ -89,34 +78,25 @@ phytools-ltp	strain	shape	spirillum	0.62	0.44	NA	NA	17	65	405	1163	23501	0.163	0
 phytools-ltp	all	spore shape	coccus	0	0.01	NA	NA	26	26	300	708	23501	0.366	0.204	0	1
 phytools-ltp	all	spore shape	elliptic	0.15	0.38	NA	NA	34	34	300	708	23501	0.366	0.204	0	1
 phytools-ltp	all	spore shape	endospore	0.1	0.19	NA	NA	281	689	300	708	23501	0.366	0.204	1	1
-phytools-ltp	genus	spore shape	coccus	0	0	NA	NA	26	26	92	95	23501	0.371	0.198	0	0
-phytools-ltp	genus	spore shape	elliptic	-0.04	0.11	NA	NA	34	34	92	95	23501	0.371	0.198	0	0
-phytools-ltp	genus	spore shape	endospore	-0.09	0.18	NA	NA	73	76	92	95	23501	0.371	0.198	0	0
-castor-ltp	all	coding genes	coding genes	NA	NA	0.72	0.04	NA	NA	1410	4303	23031	0.101	0.07	NA	6
-castor-ltp	species	coding genes	coding genes	NA	NA	0.64	0.12	NA	NA	700	1440	23031	0.135	0.096	NA	3
+castor-ltp	all	coding genes	coding genes	NA	NA	0.72	0.03	NA	NA	1410	4303	23031	0.101	0.07	NA	6
+castor-ltp	species	coding genes	coding genes	NA	NA	0.65	0.11	NA	NA	700	1440	23031	0.135	0.096	NA	3
 castor-ltp	strain	coding genes	coding genes	NA	NA	0.62	0.11	NA	NA	710	2863	23031	0.132	0.077	NA	3
-castor-ltp	all	genome size	genome size	NA	NA	0.71	0.07	NA	NA	1409	4298	23031	0.101	0.07	NA	6
-castor-ltp	species	genome size	genome size	NA	NA	0.65	0.12	NA	NA	700	1437	23031	0.135	0.096	NA	3
-castor-ltp	strain	genome size	genome size	NA	NA	0.6	0.11	NA	NA	709	2861	23031	0.132	0.077	NA	3
+castor-ltp	all	genome size	genome size	NA	NA	0.72	0.07	NA	NA	1409	4298	23031	0.101	0.07	NA	6
+castor-ltp	species	genome size	genome size	NA	NA	0.67	0.12	NA	NA	700	1437	23031	0.135	0.096	NA	3
+castor-ltp	strain	genome size	genome size	NA	NA	0.62	0.11	NA	NA	709	2861	23031	0.132	0.077	NA	3
 castor-ltp	all	growth temperature	growth temperature	NA	NA	0.54	0.04	NA	NA	14251	21033	23031	0.036	0.042	NA	62
-castor-ltp	species	growth temperature	growth temperature	NA	NA	0.45	0.05	NA	NA	12433	16916	23031	0.044	0.053	NA	54
-castor-ltp	strain	growth temperature	growth temperature	NA	NA	0.7	0.1	NA	NA	1818	4117	23031	0.093	0.062	NA	8
-castor-ltp	all	length	length	NA	NA	-0.93	1.25	NA	NA	605	636	23031	0.118	0.077	NA	3
-castor-ltp	genus	length	length	NA	NA	-0.93	1.25	NA	NA	605	636	23031	0.118	0.077	NA	3
-castor-ltp	all	mutation rate per site per generation	mutation rate per site per generation	NA	NA	-20.91	56.1	NA	NA	19	26	23031	0.342	0.184	NA	0
-castor-ltp	species	mutation rate per site per generation	mutation rate per site per generation	NA	NA	-20.91	56.1	NA	NA	19	26	23031	0.342	0.184	NA	0
-castor-ltp	all	mutation rate per site per year	mutation rate per site per year	NA	NA	-181.83	491.19	NA	NA	24	33	23031	0.457	0.253	NA	0
-castor-ltp	species	mutation rate per site per year	mutation rate per site per year	NA	NA	-181.83	491.19	NA	NA	24	33	23031	0.457	0.253	NA	0
-castor-ltp	all	optimal ph	optimal ph	NA	NA	0.01	0.22	NA	NA	290	878	23031	0.18	0.11	NA	1
-castor-ltp	species	optimal ph	optimal ph	NA	NA	0.01	0.22	NA	NA	290	878	23031	0.18	0.11	NA	1
-castor-ltp	all	width	width	NA	NA	-0.4	0.63	NA	NA	756	812	23031	0.105	0.076	NA	3
-castor-ltp	genus	width	width	NA	NA	-0.4	0.63	NA	NA	756	812	23031	0.105	0.076	NA	3
+castor-ltp	species	growth temperature	growth temperature	NA	NA	0.46	0.04	NA	NA	12433	16916	23031	0.044	0.053	NA	54
+castor-ltp	strain	growth temperature	growth temperature	NA	NA	0.7	0.09	NA	NA	1818	4117	23031	0.093	0.062	NA	8
+castor-ltp	all	length	length	NA	NA	0.15	0.24	NA	NA	605	636	23031	0.118	0.077	NA	3
+castor-ltp	genus	length	length	NA	NA	0.15	0.24	NA	NA	605	636	23031	0.118	0.077	NA	3
+castor-ltp	all	optimal ph	optimal ph	NA	NA	0.14	0.16	NA	NA	290	878	23031	0.18	0.11	NA	1
+castor-ltp	species	optimal ph	optimal ph	NA	NA	0.14	0.16	NA	NA	290	878	23031	0.18	0.11	NA	1
+castor-ltp	all	width	width	NA	NA	0.04	0.04	NA	NA	756	812	23031	0.105	0.076	NA	3
+castor-ltp	genus	width	width	NA	NA	0.04	0.04	NA	NA	756	812	23031	0.105	0.076	NA	3
 phytools-ltp	all	animal pathogen	animal pathogen	0.5	0.07	NA	NA	NA	NA	999	2071	23501	0.154	0.11	NA	4
 phytools-ltp	species	animal pathogen	animal pathogen	0.52	0.07	NA	NA	NA	NA	879	1782	23501	0.157	0.111	NA	4
 phytools-ltp	all	antimicrobial sensitivity	antimicrobial sensitivity	0.61	0.19	NA	NA	NA	NA	304	825	23501	0.192	0.12	NA	1
 phytools-ltp	species	antimicrobial sensitivity	antimicrobial sensitivity	0.61	0.19	NA	NA	NA	NA	304	825	23501	0.192	0.12	NA	1
-phytools-ltp	all	biofilm forming	biofilm forming	0.38	0.28	NA	NA	NA	NA	180	423	23501	0.239	0.178	NA	1
-phytools-ltp	species	biofilm forming	biofilm forming	0.38	0.28	NA	NA	NA	NA	180	423	23501	0.239	0.178	NA	1
 phytools-ltp	all	extreme environment	extreme environment	0.5	0.09	NA	NA	NA	NA	708	1856	23501	0.147	0.1	NA	3
 phytools-ltp	species	extreme environment	extreme environment	0.5	0.09	NA	NA	NA	NA	708	1856	23501	0.147	0.1	NA	3
 phytools-ltp	all	host-associated	host-associated	0.59	0.07	NA	NA	NA	NA	900	2492	23501	0.133	0.095	NA	4

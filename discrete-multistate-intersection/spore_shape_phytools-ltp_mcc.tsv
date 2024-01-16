@@ -2,6 +2,3 @@ physiology	rank	method	attribute	mean	sd
 spore shape	all	phytools-ltp	coccus	-0.00344827586206896	0.0109044057247185
 spore shape	all	phytools-ltp	elliptic	0.148255835456782	0.376463737816934
 spore shape	all	phytools-ltp	endospore	0.0964171343971063	0.191789006144249
-spore shape	genus	phytools-ltp	coccus	0	0
-spore shape	genus	phytools-ltp	elliptic	-0.04384379464651	0.105549226464427
-spore shape	genus	phytools-ltp	endospore	-0.0855461885963821	0.180580903024098

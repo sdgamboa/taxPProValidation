@@ -1,7 +1,7 @@
 
 args <- commandArgs(trailingOnly = TRUE)
 
-# args <- c("animal_pathogen", "all")
+args <- c("sphingolipid_producing", "all")
 
 suppressMessages({
     library(phytools)
@@ -67,8 +67,27 @@ remove_ids <- split(fdat, fdat$Attribute) |>
     unique()
 fdat <- filter(fdat, !NCBI_ID %in% remove_ids)
 
+if (!nrow(fdat)) {
+    msg <- paste0(
+        'Not enough data for propagation of: ', phys_name, '; rank: ', rank_arg,
+        'Quitting.'
+    )
+    log_print(msg)
+    quit(save = 'no')
+}
+
 ## Create folds ####
 keep_this <- split(fdat, fdat$Attribute)
+
+if (any(map_int(keep_this, nrow)  < 10)) {
+    msg <- paste0(
+        'Not enough data for propagation of: ', phys_name, '; rank: ', rank_arg,
+        'Quitting. Number of attributes: ', length(keep_this)
+    )
+    log_print(msg)
+    quit(save = 'no')
+    
+}
 
 if (length(keep_this) < 2) {
     msg <- paste0(
@@ -112,7 +131,7 @@ all(map2_lgl(test_folds, train_folds, ~ !any(.x$NCBI_ID %in% .y$NCBI_ID)))
 known_priors <- vector('list', length(train_folds))
 for (i in seq_along(train_folds)) {
     names(known_priors)[i] <- paste0('Fold', i)
-    known_priors[[i]] <- tip_data |> 
+    kp <- tip_data |> 
         left_join(
             train_folds[[i]], by = 'NCBI_ID', relationship = 'many-to-many'
         ) |> 
@@ -123,6 +142,13 @@ for (i in seq_along(train_folds)) {
         ) |> 
         tibble::column_to_rownames(var = 'tip_label') |> 
         as.matrix()
+    
+#    ltp_per <- floor(nrow(kp) / Ntip(tree) * 100)
+#    if (ltp_per < 1) {
+#        msg <- message("Not enoght data for ASR-LTP for: ", phys_name)
+#        quit(save = "no")
+#    }
+    known_priors[[i]] <- kp
 }
 
 ## Some code for exporting count data
@@ -140,6 +166,15 @@ counts <- data.frame(
     nsti_mean = round(mean(nsti), 3),
     nsti_Sd = round(sd(nsti), 3)
 )
+
+
+## total per represents the total of the tree not each fold.
+total_per <- floor(sum(unique(tip_data$NCBI_ID) %in% unique(dat$NCBI_ID)) / Ntip(tree) * 100)
+if (total_per < 1) {
+    message("Not enough percentage data for propagation.")
+    quit(save = "no")
+}
+
 
 write.table(
     x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),

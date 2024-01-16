@@ -1,7 +1,7 @@
 
-
 args <- commandArgs(trailingOnly = TRUE)
 # args <- list('aerophilicity', 'all')
+# args <- list('butyrate producing', 'all')
 suppressMessages({
     library(phytools)
     library(castor)
@@ -66,6 +66,16 @@ remove_ids <- split(fdat, fdat$Attribute) |>
     unique()
 fdat <- filter(fdat, !NCBI_ID %in% remove_ids)
 
+if (nrow(fdat) < 10) {
+    msg <- paste0(
+        'Not enough data for propagation of: ', phys_name, '; rank: ', rank_arg,
+        'Quitting. Number of attributes: ', length(keep_this)
+    )
+    log_print(msg)
+    quit(save = 'no')
+    
+}
+
 ## Create folds ####
 keep_this <- split(fdat, fdat$Attribute)
 
@@ -121,12 +131,11 @@ ltp_bp_phys <- sum(unique(tip_data$NCBI_ID) %in% unique(dat$NCBI_ID))
 bp_phys <- length(unique(dat$NCBI_ID))
 
 
-
 ## Create input matrix for tree ####
 known_priors <- vector('list', length(train_folds))
 for (i in seq_along(train_folds)) {
     names(known_priors)[i] <- paste0('Fold', i)
-    known_priors[[i]] <- tip_data |> 
+    kp <- tip_data |> 
         left_join(
             train_folds[[i]], by = 'NCBI_ID', relationship = 'many-to-many'
         ) |> 
@@ -137,6 +146,13 @@ for (i in seq_along(train_folds)) {
         ) |> 
         tibble::column_to_rownames(var = 'tip_label') |> 
         as.matrix()
+    
+#    ltp_per <- floor(nrow(kp) / Ntip(tree) * 100)
+#    if (ltp_per < 1) {
+#        msg <- message("Not enoght data for ASR-LTP for: ", phys_name)
+#        quit(save = "no")
+#    }
+    known_priors[[i]] <- kp
 }
 
 ## Code for creating and exporting counts ####
@@ -157,6 +173,14 @@ counts <- data.frame(
     nsti_mean = round(mean(nsti), 3),
     nsti_sd = round(sd(nsti), 3)
 )
+
+
+## total per represents the total of the tree not each fold.
+total_per <- floor(ltp_bp_phys / Ntip(tree) * 100)
+if (total_per < 1) {
+    message("Not enought data for propagation.")
+    quit(save = "no")
+}
 
 write.table(
     x = counts, file = paste0(gsub(' ', '_', phys_name), '_', rank_arg, '_phytools-ltp_counts', '.tsv'),

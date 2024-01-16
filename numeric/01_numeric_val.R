@@ -90,6 +90,13 @@ known_tips <- tip_data_annotated |>
     filter(!is.na(Attribute_value)) |> 
     pull(tip_label)
 
+#ltp_per <- round(length(known_tips) / Ntip(tree) * 100)
+#if (ltp_per < 1) {
+#    msg <- paste0("Not enough data for ASR-LTP for: ", phys_name )
+#    log_print(msg)
+#    quit(save = "no")
+#}
+
 nsti <- getNsti(tree, known_tips)
 
 # dist <- castor::get_all_pairwise_distances(tree = tree, only_clades = known_tips)
@@ -106,6 +113,12 @@ counts <- data.frame(
     # dist_mean = round(mean(dist), 3),
     # dist_sd = round(sd(dist), 3)
 )
+
+total_per <- floor(length(unique(fdat$NCBI_ID)) / Ntip(tree) * 100)
+if (total_per < 1) {
+    message("Not enough percentage data for propagation.")
+    quit(save = "no")
+}
 
 allTips <- tip_data_annotated$Attribute_value
 names(allTips) <- tip_data_annotated$tip_label

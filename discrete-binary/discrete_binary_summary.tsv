@@ -3,8 +3,6 @@ animal pathogen	all	phytools-ltp	animal pathogen	0.5	0.07	999	2071	23501	0.154	0
 animal pathogen	species	phytools-ltp	animal pathogen	0.52	0.07	879	1782	23501	0.157	0.111
 antimicrobial sensitivity	all	phytools-ltp	antimicrobial sensitivity	0.61	0.19	304	825	23501	0.192	0.12
 antimicrobial sensitivity	species	phytools-ltp	antimicrobial sensitivity	0.61	0.19	304	825	23501	0.192	0.12
-biofilm forming	all	phytools-ltp	biofilm forming	0.38	0.28	180	423	23501	0.239	0.178
-biofilm forming	species	phytools-ltp	biofilm forming	0.38	0.28	180	423	23501	0.239	0.178
 extreme environment	all	phytools-ltp	extreme environment	0.5	0.09	708	1856	23501	0.147	0.1
 extreme environment	species	phytools-ltp	extreme environment	0.5	0.09	708	1856	23501	0.147	0.1
 host-associated	all	phytools-ltp	host-associated	0.59	0.07	900	2492	23501	0.133	0.095
