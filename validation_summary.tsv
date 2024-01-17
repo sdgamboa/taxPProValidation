@@ -79,14 +79,14 @@ phytools-ltp	all	spore shape	coccus	0	0.01	NA	NA	26	26	300	708	23501	0.366	0.204
 phytools-ltp	all	spore shape	elliptic	0.15	0.38	NA	NA	34	34	300	708	23501	0.366	0.204	0	1
 phytools-ltp	all	spore shape	endospore	0.1	0.19	NA	NA	281	689	300	708	23501	0.366	0.204	1	1
 castor-ltp	all	coding genes	coding genes	NA	NA	0.72	0.03	NA	NA	1410	4303	23031	0.101	0.07	NA	6
-castor-ltp	species	coding genes	coding genes	NA	NA	0.65	0.11	NA	NA	700	1440	23031	0.135	0.096	NA	3
+castor-ltp	species	coding genes	coding genes	NA	NA	0.66	0.11	NA	NA	700	1440	23031	0.135	0.096	NA	3
 castor-ltp	strain	coding genes	coding genes	NA	NA	0.62	0.11	NA	NA	710	2863	23031	0.132	0.077	NA	3
 castor-ltp	all	genome size	genome size	NA	NA	0.72	0.07	NA	NA	1409	4298	23031	0.101	0.07	NA	6
 castor-ltp	species	genome size	genome size	NA	NA	0.67	0.12	NA	NA	700	1437	23031	0.135	0.096	NA	3
 castor-ltp	strain	genome size	genome size	NA	NA	0.62	0.11	NA	NA	709	2861	23031	0.132	0.077	NA	3
-castor-ltp	all	growth temperature	growth temperature	NA	NA	0.54	0.04	NA	NA	14251	21033	23031	0.036	0.042	NA	62
-castor-ltp	species	growth temperature	growth temperature	NA	NA	0.46	0.04	NA	NA	12433	16916	23031	0.044	0.053	NA	54
-castor-ltp	strain	growth temperature	growth temperature	NA	NA	0.7	0.09	NA	NA	1818	4117	23031	0.093	0.062	NA	8
+castor-ltp	all	growth temperature	growth temperature	NA	NA	0.55	0.04	NA	NA	14251	21033	23031	0.036	0.042	NA	62
+castor-ltp	species	growth temperature	growth temperature	NA	NA	0.47	0.04	NA	NA	12433	16916	23031	0.044	0.053	NA	54
+castor-ltp	strain	growth temperature	growth temperature	NA	NA	0.71	0.09	NA	NA	1818	4117	23031	0.093	0.062	NA	8
 castor-ltp	all	length	length	NA	NA	0.15	0.24	NA	NA	605	636	23031	0.118	0.077	NA	3
 castor-ltp	genus	length	length	NA	NA	0.15	0.24	NA	NA	605	636	23031	0.118	0.077	NA	3
 castor-ltp	all	optimal ph	optimal ph	NA	NA	0.14	0.16	NA	NA	290	878	23031	0.18	0.11	NA	1
