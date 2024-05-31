@@ -1,13 +1,13 @@
 physiology	rank	method	attribute	mean	sd
-aerophilicity	all	phytools-ltp	aerobic	0.731476285237036	0.0190102375927709
-aerophilicity	all	phytools-ltp	anaerobic	0.880986566683805	0.0189715324779331
-aerophilicity	all	phytools-ltp	facultatively anaerobic	0.248953152252997	0.0564371272018447
-aerophilicity	genus	phytools-ltp	aerobic	0.745225703005751	0.0528370205824072
-aerophilicity	genus	phytools-ltp	anaerobic	0.848285143237362	0.0655217970577679
-aerophilicity	genus	phytools-ltp	facultatively anaerobic	0.522120945132588	0.114813046395003
-aerophilicity	species	phytools-ltp	aerobic	0.704668197816916	0.0276240884603766
-aerophilicity	species	phytools-ltp	anaerobic	0.872655254965583	0.0321664058471017
-aerophilicity	species	phytools-ltp	facultatively anaerobic	0.248448109792701	0.0645495230652454
-aerophilicity	strain	phytools-ltp	aerobic	0.774305548331485	0.0557188583892783
-aerophilicity	strain	phytools-ltp	anaerobic	0.863674597807607	0.0520187980779344
-aerophilicity	strain	phytools-ltp	facultatively anaerobic	0.383313867768935	0.088185555261474
+aerophilicity	all	phytools-ltp	aerobic	0.70776355840113	0.0187417583027854
+aerophilicity	all	phytools-ltp	anaerobic	0.842460359750811	0.0150276326353863
+aerophilicity	all	phytools-ltp	facultatively anaerobic	0.226527181768367	0.0635527451702415
+aerophilicity	genus	phytools-ltp	aerobic	0.711918429838751	0.0451988171024291
+aerophilicity	genus	phytools-ltp	anaerobic	0.713948330083497	0.038942387518458
+aerophilicity	genus	phytools-ltp	facultatively anaerobic	0.496959610331872	0.0953675058450458
+aerophilicity	species	phytools-ltp	aerobic	0.683081929750572	0.0316308894961606
+aerophilicity	species	phytools-ltp	anaerobic	0.835550408905244	0.0295948399954313
+aerophilicity	species	phytools-ltp	facultatively anaerobic	0.206766120709721	0.0676095099707053
+aerophilicity	strain	phytools-ltp	aerobic	0.735293330785627	0.0706903067578105
+aerophilicity	strain	phytools-ltp	anaerobic	0.832136754434197	0.0456219776706238
+aerophilicity	strain	phytools-ltp	facultatively anaerobic	0.35339771438703	0.0727286957465593

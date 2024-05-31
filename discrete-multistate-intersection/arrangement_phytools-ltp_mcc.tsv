@@ -1,13 +1,13 @@
 physiology	rank	method	attribute	mean	sd
-arrangement	all	phytools-ltp	branched	0.254909115580206	0.189422028782023
-arrangement	all	phytools-ltp	cell chain	0.395240305724585	0.120578948936104
-arrangement	all	phytools-ltp	cell cluster	0.237048458491073	0.203036530445302
-arrangement	all	phytools-ltp	filamentous	0.683534082043363	0.27334114967901
-arrangement	all	phytools-ltp	paired cells	0.37892126311109	0.116119220905455
-arrangement	all	phytools-ltp	single	0.330732337614471	0.137443616857737
-arrangement	all	phytools-ltp	tetrads	-0.00334783244402172	0.00720192068229618
-arrangement	genus	phytools-ltp	branched	0.10899710632876	0.210480939880218
-arrangement	genus	phytools-ltp	cell chain	-0.0362486362024734	0.0318923122947935
-arrangement	genus	phytools-ltp	cell cluster	0.0450432777633909	0.230333266985683
-arrangement	genus	phytools-ltp	paired cells	0.0923496711946608	0.192101696021025
-arrangement	genus	phytools-ltp	single	-0.0219896461967839	0.0299061437792914
+arrangement	all	phytools-ltp	branched	0.102934650462395	0.160261925837897
+arrangement	all	phytools-ltp	cell chain	0.367382764376453	0.172269878126257
+arrangement	all	phytools-ltp	cell cluster	0.279753923398616	0.22530657686449
+arrangement	all	phytools-ltp	filamentous	0.333381417105758	0.362273466875652
+arrangement	all	phytools-ltp	paired cells	0.376735766214451	0.171148857920448
+arrangement	all	phytools-ltp	single	0.22912655047566	0.1693646455249
+arrangement	all	phytools-ltp	tetrads	0	0
+arrangement	genus	phytools-ltp	branched	0.127232596312537	0.189718199399754
+arrangement	genus	phytools-ltp	cell chain	-0.00580808080808081	0.0122589674981488
+arrangement	genus	phytools-ltp	cell cluster	0.0590184426897243	0.224617822060942
+arrangement	genus	phytools-ltp	paired cells	0.0944787764475357	0.233406481521756
+arrangement	genus	phytools-ltp	single	-0.00541530361073882	0.0171246936312685

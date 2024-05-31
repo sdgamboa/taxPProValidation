@@ -37,7 +37,7 @@ myFun <- function(x, y) {
         complete(NCBI_ID, Attribute, fill = list(Score = 0)) |> 
         arrange(NCBI_ID, Attribute) |> 
         rename(tScore = Score) |> 
-        mutate(tPN = ifelse(tScore > 0.5, 1, 0))
+        mutate(tPN = ifelse(tScore > 0.8, 1, 0))
     y <- y |> 
         select(NCBI_ID, Attribute, Score) |> 
         group_by(NCBI_ID, Attribute) |> 
@@ -46,7 +46,7 @@ myFun <- function(x, y) {
         arrange(NCBI_ID, Attribute) |> 
         filter(NCBI_ID %in% unique(x$NCBI_ID)) |> 
         rename(pScore = Score) |> 
-        mutate(pPN = ifelse(pScore > 0.5, 1, 0))
+        mutate(pPN = ifelse(pScore > 0.8, 1, 0))
     output <- left_join(x, y, by = c('NCBI_ID', 'Attribute')) |> 
         mutate(
             TF = case_when(

@@ -34,6 +34,23 @@ new_phys_name <- gsub('_', ' ', phys_name)
 names(l) <- paste0(new_phys_name, '_', sub(regex, '\\1\\2', names(l)))
 
 test_folds <- l[grep('test', names(l))]
+
+for (i in seq_along(l)) {
+    if (grepl("predicted", names(l)[i])) {
+        l[[i]] <- l[[i]] |> 
+            ## This will create two entries with FALSE, but it doesn't
+            ## mattter because it will be sliced a few lines below
+            mutate(
+                Attribute = case_when(
+                    grepl("TRUE$", Attribute) & Score > 0.8 ~ Attribute,
+                    TRUE ~ sub("TRUE$", "FALSE", Attribute)
+                )
+            )  
+    } else {
+        next
+    }
+}
+
 predicted_folds <- l[grep('predicted', names(l))] |> 
     map( ~ {
         .x |> 
