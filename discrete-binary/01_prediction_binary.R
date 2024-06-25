@@ -1,7 +1,7 @@
 
 args <- commandArgs(trailingOnly = TRUE)
 
-args <- c("sphingolipid_producing", "all")
+#args <- c("sphingolipid_producing", "all")
 
 suppressMessages({
     library(phytools)
