@@ -1,2 +1,0 @@
-phys	R_squared_mean	R_squared_sd	MSE_mean	MSE_sd	RMSE_mean	RMSE_sd	mean_real_values	min_real_values	max_real_values	sd_real_values
-growth_temperature	0.659	0.073	58.485	13.347	7.604	0.856	34.0594182453446	-10	121	13.2817519891898
