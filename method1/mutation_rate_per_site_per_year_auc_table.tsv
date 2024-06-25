@@ -1,9 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"mutation_rate_per_site_per_year_all"	"mutation_rate_per_site_per_year"	"fast_(>54.3)"	0.5	0.5
-"mutation_rate_per_site_per_year_all"	"mutation_rate_per_site_per_year"	"medium_(>=7.6,_<20)"	0.5	0.5
-"mutation_rate_per_site_per_year_all"	"mutation_rate_per_site_per_year"	"medium_fast_(>=21,_<54.2)"	0.5	0.5
-"mutation_rate_per_site_per_year_all"	"mutation_rate_per_site_per_year"	"slow_(<7.5)"	0.5	0.5
-"mutation_rate_per_site_per_year_sp"	"mutation_rate_per_site_per_year"	"fast_(>54.3)"	0.5	0.5
-"mutation_rate_per_site_per_year_sp"	"mutation_rate_per_site_per_year"	"medium_(>=7.6,_<20)"	0.5	0.5
-"mutation_rate_per_site_per_year_sp"	"mutation_rate_per_site_per_year"	"medium_fast_(>=21,_<54.2)"	0.5	0.5
-"mutation_rate_per_site_per_year_sp"	"mutation_rate_per_site_per_year"	"slow_(<7.5)"	0.5	0.5

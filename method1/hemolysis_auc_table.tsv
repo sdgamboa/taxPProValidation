@@ -1,8 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"hemolysis_all"	"hemolysis"	"alpha"	0.66	0.62
-"hemolysis_all"	"hemolysis"	"beta"	0.54	0.62
-"hemolysis_all"	"hemolysis"	"gamma"	0.65	0.62
-"hemolysis_st"	"hemolysis"	"alpha"	0.42	0.55
-"hemolysis_st"	"hemolysis"	"beta"	0.59	0.55
-"hemolysis_st"	"hemolysis"	"CAMP_test"	0.5	0.55
-"hemolysis_st"	"hemolysis"	"gamma"	0.7	0.55

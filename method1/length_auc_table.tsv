@@ -1,7 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"length_all"	"length"	"average_(>=3.9,_<22_µm)"	0.5	0.5
-"length_all"	"length"	"large_(>=23,_<60_µm)"	0.5	0.5
-"length_all"	"length"	"small_(<3.8_µm)"	0.5	0.5
-"length_gn"	"length"	"average_(>=3.9,_<22_µm)"	0.5	0.5
-"length_gn"	"length"	"large_(>=23,_<60_µm)"	0.5	0.5
-"length_gn"	"length"	"small_(<3.8_µm)"	0.5	0.5

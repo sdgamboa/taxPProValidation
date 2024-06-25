@@ -1,5 +1,0 @@
-"rank"	"attribute_group"	"attribute"	"attribute_auc"	"attribute_group_auc"
-"antimicrobial_sensitivity_all"	"antimicrobial_sensitivity"	"antimicrobial_sensitivity--FALSE"	0.5	0.5
-"antimicrobial_sensitivity_all"	"antimicrobial_sensitivity"	"antimicrobial_sensitivity--TRUE"	0.5	0.5
-"antimicrobial_sensitivity_sp"	"antimicrobial_sensitivity"	"antimicrobial_sensitivity--FALSE"	0.5	0.5
-"antimicrobial_sensitivity_sp"	"antimicrobial_sensitivity"	"antimicrobial_sensitivity--TRUE"	0.5	0.5
