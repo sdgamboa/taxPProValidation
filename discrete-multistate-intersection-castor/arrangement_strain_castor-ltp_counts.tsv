@@ -1,9 +1,0 @@
-Attribute	inLTP	notInLTP	totalDat	inDat	notInDat	totalLTP
-branched	10	9	19	10	23021	23031
-cell chain	33	132	165	33	22998	23031
-cell cluster	10	25	35	10	23021	23031
-filamentous	0	1	1	0	23031	23031
-paired cells	86	173	259	86	22945	23031
-single	147	379	526	147	22884	23031
-tetrads	2	4	6	2	23029	23031
-v-formation	0	1	1	0	23031	23031
