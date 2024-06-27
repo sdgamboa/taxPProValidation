@@ -27,7 +27,7 @@ Compress files in a tar.gz file
 
 ```
 DAT=$(date +%Y-%m-%d)
-tar -czvf binary-discrete-$DAT.tar.gz *Fold*
+tar -czvf discrete-binary-$DAT.tar.gz *Fold*
 ```
 
 
