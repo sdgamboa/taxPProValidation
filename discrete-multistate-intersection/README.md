@@ -23,5 +23,5 @@ Output is in the [discrete_multistate_summary.tsv](./discrete_multistate_summary
 
 ```
 DAT=$(date +%Y-%m-%d)
-tar -czvf binary-multistate-$DAT.tar.gz *Fold*
+tar -czvf discrete-multistate-$DAT.tar.gz *Fold*
 ```
