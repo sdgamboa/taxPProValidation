@@ -20,3 +20,8 @@ Create summary:
 ```
 
 Output is in the [discrete_multistate_summary.tsv](./discrete_multistate_summary.tsv) file.
+
+```
+DAT=$(date +%Y-%m-%d)
+tar -czvf binary-multistate-$DAT.tar.gz *Fold*
+```

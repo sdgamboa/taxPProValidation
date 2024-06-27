@@ -9,6 +9,8 @@ library(phytools)
 library(castor)
 library(cvTools)
 library(purrr)
+library(tidyr)
+library(ggplot2)
 library(logr)
 
 phys_name <- args[[1]]
@@ -31,7 +33,34 @@ tree <- ltp$tree
 tip_data <- ltp$tip_data
 node_data <- ltp$node_data
 
+## bugphyzz data ####
 phys <- physiologies(gsub('_', ' ', phys_name))[[1]]
+
+modifyNumeric <- function(x) {
+    x |>
+        dplyr::filter(!is.na(.data$NCBI_ID) | !.data$NCBI_ID == 'unkown') |>
+        dplyr::filter(!is.na(.data$Attribute_value_min)) |>
+        dplyr::filter(!is.na(.data$Attribute_value_max)) |>
+        dplyr::filter(!is.infinite(abs(.data$Attribute_value_min))) |>
+        dplyr::filter(!is.infinite(abs(.data$Attribute_value_max))) |>
+        dplyr::mutate(Rank = taxizedb::taxid2rank(NCBI_ID, db = 'ncbi')) |> 
+        dplyr::mutate(Taxon_name = taxizedb::taxid2name(NCBI_ID, db = 'ncbi')) |> 
+        dplyr::mutate(NCBI_ID = addRankPrefix(NCBI_ID, Rank)) |> 
+        dplyr::filter(!is.na(Rank) & !is.na(Taxon_name) & !is.na(NCBI_ID)) |>
+        dplyr::group_by(.data$NCBI_ID) |>
+        dplyr::slice_max(
+           .data$Confidence_in_curation, n = 1, with_ties = FALSE
+        ) |>
+        dplyr::mutate(
+            Attribute_value = mean(.data$Attribute_value_min, .data$Attribute_value_max)
+        ) |>
+        dplyr::ungroup() |>
+        dplyr::select(-Attribute_value_min, -Attribute_value_max) |>
+        dplyr::distinct()
+}
+
+# dat <- modifyNumeric(phys) |> 
+#     filter(Rank %in% rank_var)
 
 dat <- phys |> 
     filterData() |> 
@@ -61,8 +90,18 @@ known_tips <- tip_data_annotated |>
     filter(!is.na(Attribute_value)) |> 
     pull(tip_label)
 
-nodes_with_taxid <- grep("^n", tree$node.label, value = TRUE, invert = TRUE)
-nsti <- getNsti(tree, known_tips, nodes_with_taxid)
+#ltp_per <- round(length(known_tips) / Ntip(tree) * 100)
+#if (ltp_per < 1) {
+#    msg <- paste0("Not enough data for ASR-LTP for: ", phys_name )
+#    log_print(msg)
+#    quit(save = "no")
+#}
+
+nodes_with_taxid <- grep("^n", tree$node.label, value = TRUE, invert = TRUE) ## Changed code
+nsti <- getNsti(tree, known_tips, nodes_with_taxid) ## Changed code
+
+# dist <- castor::get_all_pairwise_distances(tree = tree, only_clades = known_tips)
+# dist <- dist[lower.tri(dist)]
 
 counts <- data.frame(
     physiology = gsub('_', ' ', phys_name),
@@ -72,6 +111,8 @@ counts <- data.frame(
     ltp = length(unique(tip_data$NCBI_ID)),
     nsti_mean = round(mean(nsti$nsti), 3),
     nsti_sd = round(sd(nsti$nsti), 3)
+    # dist_mean = round(mean(dist), 3),
+    # dist_sd = round(sd(dist), 3)
 )
 
 total_per <- floor(length(unique(fdat$NCBI_ID)) / Ntip(tree) * 100)
@@ -116,6 +157,17 @@ for (i in seq_along(trainSets)) {
         check_input = TRUE
     )
     
+    # res <- hsp_independent_contrasts(
+    #     tree = tree, tip_states = input_vector, weighted = TRUE,
+    #     check_input = TRUE
+    # )
+    
+    # res <- hsp_subtree_averaging(
+    #     tree = tree, tip_states = input_vector,
+    #     check_input = TRUE
+    # )
+
+
     statesDF <- data.frame(
         label = tree$tip.label,
         value = res$states[1:Ntip(tree)]
@@ -144,8 +196,12 @@ metrics <- map2(hsp, testSets, ~ {
     mape <- mean(abs((actual_values - predicted_values) / actual_values)) * 100
 
     evaluation_results <- data.frame(
+        # Metric = c("MSE", "RMSE", "MAE", "R_squared", "MAPE"),
+        # Metric = c("MSE", "RMSE", "r_squared"),
         Metric = c("r_squared"),
         Value = c(r_squared)
+        # Value = c(mse, rmse, r_squared)
+        # Value = c(mse, rmse, mae, r_squared, mape)
     )
 
     return(evaluation_results)

@@ -1,6 +1,5 @@
 
 args <- commandArgs(trailingOnly = TRUE)
-
 #args <- c("sphingolipid_producing", "all")
 
 suppressMessages({
@@ -156,7 +155,8 @@ nsti_input <- map(known_priors, rownames) |>
     unlist(use.names = FALSE) |> 
     unique()
 
-nsti <- getNsti(tree, nsti_input)$nsti
+nodes_with_taxid <- grep("^n", tree$node.label, value = TRUE, invert = TRUE )
+nsti <- getNsti(tree, nsti_input, nodes_with_taxid)$nsti
 
 counts <- data.frame(
     Attribute = gsub("_", " ", phys_name),

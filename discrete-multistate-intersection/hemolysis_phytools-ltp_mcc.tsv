@@ -1,7 +1,7 @@
 physiology	rank	method	attribute	mean	sd
 hemolysis	all	phytools-ltp	alpha	0.265209663178738	0.163745326423024
-hemolysis	all	phytools-ltp	beta	0.312859035480296	0.173922603535526
+hemolysis	all	phytools-ltp	beta	0.371623890033039	0.17566066251851
 hemolysis	all	phytools-ltp	gamma	0.331941002528736	0.126263001075633
 hemolysis	species	phytools-ltp	alpha	0.151489802102926	0.195661956238918
-hemolysis	species	phytools-ltp	beta	0.232815666021183	0.145110978149516
+hemolysis	species	phytools-ltp	beta	0.299748407289855	0.155180516505152
 hemolysis	species	phytools-ltp	gamma	0.364244021050809	0.113225136873381

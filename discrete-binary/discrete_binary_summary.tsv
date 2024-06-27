@@ -1,17 +1,17 @@
 physiology	rank	method	attribute	mean_mcc	sd_mcc	ltp_bp_phys	bp_phys	ltp	nsti_mean	nsti_sd
 animal pathogen	all	phytools-ltp	animal pathogen	0.47	0.06	999	2071	23501	0.154	0.11
 animal pathogen	species	phytools-ltp	animal pathogen	0.5	0.06	879	1782	23501	0.157	0.111
-antimicrobial sensitivity	all	phytools-ltp	antimicrobial sensitivity	0.5	0.12	304	825	23501	0.192	0.12
-antimicrobial sensitivity	species	phytools-ltp	antimicrobial sensitivity	0.5	0.12	304	825	23501	0.192	0.12
+antimicrobial sensitivity	all	phytools-ltp	antimicrobial sensitivity	0.5	0.12	304	825	23501	0.191	0.119
+antimicrobial sensitivity	species	phytools-ltp	antimicrobial sensitivity	0.5	0.12	304	825	23501	0.191	0.119
 extreme environment	all	phytools-ltp	extreme environment	0.4	0.13	708	1856	23501	0.147	0.1
 extreme environment	species	phytools-ltp	extreme environment	0.4	0.13	708	1856	23501	0.147	0.1
 host-associated	all	phytools-ltp	host-associated	0.47	0.06	900	2492	23501	0.133	0.095
-host-associated	species	phytools-ltp	host-associated	0.46	0.05	890	2482	23501	0.135	0.095
-motility	all	phytools-ltp	motility	0.53	0.03	5793	6529	23501	0.065	0.063
-motility	species	phytools-ltp	motility	0.52	0.03	5122	5331	23501	0.071	0.069
-motility	strain	phytools-ltp	motility	0.43	0.07	671	1198	23501	0.13	0.085
+host-associated	species	phytools-ltp	host-associated	0.46	0.05	890	2482	23501	0.134	0.095
+motility	all	phytools-ltp	motility	0.53	0.03	5793	6529	23501	0.064	0.063
+motility	species	phytools-ltp	motility	0.52	0.03	5122	5331	23501	0.07	0.069
+motility	strain	phytools-ltp	motility	0.43	0.07	671	1198	23501	0.129	0.084
 plant pathogenicity	all	phytools-ltp	plant pathogenicity	0.57	0.26	568	1476	23501	0.164	0.113
 plant pathogenicity	species	phytools-ltp	plant pathogenicity	0.57	0.26	568	1476	23501	0.164	0.113
-spore formation	all	phytools-ltp	spore formation	0.88	0.03	4177	4731	23501	0.086	0.087
-spore formation	species	phytools-ltp	spore formation	0.89	0.03	3673	3809	23501	0.096	0.097
+spore formation	all	phytools-ltp	spore formation	0.88	0.03	4177	4731	23501	0.085	0.086
+spore formation	species	phytools-ltp	spore formation	0.89	0.03	3673	3809	23501	0.095	0.097
 spore formation	strain	phytools-ltp	spore formation	0.76	0.13	504	922	23501	0.146	0.094

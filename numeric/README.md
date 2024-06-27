@@ -8,3 +8,4 @@ tmux new -d -s numeric "./01_numeric_val.sh all && ./01_numeric_val.sh genus && 
 ```
 
 Output is in the [numeric_castor-ltp_summary.tsv](./numeric_castor-ltp_summary.tsv) file.
+

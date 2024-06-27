@@ -1,6 +1,6 @@
 # taxPProValidation
 
-Version: v1.0.3
+Version: v1.0.4
 
 Code for generating the main table:
 
@@ -14,6 +14,10 @@ discrete-multistate-intersection, and numeric directories.
 Output is in [validation_summary.tsv](./validation_summary.tsv)
 
 ## Version log
+
+### v1.0.4
+Update the code based on the bugphyzzExports script.
+Compress "Folds" into a tar.gz file for numeric, binary, and multistate.
 
 ### v1.0.3
 Remove previous attempts at performing ASR, such as using castor for
