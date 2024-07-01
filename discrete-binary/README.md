@@ -51,7 +51,7 @@ Run validation script in bash:
 ./02_validation_binary.sh phytools-ltp
 ```
 
-After running this script, some *.tsv files must have
+After running this script, some *.csv files must have
 been created. These contain the results of the
 10-fold cross-validation with the Matthew's
 Correlation Coefficient (MCC).
