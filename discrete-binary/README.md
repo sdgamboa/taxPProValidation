@@ -1,14 +1,24 @@
 
-# Discrete binary attributes
+# Discrete attributtes of type "binary"
 
-This script runs the code for running the 10-fold
-cross-validation of the attributes/physiologies with
-attribute type "binary". An example is 'sphingolipid
-producing' and it must have values TRUE and FALSE. 
-Both TRUE and FALSE values are necessary since the
+The phytools package is used for the propagation of discrete attributes.
+Attributes of type "binary" are those with logical attribute values,
+i.e., TRUE and FALSE. An example is 'sphingolipid
+producing'.  Both TRUE and FALSE values are necessary since the
 ASR didn't perform well when only TRUE or only FALSE
 values were used.
 
+The scripts here:
+
+1. Create files with the propagation results in a 10-fold
+cross-validation approach (folds 1 through 10). The "test" files contain
+the real annotations that were left out of the propgation. The
+"propagation" files contain the results of the propagation withouht the
+test set.
+
+2. Calculate the Matthew's correlelation coefficient using the \*Fold\*csv files.
+
+3. Create a summary with MCC values at different ranks and other metrics.
 
 ## Steps for reproducing
 
@@ -18,9 +28,8 @@ Choose physiologies from the `bugphyzz::showPhys`
 function that should be cross-validated. Only add physiologies with attribute type "binary."
 
 Add the chosen physiologies to the `physiologies`
-variable in the script. No spaces are allowed, use
-underscore (_) instead if the name of the physiology
-contains any.
+variable in the script. No spaces are allowed. Use
+underscore (_) instead of spaces if any.
 
 ### 2. Run the sh scripts
 
@@ -51,7 +60,7 @@ Run validation script in bash:
 ./02_validation_binary.sh phytools-ltp
 ```
 
-After running this script, some *.csv files must have
+After running this script, some *.tsv files must have
 been created. These contain the results of the
 10-fold cross-validation with the Matthew's
 Correlation Coefficient (MCC).
@@ -74,12 +83,14 @@ generated above.
 
 ### 6. Compress the *csv files in a tar.gz file
 
-Compress the files in a tar.gz file with date of
-creation. *csv files are ignore in the
+Compress the *Fold*csv files in a .tar.gz file with date of
+creation. *csv files are ignored in the
 `.gitignore` file so the files should be
-compressed in a tar.gz file for uploading to GitHub.
+compressed in a .tar.gz file for uploading to GitHub.
 
-```
+```bash
 DAT=$(date +%Y-%m-%d)
 tar -czvf discrete-binary-$DAT.tar.gz *Fold*
 ```
+
+## Columns
