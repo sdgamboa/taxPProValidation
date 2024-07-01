@@ -16,11 +16,12 @@ will be reported in papers, etc. Everytime this file is updated, it most be copi
 results to the bugphyzz annotations.
 
 Script: `create_summary_table.R`. This script is used to generate
-the `validation_summmary.tsv` file. It must be run after all the code in the README files of the three directories has been run.
+the `validation_summmary.tsv` file. It must be run after all of the code
+in the README files of the three directories mentioned below has been run.
 
-Directories: `discrete-binary/`, `discrete-multistate-intersection/`, and `numeric/`. These contain the outputs of the progagation processs, including the files for each test and prediction fold (1 through 10). It also contains the scripts to get these folds, calculate MCC and R2 values, logs, and a table with the results. The `create_summary_table.R` script file described above generates a final summary based on these results.
+Directories: `discrete-binary/`, `discrete-multistate-intersection/`, and `numeric/`. These contain the outputs of the progagation processs, including the files for each test and prediction fold (1 through 10). It also contains the scripts to get these folds, calculate MCC and R2 values, logs, and a table with the results.
 
-The README files inside each directory contain instructions about how to run the code.
+The README files in each of the three directories mentioned above contain instructions about how to run the code.
 
 ## Steps for reproducing
 
@@ -28,14 +29,14 @@ The README files inside each directory contain instructions about how to run the
 
 Go inside each of the `discrete-binary/`, `discrete-multistate-intersection/`, and `numeric/` directories and follow the instructions in their respective README.md files.
 
-After the first step, some *.tsv files must have been created inside each of the directories. Proceed to step 2.
+Some *.csv files must have been created in each of the directories. Proceed to step 2.
 
-### 2. Generate summary
+### 2. Generate a summary file
 
 In the main directory, run in a linux-like terminal:
 
 ```bash
-Rscript --vanilla create_summary_table.R
+Rscript --vanilla create_summary_table.R # R in PATH
 /usr/bin/Rscript --vanilla create_summary_table.R # on supermicro
 ```
 
@@ -47,7 +48,7 @@ Latest Version: v1.0.4
 
 ### Version log
 
-Use these logs in addition of the commits. The version is important here because it is referenced in the `waldonlab/bugphyzz` package.
+Use these logs in addition to the commits. The version is important here because it is referenced in `waldonlab/bugphyzz/inst/scripts/README.md`.
 
 ### Logs
 
