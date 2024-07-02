@@ -1,5 +1,5 @@
 
-# Discrete attributtes of type "binary"
+# Discrete attributes of type "binary"
 
 The phytools package is used for the propagation of discrete attributes.
 Attributes of type "binary" are those with logical attribute values,
@@ -12,11 +12,11 @@ The scripts here:
 
 1. Create files with the propagation results in a 10-fold
 cross-validation approach (folds 1 through 10). The "test" files contain
-the real annotations that were left out of the propgation. The
-"propagation" files contain the results of the propagation withouht the
+the real annotations that were left out of the propagation. The
+"propagation" files contain the results of the propagation without the
 test set.
 
-2. Calculate the Matthew's correlelation coefficient using the \*Fold\*csv files.
+2. Calculate the Matthew's correlation coefficient using the \*Fold\*csv files.
 
 3. Create a summary with MCC values at different ranks and other metrics.
 
@@ -101,9 +101,9 @@ These columns are very similar to the output of the
 `bugphyzz::physiologies` function.
 
 + NCBI_ID. NCBI taxonomy ID with rank prefix (e.g., g__561).
-+ Attribute. Physiology/Attribute name fused with attribute value.
++ Attribute. Physiology/Attribute name fused with the attribute value.
 For example, "animal pathogen--TRUE" or "animal pathogen--FALSE".
-+ Taxon name. SCientific name of the microbe.
++ Taxon name. Scientific name of the microbe.
 + Rank. From strain to Superkingdom.
 + Attribute_source. Source of the annotation.
 + Confidence_in_curation. Confidence of the source.
@@ -117,16 +117,16 @@ For example, "animal pathogen--TRUE" or "animal pathogen--FALSE".
 ### Columns in the "\*predicted\*Fold\*csv" files
 
 + tip_label. Label as annotated in the phylogenetic tree used
-for propagation. Some labes are NCBI_IDs with the rank prefix, e.g.,
+for propagation. Some labels are NCBI_IDs with the rank prefix, e.g.,
 "g__561" (Escherichia) while others are the original tips from
 the LTP (Living Tree Project) tree.
-+ Attribute. Physiology/Attribute name fused with attribute value.
++ Attribute. Physiology/Attribute name fused with the attribute value.
 For example, "animal pathogen--TRUE" or "animal pathogen--FALSE".
 + Score. Posterior probability results from the ASR.
 Values between 0 and 1. This will be used for MCC.
 + Accession. This is the genome accession of the species and strains
 in the phylogenetic tree (at the tips). It does not apply to
-genus.
+the genus.
 + taxid. The NCBI taxonomy ID.
 + Taxon_name. Scientific name of the tip.
 + Rank. From strain to superkingdom.
@@ -141,19 +141,19 @@ of binary attributes.
 + Method. ASR method (phytools) and tree (LTP).
 + Attribute. Name of the attribute.
 + Mean. Mean MCC (considering all 10 folds).
-+ SD. Standard deviation of the MCC (considering all 10 folds).
++ SD. The standard deviation of the MCC (considering all 10 folds).
 
 ### Columns in \*counts.tsv files
 
 + Attribute. Name of the physiology.
 + ltp_bp_phys. Number of taxa matching in both the ltp tree and bugphyzz.
-+ ltp. Nomber of tips in the LTP tree.
++ ltp. Number of tips in the LTP tree.
 + nsti_mean. Mean nearest sequence taxonomic index (check castor definition.)
-+ nsti_sd. Standdad deviation of NSTI.
++ nsti_sd. Standard deviation of NSTI.
 
 
 ### Columns in the discrete_binary_summary.tsv file
 
-The columns are the same than the ones described above. This file
+The columns are the same as the ones described above. This file
 is a combination of all of the \*counts.tsv and \*mcc.tsv files
 into a single one.
