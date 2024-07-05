@@ -16,7 +16,7 @@ the "Score" is divided among the annotations. For example,
 anaerobic" with a score of 0.2. These cases are rare.
 
 The phytools package was used for the propagation of discrete attributes,
-includiong those of type "multistate-intersection".
+including the type "multistate-intersection" type.
 
 The scripts here:
 
