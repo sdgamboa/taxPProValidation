@@ -1,12 +1,21 @@
 
 # Discrete attributes of type "binary"
 
+The attributes of type "binary" are those with logical
+attribute values, i.e., TRUE or FALSE. An example is the "sphingolipid
+producing" attribute, which could have the values
+"sphingolipid producing--TRUE" or "sphingolipid producing--FALSE".
+
+Both TRUE and FALSE values are necessary since the
+ASR methods didn't perform well when only all TRUE or all FALSE
+values were used.
+
 The phytools package is used for the propagation of discrete attributes.
 Attributes of type "binary" are those with logical attribute values,
 i.e., TRUE and FALSE. An example is 'sphingolipid
-producing'.  Both TRUE and FALSE values are necessary since the
-ASR didn't perform well when only TRUE or only FALSE
-values were used.
+producing'.
+
+
 
 The scripts here:
 
