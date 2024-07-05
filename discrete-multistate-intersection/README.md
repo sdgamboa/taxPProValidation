@@ -2,24 +2,18 @@
 # Discrete attributes of type "multistate-intersection"
 
 The attributes of type "multistate-intersection" are those with several
-mutually exclusive attribute values of class "character". An example,
+mutually exclusive attribute values of class "character". An example
 would be the attribute "aerophilicity" with attribute values "aerobic",
 "anaerobic", and "facultatively anaerobic".
 
 In some cases, the same taxon could have two mutually exclusive annotations.
-This could happen in a few situtations. For example, a genus could contain
-species with "anaerobic" and "facultive anaerobic" microbes. This could
-also happen if a taxon is annotated differently in two sources and these
+This could happen in a few situations. For example, a genus could contain
+species with "anaerobic" and "facultative anaerobic" microbes. This could
+also occur if a taxon is annotated differently in two sources and these
 sources have the same "confidence in curation" value. In those cases,
 the "Score" is divided among the annotations. For example, 
-"aerobic" with score 0.7, "anaerobic" with score 0.1, and "facultatively
-anerobic" with score 0.2.
-
-
-
-
-Still, this cases
-are rare.
+"aerobic" with a score of 0.7, "anaerobic" with a score of 0.1, and "facultatively
+anaerobic" with a score of 0.2. These cases are rare.
 
 The phytools package was used for the propagation of discrete attributes,
 includiong those of type "multistate-intersection".
