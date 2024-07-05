@@ -10,12 +10,8 @@ Both TRUE and FALSE values are necessary since the
 ASR methods didn't perform well when only all TRUE or all FALSE
 values were used.
 
-The phytools package is used for the propagation of discrete attributes.
-Attributes of type "binary" are those with logical attribute values,
-i.e., TRUE and FALSE. An example is 'sphingolipid
-producing'.
-
-
+The phytools package is used for the propagation of discrete attributes,
+including the "binary" type.
 
 The scripts here:
 
